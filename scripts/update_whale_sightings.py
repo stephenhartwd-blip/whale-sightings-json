@@ -4,7 +4,7 @@ Update whale_sightings.json from curated sources.
 
 Deterministic:
 - No "search the whole web"
-- Pulls from curated URL(s) in config/sources.yml
+- Pulls from curated URLs in config/sources.yml
 - Parses pages with a small set of parsers (including a robust generic parser)
 
 Outputs JSON array entries that match your Swift model:
@@ -13,6 +13,7 @@ id, name, species, info, date, latitude, longitude, area, source, behaviors
 
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 import re
@@ -31,14 +32,15 @@ MONTHS_FULL = (
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
 )
+MONTHS_ABBR = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 
-MONTHS_ABBR = (
-    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
-    "Jul", "Aug", "Sep", "Sept", "Oct", "Nov", "Dec"
-)
+MONTH_MAP: Dict[str, int] = {}
+for i, m in enumerate(MONTHS_FULL, start=1):
+    MONTH_MAP[m.lower()] = i
+for i, m in enumerate(MONTHS_ABBR, start=1):
+    MONTH_MAP[m.lower()] = i
 
-MONTH_RE = r"(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)"
-WEEKDAY_RE = r"(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Mon|Tue|Tues|Wed|Thu|Thur|Fri|Sat|Sun)"
+WEEKDAYS = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
 
 # -------------------------
 # Helpers
@@ -109,10 +111,6 @@ def fetch_text(session: requests.Session, url: str) -> str:
 def within_window(dt: datetime, now_dt: datetime, max_days: int) -> bool:
     return (now_dt.date() - dt.date()).days <= max_days
 
-def strip_ordinal(s: str) -> str:
-    # "14th" -> "14"
-    return re.sub(r"(\d)(st|nd|rd|th)\b", r"\1", s, flags=re.IGNORECASE)
-
 def parse_date_from_url(url: str, tz_name: str) -> Optional[datetime]:
     # patterns like /2026/1/14/ or /2026-01-14/
     m = re.search(r"/(\d{4})/(\d{1,2})/(\d{1,2})(?:/|$)", url)
@@ -125,20 +123,21 @@ def parse_date_from_url(url: str, tz_name: str) -> Optional[datetime]:
         return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
     return None
 
-def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[datetime]:
-    """
-    Supports:
-    - 2026-01-14
-    - 1/14/2026
-    - 14.01.2026
-    - January 14, 2026 / Jan 14 2026 / Jan 14th
-    - 14 January 2026 / 14 Jan 2026
-    - Wednesday 14 January 2026 / Wed, Jan 14, 2026
-    """
-    s = strip_ordinal(s.strip())
-    s = re.sub(r"\s+", " ", s)
+def _infer_year_for_partial_date(year: int, mo: int, d: int, today: datetime, tz_name: str) -> datetime:
+    dt = datetime(year, mo, d, tzinfo=tz.gettz(tz_name))
+    # If inferred date is in the future (common around New Year), subtract a year.
+    if dt.date() > today.date():
+        dt = datetime(year - 1, mo, d, tzinfo=tz.gettz(tz_name))
+    return dt
 
-    # ISO
+def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[datetime]:
+    s = s.strip()
+
+    # Strip weekday prefixes like "Fri, " or "Friday "
+    wd_re = rf"^(?:{'|'.join(WEEKDAYS)})(?:[a-z]+)?[,]?\s+"
+    s = re.sub(wd_re, "", s, flags=re.IGNORECASE).strip()
+
+    # ISO yyyy-mm-dd
     m = re.match(r"^(\d{4})-(\d{2})-(\d{2})$", s)
     if m:
         y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
@@ -152,7 +151,13 @@ def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[da
             y += 2000
         return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
 
-    # dd.mm.yyyy
+    # mm/dd (NO YEAR) -> assume current year (and adjust if "future")
+    m = re.match(r"^(\d{1,2})/(\d{1,2})$", s)
+    if m:
+        mo, d = int(m.group(1)), int(m.group(2))
+        return _infer_year_for_partial_date(today.year, mo, d, today, tz_name)
+
+    # dd.mm.yyyy or dd.mm.yy
     m = re.match(r"^(\d{1,2})\.(\d{1,2})\.(\d{2,4})$", s)
     if m:
         d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
@@ -160,47 +165,46 @@ def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[da
             y += 2000
         return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
 
-    # Remove leading weekday
-    s2 = re.sub(rf"^(?:{WEEKDAY_RE})(?:,)?\s+", "", s, flags=re.IGNORECASE).strip()
-
-    # Month day (optional year): "January 14 2026" / "Jan 14"
-    m = re.match(rf"^({MONTH_RE})\.?\s+(\d{{1,2}})(?:,?\s+(\d{{4}}))?$", s2, flags=re.IGNORECASE)
+    # MonthName Day (optional year): "January 14" / "January 14, 2026"
+    month_full_re = rf"(?:{'|'.join(MONTHS_FULL)})"
+    m = re.match(rf"^({month_full_re})\s+(\d{{1,2}})(?:,?\s+(\d{{4}}))?$", s, flags=re.IGNORECASE)
     if m:
-        month_name = m.group(1)
-        day = int(m.group(2))
-        year = int(m.group(3)) if m.group(3) else today.year
-        # normalize month name to full for strptime
-        month_map = {
-            "jan":"January","feb":"February","mar":"March","apr":"April","may":"May","jun":"June",
-            "jul":"July","aug":"August","sep":"September","sept":"September","oct":"October","nov":"November","dec":"December"
-        }
-        mn = month_name
-        key = month_name.lower().strip(".")
-        if key in month_map:
-            mn = month_map[key]
-        dt = datetime.strptime(f"{year} {mn} {day}", "%Y %B %d").replace(tzinfo=tz.gettz(tz_name))
-        if dt.date() > today.date() and not m.group(3):
-            dt = dt.replace(year=year - 1)
-        return dt
+        mo_name = m.group(1).lower()
+        d = int(m.group(2))
+        y = int(m.group(3)) if m.group(3) else today.year
+        mo = MONTH_MAP.get(mo_name)
+        if not mo:
+            return None
+        if m.group(3):
+            return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
+        return _infer_year_for_partial_date(y, mo, d, today, tz_name)
 
-    # Day Month Year: "14 January 2026" / "14 Jan 2026" / (year optional)
-    m = re.match(rf"^(\d{{1,2}})\s+({MONTH_RE})\.?(?:\s+(\d{{4}}))?$", s2, flags=re.IGNORECASE)
+    # MonAbbr Day (optional year): "Jan 14" / "Jan 14, 2026"
+    month_abbr_re = rf"(?:{'|'.join(MONTHS_ABBR)})\.?"
+    m = re.match(rf"^({month_abbr_re})\s+(\d{{1,2}})(?:,?\s+(\d{{4}}))?$", s, flags=re.IGNORECASE)
     if m:
-        day = int(m.group(1))
-        month_name = m.group(2)
-        year = int(m.group(3)) if m.group(3) else today.year
-        month_map = {
-            "jan":"January","feb":"February","mar":"March","apr":"April","may":"May","jun":"June",
-            "jul":"July","aug":"August","sep":"September","sept":"September","oct":"October","nov":"November","dec":"December"
-        }
-        mn = month_name
-        key = month_name.lower().strip(".")
-        if key in month_map:
-            mn = month_map[key]
-        dt = datetime.strptime(f"{year} {mn} {day}", "%Y %B %d").replace(tzinfo=tz.gettz(tz_name))
-        if dt.date() > today.date() and not m.group(3):
-            dt = dt.replace(year=year - 1)
-        return dt
+        mo_name = m.group(1).replace(".", "").lower()
+        d = int(m.group(2))
+        y = int(m.group(3)) if m.group(3) else today.year
+        mo = MONTH_MAP.get(mo_name)
+        if not mo:
+            return None
+        if m.group(3):
+            return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
+        return _infer_year_for_partial_date(y, mo, d, today, tz_name)
+
+    # Day Month (optional year): "14 Jan 2026" / "14 January"
+    m = re.match(rf"^(\d{{1,2}})\s+({month_abbr_re}|{month_full_re})(?:,?\s+(\d{{4}}))?$", s, flags=re.IGNORECASE)
+    if m:
+        d = int(m.group(1))
+        mo_name = m.group(2).replace(".", "").lower()
+        y = int(m.group(3)) if m.group(3) else today.year
+        mo = MONTH_MAP.get(mo_name)
+        if not mo:
+            return None
+        if m.group(3):
+            return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
+        return _infer_year_for_partial_date(y, mo, d, today, tz_name)
 
     return None
 
@@ -223,13 +227,19 @@ def detect_species(text: str, force: Optional[List[str]] = None) -> List[str]:
     if "blue whale" in t:
         hits.append("Blue Whale")
 
+    # de-dupe preserve order
     seen = set()
     out: List[str] = []
-    for sp in hits:
-        if sp in ALLOWED_SPECIES and sp not in seen:
-            out.append(sp)
-            seen.add(sp)
+    for s in hits:
+        if s in ALLOWED_SPECIES and s not in seen:
+            out.append(s)
+            seen.add(s)
     return out
+
+def fingerprint_text(s: str) -> str:
+    # Stable, deterministic fingerprint to allow multiple same-day entries from the same source.
+    h = hashlib.sha1(s.encode("utf-8", errors="ignore")).hexdigest()
+    return h[:12]
 
 @dataclass
 class Candidate:
@@ -243,6 +253,7 @@ class Candidate:
     longitude: float
     behaviors: List[str]
     source_key: str
+    fingerprint: str
 
 # -------------------------
 # Generic “dated sections” extraction
@@ -252,23 +263,28 @@ def extract_dated_sections(text: str, tz_name: str, today: datetime) -> List[Tup
     """
     Finds date markers in text and splits into sections.
     Returns list of (datetime, section_text).
+    Works with repeated same-day markers like:
+      1/16 Humpback...
+      1/16 Orca...
     """
+    month_full_re = rf"(?:{'|'.join(MONTHS_FULL)})"
+    month_abbr_re = rf"(?:{'|'.join(MONTHS_ABBR)})\.?"
+    weekday_re = rf"(?:{'|'.join(WEEKDAYS)})(?:[a-z]+)?[,]?\s+"
 
     patterns = [
-        r"\b\d{4}-\d{2}-\d{2}\b",                         # 2026-01-14
-        r"\b\d{1,2}/\d{1,2}/\d{2,4}\b",                   # 1/14/2026
-        r"\b\d{1,2}\.\d{1,2}\.\d{2,4}\b",                 # 14.01.2026
-
-        # Month day formats, incl abbreviations and ordinals: "Jan 14", "January 14th, 2026"
-        rf"\b(?:{WEEKDAY_RE})?,?\s*(?:{MONTH_RE})\.?\s+\d{{1,2}}(?:st|nd|rd|th)?(?:,?\s+\d{{4}})?\b",
-
-        # Day month formats: "14 Jan 2026", "14 January"
-        rf"\b\d{{1,2}}(?:st|nd|rd|th)?\s+(?:{MONTH_RE})\.?(?:\s+\d{{4}})?\b",
+        r"\b\d{4}-\d{2}-\d{2}\b",                          # 2026-01-14
+        r"\b\d{1,2}/\d{1,2}/\d{2,4}\b",                    # 1/14/2026
+        r"\b\d{1,2}/\d{1,2}\b",                            # 1/14   (NO YEAR)  <-- critical for many logs
+        r"\b\d{1,2}\.\d{1,2}\.\d{2,4}\b",                  # 14.01.2026
+        rf"\b{weekday_re}?{month_full_re}\s+\d{{1,2}}(?:,?\s+\d{{4}})?\b",  # Fri, January 14, 2026
+        rf"\b{weekday_re}?{month_abbr_re}\s+\d{{1,2}}(?:,?\s+\d{{4}})?\b",  # Fri, Jan 14, 2026
+        rf"\b\d{{1,2}}\s+{month_abbr_re}(?:,?\s+\d{{4}})?\b",               # 14 Jan 2026
+        rf"\b\d{{1,2}}\s+{month_full_re}(?:,?\s+\d{{4}})?\b",               # 14 January 2026
     ]
 
     matches: List[Tuple[int, int, str]] = []
     for pat in patterns:
-        for m in re.finditer(pat, text, flags=re.IGNORECASE):
+        for m in re.finditer(pat, text):
             matches.append((m.start(), m.end(), m.group(0)))
 
     if not matches:
@@ -276,29 +292,16 @@ def extract_dated_sections(text: str, tz_name: str, today: datetime) -> List[Tup
 
     matches.sort(key=lambda x: x[0])
 
-    # de-dupe overlaps
-    cleaned: List[Tuple[int, int, str]] = []
-    last_end = -1
-    for s, e, val in matches:
-        if s < last_end:
-            continue
-        cleaned.append((s, e, val))
-        last_end = e
-
     out: List[Tuple[datetime, str]] = []
-    for i, (s, e, dstr) in enumerate(cleaned):
+    for i, (spos, epos, dstr) in enumerate(matches):
         dt = best_effort_parse_date(dstr, tz_name, today)
         if not dt:
             continue
-
-        section_start = e
-        section_end = cleaned[i + 1][0] if i + 1 < len(cleaned) else len(text)
+        section_start = epos
+        section_end = matches[i + 1][0] if i + 1 < len(matches) else len(text)
         section = text[section_start:section_end].strip()
-
-        # don’t discard small but real sections too aggressively
-        if len(section) < 10:
+        if len(section) < 20:
             continue
-
         out.append((dt, section))
 
     return out
@@ -318,7 +321,7 @@ def build_candidates_from_generic_source(
     text = fetch_text(session, url)
     today = now_local(tz_name)
 
-    force_species: Optional[List[str]] = None
+    force_species = None
     if "force_species" in cfg:
         fs = cfg.get("force_species")
         if isinstance(fs, list):
@@ -329,6 +332,8 @@ def build_candidates_from_generic_source(
     sections = extract_dated_sections(text, tz_name, today)
 
     candidates: List[Candidate] = []
+    nud = cfg.get("uncertain_offshore_nudge") or {}
+    lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
 
     if sections:
         for dt, section in sections:
@@ -336,9 +341,6 @@ def build_candidates_from_generic_source(
             for species in sp[:2]:
                 name = f"{species} sighting ({area})" if area else f"{species} sighting"
                 info = f"Parsed from {source_key} on {to_date_str(dt)}."
-                nud = cfg.get("uncertain_offshore_nudge") or {}
-                lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
-
                 candidates.append(
                     Candidate(
                         date=dt,
@@ -347,21 +349,20 @@ def build_candidates_from_generic_source(
                         info=info,
                         area=area,
                         source=url,
-                        latitude=lat,
-                        longitude=lon,
+                        latitude=float(lat),
+                        longitude=float(lon),
                         behaviors=infer_behaviors(section),
                         source_key=source_key,
+                        fingerprint=fingerprint_text(section),
                     )
                 )
     else:
+        # No dated sections: single entry using best-guess date
         dt = parse_date_from_url(url, tz_name) or today
         sp = detect_species(text, force=force_species)
         for species in sp[:2]:
             name = f"{species} sighting ({area})" if area else f"{species} sighting"
             info = f"Parsed from {source_key} (single-page) on {to_date_str(dt)}."
-            nud = cfg.get("uncertain_offshore_nudge") or {}
-            lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
-
             candidates.append(
                 Candidate(
                     date=dt,
@@ -370,10 +371,11 @@ def build_candidates_from_generic_source(
                     info=info,
                     area=area,
                     source=url,
-                    latitude=lat,
-                    longitude=lon,
+                    latitude=float(lat),
+                    longitude=float(lon),
                     behaviors=infer_behaviors(text),
                     source_key=source_key,
+                    fingerprint=fingerprint_text(text[:2000]),
                 )
             )
 
@@ -473,6 +475,7 @@ def parse_orcanetwork_recent_sightings(cfg: Dict[str, Any], session: requests.Se
                     longitude=float(lon),
                     behaviors=infer_behaviors(block),
                     source_key=source_key,
+                    fingerprint=fingerprint_text(block),
                 )
             )
 
@@ -489,7 +492,7 @@ def parse_generic(cfg: Dict[str, Any], session: requests.Session, tz_name: str, 
 PARSERS = {
     "orcanetwork_recent_sightings": parse_orcanetwork_recent_sightings,
 
-    # YAML-listed parsers mapped to generic for now
+    # YAML-listed parsers -> mapped to generic parser for now
     "eaglewing_daily_sighting_report": parse_generic,
     "victoriawhalewatching_captains_log": parse_generic,
     "montereybay_sightings": parse_generic,
@@ -533,13 +536,9 @@ def compute_species_targets(cfg: Dict[str, Any], total: int) -> Dict[str, int]:
         i = 0
         while diff != 0 and i < 1000:
             sp = order[i % len(order)]
-            if sp in wanted:
-                wanted[sp] += 1 if diff > 0 else -1
-                diff = total - sum(wanted.values())
+            wanted[sp] = max(0, wanted.get(sp, 0) + (1 if diff > 0 else -1))
+            diff = total - sum(wanted.values())
             i += 1
-
-        for sp in list(wanted.keys()):
-            wanted[sp] = max(0, wanted[sp])
 
     return wanted
 
@@ -565,13 +564,14 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
     chosen_keys = set()
 
     def pick_one(c: Candidate) -> None:
-        k = (to_date_str(c.date), c.species, c.area, c.source)
+        # Allow multiple same-day sightings from the same source by using a fingerprint.
+        k = (to_date_str(c.date), c.species, c.source_key, c.fingerprint)
         if k in chosen_keys:
             return
         chosen.append(c)
         chosen_keys.add(k)
 
-    need_recent = int((total * min_recent_fraction) + 0.9999)
+    need_recent = int((total * min_recent_fraction) + 0.9999)  # ceil
     recent_count = 0
 
     species_order = sorted(wanted.keys(), key=lambda s: wanted[s], reverse=True)
@@ -585,7 +585,7 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
             for c in by_species[sp]:
                 if not is_recent(c):
                     break
-                k = (to_date_str(c.date), c.species, c.area, c.source)
+                k = (to_date_str(c.date), c.species, c.source_key, c.fingerprint)
                 if k in chosen_keys:
                     continue
                 pick_one(c)
@@ -598,7 +598,7 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
         while wanted.get(sp, 0) > 0:
             found = False
             for c in by_species[sp]:
-                k = (to_date_str(c.date), c.species, c.area, c.source)
+                k = (to_date_str(c.date), c.species, c.source_key, c.fingerprint)
                 if k in chosen_keys:
                     continue
                 pick_one(c)
@@ -612,7 +612,7 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
         remaining: List[Candidate] = []
         for sp in by_species:
             for c in by_species[sp]:
-                k = (to_date_str(c.date), c.species, c.area, c.source)
+                k = (to_date_str(c.date), c.species, c.source_key, c.fingerprint)
                 if k not in chosen_keys:
                     remaining.append(c)
         remaining.sort(key=lambda c: c.date, reverse=True)
@@ -674,25 +674,6 @@ def load_config(path: str) -> Dict[str, Any]:
     except yaml.YAMLError as e:
         raise RuntimeError(f"YAML parse error in {path}: {e}") from e
 
-def expand_source_urls(source_cfg: Dict[str, Any]) -> List[Dict[str, Any]]:
-    """
-    Supports either:
-      - url: "https://..."
-      - urls: ["https://...","https://..."]
-    Returns list of cfg variants each having a concrete 'url'.
-    """
-    if isinstance(source_cfg.get("urls"), list) and source_cfg["urls"]:
-        out: List[Dict[str, Any]] = []
-        for u in source_cfg["urls"]:
-            u = str(u).strip()
-            if not u:
-                continue
-            c2 = dict(source_cfg)
-            c2["url"] = u
-            out.append(c2)
-        return out
-    return [source_cfg]
-
 def main() -> None:
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     cfg_path = os.path.join(root, "config", "sources.yml")
@@ -715,20 +696,18 @@ def main() -> None:
     for s in cfg.get("sources", []):
         source_key = str(s.get("key", "unknown")).strip() or "unknown"
         parser_name = s.get("parser")
-
+        url = s.get("url", "")
         if not parser_name or parser_name not in PARSERS:
-            print(f"SKIP: {source_key} (unknown parser: {parser_name}) url={s.get('url','')}")
+            print(f"SKIP: {source_key} (unknown parser: {parser_name}) url={url}")
             continue
 
-        for s_variant in expand_source_urls(s):
-            url = s_variant.get("url", "")
-            try:
-                items = PARSERS[parser_name](s_variant, session, tz_name, source_key)
-                items = [c for c in items if within_window(c.date, now_dt, max_days)]
-                all_candidates.extend(items)
-                print(f"OK: {source_key} parser={parser_name} url={url} -> {len(items)} candidates")
-            except Exception as e:
-                print(f"WARN: {source_key} url={url} failed: {e}")
+        try:
+            items = PARSERS[parser_name](s, session, tz_name, source_key)
+            items = [c for c in items if within_window(c.date, now_dt, max_days)]
+            all_candidates.extend(items)
+            print(f"OK: {source_key} parser={parser_name} -> {len(items)} candidates")
+        except Exception as e:
+            print(f"WARN: {source_key} failed: {e}")
 
     filtered = [c for c in all_candidates if within_window(c.date, now_dt, max_days)]
     selected = select_candidates(cfg, filtered, tz_name)
