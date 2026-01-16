@@ -3,8 +3,9 @@ name: Update Whale Sightings
 on:
   workflow_dispatch:
   schedule:
-    # Runs daily at 17:15 UTC (roughly 9:15am Vancouver in winter; adjust as you like)
-    - cron: "15 17 * * *"
+    # Runs twice daily at 08:00 and 20:00 UTC
+    # (roughly 12:00am + 12:00pm Vancouver in winter; shifts by 1 hour in summer due to DST)
+    - cron: "0 8,20 * * *"
 
 permissions:
   contents: write
