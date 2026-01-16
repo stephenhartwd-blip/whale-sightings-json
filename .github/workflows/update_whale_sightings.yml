@@ -1,0 +1,46 @@
+name: Update Whale Sightings
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs daily at 17:15 UTC (roughly 9:15am Vancouver in winter; adjust as you like)
+    - cron: "15 17 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run updater
+        run: |
+          python scripts/update_whale_sightings.py
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "whale-sightings-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add whale_sightings.json
+          git commit -m "Update whale_sightings.json"
+          git push
