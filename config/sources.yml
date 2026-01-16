@@ -11,20 +11,139 @@ species_targets:
   Sperm whale: 0.10
   Great White Shark: 0.10
 
-# "Known sources list": start small, then add more sources and parsers.
+# "Known sources list": add more sources here.
 # Each source can define a parser + default fallback coordinates (kept offshore).
 
 sources:
   - key: orcanetwork_recent
     parser: orcanetwork_recent_sightings
     url: https://www.orcanetwork.org/recent-sightings
-    # Fallback area + offshore coordinates (used if we can't map a more specific location)
     area: Salish Sea (offshore), BC/WA, Canada/USA
     latitude: 48.45
     longitude: -123.05
-    # Optional nudge rule to ensure offshore (applied only if the source is tagged uncertain)
     uncertain_offshore_nudge:
       dlat: 0.00
       dlon: 0.00
-    # Optional cap to avoid one source dominating
-    max_items: 30
+    max_items: 18
+
+  - key: eaglewing_daily
+    parser: eaglewing_daily_sighting_report
+    url: https://eaglewingtours.com/daily-sighting-report/
+    area: Victoria (offshore), BC, Canada
+    latitude: 48.41
+    longitude: -123.45
+    uncertain_offshore_nudge:
+      dlat: 0.00
+      dlon: 0.00
+    max_items: 10
+
+  - key: victoria_whalewatching_log
+    parser: victoriawhalewatching_captains_log
+    url: https://www.victoriawhalewatching.com/captains_log/new-year-new-encounters-orcas-lead-the-way-into-2026/
+    area: Juan de Fuca Strait (offshore), BC, Canada
+    latitude: 48.40
+    longitude: -124.10
+    uncertain_offshore_nudge:
+      dlat: 0.00
+      dlon: 0.00
+    max_items: 6
+
+  - key: monterey_sightings
+    parser: montereybay_sightings
+    url: https://montereybaywhalewatch.com/sightings/slstcurr/
+    area: Monterey Bay (offshore), CA, USA
+    latitude: 36.80
+    longitude: -122.10
+    uncertain_offshore_nudge:
+      dlat: 0.00
+      dlon: 0.00
+    max_items: 10
+
+  - key: dolphinsafari_log
+    parser: dolphinsafari_sightings_log
+    url: https://www.dolphinsafari.com/sightings-log/
+    area: Dana Point (offshore), CA, USA
+    latitude: 33.45
+    longitude: -117.75
+    uncertain_offshore_nudge:
+      dlat: 0.00
+      dlon: 0.00
+    max_items: 10
+
+  - key: hawaiianadventures_weekly
+    parser: hawaiianadventures_weekly_whale_report
+    url: https://www.hawaiianadventureskona.com/humpback-whales/weekly-whale-report/
+    area: Kona (offshore), HI, USA
+    latitude: 19.70
+    longitude: -156.10
+    uncertain_offshore_nudge:
+      dlat: 0.00
+      dlon: 0.00
+    max_items: 8
+
+  - key: akureyri_blog
+    parser: whalewatchingakureyri_blog
+    url: https://www.whalewatchingakureyri.is/new-blog/2026/1/14/wednesday-14-january-2026
+    area: Eyjafjordur (offshore), Akureyri, Iceland
+    latitude: 65.75
+    longitude: -18.20
+    uncertain_offshore_nudge:
+      dlat: 0.00
+      dlon: 0.00
+    max_items: 8
+
+  - key: elding_diary
+    parser: elding_whale_diary
+    url: https://elding.is/whale-diary
+    area: Faxafloi Bay (offshore), Reykjavik, Iceland
+    latitude: 64.20
+    longitude: -22.40
+    uncertain_offshore_nudge:
+      dlat: 0.00
+      dlon: 0.00
+    max_items: 10
+
+  - key: seatrips_diary
+    parser: seatrips_whale_diary
+    url: https://seatrips.is/news/whale-diary-january/
+    area: Reykjavik (offshore), Iceland
+    latitude: 64.18
+    longitude: -22.60
+    uncertain_offshore_nudge:
+      dlat: 0.00
+      dlon: 0.00
+    max_items: 8
+
+  - key: whale_watch_wa
+    parser: whalewatchwesternaustralia_daily
+    url: https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/
+    area: Bremer Canyon (offshore), WA, Australia
+    latitude: -34.70
+    longitude: 119.90
+    uncertain_offshore_nudge:
+      dlat: 0.00
+      dlon: 0.00
+    max_items: 10
+
+  - key: pirsa_sharks
+    parser: pirsa_shark_sightings
+    url: https://pir.sa.gov.au/fishing-and-aquaculture/recreational-fishing/reporting/shark-sightings
+    area: South Australia (offshore), Australia
+    latitude: -35.10
+    longitude: 138.30
+    uncertain_offshore_nudge:
+      dlat: 0.00
+      dlon: 0.00
+    max_items: 12
+
+  # Optional: news/article sources (only include if your script supports parsing articles)
+  - key: hawaii_newsnow_article
+    parser: article_basic
+    url: https://www.hawaiinewsnow.com/2026/01/12/humpback-whale-mugs-boat-lahaina-several-times/
+    area: Lahaina (offshore), Maui, HI, USA
+    latitude: 20.88
+    longitude: -156.70
+    uncertain_offshore_nudge:
+      dlat: 0.00
+      dlon: 0.00
+    max_items: 2
