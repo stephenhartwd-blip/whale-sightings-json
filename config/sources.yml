@@ -1,0 +1,30 @@
+timezone: America/Vancouver
+max_days: 14
+min_recent_days: 7
+min_recent_fraction: 0.50
+
+target_total: 80
+# Target ratios. The script will try to hit these if enough source items exist.
+species_targets:
+  Orca: 0.40
+  Humpback: 0.40
+  Sperm whale: 0.10
+  Great White Shark: 0.10
+
+# "Known sources list": start small, then add more sources and parsers.
+# Each source can define a parser + default fallback coordinates (kept offshore).
+
+sources:
+  - key: orcanetwork_recent
+    parser: orcanetwork_recent_sightings
+    url: https://www.orcanetwork.org/recent-sightings
+    # Fallback area + offshore coordinates (used if we can't map a more specific location)
+    area: Salish Sea (offshore), BC/WA, Canada/USA
+    latitude: 48.45
+    longitude: -123.05
+    # Optional nudge rule to ensure offshore (applied only if the source is tagged uncertain)
+    uncertain_offshore_nudge:
+      dlat: 0.00
+      dlon: 0.00
+    # Optional cap to avoid one source dominating
+    max_items: 30
