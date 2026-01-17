@@ -3,9 +3,8 @@ name: Update Whale Sightings
 on:
   workflow_dispatch:
   schedule:
-    # Runs twice daily at 08:00 and 20:00 UTC
-    # (roughly 12:00am + 12:00pm Vancouver in winter; shifts by 1 hour in summer due to DST)
-    - cron: "0 8,20 * * *"
+    # Runs every 6 hours. Change if you want.
+    - cron: "17 */6 * * *"
 
 permissions:
   contents: write
@@ -18,12 +17,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
@@ -34,14 +34,16 @@ jobs:
         run: |
           python scripts/update_whale_sightings.py
 
-      - name: Commit changes
+      - name: Commit & push if changed
         run: |
           if git diff --quiet; then
-            echo "No changes."
+            echo "No changes to commit."
             exit 0
           fi
-          git config user.name "whale-sightings-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add whale_sightings.json
-          git commit -m "Update whale_sightings.json"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          git commit -m "Auto-update whale sightings"
           git push
