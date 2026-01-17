@@ -9,6 +9,7 @@ Deterministic:
   - orcanetwork_recent_sightings (custom)
   - generic_dated_page (generic HTML parsing)
   - rss_feed (RSS/Atom parsing via feedparser)
+  - inaturalist_api (iNaturalist public API: taxon + place + date window)
 
 Outputs JSON array entries that match your Swift model:
 id, name, species, info, date, latitude, longitude, area, source, behaviors
@@ -21,7 +22,7 @@ import os
 import re
 import time
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Any, Dict, List, Optional, Tuple
 
 import requests
@@ -39,6 +40,9 @@ MONTHS = (
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
 )
+
+# Set in main() from config.max_days so parsers can use it
+GLOBAL_MAX_DAYS = 14
 
 # -------------------------
 # Helpers
@@ -552,6 +556,210 @@ def parse_orcanetwork_recent_sightings(cfg: Dict[str, Any], session: requests.Se
 
 
 # -------------------------
+# NEW parser: iNaturalist API
+# -------------------------
+
+INAT_BASE = "https://api.inaturalist.org/v1"
+_inat_place_cache: Dict[str, Optional[int]] = {}
+
+def _inat_place_id(session: requests.Session, place_query: str) -> Optional[int]:
+    place_query = (place_query or "").strip()
+    if not place_query:
+        return None
+    if place_query in _inat_place_cache:
+        return _inat_place_cache[place_query]
+
+    try:
+        r = session.get(
+            f"{INAT_BASE}/places/autocomplete",
+            params={"q": place_query},
+            timeout=30,
+        )
+        r.raise_for_status()
+        data = r.json() or {}
+        results = data.get("results") or []
+        pid = results[0].get("id") if results else None
+        pid = int(pid) if pid is not None else None
+        _inat_place_cache[place_query] = pid
+        # small courtesy delay
+        time.sleep(0.15)
+        return pid
+    except Exception:
+        _inat_place_cache[place_query] = None
+        return None
+
+def _inat_obs_datetime(obs: Dict[str, Any], tz_name: str, fallback: datetime) -> datetime:
+    """
+    Prefer observed_on (YYYY-MM-DD). If missing, use time_observed_at ISO.
+    """
+    tzinfo = tz.gettz(tz_name)
+
+    observed_on = (obs.get("observed_on") or "").strip()
+    if observed_on:
+        # set noon local to avoid weird boundary issues
+        try:
+            y, m, d = observed_on.split("-")
+            return datetime(int(y), int(m), int(d), 12, 0, 0, tzinfo=tzinfo)
+        except Exception:
+            pass
+
+    time_observed_at = (obs.get("time_observed_at") or "").strip()
+    if time_observed_at:
+        try:
+            # Example: 2026-01-16T18:22:11-08:00
+            dt = datetime.fromisoformat(time_observed_at.replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=tzinfo)
+            return dt.astimezone(tzinfo)
+        except Exception:
+            pass
+
+    created_at = (obs.get("created_at") or "").strip()
+    if created_at:
+        try:
+            dt = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=tzinfo)
+            return dt.astimezone(tzinfo)
+        except Exception:
+            pass
+
+    return fallback
+
+def _inat_obs_latlon(obs: Dict[str, Any]) -> Optional[Tuple[float, float]]:
+    gj = obs.get("geojson") or {}
+    coords = gj.get("coordinates")
+    if isinstance(coords, (list, tuple)) and len(coords) == 2:
+        lon = safe_float(coords[0])
+        lat = safe_float(coords[1])
+        if lat is not None and lon is not None:
+            return lat, lon
+
+    loc = (obs.get("location") or "").strip()  # "lat,lon"
+    if loc and "," in loc:
+        try:
+            a, b = [x.strip() for x in loc.split(",", 1)]
+            lat = safe_float(a)
+            lon = safe_float(b)
+            if lat is not None and lon is not None:
+                return lat, lon
+        except Exception:
+            pass
+
+    return None
+
+def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
+    """
+    Uses iNaturalist public API to pull recent observations by:
+      - taxon_name (scientific name)
+      - place_query (text, resolved via places/autocomplete)
+    Produces Candidate entries with exact lat/lon from observations when available.
+    """
+    taxon_name = (cfg.get("taxon_name") or "").strip()
+    if not taxon_name:
+        return []
+
+    place_query = (cfg.get("place_query") or "").strip()
+    place_id = _inat_place_id(session, place_query) if place_query else None
+
+    max_items = int(cfg.get("max_items", 3))
+    area_default = (cfg.get("area", "") or "").strip()
+    lat0 = float(cfg.get("latitude", 0.0))
+    lon0 = float(cfg.get("longitude", 0.0))
+
+    # optional force_species
+    force_species: Optional[List[str]] = None
+    fs = cfg.get("force_species")
+    if fs:
+        if isinstance(fs, list):
+            force_species = [str(x) for x in fs]
+        else:
+            force_species = [str(fs)]
+
+    today = now_local(tz_name)
+    d2 = today.date().isoformat()
+    d1 = (today - timedelta(days=int(GLOBAL_MAX_DAYS))).date().isoformat()
+
+    params: Dict[str, Any] = {
+        "taxon_name": taxon_name,
+        "d1": d1,
+        "d2": d2,
+        "order": "desc",
+        "order_by": "observed_on",
+        "geo": "true",
+        "verifiable": "true",
+        "captive": "false",
+        "per_page": 100,
+    }
+    if place_id:
+        params["place_id"] = place_id
+
+    r = session.get(f"{INAT_BASE}/observations", params=params, timeout=30)
+    r.raise_for_status()
+    data = r.json() or {}
+    results = data.get("results") or []
+    # small courtesy delay
+    time.sleep(0.15)
+
+    out: List[Candidate] = []
+    for obs in results:
+        if len(out) >= max_items:
+            break
+
+        dt = _inat_obs_datetime(obs, tz_name, today)
+
+        # coordinates: prefer iNat coordinates, otherwise fallback to configured offshore anchor + nudge
+        latlon = _inat_obs_latlon(obs)
+        if latlon:
+            lat, lon = latlon
+        else:
+            nud = cfg.get("uncertain_offshore_nudge") or {}
+            lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
+
+        # iNat metadata
+        uri = (obs.get("uri") or "").strip()
+        obs_id = obs.get("id")
+        source_url = uri or (f"https://www.inaturalist.org/observations/{obs_id}" if obs_id else "https://www.inaturalist.org")
+
+        place_guess = (obs.get("place_guess") or "").strip()
+        area = place_guess or area_default or (place_query if place_query else "iNaturalist")
+
+        user = (obs.get("user") or {}).get("login") or "iNaturalist user"
+        description = (obs.get("description") or "").strip()
+
+        # species: forced from YAML, otherwise detect from text
+        common_name = ((obs.get("taxon") or {}).get("preferred_common_name") or "").strip()
+        sci = ((obs.get("taxon") or {}).get("name") or "").strip()
+        blob = f"{common_name}\n{sci}\n{description}".strip()
+        species_list = detect_species(blob, force=force_species)
+        if not species_list:
+            # If still unknown, skip (keeps deterministic + your allowed set only)
+            continue
+
+        species = species_list[0]
+        name = f"{species} sighting ({area})"
+        info = f"iNaturalist observation by {user}."
+
+        out.append(
+            Candidate(
+                date=dt,
+                species=species,
+                name=name,
+                info=info,
+                area=area,
+                source=source_url,
+                latitude=float(lat),
+                longitude=float(lon),
+                behaviors=infer_behaviors(blob),
+                source_key=source_key,
+            )
+        )
+
+    out.sort(key=lambda c: c.date, reverse=True)
+    return out[:max_items]
+
+
+# -------------------------
 # Parsers mapping
 # -------------------------
 
@@ -581,6 +789,9 @@ PARSERS = {
 
     # RSS
     "rss_feed": parse_rss_feed,
+
+    # iNaturalist
+    "inaturalist_api": parse_inaturalist_api,
 }
 
 
@@ -757,6 +968,8 @@ def load_config(path: str) -> Dict[str, Any]:
         raise RuntimeError(f"YAML parse error in {path}: {e}") from e
 
 def main() -> None:
+    global GLOBAL_MAX_DAYS
+
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     cfg_path = os.path.join(root, "config", "sources.yml")
     cfg = load_config(cfg_path)
@@ -764,6 +977,7 @@ def main() -> None:
     tz_name = cfg.get("timezone", "America/Vancouver")
     now_dt = now_local(tz_name)
     max_days = int(cfg.get("max_days", 14))
+    GLOBAL_MAX_DAYS = max_days
 
     session = requests.Session()
     session.headers.update(
