@@ -3,7 +3,7 @@ name: Update Whale Sightings
 on:
   workflow_dispatch:
   schedule:
-    # Runs every 6 hours. Change if you want.
+    # Runs every 6 hours (cron is interpreted in UTC by GitHub)
     - cron: "17 */6 * * *"
 
 permissions:
@@ -31,6 +31,8 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run updater
+        env:
+          TZ: America/Vancouver
         run: |
           python scripts/update_whale_sightings.py
 
