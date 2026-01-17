@@ -4,7 +4,6 @@ min_recent_days: 7
 min_recent_fraction: 0.50
 
 target_total: 80
-
 species_targets:
   Orca: 0.40
   Humpback: 0.40
@@ -12,134 +11,288 @@ species_targets:
   Great White Shark: 0.10
 
 sources:
+  # -------------------------
+  # CANADA / USA (Pacific)
+  # -------------------------
   - key: orcanetwork_recent
     parser: orcanetwork_recent_sightings
     url: https://www.orcanetwork.org/recent-sightings
     area: Salish Sea (offshore), BC/WA, Canada/USA
     latitude: 48.45
     longitude: -123.05
-    uncertain_offshore_nudge:
-      dlat: 0.00
-      dlon: 0.00
-    max_items: 18
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 22
 
   - key: eaglewing_daily
-    parser: eaglewing_daily_sighting_report
+    parser: generic_dated_page
     url: https://eaglewingtours.com/daily-sighting-report/
     area: Victoria (offshore), BC, Canada
     latitude: 48.41
     longitude: -123.45
-    uncertain_offshore_nudge:
-      dlat: 0.00
-      dlon: 0.00
-    max_items: 10
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 14
 
   - key: victoria_whalewatching_log
-    parser: victoriawhalewatching_captains_log
-    url: https://www.victoriawhalewatching.com/captains_log/new-year-new-encounters-orcas-lead-the-way-into-2026/
+    parser: generic_dated_page
+    url: https://www.victoriawhalewatching.com/captains_log/
     area: Juan de Fuca Strait (offshore), BC, Canada
     latitude: 48.40
     longitude: -124.10
-    uncertain_offshore_nudge:
-      dlat: 0.00
-      dlon: 0.00
-    max_items: 6
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 10
+
+  - key: orcawhalewatch_sightings
+    parser: generic_dated_page
+    url: https://orcawhalewatch.com/sightings/
+    area: San Juan Islands (offshore), WA, USA
+    latitude: 48.55
+    longitude: -123.15
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 12
 
   - key: monterey_sightings
-    parser: montereybay_sightings
+    parser: generic_dated_page
     url: https://montereybaywhalewatch.com/sightings/slstcurr/
     area: Monterey Bay (offshore), CA, USA
     latitude: 36.80
     longitude: -122.10
-    uncertain_offshore_nudge:
-      dlat: 0.00
-      dlon: 0.00
-    max_items: 10
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 14
 
   - key: dolphinsafari_log
-    parser: dolphinsafari_sightings_log
+    parser: generic_dated_page
     url: https://www.dolphinsafari.com/sightings-log/
     area: Dana Point (offshore), CA, USA
     latitude: 33.45
     longitude: -117.75
-    uncertain_offshore_nudge:
-      dlat: 0.00
-      dlon: 0.00
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 14
+
+  - key: sanjuan_safaris_blog
+    parser: generic_dated_page
+    url: https://www.sanjuansafaris.com/blog/
+    area: San Juan Islands (offshore), WA, USA
+    latitude: 48.55
+    longitude: -123.15
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     max_items: 10
 
+  - key: whales_com_reports
+    parser: generic_dated_page
+    url: https://www.whales.com/category/whale-reports/
+    area: San Juan Islands (offshore), WA, USA
+    latitude: 48.55
+    longitude: -123.15
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 10
+
+  - key: juneau_blog
+    parser: generic_dated_page
+    url: https://www.juneauwhalewatch.com/blog/
+    area: Juneau (offshore), AK, USA
+    latitude: 58.35
+    longitude: -134.55
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 10
+
+  # -------------------------
+  # HAWAII (huge humpback volume in winter)
+  # -------------------------
   - key: hawaiianadventures_weekly
-    parser: hawaiianadventures_weekly_whale_report
+    parser: generic_dated_page
     url: https://www.hawaiianadventureskona.com/humpback-whales/weekly-whale-report/
     area: Kona (offshore), HI, USA
     latitude: 19.70
     longitude: -156.10
-    uncertain_offshore_nudge:
-      dlat: 0.00
-      dlon: 0.00
-    max_items: 8
-
-  - key: akureyri_blog
-    parser: whalewatchingakureyri_blog
-    url: https://www.whalewatchingakureyri.is/new-blog/2026/1/14/wednesday-14-january-2026
-    area: Eyjafjordur (offshore), Akureyri, Iceland
-    latitude: 65.75
-    longitude: -18.20
-    uncertain_offshore_nudge:
-      dlat: 0.00
-      dlon: 0.00
-    max_items: 8
-
-  - key: elding_diary
-    parser: elding_whale_diary
-    url: https://elding.is/whale-diary
-    area: Faxafloi Bay (offshore), Reykjavik, Iceland
-    latitude: 64.20
-    longitude: -22.40
-    uncertain_offshore_nudge:
-      dlat: 0.00
-      dlon: 0.00
-    max_items: 10
-
-  - key: seatrips_diary
-    parser: seatrips_whale_diary
-    url: https://seatrips.is/news/whale-diary-january/
-    area: Reykjavik (offshore), Iceland
-    latitude: 64.18
-    longitude: -22.60
-    uncertain_offshore_nudge:
-      dlat: 0.00
-      dlon: 0.00
-    max_items: 8
-
-  - key: whale_watch_wa
-    parser: whalewatchwesternaustralia_daily
-    url: https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/
-    area: Bremer Canyon (offshore), WA, Australia
-    latitude: -34.70
-    longitude: 119.90
-    uncertain_offshore_nudge:
-      dlat: 0.00
-      dlon: 0.00
-    max_items: 10
-
-  - key: pirsa_sharks
-    parser: pirsa_shark_sightings
-    url: https://pir.sa.gov.au/fishing-and-aquaculture/recreational-fishing/reporting/shark-sightings
-    area: South Australia (offshore), Australia
-    latitude: -35.10
-    longitude: 138.30
-    uncertain_offshore_nudge:
-      dlat: 0.00
-      dlon: 0.00
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     max_items: 12
 
   - key: hawaii_newsnow_article
-    parser: article_basic
+    parser: generic_article
     url: https://www.hawaiinewsnow.com/2026/01/12/humpback-whale-mugs-boat-lahaina-several-times/
     area: Lahaina (offshore), Maui, HI, USA
     latitude: 20.88
     longitude: -156.70
-    uncertain_offshore_nudge:
-      dlat: 0.00
-      dlon: 0.00
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     max_items: 2
+
+  # -------------------------
+  # NEW ZEALAND (Kaikōura = sperm whales)
+  # -------------------------
+  - key: nz_whalewatch_ajaxreport
+    parser: generic_dated_page
+    url: https://www.whalewatch.co.nz/ajaxreport
+    area: Kaikoura (offshore), New Zealand
+    latitude: -42.45
+    longitude: 173.75
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 14
+    force_species: ["Sperm whale", "Humpback"]
+
+  - key: nz_kaikoura_blog
+    parser: generic_dated_page
+    url: https://www.kaikourawhalewatching.co.nz/blog/
+    area: Kaikoura (offshore), New Zealand
+    latitude: -42.45
+    longitude: 173.75
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 10
+
+  # -------------------------
+  # ICELAND
+  # -------------------------
+  - key: akureyri_blog
+    parser: generic_dated_page
+    url: https://www.whalewatchingakureyri.is/new-blog
+    area: Eyjafjordur (offshore), Akureyri, Iceland
+    latitude: 65.75
+    longitude: -18.20
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 10
+
+  - key: elding_diary
+    parser: generic_dated_page
+    url: https://elding.is/whale-diary
+    area: Faxafloi Bay (offshore), Reykjavik, Iceland
+    latitude: 64.20
+    longitude: -22.40
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 14
+
+  - key: seatrips_diary
+    parser: generic_dated_page
+    url: https://seatrips.is/news/whale-diary-january/
+    area: Reykjavik (offshore), Iceland
+    latitude: 64.18
+    longitude: -22.60
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 12
+
+  # -------------------------
+  # NORWAY
+  # -------------------------
+  - key: no_brim_blog
+    parser: generic_dated_page
+    url: https://brimexplorer.com/blog/
+    area: Tromso (offshore), Norway
+    latitude: 69.65
+    longitude: 18.95
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 10
+
+  - key: no_whalesafari_blog
+    parser: generic_dated_page
+    url: https://www.whalesafari.no/en/blog/
+    area: Andenes (offshore), Norway
+    latitude: 69.32
+    longitude: 15.55
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 10
+
+  # -------------------------
+  # AUSTRALIA (orcas + sharks)
+  # -------------------------
+  - key: whale_watch_wa
+    parser: generic_dated_page
+    url: https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/
+    area: Bremer Canyon (offshore), WA, Australia
+    latitude: -34.70
+    longitude: 119.90
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 12
+
+  - key: pirsa_sharks
+    parser: generic_dated_page
+    url: https://pir.sa.gov.au/fishing-and-aquaculture/recreational-fishing/reporting/shark-sightings
+    area: South Australia (offshore), Australia
+    latitude: -35.10
+    longitude: 138.30
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 18
+    force_species: ["Great White Shark"]
+
+  - key: nsw_shark_activity
+    parser: generic_dated_page
+    url: https://www.sharksmart.com.au/shark-activity
+    area: NSW Coast (offshore), Australia
+    latitude: -33.50
+    longitude: 151.40
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 10
+    force_species: ["Great White Shark"]
+
+  # -------------------------
+  # SOUTH AFRICA
+  # -------------------------
+  - key: za_sharkspotters_main
+    parser: generic_dated_page
+    url: https://www.sharkspotters.org.za/
+    area: Cape Town (offshore), South Africa
+    latitude: -34.15
+    longitude: 18.35
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 6
+    force_species: ["Great White Shark"]
+
+  # -------------------------
+  # UK / IRELAND
+  # -------------------------
+  - key: uk_seawatch_sightings
+    parser: generic_dated_page
+    url: https://www.seawatchfoundation.org.uk/sightings/
+    area: United Kingdom (offshore)
+    latitude: 57.50
+    longitude: -6.50
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 8
+
+  - key: uk_hwdt_sightings
+    parser: generic_dated_page
+    url: https://hwdt.org/sightings/
+    area: Hebrides (offshore), Scotland, UK
+    latitude: 57.60
+    longitude: -7.10
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 8
+
+  - key: ie_iwdg_sightings
+    parser: generic_dated_page
+    url: https://iwdg.ie/sightings/
+    area: Ireland (offshore)
+    latitude: 52.20
+    longitude: -9.20
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 8
+
+  # -------------------------
+  # AZORES / PORTUGAL / SPAIN
+  # -------------------------
+  - key: pt_futurismo_blog
+    parser: generic_dated_page
+    url: https://www.futurismo.pt/en/blog/
+    area: Azores (offshore), Portugal
+    latitude: 37.75
+    longitude: -25.50
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 8
+
+  - key: es_tenerife_blog
+    parser: generic_dated_page
+    url: https://www.oceanexplorer-tenerife.com/blog/
+    area: Tenerife (offshore), Canary Islands, Spain
+    latitude: 28.05
+    longitude: -16.75
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 6
+
+  # -------------------------
+  # JAPAN (coverage)
+  # -------------------------
+  - key: jp_okinawa_whalewatching_blog
+    parser: generic_dated_page
+    url: https://www.okinawa-whalewatching.com/blog/
+    area: Okinawa (offshore), Japan
+    latitude: 26.30
+    longitude: 127.70
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    max_items: 6
