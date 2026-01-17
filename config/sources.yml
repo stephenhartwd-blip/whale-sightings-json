@@ -14,3 +14,480 @@ species_targets:
   Humpback: 0.40
   Sperm whale: 0.10
   Great White Shark: 0.10
+
+sources:
+  # -------------------------
+  # CANADA / USA (Salish Sea & Pacific NW)
+  # -------------------------
+  - key: orcanetwork_recent
+    parser: orcanetwork_recent_sightings
+    url: https://www.orcanetwork.org/recent-sightings
+    area: "Salish Sea (offshore), BC/WA, Canada/USA"
+    latitude: 48.45
+    longitude: -123.05
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: whalesanddolphinsbc_latest
+    parser: generic_dated_page
+    url: https://whalesanddolphinsbc.com/latest-sightings/
+    area: "Vancouver Island (offshore), BC, Canada"
+    latitude: 48.55
+    longitude: -123.45
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.02, dlon: -0.03 }
+
+  - key: eaglewing_daily
+    parser: eaglewing_daily_sighting_report
+    url: https://eaglewingtours.com/daily-sighting-report/
+    area: "Victoria (offshore), BC, Canada"
+    latitude: 48.41
+    longitude: -123.45
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: victoria_whalewatching_log
+    parser: victoriawhalewatching_captains_log
+    url: https://www.victoriawhalewatching.com/captains_log/
+    area: "Juan de Fuca Strait (offshore), BC, Canada"
+    latitude: 48.40
+    longitude: -124.10
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: sanjuan_safaris_whale_report
+    parser: article_basic
+    url: https://www.sanjuansafaris.com/whale-report/
+    area: "San Juan Islands (offshore), WA, USA"
+    latitude: 48.55
+    longitude: -123.15
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # USA (California)
+  # -------------------------
+  - key: monterey_sightings
+    parser: montereybay_sightings
+    url: https://montereybaywhalewatch.com/sightings/slstcurr/
+    area: "Monterey Bay (offshore), CA, USA"
+    latitude: 36.80
+    longitude: -122.10
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: monterey_bay_whalewatch_sightings_alt
+    parser: generic_dated_page
+    url: https://www.gowhales.com/sightings/slst0303/
+    area: "Monterey Bay (offshore), CA, USA"
+    latitude: 36.62
+    longitude: -122.05
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
+
+  - key: captain_dave_sightings_log
+    parser: generic_dated_page
+    url: https://dolphinsafari.com/category/sightings-log/
+    area: "Dana Point (offshore), CA, USA"
+    latitude: 33.43
+    longitude: -117.70
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
+
+  - key: dolphinsafari_log
+    parser: dolphinsafari_sightings_log
+    url: https://www.dolphinsafari.com/sightings-log/
+    area: "Dana Point (offshore), CA, USA"
+    latitude: 33.45
+    longitude: -117.75
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: san_diego_whale_watch_recent
+    parser: generic_dated_page
+    url: https://sdwhalewatch.com/category/recent-sightings/
+    area: "San Diego (offshore), CA, USA"
+    latitude: 32.70   # <-- fixed (was latitude::)
+    longitude: -117.45
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
+
+  - key: next_level_sailing_report
+    parser: generic_dated_page
+    url: https://www.nextlevelsailing.com/blog/whale-watching-report/
+    area: "San Diego (offshore), CA, USA"
+    latitude: 32.73
+    longitude: -117.45
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
+
+  # -------------------------
+  # USA (Hawaii)
+  # -------------------------
+  - key: hawaiianadventures_weekly
+    parser: hawaiianadventures_weekly_whale_report
+    url: https://www.hawaiianadventureskona.com/humpback-whales/weekly-whale-report/
+    area: "Kona (offshore), HI, USA"
+    latitude: 19.70
+    longitude: -156.10
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: hawaii_newsnow_article
+    parser: article_basic
+    url: https://www.hawaiinewsnow.com/2026/01/12/humpback-whale-mugs-boat-lahaina-several-times/
+    area: "Lahaina (offshore), Maui, HI, USA"
+    latitude: 20.88
+    longitude: -156.70
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # CANADA (Atlantic / Bay of Fundy)
+  # -------------------------
+  - key: brier_island_whale_sightings
+    parser: generic_dated_page
+    url: https://brierislandwhalewatch.com/whale-watching/whale-sightings/
+    area: "Bay of Fundy (offshore), NS, Canada"
+    latitude: 44.25
+    longitude: -66.40
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
+
+  - key: quoddy_link_marine_blog
+    parser: generic_dated_page
+    url: https://quoddylinkmarine.com/blog/
+    area: "Bay of Fundy (offshore), NB, Canada"
+    latitude: 44.95
+    longitude: -66.85
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
+
+  # -------------------------
+  # ICELAND (multiple diaries)
+  # -------------------------
+  - key: akureyri_blog
+    parser: whalewatchingakureyri_blog
+    url: https://www.whalewatchingakureyri.is/new-blog/
+    area: "Eyjafjordur (offshore), Akureyri, Iceland"
+    latitude: 65.75
+    longitude: -18.20
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: elding_diary
+    parser: elding_whale_diary
+    url: https://elding.is/whale-diary
+    area: "Faxafloi Bay (offshore), Reykjavik, Iceland"
+    latitude: 64.20
+    longitude: -22.40
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: seatrips_diary
+    parser: seatrips_whale_diary
+    url: https://seatrips.is/news/whale-diary-january/
+    area: "Reykjavik (offshore), Iceland"
+    latitude: 64.18
+    longitude: -22.60
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # AUSTRALIA (whales + sharks)
+  # -------------------------
+  - key: whale_watch_wa
+    parser: whalewatchwesternaustralia_daily
+    url: https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/
+    area: "Bremer Canyon (offshore), WA, Australia"
+    latitude: -34.70
+    longitude: 119.90
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: whale_watching_sydney_sightings
+    parser: generic_dated_page
+    url: https://www.whalewatchingsydney.com.au/whale-sightings/
+    area: "Sydney (offshore), NSW, Australia"
+    latitude: -33.85
+    longitude: 151.55
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
+
+  - key: captain_cook_sydney_sightings
+    parser: generic_dated_page
+    url: https://www.captaincook.com.au/sydney/whale-watching/whale-sightings/
+    area: "Sydney (offshore), NSW, Australia"
+    latitude: -33.87
+    longitude: 151.55
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
+
+  - key: pirsa_shark_sightings
+    parser: generic_dated_page
+    url: https://pir.sa.gov.au/fishing-and-aquaculture/recreational-fishing/reporting/shark-sightings
+    area: "South Australia (offshore), Australia"
+    latitude: -35.20
+    longitude: 136.20
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
+
+  - key: nsw_sharksmart_activity
+    parser: generic_dated_page
+    url: https://www.sharksmart.nsw.gov.au/shark-activity
+    area: "New South Wales (offshore), Australia"
+    latitude: -33.90
+    longitude: 151.60
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
+
+  - key: wa_sharksmart_activity
+    parser: generic_dated_page
+    url: https://www.sharksmart.com.au/shark-activity/
+    area: "Western Australia (offshore)"
+    latitude: -32.20
+    longitude: 115.40
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
+
+  # -------------------------
+  # UK / Ireland (sightings aggregators)
+  # -------------------------
+  - key: uk_seawatch_sightings
+    parser: article_basic
+    url: https://www.seawatchfoundation.org.uk/sightings/
+    area: "United Kingdom (offshore)"
+    latitude: 57.50
+    longitude: -6.50
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: hwdt_whale_track_recent
+    parser: generic_dated_page
+    url: https://www.whaletrack.hwdt.org/
+    area: "Hebrides (offshore), Scotland, UK"
+    latitude: 57.70
+    longitude: -6.90
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
+
+  - key: uk_hwdt_sightings
+    parser: article_basic
+    url: https://hwdt.org/sightings/
+    area: "Hebrides (offshore), Scotland, UK"
+    latitude: 57.60
+    longitude: -7.10
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # RSS feeds (extra global/UK/US coverage)
+  # -------------------------
+  - key: wdc_uk_feed
+    parser: rss_feed
+    url: https://uk.whales.org/feed/
+    area: "UK waters (offshore)"
+    latitude: 50.00
+    longitude: -5.60
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.02, dlon: -0.02 }
+
+  - key: wdc_us_feed
+    parser: rss_feed
+    url: https://us.whales.org/feed/
+    area: "US Atlantic (offshore)"
+    latitude: 41.60
+    longitude: -70.30
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.02, dlon: -0.02 }
+
+  - key: world_cetacean_alliance_feed
+    parser: rss_feed
+    url: https://worldcetaceanalliance.org/feed/
+    area: "Global (offshore)"
+    latitude: 0.00
+    longitude: -20.00
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.02, dlon: -0.02 }
+
+  # -------------------------
+  # SOUTH AFRICA (shark program)
+  # -------------------------
+  - key: za_sharkspotters
+    parser: article_basic
+    url: https://www.sharkspotters.org.za/
+    area: "Cape Town (offshore), South Africa"
+    latitude: -34.15
+    longitude: 18.35
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Great White Shark"]
+
+  # -------------------------
+  # PORTUGAL (Azores anchor)
+  # -------------------------
+  - key: pt_azores_whales
+    parser: article_basic
+    url: https://www.visitazores.com/en/whale-watching
+    area: "Azores (offshore), Portugal"
+    latitude: 38.55
+    longitude: -28.10
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # iNaturalist (14 global/regional queries)
+  # -------------------------
+  - key: inat_orca_bc
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    place_query: "British Columbia"
+    area: "British Columbia (iNaturalist)"
+    latitude: 49.0
+    longitude: -126.0
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Orca"]
+
+  - key: inat_orca_washington
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    place_query: "Washington"
+    area: "Washington (iNaturalist)"
+    latitude: 48.2
+    longitude: -123.3
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Orca"]
+
+  - key: inat_orca_norway
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    place_query: "Norway"
+    area: "Norway (iNaturalist)"
+    latitude: 69.5
+    longitude: 18.9
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Orca"]
+
+  - key: inat_orca_uk
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    place_query: "United Kingdom"
+    area: "United Kingdom (iNaturalist)"
+    latitude: 57.5
+    longitude: -6.5
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Orca"]
+
+  - key: inat_orca_new_zealand
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    place_query: "New Zealand"
+    area: "New Zealand (iNaturalist)"
+    latitude: -41.0
+    longitude: 174.0
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Orca"]
+
+  - key: inat_orca_japan
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    place_query: "Japan"
+    area: "Japan (iNaturalist)"
+    latitude: 43.0
+    longitude: 145.0
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Orca"]
+
+  - key: inat_orca_argentina
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    place_query: "Argentina"
+    area: "Argentina (iNaturalist)"
+    latitude: -42.8
+    longitude: -63.6
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Orca"]
+
+  - key: inat_humpback_hawaii
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Hawaii"
+    area: "Hawaii (iNaturalist)"
+    latitude: 20.7
+    longitude: -156.3
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Humpback"]
+
+  - key: inat_humpback_california
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "California"
+    area: "California (iNaturalist)"
+    latitude: 34.1
+    longitude: -120.4
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Humpback"]
+
+  - key: inat_humpback_mexico
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Mexico"
+    area: "Mexico (iNaturalist)"
+    latitude: 23.0
+    longitude: -109.6
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Humpback"]
+
+  - key: inat_humpback_iceland
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Iceland"
+    area: "Iceland (iNaturalist)"
+    latitude: 64.9
+    longitude: -22.5
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Humpback"]
+
+  - key: inat_humpback_australia
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Australia"
+    area: "Australia (iNaturalist)"
+    latitude: -33.9
+    longitude: 151.6
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Humpback"]
+
+  - key: inat_sperm_whale_azores
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    place_query: "Azores"
+    area: "Azores (iNaturalist)"
+    latitude: 38.6
+    longitude: -28.1
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Sperm whale"]
+
+  - key: inat_great_white_south_africa
+    parser: inaturalist_api
+    taxon_name: "Carcharodon carcharias"
+    place_query: "South Africa"
+    area: "South Africa (iNaturalist)"
+    latitude: -34.2
+    longitude: 18.4
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Great White Shark"]
