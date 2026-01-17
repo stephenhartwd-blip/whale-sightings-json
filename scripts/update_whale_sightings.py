@@ -13,7 +13,6 @@ id, name, species, info, date, latitude, longitude, area, source, behaviors
 
 from __future__ import annotations
 
-import hashlib
 import json
 import os
 import re
@@ -32,15 +31,11 @@ MONTHS_FULL = (
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
 )
-MONTHS_ABBR = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 
-MONTH_MAP: Dict[str, int] = {}
-for i, m in enumerate(MONTHS_FULL, start=1):
-    MONTH_MAP[m.lower()] = i
-for i, m in enumerate(MONTHS_ABBR, start=1):
-    MONTH_MAP[m.lower()] = i
-
-WEEKDAYS = ("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+MONTHS_ABBR = (
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+    "Jul", "Aug", "Sep", "Sept", "Oct", "Nov", "Dec"
+)
 
 # -------------------------
 # Helpers
@@ -123,22 +118,18 @@ def parse_date_from_url(url: str, tz_name: str) -> Optional[datetime]:
         return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
     return None
 
-def _infer_year_for_partial_date(year: int, mo: int, d: int, today: datetime, tz_name: str) -> datetime:
-    dt = datetime(year, mo, d, tzinfo=tz.gettz(tz_name))
-    # If inferred date is in the future (common around New Year), subtract a year.
-    if dt.date() > today.date():
-        dt = datetime(year - 1, mo, d, tzinfo=tz.gettz(tz_name))
-    return dt
-
 def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[datetime]:
-    s = s.strip()
+    s = s.strip().replace("\u00a0", " ")  # NBSP -> space
+    s = re.sub(r"\s+", " ", s)
 
-    # Strip weekday prefixes like "Fri, " or "Friday "
-    wd_re = rf"^(?:{'|'.join(WEEKDAYS)})(?:[a-z]+)?[,]?\s+"
-    s = re.sub(wd_re, "", s, flags=re.IGNORECASE).strip()
-
-    # ISO yyyy-mm-dd
+    # ISO
     m = re.match(r"^(\d{4})-(\d{2})-(\d{2})$", s)
+    if m:
+        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
+
+    # yyyy/mm/dd
+    m = re.match(r"^(\d{4})/(\d{1,2})/(\d{1,2})$", s)
     if m:
         y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
         return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
@@ -151,13 +142,7 @@ def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[da
             y += 2000
         return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
 
-    # mm/dd (NO YEAR) -> assume current year (and adjust if "future")
-    m = re.match(r"^(\d{1,2})/(\d{1,2})$", s)
-    if m:
-        mo, d = int(m.group(1)), int(m.group(2))
-        return _infer_year_for_partial_date(today.year, mo, d, today, tz_name)
-
-    # dd.mm.yyyy or dd.mm.yy
+    # dd.mm.yyyy (common in some locales)
     m = re.match(r"^(\d{1,2})\.(\d{1,2})\.(\d{2,4})$", s)
     if m:
         d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
@@ -165,46 +150,62 @@ def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[da
             y += 2000
         return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
 
-    # MonthName Day (optional year): "January 14" / "January 14, 2026"
-    month_full_re = rf"(?:{'|'.join(MONTHS_FULL)})"
-    m = re.match(rf"^({month_full_re})\s+(\d{{1,2}})(?:,?\s+(\d{{4}}))?$", s, flags=re.IGNORECASE)
-    if m:
-        mo_name = m.group(1).lower()
-        d = int(m.group(2))
-        y = int(m.group(3)) if m.group(3) else today.year
-        mo = MONTH_MAP.get(mo_name)
-        if not mo:
-            return None
-        if m.group(3):
-            return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
-        return _infer_year_for_partial_date(y, mo, d, today, tz_name)
-
-    # MonAbbr Day (optional year): "Jan 14" / "Jan 14, 2026"
-    month_abbr_re = rf"(?:{'|'.join(MONTHS_ABBR)})\.?"
-    m = re.match(rf"^({month_abbr_re})\s+(\d{{1,2}})(?:,?\s+(\d{{4}}))?$", s, flags=re.IGNORECASE)
-    if m:
-        mo_name = m.group(1).replace(".", "").lower()
-        d = int(m.group(2))
-        y = int(m.group(3)) if m.group(3) else today.year
-        mo = MONTH_MAP.get(mo_name)
-        if not mo:
-            return None
-        if m.group(3):
-            return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
-        return _infer_year_for_partial_date(y, mo, d, today, tz_name)
-
-    # Day Month (optional year): "14 Jan 2026" / "14 January"
-    m = re.match(rf"^(\d{{1,2}})\s+({month_abbr_re}|{month_full_re})(?:,?\s+(\d{{4}}))?$", s, flags=re.IGNORECASE)
+    # "15 Jan 2026" / "15 January 2026" (also allows 15th, optional comma)
+    m = re.match(
+        r"^(\d{1,2})(?:st|nd|rd|th)?\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec|January|February|March|April|May|June|July|August|September|October|November|December),?\s+(\d{4})$",
+        s,
+        re.IGNORECASE,
+    )
     if m:
         d = int(m.group(1))
-        mo_name = m.group(2).replace(".", "").lower()
-        y = int(m.group(3)) if m.group(3) else today.year
-        mo = MONTH_MAP.get(mo_name)
-        if not mo:
-            return None
-        if m.group(3):
+        mon = m.group(2).lower()
+        y = int(m.group(3))
+        mon_map = {
+            "jan": 1, "january": 1,
+            "feb": 2, "february": 2,
+            "mar": 3, "march": 3,
+            "apr": 4, "april": 4,
+            "may": 5,
+            "jun": 6, "june": 6,
+            "jul": 7, "july": 7,
+            "aug": 8, "august": 8,
+            "sep": 9, "sept": 9, "september": 9,
+            "oct": 10, "october": 10,
+            "nov": 11, "november": 11,
+            "dec": 12, "december": 12,
+        }
+        mo = mon_map.get(mon)
+        if mo:
             return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
-        return _infer_year_for_partial_date(y, mo, d, today, tz_name)
+
+    # "Jan 15 2026" / "Jan 15, 2026" / "January 15" (infer year)
+    month_re = r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec|January|February|March|April|May|June|July|August|September|October|November|December)"
+    m = re.match(rf"^({month_re})\s+(\d{{1,2}})(?:,?\s+(\d{{4}}))?$", s, re.IGNORECASE)
+    if m:
+        mon = m.group(1).lower()
+        d = int(m.group(2))
+        year = int(m.group(3)) if m.group(3) else today.year
+        mon_map = {
+            "jan": 1, "january": 1,
+            "feb": 2, "february": 2,
+            "mar": 3, "march": 3,
+            "apr": 4, "april": 4,
+            "may": 5,
+            "jun": 6, "june": 6,
+            "jul": 7, "july": 7,
+            "aug": 8, "august": 8,
+            "sep": 9, "sept": 9, "september": 9,
+            "oct": 10, "october": 10,
+            "nov": 11, "november": 11,
+            "dec": 12, "december": 12,
+        }
+        mo = mon_map.get(mon)
+        if mo:
+            dt = datetime(year, mo, d, tzinfo=tz.gettz(tz_name))
+            # handle year boundary if inferred date is "future" and no explicit year
+            if dt.date() > today.date() and not m.group(3):
+                dt = dt.replace(year=year - 1)
+            return dt
 
     return None
 
@@ -220,7 +221,7 @@ def detect_species(text: str, force: Optional[List[str]] = None) -> List[str]:
         hits.append("Orca")
     if "humpback" in t:
         hits.append("Humpback")
-    if "sperm whale" in t:
+    if "sperm whale" in t or "spermwhale" in t:
         hits.append("Sperm whale")
     if any(k in t for k in ["great white", "white shark"]):
         hits.append("Great White Shark")
@@ -230,16 +231,11 @@ def detect_species(text: str, force: Optional[List[str]] = None) -> List[str]:
     # de-dupe preserve order
     seen = set()
     out: List[str] = []
-    for s in hits:
-        if s in ALLOWED_SPECIES and s not in seen:
-            out.append(s)
-            seen.add(s)
+    for sp in hits:
+        if sp in ALLOWED_SPECIES and sp not in seen:
+            out.append(sp)
+            seen.add(sp)
     return out
-
-def fingerprint_text(s: str) -> str:
-    # Stable, deterministic fingerprint to allow multiple same-day entries from the same source.
-    h = hashlib.sha1(s.encode("utf-8", errors="ignore")).hexdigest()
-    return h[:12]
 
 @dataclass
 class Candidate:
@@ -253,7 +249,6 @@ class Candidate:
     longitude: float
     behaviors: List[str]
     source_key: str
-    fingerprint: str
 
 # -------------------------
 # Generic “dated sections” extraction
@@ -263,23 +258,16 @@ def extract_dated_sections(text: str, tz_name: str, today: datetime) -> List[Tup
     """
     Finds date markers in text and splits into sections.
     Returns list of (datetime, section_text).
-    Works with repeated same-day markers like:
-      1/16 Humpback...
-      1/16 Orca...
     """
-    month_full_re = rf"(?:{'|'.join(MONTHS_FULL)})"
-    month_abbr_re = rf"(?:{'|'.join(MONTHS_ABBR)})\.?"
-    weekday_re = rf"(?:{'|'.join(WEEKDAYS)})(?:[a-z]+)?[,]?\s+"
-
     patterns = [
-        r"\b\d{4}-\d{2}-\d{2}\b",                          # 2026-01-14
-        r"\b\d{1,2}/\d{1,2}/\d{2,4}\b",                    # 1/14/2026
-        r"\b\d{1,2}/\d{1,2}\b",                            # 1/14   (NO YEAR)  <-- critical for many logs
-        r"\b\d{1,2}\.\d{1,2}\.\d{2,4}\b",                  # 14.01.2026
-        rf"\b{weekday_re}?{month_full_re}\s+\d{{1,2}}(?:,?\s+\d{{4}})?\b",  # Fri, January 14, 2026
-        rf"\b{weekday_re}?{month_abbr_re}\s+\d{{1,2}}(?:,?\s+\d{{4}})?\b",  # Fri, Jan 14, 2026
-        rf"\b\d{{1,2}}\s+{month_abbr_re}(?:,?\s+\d{{4}})?\b",               # 14 Jan 2026
-        rf"\b\d{{1,2}}\s+{month_full_re}(?:,?\s+\d{{4}})?\b",               # 14 January 2026
+        r"\b\d{4}-\d{2}-\d{2}\b",  # 2026-01-14
+        r"\b\d{4}/\d{1,2}/\d{1,2}\b",  # 2026/1/14
+        r"\b\d{1,2}/\d{1,2}/\d{2,4}\b",  # 1/14/2026
+        r"\b\d{1,2}\.\d{1,2}\.\d{2,4}\b",  # 14.01.2026
+        # 15 Jan 2026 / 15 January 2026 / 15th Jan, 2026
+        r"\b\d{1,2}(?:st|nd|rd|th)?\s+(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec|January|February|March|April|May|June|July|August|September|October|November|December),?\s+\d{4}\b",
+        # Jan 15, 2026 / January 15
+        rf"\b(?:{'|'.join(MONTHS_ABBR + MONTHS_FULL)})\s+\d{{1,2}}(?:,?\s+\d{{4}})?\b",
     ]
 
     matches: List[Tuple[int, int, str]] = []
@@ -291,14 +279,21 @@ def extract_dated_sections(text: str, tz_name: str, today: datetime) -> List[Tup
         return []
 
     matches.sort(key=lambda x: x[0])
+    cleaned: List[Tuple[int, int, str]] = []
+    last_end = -1
+    for s, e, val in matches:
+        if s < last_end:
+            continue
+        cleaned.append((s, e, val))
+        last_end = e
 
     out: List[Tuple[datetime, str]] = []
-    for i, (spos, epos, dstr) in enumerate(matches):
+    for i, (s, e, dstr) in enumerate(cleaned):
         dt = best_effort_parse_date(dstr, tz_name, today)
         if not dt:
             continue
-        section_start = epos
-        section_end = matches[i + 1][0] if i + 1 < len(matches) else len(text)
+        section_start = e
+        section_end = cleaned[i + 1][0] if i + 1 < len(cleaned) else len(text)
         section = text[section_start:section_end].strip()
         if len(section) < 20:
             continue
@@ -332,8 +327,6 @@ def build_candidates_from_generic_source(
     sections = extract_dated_sections(text, tz_name, today)
 
     candidates: List[Candidate] = []
-    nud = cfg.get("uncertain_offshore_nudge") or {}
-    lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
 
     if sections:
         for dt, section in sections:
@@ -341,6 +334,8 @@ def build_candidates_from_generic_source(
             for species in sp[:2]:
                 name = f"{species} sighting ({area})" if area else f"{species} sighting"
                 info = f"Parsed from {source_key} on {to_date_str(dt)}."
+                nud = cfg.get("uncertain_offshore_nudge") or {}
+                lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
                 candidates.append(
                     Candidate(
                         date=dt,
@@ -349,20 +344,20 @@ def build_candidates_from_generic_source(
                         info=info,
                         area=area,
                         source=url,
-                        latitude=float(lat),
-                        longitude=float(lon),
+                        latitude=lat,
+                        longitude=lon,
                         behaviors=infer_behaviors(section),
                         source_key=source_key,
-                        fingerprint=fingerprint_text(section),
                     )
                 )
     else:
-        # No dated sections: single entry using best-guess date
         dt = parse_date_from_url(url, tz_name) or today
         sp = detect_species(text, force=force_species)
         for species in sp[:2]:
             name = f"{species} sighting ({area})" if area else f"{species} sighting"
             info = f"Parsed from {source_key} (single-page) on {to_date_str(dt)}."
+            nud = cfg.get("uncertain_offshore_nudge") or {}
+            lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
             candidates.append(
                 Candidate(
                     date=dt,
@@ -371,11 +366,10 @@ def build_candidates_from_generic_source(
                     info=info,
                     area=area,
                     source=url,
-                    latitude=float(lat),
-                    longitude=float(lon),
+                    latitude=lat,
+                    longitude=lon,
                     behaviors=infer_behaviors(text),
                     source_key=source_key,
-                    fingerprint=fingerprint_text(text[:2000]),
                 )
             )
 
@@ -383,7 +377,7 @@ def build_candidates_from_generic_source(
     return candidates[:max_items]
 
 # -------------------------
-# Specific parser: Orca Network
+# Specific parser: Orca Network (kept, slightly cleaned)
 # -------------------------
 
 def parse_orcanetwork_recent_sightings(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
@@ -475,7 +469,6 @@ def parse_orcanetwork_recent_sightings(cfg: Dict[str, Any], session: requests.Se
                     longitude=float(lon),
                     behaviors=infer_behaviors(block),
                     source_key=source_key,
-                    fingerprint=fingerprint_text(block),
                 )
             )
 
@@ -492,7 +485,11 @@ def parse_generic(cfg: Dict[str, Any], session: requests.Session, tz_name: str, 
 PARSERS = {
     "orcanetwork_recent_sightings": parse_orcanetwork_recent_sightings,
 
-    # YAML-listed parsers -> mapped to generic parser for now
+    # Clean names used in YAML
+    "generic_dated_page": parse_generic,
+    "generic_article": parse_generic,
+
+    # Backwards compatibility (if any old YAML still references these)
     "eaglewing_daily_sighting_report": parse_generic,
     "victoriawhalewatching_captains_log": parse_generic,
     "montereybay_sightings": parse_generic,
@@ -536,9 +533,12 @@ def compute_species_targets(cfg: Dict[str, Any], total: int) -> Dict[str, int]:
         i = 0
         while diff != 0 and i < 1000:
             sp = order[i % len(order)]
-            wanted[sp] = max(0, wanted.get(sp, 0) + (1 if diff > 0 else -1))
-            diff = total - sum(wanted.values())
+            if sp in wanted:
+                wanted[sp] += 1 if diff > 0 else -1
+                diff = total - sum(wanted.values())
             i += 1
+        for sp in list(wanted.keys()):
+            wanted[sp] = max(0, wanted[sp])
 
     return wanted
 
@@ -564,8 +564,7 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
     chosen_keys = set()
 
     def pick_one(c: Candidate) -> None:
-        # Allow multiple same-day sightings from the same source by using a fingerprint.
-        k = (to_date_str(c.date), c.species, c.source_key, c.fingerprint)
+        k = (to_date_str(c.date), c.species, c.area, c.source)
         if k in chosen_keys:
             return
         chosen.append(c)
@@ -585,7 +584,7 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
             for c in by_species[sp]:
                 if not is_recent(c):
                     break
-                k = (to_date_str(c.date), c.species, c.source_key, c.fingerprint)
+                k = (to_date_str(c.date), c.species, c.area, c.source)
                 if k in chosen_keys:
                     continue
                 pick_one(c)
@@ -598,7 +597,7 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
         while wanted.get(sp, 0) > 0:
             found = False
             for c in by_species[sp]:
-                k = (to_date_str(c.date), c.species, c.source_key, c.fingerprint)
+                k = (to_date_str(c.date), c.species, c.area, c.source)
                 if k in chosen_keys:
                     continue
                 pick_one(c)
@@ -612,7 +611,7 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
         remaining: List[Candidate] = []
         for sp in by_species:
             for c in by_species[sp]:
-                k = (to_date_str(c.date), c.species, c.source_key, c.fingerprint)
+                k = (to_date_str(c.date), c.species, c.area, c.source)
                 if k not in chosen_keys:
                     remaining.append(c)
         remaining.sort(key=lambda c: c.date, reverse=True)
