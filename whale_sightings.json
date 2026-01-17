@@ -1,61 +1,5 @@
 [
   {
-    "id": "2026-12-07-eyjafjordur-humpback-01",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-12-07.",
-    "date": "2026-12-07",
-    "latitude": 65.75,
-    "longitude": -18.2,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-12-04-eyjafjordur-humpback-01",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-12-04.",
-    "date": "2026-12-04",
-    "latitude": 65.75,
-    "longitude": -18.2,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-12-03-eyjafjordur-humpback-01",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-12-03.",
-    "date": "2026-12-03",
-    "latitude": 65.75,
-    "longitude": -18.2,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-01-16-cape-town-white-01",
-    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
-    "species": "Great White Shark",
-    "info": "Parsed from za_sharkspotters (single-page) on 2026-01-16.",
-    "date": "2026-01-16",
-    "latitude": -34.15,
-    "longitude": 18.35,
-    "area": "Cape Town (offshore), South Africa",
-    "source": "https://www.sharkspotters.org.za/",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-01-16-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -72,24 +16,56 @@
     ]
   },
   {
-    "id": "2026-01-16-san-juan-islands-orca-02",
-    "name": "Orca sighting (San Juan Islands (offshore), WA, USA)",
+    "id": "2026-01-16-bremer-canyon-orca-02",
+    "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
     "species": "Orca",
-    "info": "Parsed from sanjuan_safaris_whale_report (single-page) on 2026-01-16.",
+    "info": "Parsed from whale_watch_wa (single-page) on 2026-01-16.",
     "date": "2026-01-16",
-    "latitude": 48.55,
-    "longitude": -123.15,
-    "area": "San Juan Islands (offshore), WA, USA",
-    "source": "https://www.sanjuansafaris.com/whale-report/",
+    "latitude": -34.7,
+    "longitude": 119.9,
+    "area": "Bremer Canyon (offshore), WA, Australia",
+    "source": "https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ]
+  },
+  {
+    "id": "2026-01-16-bremer-canyon-blue-01",
+    "name": "Blue Whale sighting (Bremer Canyon (offshore), WA, Australia)",
+    "species": "Blue Whale",
+    "info": "Parsed from whale_watch_wa (single-page) on 2026-01-16.",
+    "date": "2026-01-16",
+    "latitude": -34.7,
+    "longitude": 119.9,
+    "area": "Bremer Canyon (offshore), WA, Australia",
+    "source": "https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ]
+  },
+  {
+    "id": "2026-01-16-faxafloi-bay-humpback-01",
+    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from elding_diary (single-page) on 2026-01-16.",
+    "date": "2026-01-16",
+    "latitude": 64.2,
+    "longitude": -22.4,
+    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
+    "source": "https://elding.is/whale-diary",
     "behaviors": [
       "reported",
       "hunting",
+      "feeding",
+      "breaching",
       "vocalizing",
       "traveling"
     ]
   },
   {
-    "id": "2026-01-16-san-juan-islands-humpback-01",
+    "id": "2026-01-16-san-juan-islands-humpback-02",
     "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Humpback",
     "info": "Parsed from sanjuan_safaris_whale_report (single-page) on 2026-01-16.",
@@ -106,46 +82,32 @@
     ]
   },
   {
-    "id": "2026-01-15-faxafloi-bay-humpback-01",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-15.",
-    "date": "2026-01-15",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
+    "id": "2026-01-16-san-juan-islands-orca-03",
+    "name": "Orca sighting (San Juan Islands (offshore), WA, USA)",
+    "species": "Orca",
+    "info": "Parsed from sanjuan_safaris_whale_report (single-page) on 2026-01-16.",
+    "date": "2026-01-16",
+    "latitude": 48.55,
+    "longitude": -123.15,
+    "area": "San Juan Islands (offshore), WA, USA",
+    "source": "https://www.sanjuansafaris.com/whale-report/",
     "behaviors": [
       "reported",
-      "breaching"
-    ]
-  },
-  {
-    "id": "2026-01-14-faxafloi-bay-humpback-01",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-14.",
-    "date": "2026-01-14",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
-    "behaviors": [
-      "reported",
-      "feeding",
+      "hunting",
+      "vocalizing",
       "traveling"
     ]
   },
   {
-    "id": "2026-01-13-faxafloi-bay-humpback-01",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
+    "id": "2026-01-12-eyjafjordur-humpback-01",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-13.",
-    "date": "2026-01-13",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
+    "info": "Parsed from akureyri_blog on 2026-01-12.",
+    "date": "2026-01-12",
+    "latitude": 65.75,
+    "longitude": -18.2,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
     "behaviors": [
       "reported"
     ]
@@ -167,66 +129,6 @@
     ]
   },
   {
-    "id": "2026-01-12-bremer-canyon-orca-02",
-    "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
-    "species": "Orca",
-    "info": "Parsed from whale_watch_wa on 2026-01-12.",
-    "date": "2026-01-12",
-    "latitude": -34.7,
-    "longitude": 119.9,
-    "area": "Bremer Canyon (offshore), WA, Australia",
-    "source": "https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ]
-  },
-  {
-    "id": "2026-01-12-eyjafjordur-humpback-01",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-01-12.",
-    "date": "2026-01-12",
-    "latitude": 65.75,
-    "longitude": -18.2,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-01-12-faxafloi-bay-humpback-02",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-12.",
-    "date": "2026-01-12",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
-    "behaviors": [
-      "reported",
-      "feeding",
-      "breaching"
-    ]
-  },
-  {
-    "id": "2026-01-12-bremer-canyon-blue-01",
-    "name": "Blue Whale sighting (Bremer Canyon (offshore), WA, Australia)",
-    "species": "Blue Whale",
-    "info": "Parsed from whale_watch_wa on 2026-01-12.",
-    "date": "2026-01-12",
-    "latitude": -34.7,
-    "longitude": 119.9,
-    "area": "Bremer Canyon (offshore), WA, Australia",
-    "source": "https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ]
-  },
-  {
     "id": "2026-01-11-salish-sea-orca-01",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
@@ -243,19 +145,17 @@
     ]
   },
   {
-    "id": "2026-01-11-faxafloi-bay-humpback-01",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
+    "id": "2026-01-10-eyjafjordur-humpback-01",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-11.",
-    "date": "2026-01-11",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
+    "info": "Parsed from akureyri_blog on 2026-01-10.",
+    "date": "2026-01-10",
+    "latitude": 65.75,
+    "longitude": -18.2,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
     "behaviors": [
-      "reported",
-      "feeding",
-      "breaching"
+      "reported"
     ]
   },
   {
@@ -278,36 +178,6 @@
     ]
   },
   {
-    "id": "2026-01-10-eyjafjordur-humpback-01",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-01-10.",
-    "date": "2026-01-10",
-    "latitude": 65.75,
-    "longitude": -18.2,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-01-10-faxafloi-bay-humpback-02",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-10.",
-    "date": "2026-01-10",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
-    "behaviors": [
-      "reported",
-      "hunting",
-      "breaching"
-    ]
-  },
-  {
     "id": "2026-01-09-salish-sea-orca-01",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
@@ -326,15 +196,15 @@
     ]
   },
   {
-    "id": "2026-01-09-faxafloi-bay-humpback-01",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
+    "id": "2026-01-08-eyjafjordur-humpback-01",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-09.",
-    "date": "2026-01-09",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
+    "info": "Parsed from akureyri_blog on 2026-01-08.",
+    "date": "2026-01-08",
+    "latitude": 65.75,
+    "longitude": -18.2,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
     "behaviors": [
       "reported"
     ]
@@ -357,29 +227,15 @@
     ]
   },
   {
-    "id": "2026-01-08-eyjafjordur-humpback-01",
+    "id": "2026-01-07-eyjafjordur-humpback-01",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-01-08.",
-    "date": "2026-01-08",
+    "info": "Parsed from akureyri_blog on 2026-01-07.",
+    "date": "2026-01-07",
     "latitude": 65.75,
     "longitude": -18.2,
     "area": "Eyjafjordur (offshore), Akureyri, Iceland",
     "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-01-08-faxafloi-bay-humpback-02",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-08.",
-    "date": "2026-01-08",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
     "behaviors": [
       "reported"
     ]
@@ -403,22 +259,6 @@
     ]
   },
   {
-    "id": "2026-01-07-faxafloi-bay-humpback-01",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-07.",
-    "date": "2026-01-07",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
-    "behaviors": [
-      "reported",
-      "feeding",
-      "vocalizing"
-    ]
-  },
-  {
     "id": "2026-01-06-salish-sea-orca-01",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
@@ -436,30 +276,34 @@
     ]
   },
   {
-    "id": "2026-01-06-faxafloi-bay-humpback-01",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
+    "id": "2026-01-04-salish-sea-humpback-01",
+    "name": "Humpback sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-06.",
-    "date": "2026-01-06",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
+    "info": "Orca Network recent sightings indicates Humpback on 2026-01-04.",
+    "date": "2026-01-04",
+    "latitude": 47.9,
+    "longitude": -122.55,
+    "area": "Salish Sea (offshore), BC/WA, Canada/USA",
+    "source": "https://www.orcanetwork.org/recent-sightings",
     "behaviors": [
       "reported",
+      "hunting",
+      "feeding",
+      "breaching",
+      "vocalizing",
       "traveling"
     ]
   },
   {
-    "id": "2026-01-05-faxafloi-bay-humpback-01",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
+    "id": "2026-01-04-eyjafjordur-humpback-02",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-05.",
-    "date": "2026-01-05",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
+    "info": "Parsed from akureyri_blog on 2026-01-04.",
+    "date": "2026-01-04",
+    "latitude": 65.75,
+    "longitude": -18.2,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
     "behaviors": [
       "reported"
     ]
@@ -484,40 +328,6 @@
     ]
   },
   {
-    "id": "2026-01-04-salish-sea-humpback-01",
-    "name": "Humpback sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
-    "species": "Humpback",
-    "info": "Orca Network recent sightings indicates Humpback on 2026-01-04.",
-    "date": "2026-01-04",
-    "latitude": 47.9,
-    "longitude": -122.55,
-    "area": "Salish Sea (offshore), BC/WA, Canada/USA",
-    "source": "https://www.orcanetwork.org/recent-sightings",
-    "behaviors": [
-      "reported",
-      "hunting",
-      "feeding",
-      "breaching",
-      "vocalizing",
-      "traveling"
-    ]
-  },
-  {
-    "id": "2026-01-04-faxafloi-bay-humpback-02",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-04.",
-    "date": "2026-01-04",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ]
-  },
-  {
     "id": "2026-01-03-salish-sea-orca-01",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
@@ -535,15 +345,15 @@
     ]
   },
   {
-    "id": "2026-01-03-faxafloi-bay-humpback-01",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
+    "id": "2026-01-02-eyjafjordur-humpback-01",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-03.",
-    "date": "2026-01-03",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
+    "info": "Parsed from akureyri_blog on 2026-01-02.",
+    "date": "2026-01-02",
+    "latitude": 65.75,
+    "longitude": -18.2,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
     "behaviors": [
       "reported"
     ]
@@ -564,34 +374,6 @@
       "feeding",
       "vocalizing",
       "traveling"
-    ]
-  },
-  {
-    "id": "2026-01-02-eyjafjordur-humpback-01",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-01-02.",
-    "date": "2026-01-02",
-    "latitude": 65.75,
-    "longitude": -18.2,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-01-02-faxafloi-bay-humpback-02",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-01-02.",
-    "date": "2026-01-02",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
-    "behaviors": [
-      "reported"
     ]
   },
   {
@@ -698,20 +480,6 @@
       "breaching",
       "vocalizing",
       "traveling"
-    ]
-  },
-  {
-    "id": "2025-12-29-eyjafjordur-humpback-01",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2025-12-29.",
-    "date": "2025-12-29",
-    "latitude": 65.75,
-    "longitude": -18.2,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
     ]
   },
   {
