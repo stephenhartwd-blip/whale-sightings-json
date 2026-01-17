@@ -11,6 +11,9 @@ Deterministic:
   - rss_feed (RSS/Atom parsing via feedparser)
   - inaturalist_api (iNaturalist public API: taxon + place + date window)
 
+Enforces:
+- Pins must be in water (uses global-land-mask; nudges offshore if needed)
+
 Outputs JSON array entries that match your Swift model:
 id, name, species, info, date, latitude, longitude, area, source, behaviors
 """
@@ -33,6 +36,12 @@ from dateutil import tz
 # Requires: pip install feedparser
 import feedparser
 
+# Requires: pip install global-land-mask
+try:
+    from global_land_mask import globe
+except Exception:
+    globe = None
+
 
 ALLOWED_SPECIES = {"Orca", "Humpback", "Sperm whale", "Great White Shark", "Blue Whale"}
 
@@ -43,6 +52,79 @@ MONTHS = (
 
 # Set in main() from config.max_days so parsers can use it
 GLOBAL_MAX_DAYS = 14
+
+
+# -------------------------
+# Land / ocean enforcement
+# -------------------------
+
+def require_landmask() -> None:
+    if globe is None:
+        raise RuntimeError(
+            "global-land-mask is not available. Ensure 'global-land-mask' is in requirements.txt and installed."
+        )
+
+def wrap_lon(lon: float) -> float:
+    # normalize to [-180, 180]
+    while lon > 180:
+        lon -= 360
+    while lon < -180:
+        lon += 360
+    return lon
+
+def is_land(lat: float, lon: float) -> bool:
+    require_landmask()
+    return bool(globe.is_land(lat, lon))
+
+# Deterministic offsets to try when a point is on land.
+# (Starts tiny, grows to ~0.25 degrees max.)
+_OFFSHORE_OFFSETS: List[Tuple[float, float]] = [
+    (0.00, 0.00),
+    (0.02, 0.00), (-0.02, 0.00),
+    (0.00, 0.02), (0.00, -0.02),
+    (0.03, 0.03), (0.03, -0.03),
+    (-0.03, 0.03), (-0.03, -0.03),
+    (0.05, 0.00), (-0.05, 0.00),
+    (0.00, 0.05), (0.00, -0.05),
+    (0.08, 0.00), (-0.08, 0.00),
+    (0.00, 0.08), (0.00, -0.08),
+    (0.12, 0.00), (-0.12, 0.00),
+    (0.00, 0.12), (0.00, -0.12),
+    (0.18, 0.00), (-0.18, 0.00),
+    (0.00, 0.18), (0.00, -0.18),
+    (0.22, 0.00), (-0.22, 0.00),
+    (0.00, 0.22), (0.00, -0.22),
+]
+
+def ensure_ocean(lat: float, lon: float) -> Optional[Tuple[float, float]]:
+    """
+    Enforce "must be water":
+    - If point is water => keep.
+    - If point is land => try deterministic nudges.
+    - If still land => drop (return None).
+    """
+    try:
+        lat = float(lat)
+        lon = wrap_lon(float(lon))
+    except Exception:
+        return None
+
+    if not (-90.0 <= lat <= 90.0):
+        return None
+
+    # If already water, keep
+    if not is_land(lat, lon):
+        return lat, lon
+
+    # Try nudges
+    for dlat, dlon in _OFFSHORE_OFFSETS[1:]:
+        la = lat + dlat
+        lo = wrap_lon(lon + dlon)
+        if -90.0 <= la <= 90.0 and not is_land(la, lo):
+            return la, lo
+
+    return None
+
 
 # -------------------------
 # Helpers
@@ -70,7 +152,7 @@ def species_key(species: str) -> str:
     }[species]
 
 def clamp_nudge(lat: float, lon: float, dlat: float, dlon: float) -> Tuple[float, float]:
-    # limit each component to [-0.05, 0.05]
+    # limit each component to [-0.05, 0.05] (your original behavior)
     dlat = max(-0.05, min(0.05, dlat))
     dlon = max(-0.05, min(0.05, dlon))
     return lat + dlat, lon + dlon
@@ -89,7 +171,6 @@ def infer_behaviors(text: str) -> List[str]:
     if any(k in t for k in ["travel", "headed", "northbound", "southbound", "moving"]):
         out.append("traveling")
 
-    # de-dupe, preserve order
     seen = set()
     deduped = []
     for b in out:
@@ -111,10 +192,12 @@ def fetch_text(session: requests.Session, url: str) -> str:
     return normalize_text(r.text)
 
 def within_window(dt: datetime, now_dt: datetime, max_days: int) -> bool:
+    # reject future dates (important)
+    if dt.date() > now_dt.date():
+        return False
     return (now_dt.date() - dt.date()).days <= max_days
 
 def parse_date_from_url(url: str, tz_name: str) -> Optional[datetime]:
-    # patterns like /2026/1/14/ or /2026-01-14/
     m = re.search(r"/(\d{4})/(\d{1,2})/(\d{1,2})(?:/|$)", url)
     if m:
         y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
@@ -128,13 +211,11 @@ def parse_date_from_url(url: str, tz_name: str) -> Optional[datetime]:
 def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[datetime]:
     s = (s or "").strip()
 
-    # ISO
     m = re.match(r"^(\d{4})-(\d{2})-(\d{2})$", s)
     if m:
         y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
         return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
 
-    # mm/dd/yyyy or m/d/yy
     m = re.match(r"^(\d{1,2})/(\d{1,2})/(\d{2,4})$", s)
     if m:
         mo, d, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
@@ -142,7 +223,6 @@ def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[da
             y += 2000
         return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
 
-    # dd.mm.yyyy
     m = re.match(r"^(\d{1,2})\.(\d{1,2})\.(\d{2,4})$", s)
     if m:
         d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
@@ -150,7 +230,6 @@ def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[da
             y += 2000
         return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
 
-    # Month name day (optional year)
     month_re = r"(January|February|March|April|May|June|July|August|September|October|November|December)"
     m = re.match(rf"^({month_re})\s+(\d{{1,2}})(?:,?\s+(\d{{4}}))?$", s)
     if m:
@@ -159,7 +238,6 @@ def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[da
         year = int(m.group(3)) if m.group(3) else today.year
         dt = datetime.strptime(f"{year} {month_name} {day}", "%Y %B %d")
         dt = dt.replace(tzinfo=tz.gettz(tz_name))
-        # handle year boundary if inferred date is "future"
         if dt.date() > today.date() and not m.group(3):
             dt = dt.replace(year=year - 1)
         return dt
@@ -168,8 +246,7 @@ def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[da
 
 def detect_species(text: str, force: Optional[List[str]] = None) -> List[str]:
     if force:
-        out = [s for s in force if s in ALLOWED_SPECIES]
-        return out
+        return [s for s in force if s in ALLOWED_SPECIES]
 
     t = (text or "").lower()
     hits: List[str] = []
@@ -185,7 +262,6 @@ def detect_species(text: str, force: Optional[List[str]] = None) -> List[str]:
     if "blue whale" in t or "bluewhale" in t:
         hits.append("Blue Whale")
 
-    # de-dupe preserve order
     seen = set()
     out: List[str] = []
     for s in hits:
@@ -201,18 +277,11 @@ def safe_float(x: Any) -> Optional[float]:
         return None
 
 def try_extract_entry_latlon(entry: Any) -> Optional[Tuple[float, float]]:
-    """
-    Attempts common RSS/GeoRSS fields feedparser exposes.
-    Returns (lat, lon) or None.
-    """
-    # Common fields:
-    # entry.get("geo_lat"), entry.get("geo_long")
     lat = safe_float(entry.get("geo_lat"))
     lon = safe_float(entry.get("geo_long"))
     if lat is not None and lon is not None:
         return lat, lon
 
-    # GeoRSS point sometimes appears as "georss_point": "lat lon"
     gp = entry.get("georss_point") or entry.get("georss:point")
     if isinstance(gp, str):
         m = re.search(r"(-?\d+(?:\.\d+)?)\s+(-?\d+(?:\.\d+)?)", gp.strip())
@@ -222,7 +291,6 @@ def try_extract_entry_latlon(entry: Any) -> Optional[Tuple[float, float]]:
             if lat is not None and lon is not None:
                 return lat, lon
 
-    # Some feeds include "where" or other nested structures; skip for now (deterministic)
     return None
 
 
@@ -245,15 +313,11 @@ class Candidate:
 # -------------------------
 
 def extract_dated_sections(text: str, tz_name: str, today: datetime) -> List[Tuple[datetime, str]]:
-    """
-    Finds date markers in text and splits into sections.
-    Returns list of (datetime, section_text).
-    """
     patterns = [
-        r"\b\d{4}-\d{2}-\d{2}\b",                 # 2026-01-14
-        r"\b\d{1,2}/\d{1,2}/\d{2,4}\b",           # 1/14/2026
-        r"\b\d{1,2}\.\d{1,2}\.\d{2,4}\b",         # 14.01.2026
-        rf"\b(?:{'|'.join(MONTHS)})\s+\d{{1,2}}(?:,?\s+\d{{4}})?\b",  # January 14, 2026 or January 14
+        r"\b\d{4}-\d{2}-\d{2}\b",
+        r"\b\d{1,2}/\d{1,2}/\d{2,4}\b",
+        r"\b\d{1,2}\.\d{1,2}\.\d{2,4}\b",
+        rf"\b(?:{'|'.join(MONTHS)})\s+\d{{1,2}}(?:,?\s+\d{{4}})?\b",
     ]
 
     matches: List[Tuple[int, int, str]] = []
@@ -303,66 +367,50 @@ def build_candidates_from_generic_html(
     text = fetch_text(session, url)
     today = now_local(tz_name)
 
-    # optional force_species
     force_species: Optional[List[str]] = None
     fs = cfg.get("force_species")
     if fs:
-        if isinstance(fs, list):
-            force_species = [str(x) for x in fs]
-        else:
-            force_species = [str(fs)]
+        force_species = [str(x) for x in (fs if isinstance(fs, list) else [fs])]
 
     sections = extract_dated_sections(text, tz_name, today)
-
     candidates: List[Candidate] = []
+
+    def add_candidate(dt: datetime, blob: str, species: str) -> None:
+        nud = cfg.get("uncertain_offshore_nudge") or {}
+        lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
+
+        fixed = ensure_ocean(lat, lon)
+        if not fixed:
+            return
+        lat2, lon2 = fixed
+
+        name = f"{species} sighting ({area})" if area else f"{species} sighting"
+        info = f"Parsed from {source_key} on {to_date_str(dt)}."
+        candidates.append(
+            Candidate(
+                date=dt,
+                species=species,
+                name=name,
+                info=info,
+                area=area,
+                source=url,
+                latitude=float(lat2),
+                longitude=float(lon2),
+                behaviors=infer_behaviors(blob),
+                source_key=source_key,
+            )
+        )
 
     if sections:
         for dt, section in sections:
             species_list = detect_species(section, force=force_species)
             for species in species_list[:2]:
-                nud = cfg.get("uncertain_offshore_nudge") or {}
-                lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
-
-                name = f"{species} sighting ({area})" if area else f"{species} sighting"
-                info = f"Parsed from {source_key} on {to_date_str(dt)}."
-                candidates.append(
-                    Candidate(
-                        date=dt,
-                        species=species,
-                        name=name,
-                        info=info,
-                        area=area,
-                        source=url,
-                        latitude=lat,
-                        longitude=lon,
-                        behaviors=infer_behaviors(section),
-                        source_key=source_key,
-                    )
-                )
+                add_candidate(dt, section, species)
     else:
-        # single page fallback
         dt = parse_date_from_url(url, tz_name) or today
         species_list = detect_species(text, force=force_species)
         for species in species_list[:2]:
-            nud = cfg.get("uncertain_offshore_nudge") or {}
-            lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
-
-            name = f"{species} sighting ({area})" if area else f"{species} sighting"
-            info = f"Parsed from {source_key} (single-page) on {to_date_str(dt)}."
-            candidates.append(
-                Candidate(
-                    date=dt,
-                    species=species,
-                    name=name,
-                    info=info,
-                    area=area,
-                    source=url,
-                    latitude=lat,
-                    longitude=lon,
-                    behaviors=infer_behaviors(text),
-                    source_key=source_key,
-                )
-            )
+            add_candidate(dt, text, species)
 
     candidates.sort(key=lambda c: c.date, reverse=True)
     return candidates[:max_items]
@@ -373,30 +421,17 @@ def build_candidates_from_generic_html(
 # -------------------------
 
 def parse_rss_feed(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
-    """
-    Parses an RSS/Atom feed and produces one candidate per feed entry (up to max_items).
-    Species is detected from title/summary unless force_species is provided.
-    Date is taken from published/updated if available.
-    Lat/Lon:
-      - uses GeoRSS fields when present
-      - otherwise falls back to cfg latitude/longitude (offshore)
-    """
     url = cfg["url"]
     area = (cfg.get("area", "") or "").strip()
     lat0 = float(cfg.get("latitude", 0.0))
     lon0 = float(cfg.get("longitude", 0.0))
     max_items = int(cfg.get("max_items", 10))
 
-    # optional force_species
     force_species: Optional[List[str]] = None
     fs = cfg.get("force_species")
     if fs:
-        if isinstance(fs, list):
-            force_species = [str(x) for x in fs]
-        else:
-            force_species = [str(fs)]
+        force_species = [str(x) for x in (fs if isinstance(fs, list) else [fs])]
 
-    # Fetch feed ourselves (more reliable with headers/timeouts)
     r = session.get(url, timeout=45)
     r.raise_for_status()
     feed = feedparser.parse(r.content)
@@ -404,7 +439,7 @@ def parse_rss_feed(cfg: Dict[str, Any], session: requests.Session, tz_name: str,
     today = now_local(tz_name)
     candidates: List[Candidate] = []
 
-    for entry in feed.entries[: max_items * 2]:  # small buffer; we trim later
+    for entry in feed.entries[: max_items * 4]:
         title = (entry.get("title") or "").strip()
         summary = (entry.get("summary") or entry.get("description") or "").strip()
         link = (entry.get("link") or url).strip()
@@ -415,17 +450,12 @@ def parse_rss_feed(cfg: Dict[str, Any], session: requests.Session, tz_name: str,
         if not species_list:
             continue
 
-        # datetime: published_parsed / updated_parsed -> struct_time
-        dt: Optional[datetime] = None
         st = entry.get("published_parsed") or entry.get("updated_parsed")
         if st:
-            # treat as UTC then attach tz; this is good enough for date filtering
             dt = datetime.fromtimestamp(time.mktime(st), tz=tz.UTC).astimezone(tz.gettz(tz_name))
         else:
-            # try from link/url, else today
             dt = parse_date_from_url(link, tz_name) or parse_date_from_url(url, tz_name) or today
 
-        # coordinates
         latlon = try_extract_entry_latlon(entry)
         if latlon:
             lat, lon = latlon
@@ -433,23 +463,32 @@ def parse_rss_feed(cfg: Dict[str, Any], session: requests.Session, tz_name: str,
             nud = cfg.get("uncertain_offshore_nudge") or {}
             lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
 
-        for species in species_list[:1]:  # RSS entries are usually one topic; keep 1 per entry
-            name = f"{species} sighting ({area})" if area else f"{species} sighting"
-            info = f"From RSS feed {source_key} on {to_date_str(dt)}."
-            candidates.append(
-                Candidate(
-                    date=dt,
-                    species=species,
-                    name=name,
-                    info=info,
-                    area=area,
-                    source=link or url,
-                    latitude=float(lat),
-                    longitude=float(lon),
-                    behaviors=infer_behaviors(blob),
-                    source_key=source_key,
-                )
+        fixed = ensure_ocean(lat, lon)
+        if not fixed:
+            continue
+        lat2, lon2 = fixed
+
+        species = species_list[0]
+        name = f"{species} sighting ({area})" if area else f"{species} sighting"
+        info = f"From RSS feed {source_key} on {to_date_str(dt)}."
+
+        candidates.append(
+            Candidate(
+                date=dt,
+                species=species,
+                name=name,
+                info=info,
+                area=area,
+                source=link or url,
+                latitude=float(lat2),
+                longitude=float(lon2),
+                behaviors=infer_behaviors(blob),
+                source_key=source_key,
             )
+        )
+
+        if len(candidates) >= max_items:
+            break
 
     candidates.sort(key=lambda c: c.date, reverse=True)
     return candidates[:max_items]
@@ -479,7 +518,6 @@ def parse_orcanetwork_recent_sightings(cfg: Dict[str, Any], session: requests.Se
     today = now_local(tz_name)
     year = today.year
 
-    # very rough location -> safe offshore coords
     loc_coords = {
         "admiralty inlet": (48.15, -122.80),
         "haro strait": (48.50, -123.20),
@@ -532,6 +570,11 @@ def parse_orcanetwork_recent_sightings(cfg: Dict[str, Any], session: requests.Se
                 nud = cfg["uncertain_offshore_nudge"]
                 lat, lon = clamp_nudge(lat, lon, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
 
+            fixed = ensure_ocean(lat, lon)
+            if not fixed:
+                continue
+            lat2, lon2 = fixed
+
             area = area_default or "Salish Sea (offshore)"
             name = f"{species} sighting ({area})"
             info = f"Orca Network recent sightings indicates {species} on {to_date_str(dt)}."
@@ -544,8 +587,8 @@ def parse_orcanetwork_recent_sightings(cfg: Dict[str, Any], session: requests.Se
                     info=info,
                     area=area,
                     source=url,
-                    latitude=float(lat),
-                    longitude=float(lon),
+                    latitude=float(lat2),
+                    longitude=float(lon2),
                     behaviors=infer_behaviors(block),
                     source_key=source_key,
                 )
@@ -556,7 +599,7 @@ def parse_orcanetwork_recent_sightings(cfg: Dict[str, Any], session: requests.Se
 
 
 # -------------------------
-# NEW parser: iNaturalist API
+# iNaturalist API parser
 # -------------------------
 
 INAT_BASE = "https://api.inaturalist.org/v1"
@@ -570,18 +613,13 @@ def _inat_place_id(session: requests.Session, place_query: str) -> Optional[int]
         return _inat_place_cache[place_query]
 
     try:
-        r = session.get(
-            f"{INAT_BASE}/places/autocomplete",
-            params={"q": place_query},
-            timeout=30,
-        )
+        r = session.get(f"{INAT_BASE}/places/autocomplete", params={"q": place_query}, timeout=30)
         r.raise_for_status()
         data = r.json() or {}
         results = data.get("results") or []
         pid = results[0].get("id") if results else None
         pid = int(pid) if pid is not None else None
         _inat_place_cache[place_query] = pid
-        # small courtesy delay
         time.sleep(0.15)
         return pid
     except Exception:
@@ -589,14 +627,10 @@ def _inat_place_id(session: requests.Session, place_query: str) -> Optional[int]
         return None
 
 def _inat_obs_datetime(obs: Dict[str, Any], tz_name: str, fallback: datetime) -> datetime:
-    """
-    Prefer observed_on (YYYY-MM-DD). If missing, use time_observed_at ISO.
-    """
     tzinfo = tz.gettz(tz_name)
 
     observed_on = (obs.get("observed_on") or "").strip()
     if observed_on:
-        # set noon local to avoid weird boundary issues
         try:
             y, m, d = observed_on.split("-")
             return datetime(int(y), int(m), int(d), 12, 0, 0, tzinfo=tzinfo)
@@ -606,7 +640,6 @@ def _inat_obs_datetime(obs: Dict[str, Any], tz_name: str, fallback: datetime) ->
     time_observed_at = (obs.get("time_observed_at") or "").strip()
     if time_observed_at:
         try:
-            # Example: 2026-01-16T18:22:11-08:00
             dt = datetime.fromisoformat(time_observed_at.replace("Z", "+00:00"))
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=tzinfo)
@@ -649,12 +682,6 @@ def _inat_obs_latlon(obs: Dict[str, Any]) -> Optional[Tuple[float, float]]:
     return None
 
 def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
-    """
-    Uses iNaturalist public API to pull recent observations by:
-      - taxon_name (scientific name)
-      - place_query (text, resolved via places/autocomplete)
-    Produces Candidate entries with exact lat/lon from observations when available.
-    """
     taxon_name = (cfg.get("taxon_name") or "").strip()
     if not taxon_name:
         return []
@@ -667,14 +694,10 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
     lat0 = float(cfg.get("latitude", 0.0))
     lon0 = float(cfg.get("longitude", 0.0))
 
-    # optional force_species
     force_species: Optional[List[str]] = None
     fs = cfg.get("force_species")
     if fs:
-        if isinstance(fs, list):
-            force_species = [str(x) for x in fs]
-        else:
-            force_species = [str(fs)]
+        force_species = [str(x) for x in (fs if isinstance(fs, list) else [fs])]
 
     today = now_local(tz_name)
     d2 = today.date().isoformat()
@@ -698,7 +721,6 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
     r.raise_for_status()
     data = r.json() or {}
     results = data.get("results") or []
-    # small courtesy delay
     time.sleep(0.15)
 
     out: List[Candidate] = []
@@ -708,7 +730,6 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
 
         dt = _inat_obs_datetime(obs, tz_name, today)
 
-        # coordinates: prefer iNat coordinates, otherwise fallback to configured offshore anchor + nudge
         latlon = _inat_obs_latlon(obs)
         if latlon:
             lat, lon = latlon
@@ -716,7 +737,11 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
             nud = cfg.get("uncertain_offshore_nudge") or {}
             lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
 
-        # iNat metadata
+        fixed = ensure_ocean(lat, lon)
+        if not fixed:
+            continue
+        lat2, lon2 = fixed
+
         uri = (obs.get("uri") or "").strip()
         obs_id = obs.get("id")
         source_url = uri or (f"https://www.inaturalist.org/observations/{obs_id}" if obs_id else "https://www.inaturalist.org")
@@ -727,13 +752,12 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
         user = (obs.get("user") or {}).get("login") or "iNaturalist user"
         description = (obs.get("description") or "").strip()
 
-        # species: forced from YAML, otherwise detect from text
         common_name = ((obs.get("taxon") or {}).get("preferred_common_name") or "").strip()
         sci = ((obs.get("taxon") or {}).get("name") or "").strip()
         blob = f"{common_name}\n{sci}\n{description}".strip()
+
         species_list = detect_species(blob, force=force_species)
         if not species_list:
-            # If still unknown, skip (keeps deterministic + your allowed set only)
             continue
 
         species = species_list[0]
@@ -748,8 +772,8 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
                 info=info,
                 area=area,
                 source=source_url,
-                latitude=float(lat),
-                longitude=float(lon),
+                latitude=float(lat2),
+                longitude=float(lon2),
                 behaviors=infer_behaviors(blob),
                 source_key=source_key,
             )
@@ -767,15 +791,12 @@ def parse_generic_html(cfg: Dict[str, Any], session: requests.Session, tz_name: 
     return build_candidates_from_generic_html(cfg, session, tz_name, source_key)
 
 PARSERS = {
-    # Custom
     "orcanetwork_recent_sightings": parse_orcanetwork_recent_sightings,
 
-    # Generic HTML aliases
     "generic_dated_page": parse_generic_html,
     "generic_article": parse_generic_html,
     "article_basic": parse_generic_html,
 
-    # Backward-compat names you used earlier in YAML
     "eaglewing_daily_sighting_report": parse_generic_html,
     "victoriawhalewatching_captains_log": parse_generic_html,
     "montereybay_sightings": parse_generic_html,
@@ -787,10 +808,7 @@ PARSERS = {
     "whalewatchwesternaustralia_daily": parse_generic_html,
     "pirsa_shark_sightings": parse_generic_html,
 
-    # RSS
     "rss_feed": parse_rss_feed,
-
-    # iNaturalist
     "inaturalist_api": parse_inaturalist_api,
 }
 
@@ -859,12 +877,11 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
         chosen.append(c)
         chosen_keys.add(k)
 
-    need_recent = int((total * min_recent_fraction) + 0.9999)  # ceil
+    need_recent = int((total * min_recent_fraction) + 0.9999)
     recent_count = 0
 
     species_order = sorted(wanted.keys(), key=lambda s: wanted[s], reverse=True)
 
-    # A) Fill recent respecting targets
     progressed = True
     while recent_count < need_recent and progressed:
         progressed = False
@@ -883,7 +900,6 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
                 progressed = True
                 break
 
-    # B) Fill remaining by species targets (newest first)
     for sp in species_order:
         while wanted.get(sp, 0) > 0:
             found = False
@@ -898,7 +914,6 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
             if not found:
                 break
 
-    # C) If still short, fill from any remaining newest
     if len(chosen) < total:
         remaining: List[Candidate] = []
         for sp in by_species:
@@ -978,6 +993,9 @@ def main() -> None:
     now_dt = now_local(tz_name)
     max_days = int(cfg.get("max_days", 14))
     GLOBAL_MAX_DAYS = max_days
+
+    # hard requirement: we want "never on land"
+    require_landmask()
 
     session = requests.Session()
     session.headers.update(
