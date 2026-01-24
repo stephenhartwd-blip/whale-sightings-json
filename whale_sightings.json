@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-01-23-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-01-23.",
+    "date": "2026-01-23",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-01-23-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -186,21 +201,7 @@
     ]
   },
   {
-    "id": "2026-01-21-el-malecon-boardwalk-humpback-04",
-    "name": "Humpback sighting (El Malecon Boardwalk, Puerto Vallarta, Jal., MX)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by brucewbailey.",
-    "date": "2026-01-21",
-    "latitude": 20.6087533333,
-    "longitude": -105.236445,
-    "area": "El Malecon Boardwalk, Puerto Vallarta, Jal., MX",
-    "source": "https://www.inaturalist.org/observations/335717412",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-01-21-tourist-corridor-bcs-humpback-05",
+    "id": "2026-01-21-tourist-corridor-bcs-humpback-04",
     "name": "Humpback sighting (Tourist Corridor, BCS, Mexico)",
     "species": "Humpback",
     "info": "iNaturalist observation by david_legros.",
@@ -209,6 +210,20 @@
     "longitude": -109.8867053166,
     "area": "Tourist Corridor, BCS, Mexico",
     "source": "https://www.inaturalist.org/observations/335618321",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-01-21-el-malecon-boardwalk-humpback-05",
+    "name": "Humpback sighting (El Malecon Boardwalk, Puerto Vallarta, Jal., MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by brucewbailey.",
+    "date": "2026-01-21",
+    "latitude": 20.6087533333,
+    "longitude": -105.236445,
+    "area": "El Malecon Boardwalk, Puerto Vallarta, Jal., MX",
+    "source": "https://www.inaturalist.org/observations/335717412",
     "behaviors": [
       "reported"
     ]
@@ -268,6 +283,26 @@
     "behaviors": [
       "reported",
       "hunting",
+      "feeding",
+      "breaching",
+      "traveling"
+    ]
+  },
+  {
+    "id": "2026-01-18-salish-sea-humpback-01",
+    "name": "Humpback sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
+    "species": "Humpback",
+    "info": "Orca Network recent sightings indicates Humpback on 2026-01-18.",
+    "date": "2026-01-18",
+    "latitude": 47.92,
+    "longitude": -122.55,
+    "area": "Salish Sea (offshore), BC/WA, Canada/USA",
+    "source": "https://www.orcanetwork.org/recent-sightings",
+    "behaviors": [
+      "reported",
+      "hunting",
+      "feeding",
+      "breaching",
       "traveling"
     ]
   },
@@ -284,6 +319,7 @@
     "behaviors": [
       "reported",
       "hunting",
+      "vocalizing",
       "traveling"
     ]
   },
@@ -316,22 +352,17 @@
     ]
   },
   {
-    "id": "2026-01-16-salish-sea-orca-03",
-    "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
-    "species": "Orca",
-    "info": "Orca Network recent sightings indicates Orca on 2026-01-16.",
-    "date": "2026-01-16",
-    "latitude": 47.92,
-    "longitude": -122.55,
-    "area": "Salish Sea (offshore), BC/WA, Canada/USA",
-    "source": "https://www.orcanetwork.org/recent-sightings",
+    "id": "2026-01-15-bah-a-de-la-paz-mx-humpback-01",
+    "name": "Humpback sighting (Bahía de la Paz, MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by freebugzone.",
+    "date": "2026-01-15",
+    "latitude": 24.3998093671,
+    "longitude": -110.3543603004,
+    "area": "Bahía de la Paz, MX",
+    "source": "https://www.inaturalist.org/observations/335070285",
     "behaviors": [
-      "reported",
-      "hunting",
-      "feeding",
-      "breaching",
-      "vocalizing",
-      "traveling"
+      "reported"
     ]
   },
   {
