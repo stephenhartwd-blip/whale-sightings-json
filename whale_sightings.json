@@ -1,19 +1,5 @@
 [
   {
-    "id": "2026-01-25-mx-humpback-01",
-    "name": "Humpback sighting (MX)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by connorpeck18.",
-    "date": "2026-01-25",
-    "latitude": 20.5934189355,
-    "longitude": -105.2811040984,
-    "area": "MX",
-    "source": "https://www.inaturalist.org/observations/336095013",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-01-25-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -59,7 +45,7 @@
     ]
   },
   {
-    "id": "2026-01-25-faxafloi-bay-humpback-02",
+    "id": "2026-01-25-faxafloi-bay-humpback-01",
     "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
     "species": "Humpback",
     "info": "Parsed from elding_diary on 2026-01-25.",
@@ -75,6 +61,22 @@
       "breaching",
       "vocalizing",
       "traveling"
+    ]
+  },
+  {
+    "id": "2026-01-25-bay-of-fundy-humpback-02",
+    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
+    "species": "Humpback",
+    "info": "Parsed from brier_island_whale_sightings on 2026-01-25.",
+    "date": "2026-01-25",
+    "latitude": 44.26,
+    "longitude": -66.42,
+    "area": "Bay of Fundy (offshore), NS, Canada",
+    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "behaviors": [
+      "reported",
+      "hunting",
+      "vocalizing"
     ]
   },
   {
@@ -94,19 +96,20 @@
     ]
   },
   {
-    "id": "2026-01-25-bay-of-fundy-humpback-03",
-    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
+    "id": "2026-01-25-san-juan-islands-humpback-03",
+    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Humpback",
-    "info": "Parsed from brier_island_whale_sightings on 2026-01-25.",
+    "info": "Parsed from sanjuan_safaris_whale_report on 2026-01-25.",
     "date": "2026-01-25",
-    "latitude": 44.26,
-    "longitude": -66.42,
-    "area": "Bay of Fundy (offshore), NS, Canada",
-    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "latitude": 48.55,
+    "longitude": -123.17,
+    "area": "San Juan Islands (offshore), WA, USA",
+    "source": "https://www.sanjuansafaris.com/whale-report/",
     "behaviors": [
       "reported",
       "hunting",
-      "vocalizing"
+      "vocalizing",
+      "traveling"
     ]
   },
   {
@@ -127,32 +130,29 @@
     ]
   },
   {
-    "id": "2026-01-25-san-juan-islands-humpback-04",
-    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
+    "id": "2026-01-25-mx-humpback-04",
+    "name": "Humpback sighting (MX)",
     "species": "Humpback",
-    "info": "Parsed from sanjuan_safaris_whale_report on 2026-01-25.",
+    "info": "iNaturalist observation by connorpeck18.",
     "date": "2026-01-25",
-    "latitude": 48.55,
-    "longitude": -123.17,
-    "area": "San Juan Islands (offshore), WA, USA",
-    "source": "https://www.sanjuansafaris.com/whale-report/",
+    "latitude": 20.5934189355,
+    "longitude": -105.2811040984,
+    "area": "MX",
+    "source": "https://www.inaturalist.org/observations/336095013",
     "behaviors": [
-      "reported",
-      "hunting",
-      "vocalizing",
-      "traveling"
+      "reported"
     ]
   },
   {
-    "id": "2026-01-24-horseshoe-bay-termin-orca-01",
-    "name": "Orca sighting (Horseshoe Bay Terminus, West Vancouver, BC V7W 2V1, Canada)",
+    "id": "2026-01-25-washington-us-orca-05",
+    "name": "Orca sighting (Washington, US)",
     "species": "Orca",
-    "info": "iNaturalist observation by benkeen.",
-    "date": "2026-01-24",
-    "latitude": 49.3964361111,
-    "longitude": -123.2720666667,
-    "area": "Horseshoe Bay Terminus, West Vancouver, BC V7W 2V1, Canada",
-    "source": "https://www.inaturalist.org/observations/336027349",
+    "info": "iNaturalist observation by woodsdyke.",
+    "date": "2026-01-25",
+    "latitude": 47.8365307032,
+    "longitude": -122.3910237772,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/336175951",
     "behaviors": [
       "reported"
     ]
@@ -167,6 +167,20 @@
     "longitude": -105.4105383333,
     "area": "Bay of Banderas, MX",
     "source": "https://www.inaturalist.org/observations/336013202",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-01-24-horseshoe-bay-termin-orca-01",
+    "name": "Orca sighting (Horseshoe Bay Terminus, West Vancouver, BC V7W 2V1, Canada)",
+    "species": "Orca",
+    "info": "iNaturalist observation by benkeen.",
+    "date": "2026-01-24",
+    "latitude": 49.3964361111,
+    "longitude": -123.2720666667,
+    "area": "Horseshoe Bay Terminus, West Vancouver, BC V7W 2V1, Canada",
+    "source": "https://www.inaturalist.org/observations/336027349",
     "behaviors": [
       "reported"
     ]
@@ -323,20 +337,6 @@
     ]
   },
   {
-    "id": "2026-01-16-washington-us-orca-01",
-    "name": "Orca sighting (Washington, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by danielwalsh2.",
-    "date": "2026-01-16",
-    "latitude": 47.3919575635,
-    "longitude": -122.5360742707,
-    "area": "Washington, US",
-    "source": "https://www.inaturalist.org/observations/335030976",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-01-16-monterey-county-ca-u-humpback-01",
     "name": "Humpback sighting (Monterey County, CA, USA)",
     "species": "Humpback",
@@ -351,6 +351,20 @@
     ]
   },
   {
+    "id": "2026-01-16-washington-us-orca-01",
+    "name": "Orca sighting (Washington, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by danielwalsh2.",
+    "date": "2026-01-16",
+    "latitude": 47.3919575635,
+    "longitude": -122.5360742707,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/335030976",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-01-16-9180-skjerv-y-noorwe-orca-02",
     "name": "Orca sighting (9180 Skjervøy, Noorwegen)",
     "species": "Orca",
@@ -360,6 +374,20 @@
     "longitude": 20.9380249679,
     "area": "9180 Skjervøy, Noorwegen",
     "source": "https://www.inaturalist.org/observations/334982115",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-01-15-los-angeles-county-c-humpback-01",
+    "name": "Humpback sighting (Los Angeles County, CA, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by dr_wei.",
+    "date": "2026-01-15",
+    "latitude": 33.2955866941,
+    "longitude": -118.3922767147,
+    "area": "Los Angeles County, CA, USA",
+    "source": "https://www.inaturalist.org/observations/336133232",
     "behaviors": [
       "reported"
     ]
@@ -394,23 +422,7 @@
     ]
   },
   {
-    "id": "2026-01-14-island-county-us-wa--orca-01",
-    "name": "Orca sighting (Island County, US-WA, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by taylor_justason.",
-    "date": "2026-01-14",
-    "latitude": 48.2493635001,
-    "longitude": -122.5442994953,
-    "area": "Island County, US-WA, US",
-    "source": "https://www.inaturalist.org/observations/334888151",
-    "behaviors": [
-      "reported",
-      "hunting",
-      "traveling"
-    ]
-  },
-  {
-    "id": "2026-01-14-spildra-troms-og-fin-orca-02",
+    "id": "2026-01-14-spildra-troms-og-fin-orca-01",
     "name": "Orca sighting (Spildra, Troms og Finnmark, NO)",
     "species": "Orca",
     "info": "iNaturalist observation by rmoey.",
@@ -508,21 +520,7 @@
     ]
   },
   {
-    "id": "2026-01-10-santa-cruz-county-ca-humpback-01",
-    "name": "Humpback sighting (Santa Cruz County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-01-10",
-    "latitude": 36.939225189,
-    "longitude": -122.028957136,
-    "area": "Santa Cruz County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/334306658",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-01-10-eyjafjordur-humpback-02",
+    "id": "2026-01-10-eyjafjordur-humpback-01",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-01-10.",
