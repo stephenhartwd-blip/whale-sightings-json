@@ -1,6 +1,21 @@
 [
   {
-    "id": "2026-02-13-bremer-canyon-orca-01",
+    "id": "2026-02-13-united-kingdom-orca-01",
+    "name": "Orca sighting (United Kingdom (offshore))",
+    "species": "Orca",
+    "info": "Parsed from uk_seawatch_sightings on 2026-02-13.",
+    "date": "2026-02-13",
+    "latitude": 57.53,
+    "longitude": -6.47,
+    "area": "United Kingdom (offshore)",
+    "source": "https://www.seawatchfoundation.org.uk/sightings/",
+    "behaviors": [
+      "reported",
+      "vocalizing"
+    ]
+  },
+  {
+    "id": "2026-02-13-bremer-canyon-orca-02",
     "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
     "species": "Orca",
     "info": "Parsed from whale_watch_wa on 2026-02-13.",
@@ -47,22 +62,6 @@
     ]
   },
   {
-    "id": "2026-02-13-bay-of-fundy-orca-02",
-    "name": "Orca sighting (Bay of Fundy (offshore), NS, Canada)",
-    "species": "Orca",
-    "info": "Parsed from brier_island_whale_sightings on 2026-02-13.",
-    "date": "2026-02-13",
-    "latitude": 44.26,
-    "longitude": -66.42,
-    "area": "Bay of Fundy (offshore), NS, Canada",
-    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
-    "behaviors": [
-      "reported",
-      "hunting",
-      "vocalizing"
-    ]
-  },
-  {
     "id": "2026-02-13-bay-of-fundy-humpback-02",
     "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Humpback",
@@ -79,9 +78,25 @@
     ]
   },
   {
-    "id": "2026-02-13-san-juan-islands-orca-03",
-    "name": "Orca sighting (San Juan Islands (offshore), WA, USA)",
+    "id": "2026-02-13-bay-of-fundy-orca-03",
+    "name": "Orca sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Orca",
+    "info": "Parsed from brier_island_whale_sightings on 2026-02-13.",
+    "date": "2026-02-13",
+    "latitude": 44.26,
+    "longitude": -66.42,
+    "area": "Bay of Fundy (offshore), NS, Canada",
+    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "behaviors": [
+      "reported",
+      "hunting",
+      "vocalizing"
+    ]
+  },
+  {
+    "id": "2026-02-13-san-juan-islands-humpback-03",
+    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
+    "species": "Humpback",
     "info": "Parsed from sanjuan_safaris_whale_report on 2026-02-13.",
     "date": "2026-02-13",
     "latitude": 48.55,
@@ -96,9 +111,9 @@
     ]
   },
   {
-    "id": "2026-02-13-san-juan-islands-humpback-03",
-    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
-    "species": "Humpback",
+    "id": "2026-02-13-san-juan-islands-orca-04",
+    "name": "Orca sighting (San Juan Islands (offshore), WA, USA)",
+    "species": "Orca",
     "info": "Parsed from sanjuan_safaris_whale_report on 2026-02-13.",
     "date": "2026-02-13",
     "latitude": 48.55,
