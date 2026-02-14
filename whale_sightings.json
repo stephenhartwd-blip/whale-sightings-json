@@ -1,36 +1,6 @@
 [
   {
-    "id": "2026-02-13-cape-town-white-01",
-    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
-    "species": "Great White Shark",
-    "info": "Parsed from za_sharkspotters on 2026-02-13.",
-    "date": "2026-02-13",
-    "latitude": -34.12,
-    "longitude": 18.32,
-    "area": "Cape Town (offshore), South Africa",
-    "source": "https://www.sharkspotters.org.za/",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ]
-  },
-  {
-    "id": "2026-02-13-united-kingdom-orca-01",
-    "name": "Orca sighting (United Kingdom (offshore))",
-    "species": "Orca",
-    "info": "Parsed from uk_seawatch_sightings on 2026-02-13.",
-    "date": "2026-02-13",
-    "latitude": 57.53,
-    "longitude": -6.47,
-    "area": "United Kingdom (offshore)",
-    "source": "https://www.seawatchfoundation.org.uk/sightings/",
-    "behaviors": [
-      "reported",
-      "vocalizing"
-    ]
-  },
-  {
-    "id": "2026-02-13-bremer-canyon-orca-02",
+    "id": "2026-02-13-bremer-canyon-orca-01",
     "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
     "species": "Orca",
     "info": "Parsed from whale_watch_wa on 2026-02-13.",
@@ -77,6 +47,22 @@
     ]
   },
   {
+    "id": "2026-02-13-bay-of-fundy-orca-02",
+    "name": "Orca sighting (Bay of Fundy (offshore), NS, Canada)",
+    "species": "Orca",
+    "info": "Parsed from brier_island_whale_sightings on 2026-02-13.",
+    "date": "2026-02-13",
+    "latitude": 44.26,
+    "longitude": -66.42,
+    "area": "Bay of Fundy (offshore), NS, Canada",
+    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "behaviors": [
+      "reported",
+      "hunting",
+      "vocalizing"
+    ]
+  },
+  {
     "id": "2026-02-13-bay-of-fundy-humpback-02",
     "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Humpback",
@@ -93,25 +79,9 @@
     ]
   },
   {
-    "id": "2026-02-13-bay-of-fundy-orca-03",
-    "name": "Orca sighting (Bay of Fundy (offshore), NS, Canada)",
+    "id": "2026-02-13-san-juan-islands-orca-03",
+    "name": "Orca sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Orca",
-    "info": "Parsed from brier_island_whale_sightings on 2026-02-13.",
-    "date": "2026-02-13",
-    "latitude": 44.26,
-    "longitude": -66.42,
-    "area": "Bay of Fundy (offshore), NS, Canada",
-    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
-    "behaviors": [
-      "reported",
-      "hunting",
-      "vocalizing"
-    ]
-  },
-  {
-    "id": "2026-02-13-san-juan-islands-humpback-03",
-    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
-    "species": "Humpback",
     "info": "Parsed from sanjuan_safaris_whale_report on 2026-02-13.",
     "date": "2026-02-13",
     "latitude": 48.55,
@@ -126,9 +96,9 @@
     ]
   },
   {
-    "id": "2026-02-13-san-juan-islands-orca-04",
-    "name": "Orca sighting (San Juan Islands (offshore), WA, USA)",
-    "species": "Orca",
+    "id": "2026-02-13-san-juan-islands-humpback-03",
+    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
+    "species": "Humpback",
     "info": "Parsed from sanjuan_safaris_whale_report on 2026-02-13.",
     "date": "2026-02-13",
     "latitude": 48.55,
@@ -241,7 +211,21 @@
     ]
   },
   {
-    "id": "2026-02-10-flakstad-municipalit-orca-01",
+    "id": "2026-02-10-cowichan-valley-bc-c-orca-01",
+    "name": "Orca sighting (Cowichan Valley, BC, Canada)",
+    "species": "Orca",
+    "info": "iNaturalist observation by vancouver_island_whale_watch.",
+    "date": "2026-02-10",
+    "latitude": 48.78516,
+    "longitude": -123.55712,
+    "area": "Cowichan Valley, BC, Canada",
+    "source": "https://www.inaturalist.org/observations/338492776",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-02-10-flakstad-municipalit-orca-02",
     "name": "Orca sighting (Flakstad Municipality, Norway)",
     "species": "Orca",
     "info": "iNaturalist observation by scienceco_sb.",
@@ -335,6 +319,20 @@
     "longitude": -156.6816195,
     "area": "Lahaina, HI, USA",
     "source": "https://www.inaturalist.org/observations/337622293",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-02-06-la-paz-mx-bs-mx-humpback-02",
+    "name": "Humpback sighting (La Paz, MX-BS, MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by bajapelagica.",
+    "date": "2026-02-06",
+    "latitude": 24.2034771383,
+    "longitude": -110.4280734388,
+    "area": "La Paz, MX-BS, MX",
+    "source": "https://www.inaturalist.org/observations/337708830",
     "behaviors": [
       "reported"
     ]
@@ -446,15 +444,29 @@
     ]
   },
   {
-    "id": "2026-02-01-california-us-humpback-01",
-    "name": "Humpback sighting (California, US)",
+    "id": "2026-02-03-la-paz-baja-californ-humpback-01",
+    "name": "Humpback sighting (La Paz, Baja California Sur, Mexico)",
     "species": "Humpback",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-02-01",
-    "latitude": 36.7545930775,
-    "longitude": -122.1336270921,
-    "area": "California, US",
-    "source": "https://www.inaturalist.org/observations/337063289",
+    "info": "iNaturalist observation by maria_rodsalinas.",
+    "date": "2026-02-03",
+    "latitude": 24.1912916667,
+    "longitude": -109.7961433333,
+    "area": "La Paz, Baja California Sur, Mexico",
+    "source": "https://www.inaturalist.org/observations/337346560",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-02-03-la-paz-baja-californ-humpback-02",
+    "name": "Humpback sighting (La Paz, Baja California Sur, Mexico)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by maria_rodsalinas.",
+    "date": "2026-02-03",
+    "latitude": 24.1911583333,
+    "longitude": -109.7961116667,
+    "area": "La Paz, Baja California Sur, Mexico",
+    "source": "https://www.inaturalist.org/observations/337346558",
     "behaviors": [
       "reported"
     ]
@@ -498,48 +510,6 @@
     "longitude": -123.265695,
     "area": "Greater Vancouver, BC, CA",
     "source": "https://www.inaturalist.org/observations/336906343",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-01-26-monterey-county-ca-u-humpback-01",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by cecirey.",
-    "date": "2026-01-26",
-    "latitude": 36.7698203834,
-    "longitude": -121.8379966945,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/338324924",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-01-26-monterey-county-ca-u-humpback-02",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by anudibranchmom.",
-    "date": "2026-01-26",
-    "latitude": 36.7448766667,
-    "longitude": -121.9067533333,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/336595174",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-01-24-horseshoe-bay-termin-orca-01",
-    "name": "Orca sighting (Horseshoe Bay Terminus, West Vancouver, BC V7W 2V1, Canada)",
-    "species": "Orca",
-    "info": "iNaturalist observation by benkeen.",
-    "date": "2026-01-24",
-    "latitude": 49.3964361111,
-    "longitude": -123.2720666667,
-    "area": "Horseshoe Bay Terminus, West Vancouver, BC V7W 2V1, Canada",
-    "source": "https://www.inaturalist.org/observations/336027349",
     "behaviors": [
       "reported"
     ]
