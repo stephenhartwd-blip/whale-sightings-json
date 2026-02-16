@@ -1,16 +1,17 @@
 [
   {
-    "id": "2026-02-15-marquelia-mexico-200-humpback-01",
-    "name": "Humpback sighting (Marquelia Mexico 200, 41930 Marquelia, Gro., México)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by pris_jimenez.",
+    "id": "2026-02-15-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-02-15.",
     "date": "2026-02-15",
-    "latitude": 16.5323856007,
-    "longitude": -98.815676719,
-    "area": "Marquelia Mexico 200, 41930 Marquelia, Gro., México",
-    "source": "https://www.inaturalist.org/observations/338739389",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
     "behaviors": [
-      "reported"
+      "reported",
+      "feeding"
     ]
   },
   {
@@ -59,7 +60,7 @@
     ]
   },
   {
-    "id": "2026-02-15-faxafloi-bay-humpback-02",
+    "id": "2026-02-15-faxafloi-bay-humpback-01",
     "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
     "species": "Humpback",
     "info": "Parsed from elding_diary on 2026-02-15.",
@@ -73,6 +74,22 @@
       "feeding",
       "breaching",
       "traveling"
+    ]
+  },
+  {
+    "id": "2026-02-15-bay-of-fundy-humpback-02",
+    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
+    "species": "Humpback",
+    "info": "Parsed from brier_island_whale_sightings on 2026-02-15.",
+    "date": "2026-02-15",
+    "latitude": 44.26,
+    "longitude": -66.42,
+    "area": "Bay of Fundy (offshore), NS, Canada",
+    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "behaviors": [
+      "reported",
+      "hunting",
+      "vocalizing"
     ]
   },
   {
@@ -92,19 +109,20 @@
     ]
   },
   {
-    "id": "2026-02-15-bay-of-fundy-humpback-03",
-    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
+    "id": "2026-02-15-san-juan-islands-humpback-03",
+    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Humpback",
-    "info": "Parsed from brier_island_whale_sightings on 2026-02-15.",
+    "info": "Parsed from sanjuan_safaris_whale_report on 2026-02-15.",
     "date": "2026-02-15",
-    "latitude": 44.26,
-    "longitude": -66.42,
-    "area": "Bay of Fundy (offshore), NS, Canada",
-    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "latitude": 48.55,
+    "longitude": -123.17,
+    "area": "San Juan Islands (offshore), WA, USA",
+    "source": "https://www.sanjuansafaris.com/whale-report/",
     "behaviors": [
       "reported",
       "hunting",
-      "vocalizing"
+      "vocalizing",
+      "traveling"
     ]
   },
   {
@@ -125,20 +143,17 @@
     ]
   },
   {
-    "id": "2026-02-15-san-juan-islands-humpback-04",
-    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
+    "id": "2026-02-15-marquelia-mexico-200-humpback-04",
+    "name": "Humpback sighting (Marquelia Mexico 200, 41930 Marquelia, Gro., México)",
     "species": "Humpback",
-    "info": "Parsed from sanjuan_safaris_whale_report on 2026-02-15.",
+    "info": "iNaturalist observation by pris_jimenez.",
     "date": "2026-02-15",
-    "latitude": 48.55,
-    "longitude": -123.17,
-    "area": "San Juan Islands (offshore), WA, USA",
-    "source": "https://www.sanjuansafaris.com/whale-report/",
+    "latitude": 16.5323856007,
+    "longitude": -98.815676719,
+    "area": "Marquelia Mexico 200, 41930 Marquelia, Gro., México",
+    "source": "https://www.inaturalist.org/observations/338739389",
     "behaviors": [
-      "reported",
-      "hunting",
-      "vocalizing",
-      "traveling"
+      "reported"
     ]
   },
   {
@@ -283,6 +298,7 @@
     "behaviors": [
       "reported",
       "hunting",
+      "feeding",
       "traveling"
     ]
   },
