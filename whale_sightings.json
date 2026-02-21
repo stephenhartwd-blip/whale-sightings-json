@@ -1,16 +1,17 @@
 [
   {
-    "id": "2026-02-20-iceland-humpback-01",
-    "name": "Humpback sighting (Iceland)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by lukas_l.",
+    "id": "2026-02-20-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-02-20.",
     "date": "2026-02-20",
-    "latitude": 64.1905002621,
-    "longitude": -21.8055348471,
-    "area": "Iceland",
-    "source": "https://www.inaturalist.org/observations/339449093",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
     "behaviors": [
-      "reported"
+      "reported",
+      "feeding"
     ]
   },
   {
@@ -59,7 +60,7 @@
     ]
   },
   {
-    "id": "2026-02-20-faxafloi-bay-humpback-02",
+    "id": "2026-02-20-faxafloi-bay-humpback-01",
     "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
     "species": "Humpback",
     "info": "Parsed from elding_diary on 2026-02-20.",
@@ -73,6 +74,22 @@
       "feeding",
       "breaching",
       "traveling"
+    ]
+  },
+  {
+    "id": "2026-02-20-bay-of-fundy-humpback-02",
+    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
+    "species": "Humpback",
+    "info": "Parsed from brier_island_whale_sightings on 2026-02-20.",
+    "date": "2026-02-20",
+    "latitude": 44.26,
+    "longitude": -66.42,
+    "area": "Bay of Fundy (offshore), NS, Canada",
+    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "behaviors": [
+      "reported",
+      "hunting",
+      "vocalizing"
     ]
   },
   {
@@ -92,19 +109,18 @@
     ]
   },
   {
-    "id": "2026-02-20-bay-of-fundy-humpback-03",
-    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
+    "id": "2026-02-20-dana-point-humpback-03",
+    "name": "Humpback sighting (Dana Point (offshore), CA, USA)",
     "species": "Humpback",
-    "info": "Parsed from brier_island_whale_sightings on 2026-02-20.",
+    "info": "Parsed from dolphinsafari_log on 2026-02-20.",
     "date": "2026-02-20",
-    "latitude": 44.26,
-    "longitude": -66.42,
-    "area": "Bay of Fundy (offshore), NS, Canada",
-    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "latitude": 33.45,
+    "longitude": -117.75,
+    "area": "Dana Point (offshore), CA, USA",
+    "source": "https://www.dolphinsafari.com/sightings-log/",
     "behaviors": [
       "reported",
-      "hunting",
-      "vocalizing"
+      "hunting"
     ]
   },
   {
@@ -126,12 +142,12 @@
     "id": "2026-02-20-dana-point-humpback-04",
     "name": "Humpback sighting (Dana Point (offshore), CA, USA)",
     "species": "Humpback",
-    "info": "Parsed from dolphinsafari_log on 2026-02-20.",
+    "info": "Parsed from captain_dave_sightings_log on 2026-02-20.",
     "date": "2026-02-20",
-    "latitude": 33.45,
-    "longitude": -117.75,
+    "latitude": 33.44,
+    "longitude": -117.72,
     "area": "Dana Point (offshore), CA, USA",
-    "source": "https://www.dolphinsafari.com/sightings-log/",
+    "source": "https://dolphinsafari.com/category/sightings-log/",
     "behaviors": [
       "reported",
       "hunting"
@@ -153,18 +169,20 @@
     ]
   },
   {
-    "id": "2026-02-20-dana-point-humpback-05",
-    "name": "Humpback sighting (Dana Point (offshore), CA, USA)",
+    "id": "2026-02-20-san-juan-islands-humpback-05",
+    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Humpback",
-    "info": "Parsed from captain_dave_sightings_log on 2026-02-20.",
+    "info": "Parsed from sanjuan_safaris_whale_report on 2026-02-20.",
     "date": "2026-02-20",
-    "latitude": 33.44,
-    "longitude": -117.72,
-    "area": "Dana Point (offshore), CA, USA",
-    "source": "https://dolphinsafari.com/category/sightings-log/",
+    "latitude": 48.55,
+    "longitude": -123.17,
+    "area": "San Juan Islands (offshore), WA, USA",
+    "source": "https://www.sanjuansafaris.com/whale-report/",
     "behaviors": [
       "reported",
-      "hunting"
+      "hunting",
+      "vocalizing",
+      "traveling"
     ]
   },
   {
@@ -185,24 +203,77 @@
     ]
   },
   {
-    "id": "2026-02-20-san-juan-islands-humpback-06",
-    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
+    "id": "2026-02-20-corona-del-mar-state-humpback-06",
+    "name": "Humpback sighting (Corona Del Mar State Beach Route, Newport Beach, CA, US)",
     "species": "Humpback",
-    "info": "Parsed from sanjuan_safaris_whale_report on 2026-02-20.",
+    "info": "iNaturalist observation by james_switzer.",
     "date": "2026-02-20",
-    "latitude": 48.55,
-    "longitude": -123.17,
-    "area": "San Juan Islands (offshore), WA, USA",
-    "source": "https://www.sanjuansafaris.com/whale-report/",
+    "latitude": 33.572125,
+    "longitude": -117.871855,
+    "area": "Corona Del Mar State Beach Route, Newport Beach, CA, US",
+    "source": "https://www.inaturalist.org/observations/339456634",
     "behaviors": [
-      "reported",
-      "hunting",
-      "vocalizing",
-      "traveling"
+      "reported"
     ]
   },
   {
-    "id": "2026-02-19-oc-an-pacifique-nord-humpback-01",
+    "id": "2026-02-20-mx-humpback-07",
+    "name": "Humpback sighting (MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by teamtzibim.",
+    "date": "2026-02-20",
+    "latitude": 23.1234028328,
+    "longitude": -109.5036699392,
+    "area": "MX",
+    "source": "https://www.inaturalist.org/observations/339488041",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-02-20-iceland-humpback-08",
+    "name": "Humpback sighting (Iceland)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by lukas_l.",
+    "date": "2026-02-20",
+    "latitude": 64.1905002621,
+    "longitude": -21.8055348471,
+    "area": "Iceland",
+    "source": "https://www.inaturalist.org/observations/339449093",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-02-19-maui-county-hi-usa-humpback-01",
+    "name": "Humpback sighting (Maui County, HI, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by graham_montgomery.",
+    "date": "2026-02-19",
+    "latitude": 20.7287536444,
+    "longitude": -156.4798947483,
+    "area": "Maui County, HI, USA",
+    "source": "https://www.inaturalist.org/observations/339504429",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-02-19-maui-county-hi-usa-humpback-02",
+    "name": "Humpback sighting (Maui County, HI, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by graham_montgomery.",
+    "date": "2026-02-19",
+    "latitude": 20.7287536444,
+    "longitude": -156.4798947483,
+    "area": "Maui County, HI, USA",
+    "source": "https://www.inaturalist.org/observations/339504430",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-02-19-oc-an-pacifique-nord-humpback-03",
     "name": "Humpback sighting (Océan Pacifique Nord, HI, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by mcmeunier.",
@@ -216,21 +287,22 @@
     ]
   },
   {
-    "id": "2026-02-19-oc-an-pacifique-nord-humpback-02",
-    "name": "Humpback sighting (Océan Pacifique Nord, HI, US)",
+    "id": "2026-02-19-balboa-peninsula-new-humpback-04",
+    "name": "Humpback sighting (Balboa Peninsula, Newport Beach, CA, US)",
     "species": "Humpback",
-    "info": "iNaturalist observation by mcmeunier.",
+    "info": "iNaturalist observation by colinrobinson87.",
     "date": "2026-02-19",
-    "latitude": 22.1267555,
-    "longitude": -159.7881,
-    "area": "Océan Pacifique Nord, HI, US",
-    "source": "https://www.inaturalist.org/observations/339382048",
+    "latitude": 33.6029831566,
+    "longitude": -117.9136224603,
+    "area": "Balboa Peninsula, Newport Beach, CA, US",
+    "source": "https://www.inaturalist.org/observations/339309994",
     "behaviors": [
-      "reported"
+      "reported",
+      "feeding"
     ]
   },
   {
-    "id": "2026-02-19-mexico-humpback-03",
+    "id": "2026-02-19-mexico-humpback-05",
     "name": "Humpback sighting (Mexico)",
     "species": "Humpback",
     "info": "iNaturalist observation by mapierson.",
@@ -244,7 +316,7 @@
     ]
   },
   {
-    "id": "2026-02-19-is-humpback-04",
+    "id": "2026-02-19-is-humpback-06",
     "name": "Humpback sighting (IS)",
     "species": "Humpback",
     "info": "iNaturalist observation by truly-yixin.",
@@ -258,7 +330,7 @@
     ]
   },
   {
-    "id": "2026-02-19-eyjafjordur-humpback-05",
+    "id": "2026-02-19-eyjafjordur-humpback-07",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-02-19.",
@@ -300,15 +372,15 @@
     ]
   },
   {
-    "id": "2026-02-18-maui-county-hi-usa-humpback-01",
-    "name": "Humpback sighting (Maui County, HI, USA)",
+    "id": "2026-02-18-w-oceanfront-newport-humpback-01",
+    "name": "Humpback sighting (W Oceanfront, Newport Beach, CA, US)",
     "species": "Humpback",
-    "info": "iNaturalist observation by puffbirdns.",
+    "info": "iNaturalist observation by skatingflamingo.",
     "date": "2026-02-18",
-    "latitude": 20.7684845409,
-    "longitude": -156.4957398176,
-    "area": "Maui County, HI, USA",
-    "source": "https://www.inaturalist.org/observations/339232136",
+    "latitude": 33.6039583333,
+    "longitude": -117.9143533333,
+    "area": "W Oceanfront, Newport Beach, CA, US",
+    "source": "https://www.inaturalist.org/observations/339252461",
     "behaviors": [
       "reported"
     ]
@@ -328,21 +400,7 @@
     ]
   },
   {
-    "id": "2026-02-18-mexico-humpback-03",
-    "name": "Humpback sighting (Mexico)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by hannahb33.",
-    "date": "2026-02-18",
-    "latitude": 25.8927699278,
-    "longitude": -111.3052646583,
-    "area": "Mexico",
-    "source": "https://www.inaturalist.org/observations/339218710",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-02-18-eyjafjordur-humpback-04",
+    "id": "2026-02-18-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-02-18.",
