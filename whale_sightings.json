@@ -306,12 +306,13 @@
     "species": "Orca",
     "info": "Orca Network recent sightings indicates Orca on 2026-02-19.",
     "date": "2026-02-19",
-    "latitude": 48.45,
-    "longitude": -123.05,
+    "latitude": 48.1,
+    "longitude": -122.45,
     "area": "Salish Sea (offshore), BC/WA, Canada/USA",
     "source": "https://www.orcanetwork.org/recent-sightings",
     "behaviors": [
-      "reported"
+      "reported",
+      "traveling"
     ]
   },
   {
@@ -411,6 +412,7 @@
     "behaviors": [
       "reported",
       "feeding",
+      "breaching",
       "traveling"
     ]
   },
