@@ -1,5 +1,34 @@
 [
   {
+    "id": "2026-03-02-oc-ano-pac-fico-nort-humpback-01",
+    "name": "Humpback sighting (Océano Pacífico Norte, MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by bladi834.",
+    "date": "2026-03-02",
+    "latitude": 24.518082978,
+    "longitude": -112.0327412177,
+    "area": "Océano Pacífico Norte, MX",
+    "source": "https://www.inaturalist.org/observations/340982188",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-02-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-03-02.",
+    "date": "2026-03-02",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-03-02-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -45,7 +74,7 @@
     ]
   },
   {
-    "id": "2026-03-02-faxafloi-bay-humpback-01",
+    "id": "2026-03-02-faxafloi-bay-humpback-02",
     "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
     "species": "Humpback",
     "info": "Parsed from elding_diary on 2026-03-02.",
@@ -58,22 +87,6 @@
       "reported",
       "feeding",
       "breaching"
-    ]
-  },
-  {
-    "id": "2026-03-02-bay-of-fundy-humpback-02",
-    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
-    "species": "Humpback",
-    "info": "Parsed from brier_island_whale_sightings on 2026-03-02.",
-    "date": "2026-03-02",
-    "latitude": 44.26,
-    "longitude": -66.42,
-    "area": "Bay of Fundy (offshore), NS, Canada",
-    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
-    "behaviors": [
-      "reported",
-      "hunting",
-      "vocalizing"
     ]
   },
   {
@@ -93,84 +106,23 @@
     ]
   },
   {
-    "id": "2026-03-02-dana-point-humpback-03",
-    "name": "Humpback sighting (Dana Point (offshore), CA, USA)",
+    "id": "2026-03-02-bay-of-fundy-humpback-03",
+    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Humpback",
-    "info": "Parsed from dolphinsafari_log on 2026-03-02.",
+    "info": "Parsed from brier_island_whale_sightings on 2026-03-02.",
     "date": "2026-03-02",
-    "latitude": 33.45,
-    "longitude": -117.75,
-    "area": "Dana Point (offshore), CA, USA",
-    "source": "https://www.dolphinsafari.com/sightings-log/",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ]
-  },
-  {
-    "id": "2026-03-02-dana-point-orca-04",
-    "name": "Orca sighting (Dana Point (offshore), CA, USA)",
-    "species": "Orca",
-    "info": "Parsed from dolphinsafari_log on 2026-03-02.",
-    "date": "2026-03-02",
-    "latitude": 33.45,
-    "longitude": -117.75,
-    "area": "Dana Point (offshore), CA, USA",
-    "source": "https://www.dolphinsafari.com/sightings-log/",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ]
-  },
-  {
-    "id": "2026-03-02-dana-point-humpback-04",
-    "name": "Humpback sighting (Dana Point (offshore), CA, USA)",
-    "species": "Humpback",
-    "info": "Parsed from captain_dave_sightings_log on 2026-03-02.",
-    "date": "2026-03-02",
-    "latitude": 33.44,
-    "longitude": -117.72,
-    "area": "Dana Point (offshore), CA, USA",
-    "source": "https://dolphinsafari.com/category/sightings-log/",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ]
-  },
-  {
-    "id": "2026-03-02-dana-point-orca-05",
-    "name": "Orca sighting (Dana Point (offshore), CA, USA)",
-    "species": "Orca",
-    "info": "Parsed from captain_dave_sightings_log on 2026-03-02.",
-    "date": "2026-03-02",
-    "latitude": 33.44,
-    "longitude": -117.72,
-    "area": "Dana Point (offshore), CA, USA",
-    "source": "https://dolphinsafari.com/category/sightings-log/",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ]
-  },
-  {
-    "id": "2026-03-02-san-juan-islands-humpback-05",
-    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
-    "species": "Humpback",
-    "info": "Parsed from sanjuan_safaris_whale_report on 2026-03-02.",
-    "date": "2026-03-02",
-    "latitude": 48.55,
-    "longitude": -123.17,
-    "area": "San Juan Islands (offshore), WA, USA",
-    "source": "https://www.sanjuansafaris.com/whale-report/",
+    "latitude": 44.26,
+    "longitude": -66.42,
+    "area": "Bay of Fundy (offshore), NS, Canada",
+    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
     "behaviors": [
       "reported",
       "hunting",
-      "vocalizing",
-      "traveling"
+      "vocalizing"
     ]
   },
   {
-    "id": "2026-03-02-san-juan-islands-orca-06",
+    "id": "2026-03-02-san-juan-islands-orca-04",
     "name": "Orca sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Orca",
     "info": "Parsed from sanjuan_safaris_whale_report on 2026-03-02.",
@@ -187,17 +139,20 @@
     ]
   },
   {
-    "id": "2026-03-01-alalakeiki-channel-h-humpback-01",
-    "name": "Humpback sighting (Alalakeiki Channel, HI, US)",
+    "id": "2026-03-02-san-juan-islands-humpback-04",
+    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Humpback",
-    "info": "iNaturalist observation by pattabi.",
-    "date": "2026-03-01",
-    "latitude": 20.6303883333,
-    "longitude": -156.5025333333,
-    "area": "Alalakeiki Channel, HI, US",
-    "source": "https://www.inaturalist.org/observations/340906714",
+    "info": "Parsed from sanjuan_safaris_whale_report on 2026-03-02.",
+    "date": "2026-03-02",
+    "latitude": 48.55,
+    "longitude": -123.17,
+    "area": "San Juan Islands (offshore), WA, USA",
+    "source": "https://www.sanjuansafaris.com/whale-report/",
     "behaviors": [
-      "reported"
+      "reported",
+      "hunting",
+      "vocalizing",
+      "traveling"
     ]
   },
   {
@@ -215,15 +170,15 @@
     ]
   },
   {
-    "id": "2026-03-01-mx-humpback-02",
-    "name": "Humpback sighting (MX)",
+    "id": "2026-03-01-alalakeiki-channel-h-humpback-01",
+    "name": "Humpback sighting (Alalakeiki Channel, HI, US)",
     "species": "Humpback",
-    "info": "iNaturalist observation by maxandrudy.",
+    "info": "iNaturalist observation by pattabi.",
     "date": "2026-03-01",
-    "latitude": 25.90277,
-    "longitude": -111.33168,
-    "area": "MX",
-    "source": "https://www.inaturalist.org/observations/340860701",
+    "latitude": 20.6303883333,
+    "longitude": -156.5025333333,
+    "area": "Alalakeiki Channel, HI, US",
+    "source": "https://www.inaturalist.org/observations/340906714",
     "behaviors": [
       "reported"
     ]
@@ -243,6 +198,20 @@
     ]
   },
   {
+    "id": "2026-03-01-mx-humpback-02",
+    "name": "Humpback sighting (MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by maxandrudy.",
+    "date": "2026-03-01",
+    "latitude": 25.90277,
+    "longitude": -111.33168,
+    "area": "MX",
+    "source": "https://www.inaturalist.org/observations/340860701",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-03-01-huatulco-mx-oa-mx-humpback-03",
     "name": "Humpback sighting (Huatulco, MX-OA, MX)",
     "species": "Humpback",
@@ -252,20 +221,6 @@
     "longitude": -96.1289289338,
     "area": "Huatulco, MX-OA, MX",
     "source": "https://www.inaturalist.org/observations/340872673",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-01-huatulco-mx-oa-mx-humpback-04",
-    "name": "Humpback sighting (Huatulco, MX-OA, MX)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by blakesito.",
-    "date": "2026-03-01",
-    "latitude": 15.7121778186,
-    "longitude": -96.1317237956,
-    "area": "Huatulco, MX-OA, MX",
-    "source": "https://www.inaturalist.org/observations/340872670",
     "behaviors": [
       "reported"
     ]
