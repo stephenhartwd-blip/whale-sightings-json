@@ -1,19 +1,5 @@
 [
   {
-    "id": "2026-03-02-oc-ano-pac-fico-nort-humpback-01",
-    "name": "Humpback sighting (Océano Pacífico Norte, MX)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by bladi834.",
-    "date": "2026-03-02",
-    "latitude": 24.518082978,
-    "longitude": -112.0327412177,
-    "area": "Océano Pacífico Norte, MX",
-    "source": "https://www.inaturalist.org/observations/340982188",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-03-02-cape-town-white-01",
     "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
     "species": "Great White Shark",
@@ -74,7 +60,7 @@
     ]
   },
   {
-    "id": "2026-03-02-faxafloi-bay-humpback-02",
+    "id": "2026-03-02-faxafloi-bay-humpback-01",
     "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
     "species": "Humpback",
     "info": "Parsed from elding_diary on 2026-03-02.",
@@ -87,6 +73,22 @@
       "reported",
       "feeding",
       "breaching"
+    ]
+  },
+  {
+    "id": "2026-03-02-bay-of-fundy-humpback-02",
+    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
+    "species": "Humpback",
+    "info": "Parsed from brier_island_whale_sightings on 2026-03-02.",
+    "date": "2026-03-02",
+    "latitude": 44.26,
+    "longitude": -66.42,
+    "area": "Bay of Fundy (offshore), NS, Canada",
+    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "behaviors": [
+      "reported",
+      "hunting",
+      "vocalizing"
     ]
   },
   {
@@ -106,19 +108,20 @@
     ]
   },
   {
-    "id": "2026-03-02-bay-of-fundy-humpback-03",
-    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
+    "id": "2026-03-02-san-juan-islands-humpback-03",
+    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Humpback",
-    "info": "Parsed from brier_island_whale_sightings on 2026-03-02.",
+    "info": "Parsed from sanjuan_safaris_whale_report on 2026-03-02.",
     "date": "2026-03-02",
-    "latitude": 44.26,
-    "longitude": -66.42,
-    "area": "Bay of Fundy (offshore), NS, Canada",
-    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "latitude": 48.55,
+    "longitude": -123.17,
+    "area": "San Juan Islands (offshore), WA, USA",
+    "source": "https://www.sanjuansafaris.com/whale-report/",
     "behaviors": [
       "reported",
       "hunting",
-      "vocalizing"
+      "vocalizing",
+      "traveling"
     ]
   },
   {
@@ -139,20 +142,17 @@
     ]
   },
   {
-    "id": "2026-03-02-san-juan-islands-humpback-04",
-    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
+    "id": "2026-03-02-oc-ano-pac-fico-nort-humpback-04",
+    "name": "Humpback sighting (Océano Pacífico Norte, MX)",
     "species": "Humpback",
-    "info": "Parsed from sanjuan_safaris_whale_report on 2026-03-02.",
+    "info": "iNaturalist observation by bladi834.",
     "date": "2026-03-02",
-    "latitude": 48.55,
-    "longitude": -123.17,
-    "area": "San Juan Islands (offshore), WA, USA",
-    "source": "https://www.sanjuansafaris.com/whale-report/",
+    "latitude": 24.518082978,
+    "longitude": -112.0327412177,
+    "area": "Océano Pacífico Norte, MX",
+    "source": "https://www.inaturalist.org/observations/340982188",
     "behaviors": [
-      "reported",
-      "hunting",
-      "vocalizing",
-      "traveling"
+      "reported"
     ]
   },
   {
@@ -207,6 +207,20 @@
     "longitude": -111.33168,
     "area": "MX",
     "source": "https://www.inaturalist.org/observations/340860701",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-01-tierra-del-fuego-arg-orca-03",
+    "name": "Orca sighting (Tierra del Fuego, Argentina)",
+    "species": "Orca",
+    "info": "iNaturalist observation by fede_munoz.",
+    "date": "2026-03-01",
+    "latitude": -54.920559971500005,
+    "longitude": -67.1341536929,
+    "area": "Tierra del Fuego, Argentina",
+    "source": "https://www.inaturalist.org/observations/341022616",
     "behaviors": [
       "reported"
     ]
