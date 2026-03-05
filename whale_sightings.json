@@ -1,6 +1,36 @@
 [
   {
-    "id": "2026-03-04-bremer-canyon-orca-01",
+    "id": "2026-03-04-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-03-04.",
+    "date": "2026-03-04",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
+    "id": "2026-03-04-united-kingdom-orca-01",
+    "name": "Orca sighting (United Kingdom (offshore))",
+    "species": "Orca",
+    "info": "Parsed from uk_seawatch_sightings on 2026-03-04.",
+    "date": "2026-03-04",
+    "latitude": 57.53,
+    "longitude": -6.47,
+    "area": "United Kingdom (offshore)",
+    "source": "https://www.seawatchfoundation.org.uk/sightings/",
+    "behaviors": [
+      "reported",
+      "vocalizing"
+    ]
+  },
+  {
+    "id": "2026-03-04-bremer-canyon-orca-02",
     "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
     "species": "Orca",
     "info": "Parsed from whale_watch_wa on 2026-03-04.",
@@ -42,24 +72,7 @@
     "behaviors": [
       "reported",
       "feeding",
-      "breaching",
       "traveling"
-    ]
-  },
-  {
-    "id": "2026-03-04-bay-of-fundy-orca-02",
-    "name": "Orca sighting (Bay of Fundy (offshore), NS, Canada)",
-    "species": "Orca",
-    "info": "Parsed from brier_island_whale_sightings on 2026-03-04.",
-    "date": "2026-03-04",
-    "latitude": 44.26,
-    "longitude": -66.42,
-    "area": "Bay of Fundy (offshore), NS, Canada",
-    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
-    "behaviors": [
-      "reported",
-      "hunting",
-      "vocalizing"
     ]
   },
   {
@@ -79,9 +92,25 @@
     ]
   },
   {
-    "id": "2026-03-04-san-juan-islands-orca-03",
-    "name": "Orca sighting (San Juan Islands (offshore), WA, USA)",
+    "id": "2026-03-04-bay-of-fundy-orca-03",
+    "name": "Orca sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Orca",
+    "info": "Parsed from brier_island_whale_sightings on 2026-03-04.",
+    "date": "2026-03-04",
+    "latitude": 44.26,
+    "longitude": -66.42,
+    "area": "Bay of Fundy (offshore), NS, Canada",
+    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "behaviors": [
+      "reported",
+      "hunting",
+      "vocalizing"
+    ]
+  },
+  {
+    "id": "2026-03-04-san-juan-islands-humpback-03",
+    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
+    "species": "Humpback",
     "info": "Parsed from sanjuan_safaris_whale_report on 2026-03-04.",
     "date": "2026-03-04",
     "latitude": 48.55,
@@ -96,9 +125,9 @@
     ]
   },
   {
-    "id": "2026-03-04-san-juan-islands-humpback-03",
-    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
-    "species": "Humpback",
+    "id": "2026-03-04-san-juan-islands-orca-04",
+    "name": "Orca sighting (San Juan Islands (offshore), WA, USA)",
+    "species": "Orca",
     "info": "Parsed from sanjuan_safaris_whale_report on 2026-03-04.",
     "date": "2026-03-04",
     "latitude": 48.55,
@@ -253,6 +282,20 @@
     ]
   },
   {
+    "id": "2026-03-01-santa-barbara-county-humpback-02",
+    "name": "Humpback sighting (Santa Barbara County, CA, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by victoriaperera.",
+    "date": "2026-03-01",
+    "latitude": 33.9223555556,
+    "longitude": -119.8211611111,
+    "area": "Santa Barbara County, CA, USA",
+    "source": "https://www.inaturalist.org/observations/341335632",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-02-28-hi-us-humpback-01",
     "name": "Humpback sighting (HI, US)",
     "species": "Humpback",
@@ -350,7 +393,21 @@
     ]
   },
   {
-    "id": "2026-02-20-iceland-humpback-01",
+    "id": "2026-02-20-corona-del-mar-state-humpback-01",
+    "name": "Humpback sighting (Corona Del Mar State Beach Route, Newport Beach, CA, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by james_switzer.",
+    "date": "2026-02-20",
+    "latitude": 33.572125,
+    "longitude": -117.871855,
+    "area": "Corona Del Mar State Beach Route, Newport Beach, CA, US",
+    "source": "https://www.inaturalist.org/observations/339456634",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-02-20-iceland-humpback-02",
     "name": "Humpback sighting (Iceland)",
     "species": "Humpback",
     "info": "iNaturalist observation by lukas_l.",
@@ -364,7 +421,21 @@
     ]
   },
   {
-    "id": "2026-02-19-is-humpback-01",
+    "id": "2026-02-19-newport-beach-ca-usa-humpback-01",
+    "name": "Humpback sighting (Newport Beach, CA, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by kyle_eaton_photography.",
+    "date": "2026-02-19",
+    "latitude": 33.6029815687,
+    "longitude": -117.9136140944,
+    "area": "Newport Beach, CA, USA",
+    "source": "https://www.inaturalist.org/observations/340132578",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-02-19-is-humpback-02",
     "name": "Humpback sighting (IS)",
     "species": "Humpback",
     "info": "iNaturalist observation by truly-yixin.",
