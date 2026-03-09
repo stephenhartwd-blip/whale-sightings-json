@@ -1,44 +1,17 @@
 [
   {
-    "id": "2026-03-08-oaxaca-mx-humpback-01",
-    "name": "Humpback sighting (Oaxaca, MX)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by blakesito.",
+    "id": "2026-03-08-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-03-08.",
     "date": "2026-03-08",
-    "latitude": 15.7151468757,
-    "longitude": -96.1266670936,
-    "area": "Oaxaca, MX",
-    "source": "https://www.inaturalist.org/observations/341908192",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
     "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-08-huatulco-mx-oa-mx-humpback-02",
-    "name": "Humpback sighting (Huatulco, MX-OA, MX)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by blakesito.",
-    "date": "2026-03-08",
-    "latitude": 15.711263886000001,
-    "longitude": -96.1306116048,
-    "area": "Huatulco, MX-OA, MX",
-    "source": "https://www.inaturalist.org/observations/341908191",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-08-oaxaca-mx-humpback-03",
-    "name": "Humpback sighting (Oaxaca, MX)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by blakesito.",
-    "date": "2026-03-08",
-    "latitude": 15.7219099286,
-    "longitude": -96.1201675941,
-    "area": "Oaxaca, MX",
-    "source": "https://www.inaturalist.org/observations/341908189",
-    "behaviors": [
-      "reported"
+      "reported",
+      "feeding"
     ]
   },
   {
@@ -87,7 +60,7 @@
     ]
   },
   {
-    "id": "2026-03-08-faxafloi-bay-humpback-04",
+    "id": "2026-03-08-faxafloi-bay-humpback-01",
     "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
     "species": "Humpback",
     "info": "Parsed from elding_diary on 2026-03-08.",
@@ -100,6 +73,22 @@
       "reported",
       "feeding",
       "traveling"
+    ]
+  },
+  {
+    "id": "2026-03-08-bay-of-fundy-humpback-02",
+    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
+    "species": "Humpback",
+    "info": "Parsed from brier_island_whale_sightings on 2026-03-08.",
+    "date": "2026-03-08",
+    "latitude": 44.26,
+    "longitude": -66.42,
+    "area": "Bay of Fundy (offshore), NS, Canada",
+    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "behaviors": [
+      "reported",
+      "hunting",
+      "vocalizing"
     ]
   },
   {
@@ -119,19 +108,20 @@
     ]
   },
   {
-    "id": "2026-03-08-bay-of-fundy-humpback-05",
-    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
+    "id": "2026-03-08-san-juan-islands-humpback-03",
+    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Humpback",
-    "info": "Parsed from brier_island_whale_sightings on 2026-03-08.",
+    "info": "Parsed from sanjuan_safaris_whale_report on 2026-03-08.",
     "date": "2026-03-08",
-    "latitude": 44.26,
-    "longitude": -66.42,
-    "area": "Bay of Fundy (offshore), NS, Canada",
-    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "latitude": 48.55,
+    "longitude": -123.17,
+    "area": "San Juan Islands (offshore), WA, USA",
+    "source": "https://www.sanjuansafaris.com/whale-report/",
     "behaviors": [
       "reported",
       "hunting",
-      "vocalizing"
+      "vocalizing",
+      "traveling"
     ]
   },
   {
@@ -152,20 +142,59 @@
     ]
   },
   {
-    "id": "2026-03-08-san-juan-islands-humpback-06",
-    "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
+    "id": "2026-03-08-los-cabos-mx-bs-mx-humpback-04",
+    "name": "Humpback sighting (Los Cabos, MX-BS, MX)",
     "species": "Humpback",
-    "info": "Parsed from sanjuan_safaris_whale_report on 2026-03-08.",
+    "info": "iNaturalist observation by jujuwild.",
     "date": "2026-03-08",
-    "latitude": 48.55,
-    "longitude": -123.17,
-    "area": "San Juan Islands (offshore), WA, USA",
-    "source": "https://www.sanjuansafaris.com/whale-report/",
+    "latitude": 22.8827609044,
+    "longitude": -109.87603834,
+    "area": "Los Cabos, MX-BS, MX",
+    "source": "https://www.inaturalist.org/observations/341948645",
     "behaviors": [
-      "reported",
-      "hunting",
-      "vocalizing",
-      "traveling"
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-08-oaxaca-mx-humpback-05",
+    "name": "Humpback sighting (Oaxaca, MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by blakesito.",
+    "date": "2026-03-08",
+    "latitude": 15.7151468757,
+    "longitude": -96.1266670936,
+    "area": "Oaxaca, MX",
+    "source": "https://www.inaturalist.org/observations/341908192",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-08-huatulco-mx-oa-mx-humpback-06",
+    "name": "Humpback sighting (Huatulco, MX-OA, MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by blakesito.",
+    "date": "2026-03-08",
+    "latitude": 15.711263886000001,
+    "longitude": -96.1306116048,
+    "area": "Huatulco, MX-OA, MX",
+    "source": "https://www.inaturalist.org/observations/341908191",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-08-oaxaca-mx-humpback-07",
+    "name": "Humpback sighting (Oaxaca, MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by blakesito.",
+    "date": "2026-03-08",
+    "latitude": 15.7219099286,
+    "longitude": -96.1201675941,
+    "area": "Oaxaca, MX",
+    "source": "https://www.inaturalist.org/observations/341908189",
+    "behaviors": [
+      "reported"
     ]
   },
   {
@@ -220,6 +249,20 @@
     "longitude": -109.4831549501,
     "area": "Los Cabos, B.C.S., MX",
     "source": "https://www.inaturalist.org/observations/341881251",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-07-parque-nacional-cabo-humpback-02",
+    "name": "Humpback sighting (Parque Nacional Cabo Pulmo, Cabo Pulmo, Los Cabos, MX-BS, MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jujuwild.",
+    "date": "2026-03-07",
+    "latitude": 23.4514565737,
+    "longitude": -109.4195228018,
+    "area": "Parque Nacional Cabo Pulmo, Cabo Pulmo, Los Cabos, MX-BS, MX",
+    "source": "https://www.inaturalist.org/observations/341942911",
     "behaviors": [
       "reported"
     ]
@@ -339,34 +382,6 @@
     "longitude": -156.0551478707,
     "area": "HI, US",
     "source": "https://www.inaturalist.org/observations/341048593",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-02-cabo-san-lucas-humpback-02",
-    "name": "Humpback sighting (Cabo San Lucas)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by daniellealkire.",
-    "date": "2026-03-02",
-    "latitude": 22.882024765,
-    "longitude": -109.8529815674,
-    "area": "Cabo San Lucas",
-    "source": "https://www.inaturalist.org/observations/341283064",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-02-cabo-san-lucas-humpback-03",
-    "name": "Humpback sighting (Cabo San Lucas)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by daniellealkire.",
-    "date": "2026-03-02",
-    "latitude": 22.88788414,
-    "longitude": -109.845954895,
-    "area": "Cabo San Lucas",
-    "source": "https://www.inaturalist.org/observations/341283245",
     "behaviors": [
       "reported"
     ]
