@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-03-09-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-03-09.",
+    "date": "2026-03-09",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-03-09-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -127,7 +142,21 @@
     ]
   },
   {
-    "id": "2026-03-09-oc-ano-pac-fico-nort-humpback-04",
+    "id": "2026-03-09-mexico-humpback-04",
+    "name": "Humpback sighting (Mexico)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by willmoffett.",
+    "date": "2026-03-09",
+    "latitude": 22.8656336859,
+    "longitude": -109.944168292,
+    "area": "Mexico",
+    "source": "https://www.inaturalist.org/observations/342155205",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-09-oc-ano-pac-fico-nort-humpback-05",
     "name": "Humpback sighting (Océano Pacífico Norte, MX)",
     "species": "Humpback",
     "info": "iNaturalist observation by senuel.",
@@ -141,7 +170,7 @@
     ]
   },
   {
-    "id": "2026-03-09-eyjafjordur-humpback-05",
+    "id": "2026-03-09-eyjafjordur-humpback-06",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-03-09.",
@@ -155,35 +184,21 @@
     ]
   },
   {
-    "id": "2026-03-08-monterey-county-ca-u-humpback-01",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
+    "id": "2026-03-08-los-cabos-mx-bs-mx-humpback-01",
+    "name": "Humpback sighting (Los Cabos, MX-BS, MX)",
     "species": "Humpback",
-    "info": "iNaturalist observation by jmaughn.",
+    "info": "iNaturalist observation by jujuwild.",
     "date": "2026-03-08",
-    "latitude": 36.8051130671,
-    "longitude": -121.9607585479,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/342031284",
+    "latitude": 22.8827609044,
+    "longitude": -109.87603834,
+    "area": "Los Cabos, MX-BS, MX",
+    "source": "https://www.inaturalist.org/observations/341948645",
     "behaviors": [
       "reported"
     ]
   },
   {
-    "id": "2026-03-08-monterey-county-ca-u-humpback-02",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-03-08",
-    "latitude": 36.8001648702,
-    "longitude": -121.8227428008,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/342031285",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-08-oaxaca-mx-humpback-03",
+    "id": "2026-03-08-oaxaca-mx-humpback-02",
     "name": "Humpback sighting (Oaxaca, MX)",
     "species": "Humpback",
     "info": "iNaturalist observation by blakesito.",
@@ -192,20 +207,6 @@
     "longitude": -96.1266670936,
     "area": "Oaxaca, MX",
     "source": "https://www.inaturalist.org/observations/341908192",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-08-huatulco-mx-oa-mx-humpback-04",
-    "name": "Humpback sighting (Huatulco, MX-OA, MX)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by blakesito.",
-    "date": "2026-03-08",
-    "latitude": 15.711263886000001,
-    "longitude": -96.1306116048,
-    "area": "Huatulco, MX-OA, MX",
-    "source": "https://www.inaturalist.org/observations/341908191",
     "behaviors": [
       "reported"
     ]
@@ -248,6 +249,20 @@
     "longitude": -123.08053517,
     "area": "North Vancouver, BC, Canada",
     "source": "https://www.inaturalist.org/observations/341776965",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-07-los-cabos-b-c-s-mx-humpback-01",
+    "name": "Humpback sighting (Los Cabos, B.C.S., MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by felidae65.",
+    "date": "2026-03-07",
+    "latitude": 23.1576206552,
+    "longitude": -109.4831549501,
+    "area": "Los Cabos, B.C.S., MX",
+    "source": "https://www.inaturalist.org/observations/341881251",
     "behaviors": [
       "reported"
     ]
@@ -367,20 +382,6 @@
     "longitude": -67.1341536929,
     "area": "Tierra del Fuego, Argentina",
     "source": "https://www.inaturalist.org/observations/341022616",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-01-santa-barbara-county-humpback-01",
-    "name": "Humpback sighting (Santa Barbara County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by victoriaperera.",
-    "date": "2026-03-01",
-    "latitude": 33.9223555556,
-    "longitude": -119.8211611111,
-    "area": "Santa Barbara County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/341335632",
     "behaviors": [
       "reported"
     ]
