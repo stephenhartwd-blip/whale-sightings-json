@@ -14,8 +14,9 @@ Deterministic:
 Enforces:
 - Pins must be in water (uses global-land-mask; nudges offshore if needed)
 
-Outputs JSON array entries that match your Swift model:
-id, name, species, info, date, latitude, longitude, area, source, behaviors
+Outputs JSON array entries that match your Swift model, now with optional photo fields:
+id, name, species, info, date, latitude, longitude, area, source, behaviors,
+photoURL, photoLicense, photoAttribution
 """
 
 from __future__ import annotations
@@ -53,6 +54,9 @@ MONTHS = (
 # Set in main() from config.max_days so parsers can use it
 GLOBAL_MAX_DAYS = 14
 
+# Set in main() from config.allowed_inat_photo_licenses
+GLOBAL_ALLOWED_INAT_PHOTO_LICENSES: Optional[set[str]] = None
+
 
 # -------------------------
 # Land / ocean enforcement
@@ -65,7 +69,6 @@ def require_landmask() -> None:
         )
 
 def wrap_lon(lon: float) -> float:
-    # normalize to [-180, 180]
     while lon > 180:
         lon -= 360
     while lon < -180:
@@ -76,8 +79,6 @@ def is_land(lat: float, lon: float) -> bool:
     require_landmask()
     return bool(globe.is_land(lat, lon))
 
-# Deterministic offsets to try when a point is on land.
-# (Starts tiny, grows to ~0.25 degrees max.)
 _OFFSHORE_OFFSETS: List[Tuple[float, float]] = [
     (0.00, 0.00),
     (0.02, 0.00), (-0.02, 0.00),
@@ -97,12 +98,6 @@ _OFFSHORE_OFFSETS: List[Tuple[float, float]] = [
 ]
 
 def ensure_ocean(lat: float, lon: float) -> Optional[Tuple[float, float]]:
-    """
-    Enforce "must be water":
-    - If point is water => keep.
-    - If point is land => try deterministic nudges.
-    - If still land => drop (return None).
-    """
     try:
         lat = float(lat)
         lon = wrap_lon(float(lon))
@@ -112,11 +107,9 @@ def ensure_ocean(lat: float, lon: float) -> Optional[Tuple[float, float]]:
     if not (-90.0 <= lat <= 90.0):
         return None
 
-    # If already water, keep
     if not is_land(lat, lon):
         return lat, lon
 
-    # Try nudges
     for dlat, dlon in _OFFSHORE_OFFSETS[1:]:
         la = lat + dlat
         lo = wrap_lon(lon + dlon)
@@ -152,7 +145,6 @@ def species_key(species: str) -> str:
     }[species]
 
 def clamp_nudge(lat: float, lon: float, dlat: float, dlon: float) -> Tuple[float, float]:
-    # limit each component to [-0.05, 0.05] (your original behavior)
     dlat = max(-0.05, min(0.05, dlat))
     dlon = max(-0.05, min(0.05, dlon))
     return lat + dlat, lon + dlon
@@ -192,7 +184,6 @@ def fetch_text(session: requests.Session, url: str) -> str:
     return normalize_text(r.text)
 
 def within_window(dt: datetime, now_dt: datetime, max_days: int) -> bool:
-    # reject future dates (important)
     if dt.date() > now_dt.date():
         return False
     return (now_dt.date() - dt.date()).days <= max_days
@@ -294,6 +285,94 @@ def try_extract_entry_latlon(entry: Any) -> Optional[Tuple[float, float]]:
     return None
 
 
+def normalize_license_code(value: Any) -> Optional[str]:
+    if value is None:
+        return None
+    s = str(value).strip().lower()
+    return s or None
+
+def normalize_allowed_license_set(raw: Any) -> Optional[set[str]]:
+    if raw is None:
+        return None
+    if not isinstance(raw, list):
+        return None
+
+    out = set()
+    for item in raw:
+        norm = normalize_license_code(item)
+        if norm:
+            out.add(norm)
+    return out if out else None
+
+def upgrade_inat_photo_url(url: str, size: str = "medium") -> str:
+    if not url:
+        return url
+
+    replacements = [
+        ("/square.", f"/{size}."),
+        ("/thumb.", f"/{size}."),
+        ("/small.", f"/{size}."),
+        ("/medium.", f"/{size}."),
+        ("/large.", f"/{size}."),
+    ]
+
+    upgraded = url
+    for old, new in replacements:
+        if old in upgraded:
+            upgraded = upgraded.replace(old, new)
+            break
+
+    return upgraded
+
+def extract_inat_photo_data(
+    obs: Dict[str, Any],
+    allowed_licenses: Optional[set[str]],
+) -> Tuple[Optional[str], Optional[str], Optional[str]]:
+    photos = obs.get("photos") or []
+    if not isinstance(photos, list):
+        return None, None, None
+
+    fallback: Optional[Tuple[Optional[str], Optional[str], Optional[str]]] = None
+
+    for photo in photos:
+        if not isinstance(photo, dict):
+            continue
+
+        license_code = normalize_license_code(photo.get("license_code"))
+        attribution = (photo.get("attribution") or "").strip() or None
+
+        url = (
+            photo.get("url")
+            or photo.get("medium_url")
+            or photo.get("large_url")
+            or photo.get("small_url")
+            or photo.get("thumb_url")
+            or photo.get("square_url")
+            or ""
+        )
+        url = str(url).strip()
+        if not url:
+            continue
+
+        url = upgrade_inat_photo_url(url, size="medium")
+
+        candidate = (url, license_code, attribution)
+
+        if fallback is None:
+            fallback = candidate
+
+        if allowed_licenses is None:
+            return candidate
+
+        if license_code and license_code in allowed_licenses:
+            return candidate
+
+    if allowed_licenses is None:
+        return fallback if fallback else (None, None, None)
+
+    return None, None, None
+
+
 @dataclass
 class Candidate:
     date: datetime
@@ -306,6 +385,9 @@ class Candidate:
     longitude: float
     behaviors: List[str]
     source_key: str
+    photo_url: Optional[str] = None
+    photo_license: Optional[str] = None
+    photo_attribution: Optional[str] = None
 
 
 # -------------------------
@@ -668,7 +750,7 @@ def _inat_obs_latlon(obs: Dict[str, Any]) -> Optional[Tuple[float, float]]:
         if lat is not None and lon is not None:
             return lat, lon
 
-    loc = (obs.get("location") or "").strip()  # "lat,lon"
+    loc = (obs.get("location") or "").strip()
     if loc and "," in loc:
         try:
             a, b = [x.strip() for x in loc.split(",", 1)]
@@ -698,6 +780,10 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
     fs = cfg.get("force_species")
     if fs:
         force_species = [str(x) for x in (fs if isinstance(fs, list) else [fs])]
+
+    allowed_licenses = normalize_allowed_license_set(cfg.get("allowed_photo_licenses"))
+    if allowed_licenses is None:
+        allowed_licenses = GLOBAL_ALLOWED_INAT_PHOTO_LICENSES
 
     today = now_local(tz_name)
     d2 = today.date().isoformat()
@@ -760,6 +846,11 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
         if not species_list:
             continue
 
+        photo_url, photo_license, photo_attribution = extract_inat_photo_data(
+            obs=obs,
+            allowed_licenses=allowed_licenses,
+        )
+
         species = species_list[0]
         name = f"{species} sighting ({area})"
         info = f"iNaturalist observation by {user}."
@@ -776,6 +867,9 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
                 longitude=float(lon2),
                 behaviors=infer_behaviors(blob),
                 source_key=source_key,
+                photo_url=photo_url,
+                photo_license=photo_license,
+                photo_attribution=photo_attribution,
             )
         )
 
@@ -952,20 +1046,27 @@ def build_entries(candidates: List[Candidate]) -> List[Dict[str, Any]]:
         idx = counters[k]
         entry_id = f"{date_str}-{region}-{skey}-{idx:02d}"
 
-        entries.append(
-            {
-                "id": entry_id,
-                "name": c.name,
-                "species": c.species,
-                "info": c.info,
-                "date": date_str,
-                "latitude": float(c.latitude),
-                "longitude": float(c.longitude),
-                "area": c.area,
-                "source": c.source,
-                "behaviors": c.behaviors,
-            }
-        )
+        entry: Dict[str, Any] = {
+            "id": entry_id,
+            "name": c.name,
+            "species": c.species,
+            "info": c.info,
+            "date": date_str,
+            "latitude": float(c.latitude),
+            "longitude": float(c.longitude),
+            "area": c.area,
+            "source": c.source,
+            "behaviors": c.behaviors,
+        }
+
+        if c.photo_url:
+            entry["photoURL"] = c.photo_url
+        if c.photo_license:
+            entry["photoLicense"] = c.photo_license
+        if c.photo_attribution:
+            entry["photoAttribution"] = c.photo_attribution
+
+        entries.append(entry)
 
     entries.sort(key=lambda e: e["date"], reverse=True)
     return entries
@@ -984,6 +1085,7 @@ def load_config(path: str) -> Dict[str, Any]:
 
 def main() -> None:
     global GLOBAL_MAX_DAYS
+    global GLOBAL_ALLOWED_INAT_PHOTO_LICENSES
 
     root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     cfg_path = os.path.join(root, "config", "sources.yml")
@@ -993,8 +1095,10 @@ def main() -> None:
     now_dt = now_local(tz_name)
     max_days = int(cfg.get("max_days", 14))
     GLOBAL_MAX_DAYS = max_days
+    GLOBAL_ALLOWED_INAT_PHOTO_LICENSES = normalize_allowed_license_set(
+        cfg.get("allowed_inat_photo_licenses")
+    )
 
-    # hard requirement: we want "never on land"
     require_landmask()
 
     session = requests.Session()
