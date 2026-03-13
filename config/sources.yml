@@ -1,5 +1,15 @@
 timezone: America/Vancouver
 
+# iNaturalist photo license filter
+# Only photos with one of these license codes will be included from iNaturalist.
+# Set to [] or remove this block if you want to allow any iNaturalist photo URL.
+allowed_inat_photo_licenses:
+  - cc0
+  - cc-by
+  - cc-by-sa
+  - cc-by-nc
+  - cc-by-nc-sa
+
 # Wider window so you can actually hit 80 reliably
 max_days: 45
 
@@ -107,7 +117,7 @@ sources:
     parser: generic_dated_page
     url: https://sdwhalewatch.com/category/recent-sightings/
     area: "San Diego (offshore), CA, USA"
-    latitude: 32.70   # <-- fixed (was latitude::)
+    latitude: 32.70
     longitude: -117.45
     max_items: 3
     uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
