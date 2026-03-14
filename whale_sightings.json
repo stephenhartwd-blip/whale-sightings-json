@@ -1,20 +1,5 @@
 [
   {
-    "id": "2026-03-14-cape-town-white-01",
-    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
-    "species": "Great White Shark",
-    "info": "Parsed from za_sharkspotters on 2026-03-14.",
-    "date": "2026-03-14",
-    "latitude": -34.12,
-    "longitude": 18.32,
-    "area": "Cape Town (offshore), South Africa",
-    "source": "https://www.sharkspotters.org.za/",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ]
-  },
-  {
     "id": "2026-03-14-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -321,7 +306,41 @@
     ]
   },
   {
-    "id": "2026-03-09-eyjafjordur-humpback-01",
+    "id": "2026-03-09-monterey-county-ca-u-humpback-01",
+    "name": "Humpback sighting (Monterey County, CA, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by smcdaniel.",
+    "date": "2026-03-09",
+    "latitude": 36.6372937525,
+    "longitude": -121.9080699858,
+    "area": "Monterey County, CA, USA",
+    "source": "https://www.inaturalist.org/observations/342788556",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/624285132/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) smcdaniel, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-09-monterey-county-ca-u-humpback-02",
+    "name": "Humpback sighting (Monterey County, CA, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by w_mcdaniel.",
+    "date": "2026-03-09",
+    "latitude": 36.6764730624,
+    "longitude": -121.9514250546,
+    "area": "Monterey County, CA, USA",
+    "source": "https://www.inaturalist.org/observations/342667907",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/624060208/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Thomas McDaniel, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-09-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-03-09.",
@@ -351,6 +370,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/623147555/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Frank Lin, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-08-pebble-beach-del-mon-humpback-01",
+    "name": "Humpback sighting (Pebble Beach, Del Monte Forest, CA, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by w_mcdaniel.",
+    "date": "2026-03-08",
+    "latitude": 36.635509127599995,
+    "longitude": -121.8480296536,
+    "area": "Pebble Beach, Del Monte Forest, CA, USA",
+    "source": "https://www.inaturalist.org/observations/342666705",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/624056895/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Thomas McDaniel, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-07-nanaimo-bc-canada-orca-01",
