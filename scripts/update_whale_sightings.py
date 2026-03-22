@@ -317,6 +317,10 @@ def detect_species(text: str, force: Optional[List[str]] = None) -> List[str]:
         hits.append("Great White Shark")
     if "blue whale" in t or "bluewhale" in t:
         hits.append("Blue Whale")
+    if any(k in t for k in ["gray whale", "grey whale", "eschrichtius"]):
+        hits.append("Gray Whale")
+    if any(k in t for k in ["fin whale", "finback", "balaenoptera physalus"]):
+        hits.append("Fin Whale")
 
     seen = set()
     out: List[str] = []
@@ -709,6 +713,10 @@ def parse_orcanetwork_recent_sightings(cfg: Dict[str, Any], session: requests.Se
             species_hits.append("Great White Shark")
         if re.search(r"BLUE\s+WHALE", block, re.IGNORECASE):
             species_hits.append("Blue Whale")
+        if re.search(r"GRAY\s+WHALE|GREY\s+WHALE", block, re.IGNORECASE):
+            species_hits.append("Gray Whale")
+        if re.search(r"FIN\s+WHALE|FINBACK", block, re.IGNORECASE):
+            species_hits.append("Fin Whale")
 
         for species in species_hits[:2]:
             if species not in ALLOWED_SPECIES:
