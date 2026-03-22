@@ -30,9 +30,9 @@
     ]
   },
   {
-    "id": "2026-03-22-bremer-canyon-orca-02",
-    "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
-    "species": "Orca",
+    "id": "2026-03-22-bremer-canyon-blue-01",
+    "name": "Blue Whale sighting (Bremer Canyon (offshore), WA, Australia)",
+    "species": "Blue Whale",
     "info": "Parsed from whale_watch_wa on 2026-03-22.",
     "date": "2026-03-22",
     "latitude": -34.7,
@@ -45,9 +45,9 @@
     ]
   },
   {
-    "id": "2026-03-22-bremer-canyon-blue-01",
-    "name": "Blue Whale sighting (Bremer Canyon (offshore), WA, Australia)",
-    "species": "Blue Whale",
+    "id": "2026-03-22-bremer-canyon-orca-02",
+    "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
+    "species": "Orca",
     "info": "Parsed from whale_watch_wa on 2026-03-22.",
     "date": "2026-03-22",
     "latitude": -34.7,
@@ -153,6 +153,40 @@
     ]
   },
   {
+    "id": "2026-03-20-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by merchkimberly.",
+    "date": "2026-03-20",
+    "latitude": 15.2718000608,
+    "longitude": -61.5099292635,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/344325474",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627364828/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) merchkimberly, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-20-main-road-scarboroug-humpback-01",
+    "name": "Humpback sighting (Main Road, Scarborough, Western Cape, ZA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by trackmyfind.",
+    "date": "2026-03-20",
+    "latitude": -34.214580000000005,
+    "longitude": 18.3696583333,
+    "area": "Main Road, Scarborough, Western Cape, ZA",
+    "source": "https://www.inaturalist.org/observations/344127433",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/626983860/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) trackmyfind, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-03-18-washington-us-orca-01",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
@@ -218,6 +252,20 @@
     "photoAttribution": "(c) carolinejjones, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-03-18-iceland-orca-03",
+    "name": "Orca sighting (Iceland)",
+    "species": "Orca",
+    "info": "iNaturalist observation by dodders123.",
+    "date": "2026-03-18",
+    "latitude": 64.9151443563,
+    "longitude": -23.6847340688,
+    "area": "Iceland",
+    "source": "https://www.inaturalist.org/observations/343717237",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-03-18-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -227,6 +275,20 @@
     "longitude": -18.15,
     "area": "Eyjafjordur (offshore), Akureyri, Iceland",
     "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-17-san-luis-obispo-coun-white-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-03-17",
+    "latitude": 35.3207810008,
+    "longitude": -120.940642213,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/343538415",
     "behaviors": [
       "reported"
     ]
@@ -283,6 +345,37 @@
     "photoAttribution": "(c) torenl, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-03-17-unalaska-ak-us-humpback-04",
+    "name": "Humpback sighting (Unalaska, AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by mrcrabs.",
+    "date": "2026-03-17",
+    "latitude": 53.897286666700005,
+    "longitude": -166.565855,
+    "area": "Unalaska, AK, US",
+    "source": "https://www.inaturalist.org/observations/343576265",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/625888445/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Max, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-16-san-luis-obispo-coun-white-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-03-16",
+    "latitude": 35.3929295383,
+    "longitude": -120.9508026457,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/343428335",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-03-16-gulf-of-california-m-humpback-01",
     "name": "Humpback sighting (Gulf of California, MX)",
     "species": "Humpback",
@@ -316,6 +409,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/626274543/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) andydyson, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-16-canterbury-region-ne-humpback-03",
+    "name": "Humpback sighting (Canterbury Region, New Zealand)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by tomjwils.",
+    "date": "2026-03-16",
+    "latitude": -42.45225326,
+    "longitude": 173.6417004158,
+    "area": "Canterbury Region, New Zealand",
+    "source": "https://www.inaturalist.org/observations/343707124",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/626149991/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Thomas Wilson, some rights reserved (CC BY)"
   },
   {
     "id": "2026-03-15-nanaimo-bc-canada-orca-01",
@@ -387,6 +497,23 @@
     "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-03-15-canterbury-region-ne-humpback-03",
+    "name": "Humpback sighting (Canterbury Region, New Zealand)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by charles_snow1.",
+    "date": "2026-03-15",
+    "latitude": -42.4635687681,
+    "longitude": 173.6242979805,
+    "area": "Canterbury Region, New Zealand",
+    "source": "https://www.inaturalist.org/observations/343453798",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/625638780/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Charles Snow Gillingham, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-03-14-capital-bc-ca-orca-01",
     "name": "Orca sighting (Capital, BC, CA)",
     "species": "Orca",
@@ -454,6 +581,23 @@
     ]
   },
   {
+    "id": "2026-03-12-canterbury-nz-humpback-02",
+    "name": "Humpback sighting (Canterbury, NZ)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jiffyb.",
+    "date": "2026-03-12",
+    "latitude": -42.4764216667,
+    "longitude": 173.5417783333,
+    "area": "Canterbury, NZ",
+    "source": "https://www.inaturalist.org/observations/343751202",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/626242964/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) jiffyb, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-03-11-maalaea-bay-maalaea--humpback-01",
     "name": "Humpback sighting (Maalaea Bay, Maalaea, HI, US)",
     "species": "Humpback",
@@ -469,6 +613,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/625242798/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) rangersmith, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-11-canterbury-nz-humpback-02",
+    "name": "Humpback sighting (Canterbury, NZ)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by dylanshepley.",
+    "date": "2026-03-11",
+    "latitude": -42.4888533333,
+    "longitude": 173.5446033333,
+    "area": "Canterbury, NZ",
+    "source": "https://www.inaturalist.org/observations/342696718",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/624120203/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) dylanshepley, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-11-salish-sea-orca-01",
@@ -520,6 +681,20 @@
     ]
   },
   {
+    "id": "2026-03-09-san-luis-obispo-coun-white-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-03-09",
+    "latitude": 35.341313112,
+    "longitude": -120.8423929169,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/342175582",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-03-09-salish-sea-orca-01",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
@@ -533,6 +708,71 @@
       "reported",
       "hunting",
       "traveling"
+    ]
+  },
+  {
+    "id": "2026-03-08-despatch-channel-do-humpback-01",
+    "name": "Humpback sighting (Despatch Channel, DO)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by karol_tabarelli_de_fatis.",
+    "date": "2026-03-08",
+    "latitude": 19.1543262092,
+    "longitude": -69.3542195066,
+    "area": "Despatch Channel, DO",
+    "source": "https://www.inaturalist.org/observations/342393700",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/623510298/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Karol Tabarelli de Fatis, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-03-mussel-beach-scarbor-humpback-01",
+    "name": "Humpback sighting (Mussel Beach, Scarborough)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by muonmo.",
+    "date": "2026-03-03",
+    "latitude": -34.214485,
+    "longitude": 18.3697291997,
+    "area": "Mussel Beach, Scarborough",
+    "source": "https://www.inaturalist.org/observations/341078660",
+    "behaviors": [
+      "reported",
+      "hunting",
+      "feeding",
+      "vocalizing"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/620829758/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Marian Oliver, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-03-san-luis-obispo-coun-white-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-03-03",
+    "latitude": 35.2847445941,
+    "longitude": -120.9327453898,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/341173435",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-01-despatch-channel-do-humpback-01",
+    "name": "Humpback sighting (Despatch Channel, DO)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by loise_paulino_vargas.",
+    "date": "2026-03-01",
+    "latitude": 19.1435666667,
+    "longitude": -69.230995,
+    "area": "Despatch Channel, DO",
+    "source": "https://www.inaturalist.org/observations/340947594",
+    "behaviors": [
+      "reported"
     ]
   },
   {
@@ -551,6 +791,41 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/620707738/medium.jpg",
     "photoLicense": "cc0",
     "photoAttribution": "no rights reserved"
+  },
+  {
+    "id": "2026-02-23-sitka-sound-sitka-ak-orca-01",
+    "name": "Orca sighting (Sitka Sound, Sitka, AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by kljinsitka.",
+    "date": "2026-02-23",
+    "latitude": 56.97573,
+    "longitude": -135.78046,
+    "area": "Sitka Sound, Sitka, AK, US",
+    "source": "https://www.inaturalist.org/observations/340090742",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/618817321/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Karen L. Johnson, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-02-22-tasman-sea-woolgoolg-white-01",
+    "name": "Great White Shark sighting (Tasman Sea, Woolgoolga, NSW, AU)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by divercody.",
+    "date": "2026-02-22",
+    "latitude": -30.1128399635,
+    "longitude": 153.2108676568,
+    "area": "Tasman Sea, Woolgoolga, NSW, AU",
+    "source": "https://www.inaturalist.org/observations/339639882",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/617893547/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) divercody, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-02-20-iceland-humpback-01",
@@ -635,6 +910,91 @@
     "photoAttribution": "(c) afivewave, some rights reserved (CC BY)"
   },
   {
+    "id": "2026-02-14-north-atlantic-ocean-humpback-02",
+    "name": "Humpback sighting (North Atlantic Ocean, DO)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by drossme.",
+    "date": "2026-02-14",
+    "latitude": 19.1625534211,
+    "longitude": -69.4001144283,
+    "area": "North Atlantic Ocean, DO",
+    "source": "https://www.inaturalist.org/observations/340573940",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/619802153/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Dave, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-02-13-la-espa-ola-arroyo-b-humpback-01",
+    "name": "Humpback sighting (La Española, Arroyo Barril, Cibao Nordeste, DO)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by drossme.",
+    "date": "2026-02-13",
+    "latitude": 19.1736605352,
+    "longitude": -69.3850139049,
+    "area": "La Española, Arroyo Barril, Cibao Nordeste, DO",
+    "source": "https://www.inaturalist.org/observations/338515187",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/615635965/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Dave, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-02-12-macquarie-island-au--orca-01",
+    "name": "Orca sighting (Macquarie Island, AU-TS, AU)",
+    "species": "Orca",
+    "info": "iNaturalist observation by guillaumecalcagni.",
+    "date": "2026-02-12",
+    "latitude": -54.5400683,
+    "longitude": 158.9598283333,
+    "area": "Macquarie Island, AU-TS, AU",
+    "source": "https://www.inaturalist.org/observations/338297717",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/615180730/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) guillaumecalcagni, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-02-12-macquarie-island-au--orca-02",
+    "name": "Orca sighting (Macquarie Island, AU-TS, AU)",
+    "species": "Orca",
+    "info": "iNaturalist observation by guillaumecalcagni.",
+    "date": "2026-02-12",
+    "latitude": -54.5400683,
+    "longitude": 158.9598283333,
+    "area": "Macquarie Island, AU-TS, AU",
+    "source": "https://www.inaturalist.org/observations/338297727",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/615181133/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) guillaumecalcagni, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-02-12-macquarie-island-au--orca-03",
+    "name": "Orca sighting (Macquarie Island, AU-TS, AU)",
+    "species": "Orca",
+    "info": "iNaturalist observation by guillaumecalcagni.",
+    "date": "2026-02-12",
+    "latitude": -54.5400683,
+    "longitude": 158.9598283333,
+    "area": "Macquarie Island, AU-TS, AU",
+    "source": "https://www.inaturalist.org/observations/338297722",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/615181137/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) guillaumecalcagni, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-02-10-flakstad-municipalit-orca-01",
     "name": "Orca sighting (Flakstad Municipality, Norway)",
     "species": "Orca",
@@ -684,5 +1044,121 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/616713823/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) charlie, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-02-03-moruya-heads-au-white-01",
+    "name": "Great White Shark sighting (Moruya Heads, AU)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by igorlebg.",
+    "date": "2026-02-03",
+    "latitude": -35.9628,
+    "longitude": 150.1574945,
+    "area": "Moruya Heads, AU",
+    "source": "https://www.inaturalist.org/observations/338302483",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/615192228/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) igorlebg, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-01-31-overberg-za-wc-za-white-01",
+    "name": "Great White Shark sighting (Overberg, ZA-WC, ZA)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by cbjenman.",
+    "date": "2026-01-31",
+    "latitude": -34.6526014653,
+    "longitude": 20.2784880022,
+    "area": "Overberg, ZA-WC, ZA",
+    "source": "https://www.inaturalist.org/observations/337342226",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/613220378/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) cbjenman, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-01-30-western-cape-za-humpback-01",
+    "name": "Humpback sighting (Western Cape, ZA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by christo35.",
+    "date": "2026-01-30",
+    "latitude": -34.264007549800006,
+    "longitude": 18.3783164957,
+    "area": "Western Cape, ZA",
+    "source": "https://www.inaturalist.org/observations/336670919",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/611856057/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) christo35, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-01-27-ri-grande-tierra-del-orca-01",
+    "name": "Orca sighting (Rió Grande, Tierra del Fuego, Argentina)",
+    "species": "Orca",
+    "info": "iNaturalist observation by pablof.",
+    "date": "2026-01-27",
+    "latitude": -53.2747066667,
+    "longitude": -68.4609661111,
+    "area": "Rió Grande, Tierra del Fuego, Argentina",
+    "source": "https://www.inaturalist.org/observations/336518270",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/611536013/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Pablo Fraire, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-01-25-pacific-ocean-hokkai-orca-01",
+    "name": "Orca sighting (Pacific Ocean, Hokkaido, JP)",
+    "species": "Orca",
+    "info": "iNaturalist observation by ryanwebb.",
+    "date": "2026-01-25",
+    "latitude": 44.007595595299996,
+    "longitude": 145.2165993252,
+    "area": "Pacific Ocean, Hokkaido, JP",
+    "source": "https://www.inaturalist.org/observations/343910796",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/626554956/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ryanwebb, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-01-24-oc-ano-pac-fico-sur--blue-01",
+    "name": "Blue Whale sighting (Océano Pacífico Sur, Región de Atacama, CL)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by ngvmu.",
+    "date": "2026-01-24",
+    "latitude": -29.0670320957,
+    "longitude": -71.5832818124,
+    "area": "Océano Pacífico Sur, Región de Atacama, CL",
+    "source": "https://www.inaturalist.org/observations/336533445",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-01-23-hikkaduwa-lk-gl-lk-blue-01",
+    "name": "Blue Whale sighting (Hikkaduwa, LK-GL, LK)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by egor_dyukarev.",
+    "date": "2026-01-23",
+    "latitude": 6.1572126902,
+    "longitude": 80.0465006966,
+    "area": "Hikkaduwa, LK-GL, LK",
+    "source": "https://www.inaturalist.org/observations/338416488",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/615430245/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Egor Dyukarev, some rights reserved (CC BY)"
   }
 ]
