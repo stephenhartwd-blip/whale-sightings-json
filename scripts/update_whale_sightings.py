@@ -44,7 +44,70 @@ except Exception:
     globe = None
 
 
-ALLOWED_SPECIES = {"Orca", "Humpback", "Sperm whale", "Great White Shark", "Blue Whale"}
+ALLOWED_SPECIES = {"Orca", "Humpback", "Sperm whale", "Great White Shark", "Blue Whale", "Gray Whale", "Fin Whale"}
+
+# Known individually-catalogued whales: individual_id → display name
+KNOWN_INDIVIDUALS: Dict[str, str] = {
+    # Southern Resident orcas (Center for Whale Research)
+    "orca_j02": "Granny", "orca_j16": "Slick", "orca_j17": "Princess Angeline",
+    "orca_j19": "Shachi", "orca_j22": "Oreo", "orca_j26": "Mike",
+    "orca_j27": "Blackberry", "orca_j28": "Polaris", "orca_j34": "Doublestuf",
+    "orca_j35": "Tahlequah", "orca_j36": "Alki", "orca_j37": "Hy'Shqa",
+    "orca_j38": "Cookie", "orca_j39": "Mako", "orca_j40": "Suttles",
+    "orca_j41": "Eclipse", "orca_j42": "Echo", "orca_j45": "Se-Yi'-Chn",
+    "orca_j46": "Star", "orca_j47": "Notch", "orca_j51": "Nova",
+    "orca_j52": "Sonic", "orca_j53": "Kiki", "orca_j56": "Tofino",
+    "orca_k11": "Georgia", "orca_k12": "Sequim", "orca_k13": "Skagit",
+    "orca_k20": "Spock", "orca_k21": "Cappuccino", "orca_k22": "Deadhead",
+    "orca_k25": "Scoter", "orca_k26": "Lobo", "orca_k33": "Tika",
+    "orca_k34": "Cali", "orca_k35": "Sonata", "orca_k36": "Comet",
+    "orca_k38": "Coho", "orca_k39": "Sooke", "orca_k42": "Kelp",
+    "orca_l84": "Nyssa", "orca_l87": "Onyx", "orca_l88": "Wave Walker",
+    "orca_l90": "Ballena", "orca_l92": "Crewser", "orca_l94": "Calypso",
+    "orca_l95": "Nigel", "orca_l98": "Luna", "orca_l105": "Fluke",
+    "orca_l109": "Solstice", "orca_l119": "Joy",
+    # Gulf of Maine humpbacks (Stellwagen Bank NMS catalog)
+    "humpback_salt": "Salt", "humpback_pepper": "Pepper",
+    "humpback_freckles": "Freckles", "humpback_braid": "Braid",
+    "humpback_nile": "Nile", "humpback_putter": "Putter",
+    "humpback_infinity": "Infinity", "humpback_tornado": "Tornado",
+    "humpback_colt": "Colt", "humpback_reflection": "Reflection",
+    "humpback_monkey": "Monkey",
+    # PCFG gray whales (Oregon Coast Aquarium / GEMM Lab)
+    "gray_earhart": "Earhart", "gray_patch": "Patch",
+    "gray_cascade": "Cascade", "gray_scarlett": "Scarlett",
+    "gray_roller": "Roller", "gray_limpet": "Limpet",
+    # Bremer Canyon orcas (Australia)
+    "orca_au_el_notcho": "El Notcho", "orca_au_blade": "Blade",
+    "orca_au_hookfin": "Hookfin", "orca_au_nibbles": "Nibbles",
+    # Dominica sperm whales (Project CETI / Shane Gero)
+    "sperm_digit": "Digit", "sperm_fingers": "Fingers",
+    "sperm_pinchy": "Pinchy", "sperm_mysterio": "Mysterio",
+    # Gulf of St. Lawrence blue whales
+    "blue_ol_blue": "Ol' Blue",
+}
+
+# Regex patterns to extract catalog numbers from iNaturalist text
+CATALOG_PATTERNS = [
+    # Southern/Northern Residents: J35, K21, L87
+    (re.compile(r'\b([JKL])[-\s]?0*(\d{1,3})\b'),
+     lambda m: f"orca_{m.group(1).lower()}{int(m.group(2)):02d}"),
+    # Bigg's / Transient orcas: T046, T123A
+    (re.compile(r'\b(T\d{2,3}[A-Z]?\d*)\b'),
+     lambda m: f"orca_biggs_{m.group(1).lower()}"),
+    # PCFG gray whales: PCFG-047 or PCFG 47
+    (re.compile(r'\bPCFG[-\s]?0*(\d{1,3})\b', re.IGNORECASE),
+     lambda m: f"gray_pcfg_{int(m.group(1)):03d}"),
+    # North Atlantic right whales: #1234
+    (re.compile(r'#(\d{4})\b'),
+     lambda m: f"rightwhale_{m.group(1)}"),
+]
+
+# iNaturalist OFV field names that carry individual whale IDs
+OFV_ID_FIELDS = {
+    "whale id", "individual id", "catalog number", "catalog #",
+    "photo id", "photo-id", "cetacean id", "whale catalog", "animal id",
+}
 
 MONTHS = (
     "January", "February", "March", "April", "May", "June",
@@ -142,7 +205,9 @@ def species_key(species: str) -> str:
         "Sperm whale": "sperm",
         "Great White Shark": "white",
         "Blue Whale": "blue",
-    }[species]
+        "Gray Whale": "gray",
+        "Fin Whale": "fin",
+    }.get(species, slugify(species))
 
 def clamp_nudge(lat: float, lon: float, dlat: float, dlon: float) -> Tuple[float, float]:
     dlat = max(-0.05, min(0.05, dlat))
@@ -388,10 +453,12 @@ class Candidate:
     photo_url: Optional[str] = None
     photo_license: Optional[str] = None
     photo_attribution: Optional[str] = None
+    individual_id: Optional[str] = None
+    individual_name: Optional[str] = None
 
 
 # -------------------------
-# Generic “dated sections” extraction (HTML)
+# Generic "dated sections" extraction (HTML)
 # -------------------------
 
 def extract_dated_sections(text: str, tz_name: str, today: datetime) -> List[Tuple[datetime, str]]:
@@ -851,6 +918,31 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
             allowed_licenses=allowed_licenses,
         )
 
+        # --- Individual whale ID extraction ---
+        ind_id: Optional[str] = None
+        ind_name: Optional[str] = None
+        # 1. Check OFVs for catalog number fields
+        for ofv in obs.get("ofvs", []):
+            field_name = (ofv.get("field", {}).get("name") or "").lower().strip()
+            value = (ofv.get("value") or "").strip()
+            if field_name in OFV_ID_FIELDS and value:
+                ind_id = re.sub(r"[\s\-]+", "_", value.lower())
+                break
+        # 2. Scan description + tags for known patterns
+        if not ind_id:
+            search_text = " ".join([
+                description,
+                " ".join(t.get("name", "") for t in obs.get("tags", [])),
+            ])
+            for pattern, normaliser in CATALOG_PATTERNS:
+                m = pattern.search(search_text)
+                if m:
+                    ind_id = normaliser(m)
+                    break
+        if ind_id:
+            ind_name = KNOWN_INDIVIDUALS.get(ind_id) or ind_id.upper().replace("_", " ")
+        # --- end individual extraction ---
+
         species = species_list[0]
         name = f"{species} sighting ({area})"
         info = f"iNaturalist observation by {user}."
@@ -870,6 +962,8 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
                 photo_url=photo_url,
                 photo_license=photo_license,
                 photo_attribution=photo_attribution,
+                individual_id=ind_id,
+                individual_name=ind_name,
             )
         )
 
@@ -1065,6 +1159,9 @@ def build_entries(candidates: List[Candidate]) -> List[Dict[str, Any]]:
             entry["photoLicense"] = c.photo_license
         if c.photo_attribution:
             entry["photoAttribution"] = c.photo_attribution
+        if c.individual_id:
+            entry["individualId"] = c.individual_id
+            entry["individualName"] = c.individual_name or c.individual_id
 
         entries.append(entry)
 
