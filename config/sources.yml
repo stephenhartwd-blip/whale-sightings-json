@@ -735,3 +735,81 @@ sources:
     max_items: 4
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Great White Shark"]
+
+
+  # -------------------------
+  # OBIS (Ocean Biodiversity Information System)
+  # Free REST API — no auth required. Uses WoRMS AphiaIDs for exact species matching.
+  # Live 2025 data confirmed. Aggregates Happywhale, Navy surveys, research vessels + more.
+  # https://api.obis.org/v3
+  # -------------------------
+
+  - key: obis_orca_pacific
+    parser: obis_api
+    aphia_id: 137013
+    area: "Pacific Ocean (OBIS)"
+    latitude: 48.50
+    longitude: -124.00
+    max_items: 5
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_humpback_global
+    parser: obis_api
+    aphia_id: 137092
+    area: "Global (OBIS)"
+    latitude: 36.80
+    longitude: -122.00
+    max_items: 5
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_gray_whale_pacific
+    parser: obis_api
+    aphia_id: 137119
+    area: "Pacific Coast (OBIS)"
+    latitude: 40.00
+    longitude: -124.50
+    max_items: 5
+    force_species: ["Gray Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_blue_whale_global
+    parser: obis_api
+    aphia_id: 137090
+    area: "Global (OBIS)"
+    latitude: 34.00
+    longitude: -120.50
+    max_items: 4
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_fin_whale_global
+    parser: obis_api
+    aphia_id: 137091
+    area: "Global (OBIS)"
+    latitude: 40.50
+    longitude: 5.00
+    max_items: 4
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_sperm_whale_global
+    parser: obis_api
+    aphia_id: 137117
+    area: "Global (OBIS)"
+    latitude: 15.40
+    longitude: -61.40
+    max_items: 4
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_great_white_global
+    parser: obis_api
+    aphia_id: 105838
+    area: "Global (OBIS)"
+    latitude: -34.20
+    longitude: 18.40
+    max_items: 4
+    force_species: ["Great White Shark"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
