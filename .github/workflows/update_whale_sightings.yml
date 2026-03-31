@@ -3,8 +3,8 @@ name: Update Whale Sightings
 on:
   workflow_dispatch:
   schedule:
-    # Runs every 6 hours (cron is interpreted in UTC by GitHub)
-    - cron: "17 */6 * * *"
+    # Runs every 15 minutes (cron is interpreted in UTC by GitHub)
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
