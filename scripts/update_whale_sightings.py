@@ -122,6 +122,24 @@ GLOBAL_ALLOWED_INAT_PHOTO_LICENSES: Optional[set[str]] = None
 
 
 # -------------------------
+# OBIS API constants
+# -------------------------
+
+OBIS_BASE = "https://api.obis.org/v3"
+
+# Maps OBIS WoRMS AphiaID -> species name used in the pipeline
+OBIS_TAXON_MAP = {
+    137013: "Orca",            # Orcinus orca
+    137092: "Humpback",        # Megaptera novaeangliae
+    137119: "Gray Whale",      # Eschrichtius robustus
+    137090: "Blue Whale",      # Balaenoptera musculus
+    137091: "Fin Whale",       # Balaenoptera physalus
+    137117: "Sperm whale",     # Physeter macrocephalus
+    105838: "Great White Shark",  # Carcharodon carcharias
+}
+
+
+# -------------------------
 # Land / ocean enforcement
 # -------------------------
 
@@ -979,6 +997,139 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
     return out[:max_items]
 
 
+
+# -------------------------
+# OBIS API parser
+# -------------------------
+
+def parse_obis_api(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
+    """Pull recent cetacean/shark sightings from the OBIS REST API (api.obis.org/v3).
+    No API key required. Uses WoRMS AphiaIDs for precise species matching.
+    sources.yml keys: aphia_id (int), force_species, area, latitude, longitude, max_items.
+    """
+    max_items = int(cfg.get("max_items", 5))
+    area_default = (cfg.get("area", "") or "").strip()
+    lat0 = float(cfg.get("latitude", 0.0))
+    lon0 = float(cfg.get("longitude", 0.0))
+
+    force_species: Optional[List[str]] = None
+    fs = cfg.get("force_species")
+    if fs:
+        force_species = [str(x) for x in (fs if isinstance(fs, list) else [fs])]
+
+    today = now_local(tz_name)
+    d1 = (today - timedelta(days=int(GLOBAL_MAX_DAYS))).date().isoformat()
+    d2 = today.date().isoformat()
+
+    aphia_id = cfg.get("aphia_id")
+    taxon_name = (cfg.get("taxon_name") or "").strip()
+
+    params: Dict[str, Any] = {
+        "startdate": d1,
+        "enddate": d2,
+        "size": min(max_items * 6, 100),
+        "offset": 0,
+    }
+    if aphia_id:
+        params["taxonid"] = int(aphia_id)
+    elif taxon_name:
+        params["scientificname"] = taxon_name
+    else:
+        params["taxonid"] = 2688  # Cetacea infraorder fallback
+
+    try:
+        r = session.get(f"{OBIS_BASE}/occurrence", params=params, timeout=30)
+        r.raise_for_status()
+        data = r.json() or {}
+    except Exception as e:
+        print(f"[obis_api:{source_key}] fetch error: {e}")
+        return []
+
+    results = data.get("results") or []
+    time.sleep(0.2)
+
+    out: List[Candidate] = []
+    for obs in results:
+        if len(out) >= max_items:
+            break
+
+        event_date = (obs.get("eventDate") or "").strip()
+        if not event_date:
+            continue
+        try:
+            date_part = event_date[:10]
+            y, mo, d = date_part.split("-")
+            dt = datetime(int(y), int(mo), int(d), 12, 0, 0, tzinfo=tz.gettz(tz_name))
+        except Exception:
+            continue
+
+        if not within_window(dt, today, GLOBAL_MAX_DAYS):
+            continue
+
+        lat = safe_float(obs.get("decimalLatitude"))
+        lon = safe_float(obs.get("decimalLongitude"))
+        if lat is None or lon is None:
+            nud = cfg.get("uncertain_offshore_nudge") or {}
+            lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
+
+        fixed = ensure_ocean(lat, lon)
+        if not fixed:
+            continue
+        lat2, lon2 = fixed
+
+        sci_name = (obs.get("scientificName") or "").strip()
+        common_name = (obs.get("vernacularName") or "").strip()
+        blob = f"{sci_name} {common_name}"
+
+        obs_aphia = obs.get("aphiaID") or obs.get("speciesid")
+        species_list: List[str] = []
+        if obs_aphia and int(obs_aphia) in OBIS_TAXON_MAP:
+            species_list = [OBIS_TAXON_MAP[int(obs_aphia)]]
+        else:
+            species_list = detect_species(blob, force=force_species)
+
+        if force_species:
+            species_list = force_species
+
+        if not species_list:
+            continue
+
+        locality = (obs.get("locality") or obs.get("waterBody") or area_default or "").strip()
+        area = locality or area_default
+
+        dataset_name = (obs.get("datasetName") or "OBIS").strip()
+        occurrence_id = (obs.get("occurrenceID") or obs.get("id") or "").strip()
+        source_url = f"https://obis.org/occurrence/{occurrence_id}" if occurrence_id else "https://obis.org"
+
+        institution = (obs.get("institutionCode") or obs.get("ownerInstitutionCode") or "").strip()
+        count_str = obs.get("individualCount")
+        count_note = f" ({count_str} individuals)" if count_str else ""
+
+        species = species_list[0]
+        name = f"{species} sighting ({area})" if area else f"{species} sighting"
+        info = f"OBIS record from {dataset_name}{count_note}. Observed {date_part}."
+        if institution:
+            info += f" Source: {institution}."
+
+        out.append(
+            Candidate(
+                date=dt,
+                species=species,
+                name=name,
+                info=info,
+                area=area,
+                source=source_url,
+                latitude=float(lat2),
+                longitude=float(lon2),
+                behaviors=infer_behaviors(blob),
+                source_key=source_key,
+            )
+        )
+
+    out.sort(key=lambda c: c.date, reverse=True)
+    return out[:max_items]
+
+
 # -------------------------
 # Parsers mapping
 # -------------------------
@@ -1006,6 +1157,7 @@ PARSERS = {
 
     "rss_feed": parse_rss_feed,
     "inaturalist_api": parse_inaturalist_api,
+    "obis_api": parse_obis_api,
 }
 
 
