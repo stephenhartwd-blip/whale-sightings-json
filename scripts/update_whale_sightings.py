@@ -1330,6 +1330,80 @@ def build_entries(candidates: List[Candidate]) -> List[Dict[str, Any]]:
 
 
 # -------------------------
+# Whale trail generation
+# -------------------------
+
+def build_whale_trails(entries: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """
+    Builds whale_trails.json from the current whale_sightings.json entries.
+    Groups sightings by individualId. Sightings sorted oldest-first so
+    MapPolyline draws in chronological order.
+    Schema: { "individual_id": { "name", "species", "sightings": [{"date","lat","lon"}] } }
+    """
+    trails: Dict[str, Dict[str, Any]] = {}
+    for entry in entries:
+        ind_id = entry.get("individualId")
+        if not ind_id:
+            continue
+        date = entry.get("date", "")
+        lat = entry.get("latitude")
+        lon = entry.get("longitude")
+        if not date or lat is None or lon is None:
+            continue
+        if ind_id not in trails:
+            trails[ind_id] = {
+                "name": entry.get("individualName") or ind_id.replace("_", " ").title(),
+                "species": entry.get("species", ""),
+                "sightings": [],
+            }
+        existing_dates = {s["date"] for s in trails[ind_id]["sightings"]}
+        if date not in existing_dates:
+            trails[ind_id]["sightings"].append({
+                "date": date,
+                "lat": round(float(lat), 6),
+                "lon": round(float(lon), 6),
+            })
+    for trail in trails.values():
+        trail["sightings"].sort(key=lambda s: s["date"])
+    # Only keep individuals with 2+ sightings
+    return {k: v for k, v in trails.items() if len(v["sightings"]) >= 2}
+
+
+def merge_existing_trails(
+    new_trails: Dict[str, Any],
+    existing_path: str,
+) -> Dict[str, Any]:
+    """
+    Merges new trails with previously saved ones so historical sightings
+    outside the current max_days window are preserved. Trails grow over time.
+    """
+    try:
+        with open(existing_path, "r", encoding="utf-8") as f:
+            existing = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        existing = {}
+
+    merged = {}
+    all_ids = set(existing.keys()) | set(new_trails.keys())
+    for ind_id in all_ids:
+        old = existing.get(ind_id, {})
+        new = new_trails.get(ind_id, {})
+        name = new.get("name") or old.get("name") or ind_id
+        species = new.get("species") or old.get("species") or ""
+        old_sightings = {s["date"]: s for s in (old.get("sightings") or [])}
+        new_sightings = {s["date"]: s for s in (new.get("sightings") or [])}
+        all_sightings = {**old_sightings, **new_sightings}
+        sorted_sightings = sorted(all_sightings.values(), key=lambda s: s["date"])
+        if len(sorted_sightings) >= 2:
+            merged[ind_id] = {
+                "name": name,
+                "species": species,
+                "sightings": sorted_sightings,
+            }
+    return merged
+
+
+# -------------------------
 # Config + main
 # -------------------------
 
@@ -1395,6 +1469,19 @@ def main() -> None:
         f.write("\n")
 
     print(f"Wrote {len(entries)} entries to whale_sightings.json")
+
+    # Build + write whale_trails.json
+    trails_path = os.path.join(root, "whale_trails.json")
+    all_entries_for_trails = build_entries(all_candidates)
+    new_trails = build_whale_trails(all_entries_for_trails)
+    merged_trails = merge_existing_trails(new_trails, trails_path)
+    with open(trails_path, "w", encoding="utf-8") as f:
+        json.dump(merged_trails, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    print(f"Wrote {len(merged_trails)} whale trails to whale_trails.json")
+    for ind_id, trail in merged_trails.items():
+        pts = len(trail['sightings'])
+        print(f"  {ind_id}: {trail['name']} ({trail['species']}) — {pts} sightings")
 
 if __name__ == "__main__":
     main()
