@@ -813,3 +813,103 @@ sources:
     max_items: 4
     force_species: ["Great White Shark"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+
+  # -------------------------
+  # Individual whale tracking sources
+  # These target iNaturalist projects and observers who tag named whales.
+  # The CATALOG_PATTERNS regex extracts J/K/L pod IDs, PCFG gray whale IDs,
+  # and humpback catalog numbers so whale_trails.json can be built.
+  # -------------------------
+
+  # Southern Resident Orcas — J/K/L pod (Pacific NW, high ID rate)
+  - key: inat_srkw_salish_sea
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    place_query: "Salish Sea"
+    area: "Salish Sea (iNaturalist — SRKW)"
+    latitude: 48.50
+    longitude: -123.10
+    max_items: 10
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_srkw_puget_sound
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    place_query: "Puget Sound"
+    area: "Puget Sound (iNaturalist — SRKW)"
+    latitude: 47.90
+    longitude: -122.55
+    max_items: 10
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_srkw_san_juan_islands
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    place_query: "San Juan Islands"
+    area: "San Juan Islands (iNaturalist — SRKW)"
+    latitude: 48.55
+    longitude: -123.05
+    max_items: 10
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # PCFG Gray Whales — Pacific Coast Feeding Group (tagged individuals)
+  - key: inat_pcfg_gray_oregon
+    parser: inaturalist_api
+    taxon_name: "Eschrichtius robustus"
+    place_query: "Oregon Coast"
+    area: "Oregon Coast (iNaturalist — PCFG)"
+    latitude: 44.50
+    longitude: -124.50
+    max_items: 8
+    force_species: ["Gray Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_pcfg_gray_washington_coast
+    parser: inaturalist_api
+    taxon_name: "Eschrichtius robustus"
+    place_query: "Washington Coast"
+    area: "Washington Coast (iNaturalist — PCFG)"
+    latitude: 47.50
+    longitude: -124.50
+    max_items: 8
+    force_species: ["Gray Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # Gulf of Maine Humpbacks — Stellwagen Bank catalog (Salt, Pepper, Freckles etc.)
+  - key: inat_humpback_stellwagen
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Stellwagen Bank"
+    area: "Stellwagen Bank (iNaturalist — Catalog)"
+    latitude: 42.20
+    longitude: -70.30
+    max_items: 8
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_gulf_of_maine
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Gulf of Maine"
+    area: "Gulf of Maine (iNaturalist — Catalog)"
+    latitude: 43.50
+    longitude: -68.50
+    max_items: 8
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # Bigg's / Transient Orcas — T-pod catalog (T046, T123A etc.)
+  - key: inat_biggs_orca_bc
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    place_query: "Vancouver Island"
+    area: "Vancouver Island (iNaturalist — Bigg's)"
+    latitude: 49.00
+    longitude: -125.50
+    max_items: 8
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
