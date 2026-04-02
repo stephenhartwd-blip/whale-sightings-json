@@ -1,21 +1,16 @@
 #!/usr/bin/env python3
 """
-notify_blog.py - Checks Whale Tracker blog RSS, writes the latest post to Firestore,
-and sends an FCM push notification on new posts.
+notify_blog.py - Checks Whale Tracker blog RSS, writes ALL posts to Firestore,
+and sends an FCM push notification for any new post.
 
 Runs every 15 min via GitHub Actions.
 Requires FIREBASE_SERVICE_ACCOUNT_JSON secret.
 
 This version:
 - checks the Whale Tracker blog RSS feed
-- prevents duplicate sends with last_blog_post_guid.txt
-- writes the latest post into Firestore collection: blog_posts
+- writes ALL posts from the feed into Firestore (backfill + ongoing)
+- only sends FCM push for genuinely new posts
 - uses the RSS GUID as the Firestore document ID
-- sends an FCM push with:
-    type      = "blog_post"
-    articleId = latest post GUID
-    title     = latest post title
-    url       = latest post URL
 """
 
 from __future__ import annotations
@@ -73,14 +68,8 @@ def extract_preview_and_content(entry) -> tuple[str, str]:
         or entry.get("description")
         or ""
     ).strip()
-
     preview = clean_html_to_text(summary_html)
-
-    # First live version:
-    # use summary for both preview and content so the app has real data now.
-    # Later we can upgrade this to scrape the full article page.
     content = preview
-
     return preview, content
 
 
@@ -95,7 +84,6 @@ def upsert_blog_post(
     source_url: str,
 ) -> None:
     slug = slugify(title)
-
     db.collection("blog_posts").document(article_id).set(
         {
             "title": title,
@@ -110,7 +98,6 @@ def upsert_blog_post(
         },
         merge=True,
     )
-
     print(f"Saved Firestore blog post: {article_id!r}")
 
 
@@ -145,7 +132,6 @@ def send_fcm(
             },
         }
     }
-
     resp = requests.post(
         f"https://fcm.googleapis.com/v1/projects/{project_id}/messages:send",
         headers={
@@ -155,13 +141,10 @@ def send_fcm(
         json=payload,
         timeout=15,
     )
-
     ok = resp.status_code == 200
     print(("OK" if ok else "FAIL") + f" FCM {resp.status_code}: {post_title!r}")
-
     if not ok:
         print(resp.text)
-
     return ok
 
 
@@ -173,35 +156,9 @@ def main() -> None:
         print("No entries — skipping")
         return
 
-    latest = feed.entries[0]
-
-    guid = (latest.get("id") or latest.get("guid") or latest.get("link") or "").strip()
-    title = (latest.get("title") or "New whale update").strip()
-    link = (latest.get("link") or "https://www.whaletrackerapp.com/blog").strip()
-
-    if not guid:
-        print("ERROR: Latest post has no guid/id/link to use as articleId")
-        sys.exit(1)
-
-    preview, content = extract_preview_and_content(latest)
-    subtitle = ""
-    image_url = ""
-
-    last_guid = GUID_FILE.read_text(encoding="utf-8").strip() if GUID_FILE.exists() else ""
-
-    print(f"Latest: {title!r}")
-    print(f"GUID:   {guid!r}")
-
-    if guid == last_guid:
-        print("No new post — done")
-        return
-
-    print(f"New post detected: {title!r}")
-
     sa_json = os.environ.get("FIREBASE_SERVICE_ACCOUNT_JSON", "").strip()
     if not sa_json:
-        print("No FIREBASE_SERVICE_ACCOUNT_JSON — saving guid only")
-        GUID_FILE.write_text(guid, encoding="utf-8")
+        print("No FIREBASE_SERVICE_ACCOUNT_JSON — skipping")
         return
 
     try:
@@ -215,45 +172,71 @@ def main() -> None:
         print("ERROR: project_id missing from service account JSON")
         sys.exit(1)
 
-    # 1) Write the article to Firestore first
     try:
         db = get_firestore_client(sa_json)
-        upsert_blog_post(
-            db=db,
-            article_id=guid,
-            title=title,
-            subtitle=subtitle,
-            preview=preview,
-            content=content,
-            image_url=image_url,
-            source_url=link,
+    except Exception as e:
+        print(f"ERROR creating Firestore client: {e}")
+        sys.exit(1)
+
+    last_guid = GUID_FILE.read_text(encoding="utf-8").strip() if GUID_FILE.exists() else ""
+
+    # Sync ALL entries from RSS feed to Firestore (backfill + keep fresh)
+    print(f"Found {len(feed.entries)} entries — syncing all to Firestore...")
+    for entry in feed.entries:
+        guid = (entry.get("id") or entry.get("guid") or entry.get("link") or "").strip()
+        title = (entry.get("title") or "New whale update").strip()
+        link = (entry.get("link") or "https://www.whaletrackerapp.com/blog").strip()
+
+        if not guid:
+            print(f"  Skipping entry with no guid: {title!r}")
+            continue
+
+        preview, content = extract_preview_and_content(entry)
+
+        try:
+            upsert_blog_post(
+                db=db,
+                article_id=guid,
+                title=title,
+                subtitle="",
+                preview=preview,
+                content=content,
+                image_url="",
+                source_url=link,
+            )
+        except Exception as e:
+            print(f"  ERROR writing {guid!r}: {e}")
+
+    # Only send FCM push if the latest post is new
+    latest = feed.entries[0]
+    latest_guid = (latest.get("id") or latest.get("guid") or latest.get("link") or "").strip()
+    latest_title = (latest.get("title") or "New whale update").strip()
+    latest_link = (latest.get("link") or "https://www.whaletrackerapp.com/blog").strip()
+
+    if latest_guid and latest_guid != last_guid:
+        print(f"New post detected, sending FCM: {latest_title!r}")
+        try:
+            token = get_access_token(sa_json)
+        except Exception as e:
+            print(f"ERROR getting FCM access token: {e}")
+            sys.exit(1)
+
+        ok = send_fcm(
+            project_id=project_id,
+            token=token,
+            push_title="New on Whale Tracker",
+            post_title=latest_title,
+            url=latest_link,
+            article_id=latest_guid,
         )
-    except Exception as e:
-        print(f"ERROR writing blog post to Firestore: {e}")
-        sys.exit(1)
 
-    # 2) Then send the push
-    try:
-        token = get_access_token(sa_json)
-    except Exception as e:
-        print(f"ERROR getting FCM access token: {e}")
-        sys.exit(1)
-
-    ok = send_fcm(
-        project_id=project_id,
-        token=token,
-        push_title="New on Whale Tracker",
-        post_title=title,
-        url=link,
-        article_id=guid,
-    )
-
-    # 3) Only mark as sent if push succeeded
-    if ok:
-        GUID_FILE.write_text(guid, encoding="utf-8")
-        print("Done.")
+        if ok:
+            GUID_FILE.write_text(latest_guid, encoding="utf-8")
+            print("Done.")
+        else:
+            sys.exit(1)
     else:
-        sys.exit(1)
+        print("No new post — Firestore synced, no FCM sent.")
 
 
 if __name__ == "__main__":
