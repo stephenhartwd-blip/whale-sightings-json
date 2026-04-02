@@ -56,4 +56,5 @@ jobs:
 
           git add -A
           git commit -m "Auto-update whale sightings"
+          git pull --rebase origin main
           git push
