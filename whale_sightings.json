@@ -1,20 +1,5 @@
 [
   {
-    "id": "2026-04-01-cape-town-white-01",
-    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
-    "species": "Great White Shark",
-    "info": "Parsed from za_sharkspotters on 2026-04-01.",
-    "date": "2026-04-01",
-    "latitude": -34.12,
-    "longitude": 18.32,
-    "area": "Cape Town (offshore), South Africa",
-    "source": "https://www.sharkspotters.org.za/",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ]
-  },
-  {
     "id": "2026-04-01-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -210,6 +195,23 @@
     "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-04-01-monterey-bay-nationa-humpback-06",
+    "name": "Humpback sighting (Monterey Bay National Marine Sanctuary, CA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jmaughn.",
+    "date": "2026-04-01",
+    "latitude": 36.6549969598,
+    "longitude": -122.0351773505,
+    "area": "Monterey Bay National Marine Sanctuary, CA",
+    "source": "https://www.inaturalist.org/observations/346727691",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632077334/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-04-01-lizard-helston-tr12--orca-06",
     "name": "Orca sighting (Lizard, Helston TR12 7AP, UK)",
     "species": "Orca",
@@ -225,6 +227,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631913307/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Yolanda Evans, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-01-monterey-county-ca-u-humpback-07",
+    "name": "Humpback sighting (Monterey County, CA, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jmaughn.",
+    "date": "2026-04-01",
+    "latitude": 36.6712455496,
+    "longitude": -122.0077115302,
+    "area": "Monterey County, CA, USA",
+    "source": "https://www.inaturalist.org/observations/346727690",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632077316/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-01-english-channel-engl-orca-07",
@@ -261,6 +280,20 @@
     "photoAttribution": "(c) Spillane, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-03-31-washington-us-orca-01",
+    "name": "Orca sighting (Washington, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by katie363.",
+    "date": "2026-03-31",
+    "latitude": 47.6816742339,
+    "longitude": -122.5980009668,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/346530488",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-03-31-sitka-county-us-ak-u-humpback-02",
     "name": "Humpback sighting (Sitka County, US-AK, US)",
     "species": "Humpback",
@@ -278,37 +311,6 @@
     "photoAttribution": "(c) Nikolai Braedt, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-31-southern-ocean-antar-humpback-03",
-    "name": "Humpback sighting (Southern Ocean, Antarktis, AQ)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by weiss-blockwinkel.",
-    "date": "2026-03-31",
-    "latitude": -64.86346895519999,
-    "longitude": -62.8403430251,
-    "area": "Southern Ocean, Antarktis, AQ",
-    "source": "https://www.inaturalist.org/observations/346490779",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631609268/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) weiss-blockwinkel, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-31-washington-us-orca-01",
-    "name": "Orca sighting (Washington, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by katie363.",
-    "date": "2026-03-31",
-    "latitude": 47.6816742339,
-    "longitude": -122.5980009668,
-    "area": "Washington, US",
-    "source": "https://www.inaturalist.org/observations/346530488",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-03-31-washington-us-orca-02",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
@@ -324,6 +326,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631356439/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) mayaklem, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-31-southern-ocean-antar-humpback-03",
+    "name": "Humpback sighting (Southern Ocean, Antarktis, AQ)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by weiss-blockwinkel.",
+    "date": "2026-03-31",
+    "latitude": -64.86346895519999,
+    "longitude": -62.8403430251,
+    "area": "Southern Ocean, Antarktis, AQ",
+    "source": "https://www.inaturalist.org/observations/346490779",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631609268/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) weiss-blockwinkel, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-31-napp-nordland-no-orca-03",
@@ -374,40 +393,6 @@
     "photoAttribution": "(c) ramman24, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-30-monterey-county-ca-u-humpback-02",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by kyle_morales.",
-    "date": "2026-03-30",
-    "latitude": 36.7472114284,
-    "longitude": -121.9039648624,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/346249150",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631130162/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) kyle_morales, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-30-monterey-county-ca-u-humpback-03",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by kyle_morales.",
-    "date": "2026-03-30",
-    "latitude": 36.748346202,
-    "longitude": -121.9076984973,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/346249149",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631128559/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) kyle_morales, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-29-washington-us-gray-01",
     "name": "Gray Whale sighting (Washington, US)",
     "species": "Gray Whale",
@@ -423,6 +408,20 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630688784/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) stacy kerns, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-29-washington-us-gray-02",
+    "name": "Gray Whale sighting (Washington, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by michaeltownsend.",
+    "date": "2026-03-29",
+    "latitude": 47.8223457369,
+    "longitude": -122.40161483870001,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/346723408",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-03-29-capital-regional-dis-orca-01",
@@ -511,24 +510,7 @@
     "photoAttribution": "(c) Néstor F. Sandoval S., some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-28-washington-us-gray-01",
-    "name": "Gray Whale sighting (Washington, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by ruthannishiking.",
-    "date": "2026-03-28",
-    "latitude": 48.6656192685,
-    "longitude": -122.5786166522,
-    "area": "Washington, US",
-    "source": "https://www.inaturalist.org/observations/346505727",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631639748/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Ruthann, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-28-alberni-clayoquot-ca-gray-02",
+    "id": "2026-03-28-alberni-clayoquot-ca-gray-01",
     "name": "Gray Whale sighting (Alberni-Clayoquot, CA-BC, CA)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by coreonysis.",
@@ -662,20 +644,6 @@
     "photoAttribution": "(c) vancouver_island_whale_watch, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-24-muleg-mx-bs-mx-gray-01",
-    "name": "Gray Whale sighting (Mulegé, MX-BS, MX)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by erick_manuel.",
-    "date": "2026-03-24",
-    "latitude": 26.7376556513,
-    "longitude": -113.2615526941,
-    "area": "Mulegé, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/345138811",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-03-23-mussel-beach-scarbor-humpback-01",
     "name": "Humpback sighting (Mussel Beach, Scarborough)",
     "species": "Humpback",
@@ -735,23 +703,6 @@
     ]
   },
   {
-    "id": "2026-03-20-dominica-caribbean-sperm-01",
-    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by merchkimberly.",
-    "date": "2026-03-20",
-    "latitude": 15.2718000608,
-    "longitude": -61.5099292635,
-    "area": "Dominica, Caribbean (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/344325474",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627364828/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) merchkimberly, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-20-main-road-scarboroug-humpback-01",
     "name": "Humpback sighting (Main Road, Scarborough, Western Cape, ZA)",
     "species": "Humpback",
@@ -769,24 +720,7 @@
     "photoAttribution": "(c) trackmyfind, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-19-muleg-mx-bs-mx-gray-01",
-    "name": "Gray Whale sighting (Mulegé, MX-BS, MX)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by eric35677.",
-    "date": "2026-03-19",
-    "latitude": 27.8123920198,
-    "longitude": -114.243189759,
-    "area": "Mulegé, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/344218907",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627153734/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Eric Camacho, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-19-canada-gray-02",
+    "id": "2026-03-19-canada-gray-01",
     "name": "Gray Whale sighting (Canada)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by ljfreer.",
@@ -862,7 +796,41 @@
     "photoAttribution": "(c) carolinejjones, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-17-city-of-cape-town-za-humpback-01",
+    "id": "2026-03-17-valle-de-los-cirios--humpback-01",
+    "name": "Humpback sighting (Valle de los Cirios, San Quintín, B.C., MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by e-meling.",
+    "date": "2026-03-17",
+    "latitude": 29.0188343919,
+    "longitude": -113.5398254836,
+    "area": "Valle de los Cirios, San Quintín, B.C., MX",
+    "source": "https://www.inaturalist.org/observations/343481898",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/625693793/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Erik Meling, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-17-ensenada-mx-bn-mx-humpback-02",
+    "name": "Humpback sighting (Ensenada, MX-BN, MX)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by c-meling-cm11.",
+    "date": "2026-03-17",
+    "latitude": 29.0195567643,
+    "longitude": -113.541763529,
+    "area": "Ensenada, MX-BN, MX",
+    "source": "https://www.inaturalist.org/observations/345117097",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/628894198/medium.jpg",
+    "photoLicense": "cc-by-nc-sa",
+    "photoAttribution": "(c) Cristian A. D. Meling L., some rights reserved (CC BY-NC-SA)"
+  },
+  {
+    "id": "2026-03-17-city-of-cape-town-za-humpback-03",
     "name": "Humpback sighting (City of Cape Town, ZA-WC, ZA)",
     "species": "Humpback",
     "info": "iNaturalist observation by almansa.",
@@ -877,48 +845,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627774678/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Joshua Almansa, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-17-muleg-mx-bs-mx-gray-01",
-    "name": "Gray Whale sighting (Mulegé, MX-BS, MX)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by erick_manuel.",
-    "date": "2026-03-17",
-    "latitude": 26.7524457653,
-    "longitude": -113.2578419134,
-    "area": "Mulegé, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/343596050",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-17-muleg-mx-bs-mx-gray-02",
-    "name": "Gray Whale sighting (Mulegé, MX-BS, MX)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by erick_manuel.",
-    "date": "2026-03-17",
-    "latitude": 26.7561759941,
-    "longitude": -113.2447114783,
-    "area": "Mulegé, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/343596049",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-17-muleg-mx-bs-mx-gray-03",
-    "name": "Gray Whale sighting (Mulegé, MX-BS, MX)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by erick_manuel.",
-    "date": "2026-03-17",
-    "latitude": 26.754816411,
-    "longitude": -113.244272174,
-    "area": "Mulegé, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/343596048",
-    "behaviors": [
-      "reported"
-    ]
   },
   {
     "id": "2026-03-17-salish-sea-orca-01",
@@ -939,7 +865,7 @@
     ]
   },
   {
-    "id": "2026-03-17-salish-sea-gray-04",
+    "id": "2026-03-17-salish-sea-gray-01",
     "name": "Gray Whale sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Gray Whale",
     "info": "Orca Network recent sightings indicates Gray Whale on 2026-03-17.",
@@ -1253,74 +1179,6 @@
     "behaviors": [
       "reported"
     ]
-  },
-  {
-    "id": "2026-03-01-gulf-of-california-m-blue-01",
-    "name": "Blue Whale sighting (Gulf of California, MX)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by sulavanderplank.",
-    "date": "2026-03-01",
-    "latitude": 25.6990116667,
-    "longitude": -111.1847833333,
-    "area": "Gulf of California, MX",
-    "source": "https://www.inaturalist.org/observations/342352205",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/623423189/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Sula Vanderplank, some rights reserved (CC BY)"
-  },
-  {
-    "id": "2026-02-27-bah-a-de-loreto-lore-blue-01",
-    "name": "Blue Whale sighting (Bahía de Loreto, Loreto, MX-BS, MX)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by jujuwild.",
-    "date": "2026-02-27",
-    "latitude": 26.0243451453,
-    "longitude": -111.2864691713,
-    "area": "Bahía de Loreto, Loreto, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/341007385",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/620678687/medium.jpg",
-    "photoLicense": "cc0",
-    "photoAttribution": "no rights reserved"
-  },
-  {
-    "id": "2026-02-27-bah-a-de-loreto-lore-blue-02",
-    "name": "Blue Whale sighting (Bahía de Loreto, Loreto, MX-BS, MX)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by jujuwild.",
-    "date": "2026-02-27",
-    "latitude": 26.0478485927,
-    "longitude": -111.2937269832,
-    "area": "Bahía de Loreto, Loreto, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/341007382",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/620678468/medium.jpg",
-    "photoLicense": "cc0",
-    "photoAttribution": "no rights reserved"
-  },
-  {
-    "id": "2026-02-27-bah-a-de-loreto-lore-blue-03",
-    "name": "Blue Whale sighting (Bahía de Loreto, Loreto, MX-BS, MX)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by jujuwild.",
-    "date": "2026-02-27",
-    "latitude": 25.9857912735,
-    "longitude": -111.2217136627,
-    "area": "Bahía de Loreto, Loreto, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/341007374",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/620678311/medium.jpg",
-    "photoLicense": "cc0",
-    "photoAttribution": "no rights reserved"
   },
   {
     "id": "2026-02-23-sitka-sound-sitka-ak-orca-01",
