@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-04-03-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-04-03.",
+    "date": "2026-04-03",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-04-03-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -480,7 +495,7 @@
     ],
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632613688/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) AlRayko, some rights reserved (CC BY-NC)",
+    "photoAttribution": "(c) AlRay, some rights reserved (CC BY-NC)",
     "individualId": "orca_biggs_t419",
     "individualName": "ORCA BIGGS T419"
   },
