@@ -1,20 +1,5 @@
 [
   {
-    "id": "2026-04-03-cape-town-white-01",
-    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
-    "species": "Great White Shark",
-    "info": "Parsed from za_sharkspotters on 2026-04-03.",
-    "date": "2026-04-03",
-    "latitude": -34.12,
-    "longitude": 18.32,
-    "area": "Cape Town (offshore), South Africa",
-    "source": "https://www.sharkspotters.org.za/",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ]
-  },
-  {
     "id": "2026-04-03-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -172,21 +157,7 @@
     ]
   },
   {
-    "id": "2026-04-02-orange-county-us-ca--gray-01",
-    "name": "Gray Whale sighting (Orange County, US-CA, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by oravens.",
-    "date": "2026-04-02",
-    "latitude": 33.5593375937,
-    "longitude": -117.846510168,
-    "area": "Orange County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/346897623",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-04-02-united-states-gray-02",
+    "id": "2026-04-02-united-states-gray-01",
     "name": "Gray Whale sighting (United States)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by grantlaw.",
@@ -215,20 +186,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632327036/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Tom Allen, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-01-san-luis-obispo-coun-white-01",
-    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by noiselessowl.",
-    "date": "2026-04-01",
-    "latitude": 35.3682510658,
-    "longitude": -120.9753217857,
-    "area": "San Luis Obispo County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/346722178",
-    "behaviors": [
-      "reported"
-    ]
   },
   {
     "id": "2026-04-01-washington-us-gray-01",
@@ -314,24 +271,7 @@
     "photoAttribution": "(c) Nathan Jackson, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-01-monterey-county-ca-u-humpback-03",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-04-01",
-    "latitude": 36.6712455496,
-    "longitude": -122.0077115302,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/346727690",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632077316/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-01-monterey-bay-nms-ca-humpback-04",
+    "id": "2026-04-01-monterey-bay-nms-ca-humpback-03",
     "name": "Humpback sighting (Monterey Bay NMS, CA)",
     "species": "Humpback",
     "info": "iNaturalist observation by jmaughn.",
@@ -348,7 +288,7 @@
     "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-01-monterey-bay-nationa-humpback-05",
+    "id": "2026-04-01-monterey-bay-nationa-humpback-04",
     "name": "Humpback sighting (Monterey Bay National Marine Sanctuary, CA)",
     "species": "Humpback",
     "info": "iNaturalist observation by jmaughn.",
@@ -365,7 +305,7 @@
     "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-01-north-pacific-ocean--humpback-06",
+    "id": "2026-04-01-north-pacific-ocean--humpback-05",
     "name": "Humpback sighting (North Pacific Ocean, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by ak4708.",
@@ -382,7 +322,7 @@
     "photoAttribution": "(c) Anna Krylova, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-01-north-pacific-ocean--humpback-07",
+    "id": "2026-04-01-north-pacific-ocean--humpback-06",
     "name": "Humpback sighting (North Pacific Ocean, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by luckenbachs211l.",
@@ -399,6 +339,23 @@
     "photoAttribution": "(c) luckenbachs211l, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-04-01-monterey-county-ca-u-humpback-07",
+    "name": "Humpback sighting (Monterey County, CA, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jmaughn.",
+    "date": "2026-04-01",
+    "latitude": 36.6712455496,
+    "longitude": -122.0077115302,
+    "area": "Monterey County, CA, USA",
+    "source": "https://www.inaturalist.org/observations/346727690",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632077316/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-04-01-eyjafjordur-humpback-08",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -408,20 +365,6 @@
     "longitude": -18.15,
     "area": "Eyjafjordur (offshore), Akureyri, Iceland",
     "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-31-san-luis-obispo-coun-white-01",
-    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by noiselessowl.",
-    "date": "2026-03-31",
-    "latitude": 35.3013691645,
-    "longitude": -120.9959962898,
-    "area": "San Luis Obispo County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/346504756",
     "behaviors": [
       "reported"
     ]
@@ -523,32 +466,23 @@
     ]
   },
   {
-    "id": "2026-03-30-san-luis-obispo-coun-white-01",
-    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by noiselessowl.",
+    "id": "2026-03-30-washington-us-orca-01",
+    "name": "Orca sighting (Washington, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by alrayko.",
     "date": "2026-03-30",
-    "latitude": 35.3106684201,
-    "longitude": -120.88659621299999,
-    "area": "San Luis Obispo County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/346245844",
+    "latitude": 47.711836854299996,
+    "longitude": -122.5216222721,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/346997406",
     "behaviors": [
       "reported"
-    ]
-  },
-  {
-    "id": "2026-03-30-san-luis-obispo-coun-white-02",
-    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by noiselessowl.",
-    "date": "2026-03-30",
-    "latitude": 35.2119774248,
-    "longitude": -120.8834261369,
-    "area": "San Luis Obispo County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/346246340",
-    "behaviors": [
-      "reported"
-    ]
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632613688/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) AlRayko, some rights reserved (CC BY-NC)",
+    "individualId": "orca_biggs_t419",
+    "individualName": "ORCA BIGGS T419"
   },
   {
     "id": "2026-03-29-washington-us-gray-01",
@@ -668,21 +602,7 @@
     "photoAttribution": "(c) Oliver Malatich, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-28-california-us-gray-01",
-    "name": "Gray Whale sighting (California, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by markprice.",
-    "date": "2026-03-28",
-    "latitude": 33.4978610996,
-    "longitude": -117.8402678552,
-    "area": "California, US",
-    "source": "https://www.inaturalist.org/observations/345794446",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-28-alberni-clayoquot-ca-gray-02",
+    "id": "2026-03-28-alberni-clayoquot-ca-gray-01",
     "name": "Gray Whale sighting (Alberni-Clayoquot, CA-BC, CA)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by coreonysis.",
@@ -716,25 +636,6 @@
     "photoAttribution": "(c) Monika, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-28-washington-us-orca-02",
-    "name": "Orca sighting (Washington, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by ywcai.",
-    "date": "2026-03-28",
-    "latitude": 47.6449870975,
-    "longitude": -122.4610310684,
-    "area": "Washington, US",
-    "source": "https://www.inaturalist.org/observations/345805468",
-    "behaviors": [
-      "reported",
-      "hunting",
-      "traveling"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630254411/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) ywcai, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-28-sitka-sound-sitka-ak-humpback-01",
     "name": "Humpback sighting (Sitka Sound, Sitka, AK, US)",
     "species": "Humpback",
@@ -747,20 +648,6 @@
     "behaviors": [
       "reported",
       "feeding"
-    ]
-  },
-  {
-    "id": "2026-03-27-humboldt-county-us-c-gray-01",
-    "name": "Gray Whale sighting (Humboldt County, US-CA, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by vandalryan.",
-    "date": "2026-03-27",
-    "latitude": 41.1797463204,
-    "longitude": -124.1392883107,
-    "area": "Humboldt County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/345580144",
-    "behaviors": [
-      "reported"
     ]
   },
   {
@@ -816,23 +703,6 @@
     "photoAttribution": "(c) Nikolai Braedt, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-26-humboldt-county-us-c-gray-01",
-    "name": "Gray Whale sighting (Humboldt County, US-CA, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by buggybabe.",
-    "date": "2026-03-26",
-    "latitude": 41.0244162512,
-    "longitude": -124.1963066028,
-    "area": "Humboldt County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/345414865",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/629490803/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Elliot L. Churchill, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-26-salish-sea-orca-01",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
@@ -880,23 +750,6 @@
     "behaviors": [
       "reported"
     ]
-  },
-  {
-    "id": "2026-03-24-presidio-of-san-fran-gray-02",
-    "name": "Gray Whale sighting (Presidio of San Francisco, San Francisco, CA, USA)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by moejurray.",
-    "date": "2026-03-24",
-    "latitude": 37.825488888900004,
-    "longitude": -122.4544333333,
-    "area": "Presidio of San Francisco, San Francisco, CA, USA",
-    "source": "https://www.inaturalist.org/observations/345006834",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/628678163/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Joe Murray, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-23-mussel-beach-scarbor-humpback-01",
@@ -1365,6 +1218,74 @@
     "behaviors": [
       "reported"
     ]
+  },
+  {
+    "id": "2026-03-01-gulf-of-california-m-blue-01",
+    "name": "Blue Whale sighting (Gulf of California, MX)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by sulavanderplank.",
+    "date": "2026-03-01",
+    "latitude": 25.6990116667,
+    "longitude": -111.1847833333,
+    "area": "Gulf of California, MX",
+    "source": "https://www.inaturalist.org/observations/342352205",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/623423189/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Sula Vanderplank, some rights reserved (CC BY)"
+  },
+  {
+    "id": "2026-02-27-bah-a-de-loreto-lore-blue-01",
+    "name": "Blue Whale sighting (Bahía de Loreto, Loreto, MX-BS, MX)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by jujuwild.",
+    "date": "2026-02-27",
+    "latitude": 26.0243451453,
+    "longitude": -111.2864691713,
+    "area": "Bahía de Loreto, Loreto, MX-BS, MX",
+    "source": "https://www.inaturalist.org/observations/341007385",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/620678687/medium.jpg",
+    "photoLicense": "cc0",
+    "photoAttribution": "no rights reserved"
+  },
+  {
+    "id": "2026-02-27-bah-a-de-loreto-lore-blue-02",
+    "name": "Blue Whale sighting (Bahía de Loreto, Loreto, MX-BS, MX)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by jujuwild.",
+    "date": "2026-02-27",
+    "latitude": 26.0478485927,
+    "longitude": -111.2937269832,
+    "area": "Bahía de Loreto, Loreto, MX-BS, MX",
+    "source": "https://www.inaturalist.org/observations/341007382",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/620678468/medium.jpg",
+    "photoLicense": "cc0",
+    "photoAttribution": "no rights reserved"
+  },
+  {
+    "id": "2026-02-27-bah-a-de-loreto-lore-blue-03",
+    "name": "Blue Whale sighting (Bahía de Loreto, Loreto, MX-BS, MX)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by jujuwild.",
+    "date": "2026-02-27",
+    "latitude": 25.9857912735,
+    "longitude": -111.2217136627,
+    "area": "Bahía de Loreto, Loreto, MX-BS, MX",
+    "source": "https://www.inaturalist.org/observations/341007374",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/620678311/medium.jpg",
+    "photoLicense": "cc0",
+    "photoAttribution": "no rights reserved"
   },
   {
     "id": "2026-02-23-sitka-sound-sitka-ak-orca-01",
