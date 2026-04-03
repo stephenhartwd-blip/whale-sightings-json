@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-04-03-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-04-03.",
+    "date": "2026-04-03",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-04-03-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -143,6 +158,34 @@
     ]
   },
   {
+    "id": "2026-04-03-eyjafjordur-humpback-04",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-04-03.",
+    "date": "2026-04-03",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-04-02-united-states-gray-01",
+    "name": "Gray Whale sighting (United States)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by grantlaw.",
+    "date": "2026-04-02",
+    "latitude": 46.2091905662,
+    "longitude": -123.916509097,
+    "area": "United States",
+    "source": "https://www.inaturalist.org/observations/346905022",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-04-02-mx-humpback-01",
     "name": "Humpback sighting (MX)",
     "species": "Humpback",
@@ -195,20 +238,6 @@
     "photoAttribution": "(c) evanbao, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-01-ca-us-humpback-02",
-    "name": "Humpback sighting (CA, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by bpizarek.",
-    "date": "2026-04-01",
-    "latitude": 34.0955343737,
-    "longitude": -119.5359348057,
-    "area": "CA, US",
-    "source": "https://www.inaturalist.org/observations/346891947",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-04-01-lizard-helston-tr12--orca-01",
     "name": "Orca sighting (Lizard, Helston TR12 7AP, UK)",
     "species": "Orca",
@@ -226,21 +255,18 @@
     "photoAttribution": "(c) Yolanda Evans, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-01-monterey-bay-nms-ca-humpback-03",
-    "name": "Humpback sighting (Monterey Bay NMS, CA)",
+    "id": "2026-04-01-ca-us-humpback-02",
+    "name": "Humpback sighting (CA, US)",
     "species": "Humpback",
-    "info": "iNaturalist observation by jmaughn.",
+    "info": "iNaturalist observation by bpizarek.",
     "date": "2026-04-01",
-    "latitude": 36.6154084149,
-    "longitude": -122.0700332522,
-    "area": "Monterey Bay NMS, CA",
-    "source": "https://www.inaturalist.org/observations/346638284",
+    "latitude": 34.0955343737,
+    "longitude": -119.5359348057,
+    "area": "CA, US",
+    "source": "https://www.inaturalist.org/observations/346891947",
     "behaviors": [
       "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631899175/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
+    ]
   },
   {
     "id": "2026-04-01-english-channel-engl-orca-02",
@@ -258,6 +284,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632029359/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Nathan Jackson, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-01-monterey-bay-nms-ca-humpback-03",
+    "name": "Humpback sighting (Monterey Bay NMS, CA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jmaughn.",
+    "date": "2026-04-01",
+    "latitude": 36.6154084149,
+    "longitude": -122.0700332522,
+    "area": "Monterey Bay NMS, CA",
+    "source": "https://www.inaturalist.org/observations/346638284",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631899175/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-01-monterey-bay-nationa-humpback-04",
@@ -589,21 +632,6 @@
     "photoAttribution": "(c) Monika, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-28-sitka-sound-sitka-ak-humpback-01",
-    "name": "Humpback sighting (Sitka Sound, Sitka, AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by fawnie.",
-    "date": "2026-03-28",
-    "latitude": 57.0399666667,
-    "longitude": -135.4095,
-    "area": "Sitka Sound, Sitka, AK, US",
-    "source": "https://www.inaturalist.org/observations/345844862",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ]
-  },
-  {
     "id": "2026-03-28-washington-us-orca-02",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
@@ -623,21 +651,19 @@
     "photoAttribution": "(c) ywcai, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-27-bah-a-de-la-paz-2309-humpback-01",
-    "name": "Humpback sighting (Bahía de la Paz, 23090 La Paz, B.C.S., México)",
+    "id": "2026-03-28-sitka-sound-sitka-ak-humpback-01",
+    "name": "Humpback sighting (Sitka Sound, Sitka, AK, US)",
     "species": "Humpback",
-    "info": "iNaturalist observation by chemaheff.",
-    "date": "2026-03-27",
-    "latitude": 24.430321053500002,
-    "longitude": -110.3716557473,
-    "area": "Bahía de la Paz, 23090 La Paz, B.C.S., México",
-    "source": "https://www.inaturalist.org/observations/346072353",
+    "info": "iNaturalist observation by fawnie.",
+    "date": "2026-03-28",
+    "latitude": 57.0399666667,
+    "longitude": -135.4095,
+    "area": "Sitka Sound, Sitka, AK, US",
+    "source": "https://www.inaturalist.org/observations/345844862",
     "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630779496/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Josemaría Hefferan, some rights reserved (CC BY-NC)"
+      "reported",
+      "feeding"
+    ]
   },
   {
     "id": "2026-03-27-capital-regional-dis-orca-01",
@@ -656,6 +682,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630158147/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) vancouver_island_whale_watch, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-27-bah-a-de-la-paz-2309-humpback-01",
+    "name": "Humpback sighting (Bahía de la Paz, 23090 La Paz, B.C.S., México)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by chemaheff.",
+    "date": "2026-03-27",
+    "latitude": 24.430321053500002,
+    "longitude": -110.3716557473,
+    "area": "Bahía de la Paz, 23090 La Paz, B.C.S., México",
+    "source": "https://www.inaturalist.org/observations/346072353",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630779496/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Josemaría Hefferan, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-27-sitka-ak-usa-humpback-02",
