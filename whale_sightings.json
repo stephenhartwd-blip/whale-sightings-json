@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-04-04-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-04-04.",
+    "date": "2026-04-04",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-04-04-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -141,6 +156,23 @@
       "vocalizing",
       "traveling"
     ]
+  },
+  {
+    "id": "2026-04-04-washington-us-gray-01",
+    "name": "Gray Whale sighting (Washington, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by kellybirds.",
+    "date": "2026-04-04",
+    "latitude": 46.242692544,
+    "longitude": -123.93279985230001,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/347344228",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633300952/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kelly Villanueva, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-04-dominica-dm-humpback-04",
@@ -582,20 +614,6 @@
     "photoAttribution": "(c) Vsevolod Rudyi, some rights reserved (CC BY)"
   },
   {
-    "id": "2026-03-31-san-luis-obispo-coun-white-01",
-    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by noiselessowl.",
-    "date": "2026-03-31",
-    "latitude": 35.3013691645,
-    "longitude": -120.9959962898,
-    "area": "San Luis Obispo County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/346504756",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-03-31-azores-pt-sperm-03",
     "name": "Sperm whale sighting (Azores, PT)",
     "species": "Sperm whale",
@@ -611,6 +629,20 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632853276/medium.jpg",
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Vsevolod Rudyi, some rights reserved (CC BY)"
+  },
+  {
+    "id": "2026-03-31-san-luis-obispo-coun-white-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-03-31",
+    "latitude": 35.3013691645,
+    "longitude": -120.9959962898,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/346504756",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-03-31-washington-us-orca-01",
@@ -789,20 +821,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630688784/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) stacy kerns, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-29-washington-us-gray-02",
-    "name": "Gray Whale sighting (Washington, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by michaeltownsend.",
-    "date": "2026-03-29",
-    "latitude": 47.8223457369,
-    "longitude": -122.40161483870001,
-    "area": "Washington, US",
-    "source": "https://www.inaturalist.org/observations/346723408",
-    "behaviors": [
-      "reported"
-    ]
   },
   {
     "id": "2026-03-29-capital-regional-dis-orca-01",
