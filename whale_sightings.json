@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-04-06-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-04-06.",
+    "date": "2026-04-06",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-04-06-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -340,24 +355,7 @@
     ]
   },
   {
-    "id": "2026-04-04-av-padre-nicol-s-tam-humpback-02",
-    "name": "Humpback sighting (Av. Padre Nicolás Tamaral y Calle 2, Mesa Colorada Col. Del Sol, Mesa Colorada, 23477 Cabo San Lucas, B.C.S., Mexico)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by willfreyman.",
-    "date": "2026-04-04",
-    "latitude": 22.86462754,
-    "longitude": -109.87592346,
-    "area": "Av. Padre Nicolás Tamaral y Calle 2, Mesa Colorada Col. Del Sol, Mesa Colorada, 23477 Cabo San Lucas, B.C.S., Mexico",
-    "source": "https://www.inaturalist.org/observations/347409130",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633430384/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Will Freyman, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-04-us-humpback-03",
+    "id": "2026-04-04-us-humpback-02",
     "name": "Humpback sighting (US)",
     "species": "Humpback",
     "info": "iNaturalist observation by clawdea.",
@@ -372,6 +370,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633909559/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) clawdea, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-04-stellwagen-bank-humpback-03",
+    "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jhskevington.",
+    "date": "2026-04-04",
+    "latitude": 38.31088,
+    "longitude": -73.76602,
+    "area": "Stellwagen Bank (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/347536805",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633682871/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Jeffrey H. Skevington, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-04-capital-regional-dis-orca-01",
@@ -392,21 +407,21 @@
     "photoAttribution": "(c) Kevin Toomer, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-04-stellwagen-bank-humpback-04",
-    "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
+    "id": "2026-04-04-av-padre-nicol-s-tam-humpback-04",
+    "name": "Humpback sighting (Av. Padre Nicolás Tamaral y Calle 2, Mesa Colorada Col. Del Sol, Mesa Colorada, 23477 Cabo San Lucas, B.C.S., Mexico)",
     "species": "Humpback",
-    "info": "iNaturalist observation by jhskevington.",
+    "info": "iNaturalist observation by willfreyman.",
     "date": "2026-04-04",
-    "latitude": 38.31088,
-    "longitude": -73.76602,
-    "area": "Stellwagen Bank (iNaturalist — Catalog)",
-    "source": "https://www.inaturalist.org/observations/347536805",
+    "latitude": 22.86462754,
+    "longitude": -109.87592346,
+    "area": "Av. Padre Nicolás Tamaral y Calle 2, Mesa Colorada Col. Del Sol, Mesa Colorada, 23477 Cabo San Lucas, B.C.S., Mexico",
+    "source": "https://www.inaturalist.org/observations/347409130",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633682871/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633430384/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Jeffrey H. Skevington, some rights reserved (CC BY-NC)"
+    "photoAttribution": "(c) Will Freyman, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-04-washington-us-orca-02",
@@ -477,7 +492,55 @@
     "photoAttribution": "(c) cleanlymoss, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-03-eyjafjordur-humpback-01",
+    "id": "2026-04-03-san-francisco-county-gray-01",
+    "name": "Gray Whale sighting (San Francisco County, San Francisco, CA, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by mapierson.",
+    "date": "2026-04-03",
+    "latitude": 37.716486928200005,
+    "longitude": -122.99926579,
+    "area": "San Francisco County, San Francisco, CA, USA",
+    "source": "https://www.inaturalist.org/observations/347175428",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-04-03-orange-county-us-ca--gray-02",
+    "name": "Gray Whale sighting (Orange County, US-CA, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by megane37.",
+    "date": "2026-04-03",
+    "latitude": 33.5037988005,
+    "longitude": -117.980714057,
+    "area": "Orange County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/347118902",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632855158/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) megane37, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-03-monterey-county-ca-u-humpback-01",
+    "name": "Humpback sighting (Monterey County, CA, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by palmeythepotato.",
+    "date": "2026-04-03",
+    "latitude": 36.8005856183,
+    "longitude": -121.9473111257,
+    "area": "Monterey County, CA, USA",
+    "source": "https://www.inaturalist.org/observations/347636974",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633880631/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) palmeythepotato, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-03-eyjafjordur-humpback-02",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-04-03.",
@@ -486,6 +549,34 @@
     "longitude": -18.15,
     "area": "Eyjafjordur (offshore), Akureyri, Iceland",
     "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-04-02-orange-county-us-ca--gray-01",
+    "name": "Gray Whale sighting (Orange County, US-CA, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by oravens.",
+    "date": "2026-04-02",
+    "latitude": 33.5593375937,
+    "longitude": -117.846510168,
+    "area": "Orange County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/346897623",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-04-01-san-luis-obispo-coun-white-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-04-01",
+    "latitude": 35.3682510658,
+    "longitude": -120.9753217857,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/346722178",
     "behaviors": [
       "reported"
     ]
@@ -523,6 +614,23 @@
     ]
   },
   {
+    "id": "2026-04-01-green-trail-loop-peb-humpback-02",
+    "name": "Humpback sighting (Green Trail Loop, Pebble Beach, CA, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by evanbao.",
+    "date": "2026-04-01",
+    "latitude": 36.6066966667,
+    "longitude": -121.958825,
+    "area": "Green Trail Loop, Pebble Beach, CA, US",
+    "source": "https://www.inaturalist.org/observations/346655977",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631935487/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) evanbao, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-04-01-lizard-helston-tr12--orca-01",
     "name": "Orca sighting (Lizard, Helston TR12 7AP, UK)",
     "species": "Orca",
@@ -538,6 +646,20 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631913307/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Yolanda Evans, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-01-ca-us-humpback-03",
+    "name": "Humpback sighting (CA, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by bpizarek.",
+    "date": "2026-04-01",
+    "latitude": 34.0955343737,
+    "longitude": -119.5359348057,
+    "area": "CA, US",
+    "source": "https://www.inaturalist.org/observations/346891947",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-04-01-united-kingdom-orca-02",
@@ -574,7 +696,7 @@
     "photoAttribution": "(c) Nathan Jackson, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-01-eyjafjordur-humpback-02",
+    "id": "2026-04-01-eyjafjordur-humpback-04",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-04-01.",
@@ -637,6 +759,48 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632853276/medium.jpg",
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Vsevolod Rudyi, some rights reserved (CC BY)"
+  },
+  {
+    "id": "2026-03-31-san-luis-obispo-coun-white-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-03-31",
+    "latitude": 35.3013691645,
+    "longitude": -120.9959962898,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/346504756",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-31-san-francisco-ca-usa-gray-01",
+    "name": "Gray Whale sighting (San Francisco, CA, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by rauko_dagnir.",
+    "date": "2026-03-31",
+    "latitude": 37.8860863329,
+    "longitude": -122.3997316975,
+    "area": "San Francisco, CA, USA",
+    "source": "https://www.inaturalist.org/observations/347722923",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-31-san-francisco-ca-usa-gray-02",
+    "name": "Gray Whale sighting (San Francisco, CA, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by rauko_dagnir.",
+    "date": "2026-03-31",
+    "latitude": 37.8854836038,
+    "longitude": -122.3896044012,
+    "area": "San Francisco, CA, USA",
+    "source": "https://www.inaturalist.org/observations/347722920",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-03-31-sitka-county-us-ak-u-humpback-01",
@@ -702,6 +866,34 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631694458/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Yann Zurbrugg, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-30-san-luis-obispo-coun-white-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-03-30",
+    "latitude": 35.3106684201,
+    "longitude": -120.88659621299999,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/346245844",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-30-san-luis-obispo-coun-white-02",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-03-30",
+    "latitude": 35.2119774248,
+    "longitude": -120.8834261369,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/346246340",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-03-30-united-states-gray-01",
@@ -1370,74 +1562,6 @@
     "behaviors": [
       "reported"
     ]
-  },
-  {
-    "id": "2026-03-01-gulf-of-california-m-blue-01",
-    "name": "Blue Whale sighting (Gulf of California, MX)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by sulavanderplank.",
-    "date": "2026-03-01",
-    "latitude": 25.6990116667,
-    "longitude": -111.1847833333,
-    "area": "Gulf of California, MX",
-    "source": "https://www.inaturalist.org/observations/342352205",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/623423189/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Sula Vanderplank, some rights reserved (CC BY)"
-  },
-  {
-    "id": "2026-02-27-bah-a-de-loreto-lore-blue-01",
-    "name": "Blue Whale sighting (Bahía de Loreto, Loreto, MX-BS, MX)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by jujuwild.",
-    "date": "2026-02-27",
-    "latitude": 26.0243451453,
-    "longitude": -111.2864691713,
-    "area": "Bahía de Loreto, Loreto, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/341007385",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/620678687/medium.jpg",
-    "photoLicense": "cc0",
-    "photoAttribution": "no rights reserved"
-  },
-  {
-    "id": "2026-02-27-bah-a-de-loreto-lore-blue-02",
-    "name": "Blue Whale sighting (Bahía de Loreto, Loreto, MX-BS, MX)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by jujuwild.",
-    "date": "2026-02-27",
-    "latitude": 26.0478485927,
-    "longitude": -111.2937269832,
-    "area": "Bahía de Loreto, Loreto, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/341007382",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/620678468/medium.jpg",
-    "photoLicense": "cc0",
-    "photoAttribution": "no rights reserved"
-  },
-  {
-    "id": "2026-02-27-bah-a-de-loreto-lore-blue-03",
-    "name": "Blue Whale sighting (Bahía de Loreto, Loreto, MX-BS, MX)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by jujuwild.",
-    "date": "2026-02-27",
-    "latitude": 25.9857912735,
-    "longitude": -111.2217136627,
-    "area": "Bahía de Loreto, Loreto, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/341007374",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/620678311/medium.jpg",
-    "photoLicense": "cc0",
-    "photoAttribution": "no rights reserved"
   },
   {
     "id": "2026-02-23-sitka-sound-sitka-ak-orca-01",
