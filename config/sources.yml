@@ -913,3 +913,28 @@ sources:
     max_items: 8
     force_species: ["Orca"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Acartia Data Cooperative (acartia.io)
+  # Same upstream feed used by Ocean Wise WRAS / Whale Report app.
+  # Requires ACARTIA_TOKEN secret in GitHub Actions.
+  # Register free at acartia.io to get a token.
+  # Covers: Salish Sea, Puget Sound, Strait of Juan de Fuca.
+  # -------------------------
+  - key: acartia_salish_sea
+    parser: acartia_api
+    area: "Salish Sea (Acartia)"
+    latitude: 48.50
+    longitude: -123.10
+    max_items: 8
+    trusted_only: true
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: acartia_puget_sound
+    parser: acartia_api
+    area: "Puget Sound (Acartia)"
+    latitude: 47.90
+    longitude: -122.55
+    max_items: 5
+    trusted_only: true
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
