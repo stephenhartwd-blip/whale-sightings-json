@@ -35,6 +35,7 @@ jobs:
       - name: Run updater
         env:
           TZ: America/Vancouver
+          ACARTIA_TOKEN: ${{ secrets.ACARTIA_TOKEN }}
         run: |
           python scripts/update_whale_sightings.py
 
