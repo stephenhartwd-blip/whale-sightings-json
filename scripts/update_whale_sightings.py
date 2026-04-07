@@ -1180,7 +1180,7 @@ def _infer_acartia_region(lat: float, lon: float) -> str:
         return "Pacific NW (offshore)"
     if 18.0 <= lat <= 23.0 and -162.0 <= lon <= -154.0:
         return "Hawaii (offshore)"
-    return `Ocean (${lat.toFixed(1)}, ${lon.toFixed(1)})`;
+    return f"Ocean ({lat:.1f}, {lon:.1f})"
 }
 
 
