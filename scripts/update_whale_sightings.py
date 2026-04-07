@@ -1181,10 +1181,10 @@ def _infer_acartia_region(lat: float, lon: float) -> str:
     if 18.0 <= lat <= 23.0 and -162.0 <= lon <= -154.0:
         return "Hawaii (offshore)"
     return f"Ocean ({lat:.1f}, {lon:.1f})"
-}
 
 
 def parse_acartia_api(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
+    """Pull trusted whale sightings from the Acartia data cooperative."""
     import os as _os
     token = _os.environ.get("ACARTIA_TOKEN", "").strip()
     max_items = int(cfg.get("max_items", 10))
@@ -1194,7 +1194,11 @@ def parse_acartia_api(cfg: Dict[str, Any], session: requests.Session, tz_name: s
     candidates: List[Candidate] = []
     try:
         if token:
-            resp = session.get(f"{ACARTIA_BASE}/sightings/trusted", headers={"Authorization": f"Bearer {token}"}, timeout=30)
+            resp = session.get(
+                f"{ACARTIA_BASE}/sightings/trusted",
+                headers={"Authorization": f"Bearer {token}"},
+                timeout=30,
+            )
         else:
             resp = session.get(f"{ACARTIA_BASE}/sightings/current", timeout=30)
         resp.raise_for_status()
@@ -1235,14 +1239,23 @@ def parse_acartia_api(cfg: Dict[str, Any], session: requests.Session, tz_name: s
             continue
         lat2, lon2 = fixed
         no_sighted = rec.get("no_sighted")
-        area_raw = (rec.get("area") or rec.get("location_name") or "").strip() or _infer_acartia_region(lat2, lon2)
+        area_raw = (rec.get("area") or rec.get("location_name") or "").strip()
+        if not area_raw:
+            area_raw = _infer_acartia_region(lat2, lon2)
         count_note = f" ({no_sighted} sighted)" if no_sighted else ""
         info = f"Acartia cooperative sighting{count_note}. Source: {rec.get('data_source_name', 'acartia.io')}."
+        name = f"{species} sighting ({area_raw})"
         candidates.append(Candidate(
-            date=dt, species=species,
-            name=f"{species} sighting ({area_raw})", info=info, area=area_raw,
-            source="https://acartia.io", latitude=float(lat2), longitude=float(lon2),
-            behaviors=["reported"], source_key=source_key,
+            date=dt,
+            species=species,
+            name=name,
+            info=info,
+            area=area_raw,
+            source="https://acartia.io",
+            latitude=float(lat2),
+            longitude=float(lon2),
+            behaviors=["reported"],
+            source_key=source_key,
         ))
     candidates.sort(key=lambda c: c.date, reverse=True)
     return candidates[:max_items]
