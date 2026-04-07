@@ -1137,6 +1137,116 @@ def parse_obis_api(cfg: Dict[str, Any], session: requests.Session, tz_name: str,
 def parse_generic_html(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
     return build_candidates_from_generic_html(cfg, session, tz_name, source_key)
 
+
+
+# -------------------------
+# Acartia Data Cooperative parser
+# -------------------------
+
+ACARTIA_BASE = "https://acartia.io/api/v1"
+
+ACARTIA_SPECIES_MAP = {
+    "killer whale":                     "Orca",
+    "orca":                             "Orca",
+    "southern resident killer whale":   "Orca",
+    "bigg's killer whale":              "Orca",
+    "transient killer whale":           "Orca",
+    "humpback whale":                   "Humpback",
+    "humpback":                         "Humpback",
+    "gray whale":                       "Gray Whale",
+    "grey whale":                       "Gray Whale",
+    "minke whale":                      "Fin Whale",
+    "fin whale":                        "Fin Whale",
+    "blue whale":                       "Blue Whale",
+    "sperm whale":                      "Sperm whale",
+    "sei whale":                        "Fin Whale",
+    "north pacific right whale":        "Fin Whale",
+    "bowhead whale":                    "Fin Whale",
+    "beluga whale":                     "Orca",
+    "dall's porpoise":                  "Orca",
+    "harbour porpoise":                 "Orca",
+    "pacific white-sided dolphin":      "Orca",
+}
+
+
+def _infer_acartia_region(lat: float, lon: float) -> str:
+    if 47.0 <= lat <= 50.5 and -125.5 <= lon <= -121.5:
+        return "Salish Sea (offshore), BC/WA"
+    if lat >= 54.0 and -170.0 <= lon <= -130.0:
+        return "Alaska (offshore)"
+    if 32.0 <= lat <= 42.0 and -125.0 <= lon <= -116.0:
+        return "California (offshore)"
+    if 42.0 <= lat <= 49.0 and -127.0 <= lon <= -123.5:
+        return "Pacific NW (offshore)"
+    if 18.0 <= lat <= 23.0 and -162.0 <= lon <= -154.0:
+        return "Hawaii (offshore)"
+    return `Ocean (${lat.toFixed(1)}, ${lon.toFixed(1)})`;
+}
+
+
+def parse_acartia_api(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
+    import os as _os
+    token = _os.environ.get("ACARTIA_TOKEN", "").strip()
+    max_items = int(cfg.get("max_items", 10))
+    trusted_only = bool(cfg.get("trusted_only", True))
+    filter_source = (cfg.get("data_source_name") or "").strip().lower()
+    today = now_local(tz_name)
+    candidates: List[Candidate] = []
+    try:
+        if token:
+            resp = session.get(f"{ACARTIA_BASE}/sightings/trusted", headers={"Authorization": f"Bearer {token}"}, timeout=30)
+        else:
+            resp = session.get(f"{ACARTIA_BASE}/sightings/current", timeout=30)
+        resp.raise_for_status()
+        records = resp.json() or []
+        time.sleep(0.2)
+    except Exception as e:
+        print(f"[acartia_api:{source_key}] fetch error: {e}")
+        return []
+    for rec in records:
+        if len(candidates) >= max_items * 3:
+            break
+        if trusted_only and str(rec.get("trusted", "0")) not in ("1", "true", "True"):
+            continue
+        if filter_source:
+            if (rec.get("data_source_name") or "").lower() != filter_source:
+                continue
+        raw_species = (rec.get("species") or "").lower().strip()
+        species = ACARTIA_SPECIES_MAP.get(raw_species)
+        if not species:
+            continue
+        created_raw = (rec.get("created") or "").strip()
+        try:
+            dt = datetime.strptime(created_raw, "%Y-%m-%d %H:%M:%S")
+            dt = dt.replace(tzinfo=tz.UTC).astimezone(tz.gettz(tz_name))
+        except ValueError:
+            try:
+                dt = datetime.fromisoformat(created_raw.replace("Z", "+00:00")).astimezone(tz.gettz(tz_name))
+            except Exception:
+                continue
+        if not within_window(dt, today, GLOBAL_MAX_DAYS):
+            continue
+        lat = safe_float(rec.get("latitude") or rec.get("lat"))
+        lon = safe_float(rec.get("longitude") or rec.get("lng") or rec.get("lon"))
+        if lat is None or lon is None:
+            continue
+        fixed = ensure_ocean(lat, lon)
+        if not fixed:
+            continue
+        lat2, lon2 = fixed
+        no_sighted = rec.get("no_sighted")
+        area_raw = (rec.get("area") or rec.get("location_name") or "").strip() or _infer_acartia_region(lat2, lon2)
+        count_note = f" ({no_sighted} sighted)" if no_sighted else ""
+        info = f"Acartia cooperative sighting{count_note}. Source: {rec.get('data_source_name', 'acartia.io')}."
+        candidates.append(Candidate(
+            date=dt, species=species,
+            name=f"{species} sighting ({area_raw})", info=info, area=area_raw,
+            source="https://acartia.io", latitude=float(lat2), longitude=float(lon2),
+            behaviors=["reported"], source_key=source_key,
+        ))
+    candidates.sort(key=lambda c: c.date, reverse=True)
+    return candidates[:max_items]
+
 PARSERS = {
     "orcanetwork_recent_sightings": parse_orcanetwork_recent_sightings,
 
@@ -1158,6 +1268,7 @@ PARSERS = {
     "rss_feed": parse_rss_feed,
     "inaturalist_api": parse_inaturalist_api,
     "obis_api": parse_obis_api,
+    "acartia_api": parse_acartia_api,
 }
 
 
