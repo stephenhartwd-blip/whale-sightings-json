@@ -938,3 +938,144 @@ sources:
     max_items: 5
     trusted_only: true
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # =============================================================================
+  # AUSTRALIA & NEW ZEALAND
+  # =============================================================================
+
+  # ── OBIS Australia (National Whale & Dolphin Sightings Database) ─────────────
+  # AphiaIDs: orca 137013, humpback 137092, blue 137090, fin 137091,
+  #           sperm 137117, gray 137119, minke 103768, southern right 231430
+  # Bounding box: Australian coastal waters
+  - key: obis_humpback_australia
+    parser: obis_api
+    area: "Australia"
+    aphia_id: 137092
+    latitude: -27.00
+    longitude: 153.00
+    bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
+    max_items: 5
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_orca_australia
+    parser: obis_api
+    area: "Australia"
+    aphia_id: 137013
+    latitude: -35.00
+    longitude: 138.00
+    bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
+    max_items: 4
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_sperm_australia
+    parser: obis_api
+    area: "Australia"
+    aphia_id: 137117
+    latitude: -30.00
+    longitude: 115.00
+    bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_blue_whale_australia
+    parser: obis_api
+    area: "Australia"
+    aphia_id: 137090
+    latitude: -38.00
+    longitude: 148.00
+    bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── OBIS New Zealand ──────────────────────────────────────────────────────────
+  - key: obis_humpback_nz
+    parser: obis_api
+    area: "New Zealand"
+    aphia_id: 137092
+    latitude: -41.00
+    longitude: 174.00
+    bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
+    max_items: 5
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_orca_nz
+    parser: obis_api
+    area: "New Zealand"
+    aphia_id: 137013
+    latitude: -44.00
+    longitude: 168.00
+    bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
+    max_items: 4
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_sperm_nz
+    parser: obis_api
+    area: "New Zealand"
+    aphia_id: 137117
+    latitude: -45.50
+    longitude: 166.60
+    bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── iNaturalist Australia ─────────────────────────────────────────────────────
+  - key: inat_orca_australia
+    parser: inaturalist_api
+    area: "Australia"
+    taxon_id: 42146
+    place_id: 6744
+    latitude: -27.00
+    longitude: 153.00
+    max_items: 5
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_australia
+    parser: inaturalist_api
+    area: "Australia"
+    taxon_id: 42448
+    place_id: 6744
+    latitude: -33.00
+    longitude: 151.00
+    max_items: 5
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_whale_western_australia
+    parser: inaturalist_api
+    area: "Western Australia"
+    taxon_id: 42448
+    place_id: 7161
+    latitude: -31.00
+    longitude: 115.00
+    max_items: 4
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── iNaturalist New Zealand ───────────────────────────────────────────────────
+  - key: inat_orca_nz
+    parser: inaturalist_api
+    area: "New Zealand"
+    taxon_id: 42146
+    place_id: 7085
+    latitude: -41.00
+    longitude: 174.00
+    max_items: 5
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_nz
+    parser: inaturalist_api
+    area: "New Zealand"
+    taxon_id: 42448
+    place_id: 7085
+    latitude: -37.00
+    longitude: 175.00
+    max_items: 4
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_nz
+    parser: inaturalist_api
+    area: "New Zealand (Kaikoura)"
+    taxon_id: 42461
+    place_id: 7085
+    latitude: -42.40
+    longitude: 173.70
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
