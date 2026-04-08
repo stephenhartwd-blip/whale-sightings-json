@@ -1,37 +1,18 @@
 [
   {
-    "id": "2026-04-08-isl-ndia-humpback-01",
-    "name": "Humpback sighting (Islândia)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by joaoazinhais.",
+    "id": "2026-04-08-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-04-08.",
     "date": "2026-04-08",
-    "latitude": 65.8597492631,
-    "longitude": -18.1231750175,
-    "area": "Islândia",
-    "source": "https://www.inaturalist.org/observations/348257336",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
     "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635176044/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) joaoazinhais, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-08-gastineau-channel-ju-humpback-02",
-    "name": "Humpback sighting (Gastineau Channel, Juneau, AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by josepar.",
-    "date": "2026-04-08",
-    "latitude": 58.2636993075,
-    "longitude": -134.3407027397,
-    "area": "Gastineau Channel, Juneau, AK, US",
-    "source": "https://www.inaturalist.org/observations/348332012",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635262128/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) josepar, some rights reserved (CC BY-NC)"
+      "reported",
+      "feeding"
+    ]
   },
   {
     "id": "2026-04-08-united-kingdom-orca-01",
@@ -79,7 +60,7 @@
     ]
   },
   {
-    "id": "2026-04-08-faxafloi-bay-humpback-03",
+    "id": "2026-04-08-faxafloi-bay-humpback-01",
     "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
     "species": "Humpback",
     "info": "Parsed from elding_diary on 2026-04-08.",
@@ -111,7 +92,7 @@
     ]
   },
   {
-    "id": "2026-04-08-bay-of-fundy-humpback-04",
+    "id": "2026-04-08-bay-of-fundy-humpback-02",
     "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Humpback",
     "info": "Parsed from brier_island_whale_sightings on 2026-04-08.",
@@ -143,7 +124,7 @@
     ]
   },
   {
-    "id": "2026-04-08-san-juan-islands-humpback-05",
+    "id": "2026-04-08-san-juan-islands-humpback-03",
     "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Humpback",
     "info": "Parsed from sanjuan_safaris_whale_report on 2026-04-08.",
@@ -177,7 +158,58 @@
     ]
   },
   {
-    "id": "2026-04-08-eyjafjordur-humpback-06",
+    "id": "2026-04-08-isl-ndia-humpback-04",
+    "name": "Humpback sighting (Islândia)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by joaoazinhais.",
+    "date": "2026-04-08",
+    "latitude": 65.8597492631,
+    "longitude": -18.1231750175,
+    "area": "Islândia",
+    "source": "https://www.inaturalist.org/observations/348257336",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635176044/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) joaoazinhais, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-08-gastineau-channel-ju-humpback-05",
+    "name": "Humpback sighting (Gastineau Channel, Juneau, AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by josepar.",
+    "date": "2026-04-08",
+    "latitude": 58.2636993075,
+    "longitude": -134.3407027397,
+    "area": "Gastineau Channel, Juneau, AK, US",
+    "source": "https://www.inaturalist.org/observations/348332012",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635262128/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) josepar, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-08-monterey-bay-ca-us-humpback-06",
+    "name": "Humpback sighting (Monterey Bay, CA, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by towhee6.",
+    "date": "2026-04-08",
+    "latitude": 36.74772,
+    "longitude": -121.9494033333,
+    "area": "Monterey Bay, CA, US",
+    "source": "https://www.inaturalist.org/observations/348344264",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635286266/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) LEONARD Y LIU, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-08-eyjafjordur-humpback-07",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-04-08.",
@@ -208,23 +240,6 @@
     "photoAttribution": "(c) gabrielle-smith, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-07-united-states-humpback-01",
-    "name": "Humpback sighting (United States)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-04-07",
-    "latitude": 36.8620832006,
-    "longitude": -122.0694082975,
-    "area": "United States",
-    "source": "https://www.inaturalist.org/observations/348119763",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/634839913/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-07-mitlenatch-island-na-orca-02",
     "name": "Orca sighting (Mitlenatch Island Nature Provincial Park, Strathcona, BC, CA)",
     "species": "Orca",
@@ -240,6 +255,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/634926054/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) gabrielle-smith, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-07-united-states-humpback-01",
+    "name": "Humpback sighting (United States)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jmaughn.",
+    "date": "2026-04-07",
+    "latitude": 36.8620832006,
+    "longitude": -122.0694082975,
+    "area": "United States",
+    "source": "https://www.inaturalist.org/observations/348119763",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/634839913/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-07-monterey-county-ca-u-humpback-02",
@@ -523,6 +555,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/634246159/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) lilla_86120, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-04-naselle-wa-98638-usa-gray-01",
+    "name": "Gray Whale sighting (Naselle, WA 98638, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by kellybirds.",
+    "date": "2026-04-04",
+    "latitude": 46.2292305556,
+    "longitude": -123.8603194444,
+    "area": "Naselle, WA 98638, USA",
+    "source": "https://www.inaturalist.org/observations/347344228",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633300952/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kelly Villanueva, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-04-western-australia-au-orca-01",
@@ -833,23 +882,6 @@
     "photoAttribution": "(c) Néstor F. Sandoval S., some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-29-airport-beach-rd-una-humpback-01",
-    "name": "Humpback sighting (Airport Beach Rd, Unalaska, AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by polivstes.",
-    "date": "2026-03-29",
-    "latitude": 53.878941,
-    "longitude": -166.573303,
-    "area": "Airport Beach Rd, Unalaska, AK, US",
-    "source": "https://www.inaturalist.org/observations/346086423",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630808096/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Oliver Malatich, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-29-punta-ninfas-bahia-s-orca-03",
     "name": "Orca sighting (Punta Ninfas, Bahia Sur)",
     "species": "Orca",
@@ -867,21 +899,21 @@
     "photoAttribution": "(c) Néstor F. Sandoval S., some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-28-alberni-clayoquot-bc-gray-01",
-    "name": "Gray Whale sighting (Alberni-Clayoquot, BC, Canada)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by coreonysis.",
-    "date": "2026-03-28",
-    "latitude": 49.254717,
-    "longitude": -126.177955,
-    "area": "Alberni-Clayoquot, BC, Canada",
-    "source": "https://www.inaturalist.org/observations/346395171",
+    "id": "2026-03-29-airport-beach-rd-una-humpback-01",
+    "name": "Humpback sighting (Airport Beach Rd, Unalaska, AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by polivstes.",
+    "date": "2026-03-29",
+    "latitude": 53.878941,
+    "longitude": -166.573303,
+    "area": "Airport Beach Rd, Unalaska, AK, US",
+    "source": "https://www.inaturalist.org/observations/346086423",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631420523/medium.jpg",
-    "photoLicense": "cc-by-sa",
-    "photoAttribution": "(c) Bailey Duncan, some rights reserved (CC BY-SA)"
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630808096/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Oliver Malatich, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-28-azores-pt-blue-01",
@@ -899,6 +931,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632848255/medium.jpg",
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Vsevolod Rudyi, some rights reserved (CC BY)"
+  },
+  {
+    "id": "2026-03-28-alberni-clayoquot-bc-gray-01",
+    "name": "Gray Whale sighting (Alberni-Clayoquot, BC, Canada)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by coreonysis.",
+    "date": "2026-03-28",
+    "latitude": 49.254717,
+    "longitude": -126.177955,
+    "area": "Alberni-Clayoquot, BC, Canada",
+    "source": "https://www.inaturalist.org/observations/346395171",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631420523/medium.jpg",
+    "photoLicense": "cc-by-sa",
+    "photoAttribution": "(c) Bailey Duncan, some rights reserved (CC BY-SA)"
   },
   {
     "id": "2026-03-28-sitka-sound-sitka-ak-humpback-01",
@@ -1004,6 +1053,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/626983860/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) trackmyfind, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-20-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by merchkimberly.",
+    "date": "2026-03-20",
+    "latitude": 15.2718000608,
+    "longitude": -61.5099292635,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/344325474",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627364828/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) merchkimberly, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-19-sheringham-point-cap-gray-01",
@@ -1381,6 +1447,23 @@
     "behaviors": [
       "reported"
     ]
+  },
+  {
+    "id": "2026-02-26-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by conservationwithkirsty.",
+    "date": "2026-02-26",
+    "latitude": 15.4226550331,
+    "longitude": -61.5755779068,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/346818819",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632256804/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kirsty Hayden, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-02-23-sitka-sound-sitka-ak-orca-01",
