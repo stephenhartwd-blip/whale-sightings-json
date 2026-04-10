@@ -1,20 +1,5 @@
 [
   {
-    "id": "2026-04-10-cape-town-white-01",
-    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
-    "species": "Great White Shark",
-    "info": "Parsed from za_sharkspotters on 2026-04-10.",
-    "date": "2026-04-10",
-    "latitude": -34.12,
-    "longitude": 18.32,
-    "area": "Cape Town (offshore), South Africa",
-    "source": "https://www.sharkspotters.org.za/",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ]
-  },
-  {
     "id": "2026-04-10-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -980,23 +965,6 @@
     ]
   },
   {
-    "id": "2026-03-31-sitka-county-us-ak-u-humpback-01",
-    "name": "Humpback sighting (Sitka County, US-AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by nikolaibraedt.",
-    "date": "2026-03-31",
-    "latitude": 57.125606126200005,
-    "longitude": -135.4514085257,
-    "area": "Sitka County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/346483119",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631588489/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Nikolai Braedt, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-31-napp-nordland-no-orca-01",
     "name": "Orca sighting (Napp, Nordland, NO)",
     "species": "Orca",
@@ -1012,6 +980,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631694458/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Yann Zurbrugg, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-31-sitka-county-us-ak-u-humpback-01",
+    "name": "Humpback sighting (Sitka County, US-AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by nikolaibraedt.",
+    "date": "2026-03-31",
+    "latitude": 57.125606126200005,
+    "longitude": -135.4514085257,
+    "area": "Sitka County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/346483119",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631588489/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Nikolai Braedt, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-30-north-pacific-ocean--gray-01",
