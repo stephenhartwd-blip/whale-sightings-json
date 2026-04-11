@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-04-10-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-04-10.",
+    "date": "2026-04-10",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-04-10-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -191,20 +205,6 @@
     "photoAttribution": "(c) snelson182, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-09-san-luis-obispo-coun-white-01",
-    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by noiselessowl.",
-    "date": "2026-04-09",
-    "latitude": 35.3505452534,
-    "longitude": -120.8743134594,
-    "area": "San Luis Obispo County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/348623179",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-04-09-point-reyes-national-gray-02",
     "name": "Gray Whale sighting (Point Reyes National Seashore, Marin County, US-CA, US)",
     "species": "Gray Whale",
@@ -220,6 +220,20 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636370867/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Lena Zentall, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-09-san-luis-obispo-coun-white-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-04-09",
+    "latitude": 35.3505452534,
+    "longitude": -120.8743134594,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/348623179",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-04-09-san-luis-obispo-coun-white-02",
@@ -966,23 +980,6 @@
     ]
   },
   {
-    "id": "2026-03-31-napp-nordland-no-orca-01",
-    "name": "Orca sighting (Napp, Nordland, NO)",
-    "species": "Orca",
-    "info": "iNaturalist observation by campyannule.",
-    "date": "2026-03-31",
-    "latitude": 68.078898566,
-    "longitude": 13.4173320143,
-    "area": "Napp, Nordland, NO",
-    "source": "https://www.inaturalist.org/observations/346532152",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631694458/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Yann Zurbrugg, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-31-sitka-county-us-ak-u-humpback-01",
     "name": "Humpback sighting (Sitka County, US-AK, US)",
     "species": "Humpback",
@@ -998,6 +995,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631588489/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Nikolai Braedt, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-31-napp-nordland-no-orca-01",
+    "name": "Orca sighting (Napp, Nordland, NO)",
+    "species": "Orca",
+    "info": "iNaturalist observation by campyannule.",
+    "date": "2026-03-31",
+    "latitude": 68.078898566,
+    "longitude": 13.4173320143,
+    "area": "Napp, Nordland, NO",
+    "source": "https://www.inaturalist.org/observations/346532152",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631694458/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Yann Zurbrugg, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-30-north-pacific-ocean--gray-01",
@@ -1203,6 +1217,40 @@
     "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-03-25-comond-baja-californ-gray-02",
+    "name": "Gray Whale sighting (Comondú, Baja California Sur, Mexico)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by ricardo-anapri.",
+    "date": "2026-03-25",
+    "latitude": 24.660064445,
+    "longitude": -112.1214616667,
+    "area": "Comondú, Baja California Sur, Mexico",
+    "source": "https://www.inaturalist.org/observations/348817907",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636143334/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-25-comond-baja-californ-gray-03",
+    "name": "Gray Whale sighting (Comondú, Baja California Sur, Mexico)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by ricardo-anapri.",
+    "date": "2026-03-25",
+    "latitude": 24.6609772217,
+    "longitude": -112.120589445,
+    "area": "Comondú, Baja California Sur, Mexico",
+    "source": "https://www.inaturalist.org/observations/348817903",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636143274/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-03-25-salish-sea-orca-01",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
@@ -1267,23 +1315,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/626983860/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) trackmyfind, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-20-dominica-caribbean-sperm-01",
-    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by merchkimberly.",
-    "date": "2026-03-20",
-    "latitude": 15.2718000608,
-    "longitude": -61.5099292635,
-    "area": "Dominica, Caribbean (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/344325474",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627364828/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) merchkimberly, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-19-muleg-mx-bs-mx-gray-01",
@@ -1394,34 +1425,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627774678/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Joshua Almansa, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-17-muleg-mx-bs-mx-gray-01",
-    "name": "Gray Whale sighting (Mulegé, MX-BS, MX)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by erick_manuel.",
-    "date": "2026-03-17",
-    "latitude": 26.7524457653,
-    "longitude": -113.2578419134,
-    "area": "Mulegé, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/343596050",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-17-muleg-mx-bs-mx-gray-02",
-    "name": "Gray Whale sighting (Mulegé, MX-BS, MX)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by erick_manuel.",
-    "date": "2026-03-17",
-    "latitude": 26.7561759941,
-    "longitude": -113.2447114783,
-    "area": "Mulegé, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/343596049",
-    "behaviors": [
-      "reported"
-    ]
   },
   {
     "id": "2026-03-16-eaglehawk-neck-au-humpback-01",
@@ -1641,23 +1644,6 @@
     "behaviors": [
       "reported"
     ]
-  },
-  {
-    "id": "2026-02-26-dominica-caribbean-sperm-01",
-    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by conservationwithkirsty.",
-    "date": "2026-02-26",
-    "latitude": 15.4226550331,
-    "longitude": -61.5755779068,
-    "area": "Dominica, Caribbean (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/346818819",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632256804/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kirsty Hayden, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-02-23-sitka-sound-sitka-ak-orca-01",
