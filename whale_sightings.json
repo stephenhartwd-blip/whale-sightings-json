@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-04-13-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-04-13.",
+    "date": "2026-04-13",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-04-13-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -271,18 +286,21 @@
     "photoAttribution": "(c) Kevin Toomer, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-11-san-diego-county-us--humpback-01",
-    "name": "Humpback sighting (San Diego County, US-CA, US)",
+    "id": "2026-04-11-juneau-ak-usa-humpback-01",
+    "name": "Humpback sighting (Juneau, AK, USA)",
     "species": "Humpback",
-    "info": "iNaturalist observation by kyle_klotz.",
+    "info": "iNaturalist observation by devineconservation.",
     "date": "2026-04-11",
-    "latitude": 32.6750389649,
-    "longitude": -117.304195619,
-    "area": "San Diego County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/349426581",
+    "latitude": 58.3646752851,
+    "longitude": -134.8405093736,
+    "area": "Juneau, AK, USA",
+    "source": "https://www.inaturalist.org/observations/349605222",
     "behaviors": [
       "reported"
-    ]
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/637765513/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Alec Boyd-Devine, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-11-alberni-clayoquot-ca-orca-02",
@@ -303,7 +321,38 @@
     "photoAttribution": "(c) Marcie Callewaert, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-11-stellwagen-bank-humpback-02",
+    "id": "2026-04-11-hoonah-angoon-census-humpback-02",
+    "name": "Humpback sighting (Hoonah-Angoon Census Area, AK, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by devineconservation.",
+    "date": "2026-04-11",
+    "latitude": 58.3490144519,
+    "longitude": -134.833886052,
+    "area": "Hoonah-Angoon Census Area, AK, USA",
+    "source": "https://www.inaturalist.org/observations/349605221",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/637765527/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Alec Boyd-Devine, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-11-san-diego-county-us--humpback-03",
+    "name": "Humpback sighting (San Diego County, US-CA, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by kyle_klotz.",
+    "date": "2026-04-11",
+    "latitude": 32.6750389649,
+    "longitude": -117.304195619,
+    "area": "San Diego County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/349426581",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-04-11-stellwagen-bank-humpback-04",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by minov20.",
@@ -320,7 +369,7 @@
     "photoAttribution": "(c) Mika, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-11-british-columbia-can-humpback-03",
+    "id": "2026-04-11-british-columbia-can-humpback-05",
     "name": "Humpback sighting (British Columbia, Canada)",
     "species": "Humpback",
     "info": "iNaturalist observation by marciecallewaert.",
@@ -400,40 +449,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635662007/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Xavier de Sousa, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-09-portugal-humpback-02",
-    "name": "Humpback sighting (Portugal)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by herpfan.",
-    "date": "2026-04-09",
-    "latitude": 37.7358700426,
-    "longitude": -25.2368201315,
-    "area": "Portugal",
-    "source": "https://www.inaturalist.org/observations/348934259",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636458821/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kevin Arbuckle, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-09-furnas-lagoa-9675-po-humpback-03",
-    "name": "Humpback sighting (Furnas - Lagoa, 9675, Portugal)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by lisatede.",
-    "date": "2026-04-09",
-    "latitude": 37.6961184381,
-    "longitude": -25.4205128923,
-    "area": "Furnas - Lagoa, 9675, Portugal",
-    "source": "https://www.inaturalist.org/observations/348551208",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635693555/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Lisa Tedeschi, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-08-oak-harbor-wa-98277--gray-01",
@@ -945,23 +960,6 @@
     ]
   },
   {
-    "id": "2026-03-29-airport-beach-rd-una-humpback-01",
-    "name": "Humpback sighting (Airport Beach Rd, Unalaska, AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by polivstes.",
-    "date": "2026-03-29",
-    "latitude": 53.878941,
-    "longitude": -166.573303,
-    "area": "Airport Beach Rd, Unalaska, AK, US",
-    "source": "https://www.inaturalist.org/observations/346086423",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630808096/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Oliver Malatich, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-29-rawson-chubut-argent-orca-01",
     "name": "Orca sighting (Rawson, Chubut, Argentina)",
     "species": "Orca",
@@ -1028,21 +1026,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633189536/medium.jpg",
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Vsevolod Rudyi, some rights reserved (CC BY)"
-  },
-  {
-    "id": "2026-03-28-sitka-sound-sitka-ak-humpback-01",
-    "name": "Humpback sighting (Sitka Sound, Sitka, AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by fawnie.",
-    "date": "2026-03-28",
-    "latitude": 57.0399666667,
-    "longitude": -135.4095,
-    "area": "Sitka Sound, Sitka, AK, US",
-    "source": "https://www.inaturalist.org/observations/345844862",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ]
   },
   {
     "id": "2026-03-28-alberni-clayoquot-bc-gray-01",
@@ -1249,23 +1232,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/626983860/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) trackmyfind, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-20-dominica-caribbean-sperm-01",
-    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by merchkimberly.",
-    "date": "2026-03-20",
-    "latitude": 15.2718000608,
-    "longitude": -61.5099292635,
-    "area": "Dominica, Caribbean (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/344325474",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627364828/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) merchkimberly, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-19-muleg-mx-bs-mx-gray-01",
@@ -1583,23 +1549,6 @@
     "photoAttribution": "(c) Curtis Mahon, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-02-ensenada-baja-califo-gray-01",
-    "name": "Gray Whale sighting (Ensenada, Baja California, Mexico)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by alvarosj.",
-    "date": "2026-03-02",
-    "latitude": 31.9931104922,
-    "longitude": -116.8747098157,
-    "area": "Ensenada, Baja California, Mexico",
-    "source": "https://www.inaturalist.org/observations/341196302",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/621071920/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Álvaro San José Elizundia, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-01-despatch-channel-do-humpback-01",
     "name": "Humpback sighting (Despatch Channel, DO)",
     "species": "Humpback",
@@ -1663,23 +1612,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/620678468/medium.jpg",
     "photoLicense": "cc0",
     "photoAttribution": "no rights reserved"
-  },
-  {
-    "id": "2026-02-26-dominica-caribbean-sperm-01",
-    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by conservationwithkirsty.",
-    "date": "2026-02-26",
-    "latitude": 15.4226550331,
-    "longitude": -61.5755779068,
-    "area": "Dominica, Caribbean (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/346818819",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632256804/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kirsty Hayden, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-02-23-sitka-sound-sitka-ak-orca-01",
