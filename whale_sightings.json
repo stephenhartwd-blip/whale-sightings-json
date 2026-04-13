@@ -10,7 +10,8 @@
     "area": "Cape Town (offshore), South Africa",
     "source": "https://www.sharkspotters.org.za/",
     "behaviors": [
-      "reported"
+      "reported",
+      "feeding"
     ]
   },
   {
@@ -157,6 +158,23 @@
     ]
   },
   {
+    "id": "2026-04-12-pacific-northwest-na-gray-01",
+    "name": "Gray Whale sighting (Pacific Northwest National Scenic Trail, WA, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by soy_boy.",
+    "date": "2026-04-12",
+    "latitude": 48.184138833300004,
+    "longitude": -124.7332383333,
+    "area": "Pacific Northwest National Scenic Trail, WA, US",
+    "source": "https://www.inaturalist.org/observations/349446256",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/637464601/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) soy_boy, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-04-12-ventura-county-us-ca-humpback-04",
     "name": "Humpback sighting (Ventura County, US-CA, US)",
     "species": "Humpback",
@@ -169,6 +187,23 @@
     "behaviors": [
       "reported"
     ]
+  },
+  {
+    "id": "2026-04-12-capital-regional-dis-humpback-05",
+    "name": "Humpback sighting (Capital Regional District, BC, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by kevintoo.",
+    "date": "2026-04-12",
+    "latitude": 48.8911287664,
+    "longitude": -123.3082849944,
+    "area": "Capital Regional District, BC, Canada",
+    "source": "https://www.inaturalist.org/observations/349441280",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/637449015/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kevin Toomer, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-12-capital-bc-ca-orca-06",
@@ -188,7 +223,7 @@
     "photoAttribution": "no rights reserved"
   },
   {
-    "id": "2026-04-12-eyjafjordur-humpback-05",
+    "id": "2026-04-12-eyjafjordur-humpback-06",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-04-12.",
@@ -219,23 +254,6 @@
     "photoAttribution": "(c) Trent R. Stanley, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-11-protection-island-wa-gray-02",
-    "name": "Gray Whale sighting (Protection Island, WA, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by carila33.",
-    "date": "2026-04-11",
-    "latitude": 48.1466861667,
-    "longitude": -122.92888,
-    "area": "Protection Island, WA, US",
-    "source": "https://www.inaturalist.org/observations/349161333",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636901179/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Carole BERNARD, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-11-los-angeles-county-u-blue-01",
     "name": "Blue Whale sighting (Los Angeles County, US-CA, US)",
     "species": "Blue Whale",
@@ -253,6 +271,23 @@
     "photoAttribution": "(c) katychapman, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-04-11-protection-island-wa-gray-02",
+    "name": "Gray Whale sighting (Protection Island, WA, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by carila33.",
+    "date": "2026-04-11",
+    "latitude": 48.1466861667,
+    "longitude": -122.92888,
+    "area": "Protection Island, WA, US",
+    "source": "https://www.inaturalist.org/observations/349161333",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636901179/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Carole BERNARD, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-04-11-san-diego-county-us--humpback-01",
     "name": "Humpback sighting (San Diego County, US-CA, US)",
     "species": "Humpback",
@@ -265,23 +300,6 @@
     "behaviors": [
       "reported"
     ]
-  },
-  {
-    "id": "2026-04-11-stellwagen-bank-humpback-02",
-    "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by minov20.",
-    "date": "2026-04-11",
-    "latitude": 21.2126754337,
-    "longitude": -58.851819858,
-    "area": "Stellwagen Bank (iNaturalist — Catalog)",
-    "source": "https://www.inaturalist.org/observations/348962379",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636575073/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Mika, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-11-capital-regional-dis-orca-01",
@@ -300,6 +318,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636754722/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Kevin Toomer, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-11-stellwagen-bank-humpback-02",
+    "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by minov20.",
+    "date": "2026-04-11",
+    "latitude": 21.2126754337,
+    "longitude": -58.851819858,
+    "area": "Stellwagen Bank (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/348962379",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636575073/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Mika, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-10-island-county-wa-usa-gray-01",
@@ -446,23 +481,6 @@
     "photoAttribution": "(c) Kevin Arbuckle, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-09-furnas-lagoa-9675-po-humpback-03",
-    "name": "Humpback sighting (Furnas - Lagoa, 9675, Portugal)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by lisatede.",
-    "date": "2026-04-09",
-    "latitude": 37.6961184381,
-    "longitude": -25.4205128923,
-    "area": "Furnas - Lagoa, 9675, Portugal",
-    "source": "https://www.inaturalist.org/observations/348551208",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635693555/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Lisa Tedeschi, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-09-capital-regional-dis-orca-01",
     "name": "Orca sighting (Capital Regional District, BC, Canada)",
     "species": "Orca",
@@ -479,6 +497,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636194456/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Kevin Toomer, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-09-furnas-lagoa-9675-po-humpback-03",
+    "name": "Humpback sighting (Furnas - Lagoa, 9675, Portugal)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by lisatede.",
+    "date": "2026-04-09",
+    "latitude": 37.6961184381,
+    "longitude": -25.4205128923,
+    "area": "Furnas - Lagoa, 9675, Portugal",
+    "source": "https://www.inaturalist.org/observations/348551208",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635693555/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Lisa Tedeschi, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-08-united-states-blue-01",
@@ -512,23 +547,6 @@
     ]
   },
   {
-    "id": "2026-04-08-hi-us-humpback-01",
-    "name": "Humpback sighting (HI, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by tims924.",
-    "date": "2026-04-08",
-    "latitude": 20.8941633333,
-    "longitude": -156.7315966667,
-    "area": "HI, US",
-    "source": "https://www.inaturalist.org/observations/348371458",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635338058/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) tims924, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-08-san-juan-county-us-w-orca-01",
     "name": "Orca sighting (San Juan County, US-WA, US)",
     "species": "Orca",
@@ -544,6 +562,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635393714/medium.jpg",
     "photoLicense": "cc0",
     "photoAttribution": "no rights reserved"
+  },
+  {
+    "id": "2026-04-08-hi-us-humpback-01",
+    "name": "Humpback sighting (HI, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by tims924.",
+    "date": "2026-04-08",
+    "latitude": 20.8941633333,
+    "longitude": -156.7315966667,
+    "area": "HI, US",
+    "source": "https://www.inaturalist.org/observations/348371458",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635338058/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) tims924, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-08-point-reyes-lighthou-humpback-02",
@@ -674,23 +709,6 @@
     "behaviors": [
       "reported"
     ]
-  },
-  {
-    "id": "2026-04-06-port-susan-camano-is-gray-02",
-    "name": "Gray Whale sighting (Port Susan, Camano Island, WA, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by carila33.",
-    "date": "2026-04-06",
-    "latitude": 48.16505,
-    "longitude": -122.417055,
-    "area": "Port Susan, Camano Island, WA, US",
-    "source": "https://www.inaturalist.org/observations/348000592",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/634608394/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Carole BERNARD, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-06-north-pacific-ocean--orca-01",
