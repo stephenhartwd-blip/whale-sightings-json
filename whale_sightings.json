@@ -10,7 +10,8 @@
     "area": "Cape Town (offshore), South Africa",
     "source": "https://www.sharkspotters.org.za/",
     "behaviors": [
-      "reported"
+      "reported",
+      "feeding"
     ]
   },
   {
@@ -157,6 +158,20 @@
     ]
   },
   {
+    "id": "2026-04-14-eyjafjordur-humpback-04",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-04-14.",
+    "date": "2026-04-14",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-04-13-san-francisco-ca-us-gray-01",
     "name": "Gray Whale sighting (San Francisco, CA, US)",
     "species": "Gray Whale",
@@ -208,23 +223,6 @@
     "photoAttribution": "(c) nsheetz, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-13-canterbury-nz-humpback-01",
-    "name": "Humpback sighting (Canterbury, NZ)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by sasha_plots.",
-    "date": "2026-04-13",
-    "latitude": -42.5132037919,
-    "longitude": 173.6128201979,
-    "area": "Canterbury, NZ",
-    "source": "https://www.inaturalist.org/observations/349634840",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/637831502/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) sasha_plots, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-13-san-francisco-ca-us-gray-04",
     "name": "Gray Whale sighting (San Francisco, CA, US)",
     "species": "Gray Whale",
@@ -240,6 +238,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/637929829/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) nsheetz, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-13-canterbury-nz-humpback-01",
+    "name": "Humpback sighting (Canterbury, NZ)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by sasha_plots.",
+    "date": "2026-04-13",
+    "latitude": -42.5132037919,
+    "longitude": 173.6128201979,
+    "area": "Canterbury, NZ",
+    "source": "https://www.inaturalist.org/observations/349634840",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/637831502/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) sasha_plots, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-13-san-francisco-ca-us-gray-05",
@@ -290,20 +305,6 @@
     ]
   },
   {
-    "id": "2026-04-12-ventura-county-us-ca-humpback-01",
-    "name": "Humpback sighting (Ventura County, US-CA, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by kyle_klotz.",
-    "date": "2026-04-12",
-    "latitude": 34.2751413873,
-    "longitude": -119.399077264,
-    "area": "Ventura County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/349432787",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-04-12-capital-bc-ca-orca-01",
     "name": "Orca sighting (Capital, BC, CA)",
     "species": "Orca",
@@ -321,21 +322,18 @@
     "photoAttribution": "no rights reserved"
   },
   {
-    "id": "2026-04-12-capital-regional-dis-humpback-02",
-    "name": "Humpback sighting (Capital Regional District, BC, Canada)",
+    "id": "2026-04-12-ventura-county-us-ca-humpback-01",
+    "name": "Humpback sighting (Ventura County, US-CA, US)",
     "species": "Humpback",
-    "info": "iNaturalist observation by kevintoo.",
+    "info": "iNaturalist observation by kyle_klotz.",
     "date": "2026-04-12",
-    "latitude": 48.8911287664,
-    "longitude": -123.3082849944,
-    "area": "Capital Regional District, BC, Canada",
-    "source": "https://www.inaturalist.org/observations/349441280",
+    "latitude": 34.2751413873,
+    "longitude": -119.399077264,
+    "area": "Ventura County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/349432787",
     "behaviors": [
       "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/637449015/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kevin Toomer, some rights reserved (CC BY-NC)"
+    ]
   },
   {
     "id": "2026-04-12-pacific-northwest-na-gray-01",
@@ -353,6 +351,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/637464601/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) soy_boy, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-12-capital-regional-dis-humpback-02",
+    "name": "Humpback sighting (Capital Regional District, BC, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by kevintoo.",
+    "date": "2026-04-12",
+    "latitude": 48.8911287664,
+    "longitude": -123.3082849944,
+    "area": "Capital Regional District, BC, Canada",
+    "source": "https://www.inaturalist.org/observations/349441280",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/637449015/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kevin Toomer, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-12-eyjafjordur-humpback-03",
@@ -699,20 +714,6 @@
     "photoAttribution": "(c) josepar, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-08-eyjafjordur-humpback-05",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-04-08.",
-    "date": "2026-04-08",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-04-07-kauai-county-hi-usa-humpback-01",
     "name": "Humpback sighting (Kauai County, HI, USA)",
     "species": "Humpback",
@@ -875,6 +876,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/634246159/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) lilla_86120, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-04-naselle-wa-98638-usa-gray-01",
+    "name": "Gray Whale sighting (Naselle, WA 98638, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by kellybirds.",
+    "date": "2026-04-04",
+    "latitude": 46.2292305556,
+    "longitude": -123.8603194444,
+    "area": "Naselle, WA 98638, USA",
+    "source": "https://www.inaturalist.org/observations/347344228",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633300952/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kelly Villanueva, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-04-western-australia-au-orca-01",
