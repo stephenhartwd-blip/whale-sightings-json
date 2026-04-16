@@ -17,6 +17,21 @@
     "photoAttribution": "(c) clementine1682, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-04-16-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-04-16.",
+    "date": "2026-04-16",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-04-16-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -282,6 +297,20 @@
     "photoAttribution": "(c) marylusk, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-04-15-eyjafjordur-humpback-04",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-04-15.",
+    "date": "2026-04-15",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-04-14-bonny-doon-ca-95060--gray-01",
     "name": "Gray Whale sighting (Bonny Doon, CA 95060, USA)",
     "species": "Gray Whale",
@@ -432,23 +461,6 @@
     "photoAttribution": "(c) Ruthann, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-13-capital-regional-dis-humpback-01",
-    "name": "Humpback sighting (Capital Regional District, BC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by vancouver_island_whale_watch.",
-    "date": "2026-04-13",
-    "latitude": 48.90042,
-    "longitude": -123.48456,
-    "area": "Capital Regional District, BC, Canada",
-    "source": "https://www.inaturalist.org/observations/350060828",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638657486/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) vancouver_island_whale_watch, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-13-capital-regional-dis-orca-01",
     "name": "Orca sighting (Capital Regional District, BC, Canada)",
     "species": "Orca",
@@ -463,6 +475,23 @@
       "hunting"
     ],
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638658177/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) vancouver_island_whale_watch, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-13-capital-regional-dis-humpback-01",
+    "name": "Humpback sighting (Capital Regional District, BC, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by vancouver_island_whale_watch.",
+    "date": "2026-04-13",
+    "latitude": 48.90042,
+    "longitude": -123.48456,
+    "area": "Capital Regional District, BC, Canada",
+    "source": "https://www.inaturalist.org/observations/350060828",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638657486/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) vancouver_island_whale_watch, some rights reserved (CC BY-NC)"
   },
@@ -524,20 +553,6 @@
     "longitude": -119.399077264,
     "area": "Ventura County, US-CA, US",
     "source": "https://www.inaturalist.org/observations/349432787",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-04-12-eyjafjordur-humpback-02",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-04-12.",
-    "date": "2026-04-12",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
     "behaviors": [
       "reported"
     ]
@@ -1427,6 +1442,71 @@
     ]
   },
   {
+    "id": "2026-03-25-comond-baja-californ-gray-01",
+    "name": "Gray Whale sighting (Comondú, Baja California Sur, Mexico)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by ricardo-anapri.",
+    "date": "2026-03-25",
+    "latitude": 24.6601975,
+    "longitude": -112.1226538883,
+    "area": "Comondú, Baja California Sur, Mexico",
+    "source": "https://www.inaturalist.org/observations/348817727",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636142369/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-25-comond-baja-californ-gray-02",
+    "name": "Gray Whale sighting (Comondú, Baja California Sur, Mexico)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by ricardo-anapri.",
+    "date": "2026-03-25",
+    "latitude": 24.660064445,
+    "longitude": -112.1214616667,
+    "area": "Comondú, Baja California Sur, Mexico",
+    "source": "https://www.inaturalist.org/observations/348817907",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636143334/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-25-comond-baja-californ-gray-03",
+    "name": "Gray Whale sighting (Comondú, Baja California Sur, Mexico)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by ricardo-anapri.",
+    "date": "2026-03-25",
+    "latitude": 24.6609772217,
+    "longitude": -112.120589445,
+    "area": "Comondú, Baja California Sur, Mexico",
+    "source": "https://www.inaturalist.org/observations/348817903",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636143274/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-24-muleg-mx-bs-mx-gray-01",
+    "name": "Gray Whale sighting (Mulegé, MX-BS, MX)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by erick_manuel.",
+    "date": "2026-03-24",
+    "latitude": 26.7376556513,
+    "longitude": -113.2615526941,
+    "area": "Mulegé, MX-BS, MX",
+    "source": "https://www.inaturalist.org/observations/345138811",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-03-23-mussel-beach-scarbor-humpback-01",
     "name": "Humpback sighting (Mussel Beach, Scarborough)",
     "species": "Humpback",
@@ -1506,7 +1586,24 @@
     "photoAttribution": "(c) merchkimberly, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-03-19-sheringham-point-cap-gray-01",
+    "id": "2026-03-19-muleg-mx-bs-mx-gray-01",
+    "name": "Gray Whale sighting (Mulegé, MX-BS, MX)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by eric35677.",
+    "date": "2026-03-19",
+    "latitude": 27.8123920198,
+    "longitude": -114.243189759,
+    "area": "Mulegé, MX-BS, MX",
+    "source": "https://www.inaturalist.org/observations/344218907",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627153734/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Eric Camacho, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-19-sheringham-point-cap-gray-02",
     "name": "Gray Whale sighting (Sheringham Point, Capital, BC, CA)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by ljfreer.",
@@ -1866,23 +1963,6 @@
     "behaviors": [
       "reported"
     ]
-  },
-  {
-    "id": "2026-03-02-ensenada-baja-califo-gray-01",
-    "name": "Gray Whale sighting (Ensenada, Baja California, Mexico)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by alvarosj.",
-    "date": "2026-03-02",
-    "latitude": 31.9931104922,
-    "longitude": -116.8747098157,
-    "area": "Ensenada, Baja California, Mexico",
-    "source": "https://www.inaturalist.org/observations/341196302",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/621071920/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Álvaro San José Elizundia, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-01-despatch-channel-do-humpback-01",
