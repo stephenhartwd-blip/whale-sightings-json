@@ -1,22 +1,5 @@
 [
   {
-    "id": "2026-04-16-kaik-ura-7300-new-ze-humpback-01",
-    "name": "Humpback sighting (Kaikōura 7300, New Zealand)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by clementine1682.",
-    "date": "2026-04-16",
-    "latitude": -42.387016810199995,
-    "longitude": 173.6910920218,
-    "area": "Kaikōura 7300, New Zealand",
-    "source": "https://www.inaturalist.org/observations/350211075",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638959299/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) clementine1682, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-16-cape-town-white-01",
     "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
     "species": "Great White Shark",
@@ -77,7 +60,7 @@
     ]
   },
   {
-    "id": "2026-04-16-faxafloi-bay-humpback-02",
+    "id": "2026-04-16-faxafloi-bay-humpback-01",
     "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
     "species": "Humpback",
     "info": "Parsed from elding_diary on 2026-04-16.",
@@ -111,7 +94,7 @@
     ]
   },
   {
-    "id": "2026-04-16-bay-of-fundy-humpback-03",
+    "id": "2026-04-16-bay-of-fundy-humpback-02",
     "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Humpback",
     "info": "Parsed from brier_island_whale_sightings on 2026-04-16.",
@@ -158,6 +141,23 @@
       "vocalizing",
       "traveling"
     ]
+  },
+  {
+    "id": "2026-04-16-kaik-ura-7300-new-ze-humpback-03",
+    "name": "Humpback sighting (Kaikōura 7300, New Zealand)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by clementine1682.",
+    "date": "2026-04-16",
+    "latitude": -42.387016810199995,
+    "longitude": 173.6910920218,
+    "area": "Kaikōura 7300, New Zealand",
+    "source": "https://www.inaturalist.org/observations/350211075",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638959299/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) clementine1682, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-15-san-luis-obispo-coun-white-01",
@@ -262,6 +262,23 @@
     "photoAttribution": "(c) theflightlessmoda, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-04-15-iceland-humpback-04",
+    "name": "Humpback sighting (Iceland)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by marsidae.",
+    "date": "2026-04-15",
+    "latitude": 64.167680018,
+    "longitude": -22.2082661837,
+    "area": "Iceland",
+    "source": "https://www.inaturalist.org/observations/350329699",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/639187891/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Sigrún Helgu, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-04-15-capital-regional-dis-orca-02",
     "name": "Orca sighting (Capital Regional District, BC, Canada)",
     "species": "Orca",
@@ -297,7 +314,7 @@
     "photoAttribution": "(c) marylusk, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-15-eyjafjordur-humpback-04",
+    "id": "2026-04-15-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-04-15.",
@@ -1956,20 +1973,6 @@
     ]
   },
   {
-    "id": "2026-02-26-hawaii-united-states-humpback-01",
-    "name": "Humpback sighting (Hawaii, United States)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-02-26. Source: Happywhale.com.",
-    "date": "2026-02-26",
-    "latitude": 20.89877,
-    "longitude": -156.719937,
-    "area": "Hawaii, United States",
-    "source": "https://obis.org/occurrence/645345",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-02-26-dominica-caribbean-sperm-01",
     "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
     "species": "Sperm whale",
@@ -1985,6 +1988,20 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632256804/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Kirsty Hayden, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-02-26-hawaii-united-states-humpback-01",
+    "name": "Humpback sighting (Hawaii, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-02-26. Source: Happywhale.com.",
+    "date": "2026-02-26",
+    "latitude": 20.89877,
+    "longitude": -156.719937,
+    "area": "Hawaii, United States",
+    "source": "https://obis.org/occurrence/645345",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-02-25-falkland-islands-orca-01",
