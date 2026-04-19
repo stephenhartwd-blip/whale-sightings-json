@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-04-19-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-04-19.",
+    "date": "2026-04-19",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-04-19-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -191,6 +206,20 @@
     ]
   },
   {
+    "id": "2026-04-18-eyjafjordur-humpback-02",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-04-18.",
+    "date": "2026-04-18",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-04-17-97r3-p8-classet-wa-9-gray-01",
     "name": "Gray Whale sighting (97R3+P8, Classet, WA 98326, USA)",
     "species": "Gray Whale",
@@ -208,23 +237,6 @@
     "photoAttribution": "(c) Jeff Wilson, some rights reserved (CC BY)"
   },
   {
-    "id": "2026-04-17-hi-us-humpback-01",
-    "name": "Humpback sighting (HI, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by crustyflounder.",
-    "date": "2026-04-17",
-    "latitude": 21.7210040798,
-    "longitude": -158.0020120585,
-    "area": "HI, US",
-    "source": "https://www.inaturalist.org/observations/351071285",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/640616867/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) crustyflounder, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-17-manette-bridge-breme-gray-02",
     "name": "Gray Whale sighting (Manette Bridge, Bremerton, WA, US)",
     "species": "Gray Whale",
@@ -240,6 +252,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/639887364/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Melanie Dawn Molina Wood, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-17-hi-us-humpback-01",
+    "name": "Humpback sighting (HI, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by crustyflounder.",
+    "date": "2026-04-17",
+    "latitude": 21.7210040798,
+    "longitude": -158.0020120585,
+    "area": "HI, US",
+    "source": "https://www.inaturalist.org/observations/351071285",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/640616867/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) crustyflounder, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-17-capital-regional-dis-orca-01",
@@ -294,21 +323,18 @@
     "photoAttribution": "(c) durable-pen7, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-16-kaik-ura-7300-new-ze-humpback-01",
-    "name": "Humpback sighting (Kaikōura 7300, New Zealand)",
+    "id": "2026-04-17-eyjafjordur-humpback-02",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
-    "info": "iNaturalist observation by clementine1682.",
-    "date": "2026-04-16",
-    "latitude": -42.387016810199995,
-    "longitude": 173.6910920218,
-    "area": "Kaikōura 7300, New Zealand",
-    "source": "https://www.inaturalist.org/observations/350211075",
+    "info": "Parsed from akureyri_blog on 2026-04-17.",
+    "date": "2026-04-17",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
     "behaviors": [
       "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638959299/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) clementine1682, some rights reserved (CC BY-NC)"
+    ]
   },
   {
     "id": "2026-04-16-bonny-doon-ca-95060--gray-01",
@@ -326,6 +352,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/639739827/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) sillyjesse, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-16-kaik-ura-7300-new-ze-humpback-01",
+    "name": "Humpback sighting (Kaikōura 7300, New Zealand)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by clementine1682.",
+    "date": "2026-04-16",
+    "latitude": -42.387016810199995,
+    "longitude": 173.6910920218,
+    "area": "Kaikōura 7300, New Zealand",
+    "source": "https://www.inaturalist.org/observations/350211075",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638959299/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) clementine1682, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-16-seward-ak-99664-usa-humpback-02",
@@ -433,51 +476,6 @@
     "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-15-or-us-gray-01",
-    "name": "Gray Whale sighting (OR, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by shanafelt_ben.",
-    "date": "2026-04-15",
-    "latitude": 46.008566666700005,
-    "longitude": -123.93528,
-    "area": "OR, US",
-    "source": "https://www.inaturalist.org/observations/350173400",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-04-15-north-pacific-ocean--gray-02",
-    "name": "Gray Whale sighting (North Pacific Ocean, OR, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by katie363.",
-    "date": "2026-04-15",
-    "latitude": 45.9949276046,
-    "longitude": -123.9343307977,
-    "area": "North Pacific Ocean, OR, US",
-    "source": "https://www.inaturalist.org/observations/350969481",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-04-15-north-pacific-ocean--gray-03",
-    "name": "Gray Whale sighting (North Pacific Ocean, OR, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by goldienewt.",
-    "date": "2026-04-15",
-    "latitude": 46.008655770800004,
-    "longitude": -123.9363116384,
-    "area": "North Pacific Ocean, OR, US",
-    "source": "https://www.inaturalist.org/observations/350129484",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638792340/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) goldienewt, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-15-washington-us-orca-01",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
@@ -495,21 +493,18 @@
     "photoAttribution": "(c) marylusk, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-14-kawela-bay-hi-us-humpback-01",
-    "name": "Humpback sighting (Kawela Bay, HI, US)",
+    "id": "2026-04-15-eyjafjordur-humpback-01",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
-    "info": "iNaturalist observation by medamaudee.",
-    "date": "2026-04-14",
-    "latitude": 21.7277992596,
-    "longitude": -157.9982881866,
-    "area": "Kawela Bay, HI, US",
-    "source": "https://www.inaturalist.org/observations/349852410",
+    "info": "Parsed from akureyri_blog on 2026-04-15.",
+    "date": "2026-04-15",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
     "behaviors": [
       "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638253261/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) medamaudee, some rights reserved (CC BY-NC)"
+    ]
   },
   {
     "id": "2026-04-14-bonny-doon-ca-95060--gray-01",
@@ -578,6 +573,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638194710/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) lucas teyssandier, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-14-kawela-bay-hi-us-humpback-01",
+    "name": "Humpback sighting (Kawela Bay, HI, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by medamaudee.",
+    "date": "2026-04-14",
+    "latitude": 21.7277992596,
+    "longitude": -157.9982881866,
+    "area": "Kawela Bay, HI, US",
+    "source": "https://www.inaturalist.org/observations/349852410",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638253261/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) medamaudee, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-13-state-st-at-13th-st--gray-01",
@@ -761,6 +773,20 @@
     "photoAttribution": "(c) jmccamy, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-04-08-azores-portugal-gray-01",
+    "name": "Gray Whale sighting (Azores, Portugal)",
+    "species": "Gray Whale",
+    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-04-08. Source: Happywhale.com.",
+    "date": "2026-04-08",
+    "latitude": 38.425,
+    "longitude": -28.6255,
+    "area": "Azores, Portugal",
+    "source": "https://obis.org/occurrence/656632",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-04-08-hi-us-humpback-01",
     "name": "Humpback sighting (HI, US)",
     "species": "Humpback",
@@ -810,20 +836,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635262128/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) josepar, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-08-azores-portugal-gray-01",
-    "name": "Gray Whale sighting (Azores, Portugal)",
-    "species": "Gray Whale",
-    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-04-08. Source: Happywhale.com.",
-    "date": "2026-04-08",
-    "latitude": 38.425,
-    "longitude": -28.6255,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/656632",
-    "behaviors": [
-      "reported"
-    ]
   },
   {
     "id": "2026-04-06-ais-n-cl-ai-cl-blue-01",
@@ -970,10 +982,10 @@
     "photoAttribution": "(c) lilla_86120, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-05-salish-sea-orca-02",
-    "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
-    "species": "Orca",
-    "info": "Orca Network recent sightings indicates Orca on 2026-04-05.",
+    "id": "2026-04-05-salish-sea-gray-01",
+    "name": "Gray Whale sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
+    "species": "Gray Whale",
+    "info": "Orca Network recent sightings indicates Gray Whale on 2026-04-05.",
     "date": "2026-04-05",
     "latitude": 48.5,
     "longitude": -123.2,
@@ -989,10 +1001,10 @@
     ]
   },
   {
-    "id": "2026-04-05-salish-sea-gray-01",
-    "name": "Gray Whale sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
-    "species": "Gray Whale",
-    "info": "Orca Network recent sightings indicates Gray Whale on 2026-04-05.",
+    "id": "2026-04-05-salish-sea-orca-02",
+    "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
+    "species": "Orca",
+    "info": "Orca Network recent sightings indicates Orca on 2026-04-05.",
     "date": "2026-04-05",
     "latitude": 48.5,
     "longitude": -123.2,
@@ -1074,23 +1086,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/639431983/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) willawilla, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-04-naselle-wa-98638-usa-gray-02",
-    "name": "Gray Whale sighting (Naselle, WA 98638, USA)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by kellybirds.",
-    "date": "2026-04-04",
-    "latitude": 46.2292305556,
-    "longitude": -123.8603194444,
-    "area": "Naselle, WA 98638, USA",
-    "source": "https://www.inaturalist.org/observations/347344228",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633300952/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kelly Villanueva, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-04-salish-sea-orca-04",
