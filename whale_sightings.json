@@ -1,20 +1,5 @@
 [
   {
-    "id": "2026-04-20-cape-town-white-01",
-    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
-    "species": "Great White Shark",
-    "info": "Parsed from za_sharkspotters on 2026-04-20.",
-    "date": "2026-04-20",
-    "latitude": -34.12,
-    "longitude": 18.32,
-    "area": "Cape Town (offshore), South Africa",
-    "source": "https://www.sharkspotters.org.za/",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ]
-  },
-  {
     "id": "2026-04-20-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -280,6 +265,23 @@
     "individualName": "ORCA BIGGS T123"
   },
   {
+    "id": "2026-04-19-washington-us-orca-03",
+    "name": "Orca sighting (Washington, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by riley88783.",
+    "date": "2026-04-19",
+    "latitude": 48.7040041535,
+    "longitude": -123.1938841345,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/351488343",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/641433387/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Riley, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-04-19-eyjafjordur-humpback-06",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -342,20 +344,6 @@
     "photoAttribution": "(c) scloete, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-18-dillingham-ak-us-orca-01",
-    "name": "Orca sighting (Dillingham, AK, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by ginnystewart.",
-    "date": "2026-04-18",
-    "latitude": 58.97425,
-    "longitude": -158.5354916667,
-    "area": "Dillingham, AK, US",
-    "source": "https://www.inaturalist.org/observations/350976592",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-04-18-monterey-county-ca-u-humpback-01",
     "name": "Humpback sighting (Monterey County, CA, USA)",
     "species": "Humpback",
@@ -371,6 +359,20 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/640490640/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-18-dillingham-ak-us-orca-01",
+    "name": "Orca sighting (Dillingham, AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by ginnystewart.",
+    "date": "2026-04-18",
+    "latitude": 58.97425,
+    "longitude": -158.5354916667,
+    "area": "Dillingham, AK, US",
+    "source": "https://www.inaturalist.org/observations/350976592",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-04-18-v9410-ushuaia-tierra-humpback-02",
@@ -638,68 +640,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638817735/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-15-or-us-gray-01",
-    "name": "Gray Whale sighting (OR, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by shanafelt_ben.",
-    "date": "2026-04-15",
-    "latitude": 46.008566666700005,
-    "longitude": -123.93528,
-    "area": "OR, US",
-    "source": "https://www.inaturalist.org/observations/350173400",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-04-15-north-pacific-ocean--gray-02",
-    "name": "Gray Whale sighting (North Pacific Ocean, OR, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by katie363.",
-    "date": "2026-04-15",
-    "latitude": 45.9949276046,
-    "longitude": -123.9343307977,
-    "area": "North Pacific Ocean, OR, US",
-    "source": "https://www.inaturalist.org/observations/350969481",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-04-15-north-pacific-ocean--gray-03",
-    "name": "Gray Whale sighting (North Pacific Ocean, OR, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by goldienewt.",
-    "date": "2026-04-15",
-    "latitude": 46.008655770800004,
-    "longitude": -123.9363116384,
-    "area": "North Pacific Ocean, OR, US",
-    "source": "https://www.inaturalist.org/observations/350129484",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638792340/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) goldienewt, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-15-washington-us-orca-01",
-    "name": "Orca sighting (Washington, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by marylusk.",
-    "date": "2026-04-15",
-    "latitude": 48.467558335300005,
-    "longitude": -122.8124352931,
-    "area": "Washington, US",
-    "source": "https://www.inaturalist.org/observations/350142918",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638819671/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) marylusk, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-14-bonny-doon-ca-95060--gray-01",
@@ -1249,23 +1189,6 @@
     "photoAttribution": "(c) willawilla, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-04-naselle-wa-98638-usa-gray-02",
-    "name": "Gray Whale sighting (Naselle, WA 98638, USA)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by kellybirds.",
-    "date": "2026-04-04",
-    "latitude": 46.2292305556,
-    "longitude": -123.8603194444,
-    "area": "Naselle, WA 98638, USA",
-    "source": "https://www.inaturalist.org/observations/347344228",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633300952/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kelly Villanueva, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-04-salish-sea-orca-04",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
@@ -1663,6 +1586,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/626983860/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) trackmyfind, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-20-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by merchkimberly.",
+    "date": "2026-03-20",
+    "latitude": 15.2718000608,
+    "longitude": -61.5099292635,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/344325474",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627364828/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) merchkimberly, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-19-sheringham-point-cap-gray-01",
@@ -2064,6 +2004,23 @@
     "behaviors": [
       "reported"
     ]
+  },
+  {
+    "id": "2026-02-26-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by conservationwithkirsty.",
+    "date": "2026-02-26",
+    "latitude": 15.4226550331,
+    "longitude": -61.5755779068,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/346818819",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632256804/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kirsty Hayden, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-02-26-hawaii-united-states-humpback-01",
