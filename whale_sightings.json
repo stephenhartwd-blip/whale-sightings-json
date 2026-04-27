@@ -1,20 +1,5 @@
 [
   {
-    "id": "2026-04-27-cape-town-white-01",
-    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
-    "species": "Great White Shark",
-    "info": "Parsed from za_sharkspotters on 2026-04-27.",
-    "date": "2026-04-27",
-    "latitude": -34.12,
-    "longitude": 18.32,
-    "area": "Cape Town (offshore), South Africa",
-    "source": "https://www.sharkspotters.org.za/",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ]
-  },
-  {
     "id": "2026-04-27-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -143,6 +128,40 @@
     ]
   },
   {
+    "id": "2026-04-27-ca-us-gray-01",
+    "name": "Gray Whale sighting (CA, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by scottveirs.",
+    "date": "2026-04-27",
+    "latitude": 36.9339833333,
+    "longitude": -122.0871055,
+    "area": "CA, US",
+    "source": "https://www.inaturalist.org/observations/355689419",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648650749/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Scott Veirs, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-27-whatcom-county-wa-us-gray-02",
+    "name": "Gray Whale sighting (Whatcom County, WA, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by ruthannishiking.",
+    "date": "2026-04-27",
+    "latitude": 48.7444176788,
+    "longitude": -122.5071716424,
+    "area": "Whatcom County, WA, USA",
+    "source": "https://www.inaturalist.org/observations/355668631",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648611339/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ruthann, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-04-26-wb-pacific-st-jervis-gray-01",
     "name": "Gray Whale sighting (WB Pacific St @ Jervis St, Vancouver, BC V6E 1V6, Canada)",
     "species": "Gray Whale",
@@ -158,6 +177,20 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/647722024/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Frank Lin, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-26-mexico-humpback-01",
+    "name": "Humpback sighting (Mexico)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by ian__ma.",
+    "date": "2026-04-26",
+    "latitude": 24.2852574117,
+    "longitude": -110.3438003361,
+    "area": "Mexico",
+    "source": "https://www.inaturalist.org/observations/355041378",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-04-26-vancouver-bc-canada-gray-02",
@@ -177,51 +210,6 @@
     "photoAttribution": "(c) wikinose, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-26-vancouver-bc-v6j-can-gray-03",
-    "name": "Gray Whale sighting (Vancouver, BC V6J, Canada)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by kevin97828.",
-    "date": "2026-04-26",
-    "latitude": 49.2781016914,
-    "longitude": -123.1696766955,
-    "area": "Vancouver, BC V6J, Canada",
-    "source": "https://www.inaturalist.org/observations/354977132",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-04-26-mexico-humpback-01",
-    "name": "Humpback sighting (Mexico)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by ian__ma.",
-    "date": "2026-04-26",
-    "latitude": 24.2852574117,
-    "longitude": -110.3438003361,
-    "area": "Mexico",
-    "source": "https://www.inaturalist.org/observations/355041378",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-04-26-vancouver-bc-ca-gray-04",
-    "name": "Gray Whale sighting (Vancouver, BC, CA)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by monikafischer.",
-    "date": "2026-04-26",
-    "latitude": 49.2990576632,
-    "longitude": -123.1500116195,
-    "area": "Vancouver, BC, CA",
-    "source": "https://www.inaturalist.org/observations/355331231",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648065990/medium.jpg",
-    "photoLicense": "cc0",
-    "photoAttribution": "no rights reserved"
-  },
-  {
     "id": "2026-04-26-ak-us-humpback-02",
     "name": "Humpback sighting (AK, US)",
     "species": "Humpback",
@@ -239,6 +227,20 @@
     "photoAttribution": "(c) crust_toucher, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-04-26-vancouver-bc-v6j-can-gray-03",
+    "name": "Gray Whale sighting (Vancouver, BC V6J, Canada)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by kevin97828.",
+    "date": "2026-04-26",
+    "latitude": 49.2781016914,
+    "longitude": -123.1696766955,
+    "area": "Vancouver, BC V6J, Canada",
+    "source": "https://www.inaturalist.org/observations/354977132",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
     "id": "2026-04-26-ak-us-humpback-03",
     "name": "Humpback sighting (AK, US)",
     "species": "Humpback",
@@ -254,6 +256,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/647609485/medium.jpg",
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
+  },
+  {
+    "id": "2026-04-26-vancouver-bc-ca-gray-04",
+    "name": "Gray Whale sighting (Vancouver, BC, CA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by monikafischer.",
+    "date": "2026-04-26",
+    "latitude": 49.2990576632,
+    "longitude": -123.1500116195,
+    "area": "Vancouver, BC, CA",
+    "source": "https://www.inaturalist.org/observations/355331231",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648065990/medium.jpg",
+    "photoLicense": "cc0",
+    "photoAttribution": "no rights reserved"
   },
   {
     "id": "2026-04-26-capital-regional-dis-humpback-04",
@@ -319,23 +338,6 @@
     ]
   },
   {
-    "id": "2026-04-25-b-rd-trinidad-ca-us-gray-01",
-    "name": "Gray Whale sighting (B Rd, Trinidad, CA, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by connorpoylio.",
-    "date": "2026-04-25",
-    "latitude": 41.1831471667,
-    "longitude": -124.1325083333,
-    "area": "B Rd, Trinidad, CA, US",
-    "source": "https://www.inaturalist.org/observations/354008662",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/645862075/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Connor Poylio, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-25-wellington-region-ne-orca-02",
     "name": "Orca sighting (Wellington Region, New Zealand)",
     "species": "Orca",
@@ -351,20 +353,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/644758744/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) thefroglings, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-25-santa-cruz-ca-us-gray-02",
-    "name": "Gray Whale sighting (Santa Cruz, CA, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by aquagills.",
-    "date": "2026-04-25",
-    "latitude": 36.934279999999994,
-    "longitude": -122.0873638333,
-    "area": "Santa Cruz, CA, US",
-    "source": "https://www.inaturalist.org/observations/354116636",
-    "behaviors": [
-      "reported"
-    ]
   },
   {
     "id": "2026-04-25-wellington-wellingto-orca-03",
@@ -384,18 +372,21 @@
     "photoAttribution": "(c) anniey, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-25-old-cove-landing-tra-gray-03",
-    "name": "Gray Whale sighting (Old Cove Landing Trail, Santa Cruz, CA, US)",
+    "id": "2026-04-25-b-rd-trinidad-ca-us-gray-01",
+    "name": "Gray Whale sighting (B Rd, Trinidad, CA, US)",
     "species": "Gray Whale",
-    "info": "iNaturalist observation by aquagills.",
+    "info": "iNaturalist observation by connorpoylio.",
     "date": "2026-04-25",
-    "latitude": 36.933728333299996,
-    "longitude": -122.0869833333,
-    "area": "Old Cove Landing Trail, Santa Cruz, CA, US",
-    "source": "https://www.inaturalist.org/observations/354118048",
+    "latitude": 41.1831471667,
+    "longitude": -124.1325083333,
+    "area": "B Rd, Trinidad, CA, US",
+    "source": "https://www.inaturalist.org/observations/354008662",
     "behaviors": [
       "reported"
-    ]
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/645862075/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Connor Poylio, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-25-petersburg-ak-us-orca-04",
@@ -415,35 +406,32 @@
     "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
   },
   {
-    "id": "2026-04-25-old-cove-landing-tra-gray-04",
-    "name": "Gray Whale sighting (Old Cove Landing Trail, Santa Cruz, CA, US)",
+    "id": "2026-04-25-santa-cruz-ca-us-gray-02",
+    "name": "Gray Whale sighting (Santa Cruz, CA, US)",
     "species": "Gray Whale",
-    "info": "iNaturalist observation by conrad2733.",
+    "info": "iNaturalist observation by aquagills.",
     "date": "2026-04-25",
-    "latitude": 36.933704999999996,
-    "longitude": -122.086975,
-    "area": "Old Cove Landing Trail, Santa Cruz, CA, US",
-    "source": "https://www.inaturalist.org/observations/354614800",
+    "latitude": 36.934279999999994,
+    "longitude": -122.0873638333,
+    "area": "Santa Cruz, CA, US",
+    "source": "https://www.inaturalist.org/observations/354116636",
     "behaviors": [
       "reported"
     ]
   },
   {
-    "id": "2026-04-25-humboldt-county-ca-u-gray-05",
-    "name": "Gray Whale sighting (Humboldt County, CA, USA)",
+    "id": "2026-04-25-old-cove-landing-tra-gray-03",
+    "name": "Gray Whale sighting (Old Cove Landing Trail, Santa Cruz, CA, US)",
     "species": "Gray Whale",
-    "info": "iNaturalist observation by melsmom.",
+    "info": "iNaturalist observation by aquagills.",
     "date": "2026-04-25",
-    "latitude": 41.1847638889,
-    "longitude": -124.1332694444,
-    "area": "Humboldt County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/353977780",
+    "latitude": 36.933728333299996,
+    "longitude": -122.0869833333,
+    "area": "Old Cove Landing Trail, Santa Cruz, CA, US",
+    "source": "https://www.inaturalist.org/observations/354118048",
     "behaviors": [
       "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/645804275/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) melsmom, some rights reserved (CC BY-NC)"
+    ]
   },
   {
     "id": "2026-04-25-monterey-county-ca-u-humpback-01",
@@ -463,21 +451,18 @@
     "photoAttribution": "(c) patpatasaur, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-25-dunes-city-or-97439--gray-06",
-    "name": "Gray Whale sighting (Dunes City, OR 97439, USA)",
+    "id": "2026-04-25-old-cove-landing-tra-gray-04",
+    "name": "Gray Whale sighting (Old Cove Landing Trail, Santa Cruz, CA, US)",
     "species": "Gray Whale",
-    "info": "iNaturalist observation by xmpen.",
+    "info": "iNaturalist observation by conrad2733.",
     "date": "2026-04-25",
-    "latitude": 44.1008832,
-    "longitude": -124.1270427997,
-    "area": "Dunes City, OR 97439, USA",
-    "source": "https://www.inaturalist.org/observations/353956342",
+    "latitude": 36.933704999999996,
+    "longitude": -122.086975,
+    "area": "Old Cove Landing Trail, Santa Cruz, CA, US",
+    "source": "https://www.inaturalist.org/observations/354614800",
     "behaviors": [
       "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/645767348/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) xmpen, some rights reserved (CC BY-NC)"
+    ]
   },
   {
     "id": "2026-04-25-bodega-bay-ca-usa-humpback-02",
@@ -497,21 +482,21 @@
     "photoAttribution": "(c) Jennifer Miller, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-25-washington-us-gray-07",
-    "name": "Gray Whale sighting (Washington, US)",
+    "id": "2026-04-25-dunes-city-or-97439--gray-05",
+    "name": "Gray Whale sighting (Dunes City, OR 97439, USA)",
     "species": "Gray Whale",
-    "info": "iNaturalist observation by muinungo.",
+    "info": "iNaturalist observation by xmpen.",
     "date": "2026-04-25",
-    "latitude": 47.4499518632,
-    "longitude": -122.4018628146,
-    "area": "Washington, US",
-    "source": "https://www.inaturalist.org/observations/353848679",
+    "latitude": 44.1008832,
+    "longitude": -124.1270427997,
+    "area": "Dunes City, OR 97439, USA",
+    "source": "https://www.inaturalist.org/observations/353956342",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/645570301/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/645767348/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Jen, some rights reserved (CC BY-NC)"
+    "photoAttribution": "(c) xmpen, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-25-united-states-humpback-03",
@@ -532,21 +517,21 @@
     "photoAttribution": "(c) taniargb, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-25-halibut-point-rd-sit-gray-08",
-    "name": "Gray Whale sighting (Halibut Point Rd, Sitka, AK, US)",
+    "id": "2026-04-25-washington-us-gray-06",
+    "name": "Gray Whale sighting (Washington, US)",
     "species": "Gray Whale",
-    "info": "iNaturalist observation by ansellewis.",
+    "info": "iNaturalist observation by muinungo.",
     "date": "2026-04-25",
-    "latitude": 57.068475,
-    "longitude": -135.36792,
-    "area": "Halibut Point Rd, Sitka, AK, US",
-    "source": "https://www.inaturalist.org/observations/354959330",
+    "latitude": 47.4499518632,
+    "longitude": -122.4018628146,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/353848679",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/647479531/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/645570301/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Ansel Lewis, some rights reserved (CC BY-NC)"
+    "photoAttribution": "(c) Jen, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-25-salish-sea-southern--humpback-04",
@@ -561,6 +546,23 @@
     "behaviors": [
       "reported"
     ]
+  },
+  {
+    "id": "2026-04-25-halibut-point-rd-sit-gray-07",
+    "name": "Gray Whale sighting (Halibut Point Rd, Sitka, AK, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by ansellewis.",
+    "date": "2026-04-25",
+    "latitude": 57.068475,
+    "longitude": -135.36792,
+    "area": "Halibut Point Rd, Sitka, AK, US",
+    "source": "https://www.inaturalist.org/observations/354959330",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/647479531/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ansel Lewis, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-25-southern-gulf-island-humpback-05",
@@ -1092,37 +1094,6 @@
     ]
   },
   {
-    "id": "2026-04-15-north-pacific-ocean--gray-02",
-    "name": "Gray Whale sighting (North Pacific Ocean, OR, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by katie363.",
-    "date": "2026-04-15",
-    "latitude": 45.9949276046,
-    "longitude": -123.9343307977,
-    "area": "North Pacific Ocean, OR, US",
-    "source": "https://www.inaturalist.org/observations/350969481",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-04-15-north-pacific-ocean--gray-03",
-    "name": "Gray Whale sighting (North Pacific Ocean, OR, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by goldienewt.",
-    "date": "2026-04-15",
-    "latitude": 46.008655770800004,
-    "longitude": -123.9363116384,
-    "area": "North Pacific Ocean, OR, US",
-    "source": "https://www.inaturalist.org/observations/350129484",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/638792340/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) goldienewt, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-12-pacific-northwest-na-gray-01",
     "name": "Gray Whale sighting (Pacific Northwest National Scenic Trail, WA, US)",
     "species": "Gray Whale",
@@ -1350,23 +1321,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/639431983/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) willawilla, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-04-naselle-wa-98638-usa-gray-02",
-    "name": "Gray Whale sighting (Naselle, WA 98638, USA)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by kellybirds.",
-    "date": "2026-04-04",
-    "latitude": 46.2292305556,
-    "longitude": -123.8603194444,
-    "area": "Naselle, WA 98638, USA",
-    "source": "https://www.inaturalist.org/observations/347344228",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/633300952/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kelly Villanueva, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-03-azores-portugal-gray-01",
@@ -1745,23 +1699,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/626576976/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) carolinejjones, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-18-wellfleet-ma-02667-u-humpback-03",
-    "name": "Humpback sighting (Wellfleet, MA 02667, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by margaret90751.",
-    "date": "2026-03-18",
-    "latitude": 41.8960944444,
-    "longitude": -70.0714944444,
-    "area": "Wellfleet, MA 02667, USA",
-    "source": "https://www.inaturalist.org/observations/346639271",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631901182/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Margaret Lowell, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-18-iceland-orca-01",
