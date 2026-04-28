@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-04-27-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-04-27.",
+    "date": "2026-04-27",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-04-27-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -145,21 +160,86 @@
     "photoAttribution": "(c) Ruthann, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-27-dominica-caribbean-sperm-01",
-    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by martinholladay.",
+    "id": "2026-04-27-kupreanof-ak-99833-u-humpback-04",
+    "name": "Humpback sighting (Kupreanof, AK 99833, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by dan98.",
     "date": "2026-04-27",
-    "latitude": 15.3696657104,
-    "longitude": -61.431318789,
-    "area": "Dominica, Caribbean (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/355723475",
+    "latitude": 56.8338,
+    "longitude": -132.8142166667,
+    "area": "Kupreanof, AK 99833, USA",
+    "source": "https://www.inaturalist.org/observations/355793662",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-04-27-petersburg-county-us-humpback-05",
+    "name": "Humpback sighting (Petersburg County, US-AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by rmcminds.",
+    "date": "2026-04-27",
+    "latitude": 56.8341966667,
+    "longitude": -132.814195,
+    "area": "Petersburg County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/355823488",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648710444/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)"
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648892035/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
+  },
+  {
+    "id": "2026-04-27-petersburg-county-us-humpback-06",
+    "name": "Humpback sighting (Petersburg County, US-AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by rmcminds.",
+    "date": "2026-04-27",
+    "latitude": 56.8344083333,
+    "longitude": -132.8142866667,
+    "area": "Petersburg County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/355823717",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648892418/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
+  },
+  {
+    "id": "2026-04-27-petersburg-county-us-humpback-07",
+    "name": "Humpback sighting (Petersburg County, US-AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by rmcminds.",
+    "date": "2026-04-27",
+    "latitude": 56.852175,
+    "longitude": -132.917845,
+    "area": "Petersburg County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/355822548",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648890444/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
+  },
+  {
+    "id": "2026-04-27-petersburg-county-us-humpback-08",
+    "name": "Humpback sighting (Petersburg County, US-AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by rmcminds.",
+    "date": "2026-04-27",
+    "latitude": 56.8512283333,
+    "longitude": -132.9196616667,
+    "area": "Petersburg County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/355822747",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648890807/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
   },
   {
     "id": "2026-04-26-wb-pacific-st-jervis-gray-01",
@@ -196,20 +276,6 @@
     "photoAttribution": "(c) wikinose, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-26-mexico-humpback-01",
-    "name": "Humpback sighting (Mexico)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by ian__ma.",
-    "date": "2026-04-26",
-    "latitude": 24.2852574117,
-    "longitude": -110.3438003361,
-    "area": "Mexico",
-    "source": "https://www.inaturalist.org/observations/355041378",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-04-26-vancouver-bc-v6j-can-gray-03",
     "name": "Gray Whale sighting (Vancouver, BC V6J, Canada)",
     "species": "Gray Whale",
@@ -222,23 +288,6 @@
     "behaviors": [
       "reported"
     ]
-  },
-  {
-    "id": "2026-04-26-ak-us-humpback-02",
-    "name": "Humpback sighting (AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by crust_toucher.",
-    "date": "2026-04-26",
-    "latitude": 55.4079739873,
-    "longitude": -130.9429856239,
-    "area": "AK, US",
-    "source": "https://www.inaturalist.org/observations/355009400",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/647566774/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) crust_toucher, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-26-north-sea-scotland-g-orca-01",
@@ -270,6 +319,37 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648065990/medium.jpg",
     "photoLicense": "cc0",
     "photoAttribution": "no rights reserved"
+  },
+  {
+    "id": "2026-04-26-mexico-humpback-01",
+    "name": "Humpback sighting (Mexico)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by ian__ma.",
+    "date": "2026-04-26",
+    "latitude": 24.2852574117,
+    "longitude": -110.3438003361,
+    "area": "Mexico",
+    "source": "https://www.inaturalist.org/observations/355041378",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-04-26-ak-us-humpback-02",
+    "name": "Humpback sighting (AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by crust_toucher.",
+    "date": "2026-04-26",
+    "latitude": 55.4079739873,
+    "longitude": -130.9429856239,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/355009400",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/647566774/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) crust_toucher, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-26-ak-us-humpback-03",
@@ -306,24 +386,7 @@
     "photoAttribution": "(c) Kevin Toomer, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-26-capital-regional-dis-humpback-05",
-    "name": "Humpback sighting (Capital Regional District, BC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by kevintoo.",
-    "date": "2026-04-26",
-    "latitude": 48.8915745318,
-    "longitude": -123.3049678646,
-    "area": "Capital Regional District, BC, Canada",
-    "source": "https://www.inaturalist.org/observations/354864978",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/647304132/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kevin Toomer, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-26-eyjafjordur-humpback-06",
+    "id": "2026-04-26-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-04-26.",
@@ -452,55 +515,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/646596281/medium.jpg",
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
-  },
-  {
-    "id": "2026-04-25-united-states-humpback-01",
-    "name": "Humpback sighting (United States)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by taniargb.",
-    "date": "2026-04-25",
-    "latitude": 36.7264507479,
-    "longitude": -122.128726691,
-    "area": "United States",
-    "source": "https://www.inaturalist.org/observations/355020905",
-    "behaviors": [
-      "reported",
-      "traveling"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/647588561/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) taniargb, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-25-salish-sea-southern--humpback-02",
-    "name": "Humpback sighting (Salish Sea, Southern Gulf Islands, BC, CA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by girlysound.",
-    "date": "2026-04-25",
-    "latitude": 48.8847533384,
-    "longitude": -123.2998261663,
-    "area": "Salish Sea, Southern Gulf Islands, BC, CA",
-    "source": "https://www.inaturalist.org/observations/353838188",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-04-25-southern-gulf-island-humpback-03",
-    "name": "Humpback sighting (Southern Gulf Islands, BC, CA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by journal_of_josh.",
-    "date": "2026-04-25",
-    "latitude": 48.838104711999996,
-    "longitude": -123.3347081368,
-    "area": "Southern Gulf Islands, BC, CA",
-    "source": "https://www.inaturalist.org/observations/354191472",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/646186282/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) journal_of_josh, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-24-southern-gulf-island-orca-01",
@@ -784,23 +798,6 @@
     "photoAttribution": "(c) Curtis Mahon, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-19-juneau-ak-usa-humpback-02",
-    "name": "Humpback sighting (Juneau, AK, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by devineconservation.",
-    "date": "2026-04-19",
-    "latitude": 58.367324876,
-    "longitude": -134.8418419639,
-    "area": "Juneau, AK, USA",
-    "source": "https://www.inaturalist.org/observations/351541830",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/641527756/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Alec Boyd-Devine, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-19-salish-sea-orca-03",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
@@ -880,23 +877,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/640616867/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) crustyflounder, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-16-seward-ak-99664-usa-humpback-01",
-    "name": "Humpback sighting (Seward, AK 99664, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by patrickbaird.",
-    "date": "2026-04-16",
-    "latitude": 60.0876621792,
-    "longitude": -149.4362064824,
-    "area": "Seward, AK 99664, USA",
-    "source": "https://www.inaturalist.org/observations/350388147",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/639301056/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Patrick, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-15-or-us-gray-01",
@@ -1438,23 +1418,6 @@
     ]
   },
   {
-    "id": "2026-03-20-dominica-caribbean-sperm-01",
-    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by merchkimberly.",
-    "date": "2026-03-20",
-    "latitude": 15.2718000608,
-    "longitude": -61.5099292635,
-    "area": "Dominica, Caribbean (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/344325474",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627364828/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) merchkimberly, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-18-iceland-humpback-01",
     "name": "Humpback sighting (Iceland)",
     "species": "Humpback",
@@ -1814,22 +1777,5 @@
     "behaviors": [
       "reported"
     ]
-  },
-  {
-    "id": "2026-02-26-dominica-caribbean-sperm-01",
-    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by conservationwithkirsty.",
-    "date": "2026-02-26",
-    "latitude": 15.4226550331,
-    "longitude": -61.5755779068,
-    "area": "Dominica, Caribbean (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/346818819",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/632256804/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kirsty Hayden, some rights reserved (CC BY-NC)"
   }
 ]
