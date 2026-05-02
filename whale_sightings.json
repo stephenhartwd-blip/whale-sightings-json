@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-05-02-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-05-02.",
+    "date": "2026-05-02",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-05-02-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -798,24 +813,7 @@
     ]
   },
   {
-    "id": "2026-04-26-loreto-b-c-s-mx-gray-01",
-    "name": "Gray Whale sighting (Loreto, B.C.S., MX)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by castroklk.",
-    "date": "2026-04-26",
-    "latitude": 26.0321876382,
-    "longitude": -111.3338126692,
-    "area": "Loreto, B.C.S., MX",
-    "source": "https://www.inaturalist.org/observations/355847626",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648933680/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) BRAYAN EDUARDO CASTRO SALGADO, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-26-oswald-west-state-pa-gray-02",
+    "id": "2026-04-26-oswald-west-state-pa-gray-01",
     "name": "Gray Whale sighting (Oswald West State Park, OR, USA)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by tellittothevoid.",
@@ -892,23 +890,6 @@
     "photoAttribution": "(c) anniey, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-25-petersburg-ak-us-orca-04",
-    "name": "Orca sighting (Petersburg, AK, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by rmcminds.",
-    "date": "2026-04-25",
-    "latitude": 56.6714866667,
-    "longitude": -132.93228,
-    "area": "Petersburg, AK, US",
-    "source": "https://www.inaturalist.org/observations/354448134",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/646596281/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
-  },
-  {
     "id": "2026-04-25-dunes-city-or-97439--gray-01",
     "name": "Gray Whale sighting (Dunes City, OR 97439, USA)",
     "species": "Gray Whale",
@@ -926,21 +907,21 @@
     "photoAttribution": "(c) xmpen, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-25-monterey-county-ca-u-humpback-01",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by patpatasaur.",
+    "id": "2026-04-25-petersburg-ak-us-orca-04",
+    "name": "Orca sighting (Petersburg, AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by rmcminds.",
     "date": "2026-04-25",
-    "latitude": 36.7696738563,
-    "longitude": -121.9917290957,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/354108476",
+    "latitude": 56.6714866667,
+    "longitude": -132.93228,
+    "area": "Petersburg, AK, US",
+    "source": "https://www.inaturalist.org/observations/354448134",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/646042537/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) patpatasaur, some rights reserved (CC BY-NC)"
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/646596281/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
   },
   {
     "id": "2026-04-25-halibut-point-rd-sit-gray-02",
@@ -958,6 +939,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/647479531/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Ansel Lewis, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-25-monterey-county-ca-u-humpback-01",
+    "name": "Humpback sighting (Monterey County, CA, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by patpatasaur.",
+    "date": "2026-04-25",
+    "latitude": 36.7696738563,
+    "longitude": -121.9917290957,
+    "area": "Monterey County, CA, USA",
+    "source": "https://www.inaturalist.org/observations/354108476",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/646042537/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) patpatasaur, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-25-bodega-bay-ca-usa-humpback-02",
@@ -1692,71 +1690,6 @@
     ]
   },
   {
-    "id": "2026-03-25-comond-baja-californ-gray-01",
-    "name": "Gray Whale sighting (Comondú, Baja California Sur, Mexico)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by ricardo-anapri.",
-    "date": "2026-03-25",
-    "latitude": 24.6601975,
-    "longitude": -112.1226538883,
-    "area": "Comondú, Baja California Sur, Mexico",
-    "source": "https://www.inaturalist.org/observations/348817727",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636142369/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-25-comond-baja-californ-gray-02",
-    "name": "Gray Whale sighting (Comondú, Baja California Sur, Mexico)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by ricardo-anapri.",
-    "date": "2026-03-25",
-    "latitude": 24.660064445,
-    "longitude": -112.1214616667,
-    "area": "Comondú, Baja California Sur, Mexico",
-    "source": "https://www.inaturalist.org/observations/348817907",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636143334/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-25-comond-baja-californ-gray-03",
-    "name": "Gray Whale sighting (Comondú, Baja California Sur, Mexico)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by ricardo-anapri.",
-    "date": "2026-03-25",
-    "latitude": 24.6609772217,
-    "longitude": -112.120589445,
-    "area": "Comondú, Baja California Sur, Mexico",
-    "source": "https://www.inaturalist.org/observations/348817903",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636143274/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-24-muleg-mx-bs-mx-gray-01",
-    "name": "Gray Whale sighting (Mulegé, MX-BS, MX)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by erick_manuel.",
-    "date": "2026-03-24",
-    "latitude": 26.7376556513,
-    "longitude": -113.2615526941,
-    "area": "Mulegé, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/345138811",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-03-23-california-united-st-gray-01",
     "name": "Gray Whale sighting (California, United States)",
     "species": "Gray Whale",
@@ -1828,23 +1761,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/626576976/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) carolinejjones, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-18-wellfleet-ma-02667-u-humpback-03",
-    "name": "Humpback sighting (Wellfleet, MA 02667, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by margaret90751.",
-    "date": "2026-03-18",
-    "latitude": 41.8960944444,
-    "longitude": -70.0714944444,
-    "area": "Wellfleet, MA 02667, USA",
-    "source": "https://www.inaturalist.org/observations/346639271",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631901182/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Margaret Lowell, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-18-iceland-orca-01",
