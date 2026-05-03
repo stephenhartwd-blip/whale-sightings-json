@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-05-03-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-05-03.",
+    "date": "2026-05-03",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-05-03-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -807,23 +822,6 @@
     ]
   },
   {
-    "id": "2026-04-27-san-luis-obispo-coun-white-01",
-    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by noiselessowl.",
-    "date": "2026-04-27",
-    "latitude": 35.3698286693,
-    "longitude": -120.8881739938,
-    "area": "San Luis Obispo County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/355953155",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/649125023/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-27-dominica-caribbean-sperm-01",
     "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
     "species": "Sperm whale",
@@ -839,6 +837,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648710444/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-27-san-luis-obispo-coun-white-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-04-27",
+    "latitude": 35.3698286693,
+    "longitude": -120.8881739938,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/355953155",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/649125023/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-27-san-luis-obispo-coun-white-02",
@@ -971,7 +986,24 @@
     "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
   },
   {
-    "id": "2026-04-26-oswald-west-state-pa-gray-01",
+    "id": "2026-04-26-loreto-b-c-s-mx-gray-01",
+    "name": "Gray Whale sighting (Loreto, B.C.S., MX)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by castroklk.",
+    "date": "2026-04-26",
+    "latitude": 26.0321876382,
+    "longitude": -111.3338126692,
+    "area": "Loreto, B.C.S., MX",
+    "source": "https://www.inaturalist.org/observations/355847626",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648933680/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) BRAYAN EDUARDO CASTRO SALGADO, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-26-oswald-west-state-pa-gray-02",
     "name": "Gray Whale sighting (Oswald West State Park, OR, USA)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by tellittothevoid.",
@@ -1014,23 +1046,6 @@
     ]
   },
   {
-    "id": "2026-04-25-dunes-city-or-97439--gray-01",
-    "name": "Gray Whale sighting (Dunes City, OR 97439, USA)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by xmpen.",
-    "date": "2026-04-25",
-    "latitude": 44.1008832,
-    "longitude": -124.1270427997,
-    "area": "Dunes City, OR 97439, USA",
-    "source": "https://www.inaturalist.org/observations/353956342",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/645767348/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) xmpen, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-25-wellington-region-ne-orca-02",
     "name": "Orca sighting (Wellington Region, New Zealand)",
     "species": "Orca",
@@ -1048,38 +1063,21 @@
     "photoAttribution": "(c) thefroglings, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-25-halibut-point-rd-sit-gray-02",
-    "name": "Gray Whale sighting (Halibut Point Rd, Sitka, AK, US)",
+    "id": "2026-04-25-dunes-city-or-97439--gray-01",
+    "name": "Gray Whale sighting (Dunes City, OR 97439, USA)",
     "species": "Gray Whale",
-    "info": "iNaturalist observation by ansellewis.",
+    "info": "iNaturalist observation by xmpen.",
     "date": "2026-04-25",
-    "latitude": 57.068475,
-    "longitude": -135.36792,
-    "area": "Halibut Point Rd, Sitka, AK, US",
-    "source": "https://www.inaturalist.org/observations/354959330",
+    "latitude": 44.1008832,
+    "longitude": -124.1270427997,
+    "area": "Dunes City, OR 97439, USA",
+    "source": "https://www.inaturalist.org/observations/353956342",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/647479531/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/645767348/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Ansel Lewis, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-25-wellington-wellingto-orca-03",
-    "name": "Orca sighting (Wellington, Wellington, NZ)",
-    "species": "Orca",
-    "info": "iNaturalist observation by anniey.",
-    "date": "2026-04-25",
-    "latitude": -41.3652283333,
-    "longitude": 174.7766116667,
-    "area": "Wellington, Wellington, NZ",
-    "source": "https://www.inaturalist.org/observations/353293217",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/644663313/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) anniey, some rights reserved (CC BY-NC)"
+    "photoAttribution": "(c) xmpen, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-25-monterey-county-ca-u-humpback-01",
@@ -1116,6 +1114,23 @@
     "photoAttribution": "(c) Jennifer Miller, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-04-25-wellington-wellingto-orca-03",
+    "name": "Orca sighting (Wellington, Wellington, NZ)",
+    "species": "Orca",
+    "info": "iNaturalist observation by anniey.",
+    "date": "2026-04-25",
+    "latitude": -41.3652283333,
+    "longitude": 174.7766116667,
+    "area": "Wellington, Wellington, NZ",
+    "source": "https://www.inaturalist.org/observations/353293217",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/644663313/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) anniey, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-04-25-petersburg-ak-us-orca-04",
     "name": "Orca sighting (Petersburg, AK, US)",
     "species": "Orca",
@@ -1131,6 +1146,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/646596281/medium.jpg",
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
+  },
+  {
+    "id": "2026-04-25-halibut-point-rd-sit-gray-02",
+    "name": "Gray Whale sighting (Halibut Point Rd, Sitka, AK, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by ansellewis.",
+    "date": "2026-04-25",
+    "latitude": 57.068475,
+    "longitude": -135.36792,
+    "area": "Halibut Point Rd, Sitka, AK, US",
+    "source": "https://www.inaturalist.org/observations/354959330",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/647479531/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ansel Lewis, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-24-maui-county-us-hi-us-humpback-01",
@@ -1760,6 +1792,71 @@
     "longitude": -68.218575,
     "area": "Tierra del Fuego, Argentina",
     "source": "https://obis.org/occurrence/653431",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-03-25-comond-baja-californ-gray-01",
+    "name": "Gray Whale sighting (Comondú, Baja California Sur, Mexico)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by ricardo-anapri.",
+    "date": "2026-03-25",
+    "latitude": 24.6601975,
+    "longitude": -112.1226538883,
+    "area": "Comondú, Baja California Sur, Mexico",
+    "source": "https://www.inaturalist.org/observations/348817727",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636142369/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-25-comond-baja-californ-gray-02",
+    "name": "Gray Whale sighting (Comondú, Baja California Sur, Mexico)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by ricardo-anapri.",
+    "date": "2026-03-25",
+    "latitude": 24.660064445,
+    "longitude": -112.1214616667,
+    "area": "Comondú, Baja California Sur, Mexico",
+    "source": "https://www.inaturalist.org/observations/348817907",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636143334/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-25-comond-baja-californ-gray-03",
+    "name": "Gray Whale sighting (Comondú, Baja California Sur, Mexico)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by ricardo-anapri.",
+    "date": "2026-03-25",
+    "latitude": 24.6609772217,
+    "longitude": -112.120589445,
+    "area": "Comondú, Baja California Sur, Mexico",
+    "source": "https://www.inaturalist.org/observations/348817903",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636143274/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-03-24-muleg-mx-bs-mx-gray-01",
+    "name": "Gray Whale sighting (Mulegé, MX-BS, MX)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by erick_manuel.",
+    "date": "2026-03-24",
+    "latitude": 26.7376556513,
+    "longitude": -113.2615526941,
+    "area": "Mulegé, MX-BS, MX",
+    "source": "https://www.inaturalist.org/observations/345138811",
     "behaviors": [
       "reported"
     ]
