@@ -10,7 +10,8 @@
     "area": "Cape Town (offshore), South Africa",
     "source": "https://www.sharkspotters.org.za/",
     "behaviors": [
-      "reported"
+      "reported",
+      "feeding"
     ]
   },
   {
@@ -190,18 +191,21 @@
     ]
   },
   {
-    "id": "2026-05-02-greenland-humpback-02",
-    "name": "Humpback sighting (Greenland)",
+    "id": "2026-05-02-essex-county-ma-usa-humpback-02",
+    "name": "Humpback sighting (Essex County, MA, USA)",
     "species": "Humpback",
-    "info": "iNaturalist observation by johannes_bjarki.",
+    "info": "iNaturalist observation by urobleps.",
     "date": "2026-05-02",
-    "latitude": 64.3929,
-    "longitude": -51.2436,
-    "area": "Greenland",
-    "source": "https://www.inaturalist.org/observations/357729175",
+    "latitude": 42.5898063562,
+    "longitude": -70.5592561605,
+    "area": "Essex County, MA, USA",
+    "source": "https://www.inaturalist.org/observations/357907597",
     "behaviors": [
       "reported"
-    ]
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/652842463/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) urobleps, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-05-02-sunshine-coast-bc-ca-orca-01",
@@ -221,15 +225,15 @@
     "photoAttribution": "(c) Ingvild Riska, some rights reserved (CC BY)"
   },
   {
-    "id": "2026-05-02-gulf-of-maine-humpback-03",
-    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
+    "id": "2026-05-02-greenland-humpback-03",
+    "name": "Humpback sighting (Greenland)",
     "species": "Humpback",
-    "info": "iNaturalist observation by benake.",
+    "info": "iNaturalist observation by johannes_bjarki.",
     "date": "2026-05-02",
-    "latitude": 42.5054531541,
-    "longitude": -70.526147608,
-    "area": "Gulf of Maine (iNaturalist — Catalog)",
-    "source": "https://www.inaturalist.org/observations/357721092",
+    "latitude": 64.3929,
+    "longitude": -51.2436,
+    "area": "Greenland",
+    "source": "https://www.inaturalist.org/observations/357729175",
     "behaviors": [
       "reported"
     ]
@@ -251,6 +255,20 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/652498254/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) wikinose, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-05-02-gulf-of-maine-humpback-04",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by benake.",
+    "date": "2026-05-02",
+    "latitude": 42.5054531541,
+    "longitude": -70.526147608,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/357721092",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-05-01-united-states-blue-01",
@@ -382,23 +400,6 @@
     ]
   },
   {
-    "id": "2026-04-30-santa-cruz-de-teneri-humpback-01",
-    "name": "Humpback sighting (Santa Cruz de Tenerife, ES-CN, ES)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by benjobson.",
-    "date": "2026-04-30",
-    "latitude": 27.9938689322,
-    "longitude": -16.69801273,
-    "area": "Santa Cruz de Tenerife, ES-CN, ES",
-    "source": "https://www.inaturalist.org/observations/357181807",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/651430223/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Ben Jobson, some rights reserved (CC BY)"
-  },
-  {
     "id": "2026-04-30-mackerricher-state-p-gray-01",
     "name": "Gray Whale sighting (MacKerricher State Park, CA, US)",
     "species": "Gray Whale",
@@ -414,6 +415,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/651036117/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Asa Spade, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-30-santa-cruz-de-teneri-humpback-01",
+    "name": "Humpback sighting (Santa Cruz de Tenerife, ES-CN, ES)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by benjobson.",
+    "date": "2026-04-30",
+    "latitude": 27.9938689322,
+    "longitude": -16.69801273,
+    "area": "Santa Cruz de Tenerife, ES-CN, ES",
+    "source": "https://www.inaturalist.org/observations/357181807",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/651430223/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Ben Jobson, some rights reserved (CC BY)"
   },
   {
     "id": "2026-04-30-vancouver-bc-canada-gray-02",
@@ -504,23 +522,6 @@
     "photoAttribution": "(c) AMBAR NOEMI PALACIOS PARTIDA, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-29-seward-ak-us-humpback-02",
-    "name": "Humpback sighting (Seward, AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by jmcuevas623.",
-    "date": "2026-04-29",
-    "latitude": 60.0956166667,
-    "longitude": -149.43808,
-    "area": "Seward, AK, US",
-    "source": "https://www.inaturalist.org/observations/356679370",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/650467527/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Jose M. Cuevas, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-04-29-san-mateo-county-ca--gray-01",
     "name": "Gray Whale sighting (San Mateo County, CA, USA)",
     "species": "Gray Whale",
@@ -538,21 +539,21 @@
     "photoAttribution": "(c) Idontneednostinkinname, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-29-stellwagen-bank-humpback-03",
-    "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
+    "id": "2026-04-29-seward-ak-us-humpback-02",
+    "name": "Humpback sighting (Seward, AK, US)",
     "species": "Humpback",
-    "info": "iNaturalist observation by ingvildriska.",
+    "info": "iNaturalist observation by jmcuevas623.",
     "date": "2026-04-29",
-    "latitude": 42.3367783333,
-    "longitude": -125.040825,
-    "area": "Stellwagen Bank (iNaturalist — Catalog)",
-    "source": "https://www.inaturalist.org/observations/356988171",
+    "latitude": 60.0956166667,
+    "longitude": -149.43808,
+    "area": "Seward, AK, US",
+    "source": "https://www.inaturalist.org/observations/356679370",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/651054776/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Ingvild Riska, some rights reserved (CC BY)"
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/650467527/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Jose M. Cuevas, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-29-washington-us-gray-02",
@@ -572,18 +573,21 @@
     "photoAttribution": "(c) Josh Emm, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-04-29-stellwagen-bank-humpback-04",
+    "id": "2026-04-29-stellwagen-bank-humpback-03",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
-    "info": "iNaturalist observation by jaahljuu.",
+    "info": "iNaturalist observation by ingvildriska.",
     "date": "2026-04-29",
-    "latitude": 53.61831061,
-    "longitude": -133.06774498,
+    "latitude": 42.3367783333,
+    "longitude": -125.040825,
     "area": "Stellwagen Bank (iNaturalist — Catalog)",
-    "source": "https://www.inaturalist.org/observations/356728393",
+    "source": "https://www.inaturalist.org/observations/356988171",
     "behaviors": [
       "reported"
-    ]
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/651054776/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Ingvild Riska, some rights reserved (CC BY)"
   },
   {
     "id": "2026-04-29-ilwaco-wa-98624-usa-gray-03",
@@ -600,21 +604,18 @@
     ]
   },
   {
-    "id": "2026-04-29-north-pacific-ocean--humpback-05",
-    "name": "Humpback sighting (North Pacific Ocean, US)",
+    "id": "2026-04-29-stellwagen-bank-humpback-04",
+    "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
-    "info": "iNaturalist observation by tavimaes.",
+    "info": "iNaturalist observation by jaahljuu.",
     "date": "2026-04-29",
-    "latitude": 36.6441416667,
-    "longitude": -122.0258638333,
-    "area": "North Pacific Ocean, US",
-    "source": "https://www.inaturalist.org/observations/356656224",
+    "latitude": 53.61831061,
+    "longitude": -133.06774498,
+    "area": "Stellwagen Bank (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/356728393",
     "behaviors": [
       "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/650422247/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) tavimaes, some rights reserved (CC BY-NC)"
+    ]
   },
   {
     "id": "2026-04-29-washington-us-orca-01",
@@ -660,6 +661,40 @@
     "behaviors": [
       "reported"
     ]
+  },
+  {
+    "id": "2026-04-28-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by martinholladay.",
+    "date": "2026-04-28",
+    "latitude": 15.5952827252,
+    "longitude": -61.5032143475,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/356425986",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/649993317/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-28-dominica-caribbean-sperm-02",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by martinholladay.",
+    "date": "2026-04-28",
+    "latitude": 15.4881077325,
+    "longitude": -61.5941624299,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/356318634",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/649789156/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-28-mx-humpback-01",
@@ -708,6 +743,23 @@
     "behaviors": [
       "reported"
     ]
+  },
+  {
+    "id": "2026-04-27-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by martinholladay.",
+    "date": "2026-04-27",
+    "latitude": 15.3696657104,
+    "longitude": -61.431318789,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/355723475",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648710444/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-27-san-luis-obispo-coun-white-01",
@@ -1841,6 +1893,23 @@
     ]
   },
   {
+    "id": "2026-03-20-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by merchkimberly.",
+    "date": "2026-03-20",
+    "latitude": 15.2718000608,
+    "longitude": -61.5099292635,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/344325474",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627364828/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) merchkimberly, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-03-18-iceland-humpback-01",
     "name": "Humpback sighting (Iceland)",
     "species": "Humpback",
@@ -1870,23 +1939,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/626576976/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) carolinejjones, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-18-wellfleet-ma-02667-u-humpback-03",
-    "name": "Humpback sighting (Wellfleet, MA 02667, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by margaret90751.",
-    "date": "2026-03-18",
-    "latitude": 41.8960944444,
-    "longitude": -70.0714944444,
-    "area": "Wellfleet, MA 02667, USA",
-    "source": "https://www.inaturalist.org/observations/346639271",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631901182/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Margaret Lowell, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-18-iceland-orca-01",
