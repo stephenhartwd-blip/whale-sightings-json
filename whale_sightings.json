@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-05-04-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-05-04.",
+    "date": "2026-05-04",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-05-04-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -807,6 +822,23 @@
     "photoAttribution": "(c) Scott Bennett, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-04-28-ak-us-humpback-02",
+    "name": "Humpback sighting (AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by becca27927.",
+    "date": "2026-04-28",
+    "latitude": 57.4548744088,
+    "longitude": -133.7214596056,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/358157871",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653331199/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Becca Daye, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-04-28-or-us-gray-01",
     "name": "Gray Whale sighting (OR, US)",
     "species": "Gray Whale",
@@ -840,7 +872,7 @@
     ]
   },
   {
-    "id": "2026-04-28-eyjafjordur-humpback-02",
+    "id": "2026-04-28-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-04-28.",
@@ -852,23 +884,6 @@
     "behaviors": [
       "reported"
     ]
-  },
-  {
-    "id": "2026-04-27-san-luis-obispo-coun-white-01",
-    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by noiselessowl.",
-    "date": "2026-04-27",
-    "latitude": 35.3698286693,
-    "longitude": -120.8881739938,
-    "area": "San Luis Obispo County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/355953155",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/649125023/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-27-dominica-caribbean-sperm-01",
@@ -886,6 +901,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648710444/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-04-27-san-luis-obispo-coun-white-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-04-27",
+    "latitude": 35.3698286693,
+    "longitude": -120.8881739938,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/355953155",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/649125023/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-04-27-san-luis-obispo-coun-white-02",
@@ -980,23 +1012,6 @@
       "reported"
     ],
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648892035/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
-  },
-  {
-    "id": "2026-04-27-petersburg-county-us-humpback-04",
-    "name": "Humpback sighting (Petersburg County, US-AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by rmcminds.",
-    "date": "2026-04-27",
-    "latitude": 56.8344083333,
-    "longitude": -132.8142866667,
-    "area": "Petersburg County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/355823717",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648892418/medium.jpg",
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Ryan McMinds, some rights reserved (CC BY)"
   },
