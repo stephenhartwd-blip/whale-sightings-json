@@ -1,5 +1,20 @@
 [
   {
+    "id": "2026-05-05-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-05-05.",
+    "date": "2026-05-05",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-05-05-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -128,6 +143,24 @@
     ]
   },
   {
+    "id": "2026-05-05-mendocino-county-ca--humpback-04",
+    "name": "Humpback sighting (Mendocino County, CA, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by melsmom.",
+    "date": "2026-05-05",
+    "latitude": 39.2815037618,
+    "longitude": -123.8021651602,
+    "area": "Mendocino County, CA, USA",
+    "source": "https://www.inaturalist.org/observations/358778678",
+    "behaviors": [
+      "reported",
+      "breaching"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/654542001/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) melsmom, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-05-05-onuku-rd-akaroa-cant-orca-05",
     "name": "Orca sighting (Onuku Rd, Akaroa, Canterbury, NZ)",
     "species": "Orca",
@@ -145,7 +178,7 @@
     "photoAttribution": "(c) John Davey, some rights reserved (CC BY)"
   },
   {
-    "id": "2026-05-05-eyjafjordur-humpback-04",
+    "id": "2026-05-05-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-05-05.",
@@ -193,23 +226,6 @@
     "photoAttribution": "(c) Anna Compton, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-04-north-pacific-ocean--humpback-02",
-    "name": "Humpback sighting (North Pacific Ocean, Juneau, AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by katieseescritters.",
-    "date": "2026-05-04",
-    "latitude": 58.4735366819,
-    "longitude": -134.7906980794,
-    "area": "North Pacific Ocean, Juneau, AK, US",
-    "source": "https://www.inaturalist.org/observations/358527391",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/654054749/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) katieseescritters, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-05-04-burnaby-bc-canada-orca-01",
     "name": "Orca sighting (Burnaby, BC, Canada)",
     "species": "Orca",
@@ -227,21 +243,21 @@
     "photoAttribution": "(c) vince929, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-04-north-pacific-ocean--humpback-03",
-    "name": "Humpback sighting (North Pacific Ocean, AK, US)",
+    "id": "2026-05-04-north-pacific-ocean--humpback-02",
+    "name": "Humpback sighting (North Pacific Ocean, Juneau, AK, US)",
     "species": "Humpback",
-    "info": "iNaturalist observation by pingpong.",
+    "info": "iNaturalist observation by katieseescritters.",
     "date": "2026-05-04",
-    "latitude": 55.2905166667,
-    "longitude": -130.9778883333,
-    "area": "North Pacific Ocean, AK, US",
-    "source": "https://www.inaturalist.org/observations/358381928",
+    "latitude": 58.4735366819,
+    "longitude": -134.7906980794,
+    "area": "North Pacific Ocean, Juneau, AK, US",
+    "source": "https://www.inaturalist.org/observations/358527391",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653769393/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/654054749/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Melina Kust, some rights reserved (CC BY-NC)"
+    "photoAttribution": "(c) katieseescritters, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-05-04-washington-us-orca-02",
@@ -259,6 +275,23 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/654058108/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Sally, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-05-04-north-pacific-ocean--humpback-03",
+    "name": "Humpback sighting (North Pacific Ocean, AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by pingpong.",
+    "date": "2026-05-04",
+    "latitude": 55.2905166667,
+    "longitude": -130.9778883333,
+    "area": "North Pacific Ocean, AK, US",
+    "source": "https://www.inaturalist.org/observations/358381928",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653769393/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Melina Kust, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-05-04-ak-us-humpback-04",
@@ -375,23 +408,6 @@
     "photoAttribution": "(c) Steve Taylor, some rights reserved (CC BY)"
   },
   {
-    "id": "2026-05-03-waialua-hi-96791-usa-humpback-01",
-    "name": "Humpback sighting (Waialua, HI 96791, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by damienxw.",
-    "date": "2026-05-03",
-    "latitude": 21.5721564431,
-    "longitude": -158.2808215544,
-    "area": "Waialua, HI 96791, USA",
-    "source": "https://www.inaturalist.org/observations/358174573",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653365458/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Damien Wallace, some rights reserved (CC BY)"
-  },
-  {
     "id": "2026-05-03-san-juan-county-us-w-orca-04",
     "name": "Orca sighting (San Juan County, US-WA, US)",
     "species": "Orca",
@@ -409,19 +425,19 @@
     "photoAttribution": "(c) Wink, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-03-waialua-hi-96791-usa-humpback-02",
+    "id": "2026-05-03-waialua-hi-96791-usa-humpback-01",
     "name": "Humpback sighting (Waialua, HI 96791, USA)",
     "species": "Humpback",
     "info": "iNaturalist observation by damienxw.",
     "date": "2026-05-03",
-    "latitude": 21.5725633309,
-    "longitude": -158.2817804441,
+    "latitude": 21.5721564431,
+    "longitude": -158.2808215544,
     "area": "Waialua, HI 96791, USA",
-    "source": "https://www.inaturalist.org/observations/358174551",
+    "source": "https://www.inaturalist.org/observations/358174573",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653365401/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653365458/medium.jpg",
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Damien Wallace, some rights reserved (CC BY)"
   },
@@ -439,6 +455,23 @@
       "reported",
       "hunting"
     ]
+  },
+  {
+    "id": "2026-05-03-waialua-hi-96791-usa-humpback-02",
+    "name": "Humpback sighting (Waialua, HI 96791, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by damienxw.",
+    "date": "2026-05-03",
+    "latitude": 21.5725633309,
+    "longitude": -158.2817804441,
+    "area": "Waialua, HI 96791, USA",
+    "source": "https://www.inaturalist.org/observations/358174551",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653365401/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Damien Wallace, some rights reserved (CC BY)"
   },
   {
     "id": "2026-05-03-north-pacific-ocean--humpback-03",
@@ -469,24 +502,7 @@
     ]
   },
   {
-    "id": "2026-05-03-san-juan-county-wa-u-humpback-05",
-    "name": "Humpback sighting (San Juan County, WA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by lmjyln.",
-    "date": "2026-05-03",
-    "latitude": 48.3528563927,
-    "longitude": -123.0790150987,
-    "area": "San Juan County, WA, USA",
-    "source": "https://www.inaturalist.org/observations/358373656",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653733199/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Liam Hood-Hanlon, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-05-03-gulf-of-maine-humpback-06",
+    "id": "2026-05-03-gulf-of-maine-humpback-05",
     "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by zihanwei.",
@@ -503,41 +519,7 @@
     "photoAttribution": "(c) zihanwei, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-03-gloucester-ma-us-humpback-07",
-    "name": "Humpback sighting (Gloucester, MA, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by vanfossa.",
-    "date": "2026-05-03",
-    "latitude": 42.5905078221,
-    "longitude": -70.6738782669,
-    "area": "Gloucester, MA, US",
-    "source": "https://www.inaturalist.org/observations/358085050",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653182495/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Ayden Van Fossen, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-05-03-ma-us-humpback-08",
-    "name": "Humpback sighting (MA, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by vanfossa.",
-    "date": "2026-05-03",
-    "latitude": 42.5606350724,
-    "longitude": -70.6535778016,
-    "area": "MA, US",
-    "source": "https://www.inaturalist.org/observations/358050509",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653114729/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Ayden Van Fossen, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-05-03-gulf-of-maine-humpback-09",
+    "id": "2026-05-03-gulf-of-maine-humpback-06",
     "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by zihanwei.",
@@ -554,7 +536,7 @@
     "photoAttribution": "(c) zihanwei, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-03-gulf-of-maine-humpback-10",
+    "id": "2026-05-03-gulf-of-maine-humpback-07",
     "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by zihanwei.",
@@ -571,7 +553,7 @@
     "photoAttribution": "(c) zihanwei, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-03-gulf-of-maine-humpback-11",
+    "id": "2026-05-03-gulf-of-maine-humpback-08",
     "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by zihanwei.",
@@ -588,7 +570,7 @@
     "photoAttribution": "(c) zihanwei, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-03-gulf-of-maine-humpback-12",
+    "id": "2026-05-03-gulf-of-maine-humpback-09",
     "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by zihanwei.",
@@ -605,7 +587,7 @@
     "photoAttribution": "(c) zihanwei, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-03-gulf-of-maine-humpback-13",
+    "id": "2026-05-03-gulf-of-maine-humpback-10",
     "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by zihanwei.",
@@ -622,7 +604,24 @@
     "photoAttribution": "(c) zihanwei, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-03-eyjafjordur-humpback-14",
+    "id": "2026-05-03-gulf-of-maine-humpback-11",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by zihanwei.",
+    "date": "2026-05-03",
+    "latitude": 42.5540820266,
+    "longitude": -70.417385754,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/358292827",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653585768/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) zihanwei, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-05-03-eyjafjordur-humpback-12",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-05-03.",
@@ -685,6 +684,20 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/652609022/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Peter Baker, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-05-02-gulf-of-maine-humpback-01",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by benake.",
+    "date": "2026-05-02",
+    "latitude": 42.5054531541,
+    "longitude": -70.526147608,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/357721092",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-05-01-washington-us-gray-01",
