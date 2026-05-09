@@ -1206,3 +1206,59 @@ sources:
     max_items: 4
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Orca"]
+
+  # -------------------------
+  # NORTHEAST ATLANTIC — bounding box queries
+  # Catches ocean observations with no assigned place (missed by place_id queries)
+  # -------------------------
+  - key: inat_bbox_orca_norwegian_waters
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    swlat: 57.0
+    swlng: 3.0
+    nelat: 72.0
+    nelng: 30.0
+    area: "Norwegian waters (offshore)"
+    latitude: 65.0
+    longitude: 14.0
+    max_items: 6
+    force_species: ["Orca"]
+
+  - key: inat_bbox_humpback_ne_atlantic
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 55.0
+    swlng: -15.0
+    nelat: 72.0
+    nelng: 20.0
+    area: "Northeast Atlantic (offshore)"
+    latitude: 65.0
+    longitude: 5.0
+    max_items: 5
+    force_species: ["Humpback"]
+
+  - key: inat_bbox_fin_whale_ne_atlantic
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera physalus"
+    swlat: 49.0
+    swlng: -12.0
+    nelat: 72.0
+    nelng: 20.0
+    area: "Northeast Atlantic (offshore)"
+    latitude: 60.0
+    longitude: 3.0
+    max_items: 5
+    force_species: ["Fin Whale"]
+
+  - key: inat_bbox_sperm_whale_ne_atlantic
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    swlat: 35.0
+    swlng: -30.0
+    nelat: 72.0
+    nelng: 10.0
+    area: "Northeast Atlantic (offshore)"
+    latitude: 55.0
+    longitude: -10.0
+    max_items: 4
+    force_species: ["Sperm whale"]
