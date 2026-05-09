@@ -1,1208 +1,1617 @@
-timezone: America/Vancouver
-# iNaturalist photo license filter
-# Only photos with one of these license codes will be included from iNaturalist.
-# Set to [] or remove this block if you want to allow any iNaturalist photo URL.
-allowed_inat_photo_licenses:
-  - cc0
-  - cc-by
-  - cc-by-sa
-  - cc-by-nc
-  - cc-by-nc-sa
-# Wider window so you can actually hit 160 reliably
-max_days: 60
-# At least 40% within the last 14 days; the rest can be older (up to max_days)
-min_recent_days: 14
-min_recent_fraction: 0.40
-target_total: 160
-species_targets:
-  Orca: 0.22
-  Humpback: 0.25
-  Gray Whale: 0.18
-  Sperm whale: 0.08
-  Great White Shark: 0.08
-  Blue Whale: 0.06
-  Fin Whale: 0.05
-  Other: 0.08
-sources:
-  # -------------------------
-  # CANADA / USA (Salish Sea & Pacific NW)
-  # -------------------------
-  - key: orcanetwork_recent
-    parser: orcanetwork_recent_sightings
-    url: https://www.orcanetwork.org/recent-sightings
-    area: "Salish Sea (offshore), BC/WA, Canada/USA"
-    latitude: 48.45
-    longitude: -123.05
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  - key: whalesanddolphinsbc_latest
-    parser: generic_dated_page
-    url: https://whalesanddolphinsbc.com/latest-sightings/
-    area: "Vancouver Island (offshore), BC, Canada"
-    latitude: 48.55
-    longitude: -123.45
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.02, dlon: -0.03 }
-  - key: eaglewing_daily
-    parser: eaglewing_daily_sighting_report
-    url: https://eaglewingtours.com/daily-sighting-report/
-    area: "Victoria (offshore), BC, Canada"
-    latitude: 48.41
-    longitude: -123.45
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  - key: victoria_whalewatching_log
-    parser: victoriawhalewatching_captains_log
-    url: https://www.victoriawhalewatching.com/captains_log/
-    area: "Juan de Fuca Strait (offshore), BC, Canada"
-    latitude: 48.40
-    longitude: -124.10
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  - key: sanjuan_safaris_whale_report
-    parser: article_basic
-    url: https://www.sanjuansafaris.com/whale-report/
-    area: "San Juan Islands (offshore), WA, USA"
-    latitude: 48.55
-    longitude: -123.15
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  # -------------------------
-  # USA (California)
-  # -------------------------
-  - key: monterey_sightings
-    parser: montereybay_sightings
-    url: https://montereybaywhalewatch.com/sightings/slstcurr/
-    area: "Monterey Bay (offshore), CA, USA"
-    latitude: 36.80
-    longitude: -122.10
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  - key: monterey_bay_whalewatch_sightings_alt
-    parser: generic_dated_page
-    url: https://www.gowhales.com/sightings/slst0303/
-    area: "Monterey Bay (offshore), CA, USA"
-    latitude: 36.62
-    longitude: -122.05
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
-  - key: captain_dave_sightings_log
-    parser: generic_dated_page
-    url: https://dolphinsafari.com/category/sightings-log/
-    area: "Dana Point (offshore), CA, USA"
-    latitude: 33.43
-    longitude: -117.70
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
-  - key: dolphinsafari_log
-    parser: dolphinsafari_sightings_log
-    url: https://www.dolphinsafari.com/sightings-log/
-    area: "Dana Point (offshore), CA, USA"
-    latitude: 33.45
-    longitude: -117.75
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  - key: san_diego_whale_watch_recent
-    parser: generic_dated_page
-    url: https://sdwhalewatch.com/category/recent-sightings/
-    area: "San Diego (offshore), CA, USA"
-    latitude: 32.70
-    longitude: -117.45
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
-  - key: next_level_sailing_report
-    parser: generic_dated_page
-    url: https://www.nextlevelsailing.com/blog/whale-watching-report/
-    area: "San Diego (offshore), CA, USA"
-    latitude: 32.73
-    longitude: -117.45
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
-  # -------------------------
-  # USA (Hawaii)
-  # -------------------------
-  - key: hawaiianadventures_weekly
-    parser: hawaiianadventures_weekly_whale_report
-    url: https://www.hawaiianadventureskona.com/humpback-whales/weekly-whale-report/
-    area: "Kona (offshore), HI, USA"
-    latitude: 19.70
-    longitude: -156.10
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  - key: hawaii_newsnow_article
-    parser: article_basic
-    url: https://www.hawaiinewsnow.com/2026/01/12/humpback-whale-mugs-boat-lahaina-several-times/
-    area: "Lahaina (offshore), Maui, HI, USA"
-    latitude: 20.88
-    longitude: -156.70
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  # -------------------------
-  # CANADA (Atlantic / Bay of Fundy)
-  # -------------------------
-  - key: brier_island_whale_sightings
-    parser: generic_dated_page
-    url: https://brierislandwhalewatch.com/whale-watching/whale-sightings/
-    area: "Bay of Fundy (offshore), NS, Canada"
-    latitude: 44.25
-    longitude: -66.40
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
-  - key: quoddy_link_marine_blog
-    parser: generic_dated_page
-    url: https://quoddylinkmarine.com/blog/
-    area: "Bay of Fundy (offshore), NB, Canada"
-    latitude: 44.95
-    longitude: -66.85
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
-  # -------------------------
-  # ICELAND (multiple diaries)
-  # -------------------------
-  - key: akureyri_blog
-    parser: whalewatchingakureyri_blog
-    url: https://www.whalewatchingakureyri.is/new-blog/
-    area: "Eyjafjordur (offshore), Akureyri, Iceland"
-    latitude: 65.75
-    longitude: -18.20
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  - key: elding_diary
-    parser: elding_whale_diary
-    url: https://elding.is/whale-diary
-    area: "Faxafloi Bay (offshore), Reykjavik, Iceland"
-    latitude: 64.20
-    longitude: -22.40
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  - key: seatrips_diary
-    parser: seatrips_whale_diary
-    url: https://seatrips.is/news/whale-diary-january/
-    area: "Reykjavik (offshore), Iceland"
-    latitude: 64.18
-    longitude: -22.60
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  # -------------------------
-  # AUSTRALIA (whales + sharks)
-  # -------------------------
-  - key: whale_watch_wa
-    parser: whalewatchwesternaustralia_daily
-    url: https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/
-    area: "Bremer Canyon (offshore), WA, Australia"
-    latitude: -34.70
-    longitude: 119.90
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  - key: whale_watching_sydney_sightings
-    parser: generic_dated_page
-    url: https://www.whalewatchingsydney.com.au/whale-sightings/
-    area: "Sydney (offshore), NSW, Australia"
-    latitude: -33.85
-    longitude: 151.55
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
-  - key: captain_cook_sydney_sightings
-    parser: generic_dated_page
-    url: https://www.captaincook.com.au/sydney/whale-watching/whale-sightings/
-    area: "Sydney (offshore), NSW, Australia"
-    latitude: -33.87
-    longitude: 151.55
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
-  - key: pirsa_shark_sightings
-    parser: generic_dated_page
-    url: https://pir.sa.gov.au/fishing-and-aquaculture/recreational-fishing/reporting/shark-sightings
-    area: "South Australia (offshore), Australia"
-    latitude: -35.20
-    longitude: 136.20
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
-  - key: nsw_sharksmart_activity
-    parser: generic_dated_page
-    url: https://www.sharksmart.nsw.gov.au/shark-activity
-    area: "New South Wales (offshore), Australia"
-    latitude: -33.90
-    longitude: 151.60
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
-  - key: wa_sharksmart_activity
-    parser: generic_dated_page
-    url: https://www.sharksmart.com.au/shark-activity/
-    area: "Western Australia (offshore)"
-    latitude: -32.20
-    longitude: 115.40
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
-  # -------------------------
-  # UK / Ireland (sightings aggregators)
-  # -------------------------
-  - key: uk_seawatch_sightings
-    parser: article_basic
-    url: https://www.seawatchfoundation.org.uk/sightings/
-    area: "United Kingdom (offshore)"
-    latitude: 57.50
-    longitude: -6.50
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  - key: hwdt_whale_track_recent
-    parser: generic_dated_page
-    url: https://www.whaletrack.hwdt.org/
-    area: "Hebrides (offshore), Scotland, UK"
-    latitude: 57.70
-    longitude: -6.90
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.01, dlon: -0.02 }
-  - key: uk_hwdt_sightings
-    parser: article_basic
-    url: https://hwdt.org/sightings/
-    area: "Hebrides (offshore), Scotland, UK"
-    latitude: 57.60
-    longitude: -7.10
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  # -------------------------
-  # RSS feeds (extra global/UK/US coverage)
-  # -------------------------
-  - key: wdc_uk_feed
-    parser: rss_feed
-    url: https://uk.whales.org/feed/
-    area: "UK waters (offshore)"
-    latitude: 50.00
-    longitude: -5.60
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.02, dlon: -0.02 }
-  - key: wdc_us_feed
-    parser: rss_feed
-    url: https://us.whales.org/feed/
-    area: "US Atlantic (offshore)"
-    latitude: 41.60
-    longitude: -70.30
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.02, dlon: -0.02 }
-  - key: world_cetacean_alliance_feed
-    parser: rss_feed
-    url: https://worldcetaceanalliance.org/feed/
-    area: "Global (offshore)"
-    latitude: 0.00
-    longitude: -20.00
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.02, dlon: -0.02 }
-  # -------------------------
-  # SOUTH AFRICA (shark program)
-  # -------------------------
-  - key: za_sharkspotters
-    parser: article_basic
-    url: https://www.sharkspotters.org.za/
-    area: "Cape Town (offshore), South Africa"
-    latitude: -34.15
-    longitude: 18.35
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Great White Shark"]
-  # -------------------------
-  # PORTUGAL (Azores anchor)
-  # -------------------------
-  - key: pt_azores_whales
-    parser: article_basic
-    url: https://www.visitazores.com/en/whale-watching
-    area: "Azores (offshore), Portugal"
-    latitude: 38.55
-    longitude: -28.10
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-  # -------------------------
-  # iNaturalist — original 14 queries
-  # -------------------------
-  - key: inat_orca_bc
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "British Columbia"
-    area: "British Columbia (iNaturalist)"
-    latitude: 49.0
-    longitude: -126.0
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
-  - key: inat_orca_washington
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Washington"
-    area: "Washington (iNaturalist)"
-    latitude: 48.2
-    longitude: -123.3
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
-  - key: inat_orca_norway
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Norway"
-    area: "Norway (iNaturalist)"
-    latitude: 69.5
-    longitude: 18.9
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
-  - key: inat_orca_uk
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "United Kingdom"
-    area: "United Kingdom (iNaturalist)"
-    latitude: 57.5
-    longitude: -6.5
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
-  - key: inat_orca_new_zealand
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "New Zealand"
-    area: "New Zealand (iNaturalist)"
-    latitude: -41.0
-    longitude: 174.0
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
-  - key: inat_orca_japan
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Japan"
-    area: "Japan (iNaturalist)"
-    latitude: 43.0
-    longitude: 145.0
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
-  - key: inat_orca_argentina
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Argentina"
-    area: "Argentina (iNaturalist)"
-    latitude: -42.8
-    longitude: -63.6
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
-  - key: inat_humpback_hawaii
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Hawaii"
-    area: "Hawaii (iNaturalist)"
-    latitude: 20.7
-    longitude: -156.3
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
-  - key: inat_humpback_california
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "California"
-    area: "California (iNaturalist)"
-    latitude: 34.1
-    longitude: -120.4
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
-  - key: inat_humpback_mexico
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Mexico"
-    area: "Mexico (iNaturalist)"
-    latitude: 23.0
-    longitude: -109.6
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
-  - key: inat_humpback_iceland
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Iceland"
-    area: "Iceland (iNaturalist)"
-    latitude: 64.9
-    longitude: -22.5
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
-  - key: inat_humpback_australia
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Australia"
-    area: "Australia (iNaturalist)"
-    latitude: -33.9
-    longitude: 151.6
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
-  - key: inat_sperm_whale_azores
-    parser: inaturalist_api
-    taxon_name: "Physeter macrocephalus"
-    place_query: "Azores"
-    area: "Azores (iNaturalist)"
-    latitude: 38.6
-    longitude: -28.1
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Sperm whale"]
-  - key: inat_great_white_south_africa
-    parser: inaturalist_api
-    taxon_name: "Carcharodon carcharias"
-    place_query: "South Africa"
-    area: "South Africa (iNaturalist)"
-    latitude: -34.2
-    longitude: 18.4
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Great White Shark"]
-  # -------------------------
-  # iNaturalist — Gray Whale (Pacific migration route)
-  # -------------------------
-  - key: inat_gray_whale_baja
-    parser: inaturalist_api
-    taxon_name: "Eschrichtius robustus"
-    place_query: "Baja California"
-    area: "Baja California (iNaturalist)"
-    latitude: 27.9
-    longitude: -114.0
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Gray Whale"]
-  - key: inat_gray_whale_california
-    parser: inaturalist_api
-    taxon_name: "Eschrichtius robustus"
-    place_query: "California"
-    area: "California (iNaturalist)"
-    latitude: 36.5
-    longitude: -122.3
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Gray Whale"]
-  - key: inat_gray_whale_oregon
-    parser: inaturalist_api
-    taxon_name: "Eschrichtius robustus"
-    place_query: "Oregon"
-    area: "Oregon (iNaturalist)"
-    latitude: 44.5
-    longitude: -124.5
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Gray Whale"]
-  - key: inat_gray_whale_washington
-    parser: inaturalist_api
-    taxon_name: "Eschrichtius robustus"
-    place_query: "Washington"
-    area: "Washington (iNaturalist)"
-    latitude: 47.8
-    longitude: -124.6
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Gray Whale"]
-  - key: inat_gray_whale_alaska
-    parser: inaturalist_api
-    taxon_name: "Eschrichtius robustus"
-    place_query: "Alaska"
-    area: "Alaska (iNaturalist)"
-    latitude: 57.0
-    longitude: -153.0
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Gray Whale"]
-  - key: inat_gray_whale_bc
-    parser: inaturalist_api
-    taxon_name: "Eschrichtius robustus"
-    place_query: "British Columbia"
-    area: "British Columbia (iNaturalist)"
-    latitude: 49.5
-    longitude: -126.5
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Gray Whale"]
-  # -------------------------
-  # iNaturalist — Blue Whale
-  # -------------------------
-  - key: inat_blue_whale_sri_lanka
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera musculus"
-    place_query: "Sri Lanka"
-    area: "Sri Lanka (iNaturalist)"
-    latitude: 5.9
-    longitude: 80.5
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Blue Whale"]
-  - key: inat_blue_whale_california
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera musculus"
-    place_query: "California"
-    area: "California (iNaturalist)"
-    latitude: 34.0
-    longitude: -120.5
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Blue Whale"]
-  - key: inat_blue_whale_chile
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera musculus"
-    place_query: "Chile"
-    area: "Chile (iNaturalist)"
-    latitude: -43.0
-    longitude: -74.5
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Blue Whale"]
-  - key: inat_blue_whale_azores
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera musculus"
-    place_query: "Azores"
-    area: "Azores (iNaturalist)"
-    latitude: 38.6
-    longitude: -28.0
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Blue Whale"]
-  # -------------------------
-  # iNaturalist — Humpback (new regions)
-  # -------------------------
-  - key: inat_humpback_dominican_republic
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Dominican Republic"
-    area: "Silver Bank, Dominican Republic (iNaturalist)"
-    latitude: 20.5
-    longitude: -69.5
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
-  - key: inat_humpback_brazil
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Brazil"
-    area: "Abrolhos, Brazil (iNaturalist)"
-    latitude: -17.9
-    longitude: -38.7
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
-  - key: inat_humpback_norway
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Norway"
-    area: "Norway (iNaturalist)"
-    latitude: 69.3
-    longitude: 16.0
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
-  - key: inat_humpback_south_africa
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "South Africa"
-    area: "South Africa (iNaturalist)"
-    latitude: -34.0
-    longitude: 26.0
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
-  - key: inat_humpback_new_zealand
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "New Zealand"
-    area: "New Zealand (iNaturalist)"
-    latitude: -41.5
-    longitude: 174.5
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
-  - key: inat_humpback_alaska
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Alaska"
-    area: "Alaska (iNaturalist)"
-    latitude: 57.5
-    longitude: -152.0
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
-  # -------------------------
-  # iNaturalist — Orca (new regions)
-  # -------------------------
-  - key: inat_orca_iceland
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Iceland"
-    area: "Iceland (iNaturalist)"
-    latitude: 64.9
-    longitude: -22.5
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
-  - key: inat_orca_australia
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Australia"
-    area: "Australia (iNaturalist)"
-    latitude: -34.7
-    longitude: 119.9
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
-  - key: inat_orca_alaska
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Alaska"
-    area: "Alaska (iNaturalist)"
-    latitude: 57.5
-    longitude: -152.0
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
-  # -------------------------
-  # iNaturalist — Fin Whale (Mediterranean + global)
-  # -------------------------
-  - key: inat_fin_whale_mediterranean
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera physalus"
-    place_query: "Mediterranean Sea"
-    area: "Mediterranean Sea (iNaturalist)"
-    latitude: 40.5
-    longitude: 5.0
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Fin Whale"]
-  - key: inat_fin_whale_azores
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera physalus"
-    place_query: "Azores"
-    area: "Azores (iNaturalist)"
-    latitude: 38.5
-    longitude: -28.0
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Fin Whale"]
-  - key: inat_fin_whale_iceland
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera physalus"
-    place_query: "Iceland"
-    area: "Iceland (iNaturalist)"
-    latitude: 64.9
-    longitude: -22.5
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Fin Whale"]
-  # -------------------------
-  # iNaturalist — Sperm Whale (new regions)
-  # -------------------------
-  - key: inat_sperm_whale_dominica
-    parser: inaturalist_api
-    taxon_name: "Physeter macrocephalus"
-    place_query: "Dominica"
-    area: "Dominica, Caribbean (iNaturalist)"
-    latitude: 15.4
-    longitude: -61.4
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Sperm whale"]
-  - key: inat_sperm_whale_norway
-    parser: inaturalist_api
-    taxon_name: "Physeter macrocephalus"
-    place_query: "Norway"
-    area: "Norway (iNaturalist)"
-    latitude: 68.8
-    longitude: 15.5
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Sperm whale"]
-  # -------------------------
-  # iNaturalist — Great White Shark (new regions)
-  # -------------------------
-  - key: inat_great_white_california
-    parser: inaturalist_api
-    taxon_name: "Carcharodon carcharias"
-    place_query: "California"
-    area: "California (iNaturalist)"
-    latitude: 35.5
-    longitude: -121.0
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Great White Shark"]
-  - key: inat_great_white_australia
-    parser: inaturalist_api
-    taxon_name: "Carcharodon carcharias"
-    place_query: "Australia"
-    area: "Australia (iNaturalist)"
-    latitude: -34.0
-    longitude: 122.0
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Great White Shark"]
+#!/usr/bin/env python3
+"""
+Update whale_sightings.json from curated sources.
+
+Deterministic:
+- No "search the whole web"
+- Pulls from curated URLs in config/sources.yml
+- Parses pages with:
+  - orcanetwork_recent_sightings (custom)
+  - generic_dated_page (generic HTML parsing)
+  - rss_feed (RSS/Atom parsing via feedparser)
+  - inaturalist_api (iNaturalist public API: taxon + place + date window)
+
+Enforces:
+- Pins must be in water (uses global-land-mask; nudges offshore if needed)
+
+Outputs JSON array entries that match your Swift model, now with optional photo fields:
+id, name, species, info, date, latitude, longitude, area, source, behaviors,
+photoURL, photoLicense, photoAttribution
+"""
+
+from __future__ import annotations
+
+import json
+import os
+import re
+import time
+from dataclasses import dataclass
+from datetime import datetime, timedelta
+from typing import Any, Dict, List, Optional, Tuple
+
+import requests
+import yaml
+from bs4 import BeautifulSoup
+from dateutil import tz
+
+# Requires: pip install feedparser
+import feedparser
+
+# Requires: pip install global-land-mask
+try:
+    from global_land_mask import globe
+except Exception:
+    globe = None
 
 
-  # -------------------------
-  # OBIS (Ocean Biodiversity Information System)
-  # Free REST API — no auth required. Uses WoRMS AphiaIDs for exact species matching.
-  # Live 2025 data confirmed. Aggregates Happywhale, Navy surveys, research vessels + more.
-  # https://api.obis.org/v3
-  # -------------------------
+ALLOWED_SPECIES = {"Orca", "Humpback", "Sperm whale", "Great White Shark", "Blue Whale", "Gray Whale", "Fin Whale"}
 
-  - key: obis_orca_pacific
-    parser: obis_api
-    aphia_id: 137013
-    area: "Pacific Ocean (OBIS)"
-    latitude: 48.50
-    longitude: -124.00
-    max_items: 5
-    force_species: ["Orca"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+# Known individually-catalogued whales: individual_id → display name
+KNOWN_INDIVIDUALS: Dict[str, str] = {
+    # Southern Resident orcas (Center for Whale Research)
+    "orca_j02": "Granny", "orca_j16": "Slick", "orca_j17": "Princess Angeline",
+    "orca_j19": "Shachi", "orca_j22": "Oreo", "orca_j26": "Mike",
+    "orca_j27": "Blackberry", "orca_j28": "Polaris", "orca_j34": "Doublestuf",
+    "orca_j35": "Tahlequah", "orca_j36": "Alki", "orca_j37": "Hy'Shqa",
+    "orca_j38": "Cookie", "orca_j39": "Mako", "orca_j40": "Suttles",
+    "orca_j41": "Eclipse", "orca_j42": "Echo", "orca_j45": "Se-Yi'-Chn",
+    "orca_j46": "Star", "orca_j47": "Notch", "orca_j51": "Nova",
+    "orca_j52": "Sonic", "orca_j53": "Kiki", "orca_j56": "Tofino",
+    "orca_k11": "Georgia", "orca_k12": "Sequim", "orca_k13": "Skagit",
+    "orca_k20": "Spock", "orca_k21": "Cappuccino", "orca_k22": "Deadhead",
+    "orca_k25": "Scoter", "orca_k26": "Lobo", "orca_k33": "Tika",
+    "orca_k34": "Cali", "orca_k35": "Sonata", "orca_k36": "Comet",
+    "orca_k38": "Coho", "orca_k39": "Sooke", "orca_k42": "Kelp",
+    "orca_l84": "Nyssa", "orca_l87": "Onyx", "orca_l88": "Wave Walker",
+    "orca_l90": "Ballena", "orca_l92": "Crewser", "orca_l94": "Calypso",
+    "orca_l95": "Nigel", "orca_l98": "Luna", "orca_l105": "Fluke",
+    "orca_l109": "Solstice", "orca_l119": "Joy",
+    # Gulf of Maine humpbacks (Stellwagen Bank NMS catalog)
+    "humpback_salt": "Salt", "humpback_pepper": "Pepper",
+    "humpback_freckles": "Freckles", "humpback_braid": "Braid",
+    "humpback_nile": "Nile", "humpback_putter": "Putter",
+    "humpback_infinity": "Infinity", "humpback_tornado": "Tornado",
+    "humpback_colt": "Colt", "humpback_reflection": "Reflection",
+    "humpback_monkey": "Monkey",
+    # PCFG gray whales (Oregon Coast Aquarium / GEMM Lab)
+    "gray_earhart": "Earhart", "gray_patch": "Patch",
+    "gray_cascade": "Cascade", "gray_scarlett": "Scarlett",
+    "gray_roller": "Roller", "gray_limpet": "Limpet",
+    # Bremer Canyon orcas (Australia)
+    "orca_au_el_notcho": "El Notcho", "orca_au_blade": "Blade",
+    "orca_au_hookfin": "Hookfin", "orca_au_nibbles": "Nibbles",
+    # Dominica sperm whales (Project CETI / Shane Gero)
+    "sperm_digit": "Digit", "sperm_fingers": "Fingers",
+    "sperm_pinchy": "Pinchy", "sperm_mysterio": "Mysterio",
+    # Gulf of St. Lawrence blue whales
+    "blue_ol_blue": "Ol' Blue",
+}
 
-  - key: obis_humpback_global
-    parser: obis_api
-    aphia_id: 137092
-    area: "Global (OBIS)"
-    latitude: 36.80
-    longitude: -122.00
-    max_items: 5
-    force_species: ["Humpback"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+# Regex patterns to extract catalog numbers from iNaturalist text
+CATALOG_PATTERNS = [
+    # Southern/Northern Residents: J35, K21, L87
+    (re.compile(r'\b([JKL])[-\s]?0*(\d{1,3})\b'),
+     lambda m: f"orca_{m.group(1).lower()}{int(m.group(2)):02d}"),
+    # Bigg's / Transient orcas: T046, T123A
+    (re.compile(r'\b(T\d{2,3}[A-Z]?\d*)\b'),
+     lambda m: f"orca_biggs_{m.group(1).lower()}"),
+    # PCFG gray whales: PCFG-047 or PCFG 47
+    (re.compile(r'\bPCFG[-\s]?0*(\d{1,3})\b', re.IGNORECASE),
+     lambda m: f"gray_pcfg_{int(m.group(1)):03d}"),
+    # North Atlantic right whales: #1234
+    (re.compile(r'#(\d{4})\b'),
+     lambda m: f"rightwhale_{m.group(1)}"),
+]
 
-  - key: obis_gray_whale_pacific
-    parser: obis_api
-    aphia_id: 137119
-    area: "Pacific Coast (OBIS)"
-    latitude: 40.00
-    longitude: -124.50
-    max_items: 5
-    force_species: ["Gray Whale"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+# iNaturalist OFV field names that carry individual whale IDs
+OFV_ID_FIELDS = {
+    "whale id", "individual id", "catalog number", "catalog #",
+    "photo id", "photo-id", "cetacean id", "whale catalog", "animal id",
+}
 
-  - key: obis_blue_whale_global
-    parser: obis_api
-    aphia_id: 137090
-    area: "Global (OBIS)"
-    latitude: 34.00
-    longitude: -120.50
-    max_items: 4
-    force_species: ["Blue Whale"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+MONTHS = (
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+)
 
-  - key: obis_fin_whale_global
-    parser: obis_api
-    aphia_id: 137091
-    area: "Global (OBIS)"
-    latitude: 40.50
-    longitude: 5.00
-    max_items: 4
-    force_species: ["Fin Whale"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+# Set in main() from config.max_days so parsers can use it
+GLOBAL_MAX_DAYS = 14
 
-  - key: obis_sperm_whale_global
-    parser: obis_api
-    aphia_id: 137117
-    area: "Global (OBIS)"
-    latitude: 15.40
-    longitude: -61.40
-    max_items: 4
-    force_species: ["Sperm whale"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-
-  - key: obis_great_white_global
-    parser: obis_api
-    aphia_id: 105838
-    area: "Global (OBIS)"
-    latitude: -34.20
-    longitude: 18.40
-    max_items: 4
-    force_species: ["Great White Shark"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+# Set in main() from config.allowed_inat_photo_licenses
+GLOBAL_ALLOWED_INAT_PHOTO_LICENSES: Optional[set[str]] = None
 
 
-  # -------------------------
-  # Individual whale tracking sources
-  # These target iNaturalist projects and observers who tag named whales.
-  # The CATALOG_PATTERNS regex extracts J/K/L pod IDs, PCFG gray whale IDs,
-  # and humpback catalog numbers so whale_trails.json can be built.
-  # -------------------------
+# -------------------------
+# OBIS API constants
+# -------------------------
 
-  # Southern Resident Orcas — J/K/L pod (Pacific NW, high ID rate)
-  - key: inat_srkw_salish_sea
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Salish Sea"
-    area: "Salish Sea (iNaturalist — SRKW)"
-    latitude: 48.50
-    longitude: -123.10
-    max_items: 10
-    force_species: ["Orca"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+OBIS_BASE = "https://api.obis.org/v3"
 
-  - key: inat_srkw_puget_sound
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Puget Sound"
-    area: "Puget Sound (iNaturalist — SRKW)"
-    latitude: 47.90
-    longitude: -122.55
-    max_items: 10
-    force_species: ["Orca"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+# Maps OBIS WoRMS AphiaID -> species name used in the pipeline
+OBIS_TAXON_MAP = {
+    137013: "Orca",            # Orcinus orca
+    137092: "Humpback",        # Megaptera novaeangliae
+    137119: "Gray Whale",      # Eschrichtius robustus
+    137090: "Blue Whale",      # Balaenoptera musculus
+    137091: "Fin Whale",       # Balaenoptera physalus
+    137117: "Sperm whale",     # Physeter macrocephalus
+    105838: "Great White Shark",  # Carcharodon carcharias
+}
 
-  - key: inat_srkw_san_juan_islands
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "San Juan Islands"
-    area: "San Juan Islands (iNaturalist — SRKW)"
-    latitude: 48.55
-    longitude: -123.05
-    max_items: 10
-    force_species: ["Orca"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
-  # PCFG Gray Whales — Pacific Coast Feeding Group (tagged individuals)
-  - key: inat_pcfg_gray_oregon
-    parser: inaturalist_api
-    taxon_name: "Eschrichtius robustus"
-    place_query: "Oregon Coast"
-    area: "Oregon Coast (iNaturalist — PCFG)"
-    latitude: 44.50
-    longitude: -124.50
-    max_items: 8
-    force_species: ["Gray Whale"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+# -------------------------
+# Land / ocean enforcement
+# -------------------------
 
-  - key: inat_pcfg_gray_washington_coast
-    parser: inaturalist_api
-    taxon_name: "Eschrichtius robustus"
-    place_query: "Washington Coast"
-    area: "Washington Coast (iNaturalist — PCFG)"
-    latitude: 47.50
-    longitude: -124.50
-    max_items: 8
-    force_species: ["Gray Whale"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+def require_landmask() -> None:
+    if globe is None:
+        raise RuntimeError(
+            "global-land-mask is not available. Ensure 'global-land-mask' is in requirements.txt and installed."
+        )
 
-  # Gulf of Maine Humpbacks — Stellwagen Bank catalog (Salt, Pepper, Freckles etc.)
-  - key: inat_humpback_stellwagen
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Stellwagen Bank"
-    area: "Stellwagen Bank (iNaturalist — Catalog)"
-    latitude: 42.20
-    longitude: -70.30
-    max_items: 8
-    force_species: ["Humpback"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+def wrap_lon(lon: float) -> float:
+    while lon > 180:
+        lon -= 360
+    while lon < -180:
+        lon += 360
+    return lon
 
-  - key: inat_humpback_gulf_of_maine
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Gulf of Maine"
-    area: "Gulf of Maine (iNaturalist — Catalog)"
-    latitude: 43.50
-    longitude: -68.50
-    max_items: 8
-    force_species: ["Humpback"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+def is_land(lat: float, lon: float) -> bool:
+    require_landmask()
+    return bool(globe.is_land(lat, lon))
 
-  # Bigg's / Transient Orcas — T-pod catalog (T046, T123A etc.)
-  - key: inat_biggs_orca_bc
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Vancouver Island"
-    area: "Vancouver Island (iNaturalist — Bigg's)"
-    latitude: 49.00
-    longitude: -125.50
-    max_items: 8
-    force_species: ["Orca"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+_OFFSHORE_OFFSETS: List[Tuple[float, float]] = [
+    (0.00, 0.00),
+    (0.02, 0.00), (-0.02, 0.00),
+    (0.00, 0.02), (0.00, -0.02),
+    (0.03, 0.03), (0.03, -0.03),
+    (-0.03, 0.03), (-0.03, -0.03),
+    (0.05, 0.00), (-0.05, 0.00),
+    (0.00, 0.05), (0.00, -0.05),
+    (0.08, 0.00), (-0.08, 0.00),
+    (0.00, 0.08), (0.00, -0.08),
+    (0.12, 0.00), (-0.12, 0.00),
+    (0.00, 0.12), (0.00, -0.12),
+    (0.18, 0.00), (-0.18, 0.00),
+    (0.00, 0.18), (0.00, -0.18),
+    (0.22, 0.00), (-0.22, 0.00),
+    (0.00, 0.22), (0.00, -0.22),
+]
 
-  # -------------------------
-  # Acartia Data Cooperative (acartia.io)
-  # Same upstream feed used by Ocean Wise WRAS / Whale Report app.
-  # Requires ACARTIA_TOKEN secret in GitHub Actions.
-  # Register free at acartia.io to get a token.
-  # Covers: Salish Sea, Puget Sound, Strait of Juan de Fuca.
-  # -------------------------
-  - key: acartia_salish_sea
-    parser: acartia_api
-    area: "Salish Sea (Acartia)"
-    latitude: 48.50
-    longitude: -123.10
-    max_items: 8
-    trusted_only: true
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+def ensure_ocean(lat: float, lon: float) -> Optional[Tuple[float, float]]:
+    try:
+        lat = float(lat)
+        lon = wrap_lon(float(lon))
+    except Exception:
+        return None
 
-  - key: acartia_puget_sound
-    parser: acartia_api
-    area: "Puget Sound (Acartia)"
-    latitude: 47.90
-    longitude: -122.55
-    max_items: 5
-    trusted_only: true
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    if not (-90.0 <= lat <= 90.0):
+        return None
 
-  # =============================================================================
-  # AUSTRALIA & NEW ZEALAND
-  # =============================================================================
+    if not is_land(lat, lon):
+        return lat, lon
 
-  # ── OBIS Australia (National Whale & Dolphin Sightings Database) ─────────────
-  # AphiaIDs: orca 137013, humpback 137092, blue 137090, fin 137091,
-  #           sperm 137117, gray 137119, minke 103768, southern right 231430
-  # Bounding box: Australian coastal waters
-  - key: obis_humpback_australia
-    parser: obis_api
-    area: "Australia"
-    aphia_id: 137092
-    latitude: -27.00
-    longitude: 153.00
-    bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    for dlat, dlon in _OFFSHORE_OFFSETS[1:]:
+        la = lat + dlat
+        lo = wrap_lon(lon + dlon)
+        if -90.0 <= la <= 90.0 and not is_land(la, lo):
+            return la, lo
 
-  - key: obis_orca_australia
-    parser: obis_api
-    area: "Australia"
-    aphia_id: 137013
-    latitude: -35.00
-    longitude: 138.00
-    bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    return None
 
-  - key: obis_sperm_australia
-    parser: obis_api
-    area: "Australia"
-    aphia_id: 137117
-    latitude: -30.00
-    longitude: 115.00
-    bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
-  - key: obis_blue_whale_australia
-    parser: obis_api
-    area: "Australia"
-    aphia_id: 137090
-    latitude: -38.00
-    longitude: 148.00
-    bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+# -------------------------
+# Helpers
+# -------------------------
 
-  # ── OBIS New Zealand ──────────────────────────────────────────────────────────
-  - key: obis_humpback_nz
-    parser: obis_api
-    area: "New Zealand"
-    aphia_id: 137092
-    latitude: -41.00
-    longitude: 174.00
-    bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+def now_local(tz_name: str) -> datetime:
+    return datetime.now(tz.gettz(tz_name))
 
-  - key: obis_orca_nz
-    parser: obis_api
-    area: "New Zealand"
-    aphia_id: 137013
-    latitude: -44.00
-    longitude: 168.00
-    bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+def to_date_str(dt: datetime) -> str:
+    return dt.strftime("%Y-%m-%d")
 
-  - key: obis_sperm_nz
-    parser: obis_api
-    area: "New Zealand"
-    aphia_id: 137117
-    latitude: -45.50
-    longitude: 166.60
-    bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+def slugify(s: str) -> str:
+    s = s.lower()
+    s = re.sub(r"[^a-z0-9]+", "-", s)
+    s = re.sub(r"-+", "-", s).strip("-")
+    return s
 
-  # ── iNaturalist Australia ─────────────────────────────────────────────────────
-  - key: inat_orca_australia
-    parser: inaturalist_api
-    area: "Australia"
-    taxon_id: 42146
-    place_id: 6744
-    latitude: -27.00
-    longitude: 153.00
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+def species_key(species: str) -> str:
+    return {
+        "Orca": "orca",
+        "Humpback": "humpback",
+        "Sperm whale": "sperm",
+        "Great White Shark": "white",
+        "Blue Whale": "blue",
+        "Gray Whale": "gray",
+        "Fin Whale": "fin",
+    }.get(species, slugify(species))
 
-  - key: inat_humpback_australia
-    parser: inaturalist_api
-    area: "Australia"
-    taxon_id: 42448
-    place_id: 6744
-    latitude: -33.00
-    longitude: 151.00
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+def clamp_nudge(lat: float, lon: float, dlat: float, dlon: float) -> Tuple[float, float]:
+    dlat = max(-0.05, min(0.05, dlat))
+    dlon = max(-0.05, min(0.05, dlon))
+    return lat + dlat, lon + dlon
 
-  - key: inat_whale_western_australia
-    parser: inaturalist_api
-    area: "Western Australia"
-    taxon_id: 42448
-    place_id: 7161
-    latitude: -31.00
-    longitude: 115.00
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+def infer_behaviors(text: str) -> List[str]:
+    t = (text or "").lower()
+    out = ["reported"]
+    if any(k in t for k in ["hunt", "predation", "prey", "kill"]):
+        out.append("hunting")
+    if any(k in t for k in ["feed", "feeding", "lunge", "krill"]):
+        out.append("feeding")
+    if "breach" in t:
+        out.append("breaching")
+    if any(k in t for k in ["call", "hydrophone", "vocal"]):
+        out.append("vocalizing")
+    if any(k in t for k in ["travel", "headed", "northbound", "southbound", "moving"]):
+        out.append("traveling")
 
-  # ── iNaturalist New Zealand ───────────────────────────────────────────────────
-  - key: inat_orca_nz
-    parser: inaturalist_api
-    area: "New Zealand"
-    taxon_id: 42146
-    place_id: 7085
-    latitude: -41.00
-    longitude: 174.00
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    seen = set()
+    deduped = []
+    for b in out:
+        if b not in seen:
+            deduped.append(b)
+            seen.add(b)
+    return deduped
 
-  - key: inat_humpback_nz
-    parser: inaturalist_api
-    area: "New Zealand"
-    taxon_id: 42448
-    place_id: 7085
-    latitude: -37.00
-    longitude: 175.00
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+def normalize_text(html: str) -> str:
+    soup = BeautifulSoup(html, "html.parser")
+    text = soup.get_text("\n")
+    text = text.replace("\r", "\n")
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
 
-  - key: inat_sperm_whale_nz
-    parser: inaturalist_api
-    area: "New Zealand (Kaikoura)"
-    taxon_id: 42461
-    place_id: 7085
-    latitude: -42.40
-    longitude: 173.70
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+def fetch_text(session: requests.Session, url: str) -> str:
+    r = session.get(url, timeout=45)
+    r.raise_for_status()
+    return normalize_text(r.text)
 
-  # -------------------------
-  # GERMANY / NORTH SEA / DENMARK
-  # -------------------------
-  - key: inat_humpback_germany
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Germany"
-    area: "Germany (North Sea / Baltic Sea)"
-    latitude: 54.8
-    longitude: 8.5
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.02, dlon: 0.02 }
-    force_species: ["Humpback"]
+def within_window(dt: datetime, now_dt: datetime, max_days: int) -> bool:
+    if dt.date() > now_dt.date():
+        return False
+    return (now_dt.date() - dt.date()).days <= max_days
 
-  - key: inat_fin_whale_germany
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera physalus"
-    place_query: "Germany"
-    area: "Germany (North Sea)"
-    latitude: 55.0
-    longitude: 7.8
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.02, dlon: 0.02 }
-    force_species: ["Fin Whale"]
+def parse_date_from_url(url: str, tz_name: str) -> Optional[datetime]:
+    m = re.search(r"/(\d{4})/(\d{1,2})/(\d{1,2})(?:/|$)", url)
+    if m:
+        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", url)
+    if m:
+        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
+    return None
 
-  - key: inat_sperm_whale_germany
-    parser: inaturalist_api
-    taxon_name: "Physeter macrocephalus"
-    place_query: "Germany"
-    area: "Germany (North Sea)"
-    latitude: 54.9
-    longitude: 7.6
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.02, dlon: 0.02 }
-    force_species: ["Sperm whale"]
+def best_effort_parse_date(s: str, tz_name: str, today: datetime) -> Optional[datetime]:
+    s = (s or "").strip()
 
-  - key: inat_humpback_netherlands
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Netherlands"
-    area: "Netherlands (North Sea)"
-    latitude: 52.8
-    longitude: 4.2
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.02, dlon: 0.02 }
-    force_species: ["Humpback"]
+    m = re.match(r"^(\d{4})-(\d{2})-(\d{2})$", s)
+    if m:
+        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
 
-  - key: inat_humpback_denmark
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Denmark"
-    area: "Denmark (North Sea / Skagerrak)"
-    latitude: 57.5
-    longitude: 9.5
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.02, dlon: 0.02 }
-    force_species: ["Humpback"]
+    m = re.match(r"^(\d{1,2})/(\d{1,2})/(\d{2,4})$", s)
+    if m:
+        mo, d, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if y < 100:
+            y += 2000
+        return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
 
-  - key: inat_fin_whale_denmark
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera physalus"
-    place_query: "Denmark"
-    area: "Denmark (North Sea / Skagerrak)"
-    latitude: 57.3
-    longitude: 9.2
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.02, dlon: 0.02 }
-    force_species: ["Fin Whale"]
+    m = re.match(r"^(\d{1,2})\.(\d{1,2})\.(\d{2,4})$", s)
+    if m:
+        d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        if y < 100:
+            y += 2000
+        return datetime(y, mo, d, tzinfo=tz.gettz(tz_name))
 
-  - key: inat_orca_denmark
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Denmark"
-    area: "Denmark (North Sea / Skagerrak)"
-    latitude: 57.7
-    longitude: 10.0
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
+    month_re = r"(January|February|March|April|May|June|July|August|September|October|November|December)"
+    m = re.match(rf"^({month_re})\s+(\d{{1,2}})(?:,?\s+(\d{{4}}))?$", s)
+    if m:
+        month_name = m.group(1)
+        day = int(m.group(2))
+        year = int(m.group(3)) if m.group(3) else today.year
+        dt = datetime.strptime(f"{year} {month_name} {day}", "%Y %B %d")
+        dt = dt.replace(tzinfo=tz.gettz(tz_name))
+        if dt.date() > today.date() and not m.group(3):
+            dt = dt.replace(year=year - 1)
+        return dt
 
-  # -------------------------
-  # NORWAY — expanded coverage
-  # -------------------------
-  - key: inat_fin_whale_norway
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera physalus"
-    place_query: "Norway"
-    area: "Norway (offshore)"
-    latitude: 68.5
-    longitude: 14.8
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Fin Whale"]
+    return None
 
-  - key: inat_blue_whale_norway
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera musculus"
-    place_query: "Norway"
-    area: "Norway (offshore)"
-    latitude: 69.0
-    longitude: 16.5
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Blue Whale"]
+def detect_species(text: str, force: Optional[List[str]] = None) -> List[str]:
+    if force:
+        return [s for s in force if s in ALLOWED_SPECIES]
 
-  - key: inat_humpback_norway_south
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Vestland"
-    area: "Vestland, Norway (offshore)"
-    latitude: 60.8
-    longitude: 4.5
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
+    t = (text or "").lower()
+    hits: List[str] = []
 
-  - key: inat_orca_norway_lofoten
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Nordland"
-    area: "Nordland / Lofoten, Norway (offshore)"
-    latitude: 68.2
-    longitude: 14.3
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
+    if any(k in t for k in ["orca", "killer whale", "killer whales", "bigg", "southern resident"]):
+        hits.append("Orca")
+    if "humpback" in t:
+        hits.append("Humpback")
+    if "sperm whale" in t or "spermwhale" in t:
+        hits.append("Sperm whale")
+    if any(k in t for k in ["great white", "white shark"]):
+        hits.append("Great White Shark")
+    if "blue whale" in t or "bluewhale" in t:
+        hits.append("Blue Whale")
+    if any(k in t for k in ["gray whale", "grey whale", "eschrichtius"]):
+        hits.append("Gray Whale")
+    if any(k in t for k in ["fin whale", "finback", "balaenoptera physalus"]):
+        hits.append("Fin Whale")
+
+    seen = set()
+    out: List[str] = []
+    for s in hits:
+        if s in ALLOWED_SPECIES and s not in seen:
+            out.append(s)
+            seen.add(s)
+    return out
+
+def safe_float(x: Any) -> Optional[float]:
+    try:
+        return float(x)
+    except Exception:
+        return None
+
+def try_extract_entry_latlon(entry: Any) -> Optional[Tuple[float, float]]:
+    lat = safe_float(entry.get("geo_lat"))
+    lon = safe_float(entry.get("geo_long"))
+    if lat is not None and lon is not None:
+        return lat, lon
+
+    gp = entry.get("georss_point") or entry.get("georss:point")
+    if isinstance(gp, str):
+        m = re.search(r"(-?\d+(?:\.\d+)?)\s+(-?\d+(?:\.\d+)?)", gp.strip())
+        if m:
+            lat = safe_float(m.group(1))
+            lon = safe_float(m.group(2))
+            if lat is not None and lon is not None:
+                return lat, lon
+
+    return None
+
+
+def normalize_license_code(value: Any) -> Optional[str]:
+    if value is None:
+        return None
+    s = str(value).strip().lower()
+    return s or None
+
+def normalize_allowed_license_set(raw: Any) -> Optional[set[str]]:
+    if raw is None:
+        return None
+    if not isinstance(raw, list):
+        return None
+
+    out = set()
+    for item in raw:
+        norm = normalize_license_code(item)
+        if norm:
+            out.add(norm)
+    return out if out else None
+
+def upgrade_inat_photo_url(url: str, size: str = "medium") -> str:
+    if not url:
+        return url
+
+    replacements = [
+        ("/square.", f"/{size}."),
+        ("/thumb.", f"/{size}."),
+        ("/small.", f"/{size}."),
+        ("/medium.", f"/{size}."),
+        ("/large.", f"/{size}."),
+    ]
+
+    upgraded = url
+    for old, new in replacements:
+        if old in upgraded:
+            upgraded = upgraded.replace(old, new)
+            break
+
+    return upgraded
+
+def extract_inat_photo_data(
+    obs: Dict[str, Any],
+    allowed_licenses: Optional[set[str]],
+) -> Tuple[Optional[str], Optional[str], Optional[str]]:
+    photos = obs.get("photos") or []
+    if not isinstance(photos, list):
+        return None, None, None
+
+    fallback: Optional[Tuple[Optional[str], Optional[str], Optional[str]]] = None
+
+    for photo in photos:
+        if not isinstance(photo, dict):
+            continue
+
+        license_code = normalize_license_code(photo.get("license_code"))
+        attribution = (photo.get("attribution") or "").strip() or None
+
+        url = (
+            photo.get("url")
+            or photo.get("medium_url")
+            or photo.get("large_url")
+            or photo.get("small_url")
+            or photo.get("thumb_url")
+            or photo.get("square_url")
+            or ""
+        )
+        url = str(url).strip()
+        if not url:
+            continue
+
+        url = upgrade_inat_photo_url(url, size="medium")
+
+        candidate = (url, license_code, attribution)
+
+        if fallback is None:
+            fallback = candidate
+
+        if allowed_licenses is None:
+            return candidate
+
+        if license_code and license_code in allowed_licenses:
+            return candidate
+
+    if allowed_licenses is None:
+        return fallback if fallback else (None, None, None)
+
+    return None, None, None
+
+
+@dataclass
+class Candidate:
+    date: datetime
+    species: str
+    name: str
+    info: str
+    area: str
+    source: str
+    latitude: float
+    longitude: float
+    behaviors: List[str]
+    source_key: str
+    photo_url: Optional[str] = None
+    photo_license: Optional[str] = None
+    photo_attribution: Optional[str] = None
+    individual_id: Optional[str] = None
+    individual_name: Optional[str] = None
+
+
+# -------------------------
+# Generic "dated sections" extraction (HTML)
+# -------------------------
+
+def extract_dated_sections(text: str, tz_name: str, today: datetime) -> List[Tuple[datetime, str]]:
+    patterns = [
+        r"\b\d{4}-\d{2}-\d{2}\b",
+        r"\b\d{1,2}/\d{1,2}/\d{2,4}\b",
+        r"\b\d{1,2}\.\d{1,2}\.\d{2,4}\b",
+        rf"\b(?:{'|'.join(MONTHS)})\s+\d{{1,2}}(?:,?\s+\d{{4}})?\b",
+    ]
+
+    matches: List[Tuple[int, int, str]] = []
+    for pat in patterns:
+        for m in re.finditer(pat, text):
+            matches.append((m.start(), m.end(), m.group(0)))
+
+    if not matches:
+        return []
+
+    matches.sort(key=lambda x: x[0])
+
+    cleaned: List[Tuple[int, int, str]] = []
+    last_end = -1
+    for s, e, val in matches:
+        if s < last_end:
+            continue
+        cleaned.append((s, e, val))
+        last_end = e
+
+    out: List[Tuple[datetime, str]] = []
+    for i, (s, e, dstr) in enumerate(cleaned):
+        dt = best_effort_parse_date(dstr, tz_name, today)
+        if not dt:
+            continue
+        section_start = e
+        section_end = cleaned[i + 1][0] if i + 1 < len(cleaned) else len(text)
+        section = text[section_start:section_end].strip()
+        if len(section) < 20:
+            continue
+        out.append((dt, section))
+
+    return out
+
+def build_candidates_from_generic_html(
+    cfg: Dict[str, Any],
+    session: requests.Session,
+    tz_name: str,
+    source_key: str,
+) -> List[Candidate]:
+    url = cfg["url"]
+    area = (cfg.get("area", "") or "").strip()
+    lat0 = float(cfg.get("latitude", 0.0))
+    lon0 = float(cfg.get("longitude", 0.0))
+    max_items = int(cfg.get("max_items", 10))
+
+    text = fetch_text(session, url)
+    today = now_local(tz_name)
+
+    force_species: Optional[List[str]] = None
+    fs = cfg.get("force_species")
+    if fs:
+        force_species = [str(x) for x in (fs if isinstance(fs, list) else [fs])]
+
+    sections = extract_dated_sections(text, tz_name, today)
+    candidates: List[Candidate] = []
+
+    def add_candidate(dt: datetime, blob: str, species: str) -> None:
+        nud = cfg.get("uncertain_offshore_nudge") or {}
+        lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
+
+        fixed = ensure_ocean(lat, lon)
+        if not fixed:
+            return
+        lat2, lon2 = fixed
+
+        name = f"{species} sighting ({area})" if area else f"{species} sighting"
+        info = f"Parsed from {source_key} on {to_date_str(dt)}."
+        candidates.append(
+            Candidate(
+                date=dt,
+                species=species,
+                name=name,
+                info=info,
+                area=area,
+                source=url,
+                latitude=float(lat2),
+                longitude=float(lon2),
+                behaviors=infer_behaviors(blob),
+                source_key=source_key,
+            )
+        )
+
+    if sections:
+        for dt, section in sections:
+            species_list = detect_species(section, force=force_species)
+            for species in species_list[:2]:
+                add_candidate(dt, section, species)
+    else:
+        dt = parse_date_from_url(url, tz_name) or today
+        species_list = detect_species(text, force=force_species)
+        for species in species_list[:2]:
+            add_candidate(dt, text, species)
+
+    candidates.sort(key=lambda c: c.date, reverse=True)
+    return candidates[:max_items]
+
+
+# -------------------------
+# RSS/Atom parser
+# -------------------------
+
+def parse_rss_feed(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
+    url = cfg["url"]
+    area = (cfg.get("area", "") or "").strip()
+    lat0 = float(cfg.get("latitude", 0.0))
+    lon0 = float(cfg.get("longitude", 0.0))
+    max_items = int(cfg.get("max_items", 10))
+
+    force_species: Optional[List[str]] = None
+    fs = cfg.get("force_species")
+    if fs:
+        force_species = [str(x) for x in (fs if isinstance(fs, list) else [fs])]
+
+    r = session.get(url, timeout=45)
+    r.raise_for_status()
+    feed = feedparser.parse(r.content)
+
+    today = now_local(tz_name)
+    candidates: List[Candidate] = []
+
+    for entry in feed.entries[: max_items * 4]:
+        title = (entry.get("title") or "").strip()
+        summary = (entry.get("summary") or entry.get("description") or "").strip()
+        link = (entry.get("link") or url).strip()
+
+        blob = (title + "\n" + summary).strip()
+
+        species_list = detect_species(blob, force=force_species)
+        if not species_list:
+            continue
+
+        st = entry.get("published_parsed") or entry.get("updated_parsed")
+        if st:
+            dt = datetime.fromtimestamp(time.mktime(st), tz=tz.UTC).astimezone(tz.gettz(tz_name))
+        else:
+            dt = parse_date_from_url(link, tz_name) or parse_date_from_url(url, tz_name) or today
+
+        latlon = try_extract_entry_latlon(entry)
+        if latlon:
+            lat, lon = latlon
+        else:
+            nud = cfg.get("uncertain_offshore_nudge") or {}
+            lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
+
+        fixed = ensure_ocean(lat, lon)
+        if not fixed:
+            continue
+        lat2, lon2 = fixed
+
+        species = species_list[0]
+        name = f"{species} sighting ({area})" if area else f"{species} sighting"
+        info = f"From RSS feed {source_key} on {to_date_str(dt)}."
+
+        candidates.append(
+            Candidate(
+                date=dt,
+                species=species,
+                name=name,
+                info=info,
+                area=area,
+                source=link or url,
+                latitude=float(lat2),
+                longitude=float(lon2),
+                behaviors=infer_behaviors(blob),
+                source_key=source_key,
+            )
+        )
+
+        if len(candidates) >= max_items:
+            break
+
+    candidates.sort(key=lambda c: c.date, reverse=True)
+    return candidates[:max_items]
+
+
+# -------------------------
+# Specific parser: Orca Network
+# -------------------------
+
+def parse_orcanetwork_recent_sightings(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
+    url = cfg["url"]
+    area_default = (cfg.get("area", "") or "").strip()
+    lat_fallback = float(cfg.get("latitude", 0.0))
+    lon_fallback = float(cfg.get("longitude", 0.0))
+    max_items = int(cfg.get("max_items", 18))
+
+    html = session.get(url, timeout=45).text
+    text = normalize_text(html)
+
+    month_re = r"(January|February|March|April|May|June|July|August|September|October|November|December)"
+    heading_pat = re.compile(rf"^(?P<month>{month_re})\s+(?P<day>\d{{1,2}})\s*$", re.MULTILINE)
+
+    matches = list(heading_pat.finditer(text))
+    if not matches:
+        return []
+
+    today = now_local(tz_name)
+    year = today.year
+
+    loc_coords = {
+        "admiralty inlet": (48.15, -122.80),
+        "haro strait": (48.50, -123.20),
+        "puget sound": (47.90, -122.55),
+        "san juans": (48.55, -123.05),
+        "possession sound": (47.95, -122.35),
+        "hood canal": (47.70, -122.95),
+        "saratoga passage": (48.10, -122.45),
+    }
+
+    def best_coords(block: str) -> Tuple[float, float, bool]:
+        b = block.lower()
+        for k, (la, lo) in loc_coords.items():
+            if k in b:
+                return la, lo, False
+        return lat_fallback, lon_fallback, True
+
+    out: List[Candidate] = []
+
+    for i, m in enumerate(matches):
+        start = m.end()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        block = text[start:end].strip()
+
+        month_name = m.group("month")
+        day = int(m.group("day"))
+
+        dt = datetime.strptime(f"{year} {month_name} {day}", "%Y %B %d").replace(tzinfo=tz.gettz(tz_name))
+        if dt.date() > today.date():
+            dt = dt.replace(year=year - 1)
+
+        species_hits: List[str] = []
+        if re.search(r"KILLER\s+WHALES|SOUTHERN\s+RESIDENTS|ORCA\b", block, re.IGNORECASE):
+            species_hits.append("Orca")
+        if re.search(r"HUMPBACK", block, re.IGNORECASE):
+            species_hits.append("Humpback")
+        if re.search(r"SPERM\s+WHALE", block, re.IGNORECASE):
+            species_hits.append("Sperm whale")
+        if re.search(r"GREAT\s+WHITE|WHITE\s+SHARK", block, re.IGNORECASE):
+            species_hits.append("Great White Shark")
+        if re.search(r"BLUE\s+WHALE", block, re.IGNORECASE):
+            species_hits.append("Blue Whale")
+        if re.search(r"GRAY\s+WHALE|GREY\s+WHALE", block, re.IGNORECASE):
+            species_hits.append("Gray Whale")
+        if re.search(r"FIN\s+WHALE|FINBACK", block, re.IGNORECASE):
+            species_hits.append("Fin Whale")
+
+        for species in species_hits[:2]:
+            if species not in ALLOWED_SPECIES:
+                continue
+
+            lat, lon, uncertain = best_coords(block)
+            if uncertain and "uncertain_offshore_nudge" in cfg:
+                nud = cfg["uncertain_offshore_nudge"]
+                lat, lon = clamp_nudge(lat, lon, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
+
+            fixed = ensure_ocean(lat, lon)
+            if not fixed:
+                continue
+            lat2, lon2 = fixed
+
+            area = area_default or "Salish Sea (offshore)"
+            name = f"{species} sighting ({area})"
+            info = f"Orca Network recent sightings indicates {species} on {to_date_str(dt)}."
+
+            out.append(
+                Candidate(
+                    date=dt,
+                    species=species,
+                    name=name,
+                    info=info,
+                    area=area,
+                    source=url,
+                    latitude=float(lat2),
+                    longitude=float(lon2),
+                    behaviors=infer_behaviors(block),
+                    source_key=source_key,
+                )
+            )
+
+    out.sort(key=lambda c: c.date, reverse=True)
+    return out[:max_items]
+
+
+# -------------------------
+# iNaturalist API parser
+# -------------------------
+
+INAT_BASE = "https://api.inaturalist.org/v1"
+_inat_place_cache: Dict[str, Optional[int]] = {}
+
+def _inat_place_id(session: requests.Session, place_query: str) -> Optional[int]:
+    place_query = (place_query or "").strip()
+    if not place_query:
+        return None
+    if place_query in _inat_place_cache:
+        return _inat_place_cache[place_query]
+
+    try:
+        r = session.get(f"{INAT_BASE}/places/autocomplete", params={"q": place_query}, timeout=30)
+        r.raise_for_status()
+        data = r.json() or {}
+        results = data.get("results") or []
+        pid = results[0].get("id") if results else None
+        pid = int(pid) if pid is not None else None
+        _inat_place_cache[place_query] = pid
+        time.sleep(0.15)
+        return pid
+    except Exception:
+        _inat_place_cache[place_query] = None
+        return None
+
+def _inat_obs_datetime(obs: Dict[str, Any], tz_name: str, fallback: datetime) -> datetime:
+    tzinfo = tz.gettz(tz_name)
+
+    observed_on = (obs.get("observed_on") or "").strip()
+    if observed_on:
+        try:
+            y, m, d = observed_on.split("-")
+            return datetime(int(y), int(m), int(d), 12, 0, 0, tzinfo=tzinfo)
+        except Exception:
+            pass
+
+    time_observed_at = (obs.get("time_observed_at") or "").strip()
+    if time_observed_at:
+        try:
+            dt = datetime.fromisoformat(time_observed_at.replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=tzinfo)
+            return dt.astimezone(tzinfo)
+        except Exception:
+            pass
+
+    created_at = (obs.get("created_at") or "").strip()
+    if created_at:
+        try:
+            dt = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=tzinfo)
+            return dt.astimezone(tzinfo)
+        except Exception:
+            pass
+
+    return fallback
+
+def _inat_obs_latlon(obs: Dict[str, Any]) -> Optional[Tuple[float, float]]:
+    gj = obs.get("geojson") or {}
+    coords = gj.get("coordinates")
+    if isinstance(coords, (list, tuple)) and len(coords) == 2:
+        lon = safe_float(coords[0])
+        lat = safe_float(coords[1])
+        if lat is not None and lon is not None:
+            return lat, lon
+
+    loc = (obs.get("location") or "").strip()
+    if loc and "," in loc:
+        try:
+            a, b = [x.strip() for x in loc.split(",", 1)]
+            lat = safe_float(a)
+            lon = safe_float(b)
+            if lat is not None and lon is not None:
+                return lat, lon
+        except Exception:
+            pass
+
+    return None
+
+def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
+    taxon_name = (cfg.get("taxon_name") or "").strip()
+    if not taxon_name:
+        return []
+
+    place_query = (cfg.get("place_query") or "").strip()
+    place_id = _inat_place_id(session, place_query) if place_query else None
+
+    max_items = int(cfg.get("max_items", 3))
+    area_default = (cfg.get("area", "") or "").strip()
+    lat0 = float(cfg.get("latitude", 0.0))
+    lon0 = float(cfg.get("longitude", 0.0))
+
+    force_species: Optional[List[str]] = None
+    fs = cfg.get("force_species")
+    if fs:
+        force_species = [str(x) for x in (fs if isinstance(fs, list) else [fs])]
+
+    allowed_licenses = normalize_allowed_license_set(cfg.get("allowed_photo_licenses"))
+    if allowed_licenses is None:
+        allowed_licenses = GLOBAL_ALLOWED_INAT_PHOTO_LICENSES
+
+    today = now_local(tz_name)
+    d2 = today.date().isoformat()
+    d1 = (today - timedelta(days=int(GLOBAL_MAX_DAYS))).date().isoformat()
+
+    params: Dict[str, Any] = {
+        "taxon_name": taxon_name,
+        "d1": d1,
+        "d2": d2,
+        "order": "desc",
+        "order_by": "observed_on",
+        "geo": "true",
+        "verifiable": "true",
+        "captive": "false",
+        "per_page": 100,
+    }
+    # Bounding box takes priority over place_id — catches unassigned-place ocean observations
+    if cfg.get("swlat") is not None:
+        params["swlat"] = float(cfg["swlat"])
+        params["swlng"] = float(cfg["swlng"])
+        params["nelat"] = float(cfg["nelat"])
+        params["nelng"] = float(cfg["nelng"])
+    elif place_id:
+        params["place_id"] = place_id
+
+    r = session.get(f"{INAT_BASE}/observations", params=params, timeout=30)
+    r.raise_for_status()
+    data = r.json() or {}
+    results = data.get("results") or []
+    time.sleep(0.15)
+
+    out: List[Candidate] = []
+    for obs in results:
+        if len(out) >= max_items:
+            break
+
+        dt = _inat_obs_datetime(obs, tz_name, today)
+
+        latlon = _inat_obs_latlon(obs)
+        if latlon:
+            lat, lon = latlon
+        else:
+            nud = cfg.get("uncertain_offshore_nudge") or {}
+            lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
+
+        fixed = ensure_ocean(lat, lon)
+        if not fixed:
+            continue
+        lat2, lon2 = fixed
+
+        uri = (obs.get("uri") or "").strip()
+        obs_id = obs.get("id")
+        source_url = uri or (f"https://www.inaturalist.org/observations/{obs_id}" if obs_id else "https://www.inaturalist.org")
+
+        place_guess = (obs.get("place_guess") or "").strip()
+        area = place_guess or area_default or (place_query if place_query else "iNaturalist")
+
+        user = (obs.get("user") or {}).get("login") or "iNaturalist user"
+        description = (obs.get("description") or "").strip()
+
+        common_name = ((obs.get("taxon") or {}).get("preferred_common_name") or "").strip()
+        sci = ((obs.get("taxon") or {}).get("name") or "").strip()
+        blob = f"{common_name}\n{sci}\n{description}".strip()
+
+        species_list = detect_species(blob, force=force_species)
+        if not species_list:
+            continue
+
+        photo_url, photo_license, photo_attribution = extract_inat_photo_data(
+            obs=obs,
+            allowed_licenses=allowed_licenses,
+        )
+
+        # --- Individual whale ID extraction ---
+        ind_id: Optional[str] = None
+        ind_name: Optional[str] = None
+        # 1. Check OFVs for catalog number fields
+        for ofv in obs.get("ofvs", []):
+            field_name = (ofv.get("field", {}).get("name") or "").lower().strip()
+            value = (ofv.get("value") or "").strip()
+            if field_name in OFV_ID_FIELDS and value:
+                ind_id = re.sub(r"[\s\-]+", "_", value.lower())
+                break
+        # 2. Scan description + tags for known patterns
+        if not ind_id:
+            search_text = " ".join([
+                description,
+                " ".join(t.get("name", "") for t in obs.get("tags", [])),
+            ])
+            for pattern, normaliser in CATALOG_PATTERNS:
+                m = pattern.search(search_text)
+                if m:
+                    ind_id = normaliser(m)
+                    break
+        if ind_id:
+            ind_name = KNOWN_INDIVIDUALS.get(ind_id) or ind_id.upper().replace("_", " ")
+        # --- end individual extraction ---
+
+        species = species_list[0]
+        name = f"{species} sighting ({area})"
+        info = f"iNaturalist observation by {user}."
+
+        out.append(
+            Candidate(
+                date=dt,
+                species=species,
+                name=name,
+                info=info,
+                area=area,
+                source=source_url,
+                latitude=float(lat2),
+                longitude=float(lon2),
+                behaviors=infer_behaviors(blob),
+                source_key=source_key,
+                photo_url=photo_url,
+                photo_license=photo_license,
+                photo_attribution=photo_attribution,
+                individual_id=ind_id,
+                individual_name=ind_name,
+            )
+        )
+
+    out.sort(key=lambda c: c.date, reverse=True)
+    return out[:max_items]
+
+
+
+# -------------------------
+# OBIS API parser
+# -------------------------
+
+def parse_obis_api(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
+    """Pull recent cetacean/shark sightings from the OBIS REST API (api.obis.org/v3).
+    No API key required. Uses WoRMS AphiaIDs for precise species matching.
+    sources.yml keys: aphia_id (int), force_species, area, latitude, longitude, max_items.
+    """
+    max_items = int(cfg.get("max_items", 5))
+    area_default = (cfg.get("area", "") or "").strip()
+    lat0 = float(cfg.get("latitude", 0.0))
+    lon0 = float(cfg.get("longitude", 0.0))
+
+    force_species: Optional[List[str]] = None
+    fs = cfg.get("force_species")
+    if fs:
+        force_species = [str(x) for x in (fs if isinstance(fs, list) else [fs])]
+
+    today = now_local(tz_name)
+    d1 = (today - timedelta(days=int(GLOBAL_MAX_DAYS))).date().isoformat()
+    d2 = today.date().isoformat()
+
+    aphia_id = cfg.get("aphia_id")
+    taxon_name = (cfg.get("taxon_name") or "").strip()
+
+    params: Dict[str, Any] = {
+        "startdate": d1,
+        "enddate": d2,
+        "size": min(max_items * 6, 100),
+        "offset": 0,
+    }
+    if aphia_id:
+        params["taxonid"] = int(aphia_id)
+    elif taxon_name:
+        params["scientificname"] = taxon_name
+    else:
+        params["taxonid"] = 2688  # Cetacea infraorder fallback
+
+    try:
+        r = session.get(f"{OBIS_BASE}/occurrence", params=params, timeout=30)
+        r.raise_for_status()
+        data = r.json() or {}
+    except Exception as e:
+        print(f"[obis_api:{source_key}] fetch error: {e}")
+        return []
+
+    results = data.get("results") or []
+    time.sleep(0.2)
+
+    out: List[Candidate] = []
+    for obs in results:
+        if len(out) >= max_items:
+            break
+
+        event_date = (obs.get("eventDate") or "").strip()
+        if not event_date:
+            continue
+        try:
+            date_part = event_date[:10]
+            y, mo, d = date_part.split("-")
+            dt = datetime(int(y), int(mo), int(d), 12, 0, 0, tzinfo=tz.gettz(tz_name))
+        except Exception:
+            continue
+
+        if not within_window(dt, today, GLOBAL_MAX_DAYS):
+            continue
+
+        lat = safe_float(obs.get("decimalLatitude"))
+        lon = safe_float(obs.get("decimalLongitude"))
+        if lat is None or lon is None:
+            nud = cfg.get("uncertain_offshore_nudge") or {}
+            lat, lon = clamp_nudge(lat0, lon0, float(nud.get("dlat", 0.0)), float(nud.get("dlon", 0.0)))
+
+        fixed = ensure_ocean(lat, lon)
+        if not fixed:
+            continue
+        lat2, lon2 = fixed
+
+        sci_name = (obs.get("scientificName") or "").strip()
+        common_name = (obs.get("vernacularName") or "").strip()
+        blob = f"{sci_name} {common_name}"
+
+        obs_aphia = obs.get("aphiaID") or obs.get("speciesid")
+        species_list: List[str] = []
+        if obs_aphia and int(obs_aphia) in OBIS_TAXON_MAP:
+            species_list = [OBIS_TAXON_MAP[int(obs_aphia)]]
+        else:
+            species_list = detect_species(blob, force=force_species)
+
+        if force_species:
+            species_list = force_species
+
+        if not species_list:
+            continue
+
+        locality = (obs.get("locality") or obs.get("waterBody") or area_default or "").strip()
+        area = locality or area_default
+
+        dataset_name = (obs.get("datasetName") or "OBIS").strip()
+        occurrence_id = (obs.get("occurrenceID") or obs.get("id") or "").strip()
+        source_url = f"https://obis.org/occurrence/{occurrence_id}" if occurrence_id else "https://obis.org"
+
+        institution = (obs.get("institutionCode") or obs.get("ownerInstitutionCode") or "").strip()
+        count_str = obs.get("individualCount")
+        count_note = f" ({count_str} individuals)" if count_str else ""
+
+        species = species_list[0]
+        name = f"{species} sighting ({area})" if area else f"{species} sighting"
+        info = f"OBIS record from {dataset_name}{count_note}. Observed {date_part}."
+        if institution:
+            info += f" Source: {institution}."
+
+        out.append(
+            Candidate(
+                date=dt,
+                species=species,
+                name=name,
+                info=info,
+                area=area,
+                source=source_url,
+                latitude=float(lat2),
+                longitude=float(lon2),
+                behaviors=infer_behaviors(blob),
+                source_key=source_key,
+            )
+        )
+
+    out.sort(key=lambda c: c.date, reverse=True)
+    return out[:max_items]
+
+
+# -------------------------
+# Parsers mapping
+# -------------------------
+
+def parse_generic_html(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
+    return build_candidates_from_generic_html(cfg, session, tz_name, source_key)
+
+
+
+# -------------------------
+# Acartia Data Cooperative parser
+# -------------------------
+
+ACARTIA_BASE = "https://acartia.io/api/v1"
+
+ACARTIA_SPECIES_MAP = {
+    "killer whale":                     "Orca",
+    "orca":                             "Orca",
+    "southern resident killer whale":   "Orca",
+    "bigg's killer whale":              "Orca",
+    "transient killer whale":           "Orca",
+    "humpback whale":                   "Humpback",
+    "humpback":                         "Humpback",
+    "gray whale":                       "Gray Whale",
+    "grey whale":                       "Gray Whale",
+    "minke whale":                      "Fin Whale",
+    "fin whale":                        "Fin Whale",
+    "blue whale":                       "Blue Whale",
+    "sperm whale":                      "Sperm whale",
+    "sei whale":                        "Fin Whale",
+    "north pacific right whale":        "Fin Whale",
+    "bowhead whale":                    "Fin Whale",
+    "beluga whale":                     "Orca",
+    "dall's porpoise":                  "Orca",
+    "harbour porpoise":                 "Orca",
+    "pacific white-sided dolphin":      "Orca",
+}
+
+
+def _infer_acartia_region(lat: float, lon: float) -> str:
+    if 47.0 <= lat <= 50.5 and -125.5 <= lon <= -121.5:
+        return "Salish Sea (offshore), BC/WA"
+    if lat >= 54.0 and -170.0 <= lon <= -130.0:
+        return "Alaska (offshore)"
+    if 32.0 <= lat <= 42.0 and -125.0 <= lon <= -116.0:
+        return "California (offshore)"
+    if 42.0 <= lat <= 49.0 and -127.0 <= lon <= -123.5:
+        return "Pacific NW (offshore)"
+    if 18.0 <= lat <= 23.0 and -162.0 <= lon <= -154.0:
+        return "Hawaii (offshore)"
+    return f"Ocean ({lat:.1f}, {lon:.1f})"
+
+
+def parse_acartia_api(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
+    """Pull trusted whale sightings from the Acartia data cooperative."""
+    import os as _os
+    token = _os.environ.get("ACARTIA_TOKEN", "").strip()
+    max_items = int(cfg.get("max_items", 10))
+    trusted_only = bool(cfg.get("trusted_only", True))
+    filter_source = (cfg.get("data_source_name") or "").strip().lower()
+    today = now_local(tz_name)
+    candidates: List[Candidate] = []
+    try:
+        if token:
+            resp = session.get(
+                f"{ACARTIA_BASE}/sightings/trusted",
+                headers={"Authorization": f"Bearer {token}"},
+                timeout=30,
+            )
+        else:
+            resp = session.get(f"{ACARTIA_BASE}/sightings/current", timeout=30)
+        resp.raise_for_status()
+        records = resp.json() or []
+        time.sleep(0.2)
+    except Exception as e:
+        print(f"[acartia_api:{source_key}] fetch error: {e}")
+        return []
+    for rec in records:
+        if len(candidates) >= max_items * 3:
+            break
+        if trusted_only and str(rec.get("trusted", "0")) not in ("1", "true", "True"):
+            continue
+        if filter_source:
+            if (rec.get("data_source_name") or "").lower() != filter_source:
+                continue
+        raw_species = (rec.get("species") or "").lower().strip()
+        species = ACARTIA_SPECIES_MAP.get(raw_species)
+        if not species:
+            continue
+        created_raw = (rec.get("created") or "").strip()
+        try:
+            dt = datetime.strptime(created_raw, "%Y-%m-%d %H:%M:%S")
+            dt = dt.replace(tzinfo=tz.UTC).astimezone(tz.gettz(tz_name))
+        except ValueError:
+            try:
+                dt = datetime.fromisoformat(created_raw.replace("Z", "+00:00")).astimezone(tz.gettz(tz_name))
+            except Exception:
+                continue
+        if not within_window(dt, today, GLOBAL_MAX_DAYS):
+            continue
+        lat = safe_float(rec.get("latitude") or rec.get("lat"))
+        lon = safe_float(rec.get("longitude") or rec.get("lng") or rec.get("lon"))
+        if lat is None or lon is None:
+            continue
+        fixed = ensure_ocean(lat, lon)
+        if not fixed:
+            continue
+        lat2, lon2 = fixed
+        no_sighted = rec.get("no_sighted")
+        area_raw = (rec.get("area") or rec.get("location_name") or "").strip()
+        if not area_raw:
+            area_raw = _infer_acartia_region(lat2, lon2)
+        count_note = f" ({no_sighted} sighted)" if no_sighted else ""
+        info = f"Acartia cooperative sighting{count_note}. Source: {rec.get('data_source_name', 'acartia.io')}."
+        name = f"{species} sighting ({area_raw})"
+        candidates.append(Candidate(
+            date=dt,
+            species=species,
+            name=name,
+            info=info,
+            area=area_raw,
+            source="https://acartia.io",
+            latitude=float(lat2),
+            longitude=float(lon2),
+            behaviors=["reported"],
+            source_key=source_key,
+        ))
+    candidates.sort(key=lambda c: c.date, reverse=True)
+    return candidates[:max_items]
+
+PARSERS = {
+    "orcanetwork_recent_sightings": parse_orcanetwork_recent_sightings,
+
+    "generic_dated_page": parse_generic_html,
+    "generic_article": parse_generic_html,
+    "article_basic": parse_generic_html,
+
+    "eaglewing_daily_sighting_report": parse_generic_html,
+    "victoriawhalewatching_captains_log": parse_generic_html,
+    "montereybay_sightings": parse_generic_html,
+    "dolphinsafari_sightings_log": parse_generic_html,
+    "hawaiianadventures_weekly_whale_report": parse_generic_html,
+    "whalewatchingakureyri_blog": parse_generic_html,
+    "elding_whale_diary": parse_generic_html,
+    "seatrips_whale_diary": parse_generic_html,
+    "whalewatchwesternaustralia_daily": parse_generic_html,
+    "pirsa_shark_sightings": parse_generic_html,
+
+    "rss_feed": parse_rss_feed,
+    "inaturalist_api": parse_inaturalist_api,
+    "obis_api": parse_obis_api,
+    "acartia_api": parse_acartia_api,
+}
+
+
+# -------------------------
+# Selection to hit target_total / ratios / recency
+# -------------------------
+
+def compute_species_targets(cfg: Dict[str, Any], total: int) -> Dict[str, int]:
+    ratios = cfg.get("species_targets") or {}
+    wanted: Dict[str, int] = {}
+    for sp, frac in ratios.items():
+        try:
+            sp = str(sp)
+            frac = float(frac)
+        except Exception:
+            continue
+        if sp not in ALLOWED_SPECIES:
+            continue
+        wanted[sp] = int(round(total * frac))
+
+    for sp in ALLOWED_SPECIES:
+        wanted.setdefault(sp, 0)
+
+    s = sum(wanted.values())
+    if s == 0:
+        return wanted
+
+    if s != total:
+        order = ["Orca", "Humpback", "Great White Shark", "Sperm whale", "Blue Whale"]
+        diff = total - s
+        i = 0
+        while diff != 0 and i < 1000:
+            sp = order[i % len(order)]
+            wanted[sp] = max(0, wanted.get(sp, 0) + (1 if diff > 0 else -1))
+            diff = total - sum(wanted.values())
+            i += 1
+
+    return wanted
+
+def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name: str) -> List[Candidate]:
+    total = int(cfg.get("target_total", 80))
+    min_recent_days = int(cfg.get("min_recent_days", 7))
+    min_recent_fraction = float(cfg.get("min_recent_fraction", 0.5))
+
+    now_dt = now_local(tz_name)
+    wanted = compute_species_targets(cfg, total)
+
+    by_species: Dict[str, List[Candidate]] = {sp: [] for sp in ALLOWED_SPECIES}
+    for c in candidates:
+        if c.species in by_species:
+            by_species[c.species].append(c)
+    for sp in by_species:
+        by_species[sp].sort(key=lambda x: x.date, reverse=True)
+
+    def is_recent(c: Candidate) -> bool:
+        return (now_dt.date() - c.date.date()).days <= min_recent_days
+
+    chosen: List[Candidate] = []
+    chosen_keys = set()
+
+    def pick_one(c: Candidate) -> None:
+        k = (to_date_str(c.date), c.species, c.area, c.source)
+        if k in chosen_keys:
+            return
+        chosen.append(c)
+        chosen_keys.add(k)
+
+    need_recent = int((total * min_recent_fraction) + 0.9999)
+    recent_count = 0
+
+    species_order = sorted(wanted.keys(), key=lambda s: wanted[s], reverse=True)
+
+    progressed = True
+    while recent_count < need_recent and progressed:
+        progressed = False
+        for sp in species_order:
+            if wanted.get(sp, 0) <= 0:
+                continue
+            for c in by_species[sp]:
+                if not is_recent(c):
+                    break
+                k = (to_date_str(c.date), c.species, c.area, c.source)
+                if k in chosen_keys:
+                    continue
+                pick_one(c)
+                wanted[sp] -= 1
+                recent_count += 1
+                progressed = True
+                break
+
+    for sp in species_order:
+        while wanted.get(sp, 0) > 0:
+            found = False
+            for c in by_species[sp]:
+                k = (to_date_str(c.date), c.species, c.area, c.source)
+                if k in chosen_keys:
+                    continue
+                pick_one(c)
+                wanted[sp] -= 1
+                found = True
+                break
+            if not found:
+                break
+
+    if len(chosen) < total:
+        remaining: List[Candidate] = []
+        for sp in by_species:
+            for c in by_species[sp]:
+                k = (to_date_str(c.date), c.species, c.area, c.source)
+                if k not in chosen_keys:
+                    remaining.append(c)
+        remaining.sort(key=lambda c: c.date, reverse=True)
+        for c in remaining:
+            if len(chosen) >= total:
+                break
+            pick_one(c)
+
+    chosen.sort(key=lambda c: c.date, reverse=True)
+    return chosen[:total]
+
+
+# -------------------------
+# JSON output
+# -------------------------
+
+def build_entries(candidates: List[Candidate]) -> List[Dict[str, Any]]:
+    candidates = sorted(candidates, key=lambda c: c.date, reverse=True)
+
+    entries: List[Dict[str, Any]] = []
+    counters: Dict[Tuple[str, str], int] = {}
+
+    for c in candidates:
+        date_str = to_date_str(c.date)
+        region_base = slugify((c.area or "").split("(")[0])[:20]
+        region = region_base if region_base else "region"
+        skey = species_key(c.species)
+
+        k = (date_str, skey)
+        counters[k] = counters.get(k, 0) + 1
+        idx = counters[k]
+        entry_id = f"{date_str}-{region}-{skey}-{idx:02d}"
+
+        entry: Dict[str, Any] = {
+            "id": entry_id,
+            "name": c.name,
+            "species": c.species,
+            "info": c.info,
+            "date": date_str,
+            "latitude": float(c.latitude),
+            "longitude": float(c.longitude),
+            "area": c.area,
+            "source": c.source,
+            "behaviors": c.behaviors,
+        }
+
+        if c.photo_url:
+            entry["photoURL"] = c.photo_url
+        if c.photo_license:
+            entry["photoLicense"] = c.photo_license
+        if c.photo_attribution:
+            entry["photoAttribution"] = c.photo_attribution
+        if c.individual_id:
+            entry["individualId"] = c.individual_id
+            entry["individualName"] = c.individual_name or c.individual_id
+
+        entries.append(entry)
+
+    entries.sort(key=lambda e: e["date"], reverse=True)
+    return entries
+
+
+# -------------------------
+# Whale trail generation
+# -------------------------
+
+def build_whale_trails(entries: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """
+    Builds whale_trails.json from the current whale_sightings.json entries.
+    Groups sightings by individualId. Sightings sorted oldest-first so
+    MapPolyline draws in chronological order.
+    Schema: { "individual_id": { "name", "species", "sightings": [{"date","lat","lon"}] } }
+    """
+    trails: Dict[str, Dict[str, Any]] = {}
+    for entry in entries:
+        ind_id = entry.get("individualId")
+        if not ind_id:
+            continue
+        date = entry.get("date", "")
+        lat = entry.get("latitude")
+        lon = entry.get("longitude")
+        if not date or lat is None or lon is None:
+            continue
+        if ind_id not in trails:
+            trails[ind_id] = {
+                "name": entry.get("individualName") or ind_id.replace("_", " ").title(),
+                "species": entry.get("species", ""),
+                "sightings": [],
+            }
+        existing_dates = {s["date"] for s in trails[ind_id]["sightings"]}
+        if date not in existing_dates:
+            trails[ind_id]["sightings"].append({
+                "date": date,
+                "lat": round(float(lat), 6),
+                "lon": round(float(lon), 6),
+            })
+    for trail in trails.values():
+        trail["sightings"].sort(key=lambda s: s["date"])
+    # Only keep individuals with 2+ sightings
+    return {k: v for k, v in trails.items() if len(v["sightings"]) >= 2}
+
+
+def merge_existing_trails(
+    new_trails: Dict[str, Any],
+    existing_path: str,
+) -> Dict[str, Any]:
+    """
+    Merges new trails with previously saved ones so historical sightings
+    outside the current max_days window are preserved. Trails grow over time.
+    """
+    try:
+        with open(existing_path, "r", encoding="utf-8") as f:
+            existing = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        existing = {}
+
+    merged = {}
+    all_ids = set(existing.keys()) | set(new_trails.keys())
+    for ind_id in all_ids:
+        old = existing.get(ind_id, {})
+        new = new_trails.get(ind_id, {})
+        name = new.get("name") or old.get("name") or ind_id
+        species = new.get("species") or old.get("species") or ""
+        old_sightings = {s["date"]: s for s in (old.get("sightings") or [])}
+        new_sightings = {s["date"]: s for s in (new.get("sightings") or [])}
+        all_sightings = {**old_sightings, **new_sightings}
+        sorted_sightings = sorted(all_sightings.values(), key=lambda s: s["date"])
+        if len(sorted_sightings) >= 2:
+            merged[ind_id] = {
+                "name": name,
+                "species": species,
+                "sightings": sorted_sightings,
+            }
+    return merged
+
+
+# -------------------------
+# Config + main
+# -------------------------
+
+def load_config(path: str) -> Dict[str, Any]:
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return yaml.safe_load(f) or {}
+    except yaml.YAMLError as e:
+        raise RuntimeError(f"YAML parse error in {path}: {e}") from e
+
+def main() -> None:
+    global GLOBAL_MAX_DAYS
+    global GLOBAL_ALLOWED_INAT_PHOTO_LICENSES
+
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    cfg_path = os.path.join(root, "config", "sources.yml")
+    cfg = load_config(cfg_path)
+
+    tz_name = cfg.get("timezone", "America/Vancouver")
+    now_dt = now_local(tz_name)
+    max_days = int(cfg.get("max_days", 14))
+    GLOBAL_MAX_DAYS = max_days
+    GLOBAL_ALLOWED_INAT_PHOTO_LICENSES = normalize_allowed_license_set(
+        cfg.get("allowed_inat_photo_licenses")
+    )
+
+    require_landmask()
+
+    session = requests.Session()
+    session.headers.update(
+        {
+            "User-Agent": "WhaleSightingsBot/1.0 (GitHub Actions; contact: actions@users.noreply.github.com)",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        }
+    )
+
+    all_candidates: List[Candidate] = []
+
+    for s in cfg.get("sources", []):
+        source_key = str(s.get("key", "unknown")).strip() or "unknown"
+        parser_name = s.get("parser")
+        url = s.get("url", "")
+
+        if not parser_name or parser_name not in PARSERS:
+            print(f"SKIP: {source_key} (unknown parser: {parser_name}) url={url}")
+            continue
+
+        try:
+            items = PARSERS[parser_name](s, session, tz_name, source_key)
+            items = [c for c in items if within_window(c.date, now_dt, max_days)]
+            all_candidates.extend(items)
+            print(f"OK: {source_key} parser={parser_name} -> {len(items)} candidates")
+        except Exception as e:
+            print(f"WARN: {source_key} failed: {e}")
+
+    filtered = [c for c in all_candidates if within_window(c.date, now_dt, max_days)]
+    selected = select_candidates(cfg, filtered, tz_name)
+    entries = build_entries(selected)
+
+    out_path = os.path.join(root, "whale_sightings.json")
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(entries, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+    print(f"Wrote {len(entries)} entries to whale_sightings.json")
+
+    # Build + write whale_trails.json
+    trails_path = os.path.join(root, "whale_trails.json")
+    all_entries_for_trails = build_entries(all_candidates)
+    new_trails = build_whale_trails(all_entries_for_trails)
+    merged_trails = merge_existing_trails(new_trails, trails_path)
+    with open(trails_path, "w", encoding="utf-8") as f:
+        json.dump(merged_trails, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    print(f"Wrote {len(merged_trails)} whale trails to whale_trails.json")
+    for ind_id, trail in merged_trails.items():
+        pts = len(trail['sightings'])
+        print(f"  {ind_id}: {trail['name']} ({trail['species']}) — {pts} sightings")
+
+if __name__ == "__main__":
+    main()
