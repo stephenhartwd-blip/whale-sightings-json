@@ -17,6 +17,21 @@
     "photoAttribution": "(c) Jens Thalund, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-05-10-cape-town-white-01",
+    "name": "Great White Shark sighting (Cape Town (offshore), South Africa)",
+    "species": "Great White Shark",
+    "info": "Parsed from za_sharkspotters on 2026-05-10.",
+    "date": "2026-05-10",
+    "latitude": -34.12,
+    "longitude": 18.32,
+    "area": "Cape Town (offshore), South Africa",
+    "source": "https://www.sharkspotters.org.za/",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ]
+  },
+  {
     "id": "2026-05-10-united-kingdom-orca-01",
     "name": "Orca sighting (United Kingdom (offshore))",
     "species": "Orca",
@@ -207,38 +222,32 @@
     ]
   },
   {
-    "id": "2026-05-09-massachusetts-us-humpback-01",
-    "name": "Humpback sighting (Massachusetts, US)",
+    "id": "2026-05-09-monterey-bay-ca-us-humpback-01",
+    "name": "Humpback sighting (Monterey Bay, CA, US)",
     "species": "Humpback",
-    "info": "iNaturalist observation by chase430.",
+    "info": "iNaturalist observation by desert_daydreamer.",
     "date": "2026-05-09",
-    "latitude": 42.08553059170001,
-    "longitude": -70.2108134354,
-    "area": "Massachusetts, US",
-    "source": "https://www.inaturalist.org/observations/360054329",
+    "latitude": 36.7756003046,
+    "longitude": -121.9693156255,
+    "area": "Monterey Bay, CA, US",
+    "source": "https://www.inaturalist.org/observations/360225876",
     "behaviors": [
       "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656977995/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Chase Gravatt, some rights reserved (CC BY-NC)"
+    ]
   },
   {
-    "id": "2026-05-09-stellwagen-bank-humpback-02",
-    "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
+    "id": "2026-05-09-monterey-bay-ca-us-humpback-02",
+    "name": "Humpback sighting (Monterey Bay, CA, US)",
     "species": "Humpback",
-    "info": "iNaturalist observation by chase430.",
+    "info": "iNaturalist observation by desert_daydreamer.",
     "date": "2026-05-09",
-    "latitude": 42.081531252000005,
-    "longitude": -70.2399051723,
-    "area": "Stellwagen Bank (iNaturalist — Catalog)",
-    "source": "https://www.inaturalist.org/observations/360054054",
+    "latitude": 36.778344442,
+    "longitude": -121.9572799885,
+    "area": "Monterey Bay, CA, US",
+    "source": "https://www.inaturalist.org/observations/360224595",
     "behaviors": [
       "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656977376/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Chase Gravatt, some rights reserved (CC BY-NC)"
+    ]
   },
   {
     "id": "2026-05-09-washington-us-orca-01",
@@ -259,7 +268,41 @@
     "photoAttribution": "(c) Adam Martin, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-09-cap-vert-humpback-03",
+    "id": "2026-05-09-massachusetts-us-humpback-03",
+    "name": "Humpback sighting (Massachusetts, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by chase430.",
+    "date": "2026-05-09",
+    "latitude": 42.08553059170001,
+    "longitude": -70.2108134354,
+    "area": "Massachusetts, US",
+    "source": "https://www.inaturalist.org/observations/360054329",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656977995/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Chase Gravatt, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-05-09-stellwagen-bank-humpback-04",
+    "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by chase430.",
+    "date": "2026-05-09",
+    "latitude": 42.081531252000005,
+    "longitude": -70.2399051723,
+    "area": "Stellwagen Bank (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/360054054",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656977376/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Chase Gravatt, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-05-09-cap-vert-humpback-05",
     "name": "Humpback sighting (Cap-Vert)",
     "species": "Humpback",
     "info": "iNaturalist observation by vincentcarlier.",
@@ -276,7 +319,7 @@
     "photoAttribution": "(c) Vincent Carlier, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-09-eyjafjordur-humpback-04",
+    "id": "2026-05-09-eyjafjordur-humpback-06",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-05-09.",
@@ -373,23 +416,6 @@
     "photoAttribution": "(c) Alex Brown, some rights reserved (CC BY)"
   },
   {
-    "id": "2026-05-08-glacier-bay-national-humpback-01",
-    "name": "Humpback sighting (Glacier Bay National Park, Hoonah-Angoon County, US-AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by agbrown.",
-    "date": "2026-05-08",
-    "latitude": 58.557420197,
-    "longitude": -136.0833522677,
-    "area": "Glacier Bay National Park, Hoonah-Angoon County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/359738509",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656384992/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Alex Brown, some rights reserved (CC BY)"
-  },
-  {
     "id": "2026-05-08-ak-us-orca-03",
     "name": "Orca sighting (AK, US)",
     "species": "Orca",
@@ -405,23 +431,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656479970/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) crust_toucher, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-05-08-ak-us-humpback-02",
-    "name": "Humpback sighting (AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by killerwhelan.",
-    "date": "2026-05-08",
-    "latitude": 59.40163,
-    "longitude": -146.368775,
-    "area": "AK, US",
-    "source": "https://www.inaturalist.org/observations/359885445",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656655775/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) killerwhelan, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-05-08-hoonah-angoon-census-orca-04",
@@ -441,21 +450,38 @@
     "photoAttribution": "(c) Alex Brown, some rights reserved (CC BY)"
   },
   {
-    "id": "2026-05-07-nanaimo-bc-canada-humpback-01",
-    "name": "Humpback sighting (Nanaimo, BC, Canada)",
+    "id": "2026-05-08-glacier-bay-national-humpback-01",
+    "name": "Humpback sighting (Glacier Bay National Park, Hoonah-Angoon County, US-AK, US)",
     "species": "Humpback",
-    "info": "iNaturalist observation by vancouver_island_whale_watch.",
-    "date": "2026-05-07",
-    "latitude": 49.11421,
-    "longitude": -123.77363,
-    "area": "Nanaimo, BC, Canada",
-    "source": "https://www.inaturalist.org/observations/359562054",
+    "info": "iNaturalist observation by agbrown.",
+    "date": "2026-05-08",
+    "latitude": 58.557420197,
+    "longitude": -136.0833522677,
+    "area": "Glacier Bay National Park, Hoonah-Angoon County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/359738509",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656035094/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656384992/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Alex Brown, some rights reserved (CC BY)"
+  },
+  {
+    "id": "2026-05-08-ak-us-humpback-02",
+    "name": "Humpback sighting (AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by killerwhelan.",
+    "date": "2026-05-08",
+    "latitude": 59.40163,
+    "longitude": -146.368775,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/359885445",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656655775/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) vancouver_island_whale_watch, some rights reserved (CC BY-NC)"
+    "photoAttribution": "(c) killerwhelan, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-05-07-nanaimo-bc-canada-orca-01",
@@ -476,21 +502,21 @@
     "photoAttribution": "(c) vancouver_island_whale_watch, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-07-stellwagen-bank-humpback-02",
-    "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
+    "id": "2026-05-07-nanaimo-bc-canada-humpback-01",
+    "name": "Humpback sighting (Nanaimo, BC, Canada)",
     "species": "Humpback",
-    "info": "iNaturalist observation by rudyard.",
+    "info": "iNaturalist observation by vancouver_island_whale_watch.",
     "date": "2026-05-07",
-    "latitude": 38.8258277778,
-    "longitude": -123.8721444444,
-    "area": "Stellwagen Bank (iNaturalist — Catalog)",
-    "source": "https://www.inaturalist.org/observations/359735536",
+    "latitude": 49.11421,
+    "longitude": -123.77363,
+    "area": "Nanaimo, BC, Canada",
+    "source": "https://www.inaturalist.org/observations/359562054",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656378840/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Rudyard, some rights reserved (CC BY)"
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656035094/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) vancouver_island_whale_watch, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-05-06-nanaimo-bc-canada-orca-01",
@@ -513,23 +539,6 @@
     "individualName": "ORCA BIGGS T086A4"
   },
   {
-    "id": "2026-05-06-surfview-rd-mona-val-humpback-01",
-    "name": "Humpback sighting (Surfview Rd, Mona Vale, NSW, AU)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by jiml-cbr.",
-    "date": "2026-05-06",
-    "latitude": -33.6980716667,
-    "longitude": 151.3151866667,
-    "area": "Surfview Rd, Mona Vale, NSW, AU",
-    "source": "https://www.inaturalist.org/observations/360096365",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/657063605/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Jim Lehane, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-05-06-norwegian-waters-orca-02",
     "name": "Orca sighting (Norwegian waters (offshore))",
     "species": "Orca",
@@ -547,24 +556,24 @@
     "photoAttribution": "(c) whale_nerd, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-06-alberni-clayoquot-bc-humpback-02",
-    "name": "Humpback sighting (Alberni-Clayoquot, BC, CA)",
+    "id": "2026-05-06-surfview-rd-mona-val-humpback-01",
+    "name": "Humpback sighting (Surfview Rd, Mona Vale, NSW, AU)",
     "species": "Humpback",
-    "info": "iNaturalist observation by pete_bakes.",
+    "info": "iNaturalist observation by jiml-cbr.",
     "date": "2026-05-06",
-    "latitude": 49.1117508278,
-    "longitude": -125.8983120813,
-    "area": "Alberni-Clayoquot, BC, CA",
-    "source": "https://www.inaturalist.org/observations/360090481",
+    "latitude": -33.6980716667,
+    "longitude": 151.3151866667,
+    "area": "Surfview Rd, Mona Vale, NSW, AU",
+    "source": "https://www.inaturalist.org/observations/360096365",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/657051990/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/657063605/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Peter Baker, some rights reserved (CC BY-NC)"
+    "photoAttribution": "(c) Jim Lehane, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-06-eyjafjordur-humpback-03",
+    "id": "2026-05-06-eyjafjordur-humpback-02",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-05-06.",
