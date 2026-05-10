@@ -210,30 +210,7 @@ sources:
     longitude: 151.55
     max_items: 3
     uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
-  - key: pirsa_shark_sightings
-    parser: generic_dated_page
-    url: https://pir.sa.gov.au/fishing-and-aquaculture/recreational-fishing/reporting/shark-sightings
-    area: "South Australia (offshore), Australia"
-    latitude: -35.20
-    longitude: 136.20
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
-  - key: nsw_sharksmart_activity
-    parser: generic_dated_page
-    url: https://www.sharksmart.nsw.gov.au/shark-activity
-    area: "New South Wales (offshore), Australia"
-    latitude: -33.90
-    longitude: 151.60
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
-  - key: wa_sharksmart_activity
-    parser: generic_dated_page
-    url: https://www.sharksmart.com.au/shark-activity/
-    area: "Western Australia (offshore)"
-    latitude: -32.20
-    longitude: 115.40
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.02 }
+  # shark sources removed — not whales
   # -------------------------
   # UK / Ireland (sightings aggregators)
   # -------------------------
@@ -291,15 +268,7 @@ sources:
   # -------------------------
   # SOUTH AFRICA (shark program)
   # -------------------------
-  - key: za_sharkspotters
-    parser: article_basic
-    url: https://www.sharkspotters.org.za/
-    area: "Cape Town (offshore), South Africa"
-    latitude: -34.15
-    longitude: 18.35
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Great White Shark"]
+  # za_sharkspotters removed — not a whale source
   # -------------------------
   # PORTUGAL (Azores anchor)
   # -------------------------
@@ -444,16 +413,7 @@ sources:
     max_items: 3
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Sperm whale"]
-  - key: inat_great_white_south_africa
-    parser: inaturalist_api
-    taxon_name: "Carcharodon carcharias"
-    place_query: "South Africa"
-    area: "South Africa (iNaturalist)"
-    latitude: -34.2
-    longitude: 18.4
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Great White Shark"]
+  # inat_great_white_south_africa removed — not a whale
   # -------------------------
   # iNaturalist — Gray Whale (Pacific migration route)
   # -------------------------
@@ -715,26 +675,7 @@ sources:
   # -------------------------
   # iNaturalist — Great White Shark (new regions)
   # -------------------------
-  - key: inat_great_white_california
-    parser: inaturalist_api
-    taxon_name: "Carcharodon carcharias"
-    place_query: "California"
-    area: "California (iNaturalist)"
-    latitude: 35.5
-    longitude: -121.0
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Great White Shark"]
-  - key: inat_great_white_australia
-    parser: inaturalist_api
-    taxon_name: "Carcharodon carcharias"
-    place_query: "Australia"
-    area: "Australia (iNaturalist)"
-    latitude: -34.0
-    longitude: 122.0
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Great White Shark"]
+  # great white shark iNat sources removed
 
 
   # -------------------------
@@ -804,15 +745,7 @@ sources:
     force_species: ["Sperm whale"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
-  - key: obis_great_white_global
-    parser: obis_api
-    aphia_id: 105838
-    area: "Global (OBIS)"
-    latitude: -34.20
-    longitude: 18.40
-    max_items: 4
-    force_species: ["Great White Shark"]
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+  # obis_great_white_global removed — not a whale
 
 
   # -------------------------
@@ -1262,3 +1195,431 @@ sources:
     longitude: -10.0
     max_items: 4
     force_species: ["Sperm whale"]
+
+  # -------------------------
+  # Canary Islands — sperm whale hotspot + fin whales + orca
+  # -------------------------
+  - key: inat_sperm_whale_canary_islands
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    swlat: 27.0
+    swlng: -18.5
+    nelat: 29.5
+    nelng: -13.0
+    area: "Canary Islands (offshore), Spain"
+    latitude: 28.0
+    longitude: -15.5
+    max_items: 5
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_fin_whale_canary_islands
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera physalus"
+    swlat: 27.0
+    swlng: -18.5
+    nelat: 29.5
+    nelng: -13.0
+    area: "Canary Islands (offshore), Spain"
+    latitude: 28.0
+    longitude: -15.5
+    max_items: 4
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_orca_canary_islands
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    swlat: 27.0
+    swlng: -18.5
+    nelat: 29.5
+    nelng: -13.0
+    area: "Canary Islands (offshore), Spain"
+    latitude: 28.0
+    longitude: -15.5
+    max_items: 4
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Mexico Pacific — Puerto Vallarta humpback & gray whale Baja lagoons
+  # -------------------------
+  - key: inat_humpback_mexico_pacific
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 18.0
+    swlng: -110.0
+    nelat: 24.0
+    nelng: -104.0
+    area: "Pacific Mexico (offshore)"
+    latitude: 20.5
+    longitude: -105.5
+    max_items: 5
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_gray_whale_baja
+    parser: inaturalist_api
+    taxon_name: "Eschrichtius robustus"
+    swlat: 22.0
+    swlng: -115.0
+    nelat: 30.0
+    nelng: -109.0
+    area: "Baja California, Mexico (offshore)"
+    latitude: 26.0
+    longitude: -113.5
+    max_items: 5
+    force_species: ["Gray Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Colombia Pacific — humpback nursery (Jul–Oct peak)
+  # -------------------------
+  - key: inat_humpback_colombia_pacific
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 1.0
+    swlng: -80.0
+    nelat: 9.0
+    nelng: -75.0
+    area: "Colombian Pacific (offshore)"
+    latitude: 4.0
+    longitude: -77.5
+    max_items: 5
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Patagonia / Argentina — orca & humpback (Peninsula Valdés)
+  # -------------------------
+  - key: inat_orca_patagonia
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    swlat: -44.0
+    swlng: -68.0
+    nelat: -38.0
+    nelng: -56.0
+    area: "Patagonia, Argentina (offshore)"
+    latitude: -42.5
+    longitude: -63.0
+    max_items: 4
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_patagonia
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: -44.0
+    swlng: -68.0
+    nelat: -38.0
+    nelng: -56.0
+    area: "Patagonia, Argentina (offshore)"
+    latitude: -42.5
+    longitude: -63.0
+    max_items: 4
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Chile — blue whale hotspot (Chiloé, Gulf of Corcovado)
+  # -------------------------
+  - key: inat_blue_whale_chile
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera musculus"
+    swlat: -45.0
+    swlng: -76.0
+    nelat: -38.0
+    nelng: -70.0
+    area: "Gulf of Corcovado, Chile (offshore)"
+    latitude: -43.0
+    longitude: -74.0
+    max_items: 5
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Azores — humpback, blue whale, sperm whale
+  # -------------------------
+  - key: inat_humpback_azores
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 36.5
+    swlng: -32.0
+    nelat: 40.5
+    nelng: -24.5
+    area: "Azores (offshore), Portugal"
+    latitude: 38.5
+    longitude: -28.0
+    max_items: 5
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_blue_whale_azores
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera musculus"
+    swlat: 36.5
+    swlng: -32.0
+    nelat: 40.5
+    nelng: -28.0
+    area: "Azores (offshore), Portugal"
+    latitude: 38.5
+    longitude: -28.0
+    max_items: 4
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_azores
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    swlat: 36.5
+    swlng: -32.0
+    nelat: 40.5
+    nelng: -24.5
+    area: "Azores (offshore), Portugal"
+    latitude: 38.5
+    longitude: -28.0
+    max_items: 4
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Sri Lanka — blue whale hotspot (Dec–Apr)
+  # -------------------------
+  - key: inat_blue_whale_sri_lanka
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera musculus"
+    swlat: 4.0
+    swlng: 78.0
+    nelat: 12.0
+    nelng: 83.0
+    area: "Sri Lanka (offshore), Indian Ocean"
+    latitude: 7.0
+    longitude: 80.5
+    max_items: 4
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_sri_lanka
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    swlat: 4.0
+    swlng: 78.0
+    nelat: 12.0
+    nelng: 83.0
+    area: "Sri Lanka (offshore), Indian Ocean"
+    latitude: 7.0
+    longitude: 80.5
+    max_items: 4
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Japan — humpback (Ogasawara), sperm whale
+  # -------------------------
+  - key: inat_humpback_japan
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 25.0
+    swlng: 129.0
+    nelat: 44.0
+    nelng: 146.0
+    area: "Japan (offshore)"
+    latitude: 27.0
+    longitude: 142.0
+    max_items: 4
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_japan
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    swlat: 25.0
+    swlng: 129.0
+    nelat: 36.0
+    nelng: 146.0
+    area: "Japan (offshore)"
+    latitude: 27.0
+    longitude: 142.0
+    max_items: 4
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Cape Verde — humpback breeding ground
+  # -------------------------
+  - key: inat_humpback_cape_verde
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 14.0
+    swlng: -27.0
+    nelat: 18.0
+    nelng: -22.0
+    area: "Cape Verde (offshore)"
+    latitude: 15.5
+    longitude: -24.5
+    max_items: 4
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Svalbard / Arctic Norway — humpback, fin whale, blue whale
+  # -------------------------
+  - key: inat_humpback_svalbard
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 74.0
+    swlng: 10.0
+    nelat: 81.0
+    nelng: 30.0
+    area: "Svalbard, Arctic Norway (offshore)"
+    latitude: 77.0
+    longitude: 17.0
+    max_items: 4
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_blue_whale_svalbard
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera musculus"
+    swlat: 74.0
+    swlng: 5.0
+    nelat: 81.0
+    nelng: 30.0
+    area: "Svalbard, Arctic Norway (offshore)"
+    latitude: 77.0
+    longitude: 17.0
+    max_items: 3
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Mediterranean — fin whale (Pelagos Sanctuary)
+  # -------------------------
+  - key: inat_fin_whale_pelagos
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera physalus"
+    swlat: 41.0
+    swlng: 4.0
+    nelat: 45.0
+    nelng: 10.5
+    area: "Pelagos Sanctuary, Mediterranean (offshore)"
+    latitude: 43.0
+    longitude: 7.5
+    max_items: 5
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_mediterranean
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    swlat: 35.0
+    swlng: -5.5
+    nelat: 44.0
+    nelng: 36.0
+    area: "Mediterranean Sea (offshore)"
+    latitude: 38.0
+    longitude: 14.0
+    max_items: 4
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Tadoussac / St. Lawrence River — blue whale, fin whale, humpback
+  # -------------------------
+  - key: inat_blue_whale_st_lawrence
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera musculus"
+    swlat: 47.0
+    swlng: -72.0
+    nelat: 50.5
+    nelng: -59.0
+    area: "St. Lawrence River / Estuary, Canada"
+    latitude: 48.5
+    longitude: -69.0
+    max_items: 5
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_fin_whale_st_lawrence
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera physalus"
+    swlat: 47.0
+    swlng: -72.0
+    nelat: 50.5
+    nelng: -59.0
+    area: "St. Lawrence River / Estuary, Canada"
+    latitude: 48.5
+    longitude: -69.0
+    max_items: 5
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_st_lawrence
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 47.0
+    swlng: -72.0
+    nelat: 50.5
+    nelng: -59.0
+    area: "St. Lawrence River / Estuary, Canada"
+    latitude: 48.5
+    longitude: -69.0
+    max_items: 5
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Mozambique Channel & Madagascar — humpback corridor
+  # -------------------------
+  - key: inat_humpback_mozambique
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: -26.0
+    swlng: 33.0
+    nelat: -10.0
+    nelng: 41.0
+    area: "Mozambique Channel (offshore)"
+    latitude: -17.0
+    longitude: 37.5
+    max_items: 4
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # West Coast USA (new whale watching operator logs)
+  # -------------------------
+  - key: pacific_whale_foundation_maui
+    parser: article_basic
+    url: https://www.pacificwhale.org/blog/
+    area: "Maui, Hawaii (offshore), US"
+    latitude: 20.8
+    longitude: -156.5
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: -0.01, dlon: 0.00 }
+
+  - key: tofino_whale_watching
+    parser: article_basic
+    url: https://www.remotespassages.com/sightings/
+    area: "Tofino, BC (offshore), Canada"
+    latitude: 49.2
+    longitude: -126.0
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: -0.02 }
+
+  - key: whale_watch_cape_cod
+    parser: article_basic
+    url: https://whalewatch.com/blog/
+    area: "Cape Cod, MA (offshore), US"
+    latitude: 42.0
+    longitude: -70.2
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: 0.00 }
+
+  - key: center_coastal_studies_blog
+    parser: article_basic
+    url: https://coastalstudies.org/news/
+    area: "Cape Cod Bay, MA (offshore), US"
+    latitude: 42.0
+    longitude: -70.2
+    max_items: 3
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: 0.00 }

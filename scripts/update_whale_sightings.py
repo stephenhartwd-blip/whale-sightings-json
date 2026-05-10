@@ -44,7 +44,13 @@ except Exception:
     globe = None
 
 
-ALLOWED_SPECIES = {"Orca", "Humpback", "Sperm whale", "Great White Shark", "Blue Whale", "Gray Whale", "Fin Whale"}
+ALLOWED_SPECIES = {"Orca", "Humpback", "Sperm whale", "Blue Whale", "Gray Whale", "Fin Whale"}
+
+DEAD_KEYWORDS = frozenset([
+    "dead", "deceased", "carcass", "stranded", "beached", "washed up",
+    "washed ashore", "mortality", "decompos", "dead whale", "whale carcass",
+    "dead animal", "entangled and dead", "found dead",
+])
 
 # Known individually-catalogued whales: individual_id → display name
 KNOWN_INDIVIDUALS: Dict[str, str] = {
@@ -135,7 +141,6 @@ OBIS_TAXON_MAP = {
     137090: "Blue Whale",      # Balaenoptera musculus
     137091: "Fin Whale",       # Balaenoptera physalus
     137117: "Sperm whale",     # Physeter macrocephalus
-    105838: "Great White Shark",  # Carcharodon carcharias
 }
 
 
@@ -221,7 +226,6 @@ def species_key(species: str) -> str:
         "Orca": "orca",
         "Humpback": "humpback",
         "Sperm whale": "sperm",
-        "Great White Shark": "white",
         "Blue Whale": "blue",
         "Gray Whale": "gray",
         "Fin Whale": "fin",
@@ -253,6 +257,18 @@ def infer_behaviors(text: str) -> List[str]:
             deduped.append(b)
             seen.add(b)
     return deduped
+
+def is_dead_observation(text: str, quality_metrics: Optional[list] = None) -> bool:
+    t = (text or "").lower()
+    if any(kw in t for kw in DEAD_KEYWORDS):
+        return True
+    if quality_metrics:
+        for m in quality_metrics:
+            if (m.get("metric") == "alive" and
+                    m.get("agree") is False and m.get("disagree") is True):
+                return True
+    return False
+
 
 def normalize_text(html: str) -> str:
     soup = BeautifulSoup(html, "html.parser")
@@ -331,8 +347,6 @@ def detect_species(text: str, force: Optional[List[str]] = None) -> List[str]:
         hits.append("Humpback")
     if "sperm whale" in t or "spermwhale" in t:
         hits.append("Sperm whale")
-    if any(k in t for k in ["great white", "white shark"]):
-        hits.append("Great White Shark")
     if "blue whale" in t or "bluewhale" in t:
         hits.append("Blue Whale")
     if any(k in t for k in ["gray whale", "grey whale", "eschrichtius"]):
@@ -574,14 +588,17 @@ def build_candidates_from_generic_html(
 
     if sections:
         for dt, section in sections:
+            if is_dead_observation(section):
+                continue
             species_list = detect_species(section, force=force_species)
             for species in species_list[:2]:
                 add_candidate(dt, section, species)
     else:
-        dt = parse_date_from_url(url, tz_name) or today
-        species_list = detect_species(text, force=force_species)
-        for species in species_list[:2]:
-            add_candidate(dt, text, species)
+        if not is_dead_observation(text):
+            dt = parse_date_from_url(url, tz_name) or today
+            species_list = detect_species(text, force=force_species)
+            for species in species_list[:2]:
+                add_candidate(dt, text, species)
 
     candidates.sort(key=lambda c: c.date, reverse=True)
     return candidates[:max_items]
@@ -727,8 +744,6 @@ def parse_orcanetwork_recent_sightings(cfg: Dict[str, Any], session: requests.Se
             species_hits.append("Humpback")
         if re.search(r"SPERM\s+WHALE", block, re.IGNORECASE):
             species_hits.append("Sperm whale")
-        if re.search(r"GREAT\s+WHITE|WHITE\s+SHARK", block, re.IGNORECASE):
-            species_hits.append("Great White Shark")
         if re.search(r"BLUE\s+WHALE", block, re.IGNORECASE):
             species_hits.append("Blue Whale")
         if re.search(r"GRAY\s+WHALE|GREY\s+WHALE", block, re.IGNORECASE):
@@ -941,6 +956,9 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
         sci = ((obs.get("taxon") or {}).get("name") or "").strip()
         blob = f"{common_name}\n{sci}\n{description}".strip()
 
+        if is_dead_observation(blob, obs.get("quality_metrics")):
+            continue
+
         species_list = detect_species(blob, force=force_species)
         if not species_list:
             continue
@@ -1085,7 +1103,11 @@ def parse_obis_api(cfg: Dict[str, Any], session: requests.Session, tz_name: str,
 
         sci_name = (obs.get("scientificName") or "").strip()
         common_name = (obs.get("vernacularName") or "").strip()
-        blob = f"{sci_name} {common_name}"
+        occurrence_remarks = (obs.get("occurrenceRemarks") or "").strip()
+        blob = f"{sci_name} {common_name} {occurrence_remarks}"
+
+        if is_dead_observation(blob):
+            continue
 
         obs_aphia = obs.get("aphiaID") or obs.get("speciesid")
         species_list: List[str] = []
@@ -1316,7 +1338,7 @@ def compute_species_targets(cfg: Dict[str, Any], total: int) -> Dict[str, int]:
         return wanted
 
     if s != total:
-        order = ["Orca", "Humpback", "Great White Shark", "Sperm whale", "Blue Whale"]
+        order = ["Orca", "Humpback", "Gray Whale", "Sperm whale", "Blue Whale", "Fin Whale"]
         diff = total - s
         i = 0
         while diff != 0 and i < 1000:
