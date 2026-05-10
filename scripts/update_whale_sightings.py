@@ -22,6 +22,7 @@ photoURL, photoLicense, photoAttribution
 from __future__ import annotations
 
 import json
+import math
 import os
 import re
 import time
@@ -257,6 +258,147 @@ def infer_behaviors(text: str) -> List[str]:
             deduped.append(b)
             seen.add(b)
     return deduped
+
+# -------------------------
+# Geo helpers
+# -------------------------
+
+def haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    R = 6371.0
+    dlat = math.radians(lat2 - lat1)
+    dlon = math.radians(lon2 - lon1)
+    a = (math.sin(dlat / 2) ** 2
+         + math.cos(math.radians(lat1)) * math.cos(math.radians(lat2))
+         * math.sin(dlon / 2) ** 2)
+    return 2 * R * math.asin(math.sqrt(a))
+
+
+# -------------------------
+# Source reliability scoring (used for deduplication)
+# Higher = keep this one when merging duplicates
+# -------------------------
+
+def _source_score(c: "Candidate") -> int:
+    sk = (c.source_key or "").lower()
+    src = (c.source or "").lower()
+    if sk.startswith("acartia_"):
+        return 6
+    if c.individual_id:
+        return 5
+    if c.photo_url and ("inaturalist" in src or sk.startswith("inat_")):
+        return 5
+    if "inaturalist" in src or sk.startswith("inat_"):
+        return 4
+    if sk.startswith("obis_") or sk.startswith("gbif_"):
+        return 3
+    return 2
+
+
+def cluster_candidates(candidates: List["Candidate"],
+                       km: float = 15.0,
+                       hours: float = 24.0) -> List["Candidate"]:
+    """
+    Merge candidates that are same species, within `km` km, and within `hours`
+    of each other. Keeps the highest-scored (most authoritative) from each cluster.
+    Logs how many duplicates were removed.
+    """
+    if not candidates:
+        return candidates
+
+    scored = sorted(range(len(candidates)),
+                    key=lambda i: _source_score(candidates[i]), reverse=True)
+    used = [False] * len(candidates)
+    result: List["Candidate"] = []
+    removed = 0
+
+    for i in scored:
+        if used[i]:
+            continue
+        c = candidates[i]
+        used[i] = True
+        for j in scored:
+            if used[j] or j == i:
+                continue
+            d = candidates[j]
+            if d.species != c.species:
+                continue
+            if haversine_km(c.latitude, c.longitude, d.latitude, d.longitude) > km:
+                continue
+            if abs((c.date - d.date).total_seconds()) / 3600 > hours:
+                continue
+            used[j] = True
+            removed += 1
+        result.append(c)
+
+    if removed:
+        print(f"[dedup] Merged {removed} duplicate candidate(s) "
+              f"({len(candidates)} → {len(result)})")
+    return result
+
+
+# -------------------------
+# Seasonal unusualness tagging
+# Each rule: (species, lat_min, lat_max, lon_min, lon_max, months, label)
+# "expected" = well-documented feeding/breeding range for that season
+# "notable"  = outside typical range — worth flagging in the app
+# -------------------------
+
+_SEASONAL_RULES: List[Tuple] = [
+    # Humpback feeding grounds
+    ("Humpback",  62,  82,  -30,  35,  [4,5,6,7,8,9,10],    "Norwegian/Arctic feeding grounds"),
+    ("Humpback",  44,  62,  -30,  15,  [4,5,6,7,8,9,10],    "Northeast Atlantic feeding season"),
+    ("Humpback",  40,  52,  -75,  -60, [4,5,6,7,8,9,10],    "Gulf of Maine / Bay of Fundy season"),
+    ("Humpback",  56,  62,  -50,  -40, [5,6,7,8,9,10],      "Newfoundland feeding grounds"),
+    ("Humpback",  18,  24, -162, -154, [11,12,1,2,3,4],     "Hawaii breeding season"),
+    ("Humpback", -25,   0,   28,  45,  [6,7,8,9,10,11],     "East Africa / Mozambique corridor"),
+    ("Humpback", -10,  10,  -82,  -75, [6,7,8,9,10,11],     "Colombia Pacific breeding season"),
+    ("Humpback",  18,  26, -110, -104, [11,12,1,2,3],       "Mexican Pacific breeding season"),
+    ("Humpback", -50, -30,  -75,  -55, [5,6,7,8,9,10],      "Patagonian feeding grounds"),
+    ("Humpback",  55,  62,  -30,  -10, [4,5,6,7,8,9,10],    "Azores / Iberian waters"),
+    # Orca year-round hotspots
+    ("Orca",      47,  51, -126, -122, list(range(1,13)),    "Salish Sea (SRKW range)"),
+    ("Orca",      67,  72,  12,   18,  [10,11,12,1,2,3],    "Norwegian herring season orcas"),
+    ("Orca",     -36, -30,  113,  120, list(range(1,13)),    "Bremer Canyon, Australia"),
+    ("Orca",     -46, -38,  -68,  -56, list(range(1,13)),    "Patagonian orca"),
+    # Gray Whale migrations
+    ("Gray Whale", 22,  30, -116, -109, [1,2,3,4],          "Baja breeding lagoons"),
+    ("Gray Whale", 54,  65, -172, -155, [5,6,7,8,9],        "Alaskan feeding grounds"),
+    ("Gray Whale", 30,  54, -125, -117, [3,4,5,10,11,12],   "California migration corridor"),
+    # Blue Whale
+    ("Blue Whale", 36,  42,  -32,  -24, [4,5,6,7,8,9],     "Azores feeding season"),
+    ("Blue Whale", 64,  68,  -26,  -12, [6,7,8,9],          "Iceland feeding grounds"),
+    ("Blue Whale",  4,  12,   78,   82, [12,1,2,3,4],       "Sri Lanka feeding season"),
+    ("Blue Whale", -46, -38,  -76,  -70, [12,1,2,3,4],      "Chile / Chiloé feeding season"),
+    # Fin Whale
+    ("Fin Whale",  41,  45,   4,   10,  [4,5,6,7,8,9,10],  "Pelagos Sanctuary, Mediterranean"),
+    ("Fin Whale",  36,  42,  -32,  -24, [3,4,5,6,7,8,9],   "Azores / NE Atlantic"),
+    # Sperm Whale
+    ("Sperm whale", 27, 30,  -18,  -13, list(range(1,13)),  "Canary Islands (year-round)"),
+    ("Sperm whale", 14, 18,  -26,  -22, list(range(1,13)),  "Cape Verde (year-round)"),
+    ("Sperm whale", 15,  20,   57,   62, list(range(1,13)), "Indian Ocean"),
+]
+
+def get_seasonal_status(species: str, lat: float, lon: float, month: int
+                        ) -> Optional[str]:
+    """Return a human-readable seasonal label if this sighting is in a known
+    documented range for this species/season, else None."""
+    for rule_species, lat_min, lat_max, lon_min, lon_max, months, label in _SEASONAL_RULES:
+        if rule_species != species:
+            continue
+        if lat_min <= lat <= lat_max and lon_min <= lon <= lon_max and month in months:
+            return label
+    return None
+
+
+def is_notable_sighting(species: str, lat: float, lon: float, month: int) -> bool:
+    """True if outside ALL known seasonal ranges — worth flagging as unusual."""
+    for rule_species, lat_min, lat_max, lon_min, lon_max, months, _ in _SEASONAL_RULES:
+        if rule_species != species:
+            continue
+        if lat_min <= lat <= lat_max and lon_min <= lon <= lon_max:
+            return False  # in a known range (maybe wrong season, but known area)
+    return True
+
 
 def is_dead_observation(text: str, quality_metrics: Optional[list] = None) -> bool:
     t = (text or "").lower()
@@ -1288,6 +1430,156 @@ def parse_acartia_api(cfg: Dict[str, Any], session: requests.Session, tz_name: s
     candidates.sort(key=lambda c: c.date, reverse=True)
     return candidates[:max_items]
 
+# -------------------------
+# GBIF API parser
+# Free, no auth required. Different submitter base from OBIS — adds independent coverage.
+# https://api.gbif.org/v1/occurrence/search
+# -------------------------
+
+GBIF_BASE = "https://api.gbif.org/v1"
+
+# GBIF taxon keys for whales (stable numeric IDs from Catalogue of Life)
+GBIF_TAXON_KEYS: Dict[str, int] = {
+    "Humpback":    2440728,   # Megaptera novaeangliae
+    "Orca":        2440718,   # Orcinus orca
+    "Blue Whale":  2440714,   # Balaenoptera musculus
+    "Fin Whale":   2440715,   # Balaenoptera physalus
+    "Gray Whale":  2440707,   # Eschrichtius robustus
+    "Sperm whale": 2440722,   # Physeter macrocephalus
+}
+
+
+def parse_gbif_api(cfg: Dict[str, Any], session: requests.Session,
+                   tz_name: str, source_key: str) -> List[Candidate]:
+    """Pull recent cetacean occurrences from the GBIF REST API."""
+    force_species: Optional[List[str]] = None
+    fs = cfg.get("force_species")
+    if fs:
+        force_species = [str(x) for x in (fs if isinstance(fs, list) else [fs])]
+
+    max_items = int(cfg.get("max_items", 5))
+    area_default = (cfg.get("area", "") or "").strip()
+    lat0 = float(cfg.get("latitude", 0.0))
+    lon0 = float(cfg.get("longitude", 0.0))
+
+    today = now_local(tz_name)
+    d2 = today.date().isoformat()
+    d1 = (today - timedelta(days=int(GLOBAL_MAX_DAYS))).date().isoformat()
+
+    params: Dict[str, Any] = {
+        "basisOfRecord": "HUMAN_OBSERVATION",
+        "occurrenceStatus": "PRESENT",
+        "hasCoordinate": "true",
+        "hasGeospatialIssue": "false",
+        "eventDate": f"{d1},{d2}",
+        "limit": 100,
+        "offset": 0,
+    }
+
+    if cfg.get("swlat") is not None:
+        params["decimalLatitude"]  = f"{cfg['swlat']},{cfg['nelat']}"
+        params["decimalLongitude"] = f"{cfg['swlng']},{cfg['nelng']}"
+    elif cfg.get("country"):
+        params["country"] = cfg["country"]
+
+    if force_species:
+        sp = force_species[0]
+        if sp in GBIF_TAXON_KEYS:
+            params["taxonKey"] = GBIF_TAXON_KEYS[sp]
+    else:
+        params["taxonKey"] = list(GBIF_TAXON_KEYS.values())
+
+    try:
+        r = session.get(f"{GBIF_BASE}/occurrence/search", params=params, timeout=30)
+        r.raise_for_status()
+        data = r.json() or {}
+    except Exception as e:
+        print(f"[gbif_api:{source_key}] fetch error: {e}")
+        return []
+
+    results = data.get("results") or []
+    time.sleep(0.2)
+
+    out: List[Candidate] = []
+    for obs in results:
+        if len(out) >= max_items:
+            break
+
+        event_date = (obs.get("eventDate") or "").strip()[:10]
+        if not event_date:
+            continue
+        try:
+            y, mo, d = event_date.split("-")
+            dt = datetime(int(y), int(mo), int(d), 12, 0, 0, tzinfo=tz.gettz(tz_name))
+        except Exception:
+            continue
+
+        if not within_window(dt, today, GLOBAL_MAX_DAYS):
+            continue
+
+        lat = safe_float(obs.get("decimalLatitude"))
+        lon = safe_float(obs.get("decimalLongitude"))
+        if lat is None or lon is None:
+            nud = cfg.get("uncertain_offshore_nudge") or {}
+            lat, lon = clamp_nudge(lat0, lon0,
+                                   float(nud.get("dlat", 0.0)),
+                                   float(nud.get("dlon", 0.0)))
+
+        fixed = ensure_ocean(lat, lon)
+        if not fixed:
+            continue
+        lat2, lon2 = fixed
+
+        sci_name  = (obs.get("scientificName") or "").strip()
+        vernacular = (obs.get("vernacularName") or
+                      obs.get("species") or "").strip()
+        remarks   = (obs.get("occurrenceRemarks") or "").strip()
+        blob = f"{sci_name} {vernacular} {remarks}"
+
+        if is_dead_observation(blob):
+            continue
+
+        gbif_key = obs.get("taxonKey") or obs.get("speciesKey")
+        species_list: List[str] = []
+        if force_species:
+            species_list = [s for s in force_species if s in ALLOWED_SPECIES]
+        elif gbif_key:
+            rev = {v: k for k, v in GBIF_TAXON_KEYS.items()}
+            sp = rev.get(int(gbif_key))
+            if sp:
+                species_list = [sp]
+        if not species_list:
+            species_list = detect_species(blob)
+        if not species_list:
+            continue
+
+        locality = (obs.get("locality") or obs.get("stateProvince") or
+                    area_default or "").strip()
+        area = locality or area_default
+
+        dataset  = (obs.get("datasetName") or "GBIF").strip()
+        occ_key  = obs.get("key") or obs.get("gbifID") or ""
+        src_url  = (f"https://www.gbif.org/occurrence/{occ_key}"
+                    if occ_key else "https://www.gbif.org")
+
+        species = species_list[0]
+        out.append(Candidate(
+            date=dt,
+            species=species,
+            name=f"{species} sighting ({area})" if area else f"{species} sighting",
+            info=f"GBIF record from {dataset}. Observed {event_date}.",
+            area=area,
+            source=src_url,
+            latitude=float(lat2),
+            longitude=float(lon2),
+            behaviors=infer_behaviors(blob),
+            source_key=source_key,
+        ))
+
+    out.sort(key=lambda c: c.date, reverse=True)
+    return out[:max_items]
+
+
 PARSERS = {
     "orcanetwork_recent_sightings": parse_orcanetwork_recent_sightings,
 
@@ -1309,6 +1601,7 @@ PARSERS = {
     "rss_feed": parse_rss_feed,
     "inaturalist_api": parse_inaturalist_api,
     "obis_api": parse_obis_api,
+    "gbif_api": parse_gbif_api,
     "acartia_api": parse_acartia_api,
 }
 
@@ -1475,6 +1768,13 @@ def build_entries(candidates: List[Candidate]) -> List[Dict[str, Any]]:
             entry["individualId"] = c.individual_id
             entry["individualName"] = c.individual_name or c.individual_id
 
+        month = c.date.month
+        seasonal = get_seasonal_status(c.species, c.latitude, c.longitude, month)
+        if seasonal:
+            entry["seasonalStatus"] = seasonal
+        if is_notable_sighting(c.species, c.latitude, c.longitude, month):
+            entry["notable"] = True
+
         entries.append(entry)
 
     entries.sort(key=lambda e: e["date"], reverse=True)
@@ -1612,6 +1912,7 @@ def main() -> None:
             print(f"WARN: {source_key} failed: {e}")
 
     filtered = [c for c in all_candidates if within_window(c.date, now_dt, max_days)]
+    filtered = cluster_candidates(filtered, km=15.0, hours=24.0)
     selected = select_candidates(cfg, filtered, tz_name)
     entries = build_entries(selected)
 

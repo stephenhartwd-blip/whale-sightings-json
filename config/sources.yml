@@ -683,6 +683,90 @@ sources:
 
   # obis_great_white_global removed — not a whale
 
+  # -------------------------
+  # GBIF (Global Biodiversity Information Facility)
+  # Free REST API — no auth required. Different submitter base from OBIS.
+  # https://api.gbif.org/v1/occurrence/search
+  # -------------------------
+
+  - key: gbif_humpback_ne_atlantic
+    parser: gbif_api
+    swlat: 52.0
+    swlng: -30.0
+    nelat: 72.0
+    nelng: 20.0
+    area: "Northeast Atlantic (GBIF)"
+    latitude: 62.0
+    longitude: -5.0
+    max_items: 8
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_orca_global
+    parser: gbif_api
+    swlat: -60.0
+    swlng: -180.0
+    nelat: 75.0
+    nelng: 180.0
+    area: "Global (GBIF)"
+    latitude: 48.0
+    longitude: -125.0
+    max_items: 8
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_pacific
+    parser: gbif_api
+    swlat: -55.0
+    swlng: -180.0
+    nelat: 65.0
+    nelng: -100.0
+    area: "Pacific Ocean (GBIF)"
+    latitude: 20.0
+    longitude: -155.0
+    max_items: 8
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_blue_whale_global
+    parser: gbif_api
+    swlat: -60.0
+    swlng: -180.0
+    nelat: 70.0
+    nelng: 180.0
+    area: "Global (GBIF)"
+    latitude: 38.0
+    longitude: -28.0
+    max_items: 6
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_gray_whale_pacific
+    parser: gbif_api
+    swlat: 20.0
+    swlng: -135.0
+    nelat: 65.0
+    nelng: -100.0
+    area: "Pacific (GBIF)"
+    latitude: 36.0
+    longitude: -122.0
+    max_items: 6
+    force_species: ["Gray Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_sperm_whale_global
+    parser: gbif_api
+    swlat: -50.0
+    swlng: -180.0
+    nelat: 70.0
+    nelng: 180.0
+    area: "Global (GBIF)"
+    latitude: 28.0
+    longitude: -15.0
+    max_items: 6
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
 
   # -------------------------
   # Individual whale tracking sources
