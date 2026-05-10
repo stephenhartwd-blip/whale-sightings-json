@@ -19,9 +19,8 @@ species_targets:
   Humpback: 0.25
   Gray Whale: 0.18
   Sperm whale: 0.08
-  Great White Shark: 0.08
-  Blue Whale: 0.06
-  Fin Whale: 0.05
+  Blue Whale: 0.08
+  Fin Whale: 0.06
   Other: 0.08
 sources:
   # -------------------------
@@ -393,40 +392,13 @@ sources:
     max_items: 3
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Humpback"]
-  - key: inat_humpback_australia
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Australia"
-    area: "Australia (iNaturalist)"
-    latitude: -33.9
-    longitude: 151.6
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Humpback"]
-  - key: inat_sperm_whale_azores
-    parser: inaturalist_api
-    taxon_name: "Physeter macrocephalus"
-    place_query: "Azores"
-    area: "Azores (iNaturalist)"
-    latitude: 38.6
-    longitude: -28.1
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Sperm whale"]
+  # inat_humpback_australia (older place_query version removed — bbox version below)
+  # inat_sperm_whale_azores (older place_query version removed — bbox version below)
   # inat_great_white_south_africa removed — not a whale
   # -------------------------
   # iNaturalist — Gray Whale (Pacific migration route)
   # -------------------------
-  - key: inat_gray_whale_baja
-    parser: inaturalist_api
-    taxon_name: "Eschrichtius robustus"
-    place_query: "Baja California"
-    area: "Baja California (iNaturalist)"
-    latitude: 27.9
-    longitude: -114.0
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Gray Whale"]
+  # inat_gray_whale_baja (older place_query version removed — bbox version below)
   - key: inat_gray_whale_california
     parser: inaturalist_api
     taxon_name: "Eschrichtius robustus"
@@ -480,16 +452,7 @@ sources:
   # -------------------------
   # iNaturalist — Blue Whale
   # -------------------------
-  - key: inat_blue_whale_sri_lanka
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera musculus"
-    place_query: "Sri Lanka"
-    area: "Sri Lanka (iNaturalist)"
-    latitude: 5.9
-    longitude: 80.5
-    max_items: 5
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Blue Whale"]
+  # inat_blue_whale_sri_lanka (older place_query version removed — bbox version below)
   - key: inat_blue_whale_california
     parser: inaturalist_api
     taxon_name: "Balaenoptera musculus"
@@ -500,26 +463,8 @@ sources:
     max_items: 4
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Blue Whale"]
-  - key: inat_blue_whale_chile
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera musculus"
-    place_query: "Chile"
-    area: "Chile (iNaturalist)"
-    latitude: -43.0
-    longitude: -74.5
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Blue Whale"]
-  - key: inat_blue_whale_azores
-    parser: inaturalist_api
-    taxon_name: "Balaenoptera musculus"
-    place_query: "Azores"
-    area: "Azores (iNaturalist)"
-    latitude: 38.6
-    longitude: -28.0
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Blue Whale"]
+  # inat_blue_whale_chile (older place_query version removed — bbox version below)
+  # inat_blue_whale_azores (older place_query version removed — bbox version below)
   # -------------------------
   # iNaturalist — Humpback (new regions)
   # -------------------------
@@ -550,7 +495,7 @@ sources:
     area: "Norway (iNaturalist)"
     latitude: 69.3
     longitude: 16.0
-    max_items: 4
+    max_items: 8
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Humpback"]
   - key: inat_humpback_south_africa
@@ -596,16 +541,7 @@ sources:
     max_items: 3
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Orca"]
-  - key: inat_orca_australia
-    parser: inaturalist_api
-    taxon_name: "Orcinus orca"
-    place_query: "Australia"
-    area: "Australia (iNaturalist)"
-    latitude: -34.7
-    longitude: 119.9
-    max_items: 3
-    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
-    force_species: ["Orca"]
+  # inat_orca_australia (older place_query version removed — bbox version below)
   - key: inat_orca_alaska
     parser: inaturalist_api
     taxon_name: "Orcinus orca"
@@ -1023,7 +959,7 @@ sources:
     area: "Germany (North Sea / Baltic Sea)"
     latitude: 54.8
     longitude: 8.5
-    max_items: 4
+    max_items: 8
     uncertain_offshore_nudge: { dlat: 0.02, dlon: 0.02 }
     force_species: ["Humpback"]
 
@@ -1049,16 +985,7 @@ sources:
     uncertain_offshore_nudge: { dlat: 0.02, dlon: 0.02 }
     force_species: ["Sperm whale"]
 
-  - key: inat_humpback_netherlands
-    parser: inaturalist_api
-    taxon_name: "Megaptera novaeangliae"
-    place_query: "Netherlands"
-    area: "Netherlands (North Sea)"
-    latitude: 52.8
-    longitude: 4.2
-    max_items: 4
-    uncertain_offshore_nudge: { dlat: 0.02, dlon: 0.02 }
-    force_species: ["Humpback"]
+  # inat_humpback_netherlands moved to Nordic section below with max_items: 5
 
   - key: inat_humpback_denmark
     parser: inaturalist_api
@@ -1067,7 +994,7 @@ sources:
     area: "Denmark (North Sea / Skagerrak)"
     latitude: 57.5
     longitude: 9.5
-    max_items: 4
+    max_items: 8
     uncertain_offshore_nudge: { dlat: 0.02, dlon: 0.02 }
     force_species: ["Humpback"]
 
@@ -1125,7 +1052,7 @@ sources:
     area: "Vestland, Norway (offshore)"
     latitude: 60.8
     longitude: 4.5
-    max_items: 3
+    max_items: 6
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Humpback"]
 
@@ -1160,14 +1087,14 @@ sources:
   - key: inat_bbox_humpback_ne_atlantic
     parser: inaturalist_api
     taxon_name: "Megaptera novaeangliae"
-    swlat: 55.0
+    swlat: 52.0
     swlng: -15.0
     nelat: 72.0
     nelng: 20.0
     area: "Northeast Atlantic (offshore)"
-    latitude: 65.0
+    latitude: 62.0
     longitude: 5.0
-    max_items: 5
+    max_items: 10
     force_species: ["Humpback"]
 
   - key: inat_bbox_fin_whale_ne_atlantic
@@ -1195,6 +1122,197 @@ sources:
     longitude: -10.0
     max_items: 4
     force_species: ["Sperm whale"]
+
+  # -------------------------
+  # German Bight / Southern North Sea — tight bbox below 55°N (missed by NE Atlantic bbox)
+  # Key area: Timmy's release zone, whale strandings frequent here
+  # -------------------------
+  - key: inat_humpback_german_bight
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 52.5
+    swlng: 3.0
+    nelat: 56.5
+    nelng: 12.5
+    area: "German Bight / Southern North Sea (offshore)"
+    latitude: 54.5
+    longitude: 8.0
+    max_items: 8
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: 0.01 }
+
+  - key: inat_fin_whale_german_bight
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera physalus"
+    swlat: 52.5
+    swlng: 3.0
+    nelat: 56.5
+    nelng: 12.5
+    area: "German Bight / Southern North Sea (offshore)"
+    latitude: 54.5
+    longitude: 8.0
+    max_items: 5
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: 0.01 }
+
+  # -------------------------
+  # Skagerrak & Kattegat — between Norway, Denmark, Sweden
+  # -------------------------
+  - key: inat_humpback_skagerrak
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 56.5
+    swlng: 7.0
+    nelat: 59.5
+    nelng: 12.5
+    area: "Skagerrak / Kattegat (offshore)"
+    latitude: 58.0
+    longitude: 9.5
+    max_items: 8
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: 0.01 }
+
+  - key: inat_orca_skagerrak
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    swlat: 56.5
+    swlng: 7.0
+    nelat: 59.5
+    nelng: 12.5
+    area: "Skagerrak / Kattegat (offshore)"
+    latitude: 58.0
+    longitude: 9.5
+    max_items: 5
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: 0.01 }
+
+  # -------------------------
+  # Sweden — no existing sources; humpbacks appear in Kosterfjord and west coast
+  # -------------------------
+  - key: inat_humpback_sweden
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Sweden"
+    area: "Sweden (west coast / offshore)"
+    latitude: 58.5
+    longitude: 11.0
+    max_items: 6
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: 0.00 }
+
+  - key: inat_orca_sweden
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    place_query: "Sweden"
+    area: "Sweden (west coast / offshore)"
+    latitude: 58.5
+    longitude: 11.0
+    max_items: 5
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: 0.00 }
+
+  # -------------------------
+  # Netherlands — humpbacks increasingly sighted offshore in North Sea
+  # -------------------------
+  - key: inat_humpback_netherlands
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Netherlands"
+    area: "Netherlands (North Sea offshore)"
+    latitude: 53.5
+    longitude: 4.5
+    max_items: 5
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.01, dlon: 0.00 }
+
+  # -------------------------
+  # Norwegian whale watching operators — sighting logs (HTML)
+  # Andenes (Vesterålen) is the primary humpback + sperm whale hub
+  # -------------------------
+  - key: andenes_whale_safari
+    parser: article_basic
+    url: https://www.andeneswhalewatching.com/
+    area: "Andenes, Vesterålen, Norway (offshore)"
+    latitude: 69.3
+    longitude: 16.1
+    max_items: 4
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.02 }
+
+  - key: arctic_whale_tours_tromso
+    parser: article_basic
+    url: https://www.arctic-whale.no/
+    area: "Tromsø, Norway (offshore)"
+    latitude: 69.7
+    longitude: 19.0
+    max_items: 4
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.02 }
+
+  - key: whale_safari_norway
+    parser: article_basic
+    url: https://whalewatching.no/
+    area: "Vesterålen, Norway (offshore)"
+    latitude: 68.8
+    longitude: 15.5
+    max_items: 4
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.02 }
+
+  # -------------------------
+  # Norwegian fjords south — Rogaland and Agder (humpbacks entering fjords)
+  # -------------------------
+  - key: inat_humpback_rogaland
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Rogaland"
+    area: "Rogaland, Norway (offshore)"
+    latitude: 59.0
+    longitude: 5.5
+    max_items: 5
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_more_romsdal
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Møre og Romsdal"
+    area: "Møre og Romsdal, Norway (offshore)"
+    latitude: 62.5
+    longitude: 7.0
+    max_items: 5
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_tromso_county
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Troms"
+    area: "Troms, Norway (offshore)"
+    latitude: 69.7
+    longitude: 19.0
+    max_items: 6
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_nordland
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Nordland"
+    area: "Nordland, Norway (offshore)"
+    latitude: 67.5
+    longitude: 14.5
+    max_items: 6
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_finnmark
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    place_query: "Finnmark"
+    area: "Finnmark, Norway (offshore)"
+    latitude: 70.5
+    longitude: 25.0
+    max_items: 5
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # -------------------------
   # Canary Islands — sperm whale hotspot + fin whales + orca
