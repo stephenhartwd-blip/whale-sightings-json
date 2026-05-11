@@ -213,6 +213,16 @@ sources:
   # -------------------------
   # UK / Ireland (sightings aggregators)
   # -------------------------
+  # ORCA surveys Hamburg→North Cape and North Sea ferry routes — reports humpbacks
+  - key: orca_blog_north_sea
+    parser: generic_dated_page
+    url: https://orca.org.uk/news-blog
+    area: "North Sea / Norwegian coast (offshore)"
+    latitude: 58.0
+    longitude: 4.0
+    max_items: 3
+    force_species: ["Humpback", "Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.02, dlon: 0.02 }
   - key: uk_seawatch_sightings
     parser: article_basic
     url: https://www.seawatchfoundation.org.uk/sightings/
@@ -498,6 +508,48 @@ sources:
     max_items: 8
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Humpback"]
+  # Norway bbox — catches open-ocean observations not tagged with a Norway place
+  - key: inat_humpback_norway_bbox
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 57.0
+    swlng: 4.0
+    nelat: 72.0
+    nelng: 32.0
+    area: "Norwegian Sea (iNaturalist)"
+    latitude: 67.0
+    longitude: 14.0
+    max_items: 8
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Humpback"]
+  # Svalbard / Arctic Norway — summer feeding grounds (Jul–Oct)
+  - key: inat_humpback_svalbard
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 74.0
+    swlng: 10.0
+    nelat: 82.0
+    nelng: 35.0
+    area: "Svalbard (iNaturalist)"
+    latitude: 78.5
+    longitude: 15.0
+    max_items: 5
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Humpback"]
+  # North Sea / German Bight — humpbacks increasingly reported here (2024–2025)
+  - key: inat_humpback_north_sea
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 53.0
+    swlng: 3.0
+    nelat: 62.0
+    nelng: 12.0
+    area: "North Sea (iNaturalist)"
+    latitude: 57.5
+    longitude: 7.5
+    max_items: 5
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Humpback"]
   - key: inat_humpback_south_africa
     parser: inaturalist_api
     taxon_name: "Megaptera novaeangliae"
@@ -699,6 +751,42 @@ sources:
     latitude: 62.0
     longitude: -5.0
     max_items: 8
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+  # Norway-specific GBIF query (country=NO) — pulls Artsdatabanken citizen-science records
+  - key: gbif_humpback_norway
+    parser: gbif_api
+    country: "NO"
+    area: "Norway (GBIF)"
+    latitude: 68.0
+    longitude: 15.0
+    max_items: 8
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+  # North Sea / German Bight tighter bbox — catches German coastal sightings
+  - key: gbif_humpback_north_sea
+    parser: gbif_api
+    swlat: 53.0
+    swlng: 3.0
+    nelat: 61.0
+    nelng: 12.0
+    area: "North Sea / German Bight (GBIF)"
+    latitude: 57.0
+    longitude: 7.5
+    max_items: 5
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+  # Svalbard GBIF — Norwegian Polar Institute + UNIS research vessels
+  - key: gbif_humpback_svalbard
+    parser: gbif_api
+    swlat: 74.0
+    swlng: 10.0
+    nelat: 82.0
+    nelng: 35.0
+    area: "Svalbard (GBIF)"
+    latitude: 78.5
+    longitude: 15.0
+    max_items: 5
     force_species: ["Humpback"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
