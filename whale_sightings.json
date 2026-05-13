@@ -120,6 +120,21 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
+    "id": "2026-05-13-eyjafjordur-humpback-04",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-05-13.",
+    "date": "2026-05-13",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
     "id": "2026-05-12-suquamish-wa-98392-u-gray-01",
     "name": "Gray Whale sighting (Suquamish, WA 98392, USA)",
     "species": "Gray Whale",
@@ -174,21 +189,6 @@
     "notable": true
   },
   {
-    "id": "2026-05-12-sey-isfj-r-ur-is-humpback-01",
-    "name": "Humpback sighting (Seyðisfjörður, IS)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by andreas_n.",
-    "date": "2026-05-12",
-    "latitude": 65.3009416667,
-    "longitude": -13.8383783333,
-    "area": "Seyðisfjörður, IS",
-    "source": "https://www.inaturalist.org/observations/360904606",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
     "id": "2026-05-12-mount-waddington-a-b-orca-01",
     "name": "Orca sighting (Mount Waddington A, BC, Canada)",
     "species": "Orca",
@@ -207,15 +207,15 @@
     "notable": true
   },
   {
-    "id": "2026-05-12-eyjafjordur-humpback-02",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "id": "2026-05-12-sey-isfj-r-ur-is-humpback-01",
+    "name": "Humpback sighting (Seyðisfjörður, IS)",
     "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-05-12.",
+    "info": "iNaturalist observation by andreas_n.",
     "date": "2026-05-12",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "latitude": 65.3009416667,
+    "longitude": -13.8383783333,
+    "area": "Seyðisfjörður, IS",
+    "source": "https://www.inaturalist.org/observations/360904606",
     "behaviors": [
       "reported"
     ],
@@ -1402,6 +1402,24 @@
     ]
   },
   {
+    "id": "2026-04-10-pelagos-sanctuary-me-fin-01",
+    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by ryruther.",
+    "date": "2026-04-10",
+    "latitude": 42.3656403178,
+    "longitude": 7.4783392424,
+    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
+    "source": "https://www.inaturalist.org/observations/361183589",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/659137864/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Dr. Ryne D. Rutherford, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
+  },
+  {
     "id": "2026-04-09-vila-franca-do-campo-humpback-01",
     "name": "Humpback sighting (Vila Franca do Campo, PT-AC, PT)",
     "species": "Humpback",
@@ -1469,6 +1487,24 @@
       "reported"
     ],
     "notable": true
+  },
+  {
+    "id": "2026-04-08-pelagos-sanctuary-me-fin-01",
+    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by aulax.",
+    "date": "2026-04-08",
+    "latitude": 41.8174772926,
+    "longitude": 8.4149227291,
+    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
+    "source": "https://www.inaturalist.org/observations/348234089",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635071517/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) aulax, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
   },
   {
     "id": "2026-04-06-ays-n-chile-orca-01",
