@@ -675,6 +675,24 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
+    "id": "2026-05-09-cap-vert-humpback-02",
+    "name": "Humpback sighting (Cap-Vert)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by vincentcarlier.",
+    "date": "2026-05-09",
+    "latitude": 16.1531156106,
+    "longitude": -23.0424633622,
+    "area": "Cap-Vert",
+    "source": "https://www.inaturalist.org/observations/359865248",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656619400/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Vincent Carlier, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-05-08-spain-sperm-01",
     "name": "Sperm whale sighting (Spain)",
     "species": "Sperm whale",
@@ -1307,7 +1325,25 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-04-23-washington-humpback-01",
+    "id": "2026-04-23-japan-humpback-01",
+    "name": "Humpback sighting (Japan (offshore))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by gomenwl.",
+    "date": "2026-04-23",
+    "latitude": 32.2811954335,
+    "longitude": 141.5673693278,
+    "area": "Japan (offshore)",
+    "source": "https://www.inaturalist.org/observations/357096314",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/651269908/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Gomen See, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-23-washington-humpback-02",
     "name": "Humpback sighting (Washington)",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-04-23.",
@@ -1338,7 +1374,43 @@
     "seasonalStatus": "California migration corridor"
   },
   {
-    "id": "2026-04-19-grenen-skagen-humpback-01",
+    "id": "2026-04-21-jp-humpback-01",
+    "name": "Humpback sighting (太平洋, 東京, JP)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by gomenwl.",
+    "date": "2026-04-21",
+    "latitude": 27.0649445,
+    "longitude": 142.1764666667,
+    "area": "太平洋, 東京, JP",
+    "source": "https://www.inaturalist.org/observations/351659703",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/641767585/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Gomen See, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-19-japan-humpback-01",
+    "name": "Humpback sighting (Japan (offshore))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by gomenwl.",
+    "date": "2026-04-19",
+    "latitude": 30.1316524207,
+    "longitude": 141.4239822925,
+    "area": "Japan (offshore)",
+    "source": "https://www.inaturalist.org/observations/351684775",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/641816062/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Gomen See, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-19-grenen-skagen-humpback-02",
     "name": "Humpback sighting (Grenen, Skagen)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-04-19.",
@@ -1580,6 +1652,21 @@
     "notable": true
   },
   {
+    "id": "2026-04-04-canary-islands-spain-blue-01",
+    "name": "Blue Whale sighting (Canary Islands, Spain)",
+    "species": "Blue Whale",
+    "info": "OBIS record from Happywhale - Blue whale in North Atlantic Ocean (1 individuals). Observed 2026-04-04. Source: Happywhale.com.",
+    "date": "2026-04-04",
+    "latitude": 28.235599,
+    "longitude": -16.852574,
+    "area": "Canary Islands, Spain",
+    "source": "https://obis.org/occurrence/656483",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-04-04-nordwestmecklenburg--humpback-01",
     "name": "Humpback sighting (Nordwestmecklenburg, DE-MV, DE)",
     "species": "Humpback",
@@ -1610,21 +1697,6 @@
     "notable": true
   },
   {
-    "id": "2026-04-04-canary-islands-spain-blue-01",
-    "name": "Blue Whale sighting (Canary Islands, Spain)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Atlantic Ocean (1 individuals). Observed 2026-04-04. Source: Happywhale.com.",
-    "date": "2026-04-04",
-    "latitude": 28.235599,
-    "longitude": -16.852574,
-    "area": "Canary Islands, Spain",
-    "source": "https://obis.org/occurrence/656483",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-04-03-azores-portugal-gray-01",
     "name": "Gray Whale sighting (Azores, Portugal)",
     "species": "Gray Whale",
@@ -1634,6 +1706,21 @@
     "longitude": -28.633294,
     "area": "Azores, Portugal",
     "source": "https://obis.org/occurrence/656635",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-04-02-azores-portugal-gray-01",
+    "name": "Gray Whale sighting (Azores, Portugal)",
+    "species": "Gray Whale",
+    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-04-02. Source: Happywhale.com.",
+    "date": "2026-04-02",
+    "latitude": 38.506284,
+    "longitude": -28.747661,
+    "area": "Azores, Portugal",
+    "source": "https://obis.org/occurrence/656637",
     "behaviors": [
       "reported"
     ],
@@ -1653,21 +1740,6 @@
       "reported"
     ],
     "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
-    "id": "2026-04-02-azores-portugal-gray-01",
-    "name": "Gray Whale sighting (Azores, Portugal)",
-    "species": "Gray Whale",
-    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-04-02. Source: Happywhale.com.",
-    "date": "2026-04-02",
-    "latitude": 38.506284,
-    "longitude": -28.747661,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/656637",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
   },
   {
     "id": "2026-03-31-napp-nordland-no-orca-01",
@@ -1706,23 +1778,6 @@
     "notable": true
   },
   {
-    "id": "2026-03-29-wismar-deutschland-humpback-01",
-    "name": "Humpback sighting (Wismar, Deutschland)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by christonis.",
-    "date": "2026-03-29",
-    "latitude": 53.9132049997,
-    "longitude": 11.4338496997,
-    "area": "Wismar, Deutschland",
-    "source": "https://www.inaturalist.org/observations/346113357",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630862039/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Christoph Nissen, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-29-rawson-chubut-argent-orca-01",
     "name": "Orca sighting (Rawson, Chubut, Argentina)",
     "species": "Orca",
@@ -1739,6 +1794,23 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Sol Lombardo, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Patagonian orca"
+  },
+  {
+    "id": "2026-03-29-wismar-deutschland-humpback-01",
+    "name": "Humpback sighting (Wismar, Deutschland)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by christonis.",
+    "date": "2026-03-29",
+    "latitude": 53.9132049997,
+    "longitude": 11.4338496997,
+    "area": "Wismar, Deutschland",
+    "source": "https://www.inaturalist.org/observations/346113357",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630862039/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Christoph Nissen, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-29-alaska-united-states-humpback-02",
@@ -2188,6 +2260,24 @@
     "behaviors": [
       "reported"
     ],
+    "notable": true
+  },
+  {
+    "id": "2026-03-15-japan-sperm-01",
+    "name": "Sperm whale sighting (Japan (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by mizunagi.",
+    "date": "2026-03-15",
+    "latitude": 34.9068285776,
+    "longitude": 139.5649859962,
+    "area": "Japan (offshore)",
+    "source": "https://www.inaturalist.org/observations/358477040",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653953839/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) S.Shimano, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
