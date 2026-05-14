@@ -174,6 +174,24 @@
     "notable": true
   },
   {
+    "id": "2026-05-13-southern-gulf-island-orca-01",
+    "name": "Orca sighting (Southern Gulf Islands, BC, CA)",
+    "species": "Orca",
+    "info": "iNaturalist observation by richardptaylor.",
+    "date": "2026-05-13",
+    "latitude": 48.8087536693,
+    "longitude": -123.2463354204,
+    "area": "Southern Gulf Islands, BC, CA",
+    "source": "https://www.inaturalist.org/observations/361550661",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/659837755/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Richard Taylor, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
     "id": "2026-05-13-tenakee-inlet-sitka--humpback-02",
     "name": "Humpback sighting (Tenakee Inlet, Sitka, AK, US)",
     "species": "Humpback",
@@ -317,25 +335,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-12-washington-us-orca-02",
-    "name": "Orca sighting (Washington, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by ceuthophilus.",
-    "date": "2026-05-12",
-    "latitude": 48.7581972024,
-    "longitude": -123.1581498392,
-    "area": "Washington, US",
-    "source": "https://www.inaturalist.org/observations/361269988",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/659300762/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Steve Taylor, some rights reserved (CC BY)",
-    "seasonalStatus": "Salish Sea (SRKW range)"
-  },
-  {
-    "id": "2026-05-12-juneau-ak-usa-orca-03",
+    "id": "2026-05-12-juneau-ak-usa-orca-02",
     "name": "Orca sighting (Juneau, AK, USA)",
     "species": "Orca",
     "info": "iNaturalist observation by lori488.",
@@ -523,22 +523,6 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Bitty A. Roy, some rights reserved (CC BY-NC)",
     "notable": true
-  },
-  {
-    "id": "2026-05-10-southern-gulf-island-orca-03",
-    "name": "Orca sighting (Southern Gulf Islands, BC, CA)",
-    "species": "Orca",
-    "info": "iNaturalist observation by baubella.",
-    "date": "2026-05-10",
-    "latitude": 48.8039120589,
-    "longitude": -123.235591977,
-    "area": "Southern Gulf Islands, BC, CA",
-    "source": "https://www.inaturalist.org/observations/360866212",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
     "id": "2026-05-10-sp-br-humpback-01",
@@ -1372,7 +1356,25 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-04-23-washington-humpback-01",
+    "id": "2026-04-23-japan-humpback-01",
+    "name": "Humpback sighting (Japan (offshore))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by gomenwl.",
+    "date": "2026-04-23",
+    "latitude": 32.2811954335,
+    "longitude": 141.5673693278,
+    "area": "Japan (offshore)",
+    "source": "https://www.inaturalist.org/observations/357096314",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/651269908/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Gomen See, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-23-washington-humpback-02",
     "name": "Humpback sighting (Washington)",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-04-23.",
@@ -1403,7 +1405,43 @@
     "seasonalStatus": "California migration corridor"
   },
   {
-    "id": "2026-04-19-grenen-skagen-humpback-01",
+    "id": "2026-04-21-jp-humpback-01",
+    "name": "Humpback sighting (太平洋, 東京, JP)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by gomenwl.",
+    "date": "2026-04-21",
+    "latitude": 27.0649445,
+    "longitude": 142.1764666667,
+    "area": "太平洋, 東京, JP",
+    "source": "https://www.inaturalist.org/observations/351659703",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/641767585/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Gomen See, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-19-japan-humpback-01",
+    "name": "Humpback sighting (Japan (offshore))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by gomenwl.",
+    "date": "2026-04-19",
+    "latitude": 30.1316524207,
+    "longitude": 141.4239822925,
+    "area": "Japan (offshore)",
+    "source": "https://www.inaturalist.org/observations/351684775",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/641816062/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Gomen See, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-19-grenen-skagen-humpback-02",
     "name": "Humpback sighting (Grenen, Skagen)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-04-19.",
@@ -1741,21 +1779,6 @@
     "notable": true
   },
   {
-    "id": "2026-04-02-nordwestmecklenburg--humpback-01",
-    "name": "Humpback sighting (Nordwestmecklenburg, DE-MV, DE)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by rio_arajuno.",
-    "date": "2026-04-02",
-    "latitude": 53.9723305924,
-    "longitude": 11.4354117215,
-    "area": "Nordwestmecklenburg, DE-MV, DE",
-    "source": "https://www.inaturalist.org/observations/348215356",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
     "id": "2026-04-02-azores-portugal-gray-01",
     "name": "Gray Whale sighting (Azores, Portugal)",
     "species": "Gray Whale",
@@ -1769,6 +1792,21 @@
       "reported"
     ],
     "notable": true
+  },
+  {
+    "id": "2026-04-02-nordwestmecklenburg--humpback-01",
+    "name": "Humpback sighting (Nordwestmecklenburg, DE-MV, DE)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by rio_arajuno.",
+    "date": "2026-04-02",
+    "latitude": 53.9723305924,
+    "longitude": 11.4354117215,
+    "area": "Nordwestmecklenburg, DE-MV, DE",
+    "source": "https://www.inaturalist.org/observations/348215356",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
     "id": "2026-03-31-napp-nordland-no-orca-01",
@@ -1807,6 +1845,24 @@
     "notable": true
   },
   {
+    "id": "2026-03-29-rawson-chubut-argent-orca-01",
+    "name": "Orca sighting (Rawson, Chubut, Argentina)",
+    "species": "Orca",
+    "info": "iNaturalist observation by sol_lombardo.",
+    "date": "2026-03-29",
+    "latitude": -42.959091215499996,
+    "longitude": -64.3093300225,
+    "area": "Rawson, Chubut, Argentina",
+    "source": "https://www.inaturalist.org/observations/346265620",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631163642/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Sol Lombardo, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Patagonian orca"
+  },
+  {
     "id": "2026-03-29-wismar-deutschland-humpback-01",
     "name": "Humpback sighting (Wismar, Deutschland)",
     "species": "Humpback",
@@ -1838,24 +1894,6 @@
       "feeding"
     ],
     "notable": true
-  },
-  {
-    "id": "2026-03-29-rawson-chubut-argent-orca-01",
-    "name": "Orca sighting (Rawson, Chubut, Argentina)",
-    "species": "Orca",
-    "info": "iNaturalist observation by sol_lombardo.",
-    "date": "2026-03-29",
-    "latitude": -42.959091215499996,
-    "longitude": -64.3093300225,
-    "area": "Rawson, Chubut, Argentina",
-    "source": "https://www.inaturalist.org/observations/346265620",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631163642/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sol Lombardo, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Patagonian orca"
   },
   {
     "id": "2026-03-28-vads-humpback-01",
