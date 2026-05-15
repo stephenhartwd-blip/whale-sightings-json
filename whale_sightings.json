@@ -18,7 +18,25 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-aalb-k-strand-skagen-orca-01",
+    "id": "2026-05-15-island-orca-01",
+    "name": "Orca sighting (Island)",
+    "species": "Orca",
+    "info": "iNaturalist observation by hakuna26.",
+    "date": "2026-05-15",
+    "latitude": 65.6979694444,
+    "longitude": -21.3479305556,
+    "area": "Island",
+    "source": "https://www.inaturalist.org/observations/361744706",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660204966/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) hakuna26, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-15-aalb-k-strand-skagen-orca-02",
     "name": "Orca sighting (Aalbæk Strand, Skagen, Region Nordjylland, DK)",
     "species": "Orca",
     "info": "iNaturalist observation by mariamay.",
@@ -52,7 +70,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-bremer-canyon-orca-02",
+    "id": "2026-05-15-bremer-canyon-orca-03",
     "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
     "species": "Orca",
     "info": "Parsed from whale_watch_wa on 2026-05-15.",
@@ -103,7 +121,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-05-15-bay-of-fundy-orca-03",
+    "id": "2026-05-15-bay-of-fundy-orca-04",
     "name": "Orca sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Orca",
     "info": "Parsed from brier_island_whale_sightings on 2026-05-15.",
@@ -138,7 +156,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-san-juan-islands-orca-04",
+    "id": "2026-05-15-san-juan-islands-orca-05",
     "name": "Orca sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Orca",
     "info": "Parsed from sanjuan_safaris_whale_report on 2026-05-15.",
@@ -154,6 +172,21 @@
       "traveling"
     ],
     "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-05-15-eyjafjordur-humpback-05",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-05-15.",
+    "date": "2026-05-15",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
     "id": "2026-05-14-vancouver-bc-ca-gray-01",
@@ -505,21 +538,6 @@
     "notable": true
   },
   {
-    "id": "2026-05-10-eyjafjordur-humpback-02",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-05-10.",
-    "date": "2026-05-10",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
     "id": "2026-05-09-portugal-blue-01",
     "name": "Blue Whale sighting (Portugal)",
     "species": "Blue Whale",
@@ -703,7 +721,21 @@
     "notable": true
   },
   {
-    "id": "2026-05-06-northeast-atlantic-humpback-01",
+    "id": "2026-05-06-hawaii-united-states-humpback-01",
+    "name": "Humpback sighting (Hawaii, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
+    "date": "2026-05-06",
+    "latitude": 20.87,
+    "longitude": -156.7,
+    "area": "Hawaii, United States",
+    "source": "https://obis.org/occurrence/662458",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-05-06-northeast-atlantic-humpback-02",
     "name": "Humpback sighting (Northeast Atlantic (GBIF))",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-06.",
@@ -884,6 +916,21 @@
     "seasonalStatus": "California migration corridor"
   },
   {
+    "id": "2026-05-02-northeast-iceland-humpback-01",
+    "name": "Humpback sighting (Northeast, Iceland)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-05-02. Source: Happywhale.com.",
+    "date": "2026-05-02",
+    "latitude": 66.1,
+    "longitude": -17.5,
+    "area": "Northeast, Iceland",
+    "source": "https://obis.org/occurrence/661963",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
     "id": "2026-05-01-northeast-atlantic-sperm-01",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
@@ -899,6 +946,24 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/657320924/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) James Rawson, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-01-azores-sperm-02",
+    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by mather65.",
+    "date": "2026-05-01",
+    "latitude": 38.6830832716,
+    "longitude": -28.3895694883,
+    "area": "Azores (offshore), Portugal",
+    "source": "https://www.inaturalist.org/observations/357438073",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/651940776/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) mather65, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -933,6 +998,21 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660101333/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) prayandr84, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-01-alaska-united-states-humpback-02",
+    "name": "Humpback sighting (Alaska, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-01. Source: Happywhale.com.",
+    "date": "2026-05-01",
+    "latitude": 58.730752,
+    "longitude": -135.029062,
+    "area": "Alaska, United States",
+    "source": "https://obis.org/occurrence/661982",
+    "behaviors": [
+      "reported"
+    ],
     "notable": true
   },
   {
@@ -1002,6 +1082,60 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) bhallberg, some rights reserved (CC BY-NC)",
     "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-04-28-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by martinholladay.",
+    "date": "2026-04-28",
+    "latitude": 15.5952827252,
+    "longitude": -61.5032143475,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/356425986",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/649993317/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-28-dominica-caribbean-sperm-02",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by martinholladay.",
+    "date": "2026-04-28",
+    "latitude": 15.4881077325,
+    "longitude": -61.5941624299,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/356318634",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/649789156/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-27-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by martinholladay.",
+    "date": "2026-04-27",
+    "latitude": 15.3696657104,
+    "longitude": -61.431318789,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/355723475",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648710444/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)",
+    "notable": true
   },
   {
     "id": "2026-04-27-azores-blue-01",
@@ -1443,6 +1577,21 @@
     "notable": true
   },
   {
+    "id": "2026-04-07-baja-california-sur--humpback-01",
+    "name": "Humpback sighting (Baja California Sur, Mexico)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-04-07. Source: Happywhale.com.",
+    "date": "2026-04-07",
+    "latitude": 22.895815,
+    "longitude": -110.059844,
+    "area": "Baja California Sur, Mexico",
+    "source": "https://obis.org/occurrence/657137",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-04-06-ais-n-cl-ai-cl-blue-01",
     "name": "Blue Whale sighting (Aisén, CL-AI, CL)",
     "species": "Blue Whale",
@@ -1542,21 +1691,6 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-04-04-california-united-st-humpback-02",
-    "name": "Humpback sighting (California, United States)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-04-04. Source: Happywhale.com.",
-    "date": "2026-04-04",
-    "latitude": 34.2,
-    "longitude": -120.0,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/656072",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-04-02-nordwestmecklenburg--humpback-01",
     "name": "Humpback sighting (Nordwestmecklenburg, DE-MV, DE)",
     "species": "Humpback",
@@ -1638,22 +1772,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630862039/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Christoph Nissen, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-29-alaska-united-states-humpback-02",
-    "name": "Humpback sighting (Alaska, United States)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-03-29. Source: Happywhale.com.",
-    "date": "2026-03-29",
-    "latitude": 57.086903,
-    "longitude": -135.471071,
-    "area": "Alaska, United States",
-    "source": "https://obis.org/occurrence/654794",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ],
-    "notable": true
   },
   {
     "id": "2026-03-29-rawson-chubut-argent-orca-01",
@@ -1769,23 +1887,6 @@
     "seasonalStatus": "Baja breeding lagoons"
   },
   {
-    "id": "2026-03-24-freistrand-am-niendo-humpback-01",
-    "name": "Humpback sighting (Freistrand am Niendorfer Hafen, 23669, 23669 Timmendorfer Strand, Deutschland)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by mathieu_fr.",
-    "date": "2026-03-24",
-    "latitude": 53.9958837728,
-    "longitude": 10.8089630306,
-    "area": "Freistrand am Niendorfer Hafen, 23669, 23669 Timmendorfer Strand, Deutschland",
-    "source": "https://www.inaturalist.org/observations/344919775",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/628511245/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) mathieu_fr, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-24-vads-orca-01",
     "name": "Orca sighting (Vadsø)",
     "species": "Orca",
@@ -1845,6 +1946,23 @@
     "notable": true
   },
   {
+    "id": "2026-03-24-freistrand-am-niendo-humpback-01",
+    "name": "Humpback sighting (Freistrand am Niendorfer Hafen, 23669, 23669 Timmendorfer Strand, Deutschland)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by mathieu_fr.",
+    "date": "2026-03-24",
+    "latitude": 53.9958837728,
+    "longitude": 10.8089630306,
+    "area": "Freistrand am Niendorfer Hafen, 23669, 23669 Timmendorfer Strand, Deutschland",
+    "source": "https://www.inaturalist.org/observations/344919775",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/628511245/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) mathieu_fr, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-03-22-tierra-del-fuego-arg-orca-01",
     "name": "Orca sighting (Tierra del Fuego, Argentina)",
     "species": "Orca",
@@ -1854,21 +1972,6 @@
     "longitude": -67.394,
     "area": "Tierra del Fuego, Argentina",
     "source": "https://obis.org/occurrence/652924",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-22-california-united-st-humpback-01",
-    "name": "Humpback sighting (California, United States)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-03-22. Source: Happywhale.com.",
-    "date": "2026-03-22",
-    "latitude": 36.793892,
-    "longitude": -121.863183,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/652710",
     "behaviors": [
       "reported"
     ],
@@ -1906,6 +2009,24 @@
       "feeding",
       "traveling"
     ],
+    "notable": true
+  },
+  {
+    "id": "2026-03-20-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by merchkimberly.",
+    "date": "2026-03-20",
+    "latitude": 15.2718000608,
+    "longitude": -61.5099292635,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/344325474",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/627364828/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) merchkimberly, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -1969,19 +2090,19 @@
     "notable": true
   },
   {
-    "id": "2026-03-18-hawaii-united-states-humpback-01",
-    "name": "Humpback sighting (Hawaii, United States)",
+    "id": "2026-03-18-baja-california-sur--humpback-01",
+    "name": "Humpback sighting (Baja California Sur, Mexico)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-03-18. Source: Happywhale.com.",
     "date": "2026-03-18",
-    "latitude": 21.5968,
-    "longitude": -158.1883,
-    "area": "Hawaii, United States",
-    "source": "https://obis.org/occurrence/652059",
+    "latitude": 22.895815,
+    "longitude": -110.059844,
+    "area": "Baja California Sur, Mexico",
+    "source": "https://obis.org/occurrence/652476",
     "behaviors": [
       "reported"
     ],
-    "seasonalStatus": "Hawaii breeding season"
+    "notable": true
   },
   {
     "id": "2026-03-17-rein-ysundet-horn-ya-orca-01",
