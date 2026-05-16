@@ -262,24 +262,6 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-is-orca-06",
-    "name": "Orca sighting (IS)",
-    "species": "Orca",
-    "info": "iNaturalist observation by alison-kaye.",
-    "date": "2026-05-15",
-    "latitude": 65.9837708477,
-    "longitude": -19.690083357,
-    "area": "IS",
-    "source": "https://www.inaturalist.org/observations/361806757",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660322451/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) alison-kaye, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-05-15-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -386,21 +368,6 @@
     "notable": true
   },
   {
-    "id": "2026-05-14-hoonah-angoon-county-humpback-05",
-    "name": "Humpback sighting (Hoonah-Angoon County, US-AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by holly513.",
-    "date": "2026-05-14",
-    "latitude": 58.1500888889,
-    "longitude": -135.4633305556,
-    "area": "Hoonah-Angoon County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/361617138",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-05-14-delta-bc-ca-orca-01",
     "name": "Orca sighting (Delta, BC, CA)",
     "species": "Orca",
@@ -417,6 +384,21 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) meningoenzep, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-05-14-hoonah-angoon-county-humpback-05",
+    "name": "Humpback sighting (Hoonah-Angoon County, US-AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by holly513.",
+    "date": "2026-05-14",
+    "latitude": 58.1500888889,
+    "longitude": -135.4633305556,
+    "area": "Hoonah-Angoon County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/361617138",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
   },
   {
     "id": "2026-05-14-ak-us-orca-02",
@@ -707,6 +689,24 @@
     "seasonalStatus": "California migration corridor"
   },
   {
+    "id": "2026-05-09-cap-vert-humpback-01",
+    "name": "Humpback sighting (Cap-Vert)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by vincentcarlier.",
+    "date": "2026-05-09",
+    "latitude": 16.1531156106,
+    "longitude": -23.0424633622,
+    "area": "Cap-Vert",
+    "source": "https://www.inaturalist.org/observations/359865248",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656619400/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Vincent Carlier, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-05-08-spain-sperm-01",
     "name": "Sperm whale sighting (Spain)",
     "species": "Sperm whale",
@@ -920,6 +920,21 @@
     "seasonalStatus": "California migration corridor"
   },
   {
+    "id": "2026-05-03-scotland-gb-orca-01",
+    "name": "Orca sighting (Scotland, GB)",
+    "species": "Orca",
+    "info": "iNaturalist observation by wilderness_kai.",
+    "date": "2026-05-03",
+    "latitude": 57.698509636,
+    "longitude": -2.0012376531,
+    "area": "Scotland, GB",
+    "source": "https://www.inaturalist.org/observations/358982681",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-05-03-waialua-hi-96791-usa-humpback-01",
     "name": "Humpback sighting (Waialua, HI 96791, USA)",
     "species": "Humpback",
@@ -935,21 +950,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653365458/medium.jpg",
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Damien Wallace, some rights reserved (CC BY)"
-  },
-  {
-    "id": "2026-05-03-scotland-gb-orca-01",
-    "name": "Orca sighting (Scotland, GB)",
-    "species": "Orca",
-    "info": "iNaturalist observation by wilderness_kai.",
-    "date": "2026-05-03",
-    "latitude": 57.698509636,
-    "longitude": -2.0012376531,
-    "area": "Scotland, GB",
-    "source": "https://www.inaturalist.org/observations/358982681",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
   },
   {
     "id": "2026-05-02-california-united-st-blue-01",
@@ -1323,7 +1323,25 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-04-23-washington-humpback-01",
+    "id": "2026-04-23-japan-humpback-01",
+    "name": "Humpback sighting (Japan (offshore))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by gomenwl.",
+    "date": "2026-04-23",
+    "latitude": 32.2811954335,
+    "longitude": 141.5673693278,
+    "area": "Japan (offshore)",
+    "source": "https://www.inaturalist.org/observations/357096314",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/651269908/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Gomen See, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-23-washington-humpback-02",
     "name": "Humpback sighting (Washington)",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-04-23.",
@@ -1354,7 +1372,43 @@
     "notable": true
   },
   {
-    "id": "2026-04-19-grenen-skagen-humpback-01",
+    "id": "2026-04-21-jp-humpback-01",
+    "name": "Humpback sighting (太平洋, 東京, JP)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by gomenwl.",
+    "date": "2026-04-21",
+    "latitude": 27.0649445,
+    "longitude": 142.1764666667,
+    "area": "太平洋, 東京, JP",
+    "source": "https://www.inaturalist.org/observations/351659703",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/641767585/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Gomen See, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-19-japan-humpback-01",
+    "name": "Humpback sighting (Japan (offshore))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by gomenwl.",
+    "date": "2026-04-19",
+    "latitude": 30.1316524207,
+    "longitude": 141.4239822925,
+    "area": "Japan (offshore)",
+    "source": "https://www.inaturalist.org/observations/351684775",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/641816062/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Gomen See, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-19-grenen-skagen-humpback-02",
     "name": "Humpback sighting (Grenen, Skagen)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-04-19.",
@@ -1369,7 +1423,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-04-19-washington-united-st-humpback-02",
+    "id": "2026-04-19-washington-united-st-humpback-03",
     "name": "Humpback sighting (Washington, United States)",
     "species": "Humpback",
     "info": "GBIF record from Happywhale - Common minke whale in North Pacific Ocean. Observed 2026-04-19.",
@@ -1429,6 +1483,21 @@
     "notable": true
   },
   {
+    "id": "2026-04-18-comunidad-valenciana-sperm-01",
+    "name": "Sperm whale sighting (Comunidad Valenciana, ES)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by fraortsco.",
+    "date": "2026-04-18",
+    "latitude": 38.9206179703,
+    "longitude": -0.0393910167,
+    "area": "Comunidad Valenciana, ES",
+    "source": "https://www.inaturalist.org/observations/350809108",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-04-16-azores-portugal-orca-01",
     "name": "Orca sighting (Azores, Portugal)",
     "species": "Orca",
@@ -1471,6 +1540,42 @@
     "behaviors": [
       "reported"
     ]
+  },
+  {
+    "id": "2026-04-11-st-lawrence-river-es-fin-01",
+    "name": "Fin Whale sighting (St. Lawrence River / Estuary, Canada)",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by jhskevington.",
+    "date": "2026-04-11",
+    "latitude": 49.2465839306,
+    "longitude": -67.1459252273,
+    "area": "St. Lawrence River / Estuary, Canada",
+    "source": "https://www.inaturalist.org/observations/349674768",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/637909258/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Jeffrey H. Skevington, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-10-pelagos-sanctuary-me-fin-01",
+    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by ryruther.",
+    "date": "2026-04-10",
+    "latitude": 42.3656403178,
+    "longitude": 7.4783392424,
+    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
+    "source": "https://www.inaturalist.org/observations/361183589",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/659137864/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Dr. Ryne D. Rutherford, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
   },
   {
     "id": "2026-04-09-vila-franca-do-campo-humpback-01",
@@ -1557,7 +1662,25 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-04-08-california-united-st-fin-01",
+    "id": "2026-04-08-pelagos-sanctuary-me-fin-01",
+    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by aulax.",
+    "date": "2026-04-08",
+    "latitude": 41.8174772926,
+    "longitude": 8.4149227291,
+    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
+    "source": "https://www.inaturalist.org/observations/348234089",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/635071517/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) aulax, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
+  },
+  {
+    "id": "2026-04-08-california-united-st-fin-02",
     "name": "Fin Whale sighting (California, United States)",
     "species": "Fin Whale",
     "info": "OBIS record from Happywhale - Fin whale in North Pacific Ocean (1 individuals). Observed 2026-04-08. Source: Happywhale.com.",
@@ -1751,23 +1874,6 @@
     "notable": true
   },
   {
-    "id": "2026-03-29-wismar-deutschland-humpback-01",
-    "name": "Humpback sighting (Wismar, Deutschland)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by christonis.",
-    "date": "2026-03-29",
-    "latitude": 53.9132049997,
-    "longitude": 11.4338496997,
-    "area": "Wismar, Deutschland",
-    "source": "https://www.inaturalist.org/observations/346113357",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630862039/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Christoph Nissen, some rights reserved (CC BY-NC)"
-  },
-  {
     "id": "2026-03-29-rawson-chubut-argent-orca-01",
     "name": "Orca sighting (Rawson, Chubut, Argentina)",
     "species": "Orca",
@@ -1784,6 +1890,23 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Sol Lombardo, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Patagonian orca"
+  },
+  {
+    "id": "2026-03-29-wismar-deutschland-humpback-01",
+    "name": "Humpback sighting (Wismar, Deutschland)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by christonis.",
+    "date": "2026-03-29",
+    "latitude": 53.9132049997,
+    "longitude": 11.4338496997,
+    "area": "Wismar, Deutschland",
+    "source": "https://www.inaturalist.org/observations/346113357",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630862039/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Christoph Nissen, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-03-28-mx-humpback-01",
