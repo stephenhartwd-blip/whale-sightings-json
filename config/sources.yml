@@ -995,7 +995,7 @@ sources:
     latitude: -27.00
     longitude: 153.00
     bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
-    max_items: 5
+    max_items: 8
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: obis_orca_australia
@@ -1005,7 +1005,7 @@ sources:
     latitude: -35.00
     longitude: 138.00
     bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
-    max_items: 4
+    max_items: 6
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: obis_sperm_australia
@@ -1015,7 +1015,7 @@ sources:
     latitude: -30.00
     longitude: 115.00
     bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
-    max_items: 3
+    max_items: 5
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: obis_blue_whale_australia
@@ -1025,7 +1025,7 @@ sources:
     latitude: -38.00
     longitude: 148.00
     bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
-    max_items: 3
+    max_items: 5
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # ── OBIS New Zealand ──────────────────────────────────────────────────────────
@@ -1036,7 +1036,7 @@ sources:
     latitude: -41.00
     longitude: 174.00
     bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
-    max_items: 5
+    max_items: 8
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: obis_orca_nz
@@ -1046,7 +1046,7 @@ sources:
     latitude: -44.00
     longitude: 168.00
     bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
-    max_items: 4
+    max_items: 6
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: obis_sperm_nz
@@ -1056,7 +1056,7 @@ sources:
     latitude: -45.50
     longitude: 166.60
     bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
-    max_items: 3
+    max_items: 5
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # ── iNaturalist Australia ─────────────────────────────────────────────────────
@@ -1067,7 +1067,7 @@ sources:
     place_id: 6744
     latitude: -27.00
     longitude: 153.00
-    max_items: 5
+    max_items: 7
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: inat_humpback_australia
@@ -1077,7 +1077,7 @@ sources:
     place_id: 6744
     latitude: -33.00
     longitude: 151.00
-    max_items: 5
+    max_items: 7
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: inat_whale_western_australia
@@ -1087,6 +1087,59 @@ sources:
     place_id: 7161
     latitude: -31.00
     longitude: 115.00
+    max_items: 6
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # Queensland — humpback highway (Hervey Bay / Great Barrier Reef corridor)
+  - key: inat_humpback_queensland
+    parser: inaturalist_api
+    area: "Queensland, Australia"
+    taxon_id: 42448
+    place_id: 6745
+    latitude: -24.00
+    longitude: 152.50
+    max_items: 7
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_orca_queensland
+    parser: inaturalist_api
+    area: "Queensland, Australia"
+    taxon_id: 42146
+    place_id: 6745
+    latitude: -20.00
+    longitude: 148.00
+    max_items: 4
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # New South Wales — Sydney / Byron Bay migration corridor
+  - key: inat_humpback_nsw
+    parser: inaturalist_api
+    area: "New South Wales, Australia"
+    taxon_id: 42448
+    place_id: 6746
+    latitude: -33.50
+    longitude: 151.50
+    max_items: 6
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_orca_nsw
+    parser: inaturalist_api
+    area: "New South Wales, Australia"
+    taxon_id: 42146
+    place_id: 6746
+    latitude: -34.00
+    longitude: 151.20
+    max_items: 4
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # Victoria — Bass Strait humpbacks
+  - key: inat_humpback_victoria
+    parser: inaturalist_api
+    area: "Victoria, Australia"
+    taxon_id: 42448
+    place_id: 6741
+    latitude: -38.50
+    longitude: 145.50
     max_items: 4
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
@@ -1098,7 +1151,7 @@ sources:
     place_id: 7085
     latitude: -41.00
     longitude: 174.00
-    max_items: 5
+    max_items: 7
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: inat_humpback_nz
@@ -1108,7 +1161,7 @@ sources:
     place_id: 7085
     latitude: -37.00
     longitude: 175.00
-    max_items: 4
+    max_items: 6
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: inat_sperm_whale_nz
@@ -1118,6 +1171,27 @@ sources:
     place_id: 7085
     latitude: -42.40
     longitude: 173.70
+    max_items: 5
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # South Island NZ — Canterbury coast (Kaikoura region) + Fiordland
+  - key: inat_humpback_nz_south_island
+    parser: inaturalist_api
+    area: "South Island, New Zealand"
+    taxon_id: 42448
+    place_query: "Canterbury, New Zealand"
+    latitude: -43.50
+    longitude: 172.50
+    max_items: 4
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_orca_nz_south_island
+    parser: inaturalist_api
+    area: "South Island, New Zealand"
+    taxon_id: 42146
+    place_query: "Fiordland, New Zealand"
+    latitude: -45.00
+    longitude: 167.50
     max_items: 3
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
