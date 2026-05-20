@@ -1015,11 +1015,17 @@ def _inat_obs_latlon(obs: Dict[str, Any]) -> Optional[Tuple[float, float]]:
 
 def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_name: str, source_key: str) -> List[Candidate]:
     taxon_name = (cfg.get("taxon_name") or "").strip()
-    if not taxon_name:
+    taxon_id   = cfg.get("taxon_id")
+
+    if not taxon_name and taxon_id is None:
         return []
 
     place_query = (cfg.get("place_query") or "").strip()
-    place_id = _inat_place_id(session, place_query) if place_query else None
+    cfg_place_id = cfg.get("place_id")
+    place_id = (
+        int(cfg_place_id) if cfg_place_id is not None
+        else (_inat_place_id(session, place_query) if place_query else None)
+    )
 
     max_items = int(cfg.get("max_items", 3))
     area_default = (cfg.get("area", "") or "").strip()
@@ -1040,16 +1046,21 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
     d1 = (today - timedelta(days=int(GLOBAL_MAX_DAYS))).date().isoformat()
 
     params: Dict[str, Any] = {
-        "taxon_name": taxon_name,
         "d1": d1,
         "d2": d2,
         "order": "desc",
         "order_by": "observed_on",
         "geo": "true",
-        "verifiable": "true",
+        "quality_grade": "research,needs_id,casual",
         "captive": "false",
         "per_page": 100,
     }
+
+    if taxon_id is not None:
+        params["taxon_id"] = int(taxon_id)
+    elif taxon_name:
+        params["taxon_name"] = taxon_name
+
     # Bounding box takes priority over place_id — catches unassigned-place ocean observations
     if cfg.get("swlat") is not None:
         params["swlat"] = float(cfg["swlat"])
