@@ -1195,6 +1195,145 @@ sources:
     max_items: 3
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
+  # ── GBIF Australia & New Zealand ─────────────────────────────────────────────
+  # GBIF aggregates verified human observations from CSIRO, Australian Museum,
+  # Queensland Museum, Museums Victoria, Te Papa (NZ), DOC NZ, and universities.
+  # These are institutional / research-grade sightings with real GPS coordinates.
+
+  - key: gbif_humpback_australia
+    parser: gbif_api
+    area: "Australia"
+    force_species: ["Humpback"]
+    swlat: -45.0
+    swlng: 110.0
+    nelat: -10.0
+    nelng: 155.0
+    latitude: -27.00
+    longitude: 153.00
+    max_items: 8
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_orca_australia
+    parser: gbif_api
+    area: "Australia"
+    force_species: ["Orca"]
+    swlat: -45.0
+    swlng: 110.0
+    nelat: -10.0
+    nelng: 155.0
+    latitude: -35.00
+    longitude: 135.00
+    max_items: 6
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_sperm_whale_australia
+    parser: gbif_api
+    area: "Australia"
+    force_species: ["Sperm whale"]
+    swlat: -45.0
+    swlng: 110.0
+    nelat: -10.0
+    nelng: 155.0
+    latitude: -30.00
+    longitude: 115.00
+    max_items: 5
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_blue_whale_australia
+    parser: gbif_api
+    area: "Australia"
+    force_species: ["Blue Whale"]
+    swlat: -45.0
+    swlng: 110.0
+    nelat: -10.0
+    nelng: 155.0
+    latitude: -38.00
+    longitude: 148.00
+    max_items: 5
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # Queensland coast — humpback highway migration corridor (Hervey Bay / Whitsundays)
+  - key: gbif_humpback_queensland
+    parser: gbif_api
+    area: "Queensland, Australia"
+    force_species: ["Humpback"]
+    swlat: -28.0
+    swlng: 142.0
+    nelat: -10.0
+    nelng: 155.0
+    latitude: -24.00
+    longitude: 152.50
+    max_items: 7
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # New South Wales coast — Sydney / Byron Bay migration corridor
+  - key: gbif_humpback_nsw
+    parser: gbif_api
+    area: "New South Wales, Australia"
+    force_species: ["Humpback"]
+    swlat: -38.0
+    swlng: 149.0
+    nelat: -28.0
+    nelng: 155.0
+    latitude: -33.50
+    longitude: 151.50
+    max_items: 6
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # New Zealand — all species, full EEZ bounding box
+  - key: gbif_humpback_nz
+    parser: gbif_api
+    area: "New Zealand"
+    force_species: ["Humpback"]
+    swlat: -52.0
+    swlng: 165.0
+    nelat: -33.0
+    nelng: 180.0
+    latitude: -41.00
+    longitude: 174.00
+    max_items: 8
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_orca_nz
+    parser: gbif_api
+    area: "New Zealand"
+    force_species: ["Orca"]
+    swlat: -52.0
+    swlng: 165.0
+    nelat: -33.0
+    nelng: 180.0
+    latitude: -44.00
+    longitude: 168.00
+    max_items: 6
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # Kaikoura specifically — world's best sperm whale watching site
+  - key: gbif_sperm_whale_kaikoura
+    parser: gbif_api
+    area: "Kaikoura, New Zealand"
+    force_species: ["Sperm whale"]
+    swlat: -43.0
+    swlng: 172.5
+    nelat: -41.5
+    nelng: 174.5
+    latitude: -42.40
+    longitude: 173.70
+    max_items: 6
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_blue_whale_nz
+    parser: gbif_api
+    area: "New Zealand"
+    force_species: ["Blue Whale"]
+    swlat: -52.0
+    swlng: 165.0
+    nelat: -33.0
+    nelng: 180.0
+    latitude: -45.00
+    longitude: 167.00
+    max_items: 5
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
   # -------------------------
   # GERMANY / NORTH SEA / DENMARK
   # -------------------------
