@@ -1195,6 +1195,113 @@ sources:
     max_items: 3
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
+  # ── ALA (Atlas of Living Australia) ──────────────────────────────────────────
+  # Australia's national biodiversity data aggregator — state wildlife agencies,
+  # citizen reporters, CSIRO, and universities. Fresher AU data than GBIF.
+
+  - key: ala_humpback_east_australia
+    parser: ala_api
+    area: "East Australia"
+    force_species: ["Humpback"]
+    swlat: -40.0
+    swlng: 148.0
+    nelat: -10.0
+    nelng: 155.0
+    latitude: -28.00
+    longitude: 153.50
+    max_items: 10
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.02 }
+
+  - key: ala_humpback_west_australia
+    parser: ala_api
+    area: "Western Australia"
+    force_species: ["Humpback"]
+    swlat: -36.0
+    swlng: 112.0
+    nelat: -14.0
+    nelng: 130.0
+    latitude: -28.00
+    longitude: 114.00
+    max_items: 8
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: -0.02 }
+
+  - key: ala_orca_australia
+    parser: ala_api
+    area: "Australia"
+    force_species: ["Orca"]
+    swlat: -45.0
+    swlng: 110.0
+    nelat: -10.0
+    nelng: 155.0
+    latitude: -34.00
+    longitude: 120.00
+    max_items: 8
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: ala_sperm_whale_australia
+    parser: ala_api
+    area: "Australia"
+    force_species: ["Sperm whale"]
+    swlat: -45.0
+    swlng: 110.0
+    nelat: -10.0
+    nelng: 155.0
+    latitude: -32.00
+    longitude: 115.00
+    max_items: 6
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: -0.02 }
+
+  - key: ala_blue_whale_australia
+    parser: ala_api
+    area: "Australia"
+    force_species: ["Blue Whale"]
+    swlat: -45.0
+    swlng: 110.0
+    nelat: -10.0
+    nelng: 155.0
+    latitude: -38.00
+    longitude: 148.00
+    max_items: 6
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: ala_fin_whale_australia
+    parser: ala_api
+    area: "Australia"
+    force_species: ["Fin Whale"]
+    swlat: -45.0
+    swlng: 110.0
+    nelat: -10.0
+    nelng: 155.0
+    latitude: -36.00
+    longitude: 136.00
+    max_items: 5
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # Queensland coast — humpback highway
+  - key: ala_humpback_queensland
+    parser: ala_api
+    area: "Queensland, Australia"
+    force_species: ["Humpback"]
+    swlat: -28.0
+    swlng: 142.0
+    nelat: -10.0
+    nelng: 155.0
+    latitude: -22.00
+    longitude: 151.00
+    max_items: 10
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.02 }
+
+  # Project Jonah NZ — NZ whale rescue org, posts dated sighting news
+  - key: project_jonah_nz
+    parser: generic_dated_page
+    url: https://projectjonah.org.nz/news/
+    area: "New Zealand"
+    latitude: -41.00
+    longitude: 174.00
+    max_items: 5
+    force_species: ["Humpback", "Orca", "Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
   # ── GBIF Australia & New Zealand ─────────────────────────────────────────────
   # GBIF aggregates verified human observations from CSIRO, Australian Museum,
   # Queensland Museum, Museums Victoria, Te Papa (NZ), DOC NZ, and universities.

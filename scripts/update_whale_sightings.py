@@ -1580,6 +1580,163 @@ def parse_gbif_api(cfg: Dict[str, Any], session: requests.Session,
     return out[:max_items]
 
 
+# -------------------------
+# ALA (Atlas of Living Australia) API parser
+# Australia's national biodiversity aggregator — pulls from state wildlife agencies,
+# citizen reporters, CSIRO, universities. Much fresher AU data than GBIF.
+# https://api.ala.org.au / https://biocache-ws.ala.org.au
+# -------------------------
+
+ALA_BASE = "https://biocache-ws.ala.org.au/ws"
+
+ALA_SPECIES_GUIDS: Dict[str, str] = {
+    "Humpback":    "urn:lsid:biodiversity.org.au:afd.taxon:7fc6bd8e-5c9c-4f43-b3c7-a2a8e36c8f8f",
+    "Orca":        "urn:lsid:biodiversity.org.au:afd.taxon:d0a0651d-39b5-4985-8e02-a60c7b568804",
+    "Sperm whale": "urn:lsid:biodiversity.org.au:afd.taxon:6a13bed7-7e4c-4e28-9aba-ab1e5c86aa74",
+    "Blue Whale":  "urn:lsid:biodiversity.org.au:afd.taxon:77cf20de-c5d5-4e28-8174-a8e0ac74c30e",
+    "Fin Whale":   "urn:lsid:biodiversity.org.au:afd.taxon:44a6cd1e-c3da-4540-a791-fe0b98d1f5e6",
+}
+
+# Scientific names used as fallback text search when GUID doesn't match
+ALA_SCI_NAMES: Dict[str, str] = {
+    "Humpback":    "Megaptera novaeangliae",
+    "Orca":        "Orcinus orca",
+    "Sperm whale": "Physeter macrocephalus",
+    "Blue Whale":  "Balaenoptera musculus",
+    "Fin Whale":   "Balaenoptera physalus",
+}
+
+
+def parse_ala_api(cfg: Dict[str, Any], session: requests.Session,
+                  tz_name: str, source_key: str) -> List[Candidate]:
+    """Pull recent cetacean sightings from the Atlas of Living Australia API."""
+    force_species: Optional[List[str]] = None
+    fs = cfg.get("force_species")
+    if fs:
+        force_species = [str(x) for x in (fs if isinstance(fs, list) else [fs])]
+
+    max_items  = int(cfg.get("max_items", 5))
+    area_default = (cfg.get("area", "") or "").strip()
+    lat0 = float(cfg.get("latitude", 0.0))
+    lon0 = float(cfg.get("longitude", 0.0))
+
+    today = now_local(tz_name)
+    d1 = (today - timedelta(days=int(GLOBAL_MAX_DAYS))).strftime("%Y-%m-%d")
+
+    # Build species filter
+    sp_name = None
+    if force_species:
+        sp_name = ALA_SCI_NAMES.get(force_species[0])
+
+    fq_parts = [
+        "basis_of_record:HumanObservation",
+        "geospatial_kosher:true",
+        f"occurrence_date:[{d1}T00:00:00Z TO *]",
+    ]
+
+    # Bounding box filter
+    swlat = cfg.get("swlat")
+    if swlat is not None:
+        fq_parts.append(
+            f"latitude:[{cfg['swlat']} TO {cfg['nelat']}]"
+        )
+        fq_parts.append(
+            f"longitude:[{cfg['swlng']} TO {cfg['nelng']}]"
+        )
+
+    q = sp_name if sp_name else "Cetacea"
+    params: Dict[str, Any] = {
+        "q":     q,
+        "fq":    fq_parts,
+        "fl":    "id,scientificName,vernacularName,decimalLatitude,decimalLongitude,"
+                 "eventDate,dataResourceName,locality,stateProvince,occurrenceRemarks",
+        "rows":  100,
+        "sort":  "eventDate",
+        "dir":   "desc",
+    }
+
+    try:
+        r = session.get(f"{ALA_BASE}/occurrences/search", params=params, timeout=30)
+        r.raise_for_status()
+        data = r.json() or {}
+    except Exception as e:
+        print(f"[ala_api:{source_key}] fetch error: {e}")
+        return []
+
+    occurrences = (data.get("occurrences") or [])
+    time.sleep(0.2)
+
+    out: List[Candidate] = []
+    for obs in occurrences:
+        if len(out) >= max_items:
+            break
+
+        event_date = (obs.get("eventDate") or "")[:10]
+        if not event_date or len(event_date) < 10:
+            continue
+        try:
+            y, mo, d = event_date.split("-")
+            dt = datetime(int(y), int(mo), int(d), 12, 0, 0, tzinfo=tz.gettz(tz_name))
+        except Exception:
+            continue
+
+        if not within_window(dt, today, GLOBAL_MAX_DAYS):
+            continue
+
+        lat = safe_float(obs.get("decimalLatitude"))
+        lon = safe_float(obs.get("decimalLongitude"))
+        if lat is None or lon is None:
+            nud = cfg.get("uncertain_offshore_nudge") or {}
+            lat, lon = clamp_nudge(lat0, lon0,
+                                   float(nud.get("dlat", 0.0)),
+                                   float(nud.get("dlon", 0.0)))
+
+        fixed = ensure_ocean(lat, lon)
+        if fixed is None:
+            continue
+        lat2, lon2 = fixed
+
+        sci    = (obs.get("scientificName") or "").strip()
+        vern   = (obs.get("vernacularName") or "").strip()
+        rem    = (obs.get("occurrenceRemarks") or "").strip()
+        blob   = f"{sci} {vern} {rem}"
+
+        if is_dead_observation(blob):
+            continue
+
+        if force_species:
+            species_list = [s for s in force_species if s in ALLOWED_SPECIES]
+        else:
+            species_list = detect_species(blob)
+        if not species_list:
+            continue
+
+        locality = (obs.get("locality") or obs.get("stateProvince") or area_default).strip()
+        area = locality or area_default
+
+        resource = (obs.get("dataResourceName") or "ALA").strip()
+        obs_id   = obs.get("id") or obs.get("uuid") or ""
+        src_url  = (f"https://ala.org.au/occurrences/{obs_id}"
+                    if obs_id else "https://ala.org.au")
+
+        species = species_list[0]
+        out.append(Candidate(
+            date=dt,
+            species=species,
+            name=f"{species} sighting ({area})" if area else f"{species} sighting",
+            info=f"ALA record from {resource}. Observed {event_date}.",
+            area=area,
+            source=src_url,
+            latitude=float(lat2),
+            longitude=float(lon2),
+            behaviors=infer_behaviors(blob),
+            source_key=source_key,
+        ))
+
+    out.sort(key=lambda c: c.date, reverse=True)
+    return out[:max_items]
+
+
 PARSERS = {
     "orcanetwork_recent_sightings": parse_orcanetwork_recent_sightings,
 
@@ -1602,6 +1759,7 @@ PARSERS = {
     "inaturalist_api": parse_inaturalist_api,
     "obis_api": parse_obis_api,
     "gbif_api": parse_gbif_api,
+    "ala_api": parse_ala_api,
     "acartia_api": parse_acartia_api,
 }
 
