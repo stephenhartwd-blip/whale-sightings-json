@@ -1811,13 +1811,38 @@ def compute_species_targets(cfg: Dict[str, Any], total: int) -> Dict[str, int]:
 
     return wanted
 
+# World regions for geographic balancing.
+# Each tuple: (name, swlat, swlng, nelat, nelng, target_pins)
+# Regions are checked in order — put underrepresented regions first so they
+# get priority when the candidate pool is thin.
+_GEO_REGIONS = [
+    # Underrepresented regions get first pick
+    ("Indian Ocean",          -55.0,  40.0,  30.0, 100.0,  40),
+    ("East/West Africa",      -40.0, -20.0,  30.0,  55.0,  25),
+    ("East Asia & W Pacific", -15.0, 100.0,  65.0, 180.0,  35),
+    ("Caribbean & C America",   5.0, -100.0, 28.0, -55.0,  20),
+    ("South America",         -60.0,  -90.0, 10.0, -30.0,  40),
+    # Well-represented but still need global balance
+    ("NE Atlantic & Europe",   20.0,  -55.0, 80.0,  30.0,  55),
+    ("Australia & NZ",        -55.0, 105.0, -8.0,  180.0,  50),
+    # North America gets whatever is left after other regions are served
+    ("N Atlantic (NA/Canada)", 20.0, -100.0, 72.0, -50.0,  60),
+    ("N Pacific (NA)",         20.0, -180.0, 72.0, -100.0, 80),
+]
+
+def _geo_region(lat: float, lon: float) -> str:
+    for name, swlat, swlng, nelat, nelng, _ in _GEO_REGIONS:
+        if swlat <= lat <= nelat and swlng <= lon <= nelng:
+            return name
+    return "Other"
+
+
 def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name: str) -> List[Candidate]:
     total = int(cfg.get("target_total", 80))
     min_recent_days = int(cfg.get("min_recent_days", 7))
     min_recent_fraction = float(cfg.get("min_recent_fraction", 0.5))
 
     now_dt = now_local(tz_name)
-    wanted = compute_species_targets(cfg, total)
 
     by_species: Dict[str, List[Candidate]] = {sp: [] for sp in ALLOWED_SPECIES}
     for c in candidates:
@@ -1826,11 +1851,12 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
     for sp in by_species:
         by_species[sp].sort(key=lambda x: x.date, reverse=True)
 
-    def is_recent(c: Candidate) -> bool:
-        return (now_dt.date() - c.date.date()).days <= min_recent_days
-
     chosen: List[Candidate] = []
-    chosen_keys = set()
+    chosen_keys: set = set()
+
+    def can_pick(c: Candidate) -> bool:
+        k = (to_date_str(c.date), c.species, c.area, c.source)
+        return k not in chosen_keys
 
     def pick_one(c: Candidate) -> None:
         k = (to_date_str(c.date), c.species, c.area, c.source)
@@ -1839,35 +1865,63 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
         chosen.append(c)
         chosen_keys.add(k)
 
-    need_recent = int((total * min_recent_fraction) + 0.9999)
-    recent_count = 0
+    species_order = sorted(ALLOWED_SPECIES, key=lambda s: -compute_species_targets(cfg, total).get(s, 0))
 
-    species_order = sorted(wanted.keys(), key=lambda s: wanted[s], reverse=True)
+    # ── Phase 1: geographic balancing ────────────────────────────────────────
+    # For each world region (underrepresented first), pick up to target_pins
+    # candidates using species priority within that region.
+    for _region_name, swlat, swlng, nelat, nelng, region_target in _GEO_REGIONS:
+        region_picked = 0
+        for sp in species_order:
+            if region_picked >= region_target:
+                break
+            for c in by_species[sp]:
+                if region_picked >= region_target:
+                    break
+                if not can_pick(c):
+                    continue
+                if swlat <= c.latitude <= nelat and swlng <= c.longitude <= nelng:
+                    pick_one(c)
+                    region_picked += 1
+
+    # ── Phase 2: species balancing on remaining slots ─────────────────────────
+    # Fill up to total using species targets, preferring recent observations.
+    wanted = compute_species_targets(cfg, total)
+    # Reduce wanted counts by what we already chose per species
+    for c in chosen:
+        if c.species in wanted:
+            wanted[c.species] = max(0, wanted[c.species] - 1)
+
+    species_order2 = sorted(wanted.keys(), key=lambda s: -wanted[s])
+
+    def is_recent(c: Candidate) -> bool:
+        return (now_dt.date() - c.date.date()).days <= min_recent_days
+
+    need_recent = max(0, int((total * min_recent_fraction) + 0.9999) - sum(1 for c in chosen if is_recent(c)))
+    recent_added = 0
 
     progressed = True
-    while recent_count < need_recent and progressed:
+    while recent_added < need_recent and progressed and len(chosen) < total:
         progressed = False
-        for sp in species_order:
+        for sp in species_order2:
             if wanted.get(sp, 0) <= 0:
                 continue
             for c in by_species[sp]:
                 if not is_recent(c):
                     break
-                k = (to_date_str(c.date), c.species, c.area, c.source)
-                if k in chosen_keys:
+                if not can_pick(c):
                     continue
                 pick_one(c)
                 wanted[sp] -= 1
-                recent_count += 1
+                recent_added += 1
                 progressed = True
                 break
 
-    for sp in species_order:
-        while wanted.get(sp, 0) > 0:
+    for sp in species_order2:
+        while wanted.get(sp, 0) > 0 and len(chosen) < total:
             found = False
             for c in by_species[sp]:
-                k = (to_date_str(c.date), c.species, c.area, c.source)
-                if k in chosen_keys:
+                if not can_pick(c):
                     continue
                 pick_one(c)
                 wanted[sp] -= 1
@@ -1876,12 +1930,12 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
             if not found:
                 break
 
+    # ── Phase 3: fill any remaining slots with most-recent unselected ─────────
     if len(chosen) < total:
         remaining: List[Candidate] = []
         for sp in by_species:
             for c in by_species[sp]:
-                k = (to_date_str(c.date), c.species, c.area, c.source)
-                if k not in chosen_keys:
+                if can_pick(c):
                     remaining.append(c)
         remaining.sort(key=lambda c: c.date, reverse=True)
         for c in remaining:
