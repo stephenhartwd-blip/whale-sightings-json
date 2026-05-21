@@ -2081,9 +2081,8 @@ def main() -> None:
             print(f"WARN: {source_key} failed: {e}")
 
     filtered = [c for c in all_candidates if within_window(c.date, now_dt, max_days)]
-    # Cluster loosely: only merge same-species obs within 200 km AND 72 h
-    # (catches same whale reported to both iNat & GBIF; preserves distinct hotspot pins)
-    filtered = cluster_candidates(filtered, km=200.0, hours=72.0)
+    # select_candidates deduplicates via (date, species, area, source) key —
+    # iNat observations have unique source URLs so no extra geographic clustering needed.
     selected = select_candidates(cfg, filtered, tz_name)
     entries = build_entries(selected)
 
