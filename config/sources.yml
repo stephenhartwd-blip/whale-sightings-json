@@ -8,11 +8,11 @@ allowed_inat_photo_licenses:
   - cc-by-sa
   - cc-by-nc
   - cc-by-nc-sa
-# Full year window — needed to capture AU/NZ seasonal peaks (May–Nov humpback highway)
-max_days: 365
-# Looser recent requirement — at 500 pins, 15% recent is still 75 fresh sightings
-min_recent_days: 14
-min_recent_fraction: 0.15
+# One-week display window — all pins on the map are from the last 7 days
+max_days: 7
+# Everything is recent by definition with a 7-day window
+min_recent_days: 7
+min_recent_fraction: 0.0
 target_total: 500
 species_targets:
   Orca: 0.22
