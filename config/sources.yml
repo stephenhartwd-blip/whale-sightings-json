@@ -8,10 +8,10 @@ allowed_inat_photo_licenses:
   - cc-by-sa
   - cc-by-nc
   - cc-by-nc-sa
-# One-week display window — all pins on the map are from the last 7 days
-max_days: 7
-# Everything is recent by definition with a 7-day window
-min_recent_days: 7
+# Two-week display window — keeps the map full while pins stay fresh
+max_days: 14
+# Everything is recent by definition with a 14-day window
+min_recent_days: 14
 min_recent_fraction: 0.0
 target_total: 500
 species_targets:
