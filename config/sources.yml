@@ -8,12 +8,12 @@ allowed_inat_photo_licenses:
   - cc-by-sa
   - cc-by-nc
   - cc-by-nc-sa
-# Wider window so you can actually hit 160 reliably
-max_days: 60
-# At least 40% within the last 14 days; the rest can be older (up to max_days)
+# Full year window — needed to capture AU/NZ seasonal peaks (May–Nov humpback highway)
+max_days: 365
+# Looser recent requirement — at 500 pins, 15% recent is still 75 fresh sightings
 min_recent_days: 14
-min_recent_fraction: 0.40
-target_total: 160
+min_recent_fraction: 0.15
+target_total: 500
 species_targets:
   Orca: 0.22
   Humpback: 0.25
@@ -995,7 +995,7 @@ sources:
     latitude: -27.00
     longitude: 153.00
     bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
-    max_items: 8
+    max_items: 25
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: obis_orca_australia
@@ -1005,7 +1005,7 @@ sources:
     latitude: -35.00
     longitude: 138.00
     bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
-    max_items: 6
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: obis_sperm_australia
@@ -1015,7 +1015,7 @@ sources:
     latitude: -30.00
     longitude: 115.00
     bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
-    max_items: 5
+    max_items: 15
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: obis_blue_whale_australia
@@ -1025,7 +1025,18 @@ sources:
     latitude: -38.00
     longitude: 148.00
     bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
-    max_items: 5
+    max_items: 15
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_southern_right_whale_australia
+    parser: obis_api
+    area: "Southern Australia"
+    aphia_id: 231430
+    latitude: -37.00
+    longitude: 138.00
+    bbox: { lat_min: -45.0, lat_max: -32.0, lon_min: 113.0, lon_max: 155.0 }
+    max_items: 15
+    force_species: ["Other"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # ── OBIS New Zealand ──────────────────────────────────────────────────────────
@@ -1036,7 +1047,7 @@ sources:
     latitude: -41.00
     longitude: 174.00
     bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
-    max_items: 8
+    max_items: 25
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: obis_orca_nz
@@ -1046,7 +1057,7 @@ sources:
     latitude: -44.00
     longitude: 168.00
     bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
-    max_items: 6
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: obis_sperm_nz
@@ -1056,7 +1067,18 @@ sources:
     latitude: -45.50
     longitude: 166.60
     bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
-    max_items: 5
+    max_items: 15
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_blue_whale_nz
+    parser: obis_api
+    area: "New Zealand"
+    aphia_id: 137090
+    latitude: -44.00
+    longitude: 168.00
+    bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
+    max_items: 12
+    force_species: ["Blue Whale"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # ── iNaturalist Australia ─────────────────────────────────────────────────────
@@ -1067,7 +1089,7 @@ sources:
     place_id: 6744
     latitude: -27.00
     longitude: 153.00
-    max_items: 7
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: inat_humpback_australia
@@ -1077,7 +1099,7 @@ sources:
     place_id: 6744
     latitude: -33.00
     longitude: 151.00
-    max_items: 7
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: inat_whale_western_australia
@@ -1087,7 +1109,29 @@ sources:
     place_id: 7161
     latitude: -31.00
     longitude: 115.00
-    max_items: 6
+    max_items: 15
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_australia
+    parser: inaturalist_api
+    area: "Australia"
+    taxon_id: 42461
+    place_id: 6744
+    latitude: -33.00
+    longitude: 151.00
+    max_items: 15
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_blue_whale_australia
+    parser: inaturalist_api
+    area: "Australia"
+    taxon_id: 142011
+    place_id: 6744
+    latitude: -38.00
+    longitude: 148.00
+    max_items: 12
+    force_species: ["Blue Whale"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # Queensland — humpback highway (Hervey Bay / Great Barrier Reef corridor)
@@ -1098,7 +1142,7 @@ sources:
     place_id: 6745
     latitude: -24.00
     longitude: 152.50
-    max_items: 7
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: inat_orca_queensland
@@ -1108,7 +1152,7 @@ sources:
     place_id: 6745
     latitude: -20.00
     longitude: 148.00
-    max_items: 4
+    max_items: 12
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # New South Wales — Sydney / Byron Bay migration corridor
@@ -1119,7 +1163,7 @@ sources:
     place_id: 6746
     latitude: -33.50
     longitude: 151.50
-    max_items: 6
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: inat_orca_nsw
@@ -1129,7 +1173,7 @@ sources:
     place_id: 6746
     latitude: -34.00
     longitude: 151.20
-    max_items: 4
+    max_items: 12
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # Victoria — Bass Strait humpbacks
@@ -1140,7 +1184,66 @@ sources:
     place_id: 6741
     latitude: -38.50
     longitude: 145.50
-    max_items: 4
+    max_items: 15
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # Tasmania — south coast, Storm Bay humpbacks and blue whales
+  - key: inat_humpback_tasmania
+    parser: inaturalist_api
+    area: "Tasmania, Australia"
+    taxon_name: "Megaptera novaeangliae"
+    swlat: -44.0
+    swlng: 143.0
+    nelat: -39.0
+    nelng: 149.0
+    latitude: -42.50
+    longitude: 146.50
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_orca_tasmania
+    parser: inaturalist_api
+    area: "Tasmania, Australia"
+    taxon_name: "Orcinus orca"
+    swlat: -44.0
+    swlng: 143.0
+    nelat: -39.0
+    nelng: 149.0
+    latitude: -42.50
+    longitude: 146.50
+    max_items: 12
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # Bremer Canyon WA — world's largest known orca aggregation (Jan–Apr)
+  - key: inat_orca_bremer_canyon
+    parser: inaturalist_api
+    area: "Bremer Canyon, WA (offshore)"
+    taxon_name: "Orcinus orca"
+    swlat: -35.5
+    swlng: 118.5
+    nelat: -33.0
+    nelng: 122.0
+    latitude: -34.00
+    longitude: 119.50
+    max_items: 20
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # Coral Sea / Great Barrier Reef — minke whale season (Jun–Jul)
+  - key: inat_minke_whale_great_barrier_reef
+    parser: inaturalist_api
+    area: "Great Barrier Reef, QLD (offshore)"
+    taxon_name: "Balaenoptera acutorostrata"
+    swlat: -20.0
+    swlng: 145.0
+    nelat: -14.0
+    nelng: 151.0
+    latitude: -17.00
+    longitude: 147.00
+    max_items: 12
+    force_species: ["Other"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # ── iNaturalist New Zealand ───────────────────────────────────────────────────
@@ -1151,7 +1254,7 @@ sources:
     place_id: 7085
     latitude: -41.00
     longitude: 174.00
-    max_items: 7
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: inat_humpback_nz
@@ -1161,7 +1264,7 @@ sources:
     place_id: 7085
     latitude: -37.00
     longitude: 175.00
-    max_items: 6
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: inat_sperm_whale_nz
@@ -1171,7 +1274,21 @@ sources:
     place_id: 7085
     latitude: -42.40
     longitude: 173.70
-    max_items: 5
+    max_items: 15
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_blue_whale_nz
+    parser: inaturalist_api
+    area: "New Zealand"
+    taxon_name: "Balaenoptera musculus"
+    swlat: -52.0
+    swlng: 163.0
+    nelat: -33.0
+    nelng: 180.0
+    latitude: -44.00
+    longitude: 168.00
+    max_items: 12
+    force_species: ["Blue Whale"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # South Island NZ — Canterbury coast (Kaikoura region) + Fiordland
@@ -1182,7 +1299,7 @@ sources:
     place_query: "Canterbury, New Zealand"
     latitude: -43.50
     longitude: 172.50
-    max_items: 4
+    max_items: 15
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: inat_orca_nz_south_island
@@ -1192,7 +1309,36 @@ sources:
     place_query: "Fiordland, New Zealand"
     latitude: -45.00
     longitude: 167.50
-    max_items: 3
+    max_items: 12
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # Tasman Sea / Bay of Plenty — humpbacks and orca
+  - key: inat_humpback_bay_of_plenty
+    parser: inaturalist_api
+    area: "Bay of Plenty, New Zealand (offshore)"
+    taxon_name: "Megaptera novaeangliae"
+    swlat: -38.5
+    swlng: 175.5
+    nelat: -35.0
+    nelng: 179.5
+    latitude: -37.00
+    longitude: 176.50
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_orca_hauraki_gulf
+    parser: inaturalist_api
+    area: "Hauraki Gulf, New Zealand (offshore)"
+    taxon_name: "Orcinus orca"
+    swlat: -37.5
+    swlng: 174.5
+    nelat: -35.5
+    nelng: 176.5
+    latitude: -36.50
+    longitude: 175.50
+    max_items: 12
+    force_species: ["Orca"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # ── ALA (Atlas of Living Australia) ──────────────────────────────────────────
@@ -1209,7 +1355,7 @@ sources:
     nelng: 155.0
     latitude: -28.00
     longitude: 153.50
-    max_items: 10
+    max_items: 25
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.02 }
 
   - key: ala_humpback_west_australia
@@ -1222,7 +1368,7 @@ sources:
     nelng: 130.0
     latitude: -28.00
     longitude: 114.00
-    max_items: 8
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: -0.02 }
 
   - key: ala_orca_australia
@@ -1235,7 +1381,7 @@ sources:
     nelng: 155.0
     latitude: -34.00
     longitude: 120.00
-    max_items: 8
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: ala_sperm_whale_australia
@@ -1248,7 +1394,7 @@ sources:
     nelng: 155.0
     latitude: -32.00
     longitude: 115.00
-    max_items: 6
+    max_items: 15
     uncertain_offshore_nudge: { dlat: 0.00, dlon: -0.02 }
 
   - key: ala_blue_whale_australia
@@ -1261,7 +1407,7 @@ sources:
     nelng: 155.0
     latitude: -38.00
     longitude: 148.00
-    max_items: 6
+    max_items: 15
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: ala_fin_whale_australia
@@ -1274,7 +1420,7 @@ sources:
     nelng: 155.0
     latitude: -36.00
     longitude: 136.00
-    max_items: 5
+    max_items: 12
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # Queensland coast — humpback highway
@@ -1288,8 +1434,21 @@ sources:
     nelng: 155.0
     latitude: -22.00
     longitude: 151.00
-    max_items: 10
+    max_items: 25
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.02 }
+
+  - key: ala_orca_bremer_canyon
+    parser: ala_api
+    area: "Bremer Canyon, WA (offshore)"
+    force_species: ["Orca"]
+    swlat: -35.5
+    swlng: 118.5
+    nelat: -33.0
+    nelng: 122.0
+    latitude: -34.00
+    longitude: 119.50
+    max_items: 20
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # Project Jonah NZ — NZ whale rescue org, posts dated sighting news
   - key: project_jonah_nz
@@ -1317,7 +1476,7 @@ sources:
     nelng: 155.0
     latitude: -27.00
     longitude: 153.00
-    max_items: 8
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: gbif_orca_australia
@@ -1330,7 +1489,7 @@ sources:
     nelng: 155.0
     latitude: -35.00
     longitude: 135.00
-    max_items: 6
+    max_items: 15
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: gbif_sperm_whale_australia
@@ -1343,7 +1502,7 @@ sources:
     nelng: 155.0
     latitude: -30.00
     longitude: 115.00
-    max_items: 5
+    max_items: 12
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: gbif_blue_whale_australia
@@ -1356,7 +1515,20 @@ sources:
     nelng: 155.0
     latitude: -38.00
     longitude: 148.00
-    max_items: 5
+    max_items: 12
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_fin_whale_australia
+    parser: gbif_api
+    area: "Australia"
+    force_species: ["Fin Whale"]
+    swlat: -45.0
+    swlng: 110.0
+    nelat: -10.0
+    nelng: 155.0
+    latitude: -36.00
+    longitude: 136.00
+    max_items: 10
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # Queensland coast — humpback highway migration corridor (Hervey Bay / Whitsundays)
@@ -1370,7 +1542,7 @@ sources:
     nelng: 155.0
     latitude: -24.00
     longitude: 152.50
-    max_items: 7
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # New South Wales coast — Sydney / Byron Bay migration corridor
@@ -1384,7 +1556,7 @@ sources:
     nelng: 155.0
     latitude: -33.50
     longitude: 151.50
-    max_items: 6
+    max_items: 15
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # New Zealand — all species, full EEZ bounding box
@@ -1398,7 +1570,7 @@ sources:
     nelng: 180.0
     latitude: -41.00
     longitude: 174.00
-    max_items: 8
+    max_items: 20
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: gbif_orca_nz
@@ -1411,7 +1583,7 @@ sources:
     nelng: 180.0
     latitude: -44.00
     longitude: 168.00
-    max_items: 6
+    max_items: 15
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # Kaikoura specifically — world's best sperm whale watching site
@@ -1425,7 +1597,7 @@ sources:
     nelng: 174.5
     latitude: -42.40
     longitude: 173.70
-    max_items: 6
+    max_items: 15
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   - key: gbif_blue_whale_nz
@@ -1438,7 +1610,20 @@ sources:
     nelng: 180.0
     latitude: -45.00
     longitude: 167.00
-    max_items: 5
+    max_items: 12
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_fin_whale_nz
+    parser: gbif_api
+    area: "New Zealand"
+    force_species: ["Fin Whale"]
+    swlat: -52.0
+    swlng: 165.0
+    nelat: -33.0
+    nelng: 180.0
+    latitude: -44.00
+    longitude: 168.00
+    max_items: 10
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # -------------------------
