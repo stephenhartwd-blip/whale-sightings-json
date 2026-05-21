@@ -95,7 +95,6 @@
     "behaviors": [
       "reported",
       "hunting",
-      "breaching",
       "vocalizing",
       "traveling"
     ],
@@ -114,14 +113,81 @@
     "behaviors": [
       "reported",
       "hunting",
-      "breaching",
       "vocalizing",
       "traveling"
     ],
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-20-eyjafjordur-humpback-04",
+    "id": "2026-05-20-bah-a-de-monterrey-m-humpback-04",
+    "name": "Humpback sighting (Bahía de Monterrey, Monterrey, CA, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by eric35677.",
+    "date": "2026-05-20",
+    "latitude": 36.6131673804,
+    "longitude": -121.8909482692,
+    "area": "Bahía de Monterrey, Monterrey, CA, US",
+    "source": "https://www.inaturalist.org/observations/363529635",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-20-capital-regional-dis-orca-04",
+    "name": "Orca sighting (Capital Regional District, BC, Canada)",
+    "species": "Orca",
+    "info": "iNaturalist observation by kevintoo.",
+    "date": "2026-05-20",
+    "latitude": 48.8884673155,
+    "longitude": -123.3038204151,
+    "area": "Capital Regional District, BC, Canada",
+    "source": "https://www.inaturalist.org/observations/363516556",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/663570222/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kevin Toomer, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-05-20-trinidad-ca-95570-us-gray-01",
+    "name": "Gray Whale sighting (Trinidad, CA 95570, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by djhumboldt.",
+    "date": "2026-05-20",
+    "latitude": 41.0447449474,
+    "longitude": -124.1522857547,
+    "area": "Trinidad, CA 95570, USA",
+    "source": "https://www.inaturalist.org/observations/363524007",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/663583859/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) DJ, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-20-neskowin-or-usa-gray-02",
+    "name": "Gray Whale sighting (Neskowin, OR, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by garrickschermer.",
+    "date": "2026-05-20",
+    "latitude": 45.13573276,
+    "longitude": -123.99288299,
+    "area": "Neskowin, OR, USA",
+    "source": "https://www.inaturalist.org/observations/363535928",
+    "behaviors": [
+      "reported",
+      "traveling"
+    ],
+    "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-20-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-05-20.",
@@ -134,28 +200,6 @@
       "reported"
     ],
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-05-19-washington-us-orca-01",
-    "name": "Orca sighting (Washington, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by ywcai.",
-    "date": "2026-05-19",
-    "latitude": 47.5761107698,
-    "longitude": -122.5906718543,
-    "area": "Washington, US",
-    "source": "https://www.inaturalist.org/observations/363177898",
-    "behaviors": [
-      "reported",
-      "hunting",
-      "traveling"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/662919785/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) ywcai, some rights reserved (CC BY-NC)",
-    "individualId": "orca_biggs_t124a1",
-    "individualName": "ORCA BIGGS T124A1",
-    "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
     "id": "2026-05-19-h-lshreppur-is-humpback-01",
@@ -174,24 +218,6 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) mreen, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-05-19-north-pacific-ocean--orca-02",
-    "name": "Orca sighting (North Pacific Ocean, AK, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by swiftsoutdoors.",
-    "date": "2026-05-19",
-    "latitude": 57.8425368079,
-    "longitude": -134.9422266016,
-    "area": "North Pacific Ocean, AK, US",
-    "source": "https://www.inaturalist.org/observations/363232892",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/663030056/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) swiftsoutdoors, some rights reserved (CC BY-NC)",
-    "notable": true
   },
   {
     "id": "2026-05-19-ak-us-humpback-02",
@@ -299,53 +325,43 @@
     "notable": true
   },
   {
-    "id": "2026-05-18-hoquiam-gray-01",
-    "name": "Gray Whale sighting (Hoquiam)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by davlong.",
-    "date": "2026-05-18",
-    "latitude": 47.0285415649,
-    "longitude": -124.1757049561,
-    "area": "Hoquiam",
-    "source": "https://www.inaturalist.org/observations/362874552",
+    "id": "2026-05-19-washington-us-orca-01",
+    "name": "Orca sighting (Washington, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by ywcai.",
+    "date": "2026-05-19",
+    "latitude": 47.5761107698,
+    "longitude": -122.5906718543,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/363177898",
     "behaviors": [
-      "reported"
+      "reported",
+      "hunting",
+      "traveling"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/662342287/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/662919785/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) davlong, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "California migration corridor"
+    "photoAttribution": "(c) ywcai, some rights reserved (CC BY-NC)",
+    "individualId": "orca_biggs_t124a1",
+    "individualName": "ORCA BIGGS T124A1",
+    "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-18-vestv-g-y-norway-orca-01",
-    "name": "Orca sighting (Vestvågøy, Norway)",
+    "id": "2026-05-19-north-pacific-ocean--orca-02",
+    "name": "Orca sighting (North Pacific Ocean, AK, US)",
     "species": "Orca",
-    "info": "iNaturalist observation by bwedderburn.",
-    "date": "2026-05-18",
-    "latitude": 68.1306516944,
-    "longitude": 13.8751449653,
-    "area": "Vestvågøy, Norway",
-    "source": "https://www.inaturalist.org/observations/362847146",
+    "info": "iNaturalist observation by swiftsoutdoors.",
+    "date": "2026-05-19",
+    "latitude": 57.8425368079,
+    "longitude": -134.9422266016,
+    "area": "North Pacific Ocean, AK, US",
+    "source": "https://www.inaturalist.org/observations/363232892",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/662286827/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/663030056/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Bruce Wedderburn, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-05-18-fraserburgh-scotland-orca-02",
-    "name": "Orca sighting (Fraserburgh, Scotland, GB)",
-    "species": "Orca",
-    "info": "iNaturalist observation by wilderness_kai.",
-    "date": "2026-05-18",
-    "latitude": 57.6988647354,
-    "longitude": -2.0033415196,
-    "area": "Fraserburgh, Scotland, GB",
-    "source": "https://www.inaturalist.org/observations/363341565",
-    "behaviors": [
-      "reported"
-    ],
+    "photoAttribution": "(c) swiftsoutdoors, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -385,40 +401,87 @@
     "notable": true
   },
   {
-    "id": "2026-05-17-northeast-atlantic-sperm-01",
-    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by anaisbuilly.",
-    "date": "2026-05-17",
-    "latitude": 38.3415186637,
-    "longitude": -28.5008379723,
-    "area": "Northeast Atlantic (offshore)",
-    "source": "https://www.inaturalist.org/observations/362312370",
+    "id": "2026-05-18-vestv-g-y-norway-orca-01",
+    "name": "Orca sighting (Vestvågøy, Norway)",
+    "species": "Orca",
+    "info": "iNaturalist observation by bwedderburn.",
+    "date": "2026-05-18",
+    "latitude": 68.1306516944,
+    "longitude": 13.8751449653,
+    "area": "Vestvågøy, Norway",
+    "source": "https://www.inaturalist.org/observations/362847146",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661422118/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/662286827/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Anais Builly, some rights reserved (CC BY-NC)",
+    "photoAttribution": "(c) Bruce Wedderburn, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-05-18-fraserburgh-scotland-orca-02",
+    "name": "Orca sighting (Fraserburgh, Scotland, GB)",
+    "species": "Orca",
+    "info": "iNaturalist observation by wilderness_kai.",
+    "date": "2026-05-18",
+    "latitude": 57.6988647354,
+    "longitude": -2.0033415196,
+    "area": "Fraserburgh, Scotland, GB",
+    "source": "https://www.inaturalist.org/observations/363341565",
+    "behaviors": [
+      "reported"
+    ],
     "notable": true
   },
   {
-    "id": "2026-05-17-pt-blue-01",
-    "name": "Blue Whale sighting (PT)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by anaisbuilly.",
-    "date": "2026-05-17",
-    "latitude": 38.437722005,
-    "longitude": -28.6226317274,
-    "area": "PT",
-    "source": "https://www.inaturalist.org/observations/362330041",
+    "id": "2026-05-18-hoquiam-gray-01",
+    "name": "Gray Whale sighting (Hoquiam)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by davlong.",
+    "date": "2026-05-18",
+    "latitude": 47.0285415649,
+    "longitude": -124.1757049561,
+    "area": "Hoquiam",
+    "source": "https://www.inaturalist.org/observations/362874552",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661418813/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/662342287/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Anais Builly, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Azores feeding season"
+    "photoAttribution": "(c) davlong, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-17-petersburg-county-us-humpback-01",
+    "name": "Humpback sighting (Petersburg County, US-AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by vivistu.",
+    "date": "2026-05-17",
+    "latitude": 57.6254616667,
+    "longitude": -133.2607883333,
+    "area": "Petersburg County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/362622236",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661863367/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) vivistu, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-17-is-humpback-02",
+    "name": "Humpback sighting (IS)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by cfoxwhelpton.",
+    "date": "2026-05-17",
+    "latitude": 66.0758742046,
+    "longitude": -17.3625221483,
+    "area": "IS",
+    "source": "https://www.inaturalist.org/observations/362727744",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
     "id": "2026-05-17-salish-sea-cowichan--orca-01",
@@ -492,7 +555,61 @@
     "notable": true
   },
   {
-    "id": "2026-05-17-eyjafjordur-humpback-01",
+    "id": "2026-05-17-trinidad-ca-us-gray-01",
+    "name": "Gray Whale sighting (Trinidad, CA, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by krichmond.",
+    "date": "2026-05-17",
+    "latitude": 41.1849971667,
+    "longitude": -124.1332695,
+    "area": "Trinidad, CA, US",
+    "source": "https://www.inaturalist.org/observations/363191310",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/662946927/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Keana Richmond, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-17-northeast-atlantic-sperm-01",
+    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-05-17",
+    "latitude": 38.3415186637,
+    "longitude": -28.5008379723,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/362312370",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661422118/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Anais Builly, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-17-pt-blue-01",
+    "name": "Blue Whale sighting (PT)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-05-17",
+    "latitude": 38.437722005,
+    "longitude": -28.6226317274,
+    "area": "PT",
+    "source": "https://www.inaturalist.org/observations/362330041",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661418813/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Anais Builly, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Azores feeding season"
+  },
+  {
+    "id": "2026-05-17-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-05-17.",
@@ -505,6 +622,132 @@
       "reported"
     ],
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-05-16-santa-cruz-county-ca-humpback-01",
+    "name": "Humpback sighting (Santa Cruz County, CA, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jmaughn.",
+    "date": "2026-05-16",
+    "latitude": 36.9253771833,
+    "longitude": -121.956355575,
+    "area": "Santa Cruz County, CA, USA",
+    "source": "https://www.inaturalist.org/observations/362360852",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661355960/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-16-ak-us-humpback-02",
+    "name": "Humpback sighting (AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by ingvildriska.",
+    "date": "2026-05-16",
+    "latitude": 58.6210283333,
+    "longitude": -135.1175388333,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/362221383",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661104352/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Ingvild Riska, some rights reserved (CC BY)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-16-united-states-humpback-03",
+    "name": "Humpback sighting (United States)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by twendall.",
+    "date": "2026-05-16",
+    "latitude": 42.2918132455,
+    "longitude": -70.2694196999,
+    "area": "United States",
+    "source": "https://www.inaturalist.org/observations/363406428",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/663355751/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Thane Sanford, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-05-16-pt-humpback-04",
+    "name": "Humpback sighting (PT)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-05-16",
+    "latitude": 38.3664479675,
+    "longitude": -28.5002185666,
+    "area": "PT",
+    "source": "https://www.inaturalist.org/observations/362018975",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661390095/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Anais Builly, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-16-region-orca-01",
+    "name": "Orca sighting (日本)",
+    "species": "Orca",
+    "info": "iNaturalist observation by kinokomashroom.",
+    "date": "2026-05-16",
+    "latitude": 44.0054567248,
+    "longitude": 145.2341364697,
+    "area": "日本",
+    "source": "https://www.inaturalist.org/observations/361905802",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660513074/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) きのこマッシュルーム, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-16-ak-us-orca-02",
+    "name": "Orca sighting (AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by crust_toucher.",
+    "date": "2026-05-16",
+    "latitude": 55.3955167593,
+    "longitude": -131.7555818925,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/362227050",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661116177/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) crust_toucher, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-16-ak-us-orca-03",
+    "name": "Orca sighting (AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by brendanwarning.",
+    "date": "2026-05-16",
+    "latitude": 60.0329876392,
+    "longitude": -149.3826271354,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/362060753",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660794212/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) brendanwarning, some rights reserved (CC BY-NC)",
+    "notable": true
   },
   {
     "id": "2026-05-16-grays-harbor-county--gray-01",
@@ -558,99 +801,6 @@
     "seasonalStatus": "Azores feeding season"
   },
   {
-    "id": "2026-05-16-laskeek-bay-skeena-q-orca-01",
-    "name": "Orca sighting (Laskeek Bay, Skeena-Queen Charlotte, BC, CA)",
-    "species": "Orca",
-    "info": "iNaturalist observation by offshoreorca.",
-    "date": "2026-05-16",
-    "latitude": 52.8620052736,
-    "longitude": -131.6305680549,
-    "area": "Laskeek Bay, Skeena-Queen Charlotte, BC, CA",
-    "source": "https://www.inaturalist.org/observations/363192103",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/662948629/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Elizabeth Zwamborn, some rights reserved (CC BY-NC)",
-    "individualId": "orca_biggs_t124c",
-    "individualName": "ORCA BIGGS T124C",
-    "notable": true
-  },
-  {
-    "id": "2026-05-16-region-orca-02",
-    "name": "Orca sighting (日本)",
-    "species": "Orca",
-    "info": "iNaturalist observation by kinokomashroom.",
-    "date": "2026-05-16",
-    "latitude": 44.0054567248,
-    "longitude": 145.2341364697,
-    "area": "日本",
-    "source": "https://www.inaturalist.org/observations/361905802",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660513074/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) きのこマッシュルーム, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-05-16-ak-us-orca-03",
-    "name": "Orca sighting (AK, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by crust_toucher.",
-    "date": "2026-05-16",
-    "latitude": 55.3955167593,
-    "longitude": -131.7555818925,
-    "area": "AK, US",
-    "source": "https://www.inaturalist.org/observations/362227050",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661116177/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) crust_toucher, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-05-16-united-states-humpback-01",
-    "name": "Humpback sighting (United States)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by twendall.",
-    "date": "2026-05-16",
-    "latitude": 42.2918132455,
-    "longitude": -70.2694196999,
-    "area": "United States",
-    "source": "https://www.inaturalist.org/observations/363406428",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/663355751/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Thane Sanford, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-05-16-pt-humpback-02",
-    "name": "Humpback sighting (PT)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by anaisbuilly.",
-    "date": "2026-05-16",
-    "latitude": 38.3664479675,
-    "longitude": -28.5002185666,
-    "area": "PT",
-    "source": "https://www.inaturalist.org/observations/362018975",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661390095/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Anais Builly, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-05-16-salish-sea-orca-04",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
@@ -666,6 +816,39 @@
       "traveling"
     ],
     "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-05-15-hoonah-angoon-census-humpback-01",
+    "name": "Humpback sighting (Hoonah-Angoon Census Area, Alaska, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by kruecke.",
+    "date": "2026-05-15",
+    "latitude": 58.3011290349,
+    "longitude": -135.7069287077,
+    "area": "Hoonah-Angoon Census Area, Alaska, USA",
+    "source": "https://www.inaturalist.org/observations/362206961",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661075628/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) kruecke, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-15-aialik-bay-ak-us-humpback-02",
+    "name": "Humpback sighting (Aialik Bay, AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by savspratt518.",
+    "date": "2026-05-15",
+    "latitude": 59.7307883333,
+    "longitude": -149.6959216667,
+    "area": "Aialik Bay, AK, US",
+    "source": "https://www.inaturalist.org/observations/362266007",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
   },
   {
     "id": "2026-05-15-albany-ward-auckland-orca-01",
@@ -704,7 +887,58 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-salish-sea-orca-03",
+    "id": "2026-05-15-amalga-harbor-juneau-orca-03",
+    "name": "Orca sighting (Amalga Harbor, Juneau, AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by katieseescritters.",
+    "date": "2026-05-15",
+    "latitude": 58.495289336,
+    "longitude": -134.7944870729,
+    "area": "Amalga Harbor, Juneau, AK, US",
+    "source": "https://www.inaturalist.org/observations/361868521",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660441406/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) katieseescritters, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-15-north-pacific-ocean--orca-04",
+    "name": "Orca sighting (North Pacific Ocean, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by savspratt518.",
+    "date": "2026-05-15",
+    "latitude": 59.8017916667,
+    "longitude": -149.3318633333,
+    "area": "North Pacific Ocean, US",
+    "source": "https://www.inaturalist.org/observations/362266120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-15-trinidad-ca-us-gray-01",
+    "name": "Gray Whale sighting (Trinidad, CA, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by daynaraven.",
+    "date": "2026-05-15",
+    "latitude": 41.184794587700004,
+    "longitude": -124.133328836,
+    "area": "Trinidad, CA, US",
+    "source": "https://www.inaturalist.org/observations/361994693",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660674454/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) daynaraven, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-15-salish-sea-orca-05",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
     "info": "Orca Network recent sightings indicates Orca on 2026-05-15.",
@@ -720,24 +954,6 @@
       "traveling"
     ],
     "seasonalStatus": "Salish Sea (SRKW range)"
-  },
-  {
-    "id": "2026-05-14-vancouver-bc-ca-gray-01",
-    "name": "Gray Whale sighting (Vancouver, BC, CA)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by meaghan19734.",
-    "date": "2026-05-14",
-    "latitude": 49.287638271,
-    "longitude": -123.1485779939,
-    "area": "Vancouver, BC, CA",
-    "source": "https://www.inaturalist.org/observations/361545126",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/659901539/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Meaghan, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "California migration corridor"
   },
   {
     "id": "2026-05-14-is-humpback-01",
@@ -758,22 +974,73 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-14-delta-bc-ca-orca-01",
-    "name": "Orca sighting (Delta, BC, CA)",
-    "species": "Orca",
-    "info": "iNaturalist observation by meningoenzep.",
+    "id": "2026-05-14-resurrection-bay-ak--humpback-02",
+    "name": "Humpback sighting (Resurrection Bay, AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by uncommongallinule.",
     "date": "2026-05-14",
-    "latitude": 49.00570555,
-    "longitude": -123.1339416667,
-    "area": "Delta, BC, CA",
-    "source": "https://www.inaturalist.org/observations/361615760",
+    "latitude": 59.8924823388,
+    "longitude": -149.4936245096,
+    "area": "Resurrection Bay, AK, US",
+    "source": "https://www.inaturalist.org/observations/362978552",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/659968910/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/662548289/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) meningoenzep, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Salish Sea (SRKW range)"
+    "photoAttribution": "(c) Kasey Myers, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-14-hoonah-angoon-county-humpback-03",
+    "name": "Humpback sighting (Hoonah-Angoon County, US-AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by holly513.",
+    "date": "2026-05-14",
+    "latitude": 58.1500888889,
+    "longitude": -135.4633305556,
+    "area": "Hoonah-Angoon County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/361617138",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-14-ak-us-orca-01",
+    "name": "Orca sighting (AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by crust_toucher.",
+    "date": "2026-05-14",
+    "latitude": 55.5743897869,
+    "longitude": -130.7978751446,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/361570048",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/659876708/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) crust_toucher, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-14-vancouver-bc-ca-gray-01",
+    "name": "Gray Whale sighting (Vancouver, BC, CA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by meaghan19734.",
+    "date": "2026-05-14",
+    "latitude": 49.287638271,
+    "longitude": -123.1485779939,
+    "area": "Vancouver, BC, CA",
+    "source": "https://www.inaturalist.org/observations/361545126",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/659901539/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Meaghan, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "California migration corridor"
   },
   {
     "id": "2026-05-14-salish-sea-orca-02",
@@ -792,6 +1059,42 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
+    "id": "2026-05-13-yakutat-alaska-usa-humpback-01",
+    "name": "Humpback sighting (Yakutat, Alaska, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by kruecke.",
+    "date": "2026-05-13",
+    "latitude": 59.9299629158,
+    "longitude": -141.5853025764,
+    "area": "Yakutat, Alaska, USA",
+    "source": "https://www.inaturalist.org/observations/361354402",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/659468224/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) kruecke, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-13-us-humpback-02",
+    "name": "Humpback sighting (US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by ingvildriska.",
+    "date": "2026-05-13",
+    "latitude": 59.8323616667,
+    "longitude": -141.9092716667,
+    "area": "US",
+    "source": "https://www.inaturalist.org/observations/361263836",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/659290125/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Ingvild Riska, some rights reserved (CC BY)",
+    "notable": true
+  },
+  {
     "id": "2026-05-13-north-pacific-ocean--gray-01",
     "name": "Gray Whale sighting (North Pacific Ocean, Skeena-Queen Charlotte, BC, CA)",
     "species": "Gray Whale",
@@ -807,6 +1110,55 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/663279019/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) icollectcoolrocks, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-13-marlborough-district-blue-01",
+    "name": "Blue Whale sighting (Marlborough District, Marlborough Region, New Zealand)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by bmurtha.",
+    "date": "2026-05-13",
+    "latitude": -41.2194252068,
+    "longitude": 174.3308436277,
+    "area": "Marlborough District, Marlborough Region, New Zealand",
+    "source": "https://www.inaturalist.org/observations/361632158",
+    "behaviors": [
+      "reported",
+      "traveling"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660000959/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Brendan Murtha, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-13-valdez-cordova-count-fin-01",
+    "name": "Fin Whale sighting (Valdez-Cordova County, US-AK, US)",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by fionaecook.",
+    "date": "2026-05-13",
+    "latitude": 61.007257635,
+    "longitude": -146.7135500345,
+    "area": "Valdez-Cordova County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/361515160",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-12-juneau-ak-usa-orca-01",
+    "name": "Orca sighting (Juneau, AK, USA)",
+    "species": "Orca",
+    "info": "iNaturalist observation by lori488.",
+    "date": "2026-05-12",
+    "latitude": 58.3472672997,
+    "longitude": -134.6705152,
+    "area": "Juneau, AK, USA",
+    "source": "https://www.inaturalist.org/observations/361250357",
+    "behaviors": [
+      "reported"
+    ],
     "notable": true
   },
   {
@@ -846,19 +1198,59 @@
     "seasonalStatus": "California migration corridor"
   },
   {
-    "id": "2026-05-12-sey-isfj-r-ur-is-humpback-01",
-    "name": "Humpback sighting (Seyðisfjörður, IS)",
+    "id": "2026-05-11-ca-us-humpback-01",
+    "name": "Humpback sighting (CA, US)",
     "species": "Humpback",
-    "info": "iNaturalist observation by andreas_n.",
-    "date": "2026-05-12",
-    "latitude": 65.3009416667,
-    "longitude": -13.8383783333,
-    "area": "Seyðisfjörður, IS",
-    "source": "https://www.inaturalist.org/observations/360904606",
+    "info": "iNaturalist observation by santiag013.",
+    "date": "2026-05-11",
+    "latitude": 36.8014769894,
+    "longitude": -121.8408290744,
+    "area": "CA, US",
+    "source": "https://www.inaturalist.org/observations/360739518",
     "behaviors": [
       "reported"
     ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/658277166/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Santiago, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-11-madalena-pt-humpback-02",
+    "name": "Humpback sighting (Madalena, PT)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-05-11",
+    "latitude": 38.4228587226,
+    "longitude": -28.4783860429,
+    "area": "Madalena, PT",
+    "source": "https://www.inaturalist.org/observations/360612042",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/658476617/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Anais Builly, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-11-derby-cove-ak-us-orca-01",
+    "name": "Orca sighting (Derby Cove, AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by kiminak.",
+    "date": "2026-05-11",
+    "latitude": 60.0706055,
+    "longitude": -149.35437,
+    "area": "Derby Cove, AK, US",
+    "source": "https://www.inaturalist.org/observations/360760942",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/658320883/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) kiminak, some rights reserved (CC BY-NC)",
+    "notable": true
   },
   {
     "id": "2026-05-11-northeast-atlantic-sperm-01",
@@ -874,24 +1266,6 @@
       "reported"
     ],
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/658478287/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Anais Builly, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-05-11-madalena-pt-humpback-01",
-    "name": "Humpback sighting (Madalena, PT)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by anaisbuilly.",
-    "date": "2026-05-11",
-    "latitude": 38.4228587226,
-    "longitude": -28.4783860429,
-    "area": "Madalena, PT",
-    "source": "https://www.inaturalist.org/observations/360612042",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/658476617/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Anais Builly, some rights reserved (CC BY-NC)",
     "notable": true
@@ -915,52 +1289,37 @@
     "notable": true
   },
   {
-    "id": "2026-05-09-portugal-blue-01",
-    "name": "Blue Whale sighting (Portugal)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by duarte16.",
-    "date": "2026-05-09",
-    "latitude": 38.6085699304,
-    "longitude": -28.310842216,
-    "area": "Portugal",
-    "source": "https://www.inaturalist.org/observations/359815997",
+    "id": "2026-05-10-north-pacific-ocean--orca-01",
+    "name": "Orca sighting (North Pacific Ocean, AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by bit.",
+    "date": "2026-05-10",
+    "latitude": 57.05745,
+    "longitude": -133.441895,
+    "area": "North Pacific Ocean, AK, US",
+    "source": "https://www.inaturalist.org/observations/360452901",
     "behaviors": [
       "reported"
     ],
-    "seasonalStatus": "Azores feeding season"
-  },
-  {
-    "id": "2026-05-09-island-county-wa-usa-gray-01",
-    "name": "Gray Whale sighting (Island County, WA, USA)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by tortellini_man.",
-    "date": "2026-05-09",
-    "latitude": 48.269964634999994,
-    "longitude": -122.5178482557,
-    "area": "Island County, WA, USA",
-    "source": "https://www.inaturalist.org/observations/360105631",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/657081310/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/657729517/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) tortellini_man, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "California migration corridor"
+    "photoAttribution": "(c) Bitty A. Roy, some rights reserved (CC BY-NC)",
+    "notable": true
   },
   {
-    "id": "2026-05-09-lincoln-county-or-us-gray-02",
-    "name": "Gray Whale sighting (Lincoln County, OR, USA)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by katelink.",
-    "date": "2026-05-09",
-    "latitude": 44.8197254997,
-    "longitude": -124.0757346,
-    "area": "Lincoln County, OR, USA",
-    "source": "https://www.inaturalist.org/observations/360077228",
+    "id": "2026-05-10-virginia-orca-02",
+    "name": "Orca sighting (Virginia)",
+    "species": "Orca",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-05-10.",
+    "date": "2026-05-10",
+    "latitude": 36.868319,
+    "longitude": -75.93407,
+    "area": "Virginia",
+    "source": "https://www.gbif.org/occurrence/6273418365",
     "behaviors": [
       "reported"
     ],
-    "seasonalStatus": "California migration corridor"
+    "notable": true
   },
   {
     "id": "2026-05-09-massachusetts-us-humpback-01",
@@ -981,37 +1340,148 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-05-09-cap-vert-humpback-02",
-    "name": "Humpback sighting (Cap-Vert)",
+    "id": "2026-05-09-donegal-humpback-02",
+    "name": "Humpback sighting (Donegal)",
     "species": "Humpback",
-    "info": "iNaturalist observation by vincentcarlier.",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-05-09.",
     "date": "2026-05-09",
-    "latitude": 16.1531156106,
-    "longitude": -23.0424633622,
-    "area": "Cap-Vert",
-    "source": "https://www.inaturalist.org/observations/359865248",
+    "latitude": 54.566628,
+    "longitude": -8.454541,
+    "area": "Donegal",
+    "source": "https://www.gbif.org/occurrence/6274308333",
     "behaviors": [
       "reported"
     ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656619400/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Vincent Carlier, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Northeast Atlantic feeding season"
+  },
+  {
+    "id": "2026-05-09-northeast-iceland-humpback-03",
+    "name": "Humpback sighting (Northeast, Iceland)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-05-09. Source: Happywhale.com.",
+    "date": "2026-05-09",
+    "latitude": 66.04,
+    "longitude": -18.35,
+    "area": "Northeast, Iceland",
+    "source": "https://obis.org/occurrence/662748",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-05-09-california-united-st-humpback-04",
+    "name": "Humpback sighting (California, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-09. Source: Happywhale.com.",
+    "date": "2026-05-09",
+    "latitude": 36.652417,
+    "longitude": -122.000061,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/662758",
+    "behaviors": [
+      "reported"
+    ],
     "notable": true
   },
   {
-    "id": "2026-05-08-dunes-city-oregon-97-gray-01",
-    "name": "Gray Whale sighting (Dunes City, Oregon 97439, USA)",
+    "id": "2026-05-09-northeast-iceland-humpback-05",
+    "name": "Humpback sighting (Northeast, Iceland)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-05-09. Source: Happywhale.com.",
+    "date": "2026-05-09",
+    "latitude": 66.1,
+    "longitude": -17.5,
+    "area": "Northeast, Iceland",
+    "source": "https://obis.org/occurrence/662756",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-05-09-sonoma-coast-state-b-gray-01",
+    "name": "Gray Whale sighting (Sonoma Coast State Beach, Sonoma, California, United States)",
     "species": "Gray Whale",
-    "info": "iNaturalist observation by schmolly.",
-    "date": "2026-05-08",
-    "latitude": 44.14308609650001,
-    "longitude": -124.128273949,
-    "area": "Dunes City, Oregon 97439, USA",
-    "source": "https://www.inaturalist.org/observations/359742506",
+    "info": "iNaturalist observation by wildmare64.",
+    "date": "2026-05-09",
+    "latitude": 38.374241666699994,
+    "longitude": -123.0914527778,
+    "area": "Sonoma Coast State Beach, Sonoma, California, United States",
+    "source": "https://www.inaturalist.org/observations/360076611",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/657022669/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Sarah Reid, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-09-island-county-wa-usa-gray-02",
+    "name": "Gray Whale sighting (Island County, WA, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by tortellini_man.",
+    "date": "2026-05-09",
+    "latitude": 48.269964634999994,
+    "longitude": -122.5178482557,
+    "area": "Island County, WA, USA",
+    "source": "https://www.inaturalist.org/observations/360105631",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/657081310/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) tortellini_man, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-09-north-pacific-ocean--gray-03",
+    "name": "Gray Whale sighting (North Pacific Ocean, WA, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by jessiethecowpunk.",
+    "date": "2026-05-09",
+    "latitude": 47.0410126483,
+    "longitude": -124.1834559182,
+    "area": "North Pacific Ocean, WA, US",
+    "source": "https://www.inaturalist.org/observations/360473597",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/657768428/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Jessie D, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-09-lincoln-county-or-us-gray-04",
+    "name": "Gray Whale sighting (Lincoln County, OR, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by katelink.",
+    "date": "2026-05-09",
+    "latitude": 44.8197254997,
+    "longitude": -124.0757346,
+    "area": "Lincoln County, OR, USA",
+    "source": "https://www.inaturalist.org/observations/360077228",
     "behaviors": [
       "reported"
     ],
     "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-09-portugal-blue-01",
+    "name": "Blue Whale sighting (Portugal)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by duarte16.",
+    "date": "2026-05-09",
+    "latitude": 38.6085699304,
+    "longitude": -28.310842216,
+    "area": "Portugal",
+    "source": "https://www.inaturalist.org/observations/359815997",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Azores feeding season"
   },
   {
     "id": "2026-05-08-kauai-county-hi-usa-humpback-01",
@@ -1031,32 +1501,269 @@
     "photoAttribution": "(c) Andrew Fulton, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-05-06-new-zealand-blue-01",
-    "name": "Blue Whale sighting (New Zealand)",
-    "species": "Blue Whale",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-05-06.",
+    "id": "2026-05-08-ak-us-humpback-02",
+    "name": "Humpback sighting (AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by killerwhelan.",
+    "date": "2026-05-08",
+    "latitude": 59.40163,
+    "longitude": -146.368775,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/359885445",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656655775/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) killerwhelan, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-08-hoonah-angoon-census-orca-01",
+    "name": "Orca sighting (Hoonah-Angoon Census Area, AK, USA)",
+    "species": "Orca",
+    "info": "iNaturalist observation by agbrown.",
+    "date": "2026-05-08",
+    "latitude": 58.7313238306,
+    "longitude": -136.323444508,
+    "area": "Hoonah-Angoon Census Area, AK, USA",
+    "source": "https://www.inaturalist.org/observations/359737984",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/656384119/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Alex Brown, some rights reserved (CC BY)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-08-big-lagoon-county-pa-gray-01",
+    "name": "Gray Whale sighting (Big Lagoon County Park, Trinidad, CA, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by aesculus_californica.",
+    "date": "2026-05-08",
+    "latitude": 41.1848554851,
+    "longitude": -124.1331984922,
+    "area": "Big Lagoon County Park, Trinidad, CA, US",
+    "source": "https://www.inaturalist.org/observations/359975214",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-08-dunes-city-oregon-97-gray-02",
+    "name": "Gray Whale sighting (Dunes City, Oregon 97439, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by schmolly.",
+    "date": "2026-05-08",
+    "latitude": 44.14308609650001,
+    "longitude": -124.128273949,
+    "area": "Dunes City, Oregon 97439, USA",
+    "source": "https://www.inaturalist.org/observations/359742506",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-07-alaska-united-states-humpback-01",
+    "name": "Humpback sighting (Alaska, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-07. Source: Happywhale.com.",
+    "date": "2026-05-07",
+    "latitude": 58.405696000000006,
+    "longitude": -134.919491,
+    "area": "Alaska, United States",
+    "source": "https://obis.org/occurrence/662527",
+    "behaviors": [
+      "reported",
+      "traveling"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-07-alaska-united-states-humpback-02",
+    "name": "Humpback sighting (Alaska, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-07. Source: Happywhale.com.",
+    "date": "2026-05-07",
+    "latitude": 55.267211,
+    "longitude": -131.632828,
+    "area": "Alaska, United States",
+    "source": "https://obis.org/occurrence/662612",
+    "behaviors": [
+      "reported",
+      "feeding",
+      "traveling"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-07-olympic-olympic-nati-gray-01",
+    "name": "Gray Whale sighting (Olympic, Olympic National Park, Jefferson County, US-WA, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by parobbert.",
+    "date": "2026-05-07",
+    "latitude": 47.811366666699996,
+    "longitude": -124.521955,
+    "area": "Olympic, Olympic National Park, Jefferson County, US-WA, US",
+    "source": "https://www.inaturalist.org/observations/361153490",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/659084907/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) parobbert, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-06-hawaii-united-states-humpback-01",
+    "name": "Humpback sighting (Hawaii, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
     "date": "2026-05-06",
-    "latitude": -36.682059,
-    "longitude": 175.305626,
-    "area": "New Zealand",
-    "source": "https://www.gbif.org/occurrence/6273242643",
+    "latitude": 20.87,
+    "longitude": -156.7,
+    "area": "Hawaii, United States",
+    "source": "https://obis.org/occurrence/662458",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-05-06-alaska-united-states-humpback-02",
+    "name": "Humpback sighting (Alaska, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
+    "date": "2026-05-06",
+    "latitude": 58.105,
+    "longitude": -135.499,
+    "area": "Alaska, United States",
+    "source": "https://obis.org/occurrence/662255",
     "behaviors": [
       "reported"
     ],
     "notable": true
   },
   {
-    "id": "2026-05-06-azores-portugal-gray-01",
-    "name": "Gray Whale sighting (Azores, Portugal)",
-    "species": "Gray Whale",
-    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
+    "id": "2026-05-06-california-united-st-humpback-03",
+    "name": "Humpback sighting (California, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
     "date": "2026-05-06",
-    "latitude": 38.23126,
-    "longitude": -28.17115,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/662299",
+    "latitude": 36.672214,
+    "longitude": -122.011747,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/662507",
     "behaviors": [
       "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-06-northeast-atlantic-humpback-04",
+    "name": "Humpback sighting (Northeast Atlantic (GBIF))",
+    "species": "Humpback",
+    "info": "GBIF record from GBIF. Observed 2026-05-06.",
+    "date": "2026-05-06",
+    "latitude": 62.485872,
+    "longitude": 6.377117,
+    "area": "Northeast Atlantic (GBIF)",
+    "source": "https://www.gbif.org/occurrence/6247463301",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-05-06-alaska-united-states-humpback-05",
+    "name": "Humpback sighting (Alaska, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
+    "date": "2026-05-06",
+    "latitude": 57.189361,
+    "longitude": -134.810622,
+    "area": "Alaska, United States",
+    "source": "https://obis.org/occurrence/662754",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-06-northeast-iceland-humpback-06",
+    "name": "Humpback sighting (Northeast, Iceland)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
+    "date": "2026-05-06",
+    "latitude": 66.051675,
+    "longitude": -17.648036,
+    "area": "Northeast, Iceland",
+    "source": "https://obis.org/occurrence/662433",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-05-06-soufri-re-saint-luci-humpback-07",
+    "name": "Humpback sighting (Soufrière, Saint Lucia)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
+    "date": "2026-05-06",
+    "latitude": 13.846861,
+    "longitude": -61.080084,
+    "area": "Soufrière, Saint Lucia",
+    "source": "https://obis.org/occurrence/662434",
+    "behaviors": [
+      "reported",
+      "breaching"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-06-baja-california-sur--humpback-08",
+    "name": "Humpback sighting (Baja California Sur, Mexico)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
+    "date": "2026-05-06",
+    "latitude": 24.130205,
+    "longitude": -109.825344,
+    "area": "Baja California Sur, Mexico",
+    "source": "https://obis.org/occurrence/662435",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-05-06-alaska-united-states-humpback-09",
+    "name": "Humpback sighting (Alaska, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
+    "date": "2026-05-06",
+    "latitude": 58.24,
+    "longitude": -135.46,
+    "area": "Alaska, United States",
+    "source": "https://obis.org/occurrence/662251",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-06-california-united-st-humpback-10",
+    "name": "Humpback sighting (California, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
+    "date": "2026-05-06",
+    "latitude": 35.409621,
+    "longitude": -121.005847,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/662440",
+    "behaviors": [
+      "reported",
+      "feeding"
     ],
     "notable": true
   },
@@ -1079,1394 +1786,77 @@
     "notable": true
   },
   {
-    "id": "2026-05-06-hawaii-united-states-humpback-01",
-    "name": "Humpback sighting (Hawaii, United States)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
-    "date": "2026-05-06",
-    "latitude": 20.87,
-    "longitude": -156.7,
-    "area": "Hawaii, United States",
-    "source": "https://obis.org/occurrence/662458",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-05-06-northeast-atlantic-humpback-02",
-    "name": "Humpback sighting (Northeast Atlantic (GBIF))",
-    "species": "Humpback",
-    "info": "GBIF record from GBIF. Observed 2026-05-06.",
-    "date": "2026-05-06",
-    "latitude": 62.485872,
-    "longitude": 6.377117,
-    "area": "Northeast Atlantic (GBIF)",
-    "source": "https://www.gbif.org/occurrence/6247463301",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-05-05-vassdal-173-mel-y-no-humpback-01",
-    "name": "Humpback sighting (Vassdal 173, Meløy, No)",
-    "species": "Humpback",
-    "info": "GBIF record from GBIF. Observed 2026-05-05.",
-    "date": "2026-05-05",
-    "latitude": 66.826668,
-    "longitude": 13.600619,
-    "area": "Vassdal 173, Meløy, No",
-    "source": "https://www.gbif.org/occurrence/6256506456",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-05-05-onuku-rd-akaroa-cant-orca-01",
-    "name": "Orca sighting (Onuku Rd, Akaroa, Canterbury, NZ)",
+    "id": "2026-05-06-california-united-st-orca-02",
+    "name": "Orca sighting (California, United States)",
     "species": "Orca",
-    "info": "iNaturalist observation by southernwanderer.",
-    "date": "2026-05-05",
-    "latitude": -43.808728333299996,
-    "longitude": 172.9442883333,
-    "area": "Onuku Rd, Akaroa, Canterbury, NZ",
-    "source": "https://www.inaturalist.org/observations/358442157",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653884786/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) John Davey, some rights reserved (CC BY)",
-    "notable": true
-  },
-  {
-    "id": "2026-05-03-waialua-hi-96791-usa-humpback-01",
-    "name": "Humpback sighting (Waialua, HI 96791, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by damienxw.",
-    "date": "2026-05-03",
-    "latitude": 21.5721564431,
-    "longitude": -158.2808215544,
-    "area": "Waialua, HI 96791, USA",
-    "source": "https://www.inaturalist.org/observations/358174573",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653365458/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Damien Wallace, some rights reserved (CC BY)"
-  },
-  {
-    "id": "2026-05-03-gulf-of-maine-humpback-02",
-    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by zihanwei.",
-    "date": "2026-05-03",
-    "latitude": 42.4823142618,
-    "longitude": -70.4225865435,
-    "area": "Gulf of Maine (iNaturalist — Catalog)",
-    "source": "https://www.inaturalist.org/observations/358292846",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653586104/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) zihanwei, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-05-03-gloucester-ma-us-humpback-03",
-    "name": "Humpback sighting (Gloucester, MA, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by vanfossa.",
-    "date": "2026-05-03",
-    "latitude": 42.5905078221,
-    "longitude": -70.6738782669,
-    "area": "Gloucester, MA, US",
-    "source": "https://www.inaturalist.org/observations/358085050",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/653182495/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Ayden Van Fossen, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-05-03-scotland-gb-orca-01",
-    "name": "Orca sighting (Scotland, GB)",
-    "species": "Orca",
-    "info": "iNaturalist observation by wilderness_kai.",
-    "date": "2026-05-03",
-    "latitude": 57.698509636,
-    "longitude": -2.0012376531,
-    "area": "Scotland, GB",
-    "source": "https://www.inaturalist.org/observations/358982681",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-05-03-cloverdale-or-97112--gray-01",
-    "name": "Gray Whale sighting (Cloverdale, OR 97112, USA)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by jonathan_whitaker.",
-    "date": "2026-05-03",
-    "latitude": 45.3379632486,
-    "longitude": -124.011140205,
-    "area": "Cloverdale, OR 97112, USA",
-    "source": "https://www.inaturalist.org/observations/357975467",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/652971306/medium.jpg",
-    "photoLicense": "cc0",
-    "photoAttribution": "no rights reserved",
-    "seasonalStatus": "California migration corridor"
-  },
-  {
-    "id": "2026-05-02-northeast-iceland-humpback-01",
-    "name": "Humpback sighting (Northeast, Iceland)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-05-02. Source: Happywhale.com.",
-    "date": "2026-05-02",
-    "latitude": 66.1,
-    "longitude": -17.5,
-    "area": "Northeast, Iceland",
-    "source": "https://obis.org/occurrence/661963",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-05-02-or-us-gray-01",
-    "name": "Gray Whale sighting (OR, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by dandelion_soup.",
-    "date": "2026-05-02",
-    "latitude": 46.00866333330001,
-    "longitude": -123.9350366667,
-    "area": "OR, US",
-    "source": "https://www.inaturalist.org/observations/358762857",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/654506590/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Saxton, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "California migration corridor"
-  },
-  {
-    "id": "2026-05-02-california-united-st-blue-01",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-05-02. Source: Happywhale.com.",
-    "date": "2026-05-02",
-    "latitude": 34.093356,
-    "longitude": -119.474661,
+    "info": "OBIS record from Happywhale - Fin whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
+    "date": "2026-05-06",
+    "latitude": 33.579159,
+    "longitude": -117.8786,
     "area": "California, United States",
-    "source": "https://obis.org/occurrence/661626",
+    "source": "https://obis.org/occurrence/662496",
     "behaviors": [
       "reported"
     ],
     "notable": true
   },
   {
-    "id": "2026-05-01-mexico-humpback-01",
-    "name": "Humpback sighting (Mexico)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by prayandr84.",
-    "date": "2026-05-01",
-    "latitude": 24.3666829339,
-    "longitude": -110.3575758263,
-    "area": "Mexico",
-    "source": "https://www.inaturalist.org/observations/361685856",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660101333/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) prayandr84, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-05-01-alaska-united-states-humpback-02",
-    "name": "Humpback sighting (Alaska, United States)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-01. Source: Happywhale.com.",
-    "date": "2026-05-01",
-    "latitude": 58.730752,
-    "longitude": -135.029062,
-    "area": "Alaska, United States",
-    "source": "https://obis.org/occurrence/661982",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-29-calle-marl-n-yelapa--humpback-01",
-    "name": "Humpback sighting (Calle Marlín, Yelapa, Jal., MX)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by ambar_noemi.",
-    "date": "2026-04-29",
-    "latitude": 20.50815725,
-    "longitude": -105.4439875,
-    "area": "Calle Marlín, Yelapa, Jal., MX",
-    "source": "https://www.inaturalist.org/observations/356629866",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/650375051/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) AMBAR NOEMI PALACIOS PARTIDA, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-04-29-ilwaco-wa-98624-usa-gray-01",
-    "name": "Gray Whale sighting (Ilwaco, WA 98624, USA)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by melallen14.",
-    "date": "2026-04-29",
-    "latitude": 46.2573944444,
-    "longitude": -124.0507,
-    "area": "Ilwaco, WA 98624, USA",
-    "source": "https://www.inaturalist.org/observations/357064647",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "California migration corridor"
-  },
-  {
-    "id": "2026-04-28-mx-humpback-01",
-    "name": "Humpback sighting (MX)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by sekbennett.",
-    "date": "2026-04-28",
-    "latitude": 25.7973533333,
-    "longitude": -111.2635633333,
-    "area": "MX",
-    "source": "https://www.inaturalist.org/observations/356401934",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/649950072/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Scott Bennett, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-04-28-or-us-gray-01",
-    "name": "Gray Whale sighting (OR, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by bhallberg.",
-    "date": "2026-04-28",
-    "latitude": 45.6751311593,
-    "longitude": -123.9409315339,
-    "area": "OR, US",
-    "source": "https://www.inaturalist.org/observations/356102259",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/649389621/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) bhallberg, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "California migration corridor"
-  },
-  {
-    "id": "2026-04-27-los-cabos-b-c-s-m-xi-humpback-01",
-    "name": "Humpback sighting (Los Cabos, B.C.S., México)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by ivonne26171.",
-    "date": "2026-04-27",
-    "latitude": 22.9246529796,
-    "longitude": -110.049487631,
-    "area": "Los Cabos, B.C.S., México",
-    "source": "https://www.inaturalist.org/observations/355890262",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-26-azores-pt-humpback-01",
-    "name": "Humpback sighting (Azores, PT)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by jmeerman.",
-    "date": "2026-04-26",
-    "latitude": 38.471651888,
-    "longitude": -28.6668047464,
-    "area": "Azores, PT",
-    "source": "https://www.inaturalist.org/observations/360940896",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/658668300/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Jan Meerman, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-04-26-loreto-b-c-s-mx-gray-01",
-    "name": "Gray Whale sighting (Loreto, B.C.S., MX)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by castroklk.",
-    "date": "2026-04-26",
-    "latitude": 26.0321876382,
-    "longitude": -111.3338126692,
-    "area": "Loreto, B.C.S., MX",
-    "source": "https://www.inaturalist.org/observations/355847626",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/648933680/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) BRAYAN EDUARDO CASTRO SALGADO, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Baja breeding lagoons"
-  },
-  {
-    "id": "2026-04-26-oswald-west-state-pa-gray-02",
-    "name": "Gray Whale sighting (Oswald West State Park, OR, USA)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by tellittothevoid.",
-    "date": "2026-04-26",
-    "latitude": 45.7583773225,
-    "longitude": -123.9843950859,
-    "area": "Oswald West State Park, OR, USA",
-    "source": "https://www.inaturalist.org/observations/356753544",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "California migration corridor"
-  },
-  {
-    "id": "2026-04-25-the-esplanade-at-bea-orca-01",
-    "name": "Orca sighting (The Esplanade at Beach Street (near 300), Island Bay, Wellington 6023, New Zealand)",
-    "species": "Orca",
-    "info": "iNaturalist observation by orla12cat9bw.",
-    "date": "2026-04-25",
-    "latitude": -41.36507177,
-    "longitude": 174.77025372,
-    "area": "The Esplanade at Beach Street (near 300), Island Bay, Wellington 6023, New Zealand",
-    "source": "https://www.inaturalist.org/observations/353288549",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-25-north-pacific-ocean--gray-01",
-    "name": "Gray Whale sighting (North Pacific Ocean, OR, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by zoltshmack.",
-    "date": "2026-04-25",
-    "latitude": 46.2143633333,
-    "longitude": -123.9912566667,
-    "area": "North Pacific Ocean, OR, US",
-    "source": "https://www.inaturalist.org/observations/359041147",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/655038350/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) zoltshmack, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "California migration corridor"
-  },
-  {
-    "id": "2026-04-24-m-xico-humpback-01",
-    "name": "Humpback sighting (México)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by carlos1869.",
-    "date": "2026-04-24",
-    "latitude": 21.8236463738,
-    "longitude": -105.8767512068,
-    "area": "México",
-    "source": "https://www.inaturalist.org/observations/352972850",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/644624758/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Carlos Martínez, some rights reserved (CC BY)"
-  },
-  {
-    "id": "2026-04-24-reykjavik-humpback-02",
-    "name": "Humpback sighting (Reykjavik)",
-    "species": "Humpback",
-    "info": "GBIF record from GBIF. Observed 2026-04-24.",
-    "date": "2026-04-24",
-    "latitude": 64.162849,
-    "longitude": -21.927383,
-    "area": "Reykjavik",
-    "source": "https://www.gbif.org/occurrence/6227604409",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-04-23-japan-humpback-01",
-    "name": "Humpback sighting (Japan (offshore))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by gomenwl.",
-    "date": "2026-04-23",
-    "latitude": 32.2811954335,
-    "longitude": 141.5673693278,
-    "area": "Japan (offshore)",
-    "source": "https://www.inaturalist.org/observations/357096314",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/651269908/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Gomen See, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-04-23-washington-humpback-02",
-    "name": "Humpback sighting (Washington)",
-    "species": "Humpback",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-04-23.",
-    "date": "2026-04-23",
-    "latitude": 48.143533,
-    "longitude": -122.756049,
-    "area": "Washington",
-    "source": "https://www.gbif.org/occurrence/6251518430",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-23-ostrobothnia-finland-sperm-01",
-    "name": "Sperm whale sighting (Ostrobothnia, Finland)",
-    "species": "Sperm whale",
-    "info": "OBIS record from Happywhale - Harbor porpoise in North Atlantic Ocean (1 individuals). Observed 2026-04-23. Source: Happywhale.com.",
-    "date": "2026-04-23",
-    "latitude": 63.183265,
-    "longitude": 21.978163,
-    "area": "Ostrobothnia, Finland",
-    "source": "https://obis.org/occurrence/660149",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-21-jp-humpback-01",
-    "name": "Humpback sighting (太平洋, 東京, JP)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by gomenwl.",
-    "date": "2026-04-21",
-    "latitude": 27.0649445,
-    "longitude": 142.1764666667,
-    "area": "太平洋, 東京, JP",
-    "source": "https://www.inaturalist.org/observations/351659703",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/641767585/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Gomen See, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-04-19-japan-humpback-01",
-    "name": "Humpback sighting (Japan (offshore))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by gomenwl.",
-    "date": "2026-04-19",
-    "latitude": 30.1316524207,
-    "longitude": 141.4239822925,
-    "area": "Japan (offshore)",
-    "source": "https://www.inaturalist.org/observations/351684775",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/641816062/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Gomen See, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-04-19-grenen-skagen-humpback-02",
-    "name": "Humpback sighting (Grenen, Skagen)",
-    "species": "Humpback",
-    "info": "GBIF record from GBIF. Observed 2026-04-19.",
-    "date": "2026-04-19",
-    "latitude": 57.74509,
-    "longitude": 10.63559,
-    "area": "Grenen, Skagen",
-    "source": "https://www.gbif.org/occurrence/6247605032",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
-    "id": "2026-04-19-washington-united-st-humpback-03",
-    "name": "Humpback sighting (Washington, United States)",
-    "species": "Humpback",
-    "info": "GBIF record from Happywhale - Common minke whale in North Pacific Ocean. Observed 2026-04-19.",
-    "date": "2026-04-19",
-    "latitude": 48.324326,
-    "longitude": -122.91196,
-    "area": "Washington, United States",
-    "source": "https://www.gbif.org/occurrence/6272683301",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-18-azores-portugal-gray-01",
+    "id": "2026-05-06-azores-portugal-gray-01",
     "name": "Gray Whale sighting (Azores, Portugal)",
     "species": "Gray Whale",
-    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-04-18. Source: Happywhale.com.",
-    "date": "2026-04-18",
-    "latitude": 38.417,
-    "longitude": -28.514,
+    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
+    "date": "2026-05-06",
+    "latitude": 38.23126,
+    "longitude": -28.17115,
     "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/659010",
+    "source": "https://obis.org/occurrence/662299",
     "behaviors": [
       "reported"
     ],
     "notable": true
   },
   {
-    "id": "2026-04-18-klakkgrunnen-b-no-humpback-01",
-    "name": "Humpback sighting (Klakkgrunnen, Bø, No)",
-    "species": "Humpback",
-    "info": "GBIF record from GBIF. Observed 2026-04-18.",
-    "date": "2026-04-18",
-    "latitude": 68.697105,
-    "longitude": 14.22449,
-    "area": "Klakkgrunnen, Bø, No",
-    "source": "https://www.gbif.org/occurrence/6196606731",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-04-18-washington-humpback-02",
-    "name": "Humpback sighting (Washington)",
-    "species": "Humpback",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-04-18.",
-    "date": "2026-04-18",
-    "latitude": 48.143111,
-    "longitude": -122.987643,
-    "area": "Washington",
-    "source": "https://www.gbif.org/occurrence/6234232446",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-16-azores-portugal-orca-01",
-    "name": "Orca sighting (Azores, Portugal)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Blue whale in North Atlantic Ocean (1 individuals). Observed 2026-04-16. Source: Happywhale.com.",
-    "date": "2026-04-16",
-    "latitude": 37.627702,
-    "longitude": -25.648156,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/662666",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-16-azores-portugal-blue-01",
-    "name": "Blue Whale sighting (Azores, Portugal)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Atlantic Ocean (1 individuals). Observed 2026-04-16. Source: Happywhale.com.",
-    "date": "2026-04-16",
-    "latitude": 37.627702,
-    "longitude": -25.648156,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/662666",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Azores feeding season"
-  },
-  {
-    "id": "2026-04-14-global-blue-01",
+    "id": "2026-05-06-global-blue-01",
     "name": "Blue Whale sighting (Global (GBIF))",
     "species": "Blue Whale",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-04-14.",
-    "date": "2026-04-14",
-    "latitude": -11.992272,
-    "longitude": -77.26815,
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-05-06.",
+    "date": "2026-05-06",
+    "latitude": -36.682059,
+    "longitude": 175.305626,
     "area": "Global (GBIF)",
-    "source": "https://www.gbif.org/occurrence/6235557366",
+    "source": "https://www.gbif.org/occurrence/6273242643",
     "behaviors": [
       "reported"
     ],
     "notable": true
   },
   {
-    "id": "2026-04-13-m-xico-humpback-01",
-    "name": "Humpback sighting (México)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by arelysaenz.",
-    "date": "2026-04-13",
-    "latitude": 20.7443233386,
-    "longitude": -105.5167705938,
-    "area": "México",
-    "source": "https://www.inaturalist.org/observations/351380293",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-04-12-argentina-orca-01",
-    "name": "Orca sighting (Argentina)",
-    "species": "Orca",
-    "info": "iNaturalist observation by ttamagno.",
-    "date": "2026-04-12",
-    "latitude": -54.282437703,
-    "longitude": -66.6844404861,
-    "area": "Argentina",
-    "source": "https://www.inaturalist.org/observations/362329374",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661311319/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Tomás Tamagno, some rights reserved (CC BY)",
-    "notable": true
-  },
-  {
-    "id": "2026-04-11-azores-portugal-blue-01",
-    "name": "Blue Whale sighting (Azores, Portugal)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Atlantic Ocean (1 individuals). Observed 2026-04-11. Source: Happywhale.com.",
-    "date": "2026-04-11",
-    "latitude": 38.37,
-    "longitude": -28.26,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/659923",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Azores feeding season"
-  },
-  {
-    "id": "2026-04-09-chubut-argentina-orca-01",
-    "name": "Orca sighting (Chubut, Argentina)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Sei whale in South Atlantic Ocean (1 individuals). Observed 2026-04-09. Source: Happywhale.com.",
-    "date": "2026-04-09",
-    "latitude": -45.189269,
-    "longitude": -66.075414,
-    "area": "Chubut, Argentina",
-    "source": "https://obis.org/occurrence/657443",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Patagonian orca"
-  },
-  {
-    "id": "2026-04-09-azores-portugal-gray-01",
-    "name": "Gray Whale sighting (Azores, Portugal)",
-    "species": "Gray Whale",
-    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-04-09. Source: Happywhale.com.",
-    "date": "2026-04-09",
-    "latitude": 38.18403,
-    "longitude": -28.1546,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/656424",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-09-japan-humpback-01",
-    "name": "Humpback sighting (Japan (offshore))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by isaiahnugent.",
-    "date": "2026-04-09",
-    "latitude": 27.0786958528,
-    "longitude": 142.17976782609998,
-    "area": "Japan (offshore)",
-    "source": "https://www.inaturalist.org/observations/363091321",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/662755865/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Isaiah Nugent, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-04-08-california-united-st-fin-01",
+    "id": "2026-05-06-california-united-st-fin-01",
     "name": "Fin Whale sighting (California, United States)",
     "species": "Fin Whale",
-    "info": "OBIS record from Happywhale - Fin whale in North Pacific Ocean (1 individuals). Observed 2026-04-08. Source: Happywhale.com.",
-    "date": "2026-04-08",
-    "latitude": 32.7,
-    "longitude": -117.5,
+    "info": "OBIS record from Happywhale - Fin whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
+    "date": "2026-05-06",
+    "latitude": 33.579159,
+    "longitude": -117.8786,
     "area": "California, United States",
-    "source": "https://obis.org/occurrence/657786",
-    "behaviors": [
-      "reported",
-      "hunting",
-      "feeding"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-07-baja-california-sur--humpback-01",
-    "name": "Humpback sighting (Baja California Sur, Mexico)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-04-07. Source: Happywhale.com.",
-    "date": "2026-04-07",
-    "latitude": 22.895815,
-    "longitude": -110.059844,
-    "area": "Baja California Sur, Mexico",
-    "source": "https://obis.org/occurrence/657137",
+    "source": "https://obis.org/occurrence/662496",
     "behaviors": [
       "reported"
     ],
     "notable": true
   },
   {
-    "id": "2026-04-06-ays-n-chile-orca-01",
-    "name": "Orca sighting (Aysén, Chile)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Blue whale in South Pacific Ocean (1 individuals). Observed 2026-04-06. Source: Happywhale.com.",
-    "date": "2026-04-06",
-    "latitude": -44.286468,
-    "longitude": -73.41094,
-    "area": "Aysén, Chile",
-    "source": "https://obis.org/occurrence/656348",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-06-ais-n-cl-ai-cl-blue-01",
-    "name": "Blue Whale sighting (Aisén, CL-AI, CL)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by ademiguel.",
-    "date": "2026-04-06",
-    "latitude": -44.3441948542,
-    "longitude": -73.4366696957,
-    "area": "Aisén, CL-AI, CL",
-    "source": "https://www.inaturalist.org/observations/347937671",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/634477054/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Andres de Miguel, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Chile / Chiloé feeding season"
-  },
-  {
-    "id": "2026-04-06-ays-n-region-cl-blue-02",
-    "name": "Blue Whale sighting (Aysén Region, CL)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by mariasnell.",
-    "date": "2026-04-06",
-    "latitude": -43.8543163745,
-    "longitude": -73.3697670253,
-    "area": "Aysén Region, CL",
-    "source": "https://www.inaturalist.org/observations/350314661",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/639157928/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) mariasnell, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Chile / Chiloé feeding season"
-  },
-  {
-    "id": "2026-04-06-chile-blue-03",
-    "name": "Blue Whale sighting (Chile)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by maria_joao78878.",
-    "date": "2026-04-06",
-    "latitude": -44.6021224953,
-    "longitude": -73.5025698692,
-    "area": "Chile",
-    "source": "https://www.inaturalist.org/observations/347931290",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Chile / Chiloé feeding season"
-  },
-  {
-    "id": "2026-04-05-sj-vika-sortland-no-humpback-01",
-    "name": "Humpback sighting (Sjøvika, Sortland, No)",
-    "species": "Humpback",
-    "info": "GBIF record from GBIF. Observed 2026-04-05.",
-    "date": "2026-04-05",
-    "latitude": 68.703445,
-    "longitude": 15.080935,
-    "area": "Sjøvika, Sortland, No",
-    "source": "https://www.gbif.org/occurrence/6187490788",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-04-04-nordwestmecklenburg--humpback-01",
-    "name": "Humpback sighting (Nordwestmecklenburg, DE-MV, DE)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by isabelcavila.",
-    "date": "2026-04-04",
-    "latitude": 54.0130202971,
-    "longitude": 11.4017464867,
-    "area": "Nordwestmecklenburg, DE-MV, DE",
-    "source": "https://www.inaturalist.org/observations/347787492",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
-    "id": "2026-04-02-islas-canarias-blue-01",
-    "name": "Blue Whale sighting (Islas Canarias)",
-    "species": "Blue Whale",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-04-02.",
-    "date": "2026-04-02",
-    "latitude": 28.893519,
-    "longitude": -13.705852,
-    "area": "Islas Canarias",
-    "source": "https://www.gbif.org/occurrence/6188123824",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-02-nordwestmecklenburg--humpback-01",
-    "name": "Humpback sighting (Nordwestmecklenburg, DE-MV, DE)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by rio_arajuno.",
-    "date": "2026-04-02",
-    "latitude": 53.9723305924,
-    "longitude": 11.4354117215,
-    "area": "Nordwestmecklenburg, DE-MV, DE",
-    "source": "https://www.inaturalist.org/observations/348215356",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
-    "id": "2026-04-02-hawaii-united-states-humpback-02",
-    "name": "Humpback sighting (Hawaii, United States)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-04-02. Source: Happywhale.com.",
-    "date": "2026-04-02",
-    "latitude": 20.736163,
-    "longitude": -156.543002,
-    "area": "Hawaii, United States",
-    "source": "https://obis.org/occurrence/655837",
-    "behaviors": [
-      "reported",
-      "traveling"
-    ],
-    "seasonalStatus": "Hawaii breeding season"
-  },
-  {
-    "id": "2026-04-01-azores-portugal-gray-01",
-    "name": "Gray Whale sighting (Azores, Portugal)",
-    "species": "Gray Whale",
-    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-04-01. Source: Happywhale.com.",
-    "date": "2026-04-01",
-    "latitude": 38.362648,
-    "longitude": -28.381178,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/654471",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-31-napp-nordland-no-orca-01",
-    "name": "Orca sighting (Napp, Nordland, NO)",
-    "species": "Orca",
-    "info": "iNaturalist observation by campyannule.",
-    "date": "2026-03-31",
-    "latitude": 68.078898566,
-    "longitude": 13.4173320143,
-    "area": "Napp, Nordland, NO",
-    "source": "https://www.inaturalist.org/observations/346532152",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631694458/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Yann Zurbrugg, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Norwegian herring season orcas"
-  },
-  {
-    "id": "2026-03-31-eastern-cape-south-a-blue-01",
-    "name": "Blue Whale sighting (Eastern Cape, South Africa)",
-    "species": "Blue Whale",
-    "info": "GBIF record from Happywhale - Bryde's whale in Indian Ocean. Observed 2026-03-31.",
-    "date": "2026-03-31",
-    "latitude": -33.9,
-    "longitude": 25.8,
-    "area": "Eastern Cape, South Africa",
-    "source": "https://www.gbif.org/occurrence/6194514314",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-30-finnmark-orca-01",
-    "name": "Orca sighting (Finnmark)",
-    "species": "Orca",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-03-30.",
-    "date": "2026-03-30",
-    "latitude": 70.34509,
-    "longitude": 31.137539,
-    "area": "Finnmark",
-    "source": "https://www.gbif.org/occurrence/6185533494",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-30-9950-vard-norwegen-fin-01",
-    "name": "Fin Whale sighting (9950 Vardø, Norwegen)",
+    "id": "2026-05-06-new-zealand-fin-02",
+    "name": "Fin Whale sighting (New Zealand)",
     "species": "Fin Whale",
-    "info": "iNaturalist observation by jpgeeee.",
-    "date": "2026-03-30",
-    "latitude": 70.3450895033,
-    "longitude": 31.1375391483,
-    "area": "9950 Vardø, Norwegen",
-    "source": "https://www.inaturalist.org/observations/346184558",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-05-06.",
+    "date": "2026-05-06",
+    "latitude": -36.682059,
+    "longitude": 175.305626,
+    "area": "New Zealand",
+    "source": "https://www.gbif.org/occurrence/6273242643",
     "behaviors": [
       "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631000425/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Jan Phillipp Geißel, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-03-29-rawson-chubut-argent-orca-01",
-    "name": "Orca sighting (Rawson, Chubut, Argentina)",
-    "species": "Orca",
-    "info": "iNaturalist observation by sol_lombardo.",
-    "date": "2026-03-29",
-    "latitude": -42.959091215499996,
-    "longitude": -64.3093300225,
-    "area": "Rawson, Chubut, Argentina",
-    "source": "https://www.inaturalist.org/observations/346265620",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/631163642/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sol Lombardo, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Patagonian orca"
-  },
-  {
-    "id": "2026-03-29-wismar-deutschland-humpback-01",
-    "name": "Humpback sighting (Wismar, Deutschland)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by christonis.",
-    "date": "2026-03-29",
-    "latitude": 53.9132049997,
-    "longitude": 11.4338496997,
-    "area": "Wismar, Deutschland",
-    "source": "https://www.inaturalist.org/observations/346113357",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/630862039/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Christoph Nissen, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-28-global-orca-01",
-    "name": "Orca sighting (Global (GBIF))",
-    "species": "Orca",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-03-28.",
-    "date": "2026-03-28",
-    "latitude": -29.171295,
-    "longitude": -71.649239,
-    "area": "Global (GBIF)",
-    "source": "https://www.gbif.org/occurrence/6185605470",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-28-vads-humpback-01",
-    "name": "Humpback sighting (Vadsø)",
-    "species": "Humpback",
-    "info": "GBIF record from GBIF. Observed 2026-03-28.",
-    "date": "2026-03-28",
-    "latitude": 70.064968,
-    "longitude": 29.933711,
-    "area": "Vadsø",
-    "source": "https://www.gbif.org/occurrence/6183074561",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-27-hawaii-united-states-humpback-01",
-    "name": "Humpback sighting (Hawaii, United States)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-03-27. Source: Happywhale.com.",
-    "date": "2026-03-27",
-    "latitude": 20.74,
-    "longitude": -156.69,
-    "area": "Hawaii, United States",
-    "source": "https://obis.org/occurrence/656928",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Hawaii breeding season"
-  },
-  {
-    "id": "2026-03-26-nte-estancia-punta-n-orca-01",
-    "name": "Orca sighting (Nte., Estancia Punta Nte., Chubut, Argentina)",
-    "species": "Orca",
-    "info": "iNaturalist observation by timshroom.",
-    "date": "2026-03-26",
-    "latitude": -42.057869452599995,
-    "longitude": -63.7577749416,
-    "area": "Nte., Estancia Punta Nte., Chubut, Argentina",
-    "source": "https://www.inaturalist.org/observations/349185713",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636950577/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Timshroom, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Patagonian orca"
-  },
-  {
-    "id": "2026-03-26-california-orca-02",
-    "name": "Orca sighting (California)",
-    "species": "Orca",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-03-26.",
-    "date": "2026-03-26",
-    "latitude": 32.619994,
-    "longitude": -117.382529,
-    "area": "California",
-    "source": "https://www.gbif.org/occurrence/6185400117",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-26-eastern-cape-south-a-blue-01",
-    "name": "Blue Whale sighting (Eastern Cape, South Africa)",
-    "species": "Blue Whale",
-    "info": "GBIF record from Happywhale - Bryde's whale in Indian Ocean. Observed 2026-03-26.",
-    "date": "2026-03-26",
-    "latitude": -34.0,
-    "longitude": 25.75,
-    "area": "Eastern Cape, South Africa",
-    "source": "https://www.gbif.org/occurrence/6194514311",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-26-antarctica-fin-01",
-    "name": "Fin Whale sighting (Antarctica)",
-    "species": "Fin Whale",
-    "info": "OBIS record from Happywhale - Fin whale in Southern Ocean (1 individuals). Observed 2026-03-26. Source: Happywhale.com.",
-    "date": "2026-03-26",
-    "latitude": -64.67393,
-    "longitude": -62.60217,
-    "area": "Antarctica",
-    "source": "https://obis.org/occurrence/653478",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-26-antarctica-fin-02",
-    "name": "Fin Whale sighting (Antarctica)",
-    "species": "Fin Whale",
-    "info": "OBIS record from Happywhale - Fin whale in Southern Ocean (1 individuals). Observed 2026-03-26. Source: Happywhale.com.",
-    "date": "2026-03-26",
-    "latitude": -64.50451,
-    "longitude": -62.76293,
-    "area": "Antarctica",
-    "source": "https://obis.org/occurrence/653522",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-25-global-orca-01",
-    "name": "Orca sighting (Global (GBIF))",
-    "species": "Orca",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-03-25.",
-    "date": "2026-03-25",
-    "latitude": -59.763811,
-    "longitude": -66.562576,
-    "area": "Global (GBIF)",
-    "source": "https://www.gbif.org/occurrence/6185406752",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-25-comond-baja-californ-gray-01",
-    "name": "Gray Whale sighting (Comondú, Baja California Sur, Mexico)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by ricardo-anapri.",
-    "date": "2026-03-25",
-    "latitude": 24.6601975,
-    "longitude": -112.1226538883,
-    "area": "Comondú, Baja California Sur, Mexico",
-    "source": "https://www.inaturalist.org/observations/348817727",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636142369/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Baja breeding lagoons"
-  },
-  {
-    "id": "2026-03-25-comond-baja-californ-blue-01",
-    "name": "Blue Whale sighting (Comondú, Baja California Sur, Mexico)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by ricardo-anapri.",
-    "date": "2026-03-25",
-    "latitude": 24.530204445,
-    "longitude": -112.1095422217,
-    "area": "Comondú, Baja California Sur, Mexico",
-    "source": "https://www.inaturalist.org/observations/348817877",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/636143069/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Ricardo Rodero Henández, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-03-25-hawaii-united-states-humpback-01",
-    "name": "Humpback sighting (Hawaii, United States)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-03-25. Source: Happywhale.com.",
-    "date": "2026-03-25",
-    "latitude": 20.713973,
-    "longitude": -156.5311,
-    "area": "Hawaii, United States",
-    "source": "https://obis.org/occurrence/653298",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Hawaii breeding season"
-  },
-  {
-    "id": "2026-03-24-vads-orca-01",
-    "name": "Orca sighting (Vadsø)",
-    "species": "Orca",
-    "info": "GBIF record from GBIF. Observed 2026-03-24.",
-    "date": "2026-03-24",
-    "latitude": 70.075108,
-    "longitude": 29.542082,
-    "area": "Vadsø",
-    "source": "https://www.gbif.org/occurrence/6182452706",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-24-muleg-mx-bs-mx-gray-01",
-    "name": "Gray Whale sighting (Mulegé, MX-BS, MX)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by erick_manuel.",
-    "date": "2026-03-24",
-    "latitude": 26.7376556513,
-    "longitude": -113.2615526941,
-    "area": "Mulegé, MX-BS, MX",
-    "source": "https://www.inaturalist.org/observations/345138811",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Baja breeding lagoons"
-  },
-  {
-    "id": "2026-03-24-azores-portugal-blue-01",
-    "name": "Blue Whale sighting (Azores, Portugal)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Atlantic Ocean (1 individuals). Observed 2026-03-24. Source: Happywhale.com.",
-    "date": "2026-03-24",
-    "latitude": 38.446888,
-    "longitude": -28.688233,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/659407",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
-    "id": "2026-03-24-global-blue-02",
-    "name": "Blue Whale sighting (Global (GBIF))",
-    "species": "Blue Whale",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-03-24.",
-    "date": "2026-03-24",
-    "latitude": -8.94607,
-    "longitude": -79.69889,
-    "area": "Global (GBIF)",
-    "source": "https://www.gbif.org/occurrence/6185053594",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-24-freistrand-am-niendo-humpback-01",
-    "name": "Humpback sighting (Freistrand am Niendorfer Hafen, 23669, 23669 Timmendorfer Strand, Deutschland)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by mathieu_fr.",
-    "date": "2026-03-24",
-    "latitude": 53.9958837728,
-    "longitude": 10.8089630306,
-    "area": "Freistrand am Niendorfer Hafen, 23669, 23669 Timmendorfer Strand, Deutschland",
-    "source": "https://www.inaturalist.org/observations/344919775",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/628511245/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) mathieu_fr, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-03-23-washington-orca-01",
-    "name": "Orca sighting (Washington)",
-    "species": "Orca",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-03-23.",
-    "date": "2026-03-23",
-    "latitude": 48.222722,
-    "longitude": -122.898244,
-    "area": "Washington",
-    "source": "https://www.gbif.org/occurrence/6184983602",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Salish Sea (SRKW range)"
-  },
-  {
-    "id": "2026-03-23-oregon-orca-02",
-    "name": "Orca sighting (Oregon)",
-    "species": "Orca",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-03-23.",
-    "date": "2026-03-23",
-    "latitude": 44.673265,
-    "longitude": -124.125404,
-    "area": "Oregon",
-    "source": "https://www.gbif.org/occurrence/6185379597",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-22-tierra-del-fuego-arg-orca-01",
-    "name": "Orca sighting (Tierra del Fuego, Argentina)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Sei whale in South Pacific Ocean (1 individuals). Observed 2026-03-22. Source: Happywhale.com.",
-    "date": "2026-03-22",
-    "latitude": -54.9098,
-    "longitude": -67.394,
-    "area": "Tierra del Fuego, Argentina",
-    "source": "https://obis.org/occurrence/652924",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-22-alaska-united-states-humpback-01",
-    "name": "Humpback sighting (Alaska, United States)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-03-22. Source: Happywhale.com.",
-    "date": "2026-03-22",
-    "latitude": 57.110179,
-    "longitude": -135.538164,
-    "area": "Alaska, United States",
-    "source": "https://obis.org/occurrence/653800",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-22-australia-orca-02",
-    "name": "Orca sighting (Australia)",
-    "species": "Orca",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-03-22.",
-    "date": "2026-03-22",
-    "latitude": -34.450516,
-    "longitude": 119.42173,
-    "area": "Australia",
-    "source": "https://www.gbif.org/occurrence/6187919646",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "seasonalStatus": "Bremer Canyon, Australia"
-  },
-  {
-    "id": "2026-03-21-antarctica-fin-01",
-    "name": "Fin Whale sighting (Antarctica)",
-    "species": "Fin Whale",
-    "info": "OBIS record from Happywhale - Fin whale in Southern Ocean (1 individuals). Observed 2026-03-21. Source: Happywhale.com.",
-    "date": "2026-03-21",
-    "latitude": -64.507598,
-    "longitude": -61.57502,
-    "area": "Antarctica",
-    "source": "https://obis.org/occurrence/652536",
-    "behaviors": [
-      "reported",
-      "feeding",
-      "traveling"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-03-21-antarctica-orca-01",
-    "name": "Orca sighting (Antarctica)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Fin whale in Southern Ocean (1 individuals). Observed 2026-03-21. Source: Happywhale.com.",
-    "date": "2026-03-21",
-    "latitude": -64.507598,
-    "longitude": -61.57502,
-    "area": "Antarctica",
-    "source": "https://obis.org/occurrence/652536",
-    "behaviors": [
-      "reported",
-      "feeding",
-      "traveling"
     ],
     "notable": true
   }
