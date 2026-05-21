@@ -3270,3 +3270,939 @@ sources:
     max_items: 15
     force_species: ["Orca"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ===========================
+  # GLOBAL EXPANSION — language-agnostic API sources covering all major
+  # ocean basins. iNat/GBIF/OBIS return structured data regardless of the
+  # observer's language. These fill regions missing from English-biased scrapers.
+  # ===========================
+
+  # ── BAY OF BENGAL / SRI LANKA / ANDAMAN SEA ──────────────────────────────
+  - key: inat_blue_whale_bay_of_bengal
+    parser: inat_api
+    taxon_id: 41823
+    swlat: 5.0
+    swlng: 78.0
+    nelat: 25.0
+    nelng: 100.0
+    area: "Bay of Bengal / Andaman Sea (offshore)"
+    latitude: 12.0
+    longitude: 88.0
+    max_items: 15
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_blue_whale_bay_of_bengal
+    parser: gbif_api
+    taxon_key: 2440718
+    swlat: 5.0
+    swlng: 78.0
+    nelat: 25.0
+    nelng: 100.0
+    area: "Bay of Bengal (GBIF)"
+    latitude: 12.0
+    longitude: 88.0
+    max_items: 15
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_blue_whale_bay_of_bengal
+    parser: obis_api
+    taxon_id: 137087
+    swlat: 5.0
+    swlng: 78.0
+    nelat: 25.0
+    nelng: 100.0
+    area: "Bay of Bengal (OBIS)"
+    latitude: 10.0
+    longitude: 86.0
+    max_items: 15
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_andaman
+    parser: inat_api
+    taxon_id: 41473
+    swlat: 8.0
+    swlng: 90.0
+    nelat: 18.0
+    nelng: 100.0
+    area: "Andaman Sea / Nicobar (offshore)"
+    latitude: 12.0
+    longitude: 95.0
+    max_items: 15
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── RED SEA / GULF OF ADEN ───────────────────────────────────────────────
+  - key: inat_humpback_red_sea
+    parser: inat_api
+    taxon_id: 41474
+    swlat: 11.0
+    swlng: 40.0
+    nelat: 28.0
+    nelng: 55.0
+    area: "Red Sea / Gulf of Aden (offshore)"
+    latitude: 18.0
+    longitude: 46.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_red_sea
+    parser: gbif_api
+    taxon_key: 2440726
+    swlat: 11.0
+    swlng: 40.0
+    nelat: 28.0
+    nelng: 55.0
+    area: "Red Sea / Gulf of Aden (GBIF)"
+    latitude: 18.0
+    longitude: 46.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_humpback_red_sea
+    parser: obis_api
+    taxon_id: 137092
+    swlat: 10.0
+    swlng: 40.0
+    nelat: 28.0
+    nelng: 60.0
+    area: "Red Sea / Arabian Sea coast (OBIS)"
+    latitude: 17.0
+    longitude: 48.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── SOUTH CHINA SEA / EAST ASIA ──────────────────────────────────────────
+  - key: inat_sperm_whale_south_china_sea
+    parser: inat_api
+    taxon_id: 41473
+    swlat: 3.0
+    swlng: 105.0
+    nelat: 22.0
+    nelng: 122.0
+    area: "South China Sea (offshore)"
+    latitude: 12.0
+    longitude: 115.0
+    max_items: 15
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_blue_whale_south_china_sea
+    parser: gbif_api
+    taxon_key: 2440718
+    swlat: 3.0
+    swlng: 105.0
+    nelat: 22.0
+    nelng: 125.0
+    area: "South China Sea (GBIF)"
+    latitude: 12.0
+    longitude: 115.0
+    max_items: 15
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_sperm_whale_south_china_sea
+    parser: obis_api
+    taxon_id: 137096
+    swlat: 0.0
+    swlng: 103.0
+    nelat: 22.0
+    nelng: 122.0
+    area: "South China Sea (OBIS)"
+    latitude: 10.0
+    longitude: 113.0
+    max_items: 15
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_okinawa_japan
+    parser: inat_api
+    taxon_id: 41474
+    swlat: 24.0
+    swlng: 122.0
+    nelat: 30.0
+    nelng: 134.0
+    area: "Okinawa / Ryukyu Islands, Japan (offshore)"
+    latitude: 26.5
+    longitude: 128.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_ogasawara
+    parser: inat_api
+    taxon_id: 41473
+    swlat: 25.0
+    swlng: 140.0
+    nelat: 34.0
+    nelng: 150.0
+    area: "Ogasawara Islands, Japan (offshore)"
+    latitude: 27.0
+    longitude: 142.0
+    max_items: 15
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_orca_sea_of_japan
+    parser: gbif_api
+    taxon_key: 2440977
+    swlat: 33.0
+    swlng: 127.0
+    nelat: 52.0
+    nelng: 142.0
+    area: "Sea of Japan / East Sea (GBIF)"
+    latitude: 40.0
+    longitude: 135.0
+    max_items: 15
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_humpback_japan
+    parser: obis_api
+    taxon_id: 137092
+    swlat: 24.0
+    swlng: 125.0
+    nelat: 46.0
+    nelng: 148.0
+    area: "Japan waters (OBIS)"
+    latitude: 32.0
+    longitude: 135.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_orca_russia_far_east
+    parser: obis_api
+    taxon_id: 137102
+    swlat: 43.0
+    swlng: 130.0
+    nelat: 65.0
+    nelng: 175.0
+    area: "Russia Far East / Kamchatka (OBIS)"
+    latitude: 55.0
+    longitude: 160.0
+    max_items: 15
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── GULF OF GUINEA / EQUATORIAL WEST AFRICA ──────────────────────────────
+  - key: inat_humpback_gulf_of_guinea
+    parser: inat_api
+    taxon_id: 41474
+    swlat: -8.0
+    swlng: -5.0
+    nelat: 10.0
+    nelng: 20.0
+    area: "Gulf of Guinea / Equatorial Africa (offshore)"
+    latitude: 2.0
+    longitude: 8.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_gulf_of_guinea
+    parser: gbif_api
+    taxon_key: 2440726
+    swlat: -8.0
+    swlng: -10.0
+    nelat: 10.0
+    nelng: 20.0
+    area: "Gulf of Guinea (GBIF)"
+    latitude: 2.0
+    longitude: 8.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_humpback_gulf_of_guinea
+    parser: obis_api
+    taxon_id: 137092
+    swlat: -10.0
+    swlng: -10.0
+    nelat: 10.0
+    nelng: 20.0
+    area: "Gulf of Guinea (OBIS)"
+    latitude: 2.0
+    longitude: 5.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── CENTRAL MEDITERRANEAN — Italy, Greece, Tunisia ───────────────────────
+  - key: inat_fin_whale_ligurian_sea
+    parser: inat_api
+    taxon_id: 2440523
+    swlat: 40.0
+    swlng: 5.0
+    nelat: 46.0
+    nelng: 16.0
+    area: "Ligurian Sea / Pelagos Sanctuary (offshore)"
+    latitude: 43.5
+    longitude: 9.5
+    max_items: 15
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_ionian_sea
+    parser: inat_api
+    taxon_id: 41473
+    swlat: 34.0
+    swlng: 14.0
+    nelat: 42.0
+    nelng: 26.0
+    area: "Ionian Sea / Eastern Mediterranean (offshore)"
+    latitude: 38.0
+    longitude: 20.0
+    max_items: 15
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_fin_whale_mediterranean
+    parser: gbif_api
+    taxon_key: 2440523
+    swlat: 30.0
+    swlng: -6.0
+    nelat: 46.0
+    nelng: 36.0
+    area: "Mediterranean Sea (GBIF)"
+    latitude: 38.0
+    longitude: 14.0
+    max_items: 15
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_fin_whale_mediterranean
+    parser: obis_api
+    taxon_id: 137090
+    swlat: 30.0
+    swlng: -6.0
+    nelat: 46.0
+    nelng: 36.0
+    area: "Mediterranean Sea (OBIS)"
+    latitude: 38.0
+    longitude: 14.0
+    max_items: 15
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_orca_strait_of_gibraltar
+    parser: inat_api
+    taxon_id: 2440977
+    swlat: 34.0
+    swlng: -10.0
+    nelat: 40.0
+    nelng: 2.0
+    area: "Strait of Gibraltar / Alboran Sea (offshore)"
+    latitude: 36.0
+    longitude: -4.5
+    max_items: 15
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_orca_strait_of_gibraltar
+    parser: gbif_api
+    taxon_key: 2440977
+    swlat: 34.0
+    swlng: -10.0
+    nelat: 40.0
+    nelng: 2.0
+    area: "Strait of Gibraltar (GBIF)"
+    latitude: 36.0
+    longitude: -4.5
+    max_items: 15
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── GREENLAND / HIGH ARCTIC ───────────────────────────────────────────────
+  - key: inat_humpback_greenland
+    parser: inat_api
+    taxon_id: 41474
+    swlat: 58.0
+    swlng: -55.0
+    nelat: 78.0
+    nelng: -15.0
+    area: "Greenland (offshore)"
+    latitude: 68.0
+    longitude: -35.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_greenland
+    parser: gbif_api
+    taxon_key: 2440726
+    swlat: 58.0
+    swlng: -55.0
+    nelat: 78.0
+    nelng: -15.0
+    area: "Greenland (GBIF)"
+    latitude: 68.0
+    longitude: -35.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_orca_greenland
+    parser: obis_api
+    taxon_id: 137102
+    swlat: 58.0
+    swlng: -58.0
+    nelat: 78.0
+    nelng: -15.0
+    area: "Greenland (OBIS)"
+    latitude: 67.0
+    longitude: -38.0
+    max_items: 15
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_orca_arctic_canada
+    parser: gbif_api
+    taxon_key: 2440977
+    swlat: 62.0
+    swlng: -95.0
+    nelat: 80.0
+    nelng: -55.0
+    area: "Arctic Canada / Hudson Bay (GBIF)"
+    latitude: 70.0
+    longitude: -75.0
+    max_items: 15
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── FRENCH POLYNESIA / CENTRAL SOUTH PACIFIC ─────────────────────────────
+  - key: inat_humpback_french_polynesia
+    parser: inat_api
+    taxon_id: 41474
+    swlat: -25.0
+    swlng: -155.0
+    nelat: -10.0
+    nelng: -135.0
+    area: "French Polynesia / Tahiti (offshore)"
+    latitude: -17.5
+    longitude: -149.5
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_french_polynesia
+    parser: gbif_api
+    taxon_key: 2440726
+    swlat: -25.0
+    swlng: -155.0
+    nelat: -10.0
+    nelng: -135.0
+    area: "French Polynesia (GBIF)"
+    latitude: -17.5
+    longitude: -149.5
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_humpback_central_pacific
+    parser: obis_api
+    taxon_id: 137092
+    swlat: -25.0
+    swlng: -180.0
+    nelat: 5.0
+    nelng: -120.0
+    area: "Central Pacific Ocean (OBIS)"
+    latitude: -10.0
+    longitude: -160.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_mid_pacific
+    parser: inat_api
+    taxon_id: 41473
+    swlat: -10.0
+    swlng: -170.0
+    nelat: 25.0
+    nelng: -130.0
+    area: "Mid-Pacific Ocean (offshore)"
+    latitude: 8.0
+    longitude: -155.0
+    max_items: 15
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── SOUTH ATLANTIC — between Africa and South America ────────────────────
+  - key: inat_humpback_south_atlantic
+    parser: inat_api
+    taxon_id: 41474
+    swlat: -55.0
+    swlng: -35.0
+    nelat: -10.0
+    nelng: 15.0
+    area: "South Atlantic Ocean (offshore)"
+    latitude: -30.0
+    longitude: -10.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_south_atlantic
+    parser: gbif_api
+    taxon_key: 2440726
+    swlat: -55.0
+    swlng: -40.0
+    nelat: -10.0
+    nelng: 20.0
+    area: "South Atlantic Ocean (GBIF)"
+    latitude: -30.0
+    longitude: -10.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_humpback_south_atlantic
+    parser: obis_api
+    taxon_id: 137092
+    swlat: -55.0
+    swlng: -40.0
+    nelat: -5.0
+    nelng: 20.0
+    area: "South Atlantic Ocean (OBIS)"
+    latitude: -30.0
+    longitude: -10.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_fin_whale_south_atlantic
+    parser: obis_api
+    taxon_id: 137090
+    swlat: -55.0
+    swlng: -50.0
+    nelat: -20.0
+    nelng: 20.0
+    area: "South Atlantic (OBIS)"
+    latitude: -40.0
+    longitude: -15.0
+    max_items: 15
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── NORTH ATLANTIC DEEP OCEAN — mid-ocean sightings ──────────────────────
+  - key: obis_sperm_whale_n_atlantic
+    parser: obis_api
+    taxon_id: 137096
+    swlat: 20.0
+    swlng: -65.0
+    nelat: 55.0
+    nelng: -15.0
+    area: "North Atlantic Ocean (OBIS)"
+    latitude: 38.0
+    longitude: -40.0
+    max_items: 15
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_sperm_whale_n_atlantic
+    parser: gbif_api
+    taxon_key: 5220003
+    swlat: 20.0
+    swlng: -65.0
+    nelat: 55.0
+    nelng: -15.0
+    area: "North Atlantic Ocean (GBIF)"
+    latitude: 38.0
+    longitude: -40.0
+    max_items: 15
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_fin_whale_n_atlantic
+    parser: inat_api
+    taxon_id: 2440523
+    swlat: 38.0
+    swlng: -55.0
+    nelat: 60.0
+    nelng: -10.0
+    area: "North Atlantic Ocean (offshore)"
+    latitude: 48.0
+    longitude: -35.0
+    max_items: 15
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── WESTERN SAHARA / MAURITANIA / SENEGAL COAST ──────────────────────────
+  - key: inat_humpback_mauritania
+    parser: inat_api
+    taxon_id: 41474
+    swlat: 10.0
+    swlng: -22.0
+    nelat: 26.0
+    nelng: -13.0
+    area: "Mauritania / Western Sahara coast (offshore)"
+    latitude: 18.0
+    longitude: -18.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_humpback_w_africa_coast
+    parser: obis_api
+    taxon_id: 137092
+    swlat: 5.0
+    swlng: -25.0
+    nelat: 26.0
+    nelng: -10.0
+    area: "West Africa Atlantic coast (OBIS)"
+    latitude: 15.0
+    longitude: -18.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── ICELAND (expanded) ────────────────────────────────────────────────────
+  - key: gbif_humpback_iceland
+    parser: gbif_api
+    taxon_key: 2440726
+    swlat: 62.0
+    swlng: -28.0
+    nelat: 68.0
+    nelng: -10.0
+    area: "Iceland (GBIF)"
+    latitude: 65.0
+    longitude: -19.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_humpback_iceland
+    parser: obis_api
+    taxon_id: 137092
+    swlat: 62.0
+    swlng: -28.0
+    nelat: 68.0
+    nelng: -10.0
+    area: "Iceland (OBIS)"
+    latitude: 65.0
+    longitude: -19.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_fin_whale_iceland
+    parser: obis_api
+    taxon_id: 137090
+    swlat: 62.0
+    swlng: -28.0
+    nelat: 68.0
+    nelng: -8.0
+    area: "Iceland (OBIS)"
+    latitude: 65.0
+    longitude: -19.0
+    max_items: 15
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── UK / IRELAND / SCOTTISH WATERS ───────────────────────────────────────
+  - key: gbif_humpback_uk
+    parser: gbif_api
+    taxon_key: 2440726
+    swlat: 49.0
+    swlng: -12.0
+    nelat: 62.0
+    nelng: 2.0
+    area: "UK & Ireland waters (GBIF)"
+    latitude: 56.0
+    longitude: -6.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_fin_whale_uk
+    parser: obis_api
+    taxon_id: 137090
+    swlat: 48.0
+    swlng: -14.0
+    nelat: 62.0
+    nelng: 2.0
+    area: "UK & Ireland waters (OBIS)"
+    latitude: 56.0
+    longitude: -6.0
+    max_items: 15
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_orca_uk
+    parser: obis_api
+    taxon_id: 137102
+    swlat: 48.0
+    swlng: -14.0
+    nelat: 62.0
+    nelng: 2.0
+    area: "UK & Ireland waters (OBIS)"
+    latitude: 56.0
+    longitude: -5.0
+    max_items: 15
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── SPAIN (ATLANTIC) / BAY OF BISCAY ─────────────────────────────────────
+  - key: inat_fin_whale_bay_of_biscay
+    parser: inat_api
+    taxon_id: 2440523
+    swlat: 43.0
+    swlng: -10.0
+    nelat: 48.0
+    nelng: -1.0
+    area: "Bay of Biscay / Spain-France (offshore)"
+    latitude: 45.5
+    longitude: -5.0
+    max_items: 15
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_fin_whale_bay_of_biscay
+    parser: gbif_api
+    taxon_key: 2440523
+    swlat: 43.0
+    swlng: -10.0
+    nelat: 48.0
+    nelng: -1.0
+    area: "Bay of Biscay (GBIF)"
+    latitude: 45.5
+    longitude: -5.0
+    max_items: 15
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_fin_whale_bay_of_biscay
+    parser: obis_api
+    taxon_id: 137090
+    swlat: 43.0
+    swlng: -10.0
+    nelat: 48.0
+    nelng: -1.0
+    area: "Bay of Biscay (OBIS)"
+    latitude: 45.5
+    longitude: -5.0
+    max_items: 15
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── PORTUGAL / IBERIAN COAST ──────────────────────────────────────────────
+  - key: inat_humpback_portugal
+    parser: inat_api
+    taxon_id: 41474
+    swlat: 36.0
+    swlng: -12.0
+    nelat: 44.0
+    nelng: -7.0
+    area: "Portugal Atlantic coast (offshore)"
+    latitude: 39.0
+    longitude: -10.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_sperm_whale_portugal
+    parser: gbif_api
+    taxon_key: 5220003
+    swlat: 36.0
+    swlng: -12.0
+    nelat: 44.0
+    nelng: -7.0
+    area: "Portugal Atlantic coast (GBIF)"
+    latitude: 39.0
+    longitude: -10.0
+    max_items: 15
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── SOUTH KOREA / EAST SEA ────────────────────────────────────────────────
+  - key: inat_fin_whale_east_sea
+    parser: inat_api
+    taxon_id: 2440523
+    swlat: 33.0
+    swlng: 126.0
+    nelat: 42.0
+    nelng: 132.0
+    area: "East Sea / Korea Strait (offshore)"
+    latitude: 37.0
+    longitude: 130.0
+    max_items: 15
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_korea
+    parser: gbif_api
+    taxon_key: 2440726
+    swlat: 33.0
+    swlng: 124.0
+    nelat: 42.0
+    nelng: 132.0
+    area: "Korea waters (GBIF)"
+    latitude: 36.0
+    longitude: 128.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── MEXICO — Gulf of California extended ─────────────────────────────────
+  - key: obis_blue_whale_gulf_california
+    parser: obis_api
+    taxon_id: 137087
+    swlat: 22.0
+    swlng: -115.0
+    nelat: 32.0
+    nelng: -107.0
+    area: "Gulf of California, Mexico (OBIS)"
+    latitude: 27.0
+    longitude: -111.0
+    max_items: 15
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_humpback_mexico_pacific
+    parser: obis_api
+    taxon_id: 137092
+    swlat: 15.0
+    swlng: -115.0
+    nelat: 32.0
+    nelng: -100.0
+    area: "Mexico Pacific coast (OBIS)"
+    latitude: 22.0
+    longitude: -107.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── ARGENTINA / PENINSULA VALDÉS ─────────────────────────────────────────
+  - key: inat_right_whale_patagonia
+    parser: inat_api
+    taxon_id: 41476
+    swlat: -48.0
+    swlng: -66.0
+    nelat: -36.0
+    nelng: -56.0
+    area: "Peninsula Valdés / Patagonia (offshore)"
+    latitude: -42.0
+    longitude: -63.0
+    max_items: 15
+    force_species: ["Other"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_right_whale_patagonia
+    parser: gbif_api
+    taxon_key: 2440726
+    swlat: -50.0
+    swlng: -68.0
+    nelat: -35.0
+    nelng: -55.0
+    area: "Patagonia / Argentina (GBIF)"
+    latitude: -42.0
+    longitude: -63.0
+    max_items: 15
+    force_species: ["Other"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_humpback_argentina
+    parser: obis_api
+    taxon_id: 137092
+    swlat: -55.0
+    swlng: -68.0
+    nelat: -30.0
+    nelng: -50.0
+    area: "Argentina / Southern Atlantic (OBIS)"
+    latitude: -44.0
+    longitude: -62.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── COLOMBIA / ECUADOR PACIFIC ────────────────────────────────────────────
+  - key: obis_humpback_colombia_ecuador
+    parser: obis_api
+    taxon_id: 137092
+    swlat: -5.0
+    swlng: -90.0
+    nelat: 10.0
+    nelng: -75.0
+    area: "Colombia / Ecuador Pacific (OBIS)"
+    latitude: 3.0
+    longitude: -82.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_colombia_pacific
+    parser: gbif_api
+    taxon_key: 2440726
+    swlat: -5.0
+    swlng: -85.0
+    nelat: 12.0
+    nelng: -72.0
+    area: "Colombia / Ecuador Pacific (GBIF)"
+    latitude: 3.0
+    longitude: -78.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── ANGOLA / NAMIBIA / SOUTH ATLANTIC AFRICA ─────────────────────────────
+  - key: inat_humpback_angola_namibia
+    parser: inat_api
+    taxon_id: 41474
+    swlat: -30.0
+    swlng: 8.0
+    nelat: -5.0
+    nelng: 22.0
+    area: "Angola / Namibia coast (offshore)"
+    latitude: -18.0
+    longitude: 12.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_angola_namibia
+    parser: gbif_api
+    taxon_key: 2440726
+    swlat: -30.0
+    swlng: 8.0
+    nelat: -5.0
+    nelng: 22.0
+    area: "Angola / Namibia (GBIF)"
+    latitude: -18.0
+    longitude: 12.0
+    max_items: 15
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # ── ROSS SEA / WEDDELL SEA (Antarctica) ──────────────────────────────────
+  - key: gbif_orca_antarctica
+    parser: gbif_api
+    taxon_key: 2440977
+    swlat: -80.0
+    swlng: -180.0
+    nelat: -55.0
+    nelng: 180.0
+    area: "Antarctica / Southern Ocean (GBIF)"
+    latitude: -70.0
+    longitude: -30.0
+    max_items: 15
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_minke_whale_antarctica
+    parser: obis_api
+    taxon_id: 137088
+    swlat: -80.0
+    swlng: -180.0
+    nelat: -55.0
+    nelng: 180.0
+    area: "Antarctica / Southern Ocean (OBIS)"
+    latitude: -70.0
+    longitude: 0.0
+    max_items: 15
+    force_species: ["Other"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
