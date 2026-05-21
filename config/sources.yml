@@ -359,7 +359,7 @@ sources:
     area: "Argentina (iNaturalist)"
     latitude: -42.8
     longitude: -63.6
-    max_items: 3
+    max_items: 8
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Orca"]
   - key: inat_humpback_hawaii
@@ -389,7 +389,7 @@ sources:
     area: "Mexico (iNaturalist)"
     latitude: 23.0
     longitude: -109.6
-    max_items: 3
+    max_items: 8
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Humpback"]
   - key: inat_humpback_iceland
@@ -446,7 +446,7 @@ sources:
     area: "Alaska (iNaturalist)"
     latitude: 57.0
     longitude: -153.0
-    max_items: 4
+    max_items: 10
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Gray Whale"]
   - key: inat_gray_whale_bc
@@ -495,7 +495,7 @@ sources:
     area: "Abrolhos, Brazil (iNaturalist)"
     latitude: -17.9
     longitude: -38.7
-    max_items: 5
+    max_items: 10
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Humpback"]
   - key: inat_humpback_norway
@@ -577,7 +577,7 @@ sources:
     area: "Alaska (iNaturalist)"
     latitude: 57.5
     longitude: -152.0
-    max_items: 4
+    max_items: 10
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Humpback"]
   # -------------------------
@@ -601,7 +601,7 @@ sources:
     area: "Alaska (iNaturalist)"
     latitude: 57.5
     longitude: -152.0
-    max_items: 3
+    max_items: 10
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Orca"]
   # -------------------------
@@ -1864,7 +1864,7 @@ sources:
     area: "Pacific Mexico (offshore)"
     latitude: 20.5
     longitude: -105.5
-    max_items: 5
+    max_items: 10
     force_species: ["Humpback"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
@@ -1878,7 +1878,7 @@ sources:
     area: "Baja California, Mexico (offshore)"
     latitude: 26.0
     longitude: -113.5
-    max_items: 5
+    max_items: 10
     force_species: ["Gray Whale"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
@@ -1895,7 +1895,7 @@ sources:
     area: "Colombian Pacific (offshore)"
     latitude: 4.0
     longitude: -77.5
-    max_items: 5
+    max_items: 10
     force_species: ["Humpback"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
@@ -1912,7 +1912,7 @@ sources:
     area: "Patagonia, Argentina (offshore)"
     latitude: -42.5
     longitude: -63.0
-    max_items: 4
+    max_items: 10
     force_species: ["Orca"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
@@ -1926,7 +1926,7 @@ sources:
     area: "Patagonia, Argentina (offshore)"
     latitude: -42.5
     longitude: -63.0
-    max_items: 4
+    max_items: 10
     force_species: ["Humpback"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
@@ -1943,7 +1943,7 @@ sources:
     area: "Gulf of Corcovado, Chile (offshore)"
     latitude: -43.0
     longitude: -74.0
-    max_items: 5
+    max_items: 10
     force_species: ["Blue Whale"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
@@ -2233,3 +2233,415 @@ sources:
     longitude: -70.2
     max_items: 3
     uncertain_offshore_nudge: { dlat: 0.01, dlon: 0.00 }
+
+  # -------------------------
+  # Alaska — expanded bbox sources (Gulf of Alaska, Bering Sea, Inside Passage)
+  # -------------------------
+  - key: inat_humpback_gulf_of_alaska
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 56.0
+    swlng: -155.0
+    nelat: 62.0
+    nelng: -140.0
+    area: "Gulf of Alaska (offshore)"
+    latitude: 58.5
+    longitude: -148.0
+    max_items: 10
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_se_alaska
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 54.5
+    swlng: -136.0
+    nelat: 60.0
+    nelng: -129.0
+    area: "SE Alaska Inside Passage (offshore)"
+    latitude: 57.0
+    longitude: -133.0
+    max_items: 10
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_orca_gulf_of_alaska
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    swlat: 56.0
+    swlng: -155.0
+    nelat: 62.0
+    nelng: -140.0
+    area: "Gulf of Alaska (offshore)"
+    latitude: 58.5
+    longitude: -148.0
+    max_items: 10
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_fin_whale_alaska
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera physalus"
+    place_query: "Alaska"
+    area: "Alaska (iNaturalist)"
+    latitude: 57.5
+    longitude: -152.0
+    max_items: 8
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_alaska
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    place_query: "Alaska"
+    area: "Alaska (iNaturalist)"
+    latitude: 57.5
+    longitude: -152.0
+    max_items: 8
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_alaska
+    parser: gbif_api
+    taxon_key: 2440718
+    swlat: 54.0
+    swlng: -170.0
+    nelat: 62.0
+    nelng: -130.0
+    area: "Alaska (GBIF)"
+    latitude: 58.0
+    longitude: -150.0
+    max_items: 10
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_orca_alaska
+    parser: gbif_api
+    taxon_key: 2440977
+    swlat: 54.0
+    swlng: -170.0
+    nelat: 62.0
+    nelng: -130.0
+    area: "Alaska (GBIF)"
+    latitude: 58.0
+    longitude: -150.0
+    max_items: 10
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # SE USA East Coast — Florida, Carolinas, Georgia, Caribbean
+  # -------------------------
+  - key: inat_right_whale_se_usa
+    parser: inaturalist_api
+    taxon_name: "Eubalaena glacialis"
+    swlat: 25.0
+    swlng: -81.5
+    nelat: 36.0
+    nelng: -74.0
+    area: "SE USA Atlantic Coast (offshore)"
+    latitude: 30.5
+    longitude: -80.0
+    max_items: 8
+    force_species: ["Other"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_florida
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 24.0
+    swlng: -82.0
+    nelat: 31.0
+    nelng: -79.0
+    area: "Florida Atlantic Coast (offshore)"
+    latitude: 27.0
+    longitude: -80.5
+    max_items: 10
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_carolinas
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 31.5
+    swlng: -81.0
+    nelat: 36.5
+    nelng: -74.5
+    area: "Carolinas / Georgia Coast (offshore)"
+    latitude: 33.5
+    longitude: -78.0
+    max_items: 10
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_gulf_mexico
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    swlat: 18.0
+    swlng: -97.0
+    nelat: 30.0
+    nelng: -82.0
+    area: "Gulf of Mexico (offshore)"
+    latitude: 25.0
+    longitude: -90.0
+    max_items: 10
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_fin_whale_gulf_mexico
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera physalus"
+    swlat: 18.0
+    swlng: -97.0
+    nelat: 30.0
+    nelng: -82.0
+    area: "Gulf of Mexico (offshore)"
+    latitude: 25.0
+    longitude: -90.0
+    max_items: 8
+    force_species: ["Fin Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_silver_bank
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: 19.0
+    swlng: -72.0
+    nelat: 22.0
+    nelng: -68.0
+    area: "Silver Bank, Caribbean (offshore)"
+    latitude: 20.5
+    longitude: -69.5
+    max_items: 10
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_caribbean
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    swlat: 10.0
+    swlng: -75.0
+    nelat: 22.0
+    nelng: -60.0
+    area: "Caribbean Sea (offshore)"
+    latitude: 15.0
+    longitude: -66.0
+    max_items: 10
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_se_usa
+    parser: gbif_api
+    taxon_key: 2440718
+    swlat: 24.0
+    swlng: -82.0
+    nelat: 36.0
+    nelng: -74.0
+    area: "SE USA Atlantic Coast (GBIF)"
+    latitude: 30.0
+    longitude: -79.0
+    max_items: 10
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_sperm_whale_gulf_mexico
+    parser: gbif_api
+    taxon_key: 2440523
+    swlat: 18.0
+    swlng: -97.0
+    nelat: 30.0
+    nelng: -82.0
+    area: "Gulf of Mexico (GBIF)"
+    latitude: 25.0
+    longitude: -90.0
+    max_items: 10
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # Mexico expanded — Gulf of California (Sea of Cortez), orca, blue whale
+  # -------------------------
+  - key: inat_blue_whale_sea_of_cortez
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera musculus"
+    swlat: 22.0
+    swlng: -112.0
+    nelat: 31.0
+    nelng: -106.0
+    area: "Sea of Cortez, Mexico (offshore)"
+    latitude: 26.0
+    longitude: -110.0
+    max_items: 10
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_orca_mexico_pacific
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    swlat: 18.0
+    swlng: -117.0
+    nelat: 32.0
+    nelng: -104.0
+    area: "Pacific Mexico (offshore)"
+    latitude: 24.0
+    longitude: -110.0
+    max_items: 10
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_mexico
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    swlat: 15.0
+    swlng: -117.0
+    nelat: 32.0
+    nelng: -86.0
+    area: "Mexico Pacific & Gulf (offshore)"
+    latitude: 22.0
+    longitude: -106.0
+    max_items: 8
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_blue_whale_mexico
+    parser: gbif_api
+    taxon_key: 5220003
+    swlat: 18.0
+    swlng: -117.0
+    nelat: 32.0
+    nelng: -104.0
+    area: "Mexico Pacific (GBIF)"
+    latitude: 25.0
+    longitude: -111.0
+    max_items: 10
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # -------------------------
+  # South America expanded — Peru, Ecuador, Brazil Atlantic, southern tip
+  # -------------------------
+  - key: inat_humpback_peru
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: -18.0
+    swlng: -82.0
+    nelat: -3.0
+    nelng: -77.0
+    area: "Peru Pacific (offshore)"
+    latitude: -10.0
+    longitude: -79.0
+    max_items: 10
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_ecuador
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: -5.0
+    swlng: -82.0
+    nelat: 2.0
+    nelng: -75.0
+    area: "Ecuador Pacific (offshore)"
+    latitude: -1.0
+    longitude: -81.0
+    max_items: 10
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_humpback_brazil_atlantic
+    parser: inaturalist_api
+    taxon_name: "Megaptera novaeangliae"
+    swlat: -24.0
+    swlng: -48.0
+    nelat: -8.0
+    nelng: -34.0
+    area: "Brazil Atlantic Coast (offshore)"
+    latitude: -15.0
+    longitude: -39.0
+    max_items: 10
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_orca_southern_chile
+    parser: inaturalist_api
+    taxon_name: "Orcinus orca"
+    swlat: -56.0
+    swlng: -76.0
+    nelat: -44.0
+    nelng: -64.0
+    area: "Southern Chile / Cape Horn (offshore)"
+    latitude: -50.0
+    longitude: -72.0
+    max_items: 10
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_blue_whale_chile_north
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera musculus"
+    swlat: -30.0
+    swlng: -76.0
+    nelat: -18.0
+    nelng: -68.0
+    area: "Northern Chile Pacific (offshore)"
+    latitude: -24.0
+    longitude: -72.0
+    max_items: 8
+    force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: inat_sperm_whale_south_america
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    swlat: -40.0
+    swlng: -80.0
+    nelat: -10.0
+    nelng: -60.0
+    area: "South America Pacific (offshore)"
+    latitude: -25.0
+    longitude: -73.0
+    max_items: 10
+    force_species: ["Sperm whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_brazil
+    parser: gbif_api
+    taxon_key: 2440718
+    swlat: -24.0
+    swlng: -50.0
+    nelat: -5.0
+    nelng: -32.0
+    area: "Brazil Atlantic (GBIF)"
+    latitude: -14.0
+    longitude: -39.0
+    max_items: 10
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_humpback_colombia_ecuador
+    parser: gbif_api
+    taxon_key: 2440718
+    swlat: -5.0
+    swlng: -82.0
+    nelat: 9.0
+    nelng: -74.0
+    area: "Colombia / Ecuador Pacific (GBIF)"
+    latitude: 2.0
+    longitude: -78.0
+    max_items: 10
+    force_species: ["Humpback"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: gbif_orca_patagonia
+    parser: gbif_api
+    taxon_key: 2440977
+    swlat: -52.0
+    swlng: -72.0
+    nelat: -36.0
+    nelng: -54.0
+    area: "Patagonia / Argentina (GBIF)"
+    latitude: -44.0
+    longitude: -64.0
+    max_items: 10
+    force_species: ["Orca"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
