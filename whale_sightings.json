@@ -149,6 +149,21 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
+    "id": "2026-05-23-eyjafjordur-humpback-04",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-05-23.",
+    "date": "2026-05-23",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
     "id": "2026-05-22-rausu-jp-hk-jp-orca-01",
     "name": "Orca sighting (Rausu, JP-HK, JP)",
     "species": "Orca",
@@ -1430,6 +1445,25 @@
   },
   {
     "id": "2026-05-15-hoonah-angoon-census-humpback-02",
+    "name": "Humpback sighting (Hoonah-Angoon Census Area, AK, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by kmc059000.",
+    "date": "2026-05-15",
+    "latitude": 58.3706055556,
+    "longitude": -134.8681916667,
+    "area": "Hoonah-Angoon Census Area, AK, USA",
+    "source": "https://www.inaturalist.org/observations/364346988",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/665127109/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kenneth Crawford, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-15-hoonah-angoon-census-humpback-03",
     "name": "Humpback sighting (Hoonah-Angoon Census Area, Alaska, USA)",
     "species": "Humpback",
     "info": "iNaturalist observation by kruecke.",
@@ -1554,7 +1588,25 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-amalga-harbor-juneau-orca-08",
+    "id": "2026-05-15-juneau-ak-99801-usa-orca-08",
+    "name": "Orca sighting (Juneau, AK 99801, USA)",
+    "species": "Orca",
+    "info": "iNaturalist observation by kmc059000.",
+    "date": "2026-05-15",
+    "latitude": 58.4193888889,
+    "longitude": -134.8371305556,
+    "area": "Juneau, AK 99801, USA",
+    "source": "https://www.inaturalist.org/observations/364346163",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/665125717/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kenneth Crawford, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-15-amalga-harbor-juneau-orca-09",
     "name": "Orca sighting (Amalga Harbor, Juneau, AK, US)",
     "species": "Orca",
     "info": "iNaturalist observation by katieseescritters.",
@@ -1572,7 +1624,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-north-pacific-ocean--orca-09",
+    "id": "2026-05-15-north-pacific-ocean--orca-10",
     "name": "Orca sighting (North Pacific Ocean, US)",
     "species": "Orca",
     "info": "iNaturalist observation by savspratt518.",
@@ -1587,7 +1639,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-eyjafjordur-humpback-03",
+    "id": "2026-05-15-eyjafjordur-humpback-04",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-05-15.",
@@ -1602,7 +1654,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-15-salish-sea-orca-10",
+    "id": "2026-05-15-salish-sea-orca-11",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
     "info": "Orca Network recent sightings indicates Orca on 2026-05-15.",
@@ -1731,21 +1783,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660537343/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) vivistu, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-05-14-hoonah-angoon-county-humpback-07",
-    "name": "Humpback sighting (Hoonah-Angoon County, US-AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by holly513.",
-    "date": "2026-05-14",
-    "latitude": 58.1500888889,
-    "longitude": -135.4633305556,
-    "area": "Hoonah-Angoon County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/361617138",
-    "behaviors": [
-      "reported"
-    ],
     "notable": true
   },
   {
@@ -3882,21 +3919,6 @@
       "hunting"
     ],
     "notable": true
-  },
-  {
-    "id": "2026-05-03-eyjafjordur-humpback-04",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-05-03.",
-    "date": "2026-05-03",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
     "id": "2026-05-02-northeast-iceland-humpback-01",
@@ -6774,21 +6796,6 @@
     "notable": true
   },
   {
-    "id": "2026-04-23-global-orca-05",
-    "name": "Orca sighting (Global (GBIF))",
-    "species": "Orca",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-04-23.",
-    "date": "2026-04-23",
-    "latitude": 45.418145,
-    "longitude": -125.381126,
-    "area": "Global (GBIF)",
-    "source": "https://www.gbif.org/occurrence/6252380835",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-04-23-ostrobothnia-finland-sperm-01",
     "name": "Sperm whale sighting (Ostrobothnia, Finland)",
     "species": "Sperm whale",
@@ -6933,6 +6940,21 @@
     "longitude": -123.023684,
     "area": "California, United States",
     "source": "https://obis.org/occurrence/660196",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-04-23-global-orca-05",
+    "name": "Orca sighting (Global (GBIF))",
+    "species": "Orca",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-04-23.",
+    "date": "2026-04-23",
+    "latitude": 45.418145,
+    "longitude": -125.381126,
+    "area": "Global (GBIF)",
+    "source": "https://www.gbif.org/occurrence/6252380835",
     "behaviors": [
       "reported"
     ],
