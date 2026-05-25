@@ -227,6 +227,21 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
+    "id": "2026-05-25-eyjafjordur-humpback-05",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-05-25.",
+    "date": "2026-05-25",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
     "id": "2026-05-24-auckland-new-zealand-humpback-01",
     "name": "Humpback sighting (Auckland, New Zealand)",
     "species": "Humpback",
@@ -1383,7 +1398,24 @@
     "notable": true
   },
   {
-    "id": "2026-05-16-sula-fr-ya-t-humpback-01",
+    "id": "2026-05-16-ecuador-pacific-humpback-01",
+    "name": "Humpback sighting (Ecuador Pacific (offshore))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by antural.",
+    "date": "2026-05-16",
+    "latitude": 0.2978762556,
+    "longitude": -80.5443620213,
+    "area": "Ecuador Pacific (offshore)",
+    "source": "https://www.inaturalist.org/observations/362238511",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://www.inaturalist.org/assets/copyright-infringement-square.png",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) antural, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-05-16-sula-fr-ya-t-humpback-02",
     "name": "Humpback sighting (Sula, Frøya, Tø)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-16.",
@@ -1398,7 +1430,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-16-pt-humpback-02",
+    "id": "2026-05-16-pt-humpback-03",
     "name": "Humpback sighting (PT)",
     "species": "Humpback",
     "info": "iNaturalist observation by anaisbuilly.",
@@ -1461,7 +1493,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-16-gulf-of-maine-humpback-03",
+    "id": "2026-05-16-gulf-of-maine-humpback-04",
     "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by tianshuo.",
@@ -1476,7 +1508,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-05-16-gulf-of-maine-humpback-04",
+    "id": "2026-05-16-gulf-of-maine-humpback-05",
     "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by tianshuo.",
@@ -1491,7 +1523,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-05-16-united-states-humpback-05",
+    "id": "2026-05-16-united-states-humpback-06",
     "name": "Humpback sighting (United States)",
     "species": "Humpback",
     "info": "iNaturalist observation by twendall.",
@@ -1509,7 +1541,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-05-16-ak-us-humpback-06",
+    "id": "2026-05-16-ak-us-humpback-07",
     "name": "Humpback sighting (AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by ingvildriska.",
@@ -1527,7 +1559,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-16-kenai-peninsula-boro-humpback-07",
+    "id": "2026-05-16-kenai-peninsula-boro-humpback-08",
     "name": "Humpback sighting (Kenai Peninsula Borough, AK, USA)",
     "species": "Humpback",
     "info": "iNaturalist observation by laurenschramm.",
@@ -1566,7 +1598,28 @@
     "notable": true
   },
   {
-    "id": "2026-05-16-laskeek-bay-skeena-q-orca-03",
+    "id": "2026-05-16-capital-regional-dis-orca-03",
+    "name": "Orca sighting (Capital Regional District, BC, Canada)",
+    "species": "Orca",
+    "info": "iNaturalist observation by vancouver_island_whale_watch.",
+    "date": "2026-05-16",
+    "latitude": 48.78667,
+    "longitude": -123.55359,
+    "area": "Capital Regional District, BC, Canada",
+    "source": "https://www.inaturalist.org/observations/365124843",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/666597135/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) vancouver_island_whale_watch, some rights reserved (CC BY-NC)",
+    "individualId": "orca_biggs_t011a",
+    "individualName": "ORCA BIGGS T011A",
+    "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-05-16-laskeek-bay-skeena-q-orca-04",
     "name": "Orca sighting (Laskeek Bay, Skeena-Queen Charlotte, BC, CA)",
     "species": "Orca",
     "info": "iNaturalist observation by offshoreorca.",
@@ -1587,7 +1640,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-16-san-juan-county-us-w-orca-04",
+    "id": "2026-05-16-san-juan-county-us-w-orca-05",
     "name": "Orca sighting (San Juan County, US-WA, US)",
     "species": "Orca",
     "info": "iNaturalist observation by gabrielle-smith.",
@@ -1603,24 +1656,6 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) gabrielle-smith, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Salish Sea (SRKW range)"
-  },
-  {
-    "id": "2026-05-16-ak-us-orca-05",
-    "name": "Orca sighting (AK, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by crust_toucher.",
-    "date": "2026-05-16",
-    "latitude": 55.3955167593,
-    "longitude": -131.7555818925,
-    "area": "AK, US",
-    "source": "https://www.inaturalist.org/observations/362227050",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661116177/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) crust_toucher, some rights reserved (CC BY-NC)",
-    "notable": true
   },
   {
     "id": "2026-05-16-grays-harbor-county--gray-01",
@@ -1657,6 +1692,24 @@
   },
   {
     "id": "2026-05-16-ak-us-orca-07",
+    "name": "Orca sighting (AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by crust_toucher.",
+    "date": "2026-05-16",
+    "latitude": 55.3955167593,
+    "longitude": -131.7555818925,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/362227050",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661116177/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) crust_toucher, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-16-ak-us-orca-08",
     "name": "Orca sighting (AK, US)",
     "species": "Orca",
     "info": "iNaturalist observation by brendanwarning.",
@@ -1746,7 +1799,7 @@
     "seasonalStatus": "Azores feeding season"
   },
   {
-    "id": "2026-05-16-persfjord-vard-fi-humpback-08",
+    "id": "2026-05-16-persfjord-vard-fi-humpback-09",
     "name": "Humpback sighting (Persfjord, Vardø, Fi)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-16.",
@@ -1761,7 +1814,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-16-storflog-b-tsfjord-f-humpback-09",
+    "id": "2026-05-16-storflog-b-tsfjord-f-humpback-10",
     "name": "Humpback sighting (Storflog, Båtsfjord, Fi)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-16.",
@@ -1776,7 +1829,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-16-prestn-ringen-vard-f-humpback-10",
+    "id": "2026-05-16-prestn-ringen-vard-f-humpback-11",
     "name": "Humpback sighting (Prestnæringen, Vardø, Fi)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-16.",
@@ -1791,7 +1844,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-16-eyjafjordur-humpback-11",
+    "id": "2026-05-16-eyjafjordur-humpback-12",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-05-16.",
@@ -1823,7 +1876,7 @@
     "seasonalStatus": "California migration corridor"
   },
   {
-    "id": "2026-05-16-salish-sea-orca-08",
+    "id": "2026-05-16-salish-sea-orca-09",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
     "info": "Orca Network recent sightings indicates Orca on 2026-05-16.",
@@ -1910,7 +1963,28 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-san-juan-county-us-w-orca-02",
+    "id": "2026-05-15-nanaimo-bc-canada-orca-02",
+    "name": "Orca sighting (Nanaimo, BC, Canada)",
+    "species": "Orca",
+    "info": "iNaturalist observation by vancouver_island_whale_watch.",
+    "date": "2026-05-15",
+    "latitude": 49.30337,
+    "longitude": -124.02998,
+    "area": "Nanaimo, BC, Canada",
+    "source": "https://www.inaturalist.org/observations/365096640",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/666547200/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) vancouver_island_whale_watch, some rights reserved (CC BY-NC)",
+    "individualId": "orca_biggs_t086a3",
+    "individualName": "ORCA BIGGS T086A3",
+    "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-05-15-san-juan-county-us-w-orca-03",
     "name": "Orca sighting (San Juan County, US-WA, US)",
     "species": "Orca",
     "info": "iNaturalist observation by chrihi.",
@@ -1929,7 +2003,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-15-san-juan-county-us-w-orca-03",
+    "id": "2026-05-15-san-juan-county-us-w-orca-04",
     "name": "Orca sighting (San Juan County, US-WA, US)",
     "species": "Orca",
     "info": "iNaturalist observation by cwlonie.",
@@ -1947,7 +2021,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-15-san-juan-county-us-w-orca-04",
+    "id": "2026-05-15-san-juan-county-us-w-orca-05",
     "name": "Orca sighting (San Juan County, US-WA, US)",
     "species": "Orca",
     "info": "iNaturalist observation by cwlonie.",
@@ -1966,7 +2040,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-15-island-orca-05",
+    "id": "2026-05-15-island-orca-06",
     "name": "Orca sighting (Island)",
     "species": "Orca",
     "info": "iNaturalist observation by hakuna26.",
@@ -1984,7 +2058,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-is-orca-06",
+    "id": "2026-05-15-is-orca-07",
     "name": "Orca sighting (IS)",
     "species": "Orca",
     "info": "iNaturalist observation by mbars53.",
@@ -2002,7 +2076,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-h-nafl-i-is-orca-07",
+    "id": "2026-05-15-h-nafl-i-is-orca-08",
     "name": "Orca sighting (Húnaflói, IS)",
     "species": "Orca",
     "info": "iNaturalist observation by andreas_n.",
@@ -2017,7 +2091,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-juneau-ak-99801-usa-orca-08",
+    "id": "2026-05-15-juneau-ak-99801-usa-orca-09",
     "name": "Orca sighting (Juneau, AK 99801, USA)",
     "species": "Orca",
     "info": "iNaturalist observation by kmc059000.",
@@ -2035,7 +2109,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-amalga-harbor-juneau-orca-09",
+    "id": "2026-05-15-amalga-harbor-juneau-orca-10",
     "name": "Orca sighting (Amalga Harbor, Juneau, AK, US)",
     "species": "Orca",
     "info": "iNaturalist observation by katieseescritters.",
@@ -2053,7 +2127,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-15-north-pacific-ocean--orca-10",
+    "id": "2026-05-15-north-pacific-ocean--orca-11",
     "name": "Orca sighting (North Pacific Ocean, US)",
     "species": "Orca",
     "info": "iNaturalist observation by savspratt518.",
@@ -2083,7 +2157,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-15-salish-sea-orca-11",
+    "id": "2026-05-15-salish-sea-orca-12",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
     "info": "Orca Network recent sightings indicates Orca on 2026-05-15.",
@@ -2269,7 +2343,28 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-14-ak-us-orca-02",
+    "id": "2026-05-14-nanaimo-bc-canada-orca-02",
+    "name": "Orca sighting (Nanaimo, BC, Canada)",
+    "species": "Orca",
+    "info": "iNaturalist observation by vancouver_island_whale_watch.",
+    "date": "2026-05-14",
+    "latitude": 49.3109,
+    "longitude": -124.12212,
+    "area": "Nanaimo, BC, Canada",
+    "source": "https://www.inaturalist.org/observations/365094424",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/666542740/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) vancouver_island_whale_watch, some rights reserved (CC BY-NC)",
+    "individualId": "orca_biggs_t046b",
+    "individualName": "ORCA BIGGS T046B",
+    "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-05-14-ak-us-orca-03",
     "name": "Orca sighting (AK, US)",
     "species": "Orca",
     "info": "iNaturalist observation by crust_toucher.",
@@ -2303,7 +2398,7 @@
     "seasonalStatus": "California migration corridor"
   },
   {
-    "id": "2026-05-14-salish-sea-orca-03",
+    "id": "2026-05-14-salish-sea-orca-04",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
     "info": "Orca Network recent sightings indicates Orca on 2026-05-14.",
@@ -2819,44 +2914,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-11-alberni-clayoquot-bc-orca-01",
-    "name": "Orca sighting (Alberni-Clayoquot, BC, Canada)",
-    "species": "Orca",
-    "info": "iNaturalist observation by pnwdunning.",
-    "date": "2026-05-11",
-    "latitude": 48.9176313025,
-    "longitude": -125.5511609771,
-    "area": "Alberni-Clayoquot, BC, Canada",
-    "source": "https://www.inaturalist.org/observations/362838243",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/662257957/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Justin Dunning, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Salish Sea (SRKW range)"
-  },
-  {
-    "id": "2026-05-11-nanaimo-bc-canada-orca-02",
-    "name": "Orca sighting (Nanaimo, BC, Canada)",
-    "species": "Orca",
-    "info": "iNaturalist observation by vancouver_island_whale_watch.",
-    "date": "2026-05-11",
-    "latitude": 49.18125,
-    "longitude": -123.87893,
-    "area": "Nanaimo, BC, Canada",
-    "source": "https://www.inaturalist.org/observations/361742700",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660200764/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) vancouver_island_whale_watch, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Salish Sea (SRKW range)"
-  },
-  {
-    "id": "2026-05-11-washington-us-orca-03",
+    "id": "2026-05-11-washington-us-orca-01",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
     "info": "iNaturalist observation by dkt7sc.",
@@ -2874,7 +2932,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-11-washington-us-orca-04",
+    "id": "2026-05-11-washington-us-orca-02",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
     "info": "iNaturalist observation by evanlarson.",
@@ -2889,7 +2947,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-11-washington-us-orca-05",
+    "id": "2026-05-11-washington-us-orca-03",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
     "info": "iNaturalist observation by evanlarson.",
@@ -2905,7 +2963,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-11-washington-us-orca-06",
+    "id": "2026-05-11-washington-us-orca-04",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
     "info": "iNaturalist observation by evanlarson.",
@@ -2920,7 +2978,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-11-washington-us-orca-07",
+    "id": "2026-05-11-washington-us-orca-05",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
     "info": "iNaturalist observation by evanlarson.",
@@ -2936,7 +2994,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-11-derby-cove-ak-us-orca-08",
+    "id": "2026-05-11-derby-cove-ak-us-orca-06",
     "name": "Orca sighting (Derby Cove, AK, US)",
     "species": "Orca",
     "info": "iNaturalist observation by kiminak.",
@@ -3009,7 +3067,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-11-salish-sea-orca-09",
+    "id": "2026-05-11-salish-sea-orca-07",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
     "info": "Orca Network recent sightings indicates Orca on 2026-05-11.",
@@ -3076,24 +3134,6 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-05-10-southern-gulf-island-orca-01",
-    "name": "Orca sighting (Southern Gulf Islands, BC, CA)",
-    "species": "Orca",
-    "info": "iNaturalist observation by nolan_bentham7.",
-    "date": "2026-05-10",
-    "latitude": 48.6125601553,
-    "longitude": -123.3336773983,
-    "area": "Southern Gulf Islands, BC, CA",
-    "source": "https://www.inaturalist.org/observations/360460645",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/657745023/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Nolan Bentham, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Salish Sea (SRKW range)"
-  },
-  {
     "id": "2026-05-10-eyjafjordur-humpback-04",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -3109,7 +3149,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-10-salish-sea-orca-02",
+    "id": "2026-05-10-salish-sea-orca-01",
     "name": "Orca sighting (Salish Sea (offshore), BC/WA, Canada/USA)",
     "species": "Orca",
     "info": "Orca Network recent sightings indicates Orca on 2026-05-10.",
@@ -3482,7 +3522,24 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-06-northeast-atlantic-humpback-01",
+    "id": "2026-05-06-wvg3-xj2-cabuyal-ecu-humpback-01",
+    "name": "Humpback sighting (WVG3+XJ2, Cabuyal, Ecuador)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by gladysmaritza07.",
+    "date": "2026-05-06",
+    "latitude": -0.04242666490000001,
+    "longitude": -80.1755429569,
+    "area": "WVG3+XJ2, Cabuyal, Ecuador",
+    "source": "https://www.inaturalist.org/observations/361829396",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/660365688/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Gladys Solorzano, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-05-06-northeast-atlantic-humpback-02",
     "name": "Humpback sighting (Northeast Atlantic (GBIF))",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-06.",
@@ -3497,7 +3554,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-06-norway-humpback-02",
+    "id": "2026-05-06-norway-humpback-03",
     "name": "Humpback sighting (Norway (GBIF))",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-06.",
@@ -3512,7 +3569,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-06-azores-portugal-humpback-03",
+    "id": "2026-05-06-azores-portugal-humpback-04",
     "name": "Humpback sighting (Azores, Portugal)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
@@ -3617,7 +3674,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-06-hawaii-united-states-humpback-04",
+    "id": "2026-05-06-hawaii-united-states-humpback-05",
     "name": "Humpback sighting (Hawaii, United States)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
@@ -3631,7 +3688,7 @@
     ]
   },
   {
-    "id": "2026-05-06-alaska-united-states-humpback-05",
+    "id": "2026-05-06-alaska-united-states-humpback-06",
     "name": "Humpback sighting (Alaska, United States)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
@@ -3646,7 +3703,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-06-alaska-united-states-humpback-06",
+    "id": "2026-05-06-alaska-united-states-humpback-07",
     "name": "Humpback sighting (Alaska, United States)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-06. Source: Happywhale.com.",
@@ -3934,7 +3991,7 @@
     "seasonalStatus": "Azores / NE Atlantic"
   },
   {
-    "id": "2026-05-06-eyjafjordur-humpback-07",
+    "id": "2026-05-06-eyjafjordur-humpback-08",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-05-06.",
@@ -4120,21 +4177,6 @@
       "reported"
     ],
     "notable": true
-  },
-  {
-    "id": "2026-05-05-eyjafjordur-humpback-05",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-05-05.",
-    "date": "2026-05-05",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
     "id": "2026-05-04-western-cape-south-a-humpback-01",
