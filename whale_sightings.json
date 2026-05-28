@@ -119,6 +119,24 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
+    "id": "2026-05-28-ak-us-humpback-04",
+    "name": "Humpback sighting (AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by ingvildriska.",
+    "date": "2026-05-28",
+    "latitude": 58.2763116667,
+    "longitude": -136.337555,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/366172200",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/668598494/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Ingvild Riska, some rights reserved (CC BY)",
+    "notable": true
+  },
+  {
     "id": "2026-05-28-hoonah-angoon-census-orca-04",
     "name": "Orca sighting (Hoonah-Angoon Census Area, Alaska, USA)",
     "species": "Orca",
@@ -137,7 +155,61 @@
     "notable": true
   },
   {
-    "id": "2026-05-28-eyjafjordur-humpback-04",
+    "id": "2026-05-28-ak-us-orca-05",
+    "name": "Orca sighting (AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by ingvildriska.",
+    "date": "2026-05-28",
+    "latitude": 58.2736883333,
+    "longitude": -136.3480966667,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/366172560",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/668599283/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Ingvild Riska, some rights reserved (CC BY)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-28-northeast-atlantic-sperm-01",
+    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by kylealdinger.",
+    "date": "2026-05-28",
+    "latitude": 37.625068226,
+    "longitude": -25.4037644416,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/366168159",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/668591422/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kyle Aldinger, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-28-azores-sperm-02",
+    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by kylealdinger.",
+    "date": "2026-05-28",
+    "latitude": 37.625068226,
+    "longitude": -25.4037644416,
+    "area": "Azores (offshore), Portugal",
+    "source": "https://www.inaturalist.org/observations/366168159",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/668591422/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kyle Aldinger, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-28-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-05-28.",
@@ -1853,27 +1925,6 @@
     "notable": true
   },
   {
-    "id": "2026-05-16-north-coast-bc-canad-orca-03",
-    "name": "Orca sighting (North Coast, BC, Canada)",
-    "species": "Orca",
-    "info": "iNaturalist observation by hazard2322.",
-    "date": "2026-05-16",
-    "latitude": 52.8797437723,
-    "longitude": -131.6417249954,
-    "area": "North Coast, BC, Canada",
-    "source": "https://www.inaturalist.org/observations/363797350",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/664097527/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) aniraK, some rights reserved (CC BY-NC)",
-    "individualId": "orca_biggs_t124c",
-    "individualName": "ORCA BIGGS T124C",
-    "notable": true
-  },
-  {
     "id": "2026-05-16-grays-harbor-county--gray-01",
     "name": "Gray Whale sighting (Grays Harbor County, US-WA, US)",
     "species": "Gray Whale",
@@ -1905,6 +1956,27 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Josh Emm, some rights reserved (CC BY-NC)",
     "seasonalStatus": "California migration corridor"
+  },
+  {
+    "id": "2026-05-16-north-coast-bc-canad-orca-03",
+    "name": "Orca sighting (North Coast, BC, Canada)",
+    "species": "Orca",
+    "info": "iNaturalist observation by hazard2322.",
+    "date": "2026-05-16",
+    "latitude": 52.8797437723,
+    "longitude": -131.6417249954,
+    "area": "North Coast, BC, Canada",
+    "source": "https://www.inaturalist.org/observations/363797350",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/664097527/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) aniraK, some rights reserved (CC BY-NC)",
+    "individualId": "orca_biggs_t124c",
+    "individualName": "ORCA BIGGS T124C",
+    "notable": true
   },
   {
     "id": "2026-05-16-capital-regional-dis-orca-04",
@@ -4274,9 +4346,9 @@
     "notable": true
   },
   {
-    "id": "2026-05-04-western-cape-south-a-blue-01",
-    "name": "Blue Whale sighting (Western Cape, South Africa)",
-    "species": "Blue Whale",
+    "id": "2026-05-04-western-cape-south-a-sperm-01",
+    "name": "Sperm whale sighting (Western Cape, South Africa)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-05-04. Source: Happywhale.com.",
     "date": "2026-05-04",
     "latitude": -34.228157,
@@ -4289,9 +4361,9 @@
     "notable": true
   },
   {
-    "id": "2026-05-04-western-cape-south-a-sperm-01",
-    "name": "Sperm whale sighting (Western Cape, South Africa)",
-    "species": "Sperm whale",
+    "id": "2026-05-04-western-cape-south-a-blue-01",
+    "name": "Blue Whale sighting (Western Cape, South Africa)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-05-04. Source: Happywhale.com.",
     "date": "2026-05-04",
     "latitude": -34.228157,
@@ -4767,9 +4839,9 @@
     "notable": true
   },
   {
-    "id": "2026-05-02-massachusetts-united-blue-01",
-    "name": "Blue Whale sighting (Massachusetts, United States)",
-    "species": "Blue Whale",
+    "id": "2026-05-02-massachusetts-united-sperm-01",
+    "name": "Sperm whale sighting (Massachusetts, United States)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-05-02. Source: Happywhale.com.",
     "date": "2026-05-02",
     "latitude": 42.333333,
@@ -4782,9 +4854,9 @@
     "notable": true
   },
   {
-    "id": "2026-05-02-massachusetts-united-sperm-01",
-    "name": "Sperm whale sighting (Massachusetts, United States)",
-    "species": "Sperm whale",
+    "id": "2026-05-02-massachusetts-united-blue-01",
+    "name": "Blue Whale sighting (Massachusetts, United States)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-05-02. Source: Happywhale.com.",
     "date": "2026-05-02",
     "latitude": 42.333333,
@@ -5602,22 +5674,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-01-azores-pt-sperm-04",
-    "name": "Sperm whale sighting (Azores, PT)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by anaisbuilly.",
-    "date": "2026-05-01",
-    "latitude": 38.5543567249,
-    "longitude": -28.7956262268,
-    "area": "Azores, PT",
-    "source": "https://www.inaturalist.org/observations/357130303",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-05-01-azores-sperm-05",
+    "id": "2026-05-01-azores-sperm-04",
     "name": "Sperm whale sighting (Azores (offshore), Portugal)",
     "species": "Sperm whale",
     "info": "iNaturalist observation by joaotiagotavares.",
@@ -5632,7 +5689,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-01-azores-sperm-06",
+    "id": "2026-05-01-azores-sperm-05",
     "name": "Sperm whale sighting (Azores (offshore), Portugal)",
     "species": "Sperm whale",
     "info": "iNaturalist observation by jamesrawson.",
@@ -5647,6 +5704,21 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/657320924/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) James Rawson, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-05-01-azores-pt-sperm-06",
+    "name": "Sperm whale sighting (Azores, PT)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-05-01",
+    "latitude": 38.5543567249,
+    "longitude": -28.7956262268,
+    "area": "Azores, PT",
+    "source": "https://www.inaturalist.org/observations/357130303",
+    "behaviors": [
+      "reported"
+    ],
     "notable": true
   },
   {
@@ -5792,6 +5864,42 @@
     "notable": true
   },
   {
+    "id": "2026-04-30-caribbean-sea-sperm-01",
+    "name": "Sperm whale sighting (Caribbean Sea (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by martinholladay.",
+    "date": "2026-04-30",
+    "latitude": 15.5127491462,
+    "longitude": -61.4751814138,
+    "area": "Caribbean Sea (offshore)",
+    "source": "https://www.inaturalist.org/observations/356963284",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/651006962/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-30-caribbean-sea-sperm-02",
+    "name": "Sperm whale sighting (Caribbean Sea (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by martinholladay.",
+    "date": "2026-04-30",
+    "latitude": 15.5487821916,
+    "longitude": -61.4954463878,
+    "area": "Caribbean Sea (offshore)",
+    "source": "https://www.inaturalist.org/observations/356962990",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/651006372/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-04-30-estancia-punta-nte-c-orca-01",
     "name": "Orca sighting (Estancia Punta Nte., Chubut, Argentina)",
     "species": "Orca",
@@ -5897,24 +6005,6 @@
     "behaviors": [
       "reported"
     ],
-    "notable": true
-  },
-  {
-    "id": "2026-04-30-azores-sperm-01",
-    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by jamesrawson.",
-    "date": "2026-04-30",
-    "latitude": 38.2414032583,
-    "longitude": -28.2961384724,
-    "area": "Azores (offshore), Portugal",
-    "source": "https://www.inaturalist.org/observations/360237121",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/657319529/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Rawson, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -6185,6 +6275,42 @@
     "notable": true
   },
   {
+    "id": "2026-04-28-caribbean-sea-sperm-01",
+    "name": "Sperm whale sighting (Caribbean Sea (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by martinholladay.",
+    "date": "2026-04-28",
+    "latitude": 15.5952827252,
+    "longitude": -61.5032143475,
+    "area": "Caribbean Sea (offshore)",
+    "source": "https://www.inaturalist.org/observations/356425986",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/649993317/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-04-28-caribbean-sea-sperm-02",
+    "name": "Sperm whale sighting (Caribbean Sea (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by martinholladay.",
+    "date": "2026-04-28",
+    "latitude": 15.4881077325,
+    "longitude": -61.5941624299,
+    "area": "Caribbean Sea (offshore)",
+    "source": "https://www.inaturalist.org/observations/356318634",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/649789156/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Martin Holladay, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-04-28-tasman-region-7183-n-humpback-02",
     "name": "Humpback sighting (Tasman Region 7183, New Zealand)",
     "species": "Humpback",
@@ -6287,7 +6413,7 @@
     "notable": true
   },
   {
-    "id": "2026-04-28-alaska-united-states-sperm-01",
+    "id": "2026-04-28-alaska-united-states-sperm-03",
     "name": "Sperm whale sighting (Alaska, United States)",
     "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-04-28. Source: Happywhale.com.",
