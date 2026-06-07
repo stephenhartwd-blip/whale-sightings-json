@@ -706,24 +706,6 @@
     "notable": true
   },
   {
-    "id": "2026-06-03-valdez-cordova-count-sperm-01",
-    "name": "Sperm whale sighting (Valdez-Cordova County, US-AK, US)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by jillqu.",
-    "date": "2026-06-03",
-    "latitude": 61.063218767,
-    "longitude": -147.9795627517,
-    "area": "Valdez-Cordova County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/368681157",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/673393049/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) jillqu, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-06-03-komagv-r-s-r-komagv--humpback-02",
     "name": "Humpback sighting (Komagvær sør, Komagvær, Vardø, Fi)",
     "species": "Humpback",
@@ -1497,7 +1479,22 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-30-valdez-ak-us-humpback-04",
+    "id": "2026-05-30-ak-us-humpback-04",
+    "name": "Humpback sighting (AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by harvest.",
+    "date": "2026-05-30",
+    "latitude": 59.8511735093,
+    "longitude": -149.4872320895,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/369519246",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-30-valdez-ak-us-humpback-05",
     "name": "Humpback sighting (Valdez, AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by ingvildriska.",
@@ -1515,7 +1512,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-30-halibut-point-rd-sit-humpback-05",
+    "id": "2026-05-30-halibut-point-rd-sit-humpback-06",
     "name": "Humpback sighting (Halibut Point Rd, Sitka, AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by nomadiclobo.",
@@ -1588,7 +1585,22 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-30-wa-us-gray-01",
+    "id": "2026-05-30-ensenada-b-c-mx-gray-01",
+    "name": "Gray Whale sighting (Ensenada, B.C., MX)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by tu_patron.",
+    "date": "2026-05-30",
+    "latitude": 31.7674166667,
+    "longitude": -116.6271583333,
+    "area": "Ensenada, B.C., MX",
+    "source": "https://www.inaturalist.org/observations/366941639",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-30-wa-us-gray-02",
     "name": "Gray Whale sighting (WA, US)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by jesse99720.",
@@ -1651,7 +1663,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-30-eyjafjordur-humpback-06",
+    "id": "2026-05-30-eyjafjordur-humpback-07",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-05-30.",
@@ -3155,21 +3167,6 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-22-eyjafjordur-humpback-04",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-05-22.",
-    "date": "2026-05-22",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
     "id": "2026-05-21-british-columbia-humpback-01",
     "name": "Humpback sighting (British Columbia)",
     "species": "Humpback",
@@ -3356,24 +3353,6 @@
     "latitude": 75.3976870561,
     "longitude": 17.4400842338,
     "area": "Svalbard (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/363618887",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/663764615/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Annika Becker, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-05-20-svalbard-arctic-norw-humpback-02",
-    "name": "Humpback sighting (Svalbard, Arctic Norway (offshore))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by annika_becker.",
-    "date": "2026-05-20",
-    "latitude": 75.3976870561,
-    "longitude": 17.4400842338,
-    "area": "Svalbard, Arctic Norway (offshore)",
     "source": "https://www.inaturalist.org/observations/363618887",
     "behaviors": [
       "reported"
@@ -3947,24 +3926,6 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-05-16-kenai-peninsula-boro-humpback-04",
-    "name": "Humpback sighting (Kenai Peninsula Borough, AK, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by laurenschramm.",
-    "date": "2026-05-16",
-    "latitude": 60.0048555556,
-    "longitude": -149.3303527778,
-    "area": "Kenai Peninsula Borough, AK, USA",
-    "source": "https://www.inaturalist.org/observations/364376834",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/665183210/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Lauren Schramm, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-05-16-grays-harbor-county--gray-01",
     "name": "Gray Whale sighting (Grays Harbor County, US-WA, US)",
     "species": "Gray Whale",
@@ -4049,7 +4010,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-16-persfjord-vard-fi-humpback-05",
+    "id": "2026-05-16-persfjord-vard-fi-humpback-04",
     "name": "Humpback sighting (Persfjord, Vardø, Fi)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-16.",
@@ -4064,7 +4025,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-16-storflog-b-tsfjord-f-humpback-06",
+    "id": "2026-05-16-storflog-b-tsfjord-f-humpback-05",
     "name": "Humpback sighting (Storflog, Båtsfjord, Fi)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-16.",
@@ -4079,7 +4040,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-16-prestn-ringen-vard-f-humpback-07",
+    "id": "2026-05-16-prestn-ringen-vard-f-humpback-06",
     "name": "Humpback sighting (Prestnæringen, Vardø, Fi)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-16.",
@@ -4786,7 +4747,39 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-05-09-california-united-st-humpback-06",
+    "id": "2026-05-09-tr-ndelag-norway-humpback-06",
+    "name": "Humpback sighting (Trøndelag, Norway)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Killer whale in North Atlantic Ocean (1 individuals). Observed 2026-05-09. Source: Happywhale.com.",
+    "date": "2026-05-09",
+    "latitude": 63.618167,
+    "longitude": 9.442333,
+    "area": "Trøndelag, Norway",
+    "source": "https://obis.org/occurrence/662760",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-05-09-tr-ndelag-norway-humpback-07",
+    "name": "Humpback sighting (Trøndelag, Norway)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Killer whale in North Atlantic Ocean (1 individuals). Observed 2026-05-09. Source: Happywhale.com.",
+    "date": "2026-05-09",
+    "latitude": 63.618167,
+    "longitude": 9.442333,
+    "area": "Trøndelag, Norway",
+    "source": "https://obis.org/occurrence/662759",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-05-09-california-united-st-humpback-08",
     "name": "Humpback sighting (California, United States)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-09. Source: Happywhale.com.",
@@ -4801,7 +4794,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-09-california-united-st-humpback-07",
+    "id": "2026-05-09-california-united-st-humpback-09",
     "name": "Humpback sighting (California, United States)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-05-09. Source: Happywhale.com.",
@@ -4816,7 +4809,22 @@
     "notable": true
   },
   {
-    "id": "2026-05-09-lincoln-county-or-us-gray-01",
+    "id": "2026-05-09-leng-eta-arenosa-b-c-gray-01",
+    "name": "Gray Whale sighting (Lengüeta Arenosa, B.C., Mexico)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by celic1.",
+    "date": "2026-05-09",
+    "latitude": 31.7730511796,
+    "longitude": -116.6317153466,
+    "area": "Lengüeta Arenosa, B.C., Mexico",
+    "source": "https://www.inaturalist.org/observations/360522051",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-09-lincoln-county-or-us-gray-02",
     "name": "Gray Whale sighting (Lincoln County, OR, USA)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by katelink.",
@@ -4831,7 +4839,7 @@
     "seasonalStatus": "California migration corridor"
   },
   {
-    "id": "2026-05-09-north-pacific-ocean--gray-02",
+    "id": "2026-05-09-north-pacific-ocean--gray-03",
     "name": "Gray Whale sighting (North Pacific Ocean, WA, US)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by jessiethecowpunk.",
@@ -5346,38 +5354,6 @@
       "reported"
     ],
     "notable": true
-  },
-  {
-    "id": "2026-05-09-tr-ndelag-norway-humpback-08",
-    "name": "Humpback sighting (Trøndelag, Norway)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Killer whale in North Atlantic Ocean (1 individuals). Observed 2026-05-09. Source: Happywhale.com.",
-    "date": "2026-05-09",
-    "latitude": 63.618167,
-    "longitude": 9.442333,
-    "area": "Trøndelag, Norway",
-    "source": "https://obis.org/occurrence/662760",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-05-09-tr-ndelag-norway-humpback-09",
-    "name": "Humpback sighting (Trøndelag, Norway)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Killer whale in North Atlantic Ocean (1 individuals). Observed 2026-05-09. Source: Happywhale.com.",
-    "date": "2026-05-09",
-    "latitude": 63.618167,
-    "longitude": 9.442333,
-    "area": "Trøndelag, Norway",
-    "source": "https://obis.org/occurrence/662759",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
     "id": "2026-05-08-sermersooq-greenland-humpback-01",
