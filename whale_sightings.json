@@ -276,6 +276,38 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
+    "id": "2026-06-11-san-juan-county-us-w-orca-06",
+    "name": "Orca sighting (San Juan County, US-WA, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by gabi_f.",
+    "date": "2026-06-11",
+    "latitude": 48.4914799081,
+    "longitude": -122.84880690130001,
+    "area": "San Juan County, US-WA, US",
+    "source": "https://www.inaturalist.org/observations/370748183",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-06-11-washington-us-gray-01",
+    "name": "Gray Whale sighting (Washington, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by apistopanchax.",
+    "date": "2026-06-11",
+    "latitude": 46.7852543351,
+    "longitude": -124.1832221201,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/370753389",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/677340578/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Josh Emm, some rights reserved (CC BY-NC)"
+  },
+  {
     "id": "2026-06-11-eyjafjordur-humpback-11",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -1088,6 +1120,42 @@
     "notable": true
   },
   {
+    "id": "2026-06-07-mediterranean-sea-sperm-04",
+    "name": "Sperm whale sighting (Mediterranean Sea (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by tombrl.",
+    "date": "2026-06-07",
+    "latitude": 42.5047373691,
+    "longitude": 5.2617318054,
+    "area": "Mediterranean Sea (offshore)",
+    "source": "https://www.inaturalist.org/observations/369747732",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/675418224/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) PITAYA, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-07-mediterranean-sea-sperm-05",
+    "name": "Sperm whale sighting (Mediterranean Sea (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by eliot83.",
+    "date": "2026-06-07",
+    "latitude": 42.9450125305,
+    "longitude": 5.9993870166,
+    "area": "Mediterranean Sea (offshore)",
+    "source": "https://www.inaturalist.org/observations/369418436",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/674788305/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Eliot Fournial, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-06-07-eyjafjordur-humpback-10",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -1300,24 +1368,6 @@
     "photoAttribution": "(c) Josh Emm, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-06-04-le-rocher-perc-regio-humpback-01",
-    "name": "Humpback sighting (Le Rocher-Percé Regional County Municipality, QC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by kursic.",
-    "date": "2026-06-04",
-    "latitude": 48.2051790219,
-    "longitude": -64.7712422535,
-    "area": "Le Rocher-Percé Regional County Municipality, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/368515288",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/673085454/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) kursic, some rights reserved (CC BY)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
     "id": "2026-06-04-washington-us-orca-01",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
@@ -1366,7 +1416,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-04-eyjafjordur-humpback-02",
+    "id": "2026-06-04-eyjafjordur-humpback-01",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-06-04.",
@@ -2211,7 +2261,22 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-30-wa-us-gray-01",
+    "id": "2026-05-30-ensenada-b-c-mx-gray-01",
+    "name": "Gray Whale sighting (Ensenada, B.C., MX)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by tu_patron.",
+    "date": "2026-05-30",
+    "latitude": 31.7674166667,
+    "longitude": -116.6271583333,
+    "area": "Ensenada, B.C., MX",
+    "source": "https://www.inaturalist.org/observations/366941639",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-30-wa-us-gray-02",
     "name": "Gray Whale sighting (WA, US)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by jesse99720.",
@@ -2670,7 +2735,24 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-26-central-north-sea-humpback-01",
+    "id": "2026-05-26-pacific-ocean-piura--humpback-01",
+    "name": "Humpback sighting (Pacific Ocean, Piura, PE)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by ramirez_samuel.",
+    "date": "2026-05-26",
+    "latitude": -3.9070582562,
+    "longitude": -81.3478066478,
+    "area": "Pacific Ocean, Piura, PE",
+    "source": "https://www.inaturalist.org/observations/365384412",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/667104845/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) SAMUEL ANDRES RAMIREZ FIGUEROA, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-05-26-central-north-sea-humpback-02",
     "name": "Humpback sighting (Central North Sea)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-26.",
@@ -2685,7 +2767,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-05-26-central-north-sea-humpback-02",
+    "id": "2026-05-26-central-north-sea-humpback-03",
     "name": "Humpback sighting (Central North Sea)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-26.",
@@ -2700,7 +2782,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-05-26-central-north-sea-humpback-03",
+    "id": "2026-05-26-central-north-sea-humpback-04",
     "name": "Humpback sighting (Central North Sea)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-26.",
@@ -2715,7 +2797,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-05-26-central-north-sea-humpback-04",
+    "id": "2026-05-26-central-north-sea-humpback-05",
     "name": "Humpback sighting (Central North Sea)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-26.",
@@ -2730,7 +2812,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-05-26-northeast-atlantic-humpback-05",
+    "id": "2026-05-26-northeast-atlantic-humpback-06",
     "name": "Humpback sighting (Northeast Atlantic (GBIF))",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-05-26.",
@@ -2745,7 +2827,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-05-26-uk-ireland-waters-humpback-06",
+    "id": "2026-05-26-uk-ireland-waters-humpback-07",
     "name": "Humpback sighting (UK & Ireland waters (GBIF))",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-05-26.",
@@ -2760,7 +2842,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-05-26-british-columbia-humpback-07",
+    "id": "2026-05-26-british-columbia-humpback-08",
     "name": "Humpback sighting (British Columbia)",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-05-26.",
@@ -3142,21 +3224,6 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-05-23-homer-ak-us-orca-03",
-    "name": "Orca sighting (Homer, AK, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by jsku1988.",
-    "date": "2026-05-23",
-    "latitude": 59.6331958649,
-    "longitude": -151.6332824304,
-    "area": "Homer, AK, US",
-    "source": "https://www.inaturalist.org/observations/364421994",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-05-23-skeena-queen-charlot-gray-01",
     "name": "Gray Whale sighting (Skeena-Queen Charlotte, CA-BC, CA)",
     "species": "Gray Whale",
@@ -3169,6 +3236,21 @@
     "behaviors": [
       "reported",
       "breaching"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-05-23-homer-ak-us-orca-03",
+    "name": "Orca sighting (Homer, AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by jsku1988.",
+    "date": "2026-05-23",
+    "latitude": 59.6331958649,
+    "longitude": -151.6332824304,
+    "area": "Homer, AK, US",
+    "source": "https://www.inaturalist.org/observations/364421994",
+    "behaviors": [
+      "reported"
     ],
     "notable": true
   },
@@ -3480,25 +3562,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-21-washington-us-orca-01",
-    "name": "Orca sighting (Washington, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by garryaceae.",
-    "date": "2026-05-21",
-    "latitude": 48.1335774396,
-    "longitude": -122.41512988,
-    "area": "Washington, US",
-    "source": "https://www.inaturalist.org/observations/363871537",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "individualId": "orca_biggs_t124a1",
-    "individualName": "ORCA BIGGS T124A1",
-    "seasonalStatus": "Salish Sea (SRKW range)"
-  },
-  {
-    "id": "2026-05-21-seward-ak-us-orca-02",
+    "id": "2026-05-21-seward-ak-us-orca-01",
     "name": "Orca sighting (Seward, AK, US)",
     "species": "Orca",
     "info": "iNaturalist observation by uncommongallinule.",
@@ -3896,6 +3960,24 @@
     "notable": true
   },
   {
+    "id": "2026-05-17-pt-blue-03",
+    "name": "Blue Whale sighting (PT)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-05-17",
+    "latitude": 38.437722005,
+    "longitude": -28.6226317274,
+    "area": "PT",
+    "source": "https://www.inaturalist.org/observations/362330041",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661418813/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Anais Builly, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Azores feeding season"
+  },
+  {
     "id": "2026-05-16-region-orca-01",
     "name": "Orca sighting (日本)",
     "species": "Orca",
@@ -3914,7 +3996,24 @@
     "notable": true
   },
   {
-    "id": "2026-05-16-sula-fr-ya-t-humpback-01",
+    "id": "2026-05-16-ecuador-pacific-humpback-01",
+    "name": "Humpback sighting (Ecuador Pacific (offshore))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by antural.",
+    "date": "2026-05-16",
+    "latitude": 0.2978762556,
+    "longitude": -80.5443620213,
+    "area": "Ecuador Pacific (offshore)",
+    "source": "https://www.inaturalist.org/observations/362238511",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://www.inaturalist.org/assets/copyright-infringement-square.png",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) antural, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-05-16-sula-fr-ya-t-humpback-02",
     "name": "Humpback sighting (Sula, Frøya, Tø)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-16.",
@@ -4058,7 +4157,43 @@
     "notable": true
   },
   {
-    "id": "2026-05-16-persfjord-vard-fi-humpback-02",
+    "id": "2026-05-16-pt-blue-03",
+    "name": "Blue Whale sighting (PT)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-05-16",
+    "latitude": 38.3316363551,
+    "longitude": -28.5665020342,
+    "area": "PT",
+    "source": "https://www.inaturalist.org/observations/362303747",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661392757/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Anais Builly, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Azores feeding season"
+  },
+  {
+    "id": "2026-05-16-pt-blue-04",
+    "name": "Blue Whale sighting (PT)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-05-16",
+    "latitude": 38.7594086921,
+    "longitude": -28.4879566296,
+    "area": "PT",
+    "source": "https://www.inaturalist.org/observations/361974796",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/661385050/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Anais Builly, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Azores feeding season"
+  },
+  {
+    "id": "2026-05-16-persfjord-vard-fi-humpback-03",
     "name": "Humpback sighting (Persfjord, Vardø, Fi)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-16.",
@@ -4073,7 +4208,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-16-storflog-b-tsfjord-f-humpback-03",
+    "id": "2026-05-16-storflog-b-tsfjord-f-humpback-04",
     "name": "Humpback sighting (Storflog, Båtsfjord, Fi)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-16.",
@@ -4088,7 +4223,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-05-16-prestn-ringen-vard-f-humpback-04",
+    "id": "2026-05-16-prestn-ringen-vard-f-humpback-05",
     "name": "Humpback sighting (Prestnæringen, Vardø, Fi)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-05-16.",
