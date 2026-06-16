@@ -45,7 +45,7 @@ except Exception:
     globe = None
 
 
-ALLOWED_SPECIES = {"Orca", "Humpback", "Sperm whale", "Blue Whale", "Gray Whale", "Fin Whale"}
+ALLOWED_SPECIES = {"Orca", "Humpback", "Sperm whale", "Blue Whale", "Gray Whale", "Fin Whale", "Great White Shark"}
 
 DEAD_KEYWORDS = frozenset([
     "dead", "deceased", "carcass", "stranded", "beached", "washed up",
