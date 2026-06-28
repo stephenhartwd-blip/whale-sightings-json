@@ -376,6 +376,21 @@
     "notable": true
   },
   {
+    "id": "2026-06-27-eyjafjordur-humpback-17",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-06-27.",
+    "date": "2026-06-27",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
     "id": "2026-06-26-nordland-no-orca-01",
     "name": "Orca sighting (Nordland, NO)",
     "species": "Orca",
@@ -1193,7 +1208,25 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-06-21-juneau-ak-us-humpback-02",
+    "id": "2026-06-21-wrangell-ak-usa-humpback-02",
+    "name": "Humpback sighting (Wrangell, AK, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by rubykresge.",
+    "date": "2026-06-21",
+    "latitude": 55.7354893136,
+    "longitude": -132.312646518,
+    "area": "Wrangell, AK, USA",
+    "source": "https://www.inaturalist.org/observations/376009635",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/687445594/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Ruby Kresge, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-21-juneau-ak-us-humpback-03",
     "name": "Humpback sighting (Juneau, AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by txlorax.",
@@ -1284,7 +1317,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-06-21-eyjafjordur-humpback-03",
+    "id": "2026-06-21-eyjafjordur-humpback-04",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-06-21.",
@@ -1757,24 +1790,6 @@
     "notable": true
   },
   {
-    "id": "2026-06-17-ak-us-humpback-05",
-    "name": "Humpback sighting (AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by acerigley.",
-    "date": "2026-06-17",
-    "latitude": 58.2325116667,
-    "longitude": -135.6625966667,
-    "area": "AK, US",
-    "source": "https://www.inaturalist.org/observations/375019851",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/685524511/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Ace, some rights reserved (CC BY)",
-    "notable": true
-  },
-  {
     "id": "2026-06-17-ucluelet-cedar-road--orca-01",
     "name": "Orca sighting (Ucluelet - Cedar Road InterCity Bus Stop, Ucluelet, BC V0R 3A0, Canada)",
     "species": "Orca",
@@ -1842,7 +1857,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-17-eyjafjordur-humpback-06",
+    "id": "2026-06-17-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-06-17.",
@@ -3006,21 +3021,6 @@
       "reported"
     ],
     "notable": true
-  },
-  {
-    "id": "2026-06-11-eyjafjordur-humpback-07",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-06-11.",
-    "date": "2026-06-11",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
     "id": "2026-06-10-alaska-united-states-humpback-01",
@@ -5745,22 +5745,7 @@
     "notable": true
   },
   {
-    "id": "2026-05-30-ensenada-b-c-mx-gray-01",
-    "name": "Gray Whale sighting (Ensenada, B.C., MX)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by tu_patron.",
-    "date": "2026-05-30",
-    "latitude": 31.7674166667,
-    "longitude": -116.6271583333,
-    "area": "Ensenada, B.C., MX",
-    "source": "https://www.inaturalist.org/observations/366941639",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-05-30-wa-us-gray-02",
+    "id": "2026-05-30-wa-us-gray-01",
     "name": "Gray Whale sighting (WA, US)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by jesse99720.",
