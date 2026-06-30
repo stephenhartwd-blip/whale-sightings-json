@@ -483,7 +483,25 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-06-28-forlandet-humpback-01",
+    "id": "2026-06-28-rj-humpback-01",
+    "name": "Humpback sighting (RJ)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by tdeferreira.",
+    "date": "2026-06-28",
+    "latitude": -23.08634758,
+    "longitude": -43.1964645386,
+    "area": "RJ",
+    "source": "https://www.inaturalist.org/observations/376822040",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/689020619/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) tdeferreira, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-28-forlandet-humpback-02",
     "name": "Humpback sighting (Forlandet)",
     "species": "Humpback",
     "info": "iNaturalist observation by kevin_snair.",
@@ -516,7 +534,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-28-tasmania-australia-humpback-02",
+    "id": "2026-06-28-tasmania-australia-humpback-03",
     "name": "Humpback sighting (Tasmania, Australia)",
     "species": "Humpback",
     "info": "iNaturalist observation by franzi64578.",
@@ -534,7 +552,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-28-plymouth-county-us-m-humpback-03",
+    "id": "2026-06-28-plymouth-county-us-m-humpback-04",
     "name": "Humpback sighting (Plymouth County, US-MA, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by juliet_z.",
@@ -549,7 +567,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-06-28-wrangell-ak-usa-humpback-04",
+    "id": "2026-06-28-wrangell-ak-usa-humpback-05",
     "name": "Humpback sighting (Wrangell, AK, USA)",
     "species": "Humpback",
     "info": "iNaturalist observation by rubykresge.",
@@ -567,7 +585,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-28-wrangell-ak-usa-humpback-05",
+    "id": "2026-06-28-wrangell-ak-usa-humpback-06",
     "name": "Humpback sighting (Wrangell, AK, USA)",
     "species": "Humpback",
     "info": "iNaturalist observation by rubykresge.",
@@ -585,7 +603,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-28-wrangell-ak-usa-humpback-06",
+    "id": "2026-06-28-wrangell-ak-usa-humpback-07",
     "name": "Humpback sighting (Wrangell, AK, USA)",
     "species": "Humpback",
     "info": "iNaturalist observation by rubykresge.",
@@ -603,7 +621,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-28-kiberg-troms-og-finn-humpback-07",
+    "id": "2026-06-28-kiberg-troms-og-finn-humpback-08",
     "name": "Humpback sighting (Kiberg, Troms og Finnmark, NO)",
     "species": "Humpback",
     "info": "iNaturalist observation by kallenibbenhagen.",
@@ -618,7 +636,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-06-28-eyjafjordur-humpback-08",
+    "id": "2026-06-28-eyjafjordur-humpback-09",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-06-28.",
@@ -2711,24 +2729,6 @@
     "notable": true
   },
   {
-    "id": "2026-06-15-dominica-caribbean-sperm-01",
-    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by barrindc.",
-    "date": "2026-06-15",
-    "latitude": 15.5127758515,
-    "longitude": -61.4830907045,
-    "area": "Dominica, Caribbean (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/373290009",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/682188696/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) barrindc, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-06-15-v-gan-municipality-n-orca-01",
     "name": "Orca sighting (Vågan Municipality, Norway)",
     "species": "Orca",
@@ -4441,9 +4441,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-05-maine-united-states-blue-01",
-    "name": "Blue Whale sighting (Maine, United States)",
-    "species": "Blue Whale",
+    "id": "2026-06-05-maine-united-states-sperm-01",
+    "name": "Sperm whale sighting (Maine, United States)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-06-05. Source: Happywhale.com.",
     "date": "2026-06-05",
     "latitude": 42.863833,
@@ -4457,9 +4457,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-05-maine-united-states-sperm-01",
-    "name": "Sperm whale sighting (Maine, United States)",
-    "species": "Sperm whale",
+    "id": "2026-06-05-maine-united-states-blue-01",
+    "name": "Blue Whale sighting (Maine, United States)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-06-05. Source: Happywhale.com.",
     "date": "2026-06-05",
     "latitude": 42.863833,
@@ -4844,9 +4844,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-03-new-south-wales-aust-blue-01",
-    "name": "Blue Whale sighting (New South Wales, Australia)",
-    "species": "Blue Whale",
+    "id": "2026-06-03-new-south-wales-aust-sperm-01",
+    "name": "Sperm whale sighting (New South Wales, Australia)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-06-03. Source: Happywhale.com.",
     "date": "2026-06-03",
     "latitude": -33.801465,
@@ -4859,9 +4859,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-03-new-south-wales-aust-sperm-01",
-    "name": "Sperm whale sighting (New South Wales, Australia)",
-    "species": "Sperm whale",
+    "id": "2026-06-03-new-south-wales-aust-blue-01",
+    "name": "Blue Whale sighting (New South Wales, Australia)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-06-03. Source: Happywhale.com.",
     "date": "2026-06-03",
     "latitude": -33.801465,
@@ -5716,9 +5716,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-01-kujalleq-greenland-blue-01",
-    "name": "Blue Whale sighting (Kujalleq, Greenland)",
-    "species": "Blue Whale",
+    "id": "2026-06-01-kujalleq-greenland-sperm-01",
+    "name": "Sperm whale sighting (Kujalleq, Greenland)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Fin whale in North Atlantic Ocean (1 individuals). Observed 2026-06-01. Source: Happywhale.com.",
     "date": "2026-06-01",
     "latitude": 58.942067,
@@ -5731,9 +5731,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-01-kujalleq-greenland-sperm-01",
-    "name": "Sperm whale sighting (Kujalleq, Greenland)",
-    "species": "Sperm whale",
+    "id": "2026-06-01-kujalleq-greenland-blue-01",
+    "name": "Blue Whale sighting (Kujalleq, Greenland)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Fin whale in North Atlantic Ocean (1 individuals). Observed 2026-06-01. Source: Happywhale.com.",
     "date": "2026-06-01",
     "latitude": 58.942067,
