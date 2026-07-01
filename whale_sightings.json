@@ -338,6 +338,25 @@
     "notable": true
   },
   {
+    "id": "2026-07-01-capital-regional-dis-orca-04",
+    "name": "Orca sighting (Capital Regional District, BC, Canada)",
+    "species": "Orca",
+    "info": "iNaturalist observation by kevintoo.",
+    "date": "2026-07-01",
+    "latitude": 48.8907678156,
+    "longitude": -123.3053071686,
+    "area": "Capital Regional District, BC, Canada",
+    "source": "https://www.inaturalist.org/observations/377287081",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/689911218/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Kevin Toomer, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
     "id": "2026-07-01-northeast-atlantic-sperm-01",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
@@ -383,7 +402,25 @@
     "notable": true
   },
   {
-    "id": "2026-06-30-north-pacific-ocean--humpback-02",
+    "id": "2026-06-30-hoonah-angoon-census-humpback-02",
+    "name": "Humpback sighting (Hoonah-Angoon Census Area, AK, USA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jdwalsh1234567.",
+    "date": "2026-06-30",
+    "latitude": 58.15302500000001,
+    "longitude": -135.4661416667,
+    "area": "Hoonah-Angoon Census Area, AK, USA",
+    "source": "https://www.inaturalist.org/observations/377286813",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/689913598/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) JD Walsh, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-30-north-pacific-ocean--humpback-03",
     "name": "Humpback sighting (North Pacific Ocean, AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by scottshreve.",
@@ -398,7 +435,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-30-ak-us-humpback-03",
+    "id": "2026-06-30-ak-us-humpback-04",
     "name": "Humpback sighting (AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by oly19.",
@@ -416,7 +453,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-30-ak-us-humpback-04",
+    "id": "2026-06-30-ak-us-humpback-05",
     "name": "Humpback sighting (AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by oly19.",
@@ -431,21 +468,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/689378423/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) oly19, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-06-30-capital-regional-dis-humpback-05",
-    "name": "Humpback sighting (Capital Regional District, BC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by iguanaiguana.",
-    "date": "2026-06-30",
-    "latitude": 48.2642944444,
-    "longitude": -123.6133277778,
-    "area": "Capital Regional District, BC, Canada",
-    "source": "https://www.inaturalist.org/observations/376988838",
-    "behaviors": [
-      "reported"
-    ],
     "notable": true
   },
   {
@@ -820,24 +842,6 @@
     "notable": true
   },
   {
-    "id": "2026-06-28-wrangell-ak-usa-humpback-06",
-    "name": "Humpback sighting (Wrangell, AK, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by rubykresge.",
-    "date": "2026-06-28",
-    "latitude": 56.0632819882,
-    "longitude": -132.7204713348,
-    "area": "Wrangell, AK, USA",
-    "source": "https://www.inaturalist.org/observations/376442948",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/688281227/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Ruby Kresge, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-06-28-stonehaven-scotland--orca-01",
     "name": "Orca sighting (Stonehaven, Scotland, GB)",
     "species": "Orca",
@@ -874,7 +878,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-28-kiberg-troms-og-finn-humpback-07",
+    "id": "2026-06-28-kiberg-troms-og-finn-humpback-06",
     "name": "Humpback sighting (Kiberg, Troms og Finnmark, NO)",
     "species": "Humpback",
     "info": "iNaturalist observation by kallenibbenhagen.",
@@ -889,7 +893,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-06-28-eyjafjordur-humpback-08",
+    "id": "2026-06-28-eyjafjordur-humpback-07",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-06-28.",
@@ -1950,26 +1954,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-06-23-mount-waddington-bc--orca-11",
-    "name": "Orca sighting (Mount Waddington, BC, CA)",
-    "species": "Orca",
-    "info": "iNaturalist observation by ecoem22.",
-    "date": "2026-06-23",
-    "latitude": 50.5574066657,
-    "longitude": -126.75642434,
-    "area": "Mount Waddington, BC, CA",
-    "source": "https://www.inaturalist.org/observations/374805125",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/685116074/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) ecoem22, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-06-23-kayak-island-alaska--orca-12",
+    "id": "2026-06-23-kayak-island-alaska--orca-11",
     "name": "Orca sighting (Kayak Island, Alaska, USA)",
     "species": "Orca",
     "info": "iNaturalist observation by peterkappes.",
@@ -3297,6 +3282,24 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/680308752/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Dennis Laidler, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-15-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by barrindc.",
+    "date": "2026-06-15",
+    "latitude": 15.5127758515,
+    "longitude": -61.4830907045,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/373290009",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/682188696/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) barrindc, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
