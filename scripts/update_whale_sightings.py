@@ -633,6 +633,9 @@ class Candidate:
     photo_attribution: Optional[str] = None
     individual_id: Optional[str] = None
     individual_name: Optional[str] = None
+    # Exact observation time (tz-aware), only when the source provides a real
+    # clock time — never synthesised from a date-only value.
+    observed_at: Optional[datetime] = None
 
 
 # -------------------------
@@ -958,16 +961,16 @@ def _inat_place_id(session: requests.Session, place_query: str) -> Optional[int]
         _inat_place_cache[place_query] = None
         return None
 
-def _inat_obs_datetime(obs: Dict[str, Any], tz_name: str, fallback: datetime) -> datetime:
-    tzinfo = tz.gettz(tz_name)
+def _inat_obs_datetime(obs: Dict[str, Any], tz_name: str, fallback: datetime) -> Tuple[datetime, bool]:
+    """
+    Returns (datetime, has_real_time).
 
-    observed_on = (obs.get("observed_on") or "").strip()
-    if observed_on:
-        try:
-            y, m, d = observed_on.split("-")
-            return datetime(int(y), int(m), int(d), 12, 0, 0, tzinfo=tzinfo)
-        except Exception:
-            pass
+    time_observed_at is checked FIRST — it carries the actual observation time,
+    which the app uses for honest "Xm ago" labels. observed_on is date-only, so
+    those datetimes are pinned to noon and flagged has_real_time=False.
+    created_at is the upload time, not the sighting time — also False.
+    """
+    tzinfo = tz.gettz(tz_name)
 
     time_observed_at = (obs.get("time_observed_at") or "").strip()
     if time_observed_at:
@@ -975,7 +978,15 @@ def _inat_obs_datetime(obs: Dict[str, Any], tz_name: str, fallback: datetime) ->
             dt = datetime.fromisoformat(time_observed_at.replace("Z", "+00:00"))
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=tzinfo)
-            return dt.astimezone(tzinfo)
+            return dt.astimezone(tzinfo), True
+        except Exception:
+            pass
+
+    observed_on = (obs.get("observed_on") or "").strip()
+    if observed_on:
+        try:
+            y, m, d = observed_on.split("-")
+            return datetime(int(y), int(m), int(d), 12, 0, 0, tzinfo=tzinfo), False
         except Exception:
             pass
 
@@ -985,11 +996,11 @@ def _inat_obs_datetime(obs: Dict[str, Any], tz_name: str, fallback: datetime) ->
             dt = datetime.fromisoformat(created_at.replace("Z", "+00:00"))
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=tzinfo)
-            return dt.astimezone(tzinfo)
+            return dt.astimezone(tzinfo), False
         except Exception:
             pass
 
-    return fallback
+    return fallback, False
 
 def _inat_obs_latlon(obs: Dict[str, Any]) -> Optional[Tuple[float, float]]:
     gj = obs.get("geojson") or {}
@@ -1081,7 +1092,7 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
         if len(out) >= max_items:
             break
 
-        dt = _inat_obs_datetime(obs, tz_name, today)
+        dt, has_real_time = _inat_obs_datetime(obs, tz_name, today)
 
         latlon = _inat_obs_latlon(obs)
         if latlon:
@@ -1135,7 +1146,10 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
         if not ind_id:
             search_text = " ".join([
                 description,
-                " ".join(t.get("name", "") for t in obs.get("tags", [])),
+                " ".join(
+                    (t.get("name", "") if isinstance(t, dict) else str(t))
+                    for t in (obs.get("tags") or [])
+                ),
             ])
             for pattern, normaliser in CATALOG_PATTERNS:
                 m = pattern.search(search_text)
@@ -1167,6 +1181,7 @@ def parse_inaturalist_api(cfg: Dict[str, Any], session: requests.Session, tz_nam
                 photo_attribution=photo_attribution,
                 individual_id=ind_id,
                 individual_name=ind_name,
+                observed_at=dt if has_real_time else None,
             )
         )
 
@@ -1980,6 +1995,12 @@ def build_entries(candidates: List[Candidate]) -> List[Dict[str, Any]]:
             "source": c.source,
             "behaviors": c.behaviors,
         }
+
+        # UTC ISO8601 with Z suffix — decoded by the app's ISO8601DateFormatter.
+        # Only present when the source reported a real clock time; shipped app
+        # versions ignore the unknown key, so this is backward compatible.
+        if c.observed_at is not None:
+            entry["observedAt"] = c.observed_at.astimezone(tz.UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
 
         if c.photo_url:
             entry["photoURL"] = c.photo_url
