@@ -1,6 +1,90 @@
 [
   {
-    "id": "2026-07-05-wellington-region-ne-humpback-01",
+    "id": "2026-07-05-bremer-canyon-orca-01",
+    "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
+    "species": "Orca",
+    "info": "Parsed from whale_watch_wa on 2026-07-05.",
+    "date": "2026-07-05",
+    "latitude": -34.7,
+    "longitude": 119.9,
+    "area": "Bremer Canyon (offshore), WA, Australia",
+    "source": "https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "seasonalStatus": "Bremer Canyon, Australia"
+  },
+  {
+    "id": "2026-07-05-bremer-canyon-blue-01",
+    "name": "Blue Whale sighting (Bremer Canyon (offshore), WA, Australia)",
+    "species": "Blue Whale",
+    "info": "Parsed from whale_watch_wa on 2026-07-05.",
+    "date": "2026-07-05",
+    "latitude": -34.7,
+    "longitude": 119.9,
+    "area": "Bremer Canyon (offshore), WA, Australia",
+    "source": "https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-05-faxafloi-bay-humpback-01",
+    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from elding_diary on 2026-07-05.",
+    "date": "2026-07-05",
+    "latitude": 64.2,
+    "longitude": -22.4,
+    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
+    "source": "https://elding.is/whale-diary",
+    "behaviors": [
+      "reported",
+      "feeding",
+      "breaching",
+      "traveling"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-07-05-bay-of-fundy-humpback-02",
+    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
+    "species": "Humpback",
+    "info": "Parsed from brier_island_whale_sightings on 2026-07-05.",
+    "date": "2026-07-05",
+    "latitude": 44.26,
+    "longitude": -66.42,
+    "area": "Bay of Fundy (offshore), NS, Canada",
+    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "behaviors": [
+      "reported",
+      "hunting",
+      "vocalizing"
+    ],
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-07-05-bay-of-fundy-orca-02",
+    "name": "Orca sighting (Bay of Fundy (offshore), NS, Canada)",
+    "species": "Orca",
+    "info": "Parsed from brier_island_whale_sightings on 2026-07-05.",
+    "date": "2026-07-05",
+    "latitude": 44.26,
+    "longitude": -66.42,
+    "area": "Bay of Fundy (offshore), NS, Canada",
+    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
+    "behaviors": [
+      "reported",
+      "hunting",
+      "vocalizing"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-05-wellington-region-ne-humpback-03",
     "name": "Humpback sighting (Wellington Region, New Zealand)",
     "species": "Humpback",
     "info": "iNaturalist observation by pars.",
@@ -15,7 +99,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-05-addison-rd-at-darley-humpback-02",
+    "id": "2026-07-05-addison-rd-at-darley-humpback-04",
     "name": "Humpback sighting (Addison Rd at Darley Rd, Manly NSW 2095, Australia)",
     "species": "Humpback",
     "info": "iNaturalist observation by ksrivett.",
@@ -33,7 +117,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-05-bass-strait-summerla-humpback-03",
+    "id": "2026-07-05-bass-strait-summerla-humpback-05",
     "name": "Humpback sighting (Bass Strait, Summerlands, AU)",
     "species": "Humpback",
     "info": "iNaturalist observation by sam_21.",
@@ -51,7 +135,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-05-australia-humpback-04",
+    "id": "2026-07-05-australia-humpback-06",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "iNaturalist observation by nat_is_a_lost.",
@@ -69,7 +153,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-05-cape-schanck-victori-humpback-05",
+    "id": "2026-07-05-cape-schanck-victori-humpback-07",
     "name": "Humpback sighting (Cape Schanck, Victoria)",
     "species": "Humpback",
     "info": "iNaturalist observation by nimal_karunajeewa.",
@@ -87,7 +171,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-05-kingscliff-nsw-2487--humpback-06",
+    "id": "2026-07-05-kingscliff-nsw-2487--humpback-08",
     "name": "Humpback sighting (Kingscliff NSW 2487, Australia)",
     "species": "Humpback",
     "info": "iNaturalist observation by gldyktown.",
@@ -105,7 +189,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-05-hoonah-angoon-county-humpback-07",
+    "id": "2026-07-05-hoonah-angoon-county-humpback-09",
     "name": "Humpback sighting (Hoonah-Angoon County, US-AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by ethan1234567.",
@@ -120,6 +204,24 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/692054289/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) ethan1234567, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-07-05-ca-us-humpback-10",
+    "name": "Humpback sighting (CA, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by tetrahedrite.",
+    "date": "2026-07-05",
+    "latitude": 40.9690166667,
+    "longitude": -124.1304555,
+    "area": "CA, US",
+    "source": "https://www.inaturalist.org/observations/378512558",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/692276815/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) tetrahedrite, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -200,90 +302,6 @@
     "source": "https://www.inaturalist.org/observations/378340631",
     "behaviors": [
       "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-05-bremer-canyon-orca-01",
-    "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
-    "species": "Orca",
-    "info": "Parsed from whale_watch_wa on 2026-07-05.",
-    "date": "2026-07-05",
-    "latitude": -34.7,
-    "longitude": 119.9,
-    "area": "Bremer Canyon (offshore), WA, Australia",
-    "source": "https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "seasonalStatus": "Bremer Canyon, Australia"
-  },
-  {
-    "id": "2026-07-05-bremer-canyon-blue-01",
-    "name": "Blue Whale sighting (Bremer Canyon (offshore), WA, Australia)",
-    "species": "Blue Whale",
-    "info": "Parsed from whale_watch_wa on 2026-07-05.",
-    "date": "2026-07-05",
-    "latitude": -34.7,
-    "longitude": 119.9,
-    "area": "Bremer Canyon (offshore), WA, Australia",
-    "source": "https://whalewatchwesternaustralia.com/killer-whale-tours-in-january/",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-05-faxafloi-bay-humpback-08",
-    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from elding_diary on 2026-07-05.",
-    "date": "2026-07-05",
-    "latitude": 64.2,
-    "longitude": -22.4,
-    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
-    "source": "https://elding.is/whale-diary",
-    "behaviors": [
-      "reported",
-      "feeding",
-      "breaching",
-      "traveling"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-07-05-bay-of-fundy-humpback-09",
-    "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
-    "species": "Humpback",
-    "info": "Parsed from brier_island_whale_sightings on 2026-07-05.",
-    "date": "2026-07-05",
-    "latitude": 44.26,
-    "longitude": -66.42,
-    "area": "Bay of Fundy (offshore), NS, Canada",
-    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
-    "behaviors": [
-      "reported",
-      "hunting",
-      "vocalizing"
-    ],
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-07-05-bay-of-fundy-orca-02",
-    "name": "Orca sighting (Bay of Fundy (offshore), NS, Canada)",
-    "species": "Orca",
-    "info": "Parsed from brier_island_whale_sightings on 2026-07-05.",
-    "date": "2026-07-05",
-    "latitude": 44.26,
-    "longitude": -66.42,
-    "area": "Bay of Fundy (offshore), NS, Canada",
-    "source": "https://brierislandwhalewatch.com/whale-watching/whale-sightings/",
-    "behaviors": [
-      "reported",
-      "hunting",
-      "vocalizing"
     ],
     "notable": true
   },
@@ -396,25 +414,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-04-wattamolla-nsw-2232--humpback-07",
-    "name": "Humpback sighting (Wattamolla NSW 2232, Australia)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by katsinabox.",
-    "date": "2026-07-04",
-    "latitude": -34.1398633333,
-    "longitude": 151.120245,
-    "area": "Wattamolla NSW 2232, Australia",
-    "source": "https://www.inaturalist.org/observations/377980673",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/691259490/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Liam southwell, some rights reserved (CC BY)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-04-stellwagen-bank-humpback-08",
+    "id": "2026-07-04-stellwagen-bank-humpback-07",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by mbloomfield.",
@@ -432,7 +432,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-07-04-us-humpback-09",
+    "id": "2026-07-04-us-humpback-08",
     "name": "Humpback sighting (US)",
     "species": "Humpback",
     "info": "iNaturalist observation by canadianorchard.",
@@ -503,7 +503,25 @@
     "notable": true
   },
   {
-    "id": "2026-07-04-eyjafjordur-humpback-10",
+    "id": "2026-07-04-ca-us-great-white-shark-01",
+    "name": "Great White Shark sighting (CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by hotel_calochortus.",
+    "date": "2026-07-04",
+    "latitude": 36.9564866667,
+    "longitude": -121.9435283333,
+    "area": "CA, US",
+    "source": "https://www.inaturalist.org/observations/378266394",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/691808752/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) hotel_calochortus, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-07-04-eyjafjordur-humpback-09",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-07-04.",
@@ -974,6 +992,60 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/689871567/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) paigemclaughlin, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-07-01-san-luis-obispo-coun-great-white-shark-02",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-07-01",
+    "latitude": 35.204279639899994,
+    "longitude": -120.8630000602,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/377349839",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/690041226/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-07-01-san-luis-obispo-coun-great-white-shark-03",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-07-01",
+    "latitude": 35.3605157512,
+    "longitude": -120.9406203508,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/377350004",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/690041443/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-07-01-san-luis-obispo-coun-great-white-shark-04",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-07-01",
+    "latitude": 35.2749635973,
+    "longitude": -120.9588114128,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/377313687",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/689968716/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -1498,6 +1570,24 @@
     "notable": true
   },
   {
+    "id": "2026-06-29-coast-blvd-ca-us-great-white-shark-01",
+    "name": "Great White Shark sighting (Coast Blvd, CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by jackson_liddle.",
+    "date": "2026-06-29",
+    "latitude": 32.8504216667,
+    "longitude": -117.2702783333,
+    "area": "Coast Blvd, CA, US",
+    "source": "https://www.inaturalist.org/observations/377957191",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/691216713/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Jackson Liddle, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-06-29-eyjafjordur-humpback-07",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -1720,24 +1810,6 @@
     "notable": true
   },
   {
-    "id": "2026-06-27-juneau-ak-99801-usa-orca-04",
-    "name": "Orca sighting (Juneau, AK 99801, USA)",
-    "species": "Orca",
-    "info": "iNaturalist observation by citysalamanders.",
-    "date": "2026-06-27",
-    "latitude": 58.4123376602,
-    "longitude": -134.7990971804,
-    "area": "Juneau, AK 99801, USA",
-    "source": "https://www.inaturalist.org/observations/377567840",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/690463321/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) citysalamanders, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-06-27-pacific-northwest-na-gray-01",
     "name": "Gray Whale sighting (Pacific Northwest National Scenic Trail, WA, US)",
     "species": "Gray Whale",
@@ -1770,6 +1842,24 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/688875881/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Chase Lemmon, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-06-27-juneau-ak-99801-usa-orca-04",
+    "name": "Orca sighting (Juneau, AK 99801, USA)",
+    "species": "Orca",
+    "info": "iNaturalist observation by citysalamanders.",
+    "date": "2026-06-27",
+    "latitude": 58.4123376602,
+    "longitude": -134.7990971804,
+    "area": "Juneau, AK 99801, USA",
+    "source": "https://www.inaturalist.org/observations/377567840",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/690463321/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) citysalamanders, some rights reserved (CC BY-NC)",
+    "notable": true
   },
   {
     "id": "2026-06-27-northeast-atlantic-sperm-01",
@@ -2290,6 +2380,24 @@
     "notable": true
   },
   {
+    "id": "2026-06-23-san-luis-obispo-coun-great-white-shark-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-06-23",
+    "latitude": 35.2816958233,
+    "longitude": -120.9086863636,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/374755961",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/685016292/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-06-23-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -2598,6 +2706,21 @@
     "notable": true
   },
   {
+    "id": "2026-06-22-san-pedro-channel-ca-great-white-shark-01",
+    "name": "Great White Shark sighting (San Pedro Channel, CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by kyran2.",
+    "date": "2026-06-22",
+    "latitude": 33.4135149356,
+    "longitude": -118.325000374,
+    "area": "San Pedro Channel, CA, US",
+    "source": "https://www.inaturalist.org/observations/374521941",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-06-22-kenai-peninsula-coun-fin-01",
     "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
     "species": "Fin Whale",
@@ -2662,6 +2785,20 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) seabirder, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Northeast Atlantic feeding season"
+  },
+  {
+    "id": "2026-06-21-san-francisco-county-gray-01",
+    "name": "Gray Whale sighting (San Francisco County, San Francisco, CA, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by mapierson.",
+    "date": "2026-06-21",
+    "latitude": 37.7030671777,
+    "longitude": -123.008836247,
+    "area": "San Francisco County, San Francisco, CA, USA",
+    "source": "https://www.inaturalist.org/observations/374336592",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-06-21-washington-us-orca-01",
@@ -2780,6 +2917,78 @@
     "photoAttribution": "(c) Christina Woolf, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-06-20-california-us-blue-01",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by wandering_syl.",
+    "date": "2026-06-20",
+    "latitude": 36.7990772271,
+    "longitude": -121.9040891765,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/374156532",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/683854233/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) wandering_syl, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-20-california-us-blue-02",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by pica_nuttalli.",
+    "date": "2026-06-20",
+    "latitude": 36.8245022964,
+    "longitude": -121.9031222382,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/373810982",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/683187990/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) pica_nuttalli, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-20-california-us-blue-03",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by jmiller85.",
+    "date": "2026-06-20",
+    "latitude": 37.7352852687,
+    "longitude": -122.868765639,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/373791180",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/683148414/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Jennifer Miller, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-20-california-us-blue-04",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by wildtabby.",
+    "date": "2026-06-20",
+    "latitude": 36.7482024485,
+    "longitude": -121.9186612121,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/374155623",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/683852614/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) wildtabby, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-06-20-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -2849,7 +3058,24 @@
     "notable": true
   },
   {
-    "id": "2026-06-19-davis-bay-beach-sech-gray-01",
+    "id": "2026-06-19-san-francisco-bay-tr-gray-01",
+    "name": "Gray Whale sighting (San Francisco Bay Trail, San Leandro, CA, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by michele_my_belle.",
+    "date": "2026-06-19",
+    "latitude": 37.661403333299994,
+    "longitude": -122.1737666667,
+    "area": "San Francisco Bay Trail, San Leandro, CA, US",
+    "source": "https://www.inaturalist.org/observations/374018693",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/683587436/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Michele Lin, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-06-19-davis-bay-beach-sech-gray-02",
     "name": "Gray Whale sighting (Davis Bay Beach, Sechelt, BC, CA)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by pumakit.",
@@ -2925,6 +3151,255 @@
     "behaviors": [
       "reported"
     ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-california-us-blue-01",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by desert_daydreamer.",
+    "date": "2026-06-19",
+    "latitude": 36.7785062776,
+    "longitude": -121.8009289954,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/373607789",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-california-us-blue-02",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by desert_daydreamer.",
+    "date": "2026-06-19",
+    "latitude": 36.6475754622,
+    "longitude": -122.0164147926,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/373607116",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-california-us-blue-03",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by julianmi.",
+    "date": "2026-06-19",
+    "latitude": 36.6686856003,
+    "longitude": -121.8350606374,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/373771406",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/683110378/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Julian Missig, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-california-us-blue-04",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by julianmi.",
+    "date": "2026-06-19",
+    "latitude": 36.7329441496,
+    "longitude": -121.8829882699,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/373771422",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/683110420/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Julian Missig, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-california-us-blue-05",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by fexcad.",
+    "date": "2026-06-19",
+    "latitude": 36.7501174222,
+    "longitude": -121.8950655728,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/373383393",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/682364494/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) fexcad, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-california-us-blue-06",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by fexcad.",
+    "date": "2026-06-19",
+    "latitude": 36.7791754575,
+    "longitude": -121.8851585528,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/373383388",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/682364478/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) fexcad, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-california-us-blue-07",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by dfgtblyx.",
+    "date": "2026-06-19",
+    "latitude": 36.6694273741,
+    "longitude": -121.8543457289,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/374538099",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-california-us-blue-08",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by dfgtblyx.",
+    "date": "2026-06-19",
+    "latitude": 36.6193623515,
+    "longitude": -121.8896705999,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/374538087",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-california-us-blue-09",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by dfgtblyx.",
+    "date": "2026-06-19",
+    "latitude": 36.7817715686,
+    "longitude": -121.9486631199,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/374534511",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-california-us-blue-10",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by dfgtblyx.",
+    "date": "2026-06-19",
+    "latitude": 36.7431690017,
+    "longitude": -121.8655561113,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/374534512",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-california-us-blue-11",
+    "name": "Blue Whale sighting (California, US)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by dfgtblyx.",
+    "date": "2026-06-19",
+    "latitude": 36.648308291,
+    "longitude": -121.9225690421,
+    "area": "California, US",
+    "source": "https://www.inaturalist.org/observations/374534510",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-san-luis-obispo-coun-great-white-shark-01",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-06-19",
+    "latitude": 35.3536607269,
+    "longitude": -120.9525199082,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/373820063",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/683202936/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-san-luis-obispo-coun-great-white-shark-02",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-06-19",
+    "latitude": 35.3903977825,
+    "longitude": -120.8873236498,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/373462689",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/682524929/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-san-luis-obispo-coun-great-white-shark-03",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-06-19",
+    "latitude": 35.3308678513,
+    "longitude": -120.9578005071,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/373462472",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/682524483/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-19-san-luis-obispo-coun-great-white-shark-04",
+    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by noiselessowl.",
+    "date": "2026-06-19",
+    "latitude": 35.3681696595,
+    "longitude": -120.9432757799,
+    "area": "San Luis Obispo County, US-CA, US",
+    "source": "https://www.inaturalist.org/observations/373461929",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/682523733/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -3595,25 +4070,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-14-brasil-humpback-03",
-    "name": "Humpback sighting (Brasil)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by dornelas2005.",
-    "date": "2026-06-14",
-    "latitude": -20.4201799043,
-    "longitude": -40.0901315734,
-    "area": "Brasil",
-    "source": "https://www.inaturalist.org/observations/371936866",
-    "behaviors": [
-      "reported"
-    ],
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/679604242/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Samuel Dornelas, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-06-14-skj-lfandi-bay-humpback-04",
+    "id": "2026-06-14-skj-lfandi-bay-humpback-03",
     "name": "Humpback sighting (­Skjálfandi Bay (Husavik))",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-06-14.",
@@ -3628,7 +4085,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-06-14-kaik-ura-7300-new-ze-humpback-05",
+    "id": "2026-06-14-kaik-ura-7300-new-ze-humpback-04",
     "name": "Humpback sighting (Kaikōura 7300, New Zealand)",
     "species": "Humpback",
     "info": "iNaturalist observation by josephbray.",
@@ -3646,7 +4103,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-14-kaik-ura-7300-new-ze-humpback-06",
+    "id": "2026-06-14-kaik-ura-7300-new-ze-humpback-05",
     "name": "Humpback sighting (Kaikōura 7300, New Zealand)",
     "species": "Humpback",
     "info": "iNaturalist observation by josephbray.",
@@ -3664,7 +4121,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-14-au-humpback-07",
+    "id": "2026-06-14-au-humpback-06",
     "name": "Humpback sighting (AU)",
     "species": "Humpback",
     "info": "iNaturalist observation by andydyson.",
@@ -3698,6 +4155,37 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) josephbray, some rights reserved (CC BY-NC)",
     "notable": true
+  },
+  {
+    "id": "2026-06-14-bolinas-ca-us-gray-01",
+    "name": "Gray Whale sighting (Bolinas, CA, US)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by aidalashua.",
+    "date": "2026-06-14",
+    "latitude": 37.9068716667,
+    "longitude": -122.727325,
+    "area": "Bolinas, CA, US",
+    "source": "https://www.inaturalist.org/observations/371875938",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/679486344/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) aidalashua, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-06-14-san-francisco-county-gray-02",
+    "name": "Gray Whale sighting (San Francisco County, San Francisco, CA, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by mapierson.",
+    "date": "2026-06-14",
+    "latitude": 37.6896341467,
+    "longitude": -123.0018108711,
+    "area": "San Francisco County, San Francisco, CA, USA",
+    "source": "https://www.inaturalist.org/observations/372452620",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-06-14-global-orca-01",
@@ -3892,22 +4380,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-13-brazil-humpback-02",
-    "name": "Humpback sighting (Brazil)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by judgefudge.",
-    "date": "2026-06-13",
-    "latitude": -23.0967389722,
-    "longitude": -43.3414939722,
-    "area": "Brazil",
-    "source": "https://www.inaturalist.org/observations/371838505",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-13-canterbury-humpback-03",
+    "id": "2026-06-13-canterbury-humpback-02",
     "name": "Humpback sighting (Canterbury)",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-13.",
@@ -3922,7 +4395,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-13-la-paz-b-c-s-mx-humpback-04",
+    "id": "2026-06-13-la-paz-b-c-s-mx-humpback-03",
     "name": "Humpback sighting (La Paz, B.C.S., MX)",
     "species": "Humpback",
     "info": "iNaturalist observation by tanya00.",
@@ -3939,7 +4412,7 @@
     "photoAttribution": "(c) tanya00, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-06-13-pacific-ocean-humpback-05",
+    "id": "2026-06-13-pacific-ocean-humpback-04",
     "name": "Humpback sighting (Pacific Ocean (GBIF))",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-13.",
@@ -3954,7 +4427,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-13-pacific-ocean-humpback-06",
+    "id": "2026-06-13-pacific-ocean-humpback-05",
     "name": "Humpback sighting (Pacific Ocean (GBIF))",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-13.",
@@ -6425,6 +6898,60 @@
       "feeding",
       "breaching"
     ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-05-x3h6-fg-capitola-ca--great-white-shark-02",
+    "name": "Great White Shark sighting (X3H6+FG, Capitola, CA 95010, USA)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by jmaughn.",
+    "date": "2026-06-05",
+    "latitude": 36.9575461881,
+    "longitude": -121.9383827224,
+    "area": "X3H6+FG, Capitola, CA 95010, USA",
+    "source": "https://www.inaturalist.org/observations/368754298",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/673535607/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-05-santa-cruz-county-ca-great-white-shark-03",
+    "name": "Great White Shark sighting (Santa Cruz County, CA, USA)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by jmaughn.",
+    "date": "2026-06-05",
+    "latitude": 36.9552951536,
+    "longitude": -121.9334715217,
+    "area": "Santa Cruz County, CA, USA",
+    "source": "https://www.inaturalist.org/observations/368847552",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/673715838/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-05-santa-cruz-county-ca-great-white-shark-04",
+    "name": "Great White Shark sighting (Santa Cruz County, CA, USA)",
+    "species": "Great White Shark",
+    "info": "iNaturalist observation by jmaughn.",
+    "date": "2026-06-05",
+    "latitude": 36.9552951536,
+    "longitude": -121.9334715217,
+    "area": "Santa Cruz County, CA, USA",
+    "source": "https://www.inaturalist.org/observations/368847548",
+    "behaviors": [
+      "reported"
+    ],
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/673715840/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
