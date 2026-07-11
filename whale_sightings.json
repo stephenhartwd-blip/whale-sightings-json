@@ -308,6 +308,21 @@
     "notable": true
   },
   {
+    "id": "2026-07-11-eyjafjordur-humpback-14",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-07-11.",
+    "date": "2026-07-11",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
     "id": "2026-07-10-sunshine-coast-bc-ca-orca-01",
     "name": "Orca sighting (Sunshine Coast, BC, CA)",
     "species": "Orca",
@@ -2254,25 +2269,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-01-kenai-peninsula-coun-fin-01",
-    "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by mjdicianna.",
-    "date": "2026-07-01",
-    "latitude": 59.6537848287,
-    "longitude": -149.4048623434,
-    "area": "Kenai Peninsula County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/379627253",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-01T23:56:22Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/694436307/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Mia DiCianna, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-07-01-washington-us-orca-02",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
@@ -2488,39 +2484,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-30-kenai-peninsula-boro-orca-01",
-    "name": "Orca sighting (Kenai Peninsula Borough, AK, USA)",
-    "species": "Orca",
-    "info": "iNaturalist observation by lauraszk.",
-    "date": "2026-06-30",
-    "latitude": 59.7459728974,
-    "longitude": -149.5209921151,
-    "area": "Kenai Peninsula Borough, AK, USA",
-    "source": "https://www.inaturalist.org/observations/379914769",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-30T22:44:06Z",
-    "notable": true
-  },
-  {
-    "id": "2026-06-30-kenai-peninsula-coun-fin-01",
-    "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by lauraszk.",
-    "date": "2026-06-30",
-    "latitude": 59.776488396400005,
-    "longitude": -149.5821471458,
-    "area": "Kenai Peninsula County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/379914573",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-30T22:20:49Z",
-    "notable": true
-  },
-  {
-    "id": "2026-06-30-clallam-county-us-wa-orca-02",
+    "id": "2026-06-30-clallam-county-us-wa-orca-01",
     "name": "Orca sighting (Clallam County, US-WA, US)",
     "species": "Orca",
     "info": "iNaturalist observation by spacewolf1.",
@@ -2537,22 +2501,6 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) SpaceWolf, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Salish Sea (SRKW range)"
-  },
-  {
-    "id": "2026-06-30-kachemak-bay-ak-us-orca-03",
-    "name": "Orca sighting (Kachemak Bay, AK, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by somewhereinthecaribbean.",
-    "date": "2026-06-30",
-    "latitude": 59.4799942915,
-    "longitude": -151.7092517935,
-    "area": "Kachemak Bay, AK, US",
-    "source": "https://www.inaturalist.org/observations/377233363",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-30T19:30:00Z",
-    "notable": true
   },
   {
     "id": "2026-06-30-rio-de-janeiro-harbo-humpback-02",
@@ -2783,25 +2731,6 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-06-28-juneau-county-us-ak--fin-01",
-    "name": "Fin Whale sighting (Juneau County, US-AK, US)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by oly19.",
-    "date": "2026-06-28",
-    "latitude": 58.1937381763,
-    "longitude": -134.2134278175,
-    "area": "Juneau County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/376778094",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-29T03:09:37Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/688935888/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) oly19, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-06-28-kiberg-troms-og-finn-humpback-01",
     "name": "Humpback sighting (Kiberg, Troms og Finnmark, NO)",
     "species": "Humpback",
@@ -2952,22 +2881,6 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-06-27-us-orca-02",
-    "name": "Orca sighting (US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by naturelover433.",
-    "date": "2026-06-27",
-    "latitude": 59.7045272228,
-    "longitude": -149.4158544646,
-    "area": "US",
-    "source": "https://www.inaturalist.org/observations/379356703",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-27T21:07:13Z",
-    "notable": true
-  },
-  {
     "id": "2026-06-27-gims-ysand-nordland--fin-01",
     "name": "Fin Whale sighting (Gimsøysand, Nordland, NO)",
     "species": "Fin Whale",
@@ -3072,26 +2985,6 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-06-26-north-pacific-ocean--orca-01",
-    "name": "Orca sighting (North Pacific Ocean, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by uncommongallinule.",
-    "date": "2026-06-26",
-    "latitude": 59.7470078533,
-    "longitude": -149.2686950438,
-    "area": "North Pacific Ocean, US",
-    "source": "https://www.inaturalist.org/observations/376968492",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "observedAt": "2026-06-26T23:10:23Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/689297264/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kasey Myers, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-06-26-blying-sound-ak-us-humpback-01",
     "name": "Humpback sighting (Blying Sound, AK, US)",
     "species": "Humpback",
@@ -3130,25 +3023,6 @@
     "notable": true
   },
   {
-    "id": "2026-06-26-kenai-peninsula-coun-fin-01",
-    "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by uncommongallinule.",
-    "date": "2026-06-26",
-    "latitude": 59.919169573,
-    "longitude": -149.5280138044,
-    "area": "Kenai Peninsula County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/376971242",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-26T21:21:56Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/689303408/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kasey Myers, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-06-26-queensland-humpback-03",
     "name": "Humpback sighting (Queensland)",
     "species": "Humpback",
@@ -3179,7 +3053,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-06-26-nordland-no-orca-02",
+    "id": "2026-06-26-nordland-no-orca-01",
     "name": "Orca sighting (Nordland, NO)",
     "species": "Orca",
     "info": "iNaturalist observation by amahon22.",
@@ -3195,59 +3069,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/686993750/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) A Mahon, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-06-26-kenai-peninsula-coun-fin-02",
-    "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by uncommongallinule.",
-    "date": "2026-06-26",
-    "latitude": 59.7545287357,
-    "longitude": -149.7072721844,
-    "area": "Kenai Peninsula County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/376970871",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-26T18:42:04Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/689302117/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kasey Myers, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-06-26-eyjafjordur-humpback-05",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-06-26.",
-    "date": "2026-06-26",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-25-north-pacific-ocean--orca-01",
-    "name": "Orca sighting (North Pacific Ocean, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by anemone33.",
-    "date": "2026-06-25",
-    "latitude": 59.780095,
-    "longitude": -149.30693,
-    "area": "North Pacific Ocean, US",
-    "source": "https://www.inaturalist.org/observations/375932416",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-26T00:39:21Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/687299258/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) anemone33, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -3321,25 +3142,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/686346742/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Allison Padilla, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-06-25-resurrection-bay-ak--orca-02",
-    "name": "Orca sighting (Resurrection Bay, AK, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by shannonmadison.",
-    "date": "2026-06-25",
-    "latitude": 59.9693286994,
-    "longitude": -149.3956298631,
-    "area": "Resurrection Bay, AK, US",
-    "source": "https://www.inaturalist.org/observations/377541112",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-25T20:31:04Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/690409878/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) shannonmadison, some rights reserved (CC BY-NC)",
-    "notable": true
   },
   {
     "id": "2026-06-25-california-humpback-04",
@@ -3420,38 +3222,6 @@
       "reported"
     ],
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-24-ak-us-orca-01",
-    "name": "Orca sighting (AK, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by roastbird.",
-    "date": "2026-06-24",
-    "latitude": 59.8267749131,
-    "longitude": -149.498690938,
-    "area": "AK, US",
-    "source": "https://www.inaturalist.org/observations/375749769",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-24T17:55:00Z",
-    "notable": true
-  },
-  {
-    "id": "2026-06-24-gasp-sie-les-de-la-m-fin-01",
-    "name": "Fin Whale sighting (Gaspésie–Îles-de-la-Madeleine, QC, Canada)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by sgiriens.",
-    "date": "2026-06-24",
-    "latitude": 48.7620761141,
-    "longitude": -64.2634206615,
-    "area": "Gaspésie–Îles-de-la-Madeleine, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/380107684",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-24T14:30:00Z",
-    "notable": true
   },
   {
     "id": "2026-06-23-cape-pillar-au-humpback-01",
@@ -3696,25 +3466,6 @@
     ],
     "observedAt": "2026-06-22T20:08:20Z",
     "seasonalStatus": "Salish Sea (SRKW range)"
-  },
-  {
-    "id": "2026-06-22-kenai-peninsula-coun-fin-01",
-    "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by flammulated.",
-    "date": "2026-06-22",
-    "latitude": 59.8878304606,
-    "longitude": -149.2957639509,
-    "area": "Kenai Peninsula County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/376610162",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-22T19:06:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/688607282/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Noah Strycker, some rights reserved (CC BY-NC)",
-    "notable": true
   },
   {
     "id": "2026-06-22-western-cape-blue-01",
@@ -4604,21 +4355,6 @@
     "notable": true
   },
   {
-    "id": "2026-06-18-kenai-peninsula-coun-fin-01",
-    "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by vickie77817.",
-    "date": "2026-06-18",
-    "latitude": 59.7752420227,
-    "longitude": -150.02325732,
-    "area": "Kenai Peninsula County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/373373187",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-06-18-syltefjordstauran-sy-humpback-06",
     "name": "Humpback sighting (Syltefjordstauran, Syltefjordstauran IBA, Båtsfjord, Fi)",
     "species": "Humpback",
@@ -4686,44 +4422,6 @@
     ],
     "observedAt": "2026-06-18T11:59:00Z",
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-17-st-lawrence-river-es-fin-01",
-    "name": "Fin Whale sighting (St. Lawrence River / Estuary, Canada)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by irinabadell.",
-    "date": "2026-06-17",
-    "latitude": 48.3076766984,
-    "longitude": -69.1476019656,
-    "area": "St. Lawrence River / Estuary, Canada",
-    "source": "https://www.inaturalist.org/observations/372795427",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-18T01:03:30Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/681249299/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Irina Badell, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-06-17-kenai-peninsula-coun-fin-02",
-    "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by silversea_starsong.",
-    "date": "2026-06-17",
-    "latitude": 59.8787438796,
-    "longitude": -149.5700817779,
-    "area": "Kenai Peninsula County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/372842292",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-18T00:13:33Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/688169308/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Bailey, some rights reserved (CC BY-NC)",
-    "notable": true
   },
   {
     "id": "2026-06-17-sitka-sound-sitka-ak-gray-01",
@@ -4980,25 +4678,6 @@
     "notable": true
   },
   {
-    "id": "2026-06-16-kenai-peninsula-coun-fin-01",
-    "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by elandry.",
-    "date": "2026-06-16",
-    "latitude": 59.6966605571,
-    "longitude": -149.613663735,
-    "area": "Kenai Peninsula County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/372477176",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-16T18:47:12Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/680640334/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) elandry, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-06-16-capital-bc-ca-gray-02",
     "name": "Gray Whale sighting (Capital, BC, CA)",
     "species": "Gray Whale",
@@ -5126,6 +4805,25 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/680877602/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Sue Johnston, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-06-15-dominica-caribbean-sperm-01",
+    "name": "Sperm whale sighting (Dominica, Caribbean (iNaturalist))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by barrindc.",
+    "date": "2026-06-15",
+    "latitude": 15.5127758515,
+    "longitude": -61.4830907045,
+    "area": "Dominica, Caribbean (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/373290009",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-06-15T22:12:52Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/682188696/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) barrindc, some rights reserved (CC BY-NC)",
+    "notable": true
   },
   {
     "id": "2026-06-15-v-gan-municipality-n-orca-01",
