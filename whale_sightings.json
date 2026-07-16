@@ -1,6 +1,25 @@
 [
   {
-    "id": "2026-07-16-bremer-canyon-orca-01",
+    "id": "2026-07-16-sitka-ak-us-orca-01",
+    "name": "Orca sighting (Sitka, AK, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by oxydoras.",
+    "date": "2026-07-16",
+    "latitude": 57.7515025052,
+    "longitude": -134.8886641328,
+    "area": "Sitka, AK, US",
+    "source": "https://www.inaturalist.org/observations/382001958",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-16T19:25:54Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699033302/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) oxydoras, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-bremer-canyon-orca-02",
     "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
     "species": "Orca",
     "info": "Parsed from whale_watch_wa on 2026-07-16.",
@@ -49,7 +68,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-07-16-bay-of-fundy-orca-02",
+    "id": "2026-07-16-bay-of-fundy-orca-03",
     "name": "Orca sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Orca",
     "info": "Parsed from brier_island_whale_sightings on 2026-07-16.",
@@ -571,6 +590,25 @@
     "notable": true
   },
   {
+    "id": "2026-07-13-notre-dame-des-sept--fin-02",
+    "name": "Fin Whale sighting (Notre-Dame-des-Sept-Douleurs, QC, CA)",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by sarah_michel.",
+    "date": "2026-07-13",
+    "latitude": 48.1997928475,
+    "longitude": -69.4959020332,
+    "area": "Notre-Dame-des-Sept-Douleurs, QC, CA",
+    "source": "https://www.inaturalist.org/observations/381268926",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-14T03:55:03Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/697614075/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) SARAH MICHEL, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-07-13-arcata-ca-95521-usa-humpback-01",
     "name": "Humpback sighting (Arcata, CA 95521, USA)",
     "species": "Humpback",
@@ -904,6 +942,25 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/697529319/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-07-13-sarah-baartman-distr-humpback-12",
+    "name": "Humpback sighting (Sarah Baartman District Municipality, South Africa)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by johuisamen.",
+    "date": "2026-07-13",
+    "latitude": -34.0610237988,
+    "longitude": 23.9823815345,
+    "area": "Sarah Baartman District Municipality, South Africa",
+    "source": "https://www.inaturalist.org/observations/382020776",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-13T08:51:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699069531/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Johan Huisamen, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -1366,6 +1423,38 @@
       "reported"
     ],
     "observedAt": "2026-07-11T15:02:58Z",
+    "notable": true
+  },
+  {
+    "id": "2026-07-11-tadoussac-qc-ca-fin-01",
+    "name": "Fin Whale sighting (Tadoussac, QC, CA)",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by dpri.",
+    "date": "2026-07-11",
+    "latitude": 48.1328712181,
+    "longitude": -69.6731746613,
+    "area": "Tadoussac, QC, CA",
+    "source": "https://www.inaturalist.org/observations/381141963",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-11T14:31:33Z",
+    "notable": true
+  },
+  {
+    "id": "2026-07-11-tadoussac-qc-ca-fin-02",
+    "name": "Fin Whale sighting (Tadoussac, QC, CA)",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by dpri.",
+    "date": "2026-07-11",
+    "latitude": 48.1309421546,
+    "longitude": -69.6848282409,
+    "area": "Tadoussac, QC, CA",
+    "source": "https://www.inaturalist.org/observations/381142143",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-11T14:13:58Z",
     "notable": true
   },
   {
@@ -2945,22 +3034,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-01-kagoshima-jp-sperm-01",
-    "name": "Sperm whale sighting (Kagoshima, JP)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by makopisces.",
-    "date": "2026-07-01",
-    "latitude": 28.2821585853,
-    "longitude": 129.5137531164,
-    "area": "Kagoshima, JP",
-    "source": "https://www.inaturalist.org/observations/378299935",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-02T03:45:49Z",
-    "notable": true
-  },
-  {
     "id": "2026-07-01-kenai-peninsula-coun-fin-01",
     "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
     "species": "Fin Whale",
@@ -3116,7 +3189,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-01-alaska-united-states-sperm-02",
+    "id": "2026-07-01-alaska-united-states-sperm-01",
     "name": "Sperm whale sighting (Alaska, United States)",
     "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-07-01. Source: Happywhale.com.",
@@ -3915,6 +3988,44 @@
     "notable": true
   },
   {
+    "id": "2026-06-27-svalbard-humpback-04",
+    "name": "Humpback sighting (Svalbard (iNaturalist))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by belyykit.",
+    "date": "2026-06-27",
+    "latitude": 75.291336,
+    "longitude": 15.3953209999,
+    "area": "Svalbard (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/382008330",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-06-27T15:59:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699036726/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-27-svalbard-humpback-05",
+    "name": "Humpback sighting (Svalbard (iNaturalist))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by belyykit.",
+    "date": "2026-06-27",
+    "latitude": 75.291336,
+    "longitude": 15.3953209999,
+    "area": "Svalbard (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/382008320",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-06-27T15:57:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699036718/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
     "id": "2026-06-27-pacific-northwest-na-gray-02",
     "name": "Gray Whale sighting (Pacific Northwest National Scenic Trail, WA, US)",
     "species": "Gray Whale",
@@ -3951,7 +4062,121 @@
     "photoAttribution": "(c) Chase Lemmon, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-06-27-oceano-atl-ntico-rj--humpback-04",
+    "id": "2026-06-27-svalbard-humpback-06",
+    "name": "Humpback sighting (Svalbard (iNaturalist))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by belyykit.",
+    "date": "2026-06-27",
+    "latitude": 75.180374,
+    "longitude": 15.521747,
+    "area": "Svalbard (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/382008306",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-06-27T15:06:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699036701/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-27-svalbard-humpback-07",
+    "name": "Humpback sighting (Svalbard (iNaturalist))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by belyykit.",
+    "date": "2026-06-27",
+    "latitude": 75.180374,
+    "longitude": 15.521747,
+    "area": "Svalbard (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/382008304",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-06-27T15:06:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699036696/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-27-svalbard-humpback-08",
+    "name": "Humpback sighting (Svalbard (iNaturalist))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by belyykit.",
+    "date": "2026-06-27",
+    "latitude": 74.628685,
+    "longitude": 16.131018,
+    "area": "Svalbard (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/382008294",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-06-27T13:55:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699036681/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-27-svalbard-humpback-09",
+    "name": "Humpback sighting (Svalbard (iNaturalist))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by belyykit.",
+    "date": "2026-06-27",
+    "latitude": 74.628685,
+    "longitude": 16.131018,
+    "area": "Svalbard (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/382008290",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-06-27T13:55:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699036674/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-27-svalbard-humpback-10",
+    "name": "Humpback sighting (Svalbard (iNaturalist))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by belyykit.",
+    "date": "2026-06-27",
+    "latitude": 74.520088,
+    "longitude": 16.2407,
+    "area": "Svalbard (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/382008287",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-06-27T13:35:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699036655/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-27-svalbard-humpback-11",
+    "name": "Humpback sighting (Svalbard (iNaturalist))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by belyykit.",
+    "date": "2026-06-27",
+    "latitude": 74.520088,
+    "longitude": 16.2407,
+    "area": "Svalbard (iNaturalist)",
+    "source": "https://www.inaturalist.org/observations/382008281",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-06-27T13:33:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699036651/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-27-oceano-atl-ntico-rj--humpback-12",
     "name": "Humpback sighting (Oceano Atlântico, RJ, BR)",
     "species": "Humpback",
     "info": "iNaturalist observation by joaoquental.",
@@ -3970,7 +4195,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-27-svalbard-humpback-05",
+    "id": "2026-06-27-svalbard-humpback-13",
     "name": "Humpback sighting (Svalbard (iNaturalist))",
     "species": "Humpback",
     "info": "iNaturalist observation by belyykit.",
@@ -3978,145 +4203,12 @@
     "latitude": 74.457138,
     "longitude": 16.320177,
     "area": "Svalbard (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/380626960",
+    "source": "https://www.inaturalist.org/observations/382008274",
     "behaviors": [
       "reported"
     ],
-    "observedAt": "2026-06-27T13:01:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/696361410/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-27-svalbard-humpback-06",
-    "name": "Humpback sighting (Svalbard (iNaturalist))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by belyykit.",
-    "date": "2026-06-27",
-    "latitude": 74.457138,
-    "longitude": 16.320177,
-    "area": "Svalbard (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/380626959",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-27T13:00:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/696361399/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-27-svalbard-humpback-07",
-    "name": "Humpback sighting (Svalbard (iNaturalist))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by belyykit.",
-    "date": "2026-06-27",
-    "latitude": 74.457138,
-    "longitude": 16.320177,
-    "area": "Svalbard (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/380626958",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-27T12:51:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/696361394/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-27-svalbard-humpback-08",
-    "name": "Humpback sighting (Svalbard (iNaturalist))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by belyykit.",
-    "date": "2026-06-27",
-    "latitude": 74.258179,
-    "longitude": 16.570948,
-    "area": "Svalbard (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/380626953",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-27T12:49:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/696361388/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-27-svalbard-humpback-09",
-    "name": "Humpback sighting (Svalbard (iNaturalist))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by belyykit.",
-    "date": "2026-06-27",
-    "latitude": 74.258179,
-    "longitude": 16.570948,
-    "area": "Svalbard (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/380626951",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-27T12:49:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/696361387/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-27-svalbard-humpback-10",
-    "name": "Humpback sighting (Svalbard (iNaturalist))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by belyykit.",
-    "date": "2026-06-27",
-    "latitude": 74.258179,
-    "longitude": 16.570948,
-    "area": "Svalbard (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/380626950",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-27T12:49:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/696361375/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-27-svalbard-humpback-11",
-    "name": "Humpback sighting (Svalbard (iNaturalist))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by belyykit.",
-    "date": "2026-06-27",
-    "latitude": 74.258179,
-    "longitude": 16.570948,
-    "area": "Svalbard (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/380626949",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-27T12:45:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/696361370/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-27-svalbard-humpback-12",
-    "name": "Humpback sighting (Svalbard (iNaturalist))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by belyykit.",
-    "date": "2026-06-27",
-    "latitude": 74.044533,
-    "longitude": 16.801853,
-    "area": "Svalbard (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/380626943",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-27T11:59:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/696361352/medium.jpg",
+    "observedAt": "2026-06-27T13:17:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699036627/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
@@ -4686,6 +4778,22 @@
     "notable": true
   },
   {
+    "id": "2026-06-24-gasp-sie-les-de-la-m-fin-02",
+    "name": "Fin Whale sighting (Gaspésie–Îles-de-la-Madeleine, QC, Canada)",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by sgiriens.",
+    "date": "2026-06-24",
+    "latitude": 48.7620761141,
+    "longitude": -64.2634206615,
+    "area": "Gaspésie–Îles-de-la-Madeleine, QC, Canada",
+    "source": "https://www.inaturalist.org/observations/380107684",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-06-24T14:30:00Z",
+    "notable": true
+  },
+  {
     "id": "2026-06-23-cape-pillar-au-humpback-01",
     "name": "Humpback sighting (Cape Pillar, AU)",
     "species": "Humpback",
@@ -4787,9 +4895,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-23-bahia-brazil-blue-02",
-    "name": "Blue Whale sighting (Bahia, Brazil)",
-    "species": "Blue Whale",
+    "id": "2026-06-23-bahia-brazil-sperm-01",
+    "name": "Sperm whale sighting (Bahia, Brazil)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Common bottlenose dolphin in South Atlantic Ocean (1 individuals). Observed 2026-06-23. Source: Happywhale.com.",
     "date": "2026-06-23",
     "latitude": -14.774717,
@@ -4802,9 +4910,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-23-bahia-brazil-sperm-01",
-    "name": "Sperm whale sighting (Bahia, Brazil)",
-    "species": "Sperm whale",
+    "id": "2026-06-23-bahia-brazil-blue-02",
+    "name": "Blue Whale sighting (Bahia, Brazil)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Common bottlenose dolphin in South Atlantic Ocean (1 individuals). Observed 2026-06-23. Source: Happywhale.com.",
     "date": "2026-06-23",
     "latitude": -14.774717,
@@ -5200,9 +5308,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-22-new-south-wales-aust-blue-02",
-    "name": "Blue Whale sighting (New South Wales, Australia)",
-    "species": "Blue Whale",
+    "id": "2026-06-22-new-south-wales-aust-sperm-02",
+    "name": "Sperm whale sighting (New South Wales, Australia)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-06-22. Source: Happywhale.com.",
     "date": "2026-06-22",
     "latitude": -28.535127,
@@ -5215,9 +5323,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-22-new-south-wales-aust-sperm-02",
-    "name": "Sperm whale sighting (New South Wales, Australia)",
-    "species": "Sperm whale",
+    "id": "2026-06-22-new-south-wales-aust-blue-02",
+    "name": "Blue Whale sighting (New South Wales, Australia)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-06-22. Source: Happywhale.com.",
     "date": "2026-06-22",
     "latitude": -28.535127,
@@ -5889,9 +5997,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-20-bahia-brazil-blue-04",
-    "name": "Blue Whale sighting (Bahia, Brazil)",
-    "species": "Blue Whale",
+    "id": "2026-06-20-bahia-brazil-sperm-01",
+    "name": "Sperm whale sighting (Bahia, Brazil)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
     "date": "2026-06-20",
     "latitude": -17.95,
@@ -5904,9 +6012,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-20-bahia-brazil-sperm-01",
-    "name": "Sperm whale sighting (Bahia, Brazil)",
-    "species": "Sperm whale",
+    "id": "2026-06-20-bahia-brazil-blue-04",
+    "name": "Blue Whale sighting (Bahia, Brazil)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
     "date": "2026-06-20",
     "latitude": -17.95,
@@ -6507,9 +6615,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-19-newfoundland-and-lab-blue-07",
-    "name": "Blue Whale sighting (Newfoundland and Labrador, Canada)",
-    "species": "Blue Whale",
+    "id": "2026-06-19-newfoundland-and-lab-sperm-01",
+    "name": "Sperm whale sighting (Newfoundland and Labrador, Canada)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-06-19. Source: Happywhale.com.",
     "date": "2026-06-19",
     "latitude": 48.23,
@@ -6522,9 +6630,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-19-newfoundland-and-lab-sperm-01",
-    "name": "Sperm whale sighting (Newfoundland and Labrador, Canada)",
-    "species": "Sperm whale",
+    "id": "2026-06-19-newfoundland-and-lab-blue-07",
+    "name": "Blue Whale sighting (Newfoundland and Labrador, Canada)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-06-19. Source: Happywhale.com.",
     "date": "2026-06-19",
     "latitude": 48.23,
@@ -6873,9 +6981,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-18-australian-capital-t-blue-01",
-    "name": "Blue Whale sighting (Australian Capital Territory, Australia)",
-    "species": "Blue Whale",
+    "id": "2026-06-18-australian-capital-t-sperm-01",
+    "name": "Sperm whale sighting (Australian Capital Territory, Australia)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-06-18. Source: Happywhale.com.",
     "date": "2026-06-18",
     "latitude": -35.203763,
@@ -6889,9 +6997,9 @@
     "notable": true
   },
   {
-    "id": "2026-06-18-australian-capital-t-sperm-01",
-    "name": "Sperm whale sighting (Australian Capital Territory, Australia)",
-    "species": "Sperm whale",
+    "id": "2026-06-18-australian-capital-t-blue-01",
+    "name": "Blue Whale sighting (Australian Capital Territory, Australia)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-06-18. Source: Happywhale.com.",
     "date": "2026-06-18",
     "latitude": -35.203763,
@@ -7080,7 +7188,26 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-06-17-kenai-peninsula-coun-fin-01",
+    "id": "2026-06-17-st-lawrence-river-es-fin-01",
+    "name": "Fin Whale sighting (St. Lawrence River / Estuary, Canada)",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by irinabadell.",
+    "date": "2026-06-17",
+    "latitude": 48.3076766984,
+    "longitude": -69.1476019656,
+    "area": "St. Lawrence River / Estuary, Canada",
+    "source": "https://www.inaturalist.org/observations/372795427",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-06-18T01:03:30Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/681249299/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Irina Badell, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-06-17-kenai-peninsula-coun-fin-02",
     "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
     "species": "Fin Whale",
     "info": "iNaturalist observation by silversea_starsong.",
@@ -7148,7 +7275,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-17-avannaata-greenland-fin-02",
+    "id": "2026-06-17-avannaata-greenland-fin-03",
     "name": "Fin Whale sighting (Avannaata, Greenland)",
     "species": "Fin Whale",
     "info": "OBIS record from Happywhale - Fin whale in Arctic Ocean (1 individuals). Observed 2026-06-17. Source: Happywhale.com.",
@@ -7298,7 +7425,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-17-northeast-iceland-fin-03",
+    "id": "2026-06-17-northeast-iceland-fin-04",
     "name": "Fin Whale sighting (Northeast, Iceland)",
     "species": "Fin Whale",
     "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-06-17. Source: Happywhale.com.",
@@ -7313,7 +7440,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-17-british-columbia-can-fin-04",
+    "id": "2026-06-17-british-columbia-can-fin-05",
     "name": "Fin Whale sighting (British Columbia, Canada)",
     "species": "Fin Whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-17. Source: Happywhale.com.",
