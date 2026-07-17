@@ -208,6 +208,25 @@
     "notable": true
   },
   {
+    "id": "2026-07-16-aleutians-east-count-fin-01",
+    "name": "Fin Whale sighting (Aleutians East County, US-AK, US)",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by griffin_0015.",
+    "date": "2026-07-16",
+    "latitude": 55.3762626112,
+    "longitude": -160.2528380103,
+    "area": "Aleutians East County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/382420187",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-17T02:34:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699835126/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) griffin_0015, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-07-16-moss-landing-ca-9503-humpback-03",
     "name": "Humpback sighting (Moss Landing, CA 95039, USA)",
     "species": "Humpback",
@@ -7314,21 +7333,6 @@
     "notable": true
   },
   {
-    "id": "2026-06-18-california-united-st-blue-02",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-18. Source: Happywhale.com.",
-    "date": "2026-06-18",
-    "latitude": 36.760093,
-    "longitude": -121.98436,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/673747",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-06-18-vads-humpback-06",
     "name": "Humpback sighting (Vadsø)",
     "species": "Humpback",
@@ -7357,6 +7361,21 @@
       "reported"
     ],
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-18-california-united-st-blue-02",
+    "name": "Blue Whale sighting (California, United States)",
+    "species": "Blue Whale",
+    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-18. Source: Happywhale.com.",
+    "date": "2026-06-18",
+    "latitude": 36.760093,
+    "longitude": -121.98436,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/673747",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
   },
   {
     "id": "2026-06-18-vargas-island-albern-gray-04",
@@ -7695,6 +7714,51 @@
     "notable": true
   },
   {
+    "id": "2026-06-17-northeast-iceland-humpback-04",
+    "name": "Humpback sighting (Northeast, Iceland)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-06-17. Source: Happywhale.com.",
+    "date": "2026-06-17",
+    "latitude": 66.139533,
+    "longitude": -17.681433,
+    "area": "Northeast, Iceland",
+    "source": "https://obis.org/occurrence/674943",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-17-finnmark-humpback-05",
+    "name": "Humpback sighting (Finnmark)",
+    "species": "Humpback",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-17.",
+    "date": "2026-06-17",
+    "latitude": 70.740986,
+    "longitude": 29.275028,
+    "area": "Finnmark",
+    "source": "https://www.gbif.org/occurrence/6413134667",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-17-ny-lesund-humpback-06",
+    "name": "Humpback sighting (Ny-Ålesund)",
+    "species": "Humpback",
+    "info": "GBIF record from GBIF. Observed 2026-06-17.",
+    "date": "2026-06-17",
+    "latitude": 78.945629,
+    "longitude": 11.933625,
+    "area": "Ny-Ålesund",
+    "source": "https://www.gbif.org/occurrence/6411761788",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
     "id": "2026-06-17-california-united-st-blue-01",
     "name": "Blue Whale sighting (California, United States)",
     "species": "Blue Whale",
@@ -7753,50 +7817,5 @@
       "reported"
     ],
     "notable": true
-  },
-  {
-    "id": "2026-06-17-northeast-iceland-humpback-04",
-    "name": "Humpback sighting (Northeast, Iceland)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-06-17. Source: Happywhale.com.",
-    "date": "2026-06-17",
-    "latitude": 66.139533,
-    "longitude": -17.681433,
-    "area": "Northeast, Iceland",
-    "source": "https://obis.org/occurrence/674943",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-17-finnmark-humpback-05",
-    "name": "Humpback sighting (Finnmark)",
-    "species": "Humpback",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-17.",
-    "date": "2026-06-17",
-    "latitude": 70.740986,
-    "longitude": 29.275028,
-    "area": "Finnmark",
-    "source": "https://www.gbif.org/occurrence/6413134667",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-17-ny-lesund-humpback-06",
-    "name": "Humpback sighting (Ny-Ålesund)",
-    "species": "Humpback",
-    "info": "GBIF record from GBIF. Observed 2026-06-17.",
-    "date": "2026-06-17",
-    "latitude": 78.945629,
-    "longitude": 11.933625,
-    "area": "Ny-Ålesund",
-    "source": "https://www.gbif.org/occurrence/6411761788",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
   }
 ]
