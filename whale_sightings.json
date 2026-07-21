@@ -1,10 +1,10 @@
 [
   {
-    "id": "2026-07-20-bremer-canyon-orca-01",
+    "id": "2026-07-21-bremer-canyon-orca-01",
     "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
     "species": "Orca",
-    "info": "Parsed from whale_watch_wa on 2026-07-20.",
-    "date": "2026-07-20",
+    "info": "Parsed from whale_watch_wa on 2026-07-21.",
+    "date": "2026-07-21",
     "latitude": -34.7,
     "longitude": 119.9,
     "area": "Bremer Canyon (offshore), WA, Australia",
@@ -16,11 +16,11 @@
     "seasonalStatus": "Bremer Canyon, Australia"
   },
   {
-    "id": "2026-07-20-bremer-canyon-blue-01",
+    "id": "2026-07-21-bremer-canyon-blue-01",
     "name": "Blue Whale sighting (Bremer Canyon (offshore), WA, Australia)",
     "species": "Blue Whale",
-    "info": "Parsed from whale_watch_wa on 2026-07-20.",
-    "date": "2026-07-20",
+    "info": "Parsed from whale_watch_wa on 2026-07-21.",
+    "date": "2026-07-21",
     "latitude": -34.7,
     "longitude": 119.9,
     "area": "Bremer Canyon (offshore), WA, Australia",
@@ -32,11 +32,11 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-bay-of-fundy-humpback-01",
+    "id": "2026-07-21-bay-of-fundy-humpback-01",
     "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Humpback",
-    "info": "Parsed from brier_island_whale_sightings on 2026-07-20.",
-    "date": "2026-07-20",
+    "info": "Parsed from brier_island_whale_sightings on 2026-07-21.",
+    "date": "2026-07-21",
     "latitude": 44.26,
     "longitude": -66.42,
     "area": "Bay of Fundy (offshore), NS, Canada",
@@ -49,11 +49,11 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-07-20-bay-of-fundy-orca-02",
+    "id": "2026-07-21-bay-of-fundy-orca-02",
     "name": "Orca sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Orca",
-    "info": "Parsed from brier_island_whale_sightings on 2026-07-20.",
-    "date": "2026-07-20",
+    "info": "Parsed from brier_island_whale_sightings on 2026-07-21.",
+    "date": "2026-07-21",
     "latitude": 44.26,
     "longitude": -66.42,
     "area": "Bay of Fundy (offshore), NS, Canada",
@@ -66,7 +66,42 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-southern-gulf-island-humpback-02",
+    "id": "2026-07-20-cape-schanck-vic-393-humpback-01",
+    "name": "Humpback sighting (Cape Schanck VIC 3939, Australia)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by andzcee.",
+    "date": "2026-07-20",
+    "latitude": -38.4937618733,
+    "longitude": 144.8850928643,
+    "area": "Cape Schanck VIC 3939, Australia",
+    "source": "https://www.inaturalist.org/observations/383539365",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-21T03:04:00Z",
+    "notable": true
+  },
+  {
+    "id": "2026-07-20-ak-us-humpback-02",
+    "name": "Humpback sighting (AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by theshipnaturalist.",
+    "date": "2026-07-20",
+    "latitude": 55.4007429791,
+    "longitude": -131.7638703612,
+    "area": "AK, US",
+    "source": "https://www.inaturalist.org/observations/383525089",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-21T00:16:46Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701966618/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Rob Raincock, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-07-20-southern-gulf-island-humpback-03",
     "name": "Humpback sighting (Southern Gulf Islands, BC, CA)",
     "species": "Humpback",
     "info": "iNaturalist observation by magman.",
@@ -82,7 +117,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-s-dafrika-humpback-03",
+    "id": "2026-07-20-s-dafrika-humpback-04",
     "name": "Humpback sighting (Südafrika)",
     "species": "Humpback",
     "info": "iNaturalist observation by malte_kroemer.",
@@ -100,7 +135,23 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-campbell-river-bc-ca-orca-03",
+    "id": "2026-07-20-kenai-peninsula-coun-humpback-05",
+    "name": "Humpback sighting (Kenai Peninsula County, US-AK, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by kng2026.",
+    "date": "2026-07-20",
+    "latitude": 59.891620636,
+    "longitude": -149.3533630371,
+    "area": "Kenai Peninsula County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/383526589",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-20T18:51:04Z",
+    "notable": true
+  },
+  {
+    "id": "2026-07-20-campbell-river-bc-ca-orca-01",
     "name": "Orca sighting (Campbell River, BC, CA)",
     "species": "Orca",
     "info": "iNaturalist observation by keabelle.",
@@ -135,7 +186,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-moose-point-state-pa-humpback-04",
+    "id": "2026-07-20-moose-point-state-pa-humpback-06",
     "name": "Humpback sighting (Moose Point State Park, Searsport, ME, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by kbeams87.",
@@ -154,7 +205,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-07-20-western-cape-za-humpback-05",
+    "id": "2026-07-20-western-cape-za-humpback-07",
     "name": "Humpback sighting (Western Cape, ZA)",
     "species": "Humpback",
     "info": "iNaturalist observation by markbrownsa.",
@@ -189,7 +240,39 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-eyjafjordur-humpback-06",
+    "id": "2026-07-20-byron-bay-nsw-2481-a-humpback-08",
+    "name": "Humpback sighting (Byron Bay NSW 2481, Australia)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jolie5.",
+    "date": "2026-07-20",
+    "latitude": -28.622182300000002,
+    "longitude": 153.6108065,
+    "area": "Byron Bay NSW 2481, Australia",
+    "source": "https://www.inaturalist.org/observations/383541124",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-20T08:56:00Z",
+    "notable": true
+  },
+  {
+    "id": "2026-07-20-byron-bay-nsw-2481-a-humpback-09",
+    "name": "Humpback sighting (Byron Bay NSW 2481, Australia)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jolie5.",
+    "date": "2026-07-20",
+    "latitude": -28.622182300000002,
+    "longitude": 153.6108065,
+    "area": "Byron Bay NSW 2481, Australia",
+    "source": "https://www.inaturalist.org/observations/383541123",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-20T08:46:00Z",
+    "notable": true
+  },
+  {
+    "id": "2026-07-20-eyjafjordur-humpback-10",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-07-20.",
@@ -204,7 +287,26 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-19-australia-humpback-01",
+    "id": "2026-07-19-las-playas-acapulco--humpback-01",
+    "name": "Humpback sighting (Las Playas, Acapulco de Juárez, Gro., México)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by spinomareleuterio.",
+    "date": "2026-07-19",
+    "latitude": 16.8076737259,
+    "longitude": -99.9144426361,
+    "area": "Las Playas, Acapulco de Juárez, Gro., México",
+    "source": "https://www.inaturalist.org/observations/383533845",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-20T04:57:04Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701983504/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) spinomareleuterio, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-07-19-australia-humpback-02",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "iNaturalist observation by good_username.",
@@ -223,7 +325,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-19-australia-humpback-02",
+    "id": "2026-07-19-australia-humpback-03",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "iNaturalist observation by good_username.",
@@ -242,7 +344,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-19-garden-route-distric-humpback-03",
+    "id": "2026-07-19-garden-route-distric-humpback-04",
     "name": "Humpback sighting (Garden Route District Municipality, South Africa)",
     "species": "Humpback",
     "info": "iNaturalist observation by emaitken99.",
@@ -261,7 +363,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-19-saginaw-channel-june-humpback-04",
+    "id": "2026-07-19-saginaw-channel-june-humpback-05",
     "name": "Humpback sighting (Saginaw Channel, Juneau, AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by govatski.",
@@ -280,7 +382,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-19-juneau-ak-us-humpback-05",
+    "id": "2026-07-19-juneau-ak-us-humpback-06",
     "name": "Humpback sighting (Juneau, AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by naturemamaof3.",
@@ -299,7 +401,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-19-south-pacific-ocean--humpback-06",
+    "id": "2026-07-19-south-pacific-ocean--humpback-07",
     "name": "Humpback sighting (South Pacific Ocean, Sydney area, NSW, Australia)",
     "species": "Humpback",
     "info": "iNaturalist observation by trebouxia.",
@@ -318,7 +420,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-19-aleutians-east-borou-humpback-07",
+    "id": "2026-07-19-aleutians-east-borou-humpback-08",
     "name": "Humpback sighting (Aleutians East Borough, AK, USA)",
     "species": "Humpback",
     "info": "iNaturalist observation by dan32748.",
@@ -350,82 +452,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701180458/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Finn K, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-19-california-us-humpback-08",
-    "name": "Humpback sighting (California, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by intricate_nautilus.",
-    "date": "2026-07-19",
-    "latitude": 36.8119671117,
-    "longitude": -121.8678067625,
-    "area": "California, US",
-    "source": "https://www.inaturalist.org/observations/383457842",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-19T21:03:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701834577/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) intricate_nautilus, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-19-california-us-humpback-09",
-    "name": "Humpback sighting (California, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by intricate_nautilus.",
-    "date": "2026-07-19",
-    "latitude": 36.8149666929,
-    "longitude": -121.868770346,
-    "area": "California, US",
-    "source": "https://www.inaturalist.org/observations/383454997",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-19T20:56:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701829579/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) intricate_nautilus, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-19-monterey-county-ca-u-humpback-10",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by intricate_nautilus.",
-    "date": "2026-07-19",
-    "latitude": 36.8073876586,
-    "longitude": -121.8830799311,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/383453870",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-19T20:35:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701827524/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) intricate_nautilus, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-19-mount-waddington-bc--humpback-11",
-    "name": "Humpback sighting (Mount Waddington, BC, CA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by ariwilkins.",
-    "date": "2026-07-19",
-    "latitude": 50.898941268,
-    "longitude": -126.88851866,
-    "area": "Mount Waddington, BC, CA",
-    "source": "https://www.inaturalist.org/observations/383428196",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-19T20:25:10Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701778879/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) ariwilkins, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -465,7 +491,7 @@
     "photoAttribution": "(c) mountainseekerii, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-07-19-atlantic-ocean-rs-br-humpback-12",
+    "id": "2026-07-19-atlantic-ocean-rs-br-humpback-09",
     "name": "Humpback sighting (Atlantic Ocean, RS, BR)",
     "species": "Humpback",
     "info": "iNaturalist observation by zarjasmolic.",
@@ -500,7 +526,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-19-eyjafjordur-humpback-13",
+    "id": "2026-07-19-eyjafjordur-humpback-10",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-07-19.",
@@ -1171,63 +1197,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-15-pelagos-sanctuary-me-fin-01",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by sylvieomnes.",
-    "date": "2026-07-15",
-    "latitude": 43.5592827813,
-    "longitude": 7.3092345331,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/381942145",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-15T09:45:36Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/698922958/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sylvie Omnès, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
-    "id": "2026-07-15-pelagos-sanctuary-me-fin-02",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by sylvieomnes.",
-    "date": "2026-07-15",
-    "latitude": 43.3162755386,
-    "longitude": 7.0767353877,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/381940886",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-15T08:41:45Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/698920295/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sylvie Omnès, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
-    "id": "2026-07-15-pelagos-sanctuary-me-fin-03",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by sylvieomnes.",
-    "date": "2026-07-15",
-    "latitude": 43.5369762961,
-    "longitude": 7.0646811183,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/381940168",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-15T08:33:33Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/698918658/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sylvie Omnès, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
     "id": "2026-07-15-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -1332,25 +1301,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/697978000/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) alltheanimals, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-07-14-pelagos-sanctuary-me-fin-01",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by mathieuuuu.",
-    "date": "2026-07-14",
-    "latitude": 42.7341588742,
-    "longitude": 5.7058540711,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/381903977",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-14T17:22:35Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/698850621/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) mathieuuuu, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
   },
   {
     "id": "2026-07-14-washington-us-orca-04",
@@ -1997,26 +1947,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-11-sitka-ak-us-humpback-02",
-    "name": "Humpback sighting (Sitka, AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by oxydoras.",
-    "date": "2026-07-11",
-    "latitude": 56.7832248872,
-    "longitude": -135.5419774473,
-    "area": "Sitka, AK, US",
-    "source": "https://www.inaturalist.org/observations/380343479",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-11T19:23:23Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/698718923/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) oxydoras, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-11-ba-br-humpback-03",
+    "id": "2026-07-11-ba-br-humpback-02",
     "name": "Humpback sighting (BA, BR)",
     "species": "Humpback",
     "info": "iNaturalist observation by marciomotta.",
@@ -2035,7 +1966,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-11-ba-br-humpback-04",
+    "id": "2026-07-11-ba-br-humpback-03",
     "name": "Humpback sighting (BA, BR)",
     "species": "Humpback",
     "info": "iNaturalist observation by marciomotta.",
@@ -2089,7 +2020,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-11-eyjafjordur-humpback-05",
+    "id": "2026-07-11-eyjafjordur-humpback-04",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-07-11.",
@@ -2220,26 +2151,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-10-ba-br-humpback-02",
-    "name": "Humpback sighting (BA, BR)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by marciomotta.",
-    "date": "2026-07-10",
-    "latitude": -17.9558816667,
-    "longitude": -38.7792133333,
-    "area": "BA, BR",
-    "source": "https://www.inaturalist.org/observations/383310832",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-10T19:24:39Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701553019/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Marcio C Motta, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-10-terningen-fyr-hitra--humpback-03",
+    "id": "2026-07-10-terningen-fyr-hitra--humpback-02",
     "name": "Humpback sighting (Terningen fyr, Hitra, Tø)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-07-10.",
@@ -2254,26 +2166,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-10-ba-br-humpback-04",
-    "name": "Humpback sighting (BA, BR)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by marciomotta.",
-    "date": "2026-07-10",
-    "latitude": -17.95662,
-    "longitude": -38.78862,
-    "area": "BA, BR",
-    "source": "https://www.inaturalist.org/observations/383310801",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-10T18:46:47Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701552951/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Marcio C Motta, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-10-oceano-atl-ntico-ba--humpback-05",
+    "id": "2026-07-10-oceano-atl-ntico-ba--humpback-03",
     "name": "Humpback sighting (Oceano Atlântico, BA, BR)",
     "species": "Humpback",
     "info": "iNaturalist observation by marinaleitemarques.",
@@ -2289,63 +2182,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/697757550/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) marinaleitemarques, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-10-ba-br-humpback-06",
-    "name": "Humpback sighting (BA, BR)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by marciomotta.",
-    "date": "2026-07-10",
-    "latitude": -17.9383533333,
-    "longitude": -38.959895,
-    "area": "BA, BR",
-    "source": "https://www.inaturalist.org/observations/383310753",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-10T16:00:59Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701552830/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Marcio C Motta, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-10-ba-br-humpback-07",
-    "name": "Humpback sighting (BA, BR)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by marciomotta.",
-    "date": "2026-07-10",
-    "latitude": -17.9328116667,
-    "longitude": -38.976755,
-    "area": "BA, BR",
-    "source": "https://www.inaturalist.org/observations/383310725",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-10T15:52:04Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701552766/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Marcio C Motta, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-10-ba-br-humpback-08",
-    "name": "Humpback sighting (BA, BR)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by marciomotta.",
-    "date": "2026-07-10",
-    "latitude": -17.8823083333,
-    "longitude": -39.0669305,
-    "area": "BA, BR",
-    "source": "https://www.inaturalist.org/observations/383310667",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-10T13:58:04Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701552626/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Marcio C Motta, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -2367,26 +2203,7 @@
     "photoAttribution": "(c) Liam Hutcheson, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-07-10-ba-br-humpback-09",
-    "name": "Humpback sighting (BA, BR)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by marciomotta.",
-    "date": "2026-07-10",
-    "latitude": -17.8836383333,
-    "longitude": -39.050818,
-    "area": "BA, BR",
-    "source": "https://www.inaturalist.org/observations/383310637",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-10T13:28:58Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701552543/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Marcio C Motta, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-10-eyjafjordur-humpback-10",
+    "id": "2026-07-10-eyjafjordur-humpback-04",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-07-10.",
@@ -2539,25 +2356,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-08-ba-br-humpback-02",
-    "name": "Humpback sighting (BA, BR)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by marciomotta.",
-    "date": "2026-07-08",
-    "latitude": -17.92938,
-    "longitude": -38.9658883333,
-    "area": "BA, BR",
-    "source": "https://www.inaturalist.org/observations/382898806",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-08T18:27:25Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/700758680/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Marcio C Motta, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-07-08-ak-us-orca-01",
     "name": "Orca sighting (AK, US)",
     "species": "Orca",
@@ -2574,7 +2372,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-08-ny-lesund-9173-svalb-humpback-03",
+    "id": "2026-07-08-ny-lesund-9173-svalb-humpback-02",
     "name": "Humpback sighting (Ny-Ålesund 9173, Svalbard and Jan Mayen)",
     "species": "Humpback",
     "info": "iNaturalist observation by philip_precey.",
@@ -2593,7 +2391,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-08-ba-br-humpback-04",
+    "id": "2026-07-08-ba-br-humpback-03",
     "name": "Humpback sighting (BA, BR)",
     "species": "Humpback",
     "info": "iNaturalist observation by marciomotta.",
@@ -2612,7 +2410,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-08-iceland-humpback-05",
+    "id": "2026-07-08-iceland-humpback-04",
     "name": "Humpback sighting (Iceland)",
     "species": "Humpback",
     "info": "iNaturalist observation by melinda45.",
@@ -2820,25 +2618,6 @@
     "observedAt": "2026-07-07T16:52:00Z"
   },
   {
-    "id": "2026-07-07-pelagos-sanctuary-me-fin-01",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by benake.",
-    "date": "2026-07-07",
-    "latitude": 43.4971296502,
-    "longitude": 7.9820865312,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/379212508",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-07T13:18:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/693627590/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Daniel Benák, some rights reserved (CC BY)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
     "id": "2026-07-07-western-cape-za-humpback-05",
     "name": "Humpback sighting (Western Cape, ZA)",
     "species": "Humpback",
@@ -2922,7 +2701,37 @@
     "notable": true
   },
   {
-    "id": "2026-07-06-washington-us-orca-01",
+    "id": "2026-07-06-svalbard-svalbard-an-orca-01",
+    "name": "Orca sighting (Svalbard, Svalbard and Jan Mayen)",
+    "species": "Orca",
+    "info": "OBIS record from Happywhale - Blue whale in Arctic Ocean (1 individuals). Observed 2026-07-06. Source: Happywhale.com.",
+    "date": "2026-07-06",
+    "latitude": 80.866667,
+    "longitude": 16.1,
+    "area": "Svalbard, Svalbard and Jan Mayen",
+    "source": "https://obis.org/occurrence/680287",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-06-svalbard-svalbard-an-blue-01",
+    "name": "Blue Whale sighting (Svalbard, Svalbard and Jan Mayen)",
+    "species": "Blue Whale",
+    "info": "OBIS record from Happywhale - Blue whale in Arctic Ocean (1 individuals). Observed 2026-07-06. Source: Happywhale.com.",
+    "date": "2026-07-06",
+    "latitude": 80.866667,
+    "longitude": 16.1,
+    "area": "Svalbard, Svalbard and Jan Mayen",
+    "source": "https://obis.org/occurrence/680287",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-06-washington-us-orca-02",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
     "info": "iNaturalist observation by danielwalsh2.",
@@ -2970,6 +2779,36 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
+    "id": "2026-07-05-california-united-st-orca-01",
+    "name": "Orca sighting (California, United States)",
+    "species": "Orca",
+    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-07-05. Source: Happywhale.com.",
+    "date": "2026-07-05",
+    "latitude": 37.581263,
+    "longitude": -123.004408,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/680229",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-05-california-united-st-blue-01",
+    "name": "Blue Whale sighting (California, United States)",
+    "species": "Blue Whale",
+    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-07-05. Source: Happywhale.com.",
+    "date": "2026-07-05",
+    "latitude": 37.581263,
+    "longitude": -123.004408,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/680229",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-07-05-clallam-county-olymp-gray-01",
     "name": "Gray Whale sighting (Clallam County, Olympic, Olympic National Park, US-WA, US)",
     "species": "Gray Whale",
@@ -2988,42 +2827,7 @@
     "photoAttribution": "(c) Alana Gonczar, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-07-05-pelagos-sanctuary-me-fin-01",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by benake.",
-    "date": "2026-07-05",
-    "latitude": 43.628280259,
-    "longitude": 8.0491999525,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/378469149",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-05T13:04:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/692191334/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Daniel Benák, some rights reserved (CC BY)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
-    "id": "2026-07-05-pelagos-sanctuary-me-fin-02",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by enrico_carta.",
-    "date": "2026-07-05",
-    "latitude": 43.5156168138,
-    "longitude": 8.1243062662,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/378433972",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-05T12:55:20Z",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
-    "id": "2026-07-05-scotland-gb-orca-01",
+    "id": "2026-07-05-scotland-gb-orca-02",
     "name": "Orca sighting (Scotland, GB)",
     "species": "Orca",
     "info": "iNaturalist observation by julien_roux.",
@@ -3137,60 +2941,6 @@
       "reported"
     ],
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-07-04-pelagos-sanctuary-me-fin-01",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by sebastien_lecomte.",
-    "date": "2026-07-04",
-    "latitude": 43.1117690483,
-    "longitude": 7.2297516798,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/379495197",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-04T18:49:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/694177282/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) sebastien_lecomte, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
-    "id": "2026-07-04-pelagos-sanctuary-me-fin-02",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by juliette_beraud.",
-    "date": "2026-07-04",
-    "latitude": 41.8552263736,
-    "longitude": 8.2462395247,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/378095512",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-04T15:35:21Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/693796713/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Juliette Béraud, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
-    "id": "2026-07-04-pelagos-sanctuary-me-fin-03",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by nicolas_marmet.",
-    "date": "2026-07-04",
-    "latitude": 41.9184395535,
-    "longitude": 8.3410593408,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/378095543",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-04T15:34:15Z",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
   },
   {
     "id": "2026-07-04-711-iceland-humpback-05",
@@ -3638,7 +3388,22 @@
     "notable": true
   },
   {
-    "id": "2026-07-01-alaska-united-states-orca-02",
+    "id": "2026-07-01-global-orca-02",
+    "name": "Orca sighting (Global (GBIF))",
+    "species": "Orca",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-01.",
+    "date": "2026-07-01",
+    "latitude": 43.866917,
+    "longitude": 8.255175,
+    "area": "Global (GBIF)",
+    "source": "https://www.gbif.org/occurrence/6430765912",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-01-alaska-united-states-orca-03",
     "name": "Orca sighting (Alaska, United States)",
     "species": "Orca",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-07-01. Source: Happywhale.com.",
@@ -3653,7 +3418,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-01-alaska-united-states-orca-03",
+    "id": "2026-07-01-alaska-united-states-orca-04",
     "name": "Orca sighting (Alaska, United States)",
     "species": "Orca",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-07-01. Source: Happywhale.com.",
@@ -3803,25 +3568,6 @@
     ],
     "observedAt": "2026-07-01T12:44:00Z",
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-07-01-pelagos-sanctuary-me-fin-04",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by elanzucchetti.",
-    "date": "2026-07-01",
-    "latitude": 43.8669166008,
-    "longitude": 8.2551750153,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/377719306",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-01T12:20:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/690751719/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Elan Zucchetti, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
   },
   {
     "id": "2026-06-30-kaik-ura-7374-new-ze-humpback-01",
@@ -4425,25 +4171,6 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-06-28-pelagos-sanctuary-me-fin-02",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by rasmusmomme.",
-    "date": "2026-06-28",
-    "latitude": 43.5001796794,
-    "longitude": 7.7377105566,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/378329711",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-28T08:14:59Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/691932466/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) rasmusmomme, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
     "id": "2026-06-27-tasmania-australia-humpback-01",
     "name": "Humpback sighting (Tasmania, Australia)",
     "species": "Humpback",
@@ -4479,23 +4206,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-27-pelagos-sanctuary-me-fin-01",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by frank417.",
-    "date": "2026-06-27",
-    "latitude": 42.9569156414,
-    "longitude": 5.5469720128,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/376838331",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-27T19:34:00Z",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
-    "id": "2026-06-27-gims-ysand-nordland--fin-02",
+    "id": "2026-06-27-gims-ysand-nordland--fin-01",
     "name": "Fin Whale sighting (Gimsøysand, Nordland, NO)",
     "species": "Fin Whale",
     "info": "iNaturalist observation by giopapius.",
@@ -4527,6 +4238,21 @@
       "reported"
     ],
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-27-qaasuitsup-orca-02",
+    "name": "Orca sighting (Qaasuitsup)",
+    "species": "Orca",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-27.",
+    "date": "2026-06-27",
+    "latitude": 70.771146,
+    "longitude": -51.992441,
+    "area": "Qaasuitsup",
+    "source": "https://www.gbif.org/occurrence/6431372661",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
   },
   {
     "id": "2026-06-27-alaska-united-states-humpback-03",
@@ -4574,6 +4300,68 @@
     "notable": true
   },
   {
+    "id": "2026-06-27-california-united-st-orca-03",
+    "name": "Orca sighting (California, United States)",
+    "species": "Orca",
+    "info": "OBIS record from Happywhale - Bryde's whale in North Pacific Ocean (1 individuals). Observed 2026-06-27. Source: Happywhale.com.",
+    "date": "2026-06-27",
+    "latitude": 33.492017,
+    "longitude": -117.832157,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/677803",
+    "behaviors": [
+      "reported",
+      "traveling"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-27-california-united-st-orca-04",
+    "name": "Orca sighting (California, United States)",
+    "species": "Orca",
+    "info": "OBIS record from Happywhale - Bryde's whale in North Pacific Ocean (1 individuals). Observed 2026-06-27. Source: Happywhale.com.",
+    "date": "2026-06-27",
+    "latitude": 33.492017,
+    "longitude": -117.832157,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/677804",
+    "behaviors": [
+      "reported",
+      "traveling"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-27-alaska-united-states-orca-05",
+    "name": "Orca sighting (Alaska, United States)",
+    "species": "Orca",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-27. Source: Happywhale.com.",
+    "date": "2026-06-27",
+    "latitude": 58.39,
+    "longitude": -134.88,
+    "area": "Alaska, United States",
+    "source": "https://obis.org/occurrence/679979",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-27-alaska-united-states-sperm-01",
+    "name": "Sperm whale sighting (Alaska, United States)",
+    "species": "Sperm whale",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-27. Source: Happywhale.com.",
+    "date": "2026-06-27",
+    "latitude": 58.39,
+    "longitude": -134.88,
+    "area": "Alaska, United States",
+    "source": "https://obis.org/occurrence/679979",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-06-27-california-united-st-blue-01",
     "name": "Blue Whale sighting (California, United States)",
     "species": "Blue Whale",
@@ -4602,6 +4390,36 @@
     "behaviors": [
       "reported",
       "traveling"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-27-alaska-united-states-blue-03",
+    "name": "Blue Whale sighting (Alaska, United States)",
+    "species": "Blue Whale",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-27. Source: Happywhale.com.",
+    "date": "2026-06-27",
+    "latitude": 58.39,
+    "longitude": -134.88,
+    "area": "Alaska, United States",
+    "source": "https://obis.org/occurrence/679979",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-27-alaska-united-states-fin-02",
+    "name": "Fin Whale sighting (Alaska, United States)",
+    "species": "Fin Whale",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-27. Source: Happywhale.com.",
+    "date": "2026-06-27",
+    "latitude": 58.39,
+    "longitude": -134.88,
+    "area": "Alaska, United States",
+    "source": "https://obis.org/occurrence/679979",
+    "behaviors": [
+      "reported"
     ],
     "notable": true
   },
@@ -4847,25 +4665,6 @@
     "notable": true
   },
   {
-    "id": "2026-06-26-north-pacific-ocean--humpback-02",
-    "name": "Humpback sighting (North Pacific Ocean, AK, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by uncommongallinule.",
-    "date": "2026-06-26",
-    "latitude": 59.5990274464,
-    "longitude": -149.6876124527,
-    "area": "North Pacific Ocean, AK, US",
-    "source": "https://www.inaturalist.org/observations/376968780",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-26T21:49:35Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/689298003/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Kasey Myers, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-06-26-kenai-peninsula-coun-fin-01",
     "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
     "species": "Fin Whale",
@@ -4885,7 +4684,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-26-queensland-humpback-03",
+    "id": "2026-06-26-queensland-humpback-02",
     "name": "Humpback sighting (Queensland)",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-26.",
@@ -4900,7 +4699,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-26-northeast-iceland-humpback-04",
+    "id": "2026-06-26-northeast-iceland-humpback-03",
     "name": "Humpback sighting (Northeast, Iceland)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-06-26. Source: Happywhale.com.",
@@ -4915,7 +4714,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-06-26-skorpesundet-indre-v-humpback-05",
+    "id": "2026-06-26-skorpesundet-indre-v-humpback-04",
     "name": "Humpback sighting (Skorpesundet, Indre Valan, Kvænangen, Tr)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-06-26.",
@@ -4924,6 +4723,21 @@
     "longitude": 21.586471,
     "area": "Skorpesundet, Indre Valan, Kvænangen, Tr",
     "source": "https://www.gbif.org/occurrence/6405678344",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-26-northeast-iceland-humpback-05",
+    "name": "Humpback sighting (Northeast, Iceland)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-06-26. Source: Happywhale.com.",
+    "date": "2026-06-26",
+    "latitude": 66.17025,
+    "longitude": -17.317892,
+    "area": "Northeast, Iceland",
+    "source": "https://obis.org/occurrence/676182",
     "behaviors": [
       "reported"
     ],
@@ -5005,7 +4819,22 @@
     "notable": true
   },
   {
-    "id": "2026-06-26-alaska-orca-06",
+    "id": "2026-06-26-svalbard-and-jan-may-orca-06",
+    "name": "Orca sighting (Svalbard and Jan Mayen)",
+    "species": "Orca",
+    "info": "OBIS record from Happywhale - Blue whale in Arctic Ocean (1 individuals). Observed 2026-06-26. Source: Happywhale.com.",
+    "date": "2026-06-26",
+    "latitude": 78.855556,
+    "longitude": 9.003056,
+    "area": "Svalbard and Jan Mayen",
+    "source": "https://obis.org/occurrence/675893",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-26-alaska-orca-07",
     "name": "Orca sighting (Alaska)",
     "species": "Orca",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-26.",
@@ -5020,7 +4849,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-26-alaska-orca-07",
+    "id": "2026-06-26-alaska-orca-08",
     "name": "Orca sighting (Alaska)",
     "species": "Orca",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-26.",
@@ -5035,7 +4864,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-26-northeast-iceland-orca-08",
+    "id": "2026-06-26-northeast-iceland-orca-09",
     "name": "Orca sighting (Northeast, Iceland)",
     "species": "Orca",
     "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-06-26. Source: Happywhale.com.",
@@ -5110,7 +4939,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-26-nordland-no-orca-09",
+    "id": "2026-06-26-nordland-no-orca-10",
     "name": "Orca sighting (Nordland, NO)",
     "species": "Orca",
     "info": "iNaturalist observation by amahon22.",
@@ -5204,22 +5033,7 @@
     "photoAttribution": "(c) Allison Padilla, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-06-25-california-humpback-02",
-    "name": "Humpback sighting (California)",
-    "species": "Humpback",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-25.",
-    "date": "2026-06-25",
-    "latitude": 38.56629,
-    "longitude": -123.334069,
-    "area": "California",
-    "source": "https://www.gbif.org/occurrence/6422693475",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-25-california-united-st-humpback-03",
+    "id": "2026-06-25-california-united-st-humpback-02",
     "name": "Humpback sighting (California, United States)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-25. Source: Happywhale.com.",
@@ -5228,6 +5042,21 @@
     "longitude": -122.047317,
     "area": "California, United States",
     "source": "https://obis.org/occurrence/676843",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-25-california-humpback-03",
+    "name": "Humpback sighting (California)",
+    "species": "Humpback",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-25.",
+    "date": "2026-06-25",
+    "latitude": 38.56629,
+    "longitude": -123.334069,
+    "area": "California",
+    "source": "https://www.gbif.org/occurrence/6422693475",
     "behaviors": [
       "reported"
     ],
@@ -5390,6 +5219,21 @@
       "reported"
     ],
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-24-alaska-united-states-humpback-04",
+    "name": "Humpback sighting (Alaska, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-24. Source: Happywhale.com.",
+    "date": "2026-06-24",
+    "latitude": 58.37,
+    "longitude": -134.67,
+    "area": "Alaska, United States",
+    "source": "https://obis.org/occurrence/678499",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
   },
   {
     "id": "2026-06-23-cape-pillar-au-humpback-01",
@@ -5886,22 +5730,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-22-southern-peninsula-i-humpback-01",
-    "name": "Humpback sighting (Southern Peninsula, Iceland)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-06-22. Source: Happywhale.com.",
-    "date": "2026-06-22",
-    "latitude": 64.191073,
-    "longitude": -22.265006,
-    "area": "Southern Peninsula, Iceland",
-    "source": "https://obis.org/occurrence/673659",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-22-new-south-wales-aust-humpback-02",
+    "id": "2026-06-22-new-south-wales-aust-humpback-01",
     "name": "Humpback sighting (New South Wales, Australia)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-06-22. Source: Happywhale.com.",
@@ -5976,7 +5805,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-22-alaska-united-states-humpback-03",
+    "id": "2026-06-22-alaska-united-states-humpback-02",
     "name": "Humpback sighting (Alaska, United States)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-22. Source: Happywhale.com.",
@@ -5992,7 +5821,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-22-alaska-united-states-humpback-04",
+    "id": "2026-06-22-alaska-united-states-humpback-03",
     "name": "Humpback sighting (Alaska, United States)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-22. Source: Happywhale.com.",
@@ -6082,7 +5911,22 @@
     "notable": true
   },
   {
-    "id": "2026-06-22-alaska-orca-14",
+    "id": "2026-06-22-california-united-st-orca-14",
+    "name": "Orca sighting (California, United States)",
+    "species": "Orca",
+    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-22. Source: Happywhale.com.",
+    "date": "2026-06-22",
+    "latitude": 36.705982,
+    "longitude": -121.990177,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/674608",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-22-alaska-orca-15",
     "name": "Orca sighting (Alaska)",
     "species": "Orca",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-22.",
@@ -6097,7 +5941,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-22-alaska-united-states-orca-15",
+    "id": "2026-06-22-alaska-united-states-orca-16",
     "name": "Orca sighting (Alaska, United States)",
     "species": "Orca",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-22. Source: Happywhale.com.",
@@ -6113,7 +5957,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-22-southern-peninsula-i-orca-16",
+    "id": "2026-06-22-southern-peninsula-i-orca-17",
     "name": "Orca sighting (Southern Peninsula, Iceland)",
     "species": "Orca",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-06-22. Source: Happywhale.com.",
@@ -6251,21 +6095,6 @@
     "notable": true
   },
   {
-    "id": "2026-06-22-svalbard-humpback-05",
-    "name": "Humpback sighting (Svalbard (GBIF))",
-    "species": "Humpback",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-22.",
-    "date": "2026-06-22",
-    "latitude": 78.822144,
-    "longitude": 11.365747,
-    "area": "Svalbard (GBIF)",
-    "source": "https://www.gbif.org/occurrence/6422903368",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
     "id": "2026-06-22-southern-peninsula-i-fin-04",
     "name": "Fin Whale sighting (Southern Peninsula, Iceland)",
     "species": "Fin Whale",
@@ -6279,6 +6108,36 @@
       "reported"
     ],
     "notable": true
+  },
+  {
+    "id": "2026-06-22-southern-peninsula-i-humpback-04",
+    "name": "Humpback sighting (Southern Peninsula, Iceland)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-06-22. Source: Happywhale.com.",
+    "date": "2026-06-22",
+    "latitude": 64.191073,
+    "longitude": -22.265006,
+    "area": "Southern Peninsula, Iceland",
+    "source": "https://obis.org/occurrence/673659",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-22-svalbard-humpback-05",
+    "name": "Humpback sighting (Svalbard (GBIF))",
+    "species": "Humpback",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-22.",
+    "date": "2026-06-22",
+    "latitude": 78.822144,
+    "longitude": 11.365747,
+    "area": "Svalbard (GBIF)",
+    "source": "https://www.gbif.org/occurrence/6422903368",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
     "id": "2026-06-21-new-south-wales-aust-humpback-01",
@@ -6296,7 +6155,67 @@
     "notable": true
   },
   {
-    "id": "2026-06-21-global-orca-01",
+    "id": "2026-06-21-new-south-wales-aust-orca-01",
+    "name": "Orca sighting (New South Wales, Australia)",
+    "species": "Orca",
+    "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "date": "2026-06-21",
+    "latitude": -33.85,
+    "longitude": 151.3,
+    "area": "New South Wales, Australia",
+    "source": "https://obis.org/occurrence/675413",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-21-new-south-wales-aust-blue-01",
+    "name": "Blue Whale sighting (New South Wales, Australia)",
+    "species": "Blue Whale",
+    "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "date": "2026-06-21",
+    "latitude": -33.85,
+    "longitude": 151.3,
+    "area": "New South Wales, Australia",
+    "source": "https://obis.org/occurrence/675413",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-21-new-south-wales-aust-sperm-01",
+    "name": "Sperm whale sighting (New South Wales, Australia)",
+    "species": "Sperm whale",
+    "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "date": "2026-06-21",
+    "latitude": -33.85,
+    "longitude": 151.3,
+    "area": "New South Wales, Australia",
+    "source": "https://obis.org/occurrence/675413",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-21-new-south-wales-aust-fin-01",
+    "name": "Fin Whale sighting (New South Wales, Australia)",
+    "species": "Fin Whale",
+    "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "date": "2026-06-21",
+    "latitude": -33.85,
+    "longitude": 151.3,
+    "area": "New South Wales, Australia",
+    "source": "https://obis.org/occurrence/675413",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-21-global-orca-02",
     "name": "Orca sighting (Global (GBIF))",
     "species": "Orca",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-21.",
@@ -6342,15 +6261,15 @@
     "notable": true
   },
   {
-    "id": "2026-06-21-california-united-st-orca-02",
-    "name": "Orca sighting (California, United States)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "id": "2026-06-21-california-united-st-humpback-04",
+    "name": "Humpback sighting (California, United States)",
+    "species": "Humpback",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
     "date": "2026-06-21",
-    "latitude": 36.8,
-    "longitude": -122.0,
+    "latitude": 36.726483,
+    "longitude": -121.973869,
     "area": "California, United States",
-    "source": "https://obis.org/occurrence/680231",
+    "source": "https://obis.org/occurrence/675427",
     "behaviors": [
       "reported"
     ],
@@ -6365,7 +6284,7 @@
     "latitude": 36.8,
     "longitude": -122.0,
     "area": "California, United States",
-    "source": "https://obis.org/occurrence/678276",
+    "source": "https://obis.org/occurrence/680231",
     "behaviors": [
       "reported"
     ],
@@ -6373,6 +6292,21 @@
   },
   {
     "id": "2026-06-21-california-united-st-orca-04",
+    "name": "Orca sighting (California, United States)",
+    "species": "Orca",
+    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "date": "2026-06-21",
+    "latitude": 36.8,
+    "longitude": -122.0,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/678276",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-21-california-united-st-orca-05",
     "name": "Orca sighting (California, United States)",
     "species": "Orca",
     "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
@@ -6387,7 +6321,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-21-california-united-st-orca-05",
+    "id": "2026-06-21-california-united-st-orca-06",
     "name": "Orca sighting (California, United States)",
     "species": "Orca",
     "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
@@ -6402,7 +6336,37 @@
     "notable": true
   },
   {
-    "id": "2026-06-21-alaska-united-states-orca-06",
+    "id": "2026-06-21-california-united-st-orca-07",
+    "name": "Orca sighting (California, United States)",
+    "species": "Orca",
+    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "date": "2026-06-21",
+    "latitude": 37.673402,
+    "longitude": -123.08462,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/679408",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-21-california-united-st-orca-08",
+    "name": "Orca sighting (California, United States)",
+    "species": "Orca",
+    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "date": "2026-06-21",
+    "latitude": 36.8,
+    "longitude": -122.0,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/678278",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-21-alaska-united-states-orca-09",
     "name": "Orca sighting (Alaska, United States)",
     "species": "Orca",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
@@ -6418,7 +6382,22 @@
     "notable": true
   },
   {
-    "id": "2026-06-21-alaska-united-states-sperm-01",
+    "id": "2026-06-21-british-columbia-can-orca-10",
+    "name": "Orca sighting (British Columbia, Canada)",
+    "species": "Orca",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "date": "2026-06-21",
+    "latitude": 50.096597,
+    "longitude": -125.059721,
+    "area": "British Columbia, Canada",
+    "source": "https://obis.org/occurrence/679059",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-06-21-alaska-united-states-sperm-02",
     "name": "Sperm whale sighting (Alaska, United States)",
     "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
@@ -6434,15 +6413,15 @@
     "notable": true
   },
   {
-    "id": "2026-06-21-california-united-st-blue-01",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "id": "2026-06-21-british-columbia-can-sperm-03",
+    "name": "Sperm whale sighting (British Columbia, Canada)",
+    "species": "Sperm whale",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
     "date": "2026-06-21",
-    "latitude": 36.8,
-    "longitude": -122.0,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/680231",
+    "latitude": 50.096597,
+    "longitude": -125.059721,
+    "area": "British Columbia, Canada",
+    "source": "https://obis.org/occurrence/679059",
     "behaviors": [
       "reported"
     ],
@@ -6457,7 +6436,7 @@
     "latitude": 36.8,
     "longitude": -122.0,
     "area": "California, United States",
-    "source": "https://obis.org/occurrence/678276",
+    "source": "https://obis.org/occurrence/680231",
     "behaviors": [
       "reported"
     ],
@@ -6465,6 +6444,21 @@
   },
   {
     "id": "2026-06-21-california-united-st-blue-03",
+    "name": "Blue Whale sighting (California, United States)",
+    "species": "Blue Whale",
+    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "date": "2026-06-21",
+    "latitude": 36.8,
+    "longitude": -122.0,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/678276",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-21-california-united-st-blue-04",
     "name": "Blue Whale sighting (California, United States)",
     "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
@@ -6479,7 +6473,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-21-california-united-st-blue-04",
+    "id": "2026-06-21-california-united-st-blue-05",
     "name": "Blue Whale sighting (California, United States)",
     "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
@@ -6494,7 +6488,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-21-california-united-st-blue-05",
+    "id": "2026-06-21-california-united-st-blue-06",
     "name": "Blue Whale sighting (California, United States)",
     "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
@@ -6509,7 +6503,7 @@
     "notable": true
   },
   {
-    "id": "2026-06-21-california-united-st-blue-06",
+    "id": "2026-06-21-california-united-st-blue-07",
     "name": "Blue Whale sighting (California, United States)",
     "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
@@ -6524,7 +6518,22 @@
     "notable": true
   },
   {
-    "id": "2026-06-21-alaska-united-states-blue-07",
+    "id": "2026-06-21-california-united-st-blue-08",
+    "name": "Blue Whale sighting (California, United States)",
+    "species": "Blue Whale",
+    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "date": "2026-06-21",
+    "latitude": 36.736214,
+    "longitude": -121.9731,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/674659",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-21-alaska-united-states-blue-09",
     "name": "Blue Whale sighting (Alaska, United States)",
     "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
@@ -6540,52 +6549,22 @@
     "notable": true
   },
   {
-    "id": "2026-06-21-vesturland-humpback-04",
-    "name": "Humpback sighting (Vesturland)",
-    "species": "Humpback",
-    "info": "GBIF record from GBIF. Observed 2026-06-21.",
+    "id": "2026-06-21-british-columbia-can-blue-10",
+    "name": "Blue Whale sighting (British Columbia, Canada)",
+    "species": "Blue Whale",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
     "date": "2026-06-21",
-    "latitude": 64.328823,
-    "longitude": -22.095179,
-    "area": "Vesturland",
-    "source": "https://www.gbif.org/occurrence/6423932750",
+    "latitude": 50.096597,
+    "longitude": -125.059721,
+    "area": "British Columbia, Canada",
+    "source": "https://obis.org/occurrence/679059",
     "behaviors": [
       "reported"
     ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+    "notable": true
   },
   {
-    "id": "2026-06-21-grense-jakobselv-s-r-humpback-05",
-    "name": "Humpback sighting (Grense Jakobselv, Sør-Varanger, Fi)",
-    "species": "Humpback",
-    "info": "GBIF record from GBIF. Observed 2026-06-21.",
-    "date": "2026-06-21",
-    "latitude": 69.793496,
-    "longitude": 30.798039,
-    "area": "Grense Jakobselv, Sør-Varanger, Fi",
-    "source": "https://www.gbif.org/occurrence/6419694482",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-21-svalbard-humpback-06",
-    "name": "Humpback sighting (Svalbard)",
-    "species": "Humpback",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-21.",
-    "date": "2026-06-21",
-    "latitude": 79.851547,
-    "longitude": 13.960463,
-    "area": "Svalbard",
-    "source": "https://www.gbif.org/occurrence/6413519710",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-21-alaska-united-states-fin-01",
+    "id": "2026-06-21-alaska-united-states-fin-02",
     "name": "Fin Whale sighting (Alaska, United States)",
     "species": "Fin Whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
@@ -6601,7 +6580,67 @@
     "notable": true
   },
   {
-    "id": "2026-06-21-northeast-atlantic-humpback-07",
+    "id": "2026-06-21-british-columbia-can-fin-03",
+    "name": "Fin Whale sighting (British Columbia, Canada)",
+    "species": "Fin Whale",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-21. Source: Happywhale.com.",
+    "date": "2026-06-21",
+    "latitude": 50.096597,
+    "longitude": -125.059721,
+    "area": "British Columbia, Canada",
+    "source": "https://obis.org/occurrence/679059",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-06-21-vesturland-humpback-05",
+    "name": "Humpback sighting (Vesturland)",
+    "species": "Humpback",
+    "info": "GBIF record from GBIF. Observed 2026-06-21.",
+    "date": "2026-06-21",
+    "latitude": 64.328823,
+    "longitude": -22.095179,
+    "area": "Vesturland",
+    "source": "https://www.gbif.org/occurrence/6423932750",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-21-grense-jakobselv-s-r-humpback-06",
+    "name": "Humpback sighting (Grense Jakobselv, Sør-Varanger, Fi)",
+    "species": "Humpback",
+    "info": "GBIF record from GBIF. Observed 2026-06-21.",
+    "date": "2026-06-21",
+    "latitude": 69.793496,
+    "longitude": 30.798039,
+    "area": "Grense Jakobselv, Sør-Varanger, Fi",
+    "source": "https://www.gbif.org/occurrence/6419694482",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-21-svalbard-humpback-07",
+    "name": "Humpback sighting (Svalbard)",
+    "species": "Humpback",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-21.",
+    "date": "2026-06-21",
+    "latitude": 79.851547,
+    "longitude": 13.960463,
+    "area": "Svalbard",
+    "source": "https://www.gbif.org/occurrence/6413519710",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-06-21-northeast-atlantic-humpback-08",
     "name": "Humpback sighting (Northeast Atlantic (offshore))",
     "species": "Humpback",
     "info": "iNaturalist observation by seabirder.",
@@ -6618,616 +6657,5 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) seabirder, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
-    "id": "2026-06-21-pelagos-sanctuary-me-fin-02",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by enrico_carta.",
-    "date": "2026-06-21",
-    "latitude": 43.6409205075,
-    "longitude": 8.0180436438,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/374072700",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-21T11:41:06Z",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
-    "id": "2026-06-20-olympic-national-par-gray-01",
-    "name": "Gray Whale sighting (Olympic National Park, WA, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by amphibianaficionado.",
-    "date": "2026-06-20",
-    "latitude": 47.8179383333,
-    "longitude": -124.53923,
-    "area": "Olympic National Park, WA, US",
-    "source": "https://www.inaturalist.org/observations/375157689",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-20T21:56:02Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/685795694/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Christina Woolf, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-06-20-bahia-brazil-humpback-01",
-    "name": "Humpback sighting (Bahia, Brazil)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": -17.95,
-    "longitude": -38.75,
-    "area": "Bahia, Brazil",
-    "source": "https://obis.org/occurrence/675482",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-bahia-brazil-orca-01",
-    "name": "Orca sighting (Bahia, Brazil)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": -17.95,
-    "longitude": -38.75,
-    "area": "Bahia, Brazil",
-    "source": "https://obis.org/occurrence/675482",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-bahia-brazil-blue-01",
-    "name": "Blue Whale sighting (Bahia, Brazil)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": -17.95,
-    "longitude": -38.75,
-    "area": "Bahia, Brazil",
-    "source": "https://obis.org/occurrence/675482",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-bahia-brazil-sperm-01",
-    "name": "Sperm whale sighting (Bahia, Brazil)",
-    "species": "Sperm whale",
-    "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": -17.95,
-    "longitude": -38.75,
-    "area": "Bahia, Brazil",
-    "source": "https://obis.org/occurrence/675482",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-bahia-brazil-fin-01",
-    "name": "Fin Whale sighting (Bahia, Brazil)",
-    "species": "Fin Whale",
-    "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": -17.95,
-    "longitude": -38.75,
-    "area": "Bahia, Brazil",
-    "source": "https://obis.org/occurrence/675482",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-global-orca-02",
-    "name": "Orca sighting (Global (GBIF))",
-    "species": "Orca",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-20.",
-    "date": "2026-06-20",
-    "latitude": 40.207974,
-    "longitude": -73.80752,
-    "area": "Global (GBIF)",
-    "source": "https://www.gbif.org/occurrence/6413570372",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-alaska-united-states-humpback-02",
-    "name": "Humpback sighting (Alaska, United States)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 57.709,
-    "longitude": -133.548,
-    "area": "Alaska, United States",
-    "source": "https://obis.org/occurrence/675577",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-british-columbia-can-humpback-03",
-    "name": "Humpback sighting (British Columbia, Canada)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 48.720307,
-    "longitude": -123.18565,
-    "area": "British Columbia, Canada",
-    "source": "https://obis.org/occurrence/676106",
-    "behaviors": [
-      "reported",
-      "traveling"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-humpback-04",
-    "name": "Humpback sighting (California, United States)",
-    "species": "Humpback",
-    "info": "OBIS record from Happywhale - Risso's dolphin in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.732822,
-    "longitude": -122.074597,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/677352",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-orca-03",
-    "name": "Orca sighting (California, United States)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 37.668535,
-    "longitude": -123.080583,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/679206",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-orca-04",
-    "name": "Orca sighting (California, United States)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.733333,
-    "longitude": -121.983333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/678059",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-orca-05",
-    "name": "Orca sighting (California, United States)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.675,
-    "longitude": -122.008333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/675693",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-orca-06",
-    "name": "Orca sighting (California, United States)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.68,
-    "longitude": -122.008333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/675670",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-orca-07",
-    "name": "Orca sighting (California, United States)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.733333,
-    "longitude": -121.983333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/675706",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-scotland-united-king-orca-08",
-    "name": "Orca sighting (Scotland, United Kingdom)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Common minke whale in North Atlantic Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 55.874945,
-    "longitude": -4.895174,
-    "area": "Scotland, United Kingdom",
-    "source": "https://obis.org/occurrence/675118",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-orca-09",
-    "name": "Orca sighting (California, United States)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.733333,
-    "longitude": -121.983333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/678063",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-orca-10",
-    "name": "Orca sighting (California, United States)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.733333,
-    "longitude": -121.983333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/678058",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-orca-11",
-    "name": "Orca sighting (California)",
-    "species": "Orca",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-20.",
-    "date": "2026-06-20",
-    "latitude": 36.633424,
-    "longitude": -121.852795,
-    "area": "California",
-    "source": "https://www.gbif.org/occurrence/6413468373",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-alaska-united-states-orca-12",
-    "name": "Orca sighting (Alaska, United States)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 57.709,
-    "longitude": -133.548,
-    "area": "Alaska, United States",
-    "source": "https://obis.org/occurrence/675577",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-orca-13",
-    "name": "Orca sighting (California, United States)",
-    "species": "Orca",
-    "info": "OBIS record from Happywhale - Risso's dolphin in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.732822,
-    "longitude": -122.074597,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/677352",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-alaska-united-states-sperm-02",
-    "name": "Sperm whale sighting (Alaska, United States)",
-    "species": "Sperm whale",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 57.709,
-    "longitude": -133.548,
-    "area": "Alaska, United States",
-    "source": "https://obis.org/occurrence/675577",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-sperm-03",
-    "name": "Sperm whale sighting (California, United States)",
-    "species": "Sperm whale",
-    "info": "OBIS record from Happywhale - Risso's dolphin in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.732822,
-    "longitude": -122.074597,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/677352",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-blue-02",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 37.668535,
-    "longitude": -123.080583,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/679206",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-blue-03",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.733333,
-    "longitude": -121.983333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/678059",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-blue-04",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.675,
-    "longitude": -122.008333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/675693",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-blue-05",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.68,
-    "longitude": -122.008333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/675670",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-blue-06",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.733333,
-    "longitude": -121.983333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/675706",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-blue-07",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.733333,
-    "longitude": -121.983333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/678063",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-blue-08",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.733333,
-    "longitude": -121.983333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/678058",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-blue-09",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 37.664943,
-    "longitude": -123.085007,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/679409",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-blue-10",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Blue whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.68,
-    "longitude": -122.008333,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/678095",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-alaska-united-states-blue-11",
-    "name": "Blue Whale sighting (Alaska, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 57.709,
-    "longitude": -133.548,
-    "area": "Alaska, United States",
-    "source": "https://obis.org/occurrence/675577",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-blue-12",
-    "name": "Blue Whale sighting (California, United States)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Risso's dolphin in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.732822,
-    "longitude": -122.074597,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/677352",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-scotland-humpback-05",
-    "name": "Humpback sighting (Scotland)",
-    "species": "Humpback",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-06-20.",
-    "date": "2026-06-20",
-    "latitude": 55.889349,
-    "longitude": -4.925095,
-    "area": "Scotland",
-    "source": "https://www.gbif.org/occurrence/6413835549",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
-    "id": "2026-06-20-scotland-united-king-humpback-06",
-    "name": "Humpback sighting (Scotland, United Kingdom)",
-    "species": "Humpback",
-    "info": "GBIF record from Happywhale - Common minke whale in North Atlantic Ocean. Observed 2026-06-20.",
-    "date": "2026-06-20",
-    "latitude": 55.874945,
-    "longitude": -4.895174,
-    "area": "Scotland, United Kingdom",
-    "source": "https://www.gbif.org/occurrence/6432454303",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
-    "id": "2026-06-20-alaska-united-states-fin-02",
-    "name": "Fin Whale sighting (Alaska, United States)",
-    "species": "Fin Whale",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 57.709,
-    "longitude": -133.548,
-    "area": "Alaska, United States",
-    "source": "https://obis.org/occurrence/675577",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-california-united-st-fin-03",
-    "name": "Fin Whale sighting (California, United States)",
-    "species": "Fin Whale",
-    "info": "OBIS record from Happywhale - Risso's dolphin in North Pacific Ocean (1 individuals). Observed 2026-06-20. Source: Happywhale.com.",
-    "date": "2026-06-20",
-    "latitude": 36.732822,
-    "longitude": -122.074597,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/677352",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-06-20-pelagos-sanctuary-me-fin-04",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by enrico_carta.",
-    "date": "2026-06-20",
-    "latitude": 43.7810836919,
-    "longitude": 8.5221795205,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/373704643",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-20T13:50:16Z",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
   }
 ]
