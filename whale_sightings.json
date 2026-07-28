@@ -83,6 +83,25 @@
     "notable": true
   },
   {
+    "id": "2026-07-28-gulf-of-maine-steube-humpback-03",
+    "name": "Humpback sighting (Gulf of Maine, Steuben, ME, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by dougbug24.",
+    "date": "2026-07-28",
+    "latitude": 44.371753686,
+    "longitude": -67.9106445745,
+    "area": "Gulf of Maine, Steuben, ME, US",
+    "source": "https://www.inaturalist.org/observations/385973783",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-28T15:00:21Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706660319/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Liam Douglas, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
     "id": "2026-07-27-wa-us-humpback-01",
     "name": "Humpback sighting (WA, US)",
     "species": "Humpback",
@@ -494,25 +513,6 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-07-26-les-bergeronnes-qc-c-humpback-09",
-    "name": "Humpback sighting (Les Bergeronnes, QC, CA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by shawni96.",
-    "date": "2026-07-26",
-    "latitude": 48.2854294657,
-    "longitude": -69.4452996787,
-    "area": "Les Bergeronnes, QC, CA",
-    "source": "https://www.inaturalist.org/observations/385845805",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-26T15:53:27Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706411356/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Shawn Raymond, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
     "id": "2026-07-26-mount-waddington-bc--orca-04",
     "name": "Orca sighting (Mount Waddington, BC, CA)",
     "species": "Orca",
@@ -548,7 +548,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-07-26-heimaey-vestmannaeyj-humpback-10",
+    "id": "2026-07-26-heimaey-vestmannaeyj-humpback-09",
     "name": "Humpback sighting (Heimaey, Vestmannaeyjar, Suðurland, IS)",
     "species": "Humpback",
     "info": "iNaturalist observation by claudiabrunke.",
@@ -586,7 +586,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-26-eyjafjordur-humpback-11",
+    "id": "2026-07-26-eyjafjordur-humpback-10",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-07-26.",
@@ -1136,23 +1136,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-23-svalbard-arctic-norw-humpback-05",
-    "name": "Humpback sighting (Svalbard, Arctic Norway (offshore))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by kevin_snair.",
-    "date": "2026-07-23",
-    "latitude": 76.1038319091,
-    "longitude": 15.5834901912,
-    "area": "Svalbard, Arctic Norway (offshore)",
-    "source": "https://www.inaturalist.org/observations/384206583",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-23T09:18:00Z",
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-07-23-eyjafjordur-humpback-06",
+    "id": "2026-07-23-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-07-23.",
@@ -3624,9 +3608,9 @@
     "notable": true
   },
   {
-    "id": "2026-07-08-bahia-brazil-blue-01",
-    "name": "Blue Whale sighting (Bahia, Brazil)",
-    "species": "Blue Whale",
+    "id": "2026-07-08-bahia-brazil-sperm-01",
+    "name": "Sperm whale sighting (Bahia, Brazil)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-07-08. Source: Happywhale.com.",
     "date": "2026-07-08",
     "latitude": -14.722662,
@@ -3639,9 +3623,9 @@
     "notable": true
   },
   {
-    "id": "2026-07-08-bahia-brazil-sperm-01",
-    "name": "Sperm whale sighting (Bahia, Brazil)",
-    "species": "Sperm whale",
+    "id": "2026-07-08-bahia-brazil-blue-01",
+    "name": "Blue Whale sighting (Bahia, Brazil)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-07-08. Source: Happywhale.com.",
     "date": "2026-07-08",
     "latitude": -14.722662,
@@ -3851,9 +3835,9 @@
     "notable": true
   },
   {
-    "id": "2026-07-07-newfoundland-and-lab-blue-01",
-    "name": "Blue Whale sighting (Newfoundland and Labrador, Canada)",
-    "species": "Blue Whale",
+    "id": "2026-07-07-newfoundland-and-lab-sperm-01",
+    "name": "Sperm whale sighting (Newfoundland and Labrador, Canada)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-07-07. Source: Happywhale.com.",
     "date": "2026-07-07",
     "latitude": 48.717167,
@@ -3866,9 +3850,9 @@
     "notable": true
   },
   {
-    "id": "2026-07-07-newfoundland-and-lab-sperm-01",
-    "name": "Sperm whale sighting (Newfoundland and Labrador, Canada)",
-    "species": "Sperm whale",
+    "id": "2026-07-07-newfoundland-and-lab-blue-01",
+    "name": "Blue Whale sighting (Newfoundland and Labrador, Canada)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-07-07. Source: Happywhale.com.",
     "date": "2026-07-07",
     "latitude": 48.717167,
@@ -4585,9 +4569,9 @@
     "notable": true
   },
   {
-    "id": "2026-07-04-piura-peru-blue-01",
-    "name": "Blue Whale sighting (Piura, Peru)",
-    "species": "Blue Whale",
+    "id": "2026-07-04-piura-peru-sperm-01",
+    "name": "Sperm whale sighting (Piura, Peru)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-07-04. Source: Happywhale.com.",
     "date": "2026-07-04",
     "latitude": -4.15,
@@ -4600,9 +4584,9 @@
     "notable": true
   },
   {
-    "id": "2026-07-04-piura-peru-sperm-01",
-    "name": "Sperm whale sighting (Piura, Peru)",
-    "species": "Sperm whale",
+    "id": "2026-07-04-piura-peru-blue-01",
+    "name": "Blue Whale sighting (Piura, Peru)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-07-04. Source: Happywhale.com.",
     "date": "2026-07-04",
     "latitude": -4.15,
@@ -4723,9 +4707,9 @@
     "notable": true
   },
   {
-    "id": "2026-07-04-newfoundland-and-lab-blue-02",
-    "name": "Blue Whale sighting (Newfoundland and Labrador, Canada)",
-    "species": "Blue Whale",
+    "id": "2026-07-04-newfoundland-and-lab-sperm-02",
+    "name": "Sperm whale sighting (Newfoundland and Labrador, Canada)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-07-04. Source: Happywhale.com.",
     "date": "2026-07-04",
     "latitude": 48.707854,
@@ -4738,9 +4722,9 @@
     "notable": true
   },
   {
-    "id": "2026-07-04-newfoundland-and-lab-sperm-02",
-    "name": "Sperm whale sighting (Newfoundland and Labrador, Canada)",
-    "species": "Sperm whale",
+    "id": "2026-07-04-newfoundland-and-lab-blue-02",
+    "name": "Blue Whale sighting (Newfoundland and Labrador, Canada)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-07-04. Source: Happywhale.com.",
     "date": "2026-07-04",
     "latitude": 48.707854,
@@ -4912,9 +4896,9 @@
     "notable": true
   },
   {
-    "id": "2026-07-03-new-south-wales-aust-blue-01",
-    "name": "Blue Whale sighting (New South Wales, Australia)",
-    "species": "Blue Whale",
+    "id": "2026-07-03-new-south-wales-aust-sperm-01",
+    "name": "Sperm whale sighting (New South Wales, Australia)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-07-03. Source: Happywhale.com.",
     "date": "2026-07-03",
     "latitude": -28.536947,
@@ -4927,9 +4911,9 @@
     "notable": true
   },
   {
-    "id": "2026-07-03-new-south-wales-aust-sperm-01",
-    "name": "Sperm whale sighting (New South Wales, Australia)",
-    "species": "Sperm whale",
+    "id": "2026-07-03-new-south-wales-aust-blue-01",
+    "name": "Blue Whale sighting (New South Wales, Australia)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-07-03. Source: Happywhale.com.",
     "date": "2026-07-03",
     "latitude": -28.536947,
@@ -5002,9 +4986,9 @@
     "notable": true
   },
   {
-    "id": "2026-07-03-newfoundland-and-lab-blue-02",
-    "name": "Blue Whale sighting (Newfoundland and Labrador, Canada)",
-    "species": "Blue Whale",
+    "id": "2026-07-03-newfoundland-and-lab-sperm-02",
+    "name": "Sperm whale sighting (Newfoundland and Labrador, Canada)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-07-03. Source: Happywhale.com.",
     "date": "2026-07-03",
     "latitude": 48.708312,
@@ -5017,9 +5001,9 @@
     "notable": true
   },
   {
-    "id": "2026-07-03-newfoundland-and-lab-sperm-02",
-    "name": "Sperm whale sighting (Newfoundland and Labrador, Canada)",
-    "species": "Sperm whale",
+    "id": "2026-07-03-newfoundland-and-lab-blue-02",
+    "name": "Blue Whale sighting (Newfoundland and Labrador, Canada)",
+    "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-07-03. Source: Happywhale.com.",
     "date": "2026-07-03",
     "latitude": 48.708312,
@@ -6191,25 +6175,6 @@
     "latitude": 74.930107,
     "longitude": 16.921612,
     "area": "Svalbard (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/382226410",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-06-29T09:44:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/699468724/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) belyykit, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-06-29-svalbard-arctic-norw-humpback-06",
-    "name": "Humpback sighting (Svalbard, Arctic Norway (offshore))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by belyykit.",
-    "date": "2026-06-29",
-    "latitude": 74.930107,
-    "longitude": 16.921612,
-    "area": "Svalbard, Arctic Norway (offshore)",
     "source": "https://www.inaturalist.org/observations/382226410",
     "behaviors": [
       "reported"
