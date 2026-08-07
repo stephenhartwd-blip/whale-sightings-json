@@ -2595,6 +2595,22 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
+    "id": "2026-07-23-pacific-mexico-orca-01",
+    "name": "Orca sighting (Pacific Mexico (offshore))",
+    "species": "Orca",
+    "info": "iNaturalist observation by jake_smith755.",
+    "date": "2026-07-23",
+    "latitude": 24.2255801002,
+    "longitude": -109.668150377,
+    "area": "Pacific Mexico (offshore)",
+    "source": "https://www.inaturalist.org/observations/384399540",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-23T19:40:58Z",
+    "notable": true
+  },
+  {
     "id": "2026-07-23-gqeberha-6011-s-dafr-humpback-01",
     "name": "Humpback sighting (Gqeberha, 6011, Südafrika)",
     "species": "Humpback",
@@ -2614,7 +2630,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-23-saginaw-channel-june-orca-01",
+    "id": "2026-07-23-saginaw-channel-june-orca-02",
     "name": "Orca sighting (Saginaw Channel, Juneau, AK, US)",
     "species": "Orca",
     "info": "iNaturalist observation by phishfunk.",
@@ -2695,7 +2711,23 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-23-eyjafjordur-humpback-06",
+    "id": "2026-07-23-svalbard-arctic-norw-humpback-06",
+    "name": "Humpback sighting (Svalbard, Arctic Norway (offshore))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by kevin_snair.",
+    "date": "2026-07-23",
+    "latitude": 76.1038319091,
+    "longitude": 15.5834901912,
+    "area": "Svalbard, Arctic Norway (offshore)",
+    "source": "https://www.inaturalist.org/observations/384206583",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-23T09:18:00Z",
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-07-23-eyjafjordur-humpback-07",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-07-23.",
@@ -3394,22 +3426,6 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-18-valdez-cordova-count-sperm-01",
-    "name": "Sperm whale sighting (Valdez-Cordova County, US-AK, US)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by steveboulay.",
-    "date": "2026-07-18",
-    "latitude": 60.8415804308,
-    "longitude": -147.5955322833,
-    "area": "Valdez-Cordova County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/382821757",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-19T03:02:55Z",
-    "notable": true
-  },
-  {
     "id": "2026-07-18-kodiak-island-boroug-gray-01",
     "name": "Gray Whale sighting (Kodiak Island Borough, AK, USA)",
     "species": "Gray Whale",
@@ -3968,7 +3984,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-south-china-sea-sperm-02",
+    "id": "2026-07-18-south-china-sea-sperm-01",
     "name": "Sperm whale sighting (South China Sea (OBIS))",
     "species": "Sperm whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -3983,7 +3999,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-atlantic-ocean-sperm-03",
+    "id": "2026-07-18-north-atlantic-ocean-sperm-02",
     "name": "Sperm whale sighting (North Atlantic Ocean (OBIS))",
     "species": "Sperm whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -4925,21 +4941,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-15-skagerack-v-tanum-bo-humpback-02",
-    "name": "Humpback sighting (Skagerack, V Tanum, Boh)",
-    "species": "Humpback",
-    "info": "GBIF record from Artportalen. Observed 2026-07-15.",
-    "date": "2026-07-15",
-    "latitude": 58.53779,
-    "longitude": 10.80899,
-    "area": "Skagerack, V Tanum, Boh",
-    "source": "https://www.gbif.org/occurrence/6435158411",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
     "id": "2026-07-15-pacific-ocean-orca-01",
     "name": "Orca sighting (Pacific Ocean (OBIS))",
     "species": "Orca",
@@ -5569,6 +5570,21 @@
     "longitude": 8.2076119436,
     "area": "Pacific Coast (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381361412",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-14-global-sperm-01",
+    "name": "Sperm whale sighting (Global (OBIS))",
+    "species": "Sperm whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-14. Source: iNaturalist.",
+    "date": "2026-07-14",
+    "latitude": 44.9323027778,
+    "longitude": -67.0076555556,
+    "area": "Global (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381474924",
     "behaviors": [
       "reported"
     ],
@@ -6253,6 +6269,44 @@
     "notable": true
   },
   {
+    "id": "2026-07-12-mx-orca-01",
+    "name": "Orca sighting (MX)",
+    "species": "Orca",
+    "info": "iNaturalist observation by dafyddwastaken.",
+    "date": "2026-07-12",
+    "latitude": 23.8452381121,
+    "longitude": -109.7343025254,
+    "area": "MX",
+    "source": "https://www.inaturalist.org/observations/385737133",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-13T00:21:15Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706195483/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Dafydd, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-07-12-baja-california-sur--orca-02",
+    "name": "Orca sighting (Baja California Sur, MX)",
+    "species": "Orca",
+    "info": "iNaturalist observation by dafyddwastaken.",
+    "date": "2026-07-12",
+    "latitude": 23.8988406057,
+    "longitude": -109.7918405067,
+    "area": "Baja California Sur, MX",
+    "source": "https://www.inaturalist.org/observations/385737005",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-12T21:41:44Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706195315/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Dafydd, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-07-12-global-humpback-01",
     "name": "Humpback sighting (Global (OBIS))",
     "species": "Humpback",
@@ -6838,7 +6892,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-global-orca-01",
+    "id": "2026-07-12-global-orca-03",
     "name": "Orca sighting (Global (GBIF))",
     "species": "Orca",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-12.",
@@ -6853,7 +6907,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-global-orca-02",
+    "id": "2026-07-12-global-orca-04",
     "name": "Orca sighting (Global (GBIF))",
     "species": "Orca",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-12.",
@@ -6868,7 +6922,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-global-orca-03",
+    "id": "2026-07-12-global-orca-05",
     "name": "Orca sighting (Global (GBIF))",
     "species": "Orca",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-12.",
@@ -6883,7 +6937,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-new-york-orca-04",
+    "id": "2026-07-12-new-york-orca-06",
     "name": "Orca sighting (New York)",
     "species": "Orca",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-12.",
@@ -6898,7 +6952,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-south-africa-souther-orca-05",
+    "id": "2026-07-12-south-africa-souther-orca-07",
     "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-12. Source: iNaturalist.",
@@ -6913,7 +6967,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-south-africa-souther-orca-06",
+    "id": "2026-07-12-south-africa-souther-orca-08",
     "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-12. Source: iNaturalist.",
@@ -6928,7 +6982,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-north-pacific-kamcha-orca-07",
+    "id": "2026-07-12-north-pacific-kamcha-orca-09",
     "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-12. Source: iNaturalist.",
@@ -6943,7 +6997,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-north-pacific-kamcha-orca-08",
+    "id": "2026-07-12-north-pacific-kamcha-orca-10",
     "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-12. Source: iNaturalist.",
@@ -6958,7 +7012,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-southern-ocean-antar-orca-09",
+    "id": "2026-07-12-southern-ocean-antar-orca-11",
     "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-12. Source: iNaturalist.",
@@ -6973,7 +7027,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-southern-ocean-antar-orca-10",
+    "id": "2026-07-12-southern-ocean-antar-orca-12",
     "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-12. Source: iNaturalist.",
@@ -6988,7 +7042,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-russia-far-east-kamc-orca-11",
+    "id": "2026-07-12-russia-far-east-kamc-orca-13",
     "name": "Orca sighting (Russia Far East / Kamchatka (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-12. Source: iNaturalist.",
@@ -7003,7 +7057,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-russia-far-east-kamc-orca-12",
+    "id": "2026-07-12-russia-far-east-kamc-orca-14",
     "name": "Orca sighting (Russia Far East / Kamchatka (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-12. Source: iNaturalist.",
@@ -7018,7 +7072,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-12-greenland-orca-13",
+    "id": "2026-07-12-greenland-orca-15",
     "name": "Orca sighting (Greenland (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-12. Source: iNaturalist.",
@@ -7027,51 +7081,6 @@
     "longitude": -122.0630868026,
     "area": "Greenland (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381830505",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-12-greenland-orca-14",
-    "name": "Orca sighting (Greenland (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-12. Source: iNaturalist.",
-    "date": "2026-07-12",
-    "latitude": 40.365204574,
-    "longitude": -73.7005328377,
-    "area": "Greenland (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382148783",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-12-uk-ireland-waters-orca-15",
-    "name": "Orca sighting (UK & Ireland waters (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-12. Source: iNaturalist.",
-    "date": "2026-07-12",
-    "latitude": 36.9238136022,
-    "longitude": -122.0630868026,
-    "area": "UK & Ireland waters (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381830505",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-12-uk-ireland-waters-orca-16",
-    "name": "Orca sighting (UK & Ireland waters (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-12. Source: iNaturalist.",
-    "date": "2026-07-12",
-    "latitude": 40.365204574,
-    "longitude": -73.7005328377,
-    "area": "UK & Ireland waters (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382148783",
     "behaviors": [
       "reported"
     ],
