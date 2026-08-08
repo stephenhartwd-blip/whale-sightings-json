@@ -1077,6 +1077,22 @@
     "notable": true
   },
   {
+    "id": "2026-08-04-indian-ocean-mz-humpback-05",
+    "name": "Humpback sighting (Indian Ocean, MZ)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by sgcacc.",
+    "date": "2026-08-04",
+    "latitude": -23.7642101472,
+    "longitude": 35.5533859585,
+    "area": "Indian Ocean, MZ",
+    "source": "https://www.inaturalist.org/observations/388548401",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-04T07:38:09Z",
+    "seasonalStatus": "East Africa / Mozambique corridor"
+  },
+  {
     "id": "2026-08-03-kenai-peninsula-coun-humpback-01",
     "name": "Humpback sighting (Kenai Peninsula County, US-AK, US)",
     "species": "Humpback",
@@ -2177,7 +2193,23 @@
     "notable": true
   },
   {
-    "id": "2026-07-30-west-vancouver-bc-ca-orca-02",
+    "id": "2026-07-30-west-vancouver-bc-v7-orca-02",
+    "name": "Orca sighting (West Vancouver, BC V7W 2L5, Canada)",
+    "species": "Orca",
+    "info": "iNaturalist observation by sagar93.",
+    "date": "2026-07-30",
+    "latitude": 49.392551520400005,
+    "longitude": -123.2906006277,
+    "area": "West Vancouver, BC V7W 2L5, Canada",
+    "source": "https://www.inaturalist.org/observations/389486277",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-31T00:48:03Z",
+    "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-07-30-west-vancouver-bc-ca-orca-03",
     "name": "Orca sighting (West Vancouver, BC, Canada)",
     "species": "Orca",
     "info": "iNaturalist observation by ja9o.",
@@ -2199,7 +2231,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-07-30-salish-sea-sunshine--orca-03",
+    "id": "2026-07-30-salish-sea-sunshine--orca-04",
     "name": "Orca sighting (Salish Sea, Sunshine Coast, BC, CA)",
     "species": "Orca",
     "info": "iNaturalist observation by marc_kayser.",
@@ -2318,7 +2350,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-30-washington-us-orca-04",
+    "id": "2026-07-30-washington-us-orca-05",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
     "info": "iNaturalist observation by connor572.",
@@ -2334,7 +2366,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-07-30-sunshine-coast-bc-ca-orca-05",
+    "id": "2026-07-30-sunshine-coast-bc-ca-orca-06",
     "name": "Orca sighting (Sunshine Coast, BC, CA)",
     "species": "Orca",
     "info": "iNaturalist observation by mirdoldham.",
@@ -2349,26 +2381,6 @@
     ],
     "observedAt": "2026-07-30T18:32:40Z",
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/708137295/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Mireille Delisle-Oldham, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Salish Sea (SRKW range)"
-  },
-  {
-    "id": "2026-07-30-sunshine-coast-bc-ca-orca-06",
-    "name": "Orca sighting (Sunshine Coast, BC, CA)",
-    "species": "Orca",
-    "info": "iNaturalist observation by mirdoldham.",
-    "date": "2026-07-30",
-    "latitude": 49.544975,
-    "longitude": -123.399475,
-    "area": "Sunshine Coast, BC, CA",
-    "source": "https://www.inaturalist.org/observations/388918411",
-    "behaviors": [
-      "reported",
-      "hunting"
-    ],
-    "observedAt": "2026-07-30T18:32:39Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/712359427/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Mireille Delisle-Oldham, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Salish Sea (SRKW range)"
@@ -4112,6 +4124,22 @@
     "photoAttribution": "(c) mountainseekerii, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-07-18-valdez-cordova-count-sperm-01",
+    "name": "Sperm whale sighting (Valdez-Cordova County, US-AK, US)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by steveboulay.",
+    "date": "2026-07-18",
+    "latitude": 60.8415804308,
+    "longitude": -147.5955322833,
+    "area": "Valdez-Cordova County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/382821757",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-19T03:02:55Z",
+    "notable": true
+  },
+  {
     "id": "2026-07-18-kodiak-island-boroug-gray-01",
     "name": "Gray Whale sighting (Kodiak Island Borough, AK, USA)",
     "species": "Gray Whale",
@@ -4718,7 +4746,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-south-china-sea-sperm-01",
+    "id": "2026-07-18-south-china-sea-sperm-02",
     "name": "Sperm whale sighting (South China Sea (OBIS))",
     "species": "Sperm whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -4733,7 +4761,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-atlantic-ocean-sperm-02",
+    "id": "2026-07-18-north-atlantic-ocean-sperm-03",
     "name": "Sperm whale sighting (North Atlantic Ocean (OBIS))",
     "species": "Sperm whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -5945,36 +5973,6 @@
     "latitude": 57.5068966667,
     "longitude": -132.906405,
     "area": "Global (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381999541",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-global-sperm-02",
-    "name": "Sperm whale sighting (Global (OBIS))",
-    "species": "Sperm whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 37.8343099,
-    "longitude": -122.3585659,
-    "area": "Global (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382065255",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-australia-sperm-03",
-    "name": "Sperm whale sighting (Australia)",
-    "species": "Sperm whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 57.5068966667,
-    "longitude": -132.906405,
-    "area": "Australia",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381999541",
     "behaviors": [
       "reported"
