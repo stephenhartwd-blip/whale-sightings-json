@@ -1649,6 +1649,14 @@ ALA_SCI_NAMES: Dict[str, str] = {
     "Sperm whale": "Physeter macrocephalus",
     "Blue Whale":  "Balaenoptera musculus",
     "Fin Whale":   "Balaenoptera physalus",
+    # Added Aug 2026. Verified against the ALA biocache: Eubalaena australis had
+    # 11 human observations in the previous 30 days (newest in South Australia).
+    # Balaenoptera edeni is included for completeness but currently returns ZERO
+    # records from ALA, iNaturalist and GBIF alike — Bryde's whale sightings are
+    # simply not reaching open databases, so the Hauraki Gulf gap needs an
+    # operator or research feed, not another aggregator query.
+    "Southern Right Whale": "Eubalaena australis",
+    "Bryde's Whale":        "Balaenoptera edeni",
 }
 
 

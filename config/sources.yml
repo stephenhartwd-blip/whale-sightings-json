@@ -1572,6 +1572,24 @@ sources:
   # Australia's national biodiversity data aggregator — state wildlife agencies,
   # citizen reporters, CSIRO, and universities. Fresher AU data than GBIF.
 
+  # Atlas of Living Australia — southern right whales along the southern coast.
+  # ALA is Australia's national biodiversity aggregator and carries records that
+  # never reach iNaturalist; verified 11 human observations in the trailing 30 days,
+  # newest in South Australia. Covers the Head of Bight / Great Australian Bight
+  # winter calving grounds through Victoria and Tasmania.
+  - key: ala_southern_right_southern_australia
+    parser: ala_api
+    area: "Southern Australia"
+    force_species: ["Southern Right Whale"]
+    swlat: -45.0
+    swlng: 113.0
+    nelat: -31.0
+    nelng: 151.0
+    latitude: -34.50
+    longitude: 135.00
+    max_items: 25
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
   - key: ala_humpback_east_australia
     parser: ala_api
     area: "East Australia"
