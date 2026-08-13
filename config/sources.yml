@@ -12,15 +12,24 @@ allowed_inat_photo_licenses:
 max_days: 30
 min_recent_days: 30
 min_recent_fraction: 0.0
-target_total: 500
+# Raised 500 -> 1000 (Aug 2026). Headroom check: the feed averages ~590 bytes per
+# record, so 1000 records is ~576 KB — safely inside the 1 MiB hard limit on the
+# Firestore `sightings/current` document that the app reads. Do NOT go past ~1500
+# (~864 KB) without splitting that document, and 2000 would exceed 1 MiB outright.
+target_total: 1000
+# Rebalanced for southern-hemisphere coverage. Gray Whale was taking 18% of every
+# slot budget despite being a North Pacific species that never occurs in Australia
+# or New Zealand, which structurally squeezed out AU/NZ sightings.
 species_targets:
-  Orca: 0.22
-  Humpback: 0.25
-  Gray Whale: 0.18
-  Sperm whale: 0.08
-  Blue Whale: 0.08
-  Fin Whale: 0.06
-  Great White Shark: 0.08
+  Orca: 0.20
+  Humpback: 0.24
+  Gray Whale: 0.10
+  Sperm whale: 0.10
+  Blue Whale: 0.07
+  Fin Whale: 0.05
+  Great White Shark: 0.06
+  Southern Right Whale: 0.10
+  Bryde's Whale: 0.08
 sources:
   # -------------------------
   # CANADA / USA (Salish Sea & Pacific NW)
@@ -338,9 +347,117 @@ sources:
     area: "New Zealand (iNaturalist)"
     latitude: -41.0
     longitude: 174.0
-    max_items: 15
+    max_items: 25
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
     force_species: ["Orca"]
+
+  # ── New Zealand freshness fix (added Aug 2026) ────────────────────────────────
+  # NZ previously had only three iNat queries (orca, humpback, great white) and
+  # otherwise relied entirely on OBIS, whose reporting lag left the newest NZ
+  # sighting 25 days old — the exact complaint in a 3-star NZ review. iNaturalist
+  # observations usually land within days, so these are the freshness sources.
+  - key: inat_sperm_whale_new_zealand
+    parser: inaturalist_api
+    taxon_name: "Physeter macrocephalus"
+    place_query: "New Zealand"
+    area: "Kaikoura / New Zealand (iNaturalist)"
+    latitude: -42.42
+    longitude: 173.70
+    max_items: 25
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Sperm whale"]
+
+  - key: inat_brydes_whale_new_zealand
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera edeni"
+    place_query: "New Zealand"
+    area: "Hauraki Gulf / New Zealand (iNaturalist)"
+    latitude: -36.50
+    longitude: 175.00
+    max_items: 20
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Bryde's Whale"]
+
+  - key: inat_southern_right_new_zealand
+    parser: inaturalist_api
+    taxon_name: "Eubalaena australis"
+    place_query: "New Zealand"
+    area: "New Zealand (iNaturalist)"
+    latitude: -45.00
+    longitude: 170.50
+    max_items: 25
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Southern Right Whale"]
+
+  - key: inat_blue_whale_new_zealand
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera musculus"
+    place_query: "New Zealand"
+    area: "South Taranaki Bight / New Zealand (iNaturalist)"
+    latitude: -39.60
+    longitude: 174.10
+    max_items: 15
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Blue Whale"]
+
+  # ── Australia species gaps (added Aug 2026) ───────────────────────────────────
+  - key: inat_southern_right_australia
+    parser: inaturalist_api
+    taxon_name: "Eubalaena australis"
+    place_query: "Australia"
+    area: "Southern Australia (iNaturalist)"
+    latitude: -37.00
+    longitude: 139.00
+    max_items: 25
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Southern Right Whale"]
+
+  - key: inat_brydes_whale_australia
+    parser: inaturalist_api
+    taxon_name: "Balaenoptera edeni"
+    place_query: "Australia"
+    area: "Australia (iNaturalist)"
+    latitude: -27.00
+    longitude: 153.50
+    max_items: 15
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Bryde's Whale"]
+
+  # NOTE: no inat_humpback_queensland here — one already exists further down using
+  # numeric taxon_id/place_id, which is more precise than a place_query string.
+  #
+  # AU regional splits use numeric place_ids (verified via the iNaturalist places
+  # API), NOT place_query strings: "Victoria" resolves to Lake Victoria, Uganda
+  # before Victoria, Australia, and would also match Victoria, BC.
+  #   Victoria, AU = 7830 · Tasmania, AU = 6829 · South Australia, AU = 6899
+  # Australia's live operator feeds only cover Bremer Canyon (WA) and Sydney, so
+  # these fill in the southern-right coastline and the Victorian/Tasmanian season.
+  - key: inat_southern_right_victoria
+    parser: inaturalist_api
+    taxon_name: "Eubalaena australis"
+    place_id: 7830
+    area: "Victoria, Australia (iNaturalist)"
+    latitude: -38.50
+    longitude: 145.00
+    max_items: 15
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Southern Right Whale"]
+
+  - key: inat_southern_right_south_australia
+    parser: inaturalist_api
+    taxon_name: "Eubalaena australis"
+    place_id: 6899
+    area: "South Australia (Head of Bight), Australia (iNaturalist)"
+    latitude: -31.50
+    longitude: 131.10
+    max_items: 20
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+    force_species: ["Southern Right Whale"]
+
+  # NOTE: no inat_humpback_tasmania here either — one already exists further down
+  # using an explicit bbox. Verified independently that Tasmanian humpbacks are
+  # active on iNat right now (106 observations, newest 2026-08-08), so the existing
+  # source is fine and a second one would only duplicate it.
   - key: inat_orca_japan
     parser: inaturalist_api
     taxon_name: "Orcinus orca"
@@ -755,7 +872,10 @@ sources:
 
   - key: obis_gray_whale_pacific
     parser: obis_api
-    aphia_id: 137119
+    # WAS 137119 — that is Physeter macrocephalus (SPERM whale), so this source
+    # was publishing sperm whale records labelled "Gray Whale". Verified against
+    # WoRMS: Eschrichtius robustus = 137112.
+    aphia_id: 137112
     area: "Pacific Coast (OBIS)"
     latitude: 40.00
     longitude: -124.50
@@ -785,7 +905,10 @@ sources:
 
   - key: obis_sperm_whale_global
     parser: obis_api
-    aphia_id: 137117
+    # WAS 137117 — that is Phocoena phocoena (HARBOUR PORPOISE), so this source
+    # was publishing porpoise records labelled "Sperm whale". Verified against
+    # WoRMS: Physeter macrocephalus = 137119.
+    aphia_id: 137119
     area: "Global (OBIS)"
     latitude: 15.40
     longitude: -61.40
@@ -1071,7 +1194,7 @@ sources:
   - key: obis_sperm_australia
     parser: obis_api
     area: "Australia"
-    aphia_id: 137117
+    aphia_id: 137119   # was 137117 (harbour porpoise) — see obis_sperm_whale_global
     latitude: -30.00
     longitude: 115.00
     bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
@@ -1091,12 +1214,18 @@ sources:
   - key: obis_southern_right_whale_australia
     parser: obis_api
     area: "Southern Australia"
-    aphia_id: 231430
+    # WAS 231430 — that is Mesoplodon bowdoini (Andrews' beaked whale), not a
+    # right whale at all. Verified: Eubalaena australis = 220222.
+    aphia_id: 220222
     latitude: -37.00
     longitude: 138.00
     bbox: { lat_min: -45.0, lat_max: -32.0, lon_min: 113.0, lon_max: 155.0 }
-    max_items: 15
-    force_species: ["Other"]
+    max_items: 25
+    # Was force_species: ["Other"] — "Other" is not in ALLOWED_SPECIES, so
+    # detect_species() returned an empty list and this source silently produced
+    # ZERO sightings for its entire life. Now that Southern Right Whale is an
+    # allowed species, force it explicitly.
+    force_species: ["Southern Right Whale"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # ── OBIS New Zealand ──────────────────────────────────────────────────────────
@@ -1123,7 +1252,9 @@ sources:
   - key: obis_sperm_nz
     parser: obis_api
     area: "New Zealand"
-    aphia_id: 137117
+    aphia_id: 137119   # was 137117 (harbour porpoise) — see obis_sperm_whale_global
+    force_species: ["Sperm whale"]   # Kaikōura's resident sperm whales — the one
+                                      # year-round big-whale sighting in NZ
     latitude: -45.50
     longitude: 166.60
     bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
@@ -1139,6 +1270,42 @@ sources:
     bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
     max_items: 12
     force_species: ["Blue Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  # Added Aug 2026 — New Zealand had NO source for either of these species, despite
+  # southern rights ("tohorā") being the iconic NZ winter whale and Bryde's being the
+  # resident whale of the Hauraki Gulf on Auckland's doorstep.
+  - key: obis_southern_right_nz
+    parser: obis_api
+    area: "New Zealand"
+    aphia_id: 220222          # Eubalaena australis (WoRMS-verified)
+    latitude: -45.00
+    longitude: 170.50
+    bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
+    max_items: 25
+    force_species: ["Southern Right Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_brydes_whale_nz
+    parser: obis_api
+    area: "Hauraki Gulf, New Zealand"
+    aphia_id: 137089          # Balaenoptera edeni (WoRMS-verified)
+    latitude: -36.50
+    longitude: 175.00
+    bbox: { lat_min: -52.0, lat_max: -34.0, lon_min: 166.0, lon_max: 178.0 }
+    max_items: 20
+    force_species: ["Bryde's Whale"]
+    uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
+
+  - key: obis_brydes_whale_australia
+    parser: obis_api
+    area: "Australia"
+    aphia_id: 137089
+    latitude: -27.00
+    longitude: 153.50
+    bbox: { lat_min: -45.0, lat_max: -10.0, lon_min: 110.0, lon_max: 155.0 }
+    max_items: 15
+    force_species: ["Bryde's Whale"]
     uncertain_offshore_nudge: { dlat: 0.00, dlon: 0.00 }
 
   # ── iNaturalist Australia ─────────────────────────────────────────────────────

@@ -45,7 +45,19 @@ except Exception:
     globe = None
 
 
-ALLOWED_SPECIES = {"Orca", "Humpback", "Sperm whale", "Blue Whale", "Gray Whale", "Fin Whale", "Great White Shark"}
+# Southern Right Whale and Bryde's Whale added Aug 2026 for Australia / New Zealand
+# coverage. Both were previously missing from this set, which meant every record for
+# them was silently dropped by the `species not in ALLOWED_SPECIES` filters below —
+# including the whole obis_southern_right_whale_australia source, which had never
+# produced a single sighting. Southern rights are the iconic AU/NZ winter whale and
+# Bryde's is the resident species of the Hauraki Gulf (Auckland).
+#
+# No app release is required to display these: the app derives its species filter
+# chips from the data, falls through to the raw species name, and uses a default pin.
+ALLOWED_SPECIES = {
+    "Orca", "Humpback", "Sperm whale", "Blue Whale", "Gray Whale", "Fin Whale",
+    "Great White Shark", "Southern Right Whale", "Bryde's Whale",
+}
 
 DEAD_KEYWORDS = frozenset([
     "dead", "deceased", "carcass", "stranded", "beached", "washed up",
@@ -495,6 +507,13 @@ def detect_species(text: str, force: Optional[List[str]] = None) -> List[str]:
         hits.append("Gray Whale")
     if any(k in t for k in ["fin whale", "finback", "balaenoptera physalus"]):
         hits.append("Fin Whale")
+    # Southern right: match the qualified forms only. A bare "right whale" is
+    # ambiguous (North Atlantic / North Pacific right whales are different species),
+    # so it is deliberately not matched here.
+    if any(k in t for k in ["southern right", "eubalaena australis", "tohora", "tohorā"]):
+        hits.append("Southern Right Whale")
+    if any(k in t for k in ["bryde", "balaenoptera edeni", "bryde's whale", "brydes whale"]):
+        hits.append("Bryde's Whale")
 
     seen = set()
     out: List[str] = []
