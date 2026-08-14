@@ -1,20 +1,5 @@
 [
   {
-    "id": "2026-08-14-cape-cod-bay-ma-humpback-01",
-    "name": "Humpback sighting (Cape Cod Bay, MA (offshore), US)",
-    "species": "Humpback",
-    "info": "Parsed from center_coastal_studies_blog on 2026-08-14.",
-    "date": "2026-08-14",
-    "latitude": 42.01,
-    "longitude": -70.2,
-    "area": "Cape Cod Bay, MA (offshore), US",
-    "source": "https://coastalstudies.org/news/",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
     "id": "2026-08-14-bremer-canyon-orca-01",
     "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
     "species": "Orca",
@@ -47,7 +32,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-14-bay-of-fundy-humpback-02",
+    "id": "2026-08-14-bay-of-fundy-humpback-01",
     "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Humpback",
     "info": "Parsed from brier_island_whale_sightings on 2026-08-14.",
@@ -86,6 +71,22 @@
     "species": "Sperm whale",
     "info": "iNaturalist observation by claudia_brandao.",
     "date": "2026-08-14",
+    "latitude": 38.776791186400004,
+    "longitude": -28.2767646804,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/391151472",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-14T16:09:58Z",
+    "notable": true
+  },
+  {
+    "id": "2026-08-14-northeast-atlantic-sperm-02",
+    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by claudia_brandao.",
+    "date": "2026-08-14",
     "latitude": 38.6829885677,
     "longitude": -28.5186718646,
     "area": "Northeast Atlantic (offshore)",
@@ -97,23 +98,41 @@
     "notable": true
   },
   {
-    "id": "2026-08-14-azores-sperm-02",
-    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by claudia_brandao.",
+    "id": "2026-08-14-eyjafjordur-humpback-02",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-08-14.",
     "date": "2026-08-14",
-    "latitude": 38.6829885677,
-    "longitude": -28.5186718646,
-    "area": "Azores (offshore), Portugal",
-    "source": "https://www.inaturalist.org/observations/391084074",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
     "behaviors": [
       "reported"
     ],
-    "observedAt": "2026-08-14T10:38:17Z",
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-08-13-au-humpback-01",
+    "name": "Humpback sighting (AU)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by curried.",
+    "date": "2026-08-13",
+    "latitude": -25.0587778333,
+    "longitude": 152.96425,
+    "area": "AU",
+    "source": "https://www.inaturalist.org/observations/391128482",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-14T05:10:06Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/716647080/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) curried, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
-    "id": "2026-08-13-pacific-pde-at-curru-humpback-01",
+    "id": "2026-08-13-pacific-pde-at-curru-humpback-02",
     "name": "Humpback sighting (Pacific Pde at Currumbin Beach, Currumbin QLD 4223, Australia)",
     "species": "Humpback",
     "info": "iNaturalist observation by claus_in_nature.",
@@ -148,7 +167,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-08-13-ningaloo-humpback-02",
+    "id": "2026-08-13-ningaloo-humpback-03",
     "name": "Humpback sighting (Ningaloo)",
     "species": "Humpback",
     "info": "iNaturalist observation by lee_cornish.",
@@ -167,7 +186,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-stellwagen-bank-humpback-03",
+    "id": "2026-08-13-stellwagen-bank-humpback-04",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by ingvildriska.",
@@ -205,7 +224,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-08-13-point-reyes-national-humpback-04",
+    "id": "2026-08-13-point-reyes-national-humpback-05",
     "name": "Humpback sighting (Point Reyes National Seashore, Inverness, CA, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by nealkelso.",
@@ -224,7 +243,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-stellwagen-bank-humpback-05",
+    "id": "2026-08-13-stellwagen-bank-humpback-06",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by amityamityamity.",
@@ -240,7 +259,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-08-13-stellwagen-bank-humpback-06",
+    "id": "2026-08-13-stellwagen-bank-humpback-07",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by amityamityamity.",
@@ -256,7 +275,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-08-13-point-reyes-lighthou-humpback-07",
+    "id": "2026-08-13-point-reyes-lighthou-humpback-08",
     "name": "Humpback sighting (Point Reyes Lighthouse)",
     "species": "Humpback",
     "info": "iNaturalist observation by snelson182.",
@@ -275,7 +294,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-point-reyes-lighthou-humpback-08",
+    "id": "2026-08-13-point-reyes-lighthou-humpback-09",
     "name": "Humpback sighting (Point Reyes Lighthouse)",
     "species": "Humpback",
     "info": "iNaturalist observation by snelson182.",
@@ -294,7 +313,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-point-reyes-lighthou-humpback-09",
+    "id": "2026-08-13-point-reyes-lighthou-humpback-10",
     "name": "Humpback sighting (Point Reyes Lighthouse)",
     "species": "Humpback",
     "info": "iNaturalist observation by snelson182.",
@@ -313,7 +332,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-point-reyes-lighthou-humpback-10",
+    "id": "2026-08-13-point-reyes-lighthou-humpback-11",
     "name": "Humpback sighting (Point Reyes Lighthouse)",
     "species": "Humpback",
     "info": "iNaturalist observation by snelson182.",
@@ -332,7 +351,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-point-reyes-lighthou-humpback-11",
+    "id": "2026-08-13-point-reyes-lighthou-humpback-12",
     "name": "Humpback sighting (Point Reyes Lighthouse)",
     "species": "Humpback",
     "info": "iNaturalist observation by snelson182.",
@@ -351,7 +370,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-point-reyes-lighthou-humpback-12",
+    "id": "2026-08-13-point-reyes-lighthou-humpback-13",
     "name": "Humpback sighting (Point Reyes Lighthouse)",
     "species": "Humpback",
     "info": "iNaturalist observation by snelson182.",
@@ -370,7 +389,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-point-reyes-lighthou-humpback-13",
+    "id": "2026-08-13-point-reyes-lighthou-humpback-14",
     "name": "Humpback sighting (Point Reyes Lighthouse)",
     "species": "Humpback",
     "info": "iNaturalist observation by snelson182.",
@@ -389,7 +408,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-point-reyes-lighthou-humpback-14",
+    "id": "2026-08-13-point-reyes-lighthou-humpback-15",
     "name": "Humpback sighting (Point Reyes Lighthouse)",
     "species": "Humpback",
     "info": "iNaturalist observation by snelson182.",
@@ -403,25 +422,6 @@
     ],
     "observedAt": "2026-08-13T20:42:00Z",
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/716478352/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) snelson182, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-13-point-reyes-lighthou-humpback-15",
-    "name": "Humpback sighting (Point Reyes Lighthouse)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by snelson182.",
-    "date": "2026-08-13",
-    "latitude": 37.9957324241,
-    "longitude": -123.023322373,
-    "area": "Point Reyes Lighthouse",
-    "source": "https://www.inaturalist.org/observations/391043068",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-13T20:37:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/716478423/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) snelson182, some rights reserved (CC BY-NC)",
     "notable": true
@@ -462,22 +462,6 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-anse-jos-ross-les-es-blue-01",
-    "name": "Blue Whale sighting (Anse à Jos-Ross, Les Escoumins, QC, CA)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by desrochersa.",
-    "date": "2026-08-13",
-    "latitude": 48.3658098865,
-    "longitude": -69.3889614445,
-    "area": "Anse à Jos-Ross, Les Escoumins, QC, CA",
-    "source": "https://www.inaturalist.org/observations/390870211",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-13T15:47:41Z",
-    "notable": true
-  },
-  {
     "id": "2026-08-13-northeast-atlantic-sperm-01",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
@@ -494,23 +478,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-azores-sperm-02",
-    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by anaisbuilly.",
-    "date": "2026-08-13",
-    "latitude": 38.6971696254,
-    "longitude": -28.3224658427,
-    "area": "Azores (offshore), Portugal",
-    "source": "https://www.inaturalist.org/observations/390870169",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-13T15:47:07Z",
-    "notable": true
-  },
-  {
-    "id": "2026-08-13-northeast-atlantic-sperm-03",
+    "id": "2026-08-13-northeast-atlantic-sperm-02",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
     "info": "iNaturalist observation by enrico_carta.",
@@ -518,22 +486,6 @@
     "latitude": 43.5347820579,
     "longitude": 7.6878348468,
     "area": "Northeast Atlantic (offshore)",
-    "source": "https://www.inaturalist.org/observations/390897771",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-13T14:44:20Z",
-    "notable": true
-  },
-  {
-    "id": "2026-08-13-mediterranean-sea-sperm-04",
-    "name": "Sperm whale sighting (Mediterranean Sea (offshore))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by enrico_carta.",
-    "date": "2026-08-13",
-    "latitude": 43.5347820579,
-    "longitude": 7.6878348468,
-    "area": "Mediterranean Sea (offshore)",
     "source": "https://www.inaturalist.org/observations/390897771",
     "behaviors": [
       "reported"
@@ -561,7 +513,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-azores-pt-sperm-05",
+    "id": "2026-08-13-azores-pt-sperm-03",
     "name": "Sperm whale sighting (Azores, PT)",
     "species": "Sperm whale",
     "info": "iNaturalist observation by anaisbuilly.",
@@ -685,22 +637,6 @@
     "notable": true
   },
   {
-    "id": "2026-08-12-azores-sperm-02",
-    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by anaisbuilly.",
-    "date": "2026-08-12",
-    "latitude": 38.7799587407,
-    "longitude": -28.5508884478,
-    "area": "Azores (offshore), Portugal",
-    "source": "https://www.inaturalist.org/observations/390623539",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-12T17:53:37Z",
-    "notable": true
-  },
-  {
     "id": "2026-08-12-campbell-river-bc-ca-orca-02",
     "name": "Orca sighting (Campbell River, BC, Canada)",
     "species": "Orca",
@@ -720,39 +656,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-08-12-les-escoumins-qc-g0t-blue-01",
-    "name": "Blue Whale sighting (Les Escoumins, QC G0T 1K0, Canada)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by david_turgeon.",
-    "date": "2026-08-12",
-    "latitude": 48.2993474444,
-    "longitude": -69.4171380624,
-    "area": "Les Escoumins, QC G0T 1K0, Canada",
-    "source": "https://www.inaturalist.org/observations/390611744",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-12T17:03:41Z",
-    "notable": true
-  },
-  {
-    "id": "2026-08-12-oc-ano-pac-fico-choc-humpback-05",
-    "name": "Humpback sighting (Océano Pacífico, Chocó, CO)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by cindy911.",
-    "date": "2026-08-12",
-    "latitude": 6.2936331019,
-    "longitude": -77.4914315645,
-    "area": "Océano Pacífico, Chocó, CO",
-    "source": "https://www.inaturalist.org/observations/390576073",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-12T14:45:38Z",
-    "seasonalStatus": "Colombia Pacific breeding season"
-  },
-  {
-    "id": "2026-08-12-northeast-atlantic-sperm-03",
+    "id": "2026-08-12-northeast-atlantic-sperm-02",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
     "info": "iNaturalist observation by rafeememon.",
@@ -765,51 +669,13 @@
       "reported"
     ],
     "observedAt": "2026-08-12T14:38:33Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/715621701/medium.jpg",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/716687001/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) rafeememon, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
-    "id": "2026-08-12-mediterranean-sea-sperm-04",
-    "name": "Sperm whale sighting (Mediterranean Sea (offshore))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by rafeememon.",
-    "date": "2026-08-12",
-    "latitude": 39.6960005602,
-    "longitude": 1.1224132961,
-    "area": "Mediterranean Sea (offshore)",
-    "source": "https://www.inaturalist.org/observations/390602402",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-12T14:38:33Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/715621701/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) rafeememon, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-12-oceano-atl-ntico-es--humpback-06",
-    "name": "Humpback sighting (Oceano Atlântico, ES, BR)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by dornelas2005.",
-    "date": "2026-08-12",
-    "latitude": -20.0170416667,
-    "longitude": -39.9474366667,
-    "area": "Oceano Atlântico, ES, BR",
-    "source": "https://www.inaturalist.org/observations/390933883",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-12T13:22:14Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/716263448/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Samuel Dornelas, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-12-iceland-humpback-07",
+    "id": "2026-08-12-iceland-humpback-05",
     "name": "Humpback sighting (Iceland)",
     "species": "Humpback",
     "info": "iNaturalist observation by ian327.",
@@ -825,7 +691,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-08-12-azores-pt-sperm-05",
+    "id": "2026-08-12-azores-pt-sperm-03",
     "name": "Sperm whale sighting (Azores, PT)",
     "species": "Sperm whale",
     "info": "iNaturalist observation by anaisbuilly.",
@@ -841,7 +707,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-12-eyjafjordur-humpback-08",
+    "id": "2026-08-12-eyjafjordur-humpback-06",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-12.",
@@ -1025,79 +891,25 @@
     "notable": true
   },
   {
-    "id": "2026-08-11-mediterranean-sea-sperm-02",
-    "name": "Sperm whale sighting (Mediterranean Sea (offshore))",
+    "id": "2026-08-11-northeast-atlantic-sperm-02",
+    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
-    "info": "iNaturalist observation by eliot83.",
+    "info": "iNaturalist observation by anaisbuilly.",
     "date": "2026-08-11",
-    "latitude": 43.1497929005,
-    "longitude": 5.6968960812,
-    "area": "Mediterranean Sea (offshore)",
-    "source": "https://www.inaturalist.org/observations/390838186",
+    "latitude": 38.7567529638,
+    "longitude": -28.4497338641,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/390247133",
     "behaviors": [
       "reported"
     ],
-    "observedAt": "2026-08-11T17:06:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/716081848/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Eliot Fournial, some rights reserved (CC BY-NC)",
+    "observedAt": "2026-08-11T10:51:56Z",
     "notable": true
-  },
-  {
-    "id": "2026-08-11-colombia-humpback-04",
-    "name": "Humpback sighting (Colombia)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by tene_19.",
-    "date": "2026-08-11",
-    "latitude": 6.0771055556,
-    "longitude": -77.4537333333,
-    "area": "Colombia",
-    "source": "https://www.inaturalist.org/observations/390738366",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-11T15:10:32Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/715888447/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Mariana, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Colombia Pacific breeding season"
   },
   {
     "id": "2026-08-11-northeast-atlantic-sperm-03",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
-    "info": "iNaturalist observation by anaisbuilly.",
-    "date": "2026-08-11",
-    "latitude": 38.7567529638,
-    "longitude": -28.4497338641,
-    "area": "Northeast Atlantic (offshore)",
-    "source": "https://www.inaturalist.org/observations/390247133",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-11T10:51:56Z",
-    "notable": true
-  },
-  {
-    "id": "2026-08-11-azores-sperm-04",
-    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by anaisbuilly.",
-    "date": "2026-08-11",
-    "latitude": 38.7567529638,
-    "longitude": -28.4497338641,
-    "area": "Azores (offshore), Portugal",
-    "source": "https://www.inaturalist.org/observations/390247133",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-11T10:51:56Z",
-    "notable": true
-  },
-  {
-    "id": "2026-08-11-northeast-atlantic-sperm-05",
-    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
-    "species": "Sperm whale",
     "info": "iNaturalist observation by claudia_brandao.",
     "date": "2026-08-11",
     "latitude": 38.7921793391,
@@ -1111,23 +923,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-11-azores-sperm-06",
-    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by claudia_brandao.",
-    "date": "2026-08-11",
-    "latitude": 38.7921793391,
-    "longitude": -28.5006797495,
-    "area": "Azores (offshore), Portugal",
-    "source": "https://www.inaturalist.org/observations/390239622",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-11T10:01:12Z",
-    "notable": true
-  },
-  {
-    "id": "2026-08-11-eyjafjordur-humpback-05",
+    "id": "2026-08-11-eyjafjordur-humpback-04",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-11.",
@@ -1343,25 +1139,6 @@
     "photoAttribution": "(c) Emma R, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-08-09-les-escoumins-c-te-n-humpback-02",
-    "name": "Humpback sighting (Les Escoumins, Côte-Nord, QC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by deniscorbeil.",
-    "date": "2026-08-09",
-    "latitude": 48.3380570414,
-    "longitude": -69.3896388422,
-    "area": "Les Escoumins, Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/390737717",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-09T21:56:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/715886434/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) deniscorbeil, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
     "id": "2026-08-09-capital-bc-ca-gray-02",
     "name": "Gray Whale sighting (Capital, BC, CA)",
     "species": "Gray Whale",
@@ -1377,7 +1154,7 @@
     "observedAt": "2026-08-09T21:34:06Z"
   },
   {
-    "id": "2026-08-09-kenai-peninsula-coun-humpback-03",
+    "id": "2026-08-09-kenai-peninsula-coun-humpback-02",
     "name": "Humpback sighting (Kenai Peninsula County, US-AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by james_p_mitchell.",
@@ -1566,7 +1343,7 @@
     "photoAttribution": "(c) Emma R, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-08-09-ak-us-humpback-04",
+    "id": "2026-08-09-ak-us-humpback-03",
     "name": "Humpback sighting (AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by colehei.",
@@ -1603,7 +1380,7 @@
     "photoAttribution": "(c) yiolo30, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-08-09-kaldrananeshreppur-i-humpback-05",
+    "id": "2026-08-09-kaldrananeshreppur-i-humpback-04",
     "name": "Humpback sighting (Kaldrananeshreppur, IS-VF, IS)",
     "species": "Humpback",
     "info": "iNaturalist observation by rainerw.",
@@ -1619,26 +1396,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-08-09-colombia-humpback-06",
-    "name": "Humpback sighting (Colombia)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by tene_19.",
-    "date": "2026-08-09",
-    "latitude": 6.13155,
-    "longitude": -77.4978277778,
-    "area": "Colombia",
-    "source": "https://www.inaturalist.org/observations/390727524",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-09T14:23:11Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/715865897/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Mariana, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Colombia Pacific breeding season"
-  },
-  {
-    "id": "2026-08-09-eyjafjordur-humpback-07",
+    "id": "2026-08-09-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-09.",
@@ -1705,26 +1463,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-08-tadoussac-c-te-nord--humpback-01",
-    "name": "Humpback sighting (Tadoussac, Côte-Nord, QC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by deniscorbeil.",
-    "date": "2026-08-08",
-    "latitude": 48.1278021235,
-    "longitude": -69.6625626991,
-    "area": "Tadoussac, Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/390465638",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-08T15:00:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/715360434/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) deniscorbeil, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-08-08-peru-humpback-02",
+    "id": "2026-08-08-peru-humpback-01",
     "name": "Humpback sighting (Peru)",
     "species": "Humpback",
     "info": "iNaturalist observation by naturalist136524.",
@@ -1983,26 +1722,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-08-06-r-serve-indienne-de--humpback-01",
-    "name": "Humpback sighting (Réserve indienne de Essipit, QC G0T 1K0, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by genevieve8867.",
-    "date": "2026-08-06",
-    "latitude": 48.3547753483,
-    "longitude": -69.3943396211,
-    "area": "Réserve indienne de Essipit, QC G0T 1K0, Canada",
-    "source": "https://www.inaturalist.org/observations/389014950",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-06T23:00:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/712523657/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Geneviève Boudreau, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-08-06-kenai-peninsula-boro-humpback-02",
+    "id": "2026-08-06-kenai-peninsula-boro-humpback-01",
     "name": "Humpback sighting (Kenai Peninsula Borough, AK, USA)",
     "species": "Humpback",
     "info": "iNaturalist observation by alexduman.",
@@ -2021,7 +1741,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-06-kenai-peninsula-boro-humpback-03",
+    "id": "2026-08-06-kenai-peninsula-boro-humpback-02",
     "name": "Humpback sighting (Kenai Peninsula Borough, AK, USA)",
     "species": "Humpback",
     "info": "iNaturalist observation by alexduman.",
@@ -2040,7 +1760,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-06-south-africa-humpback-04",
+    "id": "2026-08-06-south-africa-humpback-03",
     "name": "Humpback sighting (South Africa)",
     "species": "Humpback",
     "info": "iNaturalist observation by stuart191.",
@@ -2059,24 +1779,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-06-svalbard-arctic-norw-blue-01",
-    "name": "Blue Whale sighting (Svalbard, Arctic Norway (offshore))",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by liangonz.",
-    "date": "2026-08-06",
-    "latitude": 80.74,
-    "longitude": 15.89,
-    "area": "Svalbard, Arctic Norway (offshore)",
-    "source": "https://www.inaturalist.org/observations/389365849",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ],
-    "observedAt": "2026-08-06T15:09:00Z",
-    "notable": true
-  },
-  {
-    "id": "2026-08-06-atlantic-ocean-rj-br-humpback-05",
+    "id": "2026-08-06-atlantic-ocean-rj-br-humpback-04",
     "name": "Humpback sighting (Atlantic Ocean, RJ, BR)",
     "species": "Humpback",
     "info": "iNaturalist observation by marcmez.",
@@ -2092,7 +1795,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-06-eyjafjordur-humpback-06",
+    "id": "2026-08-06-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-06.",
@@ -2451,177 +2154,6 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-08-04-c-te-nord-qc-canada-humpback-04",
-    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by lpbateman.",
-    "date": "2026-08-04",
-    "latitude": 48.374056664,
-    "longitude": -69.3402393357,
-    "area": "Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/389513600",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T15:06:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713489523/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-08-04-c-te-nord-qc-canada-humpback-05",
-    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by lpbateman.",
-    "date": "2026-08-04",
-    "latitude": 48.374056664,
-    "longitude": -69.3402393357,
-    "area": "Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/389513599",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T14:57:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713489268/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-08-04-oceano-atl-ntico-es--humpback-06",
-    "name": "Humpback sighting (Oceano Atlântico, ES, BR)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by dornelas2005.",
-    "date": "2026-08-04",
-    "latitude": -20.0492583333,
-    "longitude": -40.01244445,
-    "area": "Oceano Atlântico, ES, BR",
-    "source": "https://www.inaturalist.org/observations/388550661",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T12:50:36Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/711637930/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Samuel Dornelas, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-04-c-te-nord-qc-canada-fin-01",
-    "name": "Fin Whale sighting (Côte-Nord, QC, Canada)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by lpbateman.",
-    "date": "2026-08-04",
-    "latitude": 48.143396331,
-    "longitude": -69.6287004182,
-    "area": "Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/389513597",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T12:45:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713488617/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-04-c-te-nord-qc-canada-humpback-07",
-    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by lpbateman.",
-    "date": "2026-08-04",
-    "latitude": 48.143396331,
-    "longitude": -69.6287004182,
-    "area": "Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/389513596",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T12:35:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713488209/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-08-04-c-te-nord-qc-canada-humpback-08",
-    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by lpbateman.",
-    "date": "2026-08-04",
-    "latitude": 48.143396331,
-    "longitude": -69.6287004182,
-    "area": "Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/389513587",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T12:20:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713487689/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-08-04-c-te-nord-qc-canada-humpback-09",
-    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by lpbateman.",
-    "date": "2026-08-04",
-    "latitude": 48.143396331,
-    "longitude": -69.6287004182,
-    "area": "Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/389513583",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T11:57:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713487366/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-08-04-c-te-nord-qc-canada-humpback-10",
-    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by lpbateman.",
-    "date": "2026-08-04",
-    "latitude": 48.143396331,
-    "longitude": -69.6287004182,
-    "area": "Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/389513584",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T11:56:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713487238/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-08-04-c-te-nord-qc-canada-humpback-11",
-    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by lpbateman.",
-    "date": "2026-08-04",
-    "latitude": 48.143396331,
-    "longitude": -69.6287004182,
-    "area": "Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/389513578",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T11:50:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713487061/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
     "id": "2026-08-04-northeast-atlantic-sperm-01",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
@@ -2638,63 +2170,28 @@
     "notable": true
   },
   {
-    "id": "2026-08-04-azores-sperm-02",
-    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
+    "id": "2026-08-04-northeast-atlantic-sperm-02",
+    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
-    "info": "iNaturalist observation by anaisbuilly.",
+    "info": "iNaturalist observation by mintar.",
     "date": "2026-08-04",
-    "latitude": 38.6791571586,
-    "longitude": -28.7132870419,
-    "area": "Azores (offshore), Portugal",
-    "source": "https://www.inaturalist.org/observations/388135405",
+    "latitude": 38.5574834474,
+    "longitude": -27.2590783964,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/388167670",
     "behaviors": [
       "reported"
     ],
-    "observedAt": "2026-08-04T10:42:09Z",
+    "observedAt": "2026-08-04T09:25:14Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/710890712/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Mintar, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
     "id": "2026-08-04-northeast-atlantic-sperm-03",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
-    "info": "iNaturalist observation by mintar.",
-    "date": "2026-08-04",
-    "latitude": 38.5574834474,
-    "longitude": -27.2590783964,
-    "area": "Northeast Atlantic (offshore)",
-    "source": "https://www.inaturalist.org/observations/388167670",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T09:25:14Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/710890712/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Mintar, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-04-azores-sperm-04",
-    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by mintar.",
-    "date": "2026-08-04",
-    "latitude": 38.5574834474,
-    "longitude": -27.2590783964,
-    "area": "Azores (offshore), Portugal",
-    "source": "https://www.inaturalist.org/observations/388167670",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T09:25:14Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/710890712/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Mintar, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-04-northeast-atlantic-sperm-05",
-    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
-    "species": "Sperm whale",
     "info": "iNaturalist observation by ottililie.",
     "date": "2026-08-04",
     "latitude": 38.5913370928,
@@ -2709,41 +2206,6 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) jaSon, some rights reserved (CC BY-NC)",
     "notable": true
-  },
-  {
-    "id": "2026-08-04-azores-sperm-06",
-    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by ottililie.",
-    "date": "2026-08-04",
-    "latitude": 38.5913370928,
-    "longitude": -27.3680968077,
-    "area": "Azores (offshore), Portugal",
-    "source": "https://www.inaturalist.org/observations/388152720",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T09:25:08Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/710862470/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) jaSon, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-04-indian-ocean-mz-humpback-12",
-    "name": "Humpback sighting (Indian Ocean, MZ)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by sgcacc.",
-    "date": "2026-08-04",
-    "latitude": -23.7642101472,
-    "longitude": 35.5533859585,
-    "area": "Indian Ocean, MZ",
-    "source": "https://www.inaturalist.org/observations/388548401",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T07:38:09Z",
-    "seasonalStatus": "East Africa / Mozambique corridor"
   },
   {
     "id": "2026-08-04-indian-ocean-yalata--southern-right-whale-01",
@@ -2876,54 +2338,6 @@
     "observedAt": "2026-08-03T17:48:05Z"
   },
   {
-    "id": "2026-08-03-northeast-atlantic-sperm-01",
-    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by claudia_brandao.",
-    "date": "2026-08-03",
-    "latitude": 38.7906461585,
-    "longitude": -28.5913846863,
-    "area": "Northeast Atlantic (offshore)",
-    "source": "https://www.inaturalist.org/observations/387905417",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-03T16:19:47Z",
-    "notable": true
-  },
-  {
-    "id": "2026-08-03-azores-sperm-02",
-    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by claudia_brandao.",
-    "date": "2026-08-03",
-    "latitude": 38.7906461585,
-    "longitude": -28.5913846863,
-    "area": "Azores (offshore), Portugal",
-    "source": "https://www.inaturalist.org/observations/387905417",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-03T16:19:47Z",
-    "notable": true
-  },
-  {
-    "id": "2026-08-03-azores-sperm-03",
-    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by anaisbuilly.",
-    "date": "2026-08-03",
-    "latitude": 38.6799545032,
-    "longitude": -28.4845575395,
-    "area": "Azores (offshore), Portugal",
-    "source": "https://www.inaturalist.org/observations/387893657",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-03T15:39:14Z",
-    "notable": true
-  },
-  {
     "id": "2026-08-03-garden-route-distric-humpback-04",
     "name": "Humpback sighting (Garden Route District Municipality, South Africa)",
     "species": "Humpback",
@@ -2940,25 +2354,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/710412188/medium.jpg",
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Shaun Swanepoel, some rights reserved (CC BY)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-03-azores-sperm-04",
-    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by laura_invernici.",
-    "date": "2026-08-03",
-    "latitude": 37.2574735816,
-    "longitude": -25.9540056785,
-    "area": "Azores (offshore), Portugal",
-    "source": "https://www.inaturalist.org/observations/388710867",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-03T10:27:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/711953079/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Laura Invernici, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -3035,41 +2430,6 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-08-02-la-c-te-de-gasp-ca-q-blue-01",
-    "name": "Blue Whale sighting (La Côte-de-Gaspé, CA-QC, CA)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by antie_m.",
-    "date": "2026-08-02",
-    "latitude": 48.7333,
-    "longitude": -64.1831,
-    "area": "La Côte-de-Gaspé, CA-QC, CA",
-    "source": "https://www.inaturalist.org/observations/387557030",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-02T15:17:45Z",
-    "notable": true
-  },
-  {
-    "id": "2026-08-02-pacific-ocean-choc-c-humpback-02",
-    "name": "Humpback sighting (Pacific Ocean, Chocó, CO)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by freestylesail.",
-    "date": "2026-08-02",
-    "latitude": 7.0910478667,
-    "longitude": -77.8077722689,
-    "area": "Pacific Ocean, Chocó, CO",
-    "source": "https://www.inaturalist.org/observations/389070240",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-02T13:39:07Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/712630770/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) freestylesail, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Colombia Pacific breeding season"
-  },
-  {
     "id": "2026-08-02-grays-harbor-county--gray-01",
     "name": "Gray Whale sighting (Grays Harbor County, WA, USA)",
     "species": "Gray Whale",
@@ -3120,45 +2480,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-01-aire-g-n-rale-devant-fin-01",
-    "name": "Fin Whale sighting (Aire générale devant le Chalet, Les Escoumins)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by lpbateman.",
-    "date": "2026-08-01",
-    "latitude": 48.365701873499994,
-    "longitude": -69.3521180133,
-    "area": "Aire générale devant le Chalet, Les Escoumins",
-    "source": "https://www.inaturalist.org/observations/389513567",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-01T20:53:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713486371/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-01-aire-g-n-rale-devant-fin-02",
-    "name": "Fin Whale sighting (Aire générale devant le Chalet, Les Escoumins)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by lpbateman.",
-    "date": "2026-08-01",
-    "latitude": 48.365701873499994,
-    "longitude": -69.3521180133,
-    "area": "Aire générale devant le Chalet, Les Escoumins",
-    "source": "https://www.inaturalist.org/observations/389513564",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-01T20:53:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713486336/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-01-valdez-cordova-count-fin-03",
+    "id": "2026-08-01-valdez-cordova-count-fin-01",
     "name": "Fin Whale sighting (Valdez-Cordova County, US-AK, US)",
     "species": "Fin Whale",
     "info": "iNaturalist observation by tuftedtiffmouse.",
@@ -3238,44 +2560,6 @@
     "notable": true
   },
   {
-    "id": "2026-08-01-brazil-humpback-04",
-    "name": "Humpback sighting (Brazil)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by fabianasoliveira.",
-    "date": "2026-08-01",
-    "latitude": -23.9250758571,
-    "longitude": -45.1358877495,
-    "area": "Brazil",
-    "source": "https://www.inaturalist.org/observations/387412654",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-01T18:09:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/709417018/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) fabiana dos santos de oliveira rosin, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-01-parque-nacional-mach-humpback-05",
-    "name": "Humpback sighting (Parque Nacional Machalilla, EC-MN-MA, EC-MN, EC)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by alaric593.",
-    "date": "2026-08-01",
-    "latitude": -1.2641763905,
-    "longitude": -81.0506734997,
-    "area": "Parque Nacional Machalilla, EC-MN-MA, EC-MN, EC",
-    "source": "https://www.inaturalist.org/observations/387251069",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-01T13:47:45Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/714686989/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Alaric Aguilar, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Colombia Pacific breeding season"
-  },
-  {
     "id": "2026-08-01-north-atlantic-ocean-great-white-shark-01",
     "name": "Great White Shark sighting (North Atlantic Ocean, Eastham, MA, US)",
     "species": "Great White Shark",
@@ -3312,26 +2596,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-01-rio-de-janeiro-rj-br-humpback-06",
-    "name": "Humpback sighting (Rio de Janeiro, RJ, Brasil)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by vicentee_23.",
-    "date": "2026-08-01",
-    "latitude": -23.2908565125,
-    "longitude": -43.1674033359,
-    "area": "Rio de Janeiro, RJ, Brasil",
-    "source": "https://www.inaturalist.org/observations/387240937",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-01T12:47:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/709081938/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Vicente, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-08-01-city-of-cape-town-za-humpback-07",
+    "id": "2026-08-01-city-of-cape-town-za-humpback-04",
     "name": "Humpback sighting (City of Cape Town, ZA-WC, ZA)",
     "species": "Humpback",
     "info": "iNaturalist observation by yannd.",
@@ -3347,7 +2612,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-01-eyjafjordur-humpback-08",
+    "id": "2026-08-01-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-01.",
@@ -3479,22 +2744,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/712006131/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Michael Bird, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-31-azores-pt-sperm-01",
-    "name": "Sperm whale sighting (Azores, PT)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by anaisbuilly.",
-    "date": "2026-07-31",
-    "latitude": 38.4164155595,
-    "longitude": -28.5036625545,
-    "area": "Azores, PT",
-    "source": "https://www.inaturalist.org/observations/386908889",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-31T16:13:35Z",
     "notable": true
   },
   {
@@ -3698,25 +2947,6 @@
       "reported"
     ],
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-07-30-svalbard-arctic-norw-blue-01",
-    "name": "Blue Whale sighting (Svalbard, Arctic Norway (offshore))",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by leekelai.",
-    "date": "2026-07-30",
-    "latitude": 80.6396433791,
-    "longitude": 13.9916148359,
-    "area": "Svalbard, Arctic Norway (offshore)",
-    "source": "https://www.inaturalist.org/observations/389475006",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-30T15:09:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713415352/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) leekelai, some rights reserved (CC BY-NC)",
-    "notable": true
   },
   {
     "id": "2026-07-30-western-cape-za-humpback-04",
@@ -4091,23 +3321,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-28-st-lawrence-river-le-humpback-03",
-    "name": "Humpback sighting (St. Lawrence River, Les Escoumins, QC, CA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by rtcj.",
-    "date": "2026-07-28",
-    "latitude": 48.3419003749,
-    "longitude": -69.3824847343,
-    "area": "St. Lawrence River, Les Escoumins, QC, CA",
-    "source": "https://www.inaturalist.org/observations/388023865",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-28T17:15:26Z",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-07-28-eyjafjordur-humpback-04",
+    "id": "2026-07-28-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-07-28.",
@@ -4137,25 +3351,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-27-oceano-atl-ntico-sul-humpback-01",
-    "name": "Humpback sighting (Oceano Atlântico Sul)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by dornelas2005.",
-    "date": "2026-07-27",
-    "latitude": -20.7936469597,
-    "longitude": -39.783806657,
-    "area": "Oceano Atlântico Sul",
-    "source": "https://www.inaturalist.org/observations/386033091",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-28T02:27:50Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706773667/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Samuel Dornelas, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-07-27-lane-county-or-usa-gray-01",
     "name": "Gray Whale sighting (Lane County, OR, USA)",
     "species": "Gray Whale",
@@ -4174,7 +3369,7 @@
     "photoAttribution": "(c) jonahbt, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-07-27-svalbard-humpback-02",
+    "id": "2026-07-27-svalbard-humpback-01",
     "name": "Humpback sighting (Svalbard)",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-27.",
@@ -4189,26 +3384,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-27-les-bergeronnes-qc-c-fin-01",
-    "name": "Fin Whale sighting (Les Bergeronnes, QC, CA)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by shawni96.",
-    "date": "2026-07-27",
-    "latitude": 48.2854057491,
-    "longitude": -69.4441581127,
-    "area": "Les Bergeronnes, QC, CA",
-    "source": "https://www.inaturalist.org/observations/385844640",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-27T11:26:34Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706408484/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Shawn Raymond, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-27-svalbard-svalbard-an-humpback-03",
+    "id": "2026-07-27-svalbard-svalbard-an-humpback-02",
     "name": "Humpback sighting (Svalbard, Svalbard and Jan Mayen)",
     "species": "Humpback",
     "info": "iNaturalist observation by laurenpeach94.",
@@ -4227,7 +3403,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-27-eyjafjordur-humpback-04",
+    "id": "2026-07-27-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-07-27.",
@@ -4241,25 +3417,6 @@
       "feeding"
     ],
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-07-26-les-bergeronnes-qc-c-humpback-01",
-    "name": "Humpback sighting (Les Bergeronnes, QC, CA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by shawni96.",
-    "date": "2026-07-26",
-    "latitude": 48.2855064858,
-    "longitude": -69.4453746715,
-    "area": "Les Bergeronnes, QC, CA",
-    "source": "https://www.inaturalist.org/observations/385844128",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-26T21:36:51Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706407490/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Shawn Raymond, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
     "id": "2026-07-26-sunshine-coast-hwy-s-gray-01",
@@ -4278,22 +3435,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706481586/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Christine (Konrad) Clarke, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-07-26-les-escoumins-qc-g0t-fin-01",
-    "name": "Fin Whale sighting (Les Escoumins, QC G0T 1K0, Canada)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by xavmaltais.",
-    "date": "2026-07-26",
-    "latitude": 48.299541666699994,
-    "longitude": -69.4131388889,
-    "area": "Les Escoumins, QC G0T 1K0, Canada",
-    "source": "https://www.inaturalist.org/observations/388216920",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-26T19:33:30Z",
-    "notable": true
   },
   {
     "id": "2026-07-26-us-orca-01",
@@ -4330,80 +3471,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-26-c-te-nord-qc-canada-humpback-02",
-    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by cat2953.",
-    "date": "2026-07-26",
-    "latitude": 48.1613415583,
-    "longitude": -69.5673388083,
-    "area": "Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/386019346",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-26T18:15:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706743010/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) cat2953, some rights reserved (CC BY)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-07-26-c-te-nord-qc-canada-fin-02",
-    "name": "Fin Whale sighting (Côte-Nord, QC, Canada)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by cat2953.",
-    "date": "2026-07-26",
-    "latitude": 48.16093665,
-    "longitude": -69.5696009867,
-    "area": "Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/386019345",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-26T18:07:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706742645/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) cat2953, some rights reserved (CC BY)",
-    "notable": true
-  },
-  {
-    "id": "2026-07-26-la-haute-c-te-nord-q-humpback-03",
-    "name": "Humpback sighting (La Haute-Côte-Nord, QC, Canada)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by xavmaltais.",
-    "date": "2026-07-26",
-    "latitude": 48.2698083333,
-    "longitude": -69.4674472222,
-    "area": "La Haute-Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/388217065",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-26T16:08:53Z",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-07-26-les-bergeronnes-qc-c-humpback-04",
-    "name": "Humpback sighting (Les Bergeronnes, QC, CA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by shawni96.",
-    "date": "2026-07-26",
-    "latitude": 48.2854294657,
-    "longitude": -69.4452996787,
-    "area": "Les Bergeronnes, QC, CA",
-    "source": "https://www.inaturalist.org/observations/385845805",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-26T15:53:27Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706411356/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Shawn Raymond, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-07-26-heimaey-vestmannaeyj-humpback-05",
+    "id": "2026-07-26-heimaey-vestmannaeyj-humpback-01",
     "name": "Humpback sighting (Heimaey, Vestmannaeyjar, Suðurland, IS)",
     "species": "Humpback",
     "info": "iNaturalist observation by claudiabrunke.",
@@ -4441,7 +3509,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-26-eyjafjordur-humpback-06",
+    "id": "2026-07-26-eyjafjordur-humpback-02",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-07-26.",
@@ -4574,25 +3642,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-25-ilhabela-sp-brasil-humpback-01",
-    "name": "Humpback sighting (Ilhabela, SP, Brasil)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by crisbolochio.",
-    "date": "2026-07-25",
-    "latitude": -23.672141934,
-    "longitude": -45.1911413984,
-    "area": "Ilhabela, SP, Brasil",
-    "source": "https://www.inaturalist.org/observations/385734524",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-25T13:23:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706189630/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Cristiane Bolochio, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-07-24-western-australia-au-southern-right-whale-01",
     "name": "Southern Right Whale sighting (Western Australia, AU)",
     "species": "Southern Right Whale",
@@ -4647,25 +3696,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-24-manab-ec-humpback-01",
-    "name": "Humpback sighting (Manabí, EC)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by braden1.",
-    "date": "2026-07-24",
-    "latitude": -1.4086635512,
-    "longitude": -80.9397826378,
-    "area": "Manabí, EC",
-    "source": "https://www.inaturalist.org/observations/384961108",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-24T20:37:50Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/704724180/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Braden McDonald, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Colombia Pacific breeding season"
-  },
-  {
     "id": "2026-07-24-kodiak-island-boroug-gray-01",
     "name": "Gray Whale sighting (Kodiak Island Borough, AK, USA)",
     "species": "Gray Whale",
@@ -4700,7 +3730,7 @@
     "observedAt": "2026-07-24T19:45:52Z"
   },
   {
-    "id": "2026-07-24-island-humpback-02",
+    "id": "2026-07-24-island-humpback-01",
     "name": "Humpback sighting (Island)",
     "species": "Humpback",
     "info": "iNaturalist observation by zwergente.",
@@ -4719,7 +3749,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-24-kerry-humpback-03",
+    "id": "2026-07-24-kerry-humpback-02",
     "name": "Humpback sighting (Kerry)",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-24.",
@@ -4772,37 +3802,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-24-eyjafjordur-humpback-04",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-07-24.",
-    "date": "2026-07-24",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-07-23-pacific-mexico-orca-01",
-    "name": "Orca sighting (Pacific Mexico (offshore))",
-    "species": "Orca",
-    "info": "iNaturalist observation by jake_smith755.",
-    "date": "2026-07-23",
-    "latitude": 24.2255801002,
-    "longitude": -109.668150377,
-    "area": "Pacific Mexico (offshore)",
-    "source": "https://www.inaturalist.org/observations/384399540",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-23T19:40:58Z",
-    "notable": true
-  },
-  {
     "id": "2026-07-23-gqeberha-6011-s-dafr-humpback-01",
     "name": "Humpback sighting (Gqeberha, 6011, Südafrika)",
     "species": "Humpback",
@@ -4852,25 +3851,6 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-23-les-escoumins-qc-g0t-fin-01",
-    "name": "Fin Whale sighting (Les Escoumins, QC G0T 1K0, Canada)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by roman13951.",
-    "date": "2026-07-23",
-    "latitude": 48.3236069743,
-    "longitude": -69.3975294381,
-    "area": "Les Escoumins, QC G0T 1K0, Canada",
-    "source": "https://www.inaturalist.org/observations/386873214",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-23T19:00:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/708382814/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Roman Lendormy, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-07-23-q-ta-do-guarau-peru--humpback-04",
     "name": "Humpback sighting (Q.ta do Guarau, Peruíbe - SP, Brasil)",
     "species": "Humpback",
@@ -4914,22 +3894,6 @@
     "latitude": 76.1038319091,
     "longitude": 15.5834901912,
     "area": "Svalbard (iNaturalist)",
-    "source": "https://www.inaturalist.org/observations/384206583",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-23T09:18:00Z",
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-07-23-svalbard-arctic-norw-humpback-07",
-    "name": "Humpback sighting (Svalbard, Arctic Norway (offshore))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by kevin_snair.",
-    "date": "2026-07-23",
-    "latitude": 76.1038319091,
-    "longitude": 15.5834901912,
-    "area": "Svalbard, Arctic Norway (offshore)",
     "source": "https://www.inaturalist.org/observations/384206583",
     "behaviors": [
       "reported"
@@ -5154,25 +4118,6 @@
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Matthew Neswold, some rights reserved (CC BY)",
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-07-22-brazil-atlantic-coas-humpback-07",
-    "name": "Humpback sighting (Brazil Atlantic Coast (offshore))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by luc_leuz.",
-    "date": "2026-07-22",
-    "latitude": -23.0941436085,
-    "longitude": -43.2504259263,
-    "area": "Brazil Atlantic Coast (offshore)",
-    "source": "https://www.inaturalist.org/observations/384683300",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-22T16:22:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/704193153/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Lucas Leuzinger, some rights reserved (CC BY-NC)",
-    "notable": true
   },
   {
     "id": "2026-07-22-andenes-vester-len-n-sperm-01",
@@ -5400,22 +4345,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-svalbard-arctic-norw-blue-01",
-    "name": "Blue Whale sighting (Svalbard, Arctic Norway (offshore))",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by kevin_snair.",
-    "date": "2026-07-20",
-    "latitude": 80.26024,
-    "longitude": 15.7835083333,
-    "area": "Svalbard, Arctic Norway (offshore)",
-    "source": "https://www.inaturalist.org/observations/383397788",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-20T20:02:00Z",
-    "notable": true
-  },
-  {
     "id": "2026-07-20-s-dafrika-humpback-01",
     "name": "Humpback sighting (Südafrika)",
     "species": "Humpback",
@@ -5464,6 +4393,21 @@
     "notable": true
   },
   {
+    "id": "2026-07-20-australia-gray-01",
+    "name": "Gray Whale sighting (Australia)",
+    "species": "Gray Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
+    "date": "2026-07-20",
+    "latitude": 44.0062950659,
+    "longitude": 145.4310102185,
+    "area": "Australia",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383205297",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-07-20-global-sperm-01",
     "name": "Sperm whale sighting (Global (OBIS))",
     "species": "Sperm whale",
@@ -5494,30 +4438,15 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-australia-gray-01",
-    "name": "Gray Whale sighting (Australia)",
-    "species": "Gray Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
-    "date": "2026-07-20",
-    "latitude": 44.0062950659,
-    "longitude": 145.4310102185,
-    "area": "Australia",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383205297",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-07-20-global-orca-01",
     "name": "Orca sighting (Global (GBIF))",
     "species": "Orca",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-20.",
     "date": "2026-07-20",
-    "latitude": 54.695495,
-    "longitude": -132.248473,
+    "latitude": 41.178526,
+    "longitude": -71.531352,
     "area": "Global (GBIF)",
-    "source": "https://www.gbif.org/occurrence/6469761727",
+    "source": "https://www.gbif.org/occurrence/6469782663",
     "behaviors": [
       "reported"
     ],
@@ -5529,10 +4458,10 @@
     "species": "Orca",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-20.",
     "date": "2026-07-20",
-    "latitude": 41.178526,
-    "longitude": -71.531352,
+    "latitude": 54.695495,
+    "longitude": -132.248473,
     "area": "Global (GBIF)",
-    "source": "https://www.gbif.org/occurrence/6469782663",
+    "source": "https://www.gbif.org/occurrence/6469761727",
     "behaviors": [
       "reported"
     ],
@@ -5551,22 +4480,6 @@
     "behaviors": [
       "reported"
     ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-20-svalbard-arctic-norw-blue-02",
-    "name": "Blue Whale sighting (Svalbard, Arctic Norway (offshore))",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by kevin_snair.",
-    "date": "2026-07-20",
-    "latitude": 80.2550583333,
-    "longitude": 15.7942283333,
-    "area": "Svalbard, Arctic Norway (offshore)",
-    "source": "https://www.inaturalist.org/observations/383397786",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-20T18:53:00Z",
     "notable": true
   },
   {
@@ -7175,6 +6088,51 @@
     "notable": true
   },
   {
+    "id": "2026-07-18-global-orca-01",
+    "name": "Orca sighting (Global (GBIF))",
+    "species": "Orca",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-18.",
+    "date": "2026-07-18",
+    "latitude": 43.89679,
+    "longitude": -67.863204,
+    "area": "Global (GBIF)",
+    "source": "https://www.gbif.org/occurrence/6469707554",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-18-south-africa-souther-orca-02",
+    "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
+    "species": "Orca",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
+    "date": "2026-07-18",
+    "latitude": 29.216193599700002,
+    "longitude": -90.6377001,
+    "area": "South Africa / Southern Ocean (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382583760",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-18-north-pacific-kamcha-orca-03",
+    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
+    "species": "Orca",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
+    "date": "2026-07-18",
+    "latitude": 29.216193599700002,
+    "longitude": -90.6377001,
+    "area": "North Pacific / Kamchatka (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382583760",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-07-18-global-humpback-40",
     "name": "Humpback sighting (Global (OBIS))",
     "species": "Humpback",
@@ -7760,7 +6718,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-pacific-ocean-orca-01",
+    "id": "2026-07-18-pacific-ocean-orca-04",
     "name": "Orca sighting (Pacific Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -7775,7 +6733,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-pacific-ocean-orca-02",
+    "id": "2026-07-18-pacific-ocean-orca-05",
     "name": "Orca sighting (Pacific Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -7790,7 +6748,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-global-orca-03",
+    "id": "2026-07-18-global-orca-06",
     "name": "Orca sighting (Global (GBIF))",
     "species": "Orca",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-18.",
@@ -7805,22 +6763,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-global-orca-04",
-    "name": "Orca sighting (Global (GBIF))",
-    "species": "Orca",
-    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-18.",
-    "date": "2026-07-18",
-    "latitude": 43.89679,
-    "longitude": -67.863204,
-    "area": "Global (GBIF)",
-    "source": "https://www.gbif.org/occurrence/6469707554",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-18-alaska-orca-05",
+    "id": "2026-07-18-alaska-orca-07",
     "name": "Orca sighting (Alaska (GBIF))",
     "species": "Orca",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-18.",
@@ -7835,22 +6778,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-south-africa-souther-orca-06",
-    "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
-    "date": "2026-07-18",
-    "latitude": 29.216193599700002,
-    "longitude": -90.6377001,
-    "area": "South Africa / Southern Ocean (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382583760",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-18-south-africa-souther-orca-07",
+    "id": "2026-07-18-south-africa-souther-orca-08",
     "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -7865,7 +6793,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-south-africa-souther-orca-08",
+    "id": "2026-07-18-south-africa-souther-orca-09",
     "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -7880,7 +6808,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-07-18-south-africa-souther-orca-09",
+    "id": "2026-07-18-south-africa-souther-orca-10",
     "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -7889,21 +6817,6 @@
     "longitude": -149.9064783333,
     "area": "South Africa / Southern Ocean (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382802731",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-18-north-pacific-kamcha-orca-10",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
-    "date": "2026-07-18",
-    "latitude": 29.216193599700002,
-    "longitude": -90.6377001,
-    "area": "North Pacific / Kamchatka (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382583760",
     "behaviors": [
       "reported"
     ],
@@ -9177,6 +8090,66 @@
     "notable": true
   },
   {
+    "id": "2026-07-17-north-pacific-kamcha-orca-02",
+    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
+    "species": "Orca",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 26.5938333333,
+    "longitude": -82.2030033333,
+    "area": "North Pacific / Kamchatka (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-southern-ocean-antar-orca-03",
+    "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
+    "species": "Orca",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 26.5938333333,
+    "longitude": -82.2030033333,
+    "area": "Southern Ocean / Antarctic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-russia-far-east-kamc-orca-04",
+    "name": "Orca sighting (Russia Far East / Kamchatka (OBIS))",
+    "species": "Orca",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 26.5938333333,
+    "longitude": -82.2030033333,
+    "area": "Russia Far East / Kamchatka (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-greenland-orca-05",
+    "name": "Orca sighting (Greenland (OBIS))",
+    "species": "Orca",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 26.5938333333,
+    "longitude": -82.2030033333,
+    "area": "Greenland (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-07-17-kerry-humpback-15",
     "name": "Humpback sighting (Kerry)",
     "species": "Humpback",
@@ -9237,22 +8210,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-global-humpback-19",
-    "name": "Humpback sighting (Global (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": -34.875137398,
-    "longitude": 118.4810135029,
-    "area": "Global (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382515814",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-indian-ocean-humpback-20",
+    "id": "2026-07-17-indian-ocean-humpback-19",
     "name": "Humpback sighting (Indian Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9267,7 +8225,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-east-africa-indian-o-humpback-21",
+    "id": "2026-07-17-east-africa-indian-o-humpback-20",
     "name": "Humpback sighting (East Africa / Indian Ocean coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9282,7 +8240,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-west-africa-humpback-22",
+    "id": "2026-07-17-west-africa-humpback-21",
     "name": "Humpback sighting (West Africa (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9297,7 +8255,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-pacific-islands-tong-humpback-23",
+    "id": "2026-07-17-pacific-islands-tong-humpback-22",
     "name": "Humpback sighting (Pacific Islands / Tonga-Samoa (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9312,7 +8270,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-red-sea-arabian-sea--humpback-24",
+    "id": "2026-07-17-red-sea-arabian-sea--humpback-23",
     "name": "Humpback sighting (Red Sea / Arabian Sea coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9327,7 +8285,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-japan-waters-humpback-25",
+    "id": "2026-07-17-japan-waters-humpback-24",
     "name": "Humpback sighting (Japan waters (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9342,7 +8300,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-gulf-of-guinea-humpback-26",
+    "id": "2026-07-17-gulf-of-guinea-humpback-25",
     "name": "Humpback sighting (Gulf of Guinea (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9357,7 +8315,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-central-pacific-ocea-humpback-27",
+    "id": "2026-07-17-central-pacific-ocea-humpback-26",
     "name": "Humpback sighting (Central Pacific Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9372,7 +8330,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-south-atlantic-ocean-humpback-28",
+    "id": "2026-07-17-south-atlantic-ocean-humpback-27",
     "name": "Humpback sighting (South Atlantic Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9387,7 +8345,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-west-africa-atlantic-humpback-29",
+    "id": "2026-07-17-west-africa-atlantic-humpback-28",
     "name": "Humpback sighting (West Africa Atlantic coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9402,7 +8360,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-iceland-humpback-30",
+    "id": "2026-07-17-iceland-humpback-29",
     "name": "Humpback sighting (Iceland (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9417,7 +8375,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-mexico-pacific-coast-humpback-31",
+    "id": "2026-07-17-mexico-pacific-coast-humpback-30",
     "name": "Humpback sighting (Mexico Pacific coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9432,7 +8390,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-argentina-southern-a-humpback-32",
+    "id": "2026-07-17-argentina-southern-a-humpback-31",
     "name": "Humpback sighting (Argentina / Southern Atlantic (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9447,7 +8405,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-colombia-ecuador-pac-humpback-33",
+    "id": "2026-07-17-colombia-ecuador-pac-humpback-32",
     "name": "Humpback sighting (Colombia / Ecuador Pacific (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9462,7 +8420,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-global-humpback-34",
+    "id": "2026-07-17-global-humpback-33",
     "name": "Humpback sighting (Global (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9471,6 +8429,21 @@
     "longitude": -133.7670996406,
     "area": "Global (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383379147",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-global-humpback-34",
+    "name": "Humpback sighting (Global (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 36.7258945,
+    "longitude": -121.8974708,
+    "area": "Global (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
     "behaviors": [
       "reported"
     ],
@@ -9482,21 +8455,6 @@
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
     "date": "2026-07-17",
-    "latitude": 36.7258945,
-    "longitude": -121.8974708,
-    "area": "Global (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-global-humpback-36",
-    "name": "Humpback sighting (Global (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
     "latitude": 36.617292500000005,
     "longitude": -121.8977688,
     "area": "Global (OBIS)",
@@ -9507,7 +8465,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-global-humpback-37",
+    "id": "2026-07-17-global-humpback-36",
     "name": "Humpback sighting (Global (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9522,7 +8480,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-australia-humpback-38",
+    "id": "2026-07-17-australia-humpback-37",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9537,7 +8495,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-australia-humpback-39",
+    "id": "2026-07-17-australia-humpback-38",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9552,7 +8510,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-australia-humpback-40",
+    "id": "2026-07-17-australia-humpback-39",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9567,7 +8525,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-australia-humpback-41",
+    "id": "2026-07-17-australia-humpback-40",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9582,7 +8540,23 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-pacific-ocean-orca-02",
+    "id": "2026-07-17-australia-humpback-41",
+    "name": "Humpback sighting (Australia)",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 36.617292500000005,
+    "longitude": -121.8977688,
+    "area": "Australia",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382505516",
+    "behaviors": [
+      "reported",
+      "breaching"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-pacific-ocean-orca-06",
     "name": "Orca sighting (Pacific Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9597,7 +8571,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-south-africa-souther-orca-03",
+    "id": "2026-07-17-south-africa-souther-orca-07",
     "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9612,7 +8586,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-south-africa-souther-orca-04",
+    "id": "2026-07-17-south-africa-souther-orca-08",
     "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9627,7 +8601,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-south-africa-souther-orca-05",
+    "id": "2026-07-17-south-africa-souther-orca-09",
     "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9642,7 +8616,7 @@
     "seasonalStatus": "Bremer Canyon, Australia"
   },
   {
-    "id": "2026-07-17-south-africa-souther-orca-06",
+    "id": "2026-07-17-south-africa-souther-orca-10",
     "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9657,7 +8631,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-south-africa-souther-orca-07",
+    "id": "2026-07-17-south-africa-souther-orca-11",
     "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9672,22 +8646,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-north-pacific-kamcha-orca-08",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 26.5938333333,
-    "longitude": -82.2030033333,
-    "area": "North Pacific / Kamchatka (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-north-pacific-kamcha-orca-09",
+    "id": "2026-07-17-north-pacific-kamcha-orca-12",
     "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9696,51 +8655,6 @@
     "longitude": -75.0867774176,
     "area": "North Pacific / Kamchatka (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382701545",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-north-pacific-kamcha-orca-10",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": -16.449717515,
-    "longitude": 145.4590388977,
-    "area": "North Pacific / Kamchatka (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382449536",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-north-pacific-kamcha-orca-11",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": -34.9059222091,
-    "longitude": 118.5077620115,
-    "area": "North Pacific / Kamchatka (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382177929",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Bremer Canyon, Australia"
-  },
-  {
-    "id": "2026-07-17-north-pacific-kamcha-orca-12",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 57.2226527005,
-    "longitude": -133.7670996406,
-    "area": "North Pacific / Kamchatka (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383379147",
     "behaviors": [
       "reported"
     ],
@@ -9752,55 +8666,55 @@
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
     "date": "2026-07-17",
+    "latitude": -16.449717515,
+    "longitude": 145.4590388977,
+    "area": "North Pacific / Kamchatka (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382449536",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-north-pacific-kamcha-orca-14",
+    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
+    "species": "Orca",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": -34.9059222091,
+    "longitude": 118.5077620115,
+    "area": "North Pacific / Kamchatka (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382177929",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Bremer Canyon, Australia"
+  },
+  {
+    "id": "2026-07-17-north-pacific-kamcha-orca-15",
+    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
+    "species": "Orca",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 57.2226527005,
+    "longitude": -133.7670996406,
+    "area": "North Pacific / Kamchatka (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383379147",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-north-pacific-kamcha-orca-16",
+    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
+    "species": "Orca",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
     "latitude": 36.7258945,
     "longitude": -121.8974708,
     "area": "North Pacific / Kamchatka (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-southern-ocean-antar-orca-14",
-    "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 26.5938333333,
-    "longitude": -82.2030033333,
-    "area": "Southern Ocean / Antarctic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-southern-ocean-antar-orca-15",
-    "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 38.8158918429,
-    "longitude": -75.0867774176,
-    "area": "Southern Ocean / Antarctic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382701545",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-southern-ocean-antar-orca-16",
-    "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": -16.449717515,
-    "longitude": 145.4590388977,
-    "area": "Southern Ocean / Antarctic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382449536",
     "behaviors": [
       "reported"
     ],
@@ -9812,6 +8726,36 @@
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
     "date": "2026-07-17",
+    "latitude": 38.8158918429,
+    "longitude": -75.0867774176,
+    "area": "Southern Ocean / Antarctic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382701545",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-southern-ocean-antar-orca-18",
+    "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
+    "species": "Orca",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": -16.449717515,
+    "longitude": 145.4590388977,
+    "area": "Southern Ocean / Antarctic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382449536",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-southern-ocean-antar-orca-19",
+    "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
+    "species": "Orca",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
     "latitude": -34.9059222091,
     "longitude": 118.5077620115,
     "area": "Southern Ocean / Antarctic (OBIS)",
@@ -9822,7 +8766,7 @@
     "seasonalStatus": "Bremer Canyon, Australia"
   },
   {
-    "id": "2026-07-17-southern-ocean-antar-orca-18",
+    "id": "2026-07-17-southern-ocean-antar-orca-20",
     "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9837,7 +8781,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-southern-ocean-antar-orca-19",
+    "id": "2026-07-17-southern-ocean-antar-orca-21",
     "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9852,22 +8796,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-russia-far-east-kamc-orca-20",
-    "name": "Orca sighting (Russia Far East / Kamchatka (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 26.5938333333,
-    "longitude": -82.2030033333,
-    "area": "Russia Far East / Kamchatka (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-russia-far-east-kamc-orca-21",
+    "id": "2026-07-17-russia-far-east-kamc-orca-22",
     "name": "Orca sighting (Russia Far East / Kamchatka (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9882,7 +8811,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-russia-far-east-kamc-orca-22",
+    "id": "2026-07-17-russia-far-east-kamc-orca-23",
     "name": "Orca sighting (Russia Far East / Kamchatka (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9897,7 +8826,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-russia-far-east-kamc-orca-23",
+    "id": "2026-07-17-russia-far-east-kamc-orca-24",
     "name": "Orca sighting (Russia Far East / Kamchatka (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9912,7 +8841,7 @@
     "seasonalStatus": "Bremer Canyon, Australia"
   },
   {
-    "id": "2026-07-17-russia-far-east-kamc-orca-24",
+    "id": "2026-07-17-russia-far-east-kamc-orca-25",
     "name": "Orca sighting (Russia Far East / Kamchatka (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9927,7 +8856,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-russia-far-east-kamc-orca-25",
+    "id": "2026-07-17-russia-far-east-kamc-orca-26",
     "name": "Orca sighting (Russia Far East / Kamchatka (OBIS))",
     "species": "Orca",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -9936,21 +8865,6 @@
     "longitude": -121.8974708,
     "area": "Russia Far East / Kamchatka (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-greenland-orca-26",
-    "name": "Orca sighting (Greenland (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 26.5938333333,
-    "longitude": -82.2030033333,
-    "area": "Greenland (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
     "behaviors": [
       "reported"
     ],
@@ -10751,7 +9665,127 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-australia-humpback-42",
+    "id": "2026-07-17-mediterranean-sea-fin-06",
+    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 36.7258945,
+    "longitude": -121.8974708,
+    "area": "Mediterranean Sea (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-south-atlantic-fin-07",
+    "name": "Fin Whale sighting (South Atlantic (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 26.5938333333,
+    "longitude": -82.2030033333,
+    "area": "South Atlantic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-south-atlantic-fin-08",
+    "name": "Fin Whale sighting (South Atlantic (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 38.8158918429,
+    "longitude": -75.0867774176,
+    "area": "South Atlantic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382701545",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-south-atlantic-fin-09",
+    "name": "Fin Whale sighting (South Atlantic (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": -16.449717515,
+    "longitude": 145.4590388977,
+    "area": "South Atlantic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382449536",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-south-atlantic-fin-10",
+    "name": "Fin Whale sighting (South Atlantic (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": -34.9059222091,
+    "longitude": 118.5077620115,
+    "area": "South Atlantic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382177929",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-south-atlantic-fin-11",
+    "name": "Fin Whale sighting (South Atlantic (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 57.2226527005,
+    "longitude": -133.7670996406,
+    "area": "South Atlantic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383379147",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-south-atlantic-fin-12",
+    "name": "Fin Whale sighting (South Atlantic (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 36.7258945,
+    "longitude": -121.8974708,
+    "area": "South Atlantic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-global-humpback-42",
+    "name": "Humpback sighting (Global (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": -34.875137398,
+    "longitude": 118.4810135029,
+    "area": "Global (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382515814",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-australia-humpback-43",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -10766,7 +9800,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-australia-humpback-43",
+    "id": "2026-07-17-australia-humpback-44",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
@@ -10777,22 +9811,6 @@
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382177929",
     "behaviors": [
       "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-australia-humpback-44",
-    "name": "Humpback sighting (Australia)",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 36.617292500000005,
-    "longitude": -121.8977688,
-    "area": "Australia",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382505516",
-    "behaviors": [
-      "reported",
-      "breaching"
     ],
     "notable": true
   },
@@ -11773,111 +10791,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-mediterranean-sea-fin-06",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 36.7258945,
-    "longitude": -121.8974708,
-    "area": "Mediterranean Sea (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-south-atlantic-fin-07",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 26.5938333333,
-    "longitude": -82.2030033333,
-    "area": "South Atlantic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-south-atlantic-fin-08",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 38.8158918429,
-    "longitude": -75.0867774176,
-    "area": "South Atlantic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382701545",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-south-atlantic-fin-09",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": -16.449717515,
-    "longitude": 145.4590388977,
-    "area": "South Atlantic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382449536",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-south-atlantic-fin-10",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": -34.9059222091,
-    "longitude": 118.5077620115,
-    "area": "South Atlantic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382177929",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-south-atlantic-fin-11",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 57.2226527005,
-    "longitude": -133.7670996406,
-    "area": "South Atlantic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383379147",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-south-atlantic-fin-12",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 36.7258945,
-    "longitude": -121.8974708,
-    "area": "South Atlantic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-07-17-iceland-fin-13",
     "name": "Fin Whale sighting (Iceland (OBIS))",
     "species": "Fin Whale",
@@ -12145,38 +11058,6 @@
     "behaviors": [
       "reported"
     ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-c-te-nord-qc-canada-blue-19",
-    "name": "Blue Whale sighting (Côte-Nord, QC, Canada)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by davelerouge995.",
-    "date": "2026-07-17",
-    "latitude": 48.2324734341,
-    "longitude": -69.3902002826,
-    "area": "Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/384311789",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-17T17:50:00Z",
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-st-lawrence-river-es-fin-31",
-    "name": "Fin Whale sighting (St. Lawrence River / Estuary, Canada)",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by davelerouge995.",
-    "date": "2026-07-17",
-    "latitude": 48.020139031,
-    "longitude": -69.543620781,
-    "area": "St. Lawrence River / Estuary, Canada",
-    "source": "https://www.inaturalist.org/observations/384313627",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-17T17:45:00Z",
     "notable": true
   },
   {
@@ -12487,6 +11368,126 @@
     "latitude": 58.771957,
     "longitude": -94.215187,
     "area": "Japan waters (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-gulf-of-guinea-humpback-13",
+    "name": "Humpback sighting (Gulf of Guinea (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "Gulf of Guinea (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-central-pacific-ocea-humpback-14",
+    "name": "Humpback sighting (Central Pacific Ocean (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "Central Pacific Ocean (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-south-atlantic-ocean-humpback-15",
+    "name": "Humpback sighting (South Atlantic Ocean (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "South Atlantic Ocean (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-west-africa-atlantic-humpback-16",
+    "name": "Humpback sighting (West Africa Atlantic coast (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "West Africa Atlantic coast (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-iceland-humpback-17",
+    "name": "Humpback sighting (Iceland (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "Iceland (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-mexico-pacific-coast-humpback-18",
+    "name": "Humpback sighting (Mexico Pacific coast (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "Mexico Pacific coast (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-argentina-southern-a-humpback-19",
+    "name": "Humpback sighting (Argentina / Southern Atlantic (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "Argentina / Southern Atlantic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-colombia-ecuador-pac-humpback-20",
+    "name": "Humpback sighting (Colombia / Ecuador Pacific (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "Colombia / Ecuador Pacific (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
     "behaviors": [
       "reported"
@@ -13049,7 +12050,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-global-humpback-13",
+    "id": "2026-07-16-global-humpback-21",
     "name": "Humpback sighting (Global (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13064,7 +12065,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-nord-for-nuvsv-g-lop-humpback-14",
+    "id": "2026-07-16-nord-for-nuvsv-g-lop-humpback-22",
     "name": "Humpback sighting (Nord for Nuvsvåg, Loppa, Fi)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-07-16.",
@@ -13079,7 +12080,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-16-kongsfjorden-humpback-15",
+    "id": "2026-07-16-kongsfjorden-humpback-23",
     "name": "Humpback sighting (Kongsfjorden)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-07-16.",
@@ -13094,7 +12095,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-16-kongsfjorden-humpback-16",
+    "id": "2026-07-16-kongsfjorden-humpback-24",
     "name": "Humpback sighting (Kongsfjorden)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-07-16.",
@@ -13109,7 +12110,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-16-ny-lesund-humpback-17",
+    "id": "2026-07-16-ny-lesund-humpback-25",
     "name": "Humpback sighting (Ny-Ålesund)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-07-16.",
@@ -13124,7 +12125,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-16-kongsfjorden-humpback-18",
+    "id": "2026-07-16-kongsfjorden-humpback-26",
     "name": "Humpback sighting (Kongsfjorden)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-07-16.",
@@ -13139,7 +12140,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-16-kongsfjorden-humpback-19",
+    "id": "2026-07-16-kongsfjorden-humpback-27",
     "name": "Humpback sighting (Kongsfjorden)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-07-16.",
@@ -13154,7 +12155,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-16-ny-lesund-humpback-20",
+    "id": "2026-07-16-ny-lesund-humpback-28",
     "name": "Humpback sighting (Ny-Ålesund)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-07-16.",
@@ -13169,7 +12170,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-16-ny-lesund-humpback-21",
+    "id": "2026-07-16-ny-lesund-humpback-29",
     "name": "Humpback sighting (Ny-Ålesund)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-07-16.",
@@ -13184,7 +12185,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-16-svalbard-humpback-22",
+    "id": "2026-07-16-svalbard-humpback-30",
     "name": "Humpback sighting (Svalbard (GBIF))",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-16.",
@@ -13199,7 +12200,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-16-pacific-ocean-humpback-23",
+    "id": "2026-07-16-pacific-ocean-humpback-31",
     "name": "Humpback sighting (Pacific Ocean (GBIF))",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-16.",
@@ -13214,7 +12215,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-australia-humpback-24",
+    "id": "2026-07-16-australia-humpback-32",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13229,7 +12230,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-new-zealand-humpback-25",
+    "id": "2026-07-16-new-zealand-humpback-33",
     "name": "Humpback sighting (New Zealand)",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13244,7 +12245,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-indian-ocean-humpback-26",
+    "id": "2026-07-16-indian-ocean-humpback-34",
     "name": "Humpback sighting (Indian Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13259,7 +12260,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-east-africa-indian-o-humpback-27",
+    "id": "2026-07-16-east-africa-indian-o-humpback-35",
     "name": "Humpback sighting (East Africa / Indian Ocean coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13274,7 +12275,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-west-africa-humpback-28",
+    "id": "2026-07-16-west-africa-humpback-36",
     "name": "Humpback sighting (West Africa (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13289,7 +12290,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-pacific-islands-tong-humpback-29",
+    "id": "2026-07-16-pacific-islands-tong-humpback-37",
     "name": "Humpback sighting (Pacific Islands / Tonga-Samoa (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13304,7 +12305,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-red-sea-arabian-sea--humpback-30",
+    "id": "2026-07-16-red-sea-arabian-sea--humpback-38",
     "name": "Humpback sighting (Red Sea / Arabian Sea coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13319,7 +12320,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-japan-waters-humpback-31",
+    "id": "2026-07-16-japan-waters-humpback-39",
     "name": "Humpback sighting (Japan waters (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13334,22 +12335,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-gulf-of-guinea-humpback-32",
-    "name": "Humpback sighting (Gulf of Guinea (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "Gulf of Guinea (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-gulf-of-guinea-humpback-33",
+    "id": "2026-07-16-gulf-of-guinea-humpback-40",
     "name": "Humpback sighting (Gulf of Guinea (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13364,22 +12350,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-central-pacific-ocea-humpback-34",
-    "name": "Humpback sighting (Central Pacific Ocean (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "Central Pacific Ocean (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-central-pacific-ocea-humpback-35",
+    "id": "2026-07-16-central-pacific-ocea-humpback-41",
     "name": "Humpback sighting (Central Pacific Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13394,22 +12365,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-south-atlantic-ocean-humpback-36",
-    "name": "Humpback sighting (South Atlantic Ocean (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "South Atlantic Ocean (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-south-atlantic-ocean-humpback-37",
+    "id": "2026-07-16-south-atlantic-ocean-humpback-42",
     "name": "Humpback sighting (South Atlantic Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13424,22 +12380,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-west-africa-atlantic-humpback-38",
-    "name": "Humpback sighting (West Africa Atlantic coast (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "West Africa Atlantic coast (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-west-africa-atlantic-humpback-39",
+    "id": "2026-07-16-west-africa-atlantic-humpback-43",
     "name": "Humpback sighting (West Africa Atlantic coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13454,22 +12395,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-iceland-humpback-40",
-    "name": "Humpback sighting (Iceland (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "Iceland (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-iceland-humpback-41",
+    "id": "2026-07-16-iceland-humpback-44",
     "name": "Humpback sighting (Iceland (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13484,22 +12410,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-mexico-pacific-coast-humpback-42",
-    "name": "Humpback sighting (Mexico Pacific coast (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "Mexico Pacific coast (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-mexico-pacific-coast-humpback-43",
+    "id": "2026-07-16-mexico-pacific-coast-humpback-45",
     "name": "Humpback sighting (Mexico Pacific coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13514,22 +12425,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-argentina-southern-a-humpback-44",
-    "name": "Humpback sighting (Argentina / Southern Atlantic (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "Argentina / Southern Atlantic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-argentina-southern-a-humpback-45",
+    "id": "2026-07-16-argentina-southern-a-humpback-46",
     "name": "Humpback sighting (Argentina / Southern Atlantic (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -13538,21 +12434,6 @@
     "longitude": -123.0885789217,
     "area": "Argentina / Southern Atlantic (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382182779",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-colombia-ecuador-pac-humpback-46",
-    "name": "Humpback sighting (Colombia / Ecuador Pacific (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "Colombia / Ecuador Pacific (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
     "behaviors": [
       "reported"
     ],
@@ -14095,6 +12976,21 @@
     "notable": true
   },
   {
+    "id": "2026-07-15-gulf-of-guinea-humpback-08",
+    "name": "Humpback sighting (Gulf of Guinea (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
+    "date": "2026-07-15",
+    "latitude": 28.1387843265,
+    "longitude": -16.8986040889,
+    "area": "Gulf of Guinea (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-07-15-pacific-ocean-orca-01",
     "name": "Orca sighting (Pacific Ocean (OBIS))",
     "species": "Orca",
@@ -14558,7 +13454,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-15-skagerack-v-tanum-bo-humpback-08",
+    "id": "2026-07-15-skagerack-v-tanum-bo-humpback-09",
     "name": "Humpback sighting (Skagerack, V Tanum, Boh)",
     "species": "Humpback",
     "info": "GBIF record from Artportalen. Observed 2026-07-15.",
@@ -14573,7 +13469,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-07-15-sligo-humpback-09",
+    "id": "2026-07-15-sligo-humpback-10",
     "name": "Humpback sighting (Sligo)",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-15.",
@@ -14588,7 +13484,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-07-15-scotland-humpback-10",
+    "id": "2026-07-15-scotland-humpback-11",
     "name": "Humpback sighting (Scotland)",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-15.",
@@ -14603,7 +13499,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-07-15-svalbard-humpback-11",
+    "id": "2026-07-15-svalbard-humpback-12",
     "name": "Humpback sighting (Svalbard)",
     "species": "Humpback",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-15.",
@@ -14618,7 +13514,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-15-australia-humpback-12",
+    "id": "2026-07-15-australia-humpback-13",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
@@ -14633,7 +13529,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-15-new-zealand-humpback-13",
+    "id": "2026-07-15-new-zealand-humpback-14",
     "name": "Humpback sighting (New Zealand)",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
@@ -14648,7 +13544,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-15-indian-ocean-humpback-14",
+    "id": "2026-07-15-indian-ocean-humpback-15",
     "name": "Humpback sighting (Indian Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
@@ -14663,7 +13559,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-07-15-east-africa-indian-o-humpback-15",
+    "id": "2026-07-15-east-africa-indian-o-humpback-16",
     "name": "Humpback sighting (East Africa / Indian Ocean coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
@@ -14678,7 +13574,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-07-15-west-africa-humpback-16",
+    "id": "2026-07-15-west-africa-humpback-17",
     "name": "Humpback sighting (West Africa (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
@@ -14693,7 +13589,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-07-15-pacific-islands-tong-humpback-17",
+    "id": "2026-07-15-pacific-islands-tong-humpback-18",
     "name": "Humpback sighting (Pacific Islands / Tonga-Samoa (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
@@ -14708,7 +13604,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-07-15-red-sea-arabian-sea--humpback-18",
+    "id": "2026-07-15-red-sea-arabian-sea--humpback-19",
     "name": "Humpback sighting (Red Sea / Arabian Sea coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
@@ -14723,7 +13619,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-07-15-japan-waters-humpback-19",
+    "id": "2026-07-15-japan-waters-humpback-20",
     "name": "Humpback sighting (Japan waters (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
@@ -14738,7 +13634,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-07-15-gulf-of-guinea-humpback-20",
+    "id": "2026-07-15-gulf-of-guinea-humpback-21",
     "name": "Humpback sighting (Gulf of Guinea (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
@@ -14751,21 +13647,6 @@
       "reported"
     ],
     "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
-    "id": "2026-07-15-gulf-of-guinea-humpback-21",
-    "name": "Humpback sighting (Gulf of Guinea (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
-    "date": "2026-07-15",
-    "latitude": 28.1387843265,
-    "longitude": -16.8986040889,
-    "area": "Gulf of Guinea (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
   },
   {
     "id": "2026-07-15-central-pacific-ocea-humpback-22",
@@ -15144,81 +14025,5 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701176325/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) dwayland, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-07-15-longyearbyen-9170-sv-blue-08",
-    "name": "Blue Whale sighting (Longyearbyen 9170, Svalbard and Jan Mayen)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by philip_precey.",
-    "date": "2026-07-15",
-    "latitude": 78.5508698451,
-    "longitude": 11.9118045643,
-    "area": "Longyearbyen 9170, Svalbard and Jan Mayen",
-    "source": "https://www.inaturalist.org/observations/381710793",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-15T12:52:10Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/698472609/medium.jpg",
-    "photoLicense": "cc0",
-    "photoAttribution": "no rights reserved",
-    "notable": true
-  },
-  {
-    "id": "2026-07-15-pelagos-sanctuary-me-fin-11",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by sylvieomnes.",
-    "date": "2026-07-15",
-    "latitude": 43.5592827813,
-    "longitude": 7.3092345331,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/381942145",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-15T09:45:36Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/698922958/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sylvie Omnès, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
-    "id": "2026-07-15-pelagos-sanctuary-me-fin-12",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by sylvieomnes.",
-    "date": "2026-07-15",
-    "latitude": 43.3162755386,
-    "longitude": 7.0767353877,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/381940886",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-15T08:41:45Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/698920295/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sylvie Omnès, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
-  },
-  {
-    "id": "2026-07-15-pelagos-sanctuary-me-fin-13",
-    "name": "Fin Whale sighting (Pelagos Sanctuary, Mediterranean (offshore))",
-    "species": "Fin Whale",
-    "info": "iNaturalist observation by sylvieomnes.",
-    "date": "2026-07-15",
-    "latitude": 43.5369762961,
-    "longitude": 7.0646811183,
-    "area": "Pelagos Sanctuary, Mediterranean (offshore)",
-    "source": "https://www.inaturalist.org/observations/381940168",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-15T08:33:33Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/698918658/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sylvie Omnès, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Pelagos Sanctuary, Mediterranean"
   }
 ]
