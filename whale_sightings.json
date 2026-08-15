@@ -132,7 +132,8 @@
     "area": "Capital Regional District, BC, Canada",
     "source": "https://www.inaturalist.org/observations/391270989",
     "behaviors": [
-      "reported"
+      "reported",
+      "hunting"
     ],
     "observedAt": "2026-08-14T16:03:00Z",
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/716922976/medium.jpg",
@@ -501,6 +502,22 @@
     "notable": true
   },
   {
+    "id": "2026-08-13-anse-jos-ross-les-es-blue-01",
+    "name": "Blue Whale sighting (Anse à Jos-Ross, Les Escoumins, QC, CA)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by desrochersa.",
+    "date": "2026-08-13",
+    "latitude": 48.3658098865,
+    "longitude": -69.3889614445,
+    "area": "Anse à Jos-Ross, Les Escoumins, QC, CA",
+    "source": "https://www.inaturalist.org/observations/390870211",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-13T15:47:41Z",
+    "notable": true
+  },
+  {
     "id": "2026-08-13-sea-point-humpback-16",
     "name": "Humpback sighting (Sea Point)",
     "species": "Humpback",
@@ -609,6 +626,22 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
+    "id": "2026-08-12-washington-us-orca-02",
+    "name": "Orca sighting (Washington, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by howardwu.",
+    "date": "2026-08-12",
+    "latitude": 47.9569652708,
+    "longitude": -122.5142634894,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/391300154",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-12T23:00:00Z",
+    "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
     "id": "2026-08-12-juneau-ak-us-humpback-04",
     "name": "Humpback sighting (Juneau, AK, US)",
     "species": "Humpback",
@@ -628,7 +661,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-12-campbell-river-bc-ca-orca-02",
+    "id": "2026-08-12-campbell-river-bc-ca-orca-03",
     "name": "Orca sighting (Campbell River, BC, Canada)",
     "species": "Orca",
     "info": "iNaturalist observation by spiritwingsphoto.",
@@ -645,6 +678,22 @@
     "individualId": "orca_biggs_t069e",
     "individualName": "ORCA BIGGS T069E",
     "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-08-12-les-escoumins-qc-g0t-blue-01",
+    "name": "Blue Whale sighting (Les Escoumins, QC G0T 1K0, Canada)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by david_turgeon.",
+    "date": "2026-08-12",
+    "latitude": 48.2993474444,
+    "longitude": -69.4171380624,
+    "area": "Les Escoumins, QC G0T 1K0, Canada",
+    "source": "https://www.inaturalist.org/observations/390611744",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-12T17:03:41Z",
+    "notable": true
   },
   {
     "id": "2026-08-12-iceland-humpback-05",
@@ -1986,25 +2035,6 @@
     "notable": true
   },
   {
-    "id": "2026-08-04-san-juan-county-us-w-orca-04",
-    "name": "Orca sighting (San Juan County, US-WA, US)",
-    "species": "Orca",
-    "info": "iNaturalist observation by sleffler.",
-    "date": "2026-08-04",
-    "latitude": 48.4267059472,
-    "longitude": -123.1086714614,
-    "area": "San Juan County, US-WA, US",
-    "source": "https://www.inaturalist.org/observations/388210598",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T16:16:17Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/710973445/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) sabrina, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Salish Sea (SRKW range)"
-  },
-  {
     "id": "2026-08-04-indian-ocean-yalata--southern-right-whale-01",
     "name": "Southern Right Whale sighting (Indian Ocean, Yalata, AU)",
     "species": "Southern Right Whale",
@@ -2225,6 +2255,22 @@
       "reported"
     ],
     "seasonalStatus": "Northeast Atlantic feeding season"
+  },
+  {
+    "id": "2026-08-02-la-c-te-de-gasp-ca-q-blue-01",
+    "name": "Blue Whale sighting (La Côte-de-Gaspé, CA-QC, CA)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by antie_m.",
+    "date": "2026-08-02",
+    "latitude": 48.7333,
+    "longitude": -64.1831,
+    "area": "La Côte-de-Gaspé, CA-QC, CA",
+    "source": "https://www.inaturalist.org/observations/387557030",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-02T15:17:45Z",
+    "notable": true
   },
   {
     "id": "2026-08-02-grays-harbor-county--gray-01",
@@ -3648,23 +3694,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-23-ie-humpback-05",
-    "name": "Humpback sighting (IE)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by danielkl.",
-    "date": "2026-07-23",
-    "latitude": 54.4486833333,
-    "longitude": -8.727225,
-    "area": "IE",
-    "source": "https://www.inaturalist.org/observations/387701082",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-23T11:51:06Z",
-    "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
-    "id": "2026-07-23-svalbard-humpback-06",
+    "id": "2026-07-23-svalbard-humpback-05",
     "name": "Humpback sighting (Svalbard (iNaturalist))",
     "species": "Humpback",
     "info": "iNaturalist observation by kevin_snair.",
@@ -5168,22 +5198,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/701885149/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) mountainseekerii, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-07-18-valdez-cordova-count-sperm-01",
-    "name": "Sperm whale sighting (Valdez-Cordova County, US-AK, US)",
-    "species": "Sperm whale",
-    "info": "iNaturalist observation by steveboulay.",
-    "date": "2026-07-18",
-    "latitude": 60.8415804308,
-    "longitude": -147.5955322833,
-    "area": "Valdez-Cordova County, US-AK, US",
-    "source": "https://www.inaturalist.org/observations/382821757",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-07-19T03:02:55Z",
-    "notable": true
   },
   {
     "id": "2026-07-18-kodiak-island-boroug-gray-01",
@@ -6959,7 +6973,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-south-china-sea-sperm-02",
+    "id": "2026-07-18-south-china-sea-sperm-01",
     "name": "Sperm whale sighting (South China Sea (OBIS))",
     "species": "Sperm whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -6974,7 +6988,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-south-china-sea-sperm-03",
+    "id": "2026-07-18-south-china-sea-sperm-02",
     "name": "Sperm whale sighting (South China Sea (OBIS))",
     "species": "Sperm whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -6989,7 +7003,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-south-china-sea-sperm-04",
+    "id": "2026-07-18-south-china-sea-sperm-03",
     "name": "Sperm whale sighting (South China Sea (OBIS))",
     "species": "Sperm whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -7004,7 +7018,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-south-china-sea-sperm-05",
+    "id": "2026-07-18-south-china-sea-sperm-04",
     "name": "Sperm whale sighting (South China Sea (OBIS))",
     "species": "Sperm whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -7019,7 +7033,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-atlantic-ocean-sperm-06",
+    "id": "2026-07-18-north-atlantic-ocean-sperm-05",
     "name": "Sperm whale sighting (North Atlantic Ocean (OBIS))",
     "species": "Sperm whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -7034,7 +7048,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-atlantic-ocean-sperm-07",
+    "id": "2026-07-18-north-atlantic-ocean-sperm-06",
     "name": "Sperm whale sighting (North Atlantic Ocean (OBIS))",
     "species": "Sperm whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -7049,7 +7063,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-atlantic-ocean-sperm-08",
+    "id": "2026-07-18-north-atlantic-ocean-sperm-07",
     "name": "Sperm whale sighting (North Atlantic Ocean (OBIS))",
     "species": "Sperm whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -7064,7 +7078,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-atlantic-ocean-sperm-09",
+    "id": "2026-07-18-north-atlantic-ocean-sperm-08",
     "name": "Sperm whale sighting (North Atlantic Ocean (OBIS))",
     "species": "Sperm whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -9563,261 +9577,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-17-iceland-fin-14",
-    "name": "Fin Whale sighting (Iceland (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 38.8158918429,
-    "longitude": -75.0867774176,
-    "area": "Iceland (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382701545",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-iceland-fin-15",
-    "name": "Fin Whale sighting (Iceland (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": -16.449717515,
-    "longitude": 145.4590388977,
-    "area": "Iceland (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382449536",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-iceland-fin-16",
-    "name": "Fin Whale sighting (Iceland (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": -34.9059222091,
-    "longitude": 118.5077620115,
-    "area": "Iceland (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382177929",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-iceland-fin-17",
-    "name": "Fin Whale sighting (Iceland (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 57.2226527005,
-    "longitude": -133.7670996406,
-    "area": "Iceland (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383379147",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-iceland-fin-18",
-    "name": "Fin Whale sighting (Iceland (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 36.7258945,
-    "longitude": -121.8974708,
-    "area": "Iceland (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-uk-ireland-waters-fin-19",
-    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 26.5938333333,
-    "longitude": -82.2030033333,
-    "area": "UK & Ireland waters (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-uk-ireland-waters-fin-20",
-    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 38.8158918429,
-    "longitude": -75.0867774176,
-    "area": "UK & Ireland waters (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382701545",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-uk-ireland-waters-fin-21",
-    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": -16.449717515,
-    "longitude": 145.4590388977,
-    "area": "UK & Ireland waters (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382449536",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-uk-ireland-waters-fin-22",
-    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": -34.9059222091,
-    "longitude": 118.5077620115,
-    "area": "UK & Ireland waters (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382177929",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-uk-ireland-waters-fin-23",
-    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 57.2226527005,
-    "longitude": -133.7670996406,
-    "area": "UK & Ireland waters (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383379147",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-uk-ireland-waters-fin-24",
-    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 36.7258945,
-    "longitude": -121.8974708,
-    "area": "UK & Ireland waters (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-bay-of-biscay-fin-25",
-    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 26.5938333333,
-    "longitude": -82.2030033333,
-    "area": "Bay of Biscay (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-bay-of-biscay-fin-26",
-    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 38.8158918429,
-    "longitude": -75.0867774176,
-    "area": "Bay of Biscay (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382701545",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-bay-of-biscay-fin-27",
-    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": -16.449717515,
-    "longitude": 145.4590388977,
-    "area": "Bay of Biscay (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382449536",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-bay-of-biscay-fin-28",
-    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": -34.9059222091,
-    "longitude": 118.5077620115,
-    "area": "Bay of Biscay (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382177929",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-bay-of-biscay-fin-29",
-    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 57.2226527005,
-    "longitude": -133.7670996406,
-    "area": "Bay of Biscay (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383379147",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-17-bay-of-biscay-fin-30",
-    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
-    "date": "2026-07-17",
-    "latitude": 36.7258945,
-    "longitude": -121.8974708,
-    "area": "Bay of Biscay (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-07-17-global-humpback-42",
     "name": "Humpback sighting (Global (OBIS))",
     "species": "Humpback",
@@ -10839,6 +10598,277 @@
     "notable": true
   },
   {
+    "id": "2026-07-17-iceland-fin-14",
+    "name": "Fin Whale sighting (Iceland (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 38.8158918429,
+    "longitude": -75.0867774176,
+    "area": "Iceland (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382701545",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-iceland-fin-15",
+    "name": "Fin Whale sighting (Iceland (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": -16.449717515,
+    "longitude": 145.4590388977,
+    "area": "Iceland (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382449536",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-iceland-fin-16",
+    "name": "Fin Whale sighting (Iceland (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": -34.9059222091,
+    "longitude": 118.5077620115,
+    "area": "Iceland (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382177929",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-iceland-fin-17",
+    "name": "Fin Whale sighting (Iceland (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 57.2226527005,
+    "longitude": -133.7670996406,
+    "area": "Iceland (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383379147",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-iceland-fin-18",
+    "name": "Fin Whale sighting (Iceland (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 36.7258945,
+    "longitude": -121.8974708,
+    "area": "Iceland (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-uk-ireland-waters-fin-19",
+    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 26.5938333333,
+    "longitude": -82.2030033333,
+    "area": "UK & Ireland waters (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-uk-ireland-waters-fin-20",
+    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 38.8158918429,
+    "longitude": -75.0867774176,
+    "area": "UK & Ireland waters (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382701545",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-uk-ireland-waters-fin-21",
+    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": -16.449717515,
+    "longitude": 145.4590388977,
+    "area": "UK & Ireland waters (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382449536",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-uk-ireland-waters-fin-22",
+    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": -34.9059222091,
+    "longitude": 118.5077620115,
+    "area": "UK & Ireland waters (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382177929",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-uk-ireland-waters-fin-23",
+    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 57.2226527005,
+    "longitude": -133.7670996406,
+    "area": "UK & Ireland waters (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383379147",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-uk-ireland-waters-fin-24",
+    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 36.7258945,
+    "longitude": -121.8974708,
+    "area": "UK & Ireland waters (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-bay-of-biscay-fin-25",
+    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 26.5938333333,
+    "longitude": -82.2030033333,
+    "area": "Bay of Biscay (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382423904",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-bay-of-biscay-fin-26",
+    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 38.8158918429,
+    "longitude": -75.0867774176,
+    "area": "Bay of Biscay (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382701545",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-bay-of-biscay-fin-27",
+    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": -16.449717515,
+    "longitude": 145.4590388977,
+    "area": "Bay of Biscay (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382449536",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-bay-of-biscay-fin-28",
+    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": -34.9059222091,
+    "longitude": 118.5077620115,
+    "area": "Bay of Biscay (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382177929",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-bay-of-biscay-fin-29",
+    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 57.2226527005,
+    "longitude": -133.7670996406,
+    "area": "Bay of Biscay (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383379147",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-bay-of-biscay-fin-30",
+    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-17. Source: iNaturalist.",
+    "date": "2026-07-17",
+    "latitude": 36.7258945,
+    "longitude": -121.8974708,
+    "area": "Bay of Biscay (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382432763",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-17-c-te-nord-qc-canada-blue-19",
+    "name": "Blue Whale sighting (Côte-Nord, QC, Canada)",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by davelerouge995.",
+    "date": "2026-07-17",
+    "latitude": 48.2324734341,
+    "longitude": -69.3902002826,
+    "area": "Côte-Nord, QC, Canada",
+    "source": "https://www.inaturalist.org/observations/384311789",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-17T17:50:00Z",
+    "notable": true
+  },
+  {
     "id": "2026-07-17-oceano-atl-ntico-sp--humpback-110",
     "name": "Humpback sighting (Oceano Atlântico, SP, BR)",
     "species": "Humpback",
@@ -11003,7 +11033,22 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-australia-humpback-03",
+    "id": "2026-07-16-nord-for-nuvsv-g-lop-humpback-03",
+    "name": "Humpback sighting (Nord for Nuvsvåg, Loppa, Fi)",
+    "species": "Humpback",
+    "info": "GBIF record from GBIF. Observed 2026-07-16.",
+    "date": "2026-07-16",
+    "latitude": 70.336348,
+    "longitude": 22.140624,
+    "area": "Nord for Nuvsvåg, Loppa, Fi",
+    "source": "https://www.gbif.org/occurrence/6434775608",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-07-16-australia-humpback-04",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11018,7 +11063,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-australia-humpback-04",
+    "id": "2026-07-16-australia-humpback-05",
     "name": "Humpback sighting (Australia)",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11027,21 +11072,6 @@
     "longitude": -53.0902073,
     "area": "Australia",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382111799",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-new-zealand-humpback-05",
-    "name": "Humpback sighting (New Zealand)",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 48.7021749,
-    "longitude": -53.0861558,
-    "area": "New Zealand",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382043327",
     "behaviors": [
       "reported"
     ],
@@ -11053,6 +11083,21 @@
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
     "date": "2026-07-16",
+    "latitude": 48.7021749,
+    "longitude": -53.0861558,
+    "area": "New Zealand",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382043327",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-new-zealand-humpback-07",
+    "name": "Humpback sighting (New Zealand)",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
     "latitude": 48.718645800000004,
     "longitude": -53.0902073,
     "area": "New Zealand",
@@ -11063,7 +11108,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-indian-ocean-humpback-07",
+    "id": "2026-07-16-indian-ocean-humpback-08",
     "name": "Humpback sighting (Indian Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11078,7 +11123,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-east-africa-indian-o-humpback-08",
+    "id": "2026-07-16-east-africa-indian-o-humpback-09",
     "name": "Humpback sighting (East Africa / Indian Ocean coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11093,7 +11138,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-west-africa-humpback-09",
+    "id": "2026-07-16-west-africa-humpback-10",
     "name": "Humpback sighting (West Africa (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11108,7 +11153,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-pacific-islands-tong-humpback-10",
+    "id": "2026-07-16-pacific-islands-tong-humpback-11",
     "name": "Humpback sighting (Pacific Islands / Tonga-Samoa (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11123,7 +11168,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-red-sea-arabian-sea--humpback-11",
+    "id": "2026-07-16-red-sea-arabian-sea--humpback-12",
     "name": "Humpback sighting (Red Sea / Arabian Sea coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11138,7 +11183,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-japan-waters-humpback-12",
+    "id": "2026-07-16-japan-waters-humpback-13",
     "name": "Humpback sighting (Japan waters (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11153,7 +11198,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-gulf-of-guinea-humpback-13",
+    "id": "2026-07-16-gulf-of-guinea-humpback-14",
     "name": "Humpback sighting (Gulf of Guinea (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11168,7 +11213,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-central-pacific-ocea-humpback-14",
+    "id": "2026-07-16-central-pacific-ocea-humpback-15",
     "name": "Humpback sighting (Central Pacific Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11183,7 +11228,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-south-atlantic-ocean-humpback-15",
+    "id": "2026-07-16-south-atlantic-ocean-humpback-16",
     "name": "Humpback sighting (South Atlantic Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11198,7 +11243,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-west-africa-atlantic-humpback-16",
+    "id": "2026-07-16-west-africa-atlantic-humpback-17",
     "name": "Humpback sighting (West Africa Atlantic coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11213,7 +11258,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-iceland-humpback-17",
+    "id": "2026-07-16-iceland-humpback-18",
     "name": "Humpback sighting (Iceland (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11228,7 +11273,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-mexico-pacific-coast-humpback-18",
+    "id": "2026-07-16-mexico-pacific-coast-humpback-19",
     "name": "Humpback sighting (Mexico Pacific coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11243,7 +11288,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-argentina-southern-a-humpback-19",
+    "id": "2026-07-16-argentina-southern-a-humpback-20",
     "name": "Humpback sighting (Argentina / Southern Atlantic (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11258,7 +11303,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-colombia-ecuador-pac-humpback-20",
+    "id": "2026-07-16-colombia-ecuador-pac-humpback-21",
     "name": "Humpback sighting (Colombia / Ecuador Pacific (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -11828,382 +11873,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-16-global-fin-03",
-    "name": "Fin Whale sighting (Global (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 80.1634571362,
-    "longitude": 15.8467829743,
-    "area": "Global (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161054",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-global-fin-04",
-    "name": "Fin Whale sighting (Global (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 55.3762626112,
-    "longitude": -160.2528380103,
-    "area": "Global (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382420187",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-global-fin-05",
-    "name": "Fin Whale sighting (Global (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 80.1536479324,
-    "longitude": 15.0685542355,
-    "area": "Global (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161170",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-global-fin-06",
-    "name": "Fin Whale sighting (Global (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 28.0246469512,
-    "longitude": -115.73917455,
-    "area": "Global (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382840043",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-global-fin-07",
-    "name": "Fin Whale sighting (Global (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 80.5179522793,
-    "longitude": 15.7049220656,
-    "area": "Global (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161213",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-australia-fin-08",
-    "name": "Fin Whale sighting (Australia)",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 80.1634571362,
-    "longitude": 15.8467829743,
-    "area": "Australia",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161054",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-australia-fin-09",
-    "name": "Fin Whale sighting (Australia)",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 55.3762626112,
-    "longitude": -160.2528380103,
-    "area": "Australia",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382420187",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-australia-fin-10",
-    "name": "Fin Whale sighting (Australia)",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 80.1536479324,
-    "longitude": 15.0685542355,
-    "area": "Australia",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161170",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-australia-fin-11",
-    "name": "Fin Whale sighting (Australia)",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 28.0246469512,
-    "longitude": -115.73917455,
-    "area": "Australia",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382840043",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-australia-fin-12",
-    "name": "Fin Whale sighting (Australia)",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 80.5179522793,
-    "longitude": 15.7049220656,
-    "area": "Australia",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161213",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-new-zealand-fin-13",
-    "name": "Fin Whale sighting (New Zealand)",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 80.1634571362,
-    "longitude": 15.8467829743,
-    "area": "New Zealand",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161054",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-new-zealand-fin-14",
-    "name": "Fin Whale sighting (New Zealand)",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 55.3762626112,
-    "longitude": -160.2528380103,
-    "area": "New Zealand",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382420187",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-new-zealand-fin-15",
-    "name": "Fin Whale sighting (New Zealand)",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 80.1536479324,
-    "longitude": 15.0685542355,
-    "area": "New Zealand",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161170",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-new-zealand-fin-16",
-    "name": "Fin Whale sighting (New Zealand)",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 28.0246469512,
-    "longitude": -115.73917455,
-    "area": "New Zealand",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382840043",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-new-zealand-fin-17",
-    "name": "Fin Whale sighting (New Zealand)",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 80.5179522793,
-    "longitude": 15.7049220656,
-    "area": "New Zealand",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161213",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-mediterranean-sea-fin-18",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "Mediterranean Sea (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-mediterranean-sea-fin-19",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 48.6043877095,
-    "longitude": -123.0885789217,
-    "area": "Mediterranean Sea (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382182779",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-south-atlantic-fin-20",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "South Atlantic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-south-atlantic-fin-21",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 48.6043877095,
-    "longitude": -123.0885789217,
-    "area": "South Atlantic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382182779",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-iceland-fin-22",
-    "name": "Fin Whale sighting (Iceland (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "Iceland (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-iceland-fin-23",
-    "name": "Fin Whale sighting (Iceland (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 48.6043877095,
-    "longitude": -123.0885789217,
-    "area": "Iceland (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382182779",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-uk-ireland-waters-fin-24",
-    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "UK & Ireland waters (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-uk-ireland-waters-fin-25",
-    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 48.6043877095,
-    "longitude": -123.0885789217,
-    "area": "UK & Ireland waters (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382182779",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-bay-of-biscay-fin-26",
-    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 58.771957,
-    "longitude": -94.215187,
-    "area": "Bay of Biscay (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-bay-of-biscay-fin-27",
-    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
-    "date": "2026-07-16",
-    "latitude": 48.6043877095,
-    "longitude": -123.0885789217,
-    "area": "Bay of Biscay (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382182779",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-16-global-humpback-21",
+    "id": "2026-07-16-global-humpback-22",
     "name": "Humpback sighting (Global (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
@@ -12216,21 +11886,6 @@
       "reported"
     ],
     "notable": true
-  },
-  {
-    "id": "2026-07-16-nord-for-nuvsv-g-lop-humpback-22",
-    "name": "Humpback sighting (Nord for Nuvsvåg, Loppa, Fi)",
-    "species": "Humpback",
-    "info": "GBIF record from GBIF. Observed 2026-07-16.",
-    "date": "2026-07-16",
-    "latitude": 70.336348,
-    "longitude": 22.140624,
-    "area": "Nord for Nuvsvåg, Loppa, Fi",
-    "source": "https://www.gbif.org/occurrence/6434775608",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
     "id": "2026-07-16-kongsfjorden-humpback-23",
@@ -12601,6 +12256,381 @@
     "latitude": 48.6043877095,
     "longitude": -123.0885789217,
     "area": "Colombia / Ecuador Pacific (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382182779",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-global-fin-03",
+    "name": "Fin Whale sighting (Global (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 80.1634571362,
+    "longitude": 15.8467829743,
+    "area": "Global (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161054",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-global-fin-04",
+    "name": "Fin Whale sighting (Global (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 55.3762626112,
+    "longitude": -160.2528380103,
+    "area": "Global (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382420187",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-global-fin-05",
+    "name": "Fin Whale sighting (Global (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 80.1536479324,
+    "longitude": 15.0685542355,
+    "area": "Global (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161170",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-global-fin-06",
+    "name": "Fin Whale sighting (Global (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 28.0246469512,
+    "longitude": -115.73917455,
+    "area": "Global (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382840043",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-global-fin-07",
+    "name": "Fin Whale sighting (Global (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 80.5179522793,
+    "longitude": 15.7049220656,
+    "area": "Global (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161213",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-australia-fin-08",
+    "name": "Fin Whale sighting (Australia)",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 80.1634571362,
+    "longitude": 15.8467829743,
+    "area": "Australia",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161054",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-australia-fin-09",
+    "name": "Fin Whale sighting (Australia)",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 55.3762626112,
+    "longitude": -160.2528380103,
+    "area": "Australia",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382420187",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-australia-fin-10",
+    "name": "Fin Whale sighting (Australia)",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 80.1536479324,
+    "longitude": 15.0685542355,
+    "area": "Australia",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161170",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-australia-fin-11",
+    "name": "Fin Whale sighting (Australia)",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 28.0246469512,
+    "longitude": -115.73917455,
+    "area": "Australia",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382840043",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-australia-fin-12",
+    "name": "Fin Whale sighting (Australia)",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 80.5179522793,
+    "longitude": 15.7049220656,
+    "area": "Australia",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161213",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-new-zealand-fin-13",
+    "name": "Fin Whale sighting (New Zealand)",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 80.1634571362,
+    "longitude": 15.8467829743,
+    "area": "New Zealand",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161054",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-new-zealand-fin-14",
+    "name": "Fin Whale sighting (New Zealand)",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 55.3762626112,
+    "longitude": -160.2528380103,
+    "area": "New Zealand",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382420187",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-new-zealand-fin-15",
+    "name": "Fin Whale sighting (New Zealand)",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 80.1536479324,
+    "longitude": 15.0685542355,
+    "area": "New Zealand",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161170",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-new-zealand-fin-16",
+    "name": "Fin Whale sighting (New Zealand)",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 28.0246469512,
+    "longitude": -115.73917455,
+    "area": "New Zealand",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382840043",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-new-zealand-fin-17",
+    "name": "Fin Whale sighting (New Zealand)",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 80.5179522793,
+    "longitude": 15.7049220656,
+    "area": "New Zealand",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382161213",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-mediterranean-sea-fin-18",
+    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "Mediterranean Sea (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-mediterranean-sea-fin-19",
+    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 48.6043877095,
+    "longitude": -123.0885789217,
+    "area": "Mediterranean Sea (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382182779",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-south-atlantic-fin-20",
+    "name": "Fin Whale sighting (South Atlantic (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "South Atlantic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-south-atlantic-fin-21",
+    "name": "Fin Whale sighting (South Atlantic (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 48.6043877095,
+    "longitude": -123.0885789217,
+    "area": "South Atlantic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382182779",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-iceland-fin-22",
+    "name": "Fin Whale sighting (Iceland (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "Iceland (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-iceland-fin-23",
+    "name": "Fin Whale sighting (Iceland (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 48.6043877095,
+    "longitude": -123.0885789217,
+    "area": "Iceland (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382182779",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-uk-ireland-waters-fin-24",
+    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "UK & Ireland waters (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-uk-ireland-waters-fin-25",
+    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 48.6043877095,
+    "longitude": -123.0885789217,
+    "area": "UK & Ireland waters (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382182779",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-bay-of-biscay-fin-26",
+    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 58.771957,
+    "longitude": -94.215187,
+    "area": "Bay of Biscay (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382163120",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-16-bay-of-biscay-fin-27",
+    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-16. Source: iNaturalist.",
+    "date": "2026-07-16",
+    "latitude": 48.6043877095,
+    "longitude": -123.0885789217,
+    "area": "Bay of Biscay (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382182779",
     "behaviors": [
       "reported"
@@ -13232,156 +13262,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-15-mediterranean-sea-fin-01",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
-    "date": "2026-07-15",
-    "latitude": 56.086906607,
-    "longitude": 12.5427345559,
-    "area": "Mediterranean Sea (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381602799",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-15-mediterranean-sea-fin-02",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
-    "date": "2026-07-15",
-    "latitude": 28.1387843265,
-    "longitude": -16.8986040889,
-    "area": "Mediterranean Sea (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-15-south-atlantic-fin-03",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
-    "date": "2026-07-15",
-    "latitude": 56.086906607,
-    "longitude": 12.5427345559,
-    "area": "South Atlantic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381602799",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-15-south-atlantic-fin-04",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
-    "date": "2026-07-15",
-    "latitude": 28.1387843265,
-    "longitude": -16.8986040889,
-    "area": "South Atlantic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-15-iceland-fin-05",
-    "name": "Fin Whale sighting (Iceland (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
-    "date": "2026-07-15",
-    "latitude": 56.086906607,
-    "longitude": 12.5427345559,
-    "area": "Iceland (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381602799",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-15-iceland-fin-06",
-    "name": "Fin Whale sighting (Iceland (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
-    "date": "2026-07-15",
-    "latitude": 28.1387843265,
-    "longitude": -16.8986040889,
-    "area": "Iceland (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-15-uk-ireland-waters-fin-07",
-    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
-    "date": "2026-07-15",
-    "latitude": 56.086906607,
-    "longitude": 12.5427345559,
-    "area": "UK & Ireland waters (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381602799",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-15-uk-ireland-waters-fin-08",
-    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
-    "date": "2026-07-15",
-    "latitude": 28.1387843265,
-    "longitude": -16.8986040889,
-    "area": "UK & Ireland waters (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-15-bay-of-biscay-fin-09",
-    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
-    "date": "2026-07-15",
-    "latitude": 56.086906607,
-    "longitude": 12.5427345559,
-    "area": "Bay of Biscay (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381602799",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-15-bay-of-biscay-fin-10",
-    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
-    "date": "2026-07-15",
-    "latitude": 28.1387843265,
-    "longitude": -16.8986040889,
-    "area": "Bay of Biscay (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-07-15-skagerack-v-tanum-bo-humpback-09",
     "name": "Humpback sighting (Skagerack, V Tanum, Boh)",
     "species": "Humpback",
@@ -13780,6 +13660,156 @@
     "latitude": 28.1387843265,
     "longitude": -16.8986040889,
     "area": "Colombia / Ecuador Pacific (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-15-mediterranean-sea-fin-01",
+    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
+    "date": "2026-07-15",
+    "latitude": 56.086906607,
+    "longitude": 12.5427345559,
+    "area": "Mediterranean Sea (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381602799",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-15-mediterranean-sea-fin-02",
+    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
+    "date": "2026-07-15",
+    "latitude": 28.1387843265,
+    "longitude": -16.8986040889,
+    "area": "Mediterranean Sea (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-15-south-atlantic-fin-03",
+    "name": "Fin Whale sighting (South Atlantic (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
+    "date": "2026-07-15",
+    "latitude": 56.086906607,
+    "longitude": 12.5427345559,
+    "area": "South Atlantic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381602799",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-15-south-atlantic-fin-04",
+    "name": "Fin Whale sighting (South Atlantic (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
+    "date": "2026-07-15",
+    "latitude": 28.1387843265,
+    "longitude": -16.8986040889,
+    "area": "South Atlantic (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-15-iceland-fin-05",
+    "name": "Fin Whale sighting (Iceland (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
+    "date": "2026-07-15",
+    "latitude": 56.086906607,
+    "longitude": 12.5427345559,
+    "area": "Iceland (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381602799",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-15-iceland-fin-06",
+    "name": "Fin Whale sighting (Iceland (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
+    "date": "2026-07-15",
+    "latitude": 28.1387843265,
+    "longitude": -16.8986040889,
+    "area": "Iceland (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-15-uk-ireland-waters-fin-07",
+    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
+    "date": "2026-07-15",
+    "latitude": 56.086906607,
+    "longitude": 12.5427345559,
+    "area": "UK & Ireland waters (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381602799",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-15-uk-ireland-waters-fin-08",
+    "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
+    "date": "2026-07-15",
+    "latitude": 28.1387843265,
+    "longitude": -16.8986040889,
+    "area": "UK & Ireland waters (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-15-bay-of-biscay-fin-09",
+    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
+    "date": "2026-07-15",
+    "latitude": 56.086906607,
+    "longitude": 12.5427345559,
+    "area": "Bay of Biscay (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381602799",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-15-bay-of-biscay-fin-10",
+    "name": "Fin Whale sighting (Bay of Biscay (OBIS))",
+    "species": "Fin Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-15. Source: iNaturalist.",
+    "date": "2026-07-15",
+    "latitude": 28.1387843265,
+    "longitude": -16.8986040889,
+    "area": "Bay of Biscay (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/381941175",
     "behaviors": [
       "reported"
