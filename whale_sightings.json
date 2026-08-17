@@ -2956,7 +2956,26 @@
     "notable": true
   },
   {
-    "id": "2026-07-31-kodiak-island-county-fin-01",
+    "id": "2026-07-31-northeast-atlantic-fin-01",
+    "name": "Fin Whale sighting (Northeast Atlantic (offshore))",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by d0c.",
+    "date": "2026-07-31",
+    "latitude": 49.8830555122,
+    "longitude": -6.2393064762,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/388738433",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-31T17:27:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/712006131/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Michael Bird, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-07-31-kodiak-island-county-fin-02",
     "name": "Fin Whale sighting (Kodiak Island County, US-AK, US)",
     "species": "Fin Whale",
     "info": "iNaturalist observation by muleytracker.",
@@ -7450,6 +7469,21 @@
     "notable": true
   },
   {
+    "id": "2026-07-19-husavik-humpback-68",
+    "name": "Humpback sighting (Husavik)",
+    "species": "Humpback",
+    "info": "GBIF record from GBIF. Observed 2026-07-19.",
+    "date": "2026-07-19",
+    "latitude": 66.041195,
+    "longitude": -17.392802,
+    "area": "Husavik",
+    "source": "https://www.gbif.org/occurrence/6448308332",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
     "id": "2026-07-19-uk-ireland-waters-fin-11",
     "name": "Fin Whale sighting (UK & Ireland waters (OBIS))",
     "species": "Fin Whale",
@@ -7523,21 +7557,6 @@
       "reported"
     ],
     "notable": true
-  },
-  {
-    "id": "2026-07-19-husavik-humpback-68",
-    "name": "Humpback sighting (Husavik)",
-    "species": "Humpback",
-    "info": "GBIF record from GBIF. Observed 2026-07-19.",
-    "date": "2026-07-19",
-    "latitude": 66.041195,
-    "longitude": -17.392802,
-    "area": "Husavik",
-    "source": "https://www.gbif.org/occurrence/6448308332",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
     "id": "2026-07-19-vancouver-bc-canada-gray-04",
@@ -9434,29 +9453,29 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-south-africa-souther-orca-19",
-    "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
-    "species": "Orca",
+    "id": "2026-07-18-bay-of-bengal-blue-19",
+    "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 65.1455659645,
     "longitude": -13.6538932845,
-    "area": "South Africa / Southern Ocean (OBIS)",
+    "area": "Bay of Bengal (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382618069",
     "behaviors": [
       "reported"
     ],
-    "notable": true
+    "seasonalStatus": "Iceland feeding grounds"
   },
   {
-    "id": "2026-07-18-south-africa-souther-orca-20",
-    "name": "Orca sighting (South Africa / Southern Ocean (OBIS))",
-    "species": "Orca",
+    "id": "2026-07-18-bay-of-bengal-blue-20",
+    "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 61.2257466667,
     "longitude": -149.9064783333,
-    "area": "South Africa / Southern Ocean (OBIS)",
+    "area": "Bay of Bengal (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382802991",
     "behaviors": [
       "reported"
@@ -9464,14 +9483,29 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-pacific-kamcha-orca-21",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
+    "id": "2026-07-18-gulf-of-california-m-blue-21",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
+    "date": "2026-07-18",
+    "latitude": 29.216193599700002,
+    "longitude": -90.6377001,
+    "area": "Gulf of California, Mexico (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382583760",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-18-gulf-of-california-m-blue-22",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": -35.5774733498,
     "longitude": 150.3763718329,
-    "area": "North Pacific / Kamchatka (OBIS)",
+    "area": "Gulf of California, Mexico (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382819088",
     "behaviors": [
       "reported"
@@ -9479,29 +9513,29 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-pacific-kamcha-orca-22",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
+    "id": "2026-07-18-gulf-of-california-m-blue-23",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 49.0392485542,
     "longitude": -123.4515923987,
-    "area": "North Pacific / Kamchatka (OBIS)",
+    "area": "Gulf of California, Mexico (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383018214",
     "behaviors": [
       "reported"
     ],
-    "seasonalStatus": "Salish Sea (SRKW range)"
+    "notable": true
   },
   {
-    "id": "2026-07-18-north-pacific-kamcha-orca-23",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
+    "id": "2026-07-18-gulf-of-california-m-blue-24",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 61.2257466667,
     "longitude": -149.9064783333,
-    "area": "North Pacific / Kamchatka (OBIS)",
+    "area": "Gulf of California, Mexico (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382802731",
     "behaviors": [
       "reported"
@@ -9509,14 +9543,14 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-pacific-kamcha-orca-24",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
+    "id": "2026-07-18-gulf-of-california-m-blue-25",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 37.3467221549,
     "longitude": -122.674522853,
-    "area": "North Pacific / Kamchatka (OBIS)",
+    "area": "Gulf of California, Mexico (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383038834",
     "behaviors": [
       "reported"
@@ -9524,14 +9558,14 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-pacific-kamcha-orca-25",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
+    "id": "2026-07-18-gulf-of-california-m-blue-26",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 46.246666600000005,
     "longitude": -124.0140791,
-    "area": "North Pacific / Kamchatka (OBIS)",
+    "area": "Gulf of California, Mexico (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383011862",
     "behaviors": [
       "reported"
@@ -9539,14 +9573,14 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-pacific-kamcha-orca-26",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
+    "id": "2026-07-18-gulf-of-california-m-blue-27",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 54.4166877107,
     "longitude": -131.607881634,
-    "area": "North Pacific / Kamchatka (OBIS)",
+    "area": "Gulf of California, Mexico (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383175153",
     "behaviors": [
       "reported"
@@ -9554,14 +9588,14 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-pacific-kamcha-orca-27",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
+    "id": "2026-07-18-gulf-of-california-m-blue-28",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 32.6586190971,
     "longitude": -117.232918927,
-    "area": "North Pacific / Kamchatka (OBIS)",
+    "area": "Gulf of California, Mexico (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383163635",
     "behaviors": [
       "reported"
@@ -9569,29 +9603,29 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-north-pacific-kamcha-orca-28",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
+    "id": "2026-07-18-gulf-of-california-m-blue-29",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 65.1455659645,
     "longitude": -13.6538932845,
-    "area": "North Pacific / Kamchatka (OBIS)",
+    "area": "Gulf of California, Mexico (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382618069",
     "behaviors": [
       "reported"
     ],
-    "notable": true
+    "seasonalStatus": "Iceland feeding grounds"
   },
   {
-    "id": "2026-07-18-north-pacific-kamcha-orca-29",
-    "name": "Orca sighting (North Pacific / Kamchatka (OBIS))",
-    "species": "Orca",
+    "id": "2026-07-18-gulf-of-california-m-blue-30",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 61.2257466667,
     "longitude": -149.9064783333,
-    "area": "North Pacific / Kamchatka (OBIS)",
+    "area": "Gulf of California, Mexico (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382802991",
     "behaviors": [
       "reported"
@@ -9599,93 +9633,64 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-southern-ocean-antar-orca-30",
-    "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
-    "species": "Orca",
+    "id": "2026-07-18-global-humpback-59",
+    "name": "Humpback sighting (Global (OBIS))",
+    "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
-    "latitude": -35.5774733498,
-    "longitude": 150.3763718329,
-    "area": "Southern Ocean / Antarctic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382819088",
+    "latitude": -34.2694342372,
+    "longitude": 18.3779019423,
+    "area": "Global (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382943734",
     "behaviors": [
-      "reported"
+      "reported",
+      "breaching"
     ],
     "notable": true
   },
   {
-    "id": "2026-07-18-southern-ocean-antar-orca-31",
-    "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
+    "id": "2026-07-18-austurland-humpback-60",
+    "name": "Humpback sighting (Austurland)",
+    "species": "Humpback",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-18.",
     "date": "2026-07-18",
-    "latitude": 49.0392485542,
-    "longitude": -123.4515923987,
-    "area": "Southern Ocean / Antarctic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383018214",
+    "latitude": 65.145566,
+    "longitude": -13.653893,
+    "area": "Austurland",
+    "source": "https://www.gbif.org/occurrence/6451689963",
     "behaviors": [
       "reported"
     ],
-    "seasonalStatus": "Salish Sea (SRKW range)"
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-18-southern-ocean-antar-orca-32",
-    "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
+    "id": "2026-07-18-kerry-humpback-61",
+    "name": "Humpback sighting (Kerry)",
+    "species": "Humpback",
+    "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-07-18.",
     "date": "2026-07-18",
-    "latitude": 61.2257466667,
-    "longitude": -149.9064783333,
-    "area": "Southern Ocean / Antarctic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382802731",
+    "latitude": 52.091035,
+    "longitude": -10.279173,
+    "area": "Kerry",
+    "source": "https://www.gbif.org/occurrence/6480499813",
     "behaviors": [
       "reported"
     ],
-    "notable": true
+    "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-07-18-southern-ocean-antar-orca-33",
-    "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
+    "id": "2026-07-18-skardalen-fj-ra-og-f-humpback-62",
+    "name": "Humpback sighting (Skardalen, fjæra og fjorden, Kåfjord, Tr)",
+    "species": "Humpback",
+    "info": "GBIF record from GBIF. Observed 2026-07-18.",
     "date": "2026-07-18",
-    "latitude": 37.3467221549,
-    "longitude": -122.674522853,
-    "area": "Southern Ocean / Antarctic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383038834",
+    "latitude": 69.538202,
+    "longitude": 20.63273,
+    "area": "Skardalen, fjæra og fjorden, Kåfjord, Tr",
+    "source": "https://www.gbif.org/occurrence/6434900350",
     "behaviors": [
       "reported"
     ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-18-southern-ocean-antar-orca-34",
-    "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
-    "date": "2026-07-18",
-    "latitude": 46.246666600000005,
-    "longitude": -124.0140791,
-    "area": "Southern Ocean / Antarctic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383011862",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-18-southern-ocean-antar-orca-35",
-    "name": "Orca sighting (Southern Ocean / Antarctic (OBIS))",
-    "species": "Orca",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
-    "date": "2026-07-18",
-    "latitude": 54.4166877107,
-    "longitude": -131.607881634,
-    "area": "Southern Ocean / Antarctic (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383175153",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
   }
 ]
