@@ -679,22 +679,6 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-08-15-brooklin-me-us-humpback-08",
-    "name": "Humpback sighting (Brooklin, ME, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by hayleyclapp.",
-    "date": "2026-08-15",
-    "latitude": 44.206905956,
-    "longitude": -68.525401937,
-    "area": "Brooklin, ME, US",
-    "source": "https://www.inaturalist.org/observations/391556689",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-15T13:54:17Z",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
     "id": "2026-08-15-northeast-atlantic-sperm-01",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
@@ -749,7 +733,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-15-eyjafjordur-humpback-09",
+    "id": "2026-08-15-eyjafjordur-humpback-08",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-15.",
@@ -1484,6 +1468,25 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
+    "id": "2026-08-12-united-states-humpback-11",
+    "name": "Humpback sighting (United States)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by bunnymom20.",
+    "date": "2026-08-12",
+    "latitude": 44.1744270362,
+    "longitude": -68.0661603436,
+    "area": "United States",
+    "source": "https://www.inaturalist.org/observations/390691271",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-12T15:39:22Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/715793712/medium.jpg",
+    "photoLicense": "cc0",
+    "photoAttribution": "no rights reserved",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
     "id": "2026-08-12-northeast-atlantic-sperm-02",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
@@ -1503,7 +1506,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-12-iceland-humpback-11",
+    "id": "2026-08-12-iceland-humpback-12",
     "name": "Humpback sighting (Iceland)",
     "species": "Humpback",
     "info": "iNaturalist observation by ian327.",
@@ -1535,7 +1538,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-12-eyjafjordur-humpback-12",
+    "id": "2026-08-12-eyjafjordur-humpback-13",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-12.",
@@ -5042,21 +5045,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-australia-gray-01",
-    "name": "Gray Whale sighting (Australia)",
-    "species": "Gray Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
-    "date": "2026-07-20",
-    "latitude": 44.0062950659,
-    "longitude": 145.4310102185,
-    "area": "Australia",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383205297",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-07-20-global-sperm-01",
     "name": "Sperm whale sighting (Global (OBIS))",
     "species": "Sperm whale",
@@ -5080,6 +5068,21 @@
     "latitude": 44.0062950659,
     "longitude": 145.4310102185,
     "area": "New Zealand",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383205297",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-20-australia-gray-01",
+    "name": "Gray Whale sighting (Australia)",
+    "species": "Gray Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
+    "date": "2026-07-20",
+    "latitude": 44.0062950659,
+    "longitude": 145.4310102185,
+    "area": "Australia",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383205297",
     "behaviors": [
       "reported"
