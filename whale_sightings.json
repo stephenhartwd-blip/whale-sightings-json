@@ -4271,7 +4271,23 @@
     "notable": true
   },
   {
-    "id": "2026-07-23-svalbard-humpback-05",
+    "id": "2026-07-23-ie-humpback-05",
+    "name": "Humpback sighting (IE)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by danielkl.",
+    "date": "2026-07-23",
+    "latitude": 54.4486833333,
+    "longitude": -8.727225,
+    "area": "IE",
+    "source": "https://www.inaturalist.org/observations/387701082",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-23T11:51:06Z",
+    "seasonalStatus": "Northeast Atlantic feeding season"
+  },
+  {
+    "id": "2026-07-23-svalbard-humpback-06",
     "name": "Humpback sighting (Svalbard (iNaturalist))",
     "species": "Humpback",
     "info": "iNaturalist observation by kevin_snair.",
@@ -5138,21 +5154,6 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-07-20-central-pacific-ocea-humpback-25",
-    "name": "Humpback sighting (Central Pacific Ocean (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
-    "date": "2026-07-20",
-    "latitude": 51.4786960564,
-    "longitude": -8.6193058776,
-    "area": "Central Pacific Ocean (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383412678",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
     "id": "2026-07-20-global-orca-01",
     "name": "Orca sighting (Global (GBIF))",
     "species": "Orca",
@@ -5676,6 +5677,21 @@
       "reported"
     ],
     "notable": true
+  },
+  {
+    "id": "2026-07-20-central-pacific-ocea-humpback-25",
+    "name": "Humpback sighting (Central Pacific Ocean (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
+    "date": "2026-07-20",
+    "latitude": 51.4786960564,
+    "longitude": -8.6193058776,
+    "area": "Central Pacific Ocean (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383412678",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
     "id": "2026-07-20-south-atlantic-ocean-humpback-26",
@@ -7881,7 +7897,25 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-big-lagoon-ca-95570--gray-05",
+    "id": "2026-07-18-jetty-rd-hammond-or--gray-05",
+    "name": "Gray Whale sighting (Jetty Rd, Hammond, OR 97121, USA)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by okaugust.",
+    "date": "2026-07-18",
+    "latitude": 46.246666600000005,
+    "longitude": -124.0140791,
+    "area": "Jetty Rd, Hammond, OR 97121, USA",
+    "source": "https://www.inaturalist.org/observations/383011862",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-18T21:32:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/700961129/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Tina Toth, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-07-18-big-lagoon-ca-95570--gray-06",
     "name": "Gray Whale sighting (Big Lagoon, CA 95570, USA)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by nemophilist_tendencies.",
@@ -7899,7 +7933,7 @@
     "photoAttribution": "(c) nemophilist_tendencies, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-07-18-san-francisco-county-gray-06",
+    "id": "2026-07-18-san-francisco-county-gray-07",
     "name": "Gray Whale sighting (San Francisco County, San Francisco, CA, USA)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by mapierson.",
@@ -9024,7 +9058,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-pacific-coast-gray-07",
+    "id": "2026-07-18-pacific-coast-gray-08",
     "name": "Gray Whale sighting (Pacific Coast (OBIS))",
     "species": "Gray Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -9038,7 +9072,7 @@
     ]
   },
   {
-    "id": "2026-07-18-pacific-coast-gray-08",
+    "id": "2026-07-18-pacific-coast-gray-09",
     "name": "Gray Whale sighting (Pacific Coast (OBIS))",
     "species": "Gray Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -9052,7 +9086,7 @@
     ]
   },
   {
-    "id": "2026-07-18-pacific-coast-gray-09",
+    "id": "2026-07-18-pacific-coast-gray-10",
     "name": "Gray Whale sighting (Pacific Coast (OBIS))",
     "species": "Gray Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
@@ -9517,104 +9551,14 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-global-fin-06",
-    "name": "Fin Whale sighting (Global (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
-    "date": "2026-07-18",
-    "latitude": 54.4166877107,
-    "longitude": -131.607881634,
-    "area": "Global (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383175153",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-18-australia-fin-07",
-    "name": "Fin Whale sighting (Australia)",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
-    "date": "2026-07-18",
-    "latitude": 54.4166877107,
-    "longitude": -131.607881634,
-    "area": "Australia",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383175153",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-18-new-zealand-fin-08",
-    "name": "Fin Whale sighting (New Zealand)",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
-    "date": "2026-07-18",
-    "latitude": 54.4166877107,
-    "longitude": -131.607881634,
-    "area": "New Zealand",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383175153",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-18-mediterranean-sea-fin-09",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
-    "date": "2026-07-18",
-    "latitude": -35.5774733498,
-    "longitude": 150.3763718329,
-    "area": "Mediterranean Sea (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382819088",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-18-mediterranean-sea-fin-10",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
-    "date": "2026-07-18",
-    "latitude": 49.0392485542,
-    "longitude": -123.4515923987,
-    "area": "Mediterranean Sea (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383018214",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-18-mediterranean-sea-fin-11",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
-    "date": "2026-07-18",
-    "latitude": 61.2257466667,
-    "longitude": -149.9064783333,
-    "area": "Mediterranean Sea (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382802731",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-18-mediterranean-sea-fin-12",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
+    "id": "2026-07-18-bay-of-bengal-blue-16",
+    "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 37.3467221549,
     "longitude": -122.674522853,
-    "area": "Mediterranean Sea (OBIS)",
+    "area": "Bay of Bengal (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383038834",
     "behaviors": [
       "reported"
@@ -9622,14 +9566,14 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-mediterranean-sea-fin-13",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
+    "id": "2026-07-18-bay-of-bengal-blue-17",
+    "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 46.246666600000005,
     "longitude": -124.0140791,
-    "area": "Mediterranean Sea (OBIS)",
+    "area": "Bay of Bengal (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383011862",
     "behaviors": [
       "reported"
@@ -9637,14 +9581,14 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-mediterranean-sea-fin-14",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
+    "id": "2026-07-18-bay-of-bengal-blue-18",
+    "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 54.4166877107,
     "longitude": -131.607881634,
-    "area": "Mediterranean Sea (OBIS)",
+    "area": "Bay of Bengal (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383175153",
     "behaviors": [
       "reported"
@@ -9652,14 +9596,14 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-mediterranean-sea-fin-15",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
+    "id": "2026-07-18-bay-of-bengal-blue-19",
+    "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 32.6586190971,
     "longitude": -117.232918927,
-    "area": "Mediterranean Sea (OBIS)",
+    "area": "Bay of Bengal (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383163635",
     "behaviors": [
       "reported"
@@ -9667,29 +9611,29 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-mediterranean-sea-fin-16",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
+    "id": "2026-07-18-bay-of-bengal-blue-20",
+    "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 65.1455659645,
     "longitude": -13.6538932845,
-    "area": "Mediterranean Sea (OBIS)",
+    "area": "Bay of Bengal (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382618069",
     "behaviors": [
       "reported"
     ],
-    "notable": true
+    "seasonalStatus": "Iceland feeding grounds"
   },
   {
-    "id": "2026-07-18-mediterranean-sea-fin-17",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
+    "id": "2026-07-18-bay-of-bengal-blue-21",
+    "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 61.2257466667,
     "longitude": -149.9064783333,
-    "area": "Mediterranean Sea (OBIS)",
+    "area": "Bay of Bengal (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382802991",
     "behaviors": [
       "reported"
@@ -9697,14 +9641,14 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-south-atlantic-fin-18",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
+    "id": "2026-07-18-gulf-of-california-m-blue-22",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": -35.5774733498,
     "longitude": 150.3763718329,
-    "area": "South Atlantic (OBIS)",
+    "area": "Gulf of California, Mexico (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382819088",
     "behaviors": [
       "reported"
@@ -9712,14 +9656,14 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-south-atlantic-fin-19",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
+    "id": "2026-07-18-gulf-of-california-m-blue-23",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 49.0392485542,
     "longitude": -123.4515923987,
-    "area": "South Atlantic (OBIS)",
+    "area": "Gulf of California, Mexico (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383018214",
     "behaviors": [
       "reported"
@@ -9727,15 +9671,75 @@
     "notable": true
   },
   {
-    "id": "2026-07-18-south-atlantic-fin-20",
-    "name": "Fin Whale sighting (South Atlantic (OBIS))",
-    "species": "Fin Whale",
+    "id": "2026-07-18-gulf-of-california-m-blue-24",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
     "date": "2026-07-18",
     "latitude": 61.2257466667,
     "longitude": -149.9064783333,
-    "area": "South Atlantic (OBIS)",
+    "area": "Gulf of California, Mexico (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382802731",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-18-gulf-of-california-m-blue-25",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
+    "date": "2026-07-18",
+    "latitude": 37.3467221549,
+    "longitude": -122.674522853,
+    "area": "Gulf of California, Mexico (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383038834",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-18-gulf-of-california-m-blue-26",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
+    "date": "2026-07-18",
+    "latitude": 46.246666600000005,
+    "longitude": -124.0140791,
+    "area": "Gulf of California, Mexico (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383011862",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-18-gulf-of-california-m-blue-27",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
+    "date": "2026-07-18",
+    "latitude": 54.4166877107,
+    "longitude": -131.607881634,
+    "area": "Gulf of California, Mexico (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383175153",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-18-gulf-of-california-m-blue-28",
+    "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
+    "species": "Blue Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-18. Source: iNaturalist.",
+    "date": "2026-07-18",
+    "latitude": 32.6586190971,
+    "longitude": -117.232918927,
+    "area": "Gulf of California, Mexico (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383163635",
     "behaviors": [
       "reported"
     ],
