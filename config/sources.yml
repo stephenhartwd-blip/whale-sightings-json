@@ -12,11 +12,17 @@ allowed_inat_photo_licenses:
 max_days: 30
 min_recent_days: 30
 min_recent_fraction: 0.0
-# Raised 500 -> 1000 (Aug 2026). Headroom check: the feed averages ~590 bytes per
-# record, so 1000 records is ~576 KB — safely inside the 1 MiB hard limit on the
-# Firestore `sightings/current` document that the app reads. Do NOT go past ~1500
-# (~864 KB) without splitting that document, and 2000 would exceed 1 MiB outright.
-target_total: 1000
+# 500 -> 1000 -> 600 (Aug 2026).
+#
+# 1000 was safe for the Firestore 1 MiB document limit (~576 KB) but NOT safe for
+# the app: MapPage renders every visible sighting as its own Annotation with no
+# clustering, so nearly doubling the pin count made the map slow and glitchy on
+# device. Pulled back to 600 — a modest lift over the original 500 that keeps the
+# new AU/NZ and southern-right coverage without the pin-count blowup.
+#
+# Before raising this again, add annotation clustering in MapPage. The binding
+# constraint is map rendering, not payload size.
+target_total: 600
 # Rebalanced for southern-hemisphere coverage. Gray Whale was taking 18% of every
 # slot budget despite being a North Pacific species that never occurs in Australia
 # or New Zealand, which structurally squeezed out AU/NZ sightings.
