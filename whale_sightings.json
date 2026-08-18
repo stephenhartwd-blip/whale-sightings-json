@@ -3005,7 +3005,26 @@
     "notable": true
   },
   {
-    "id": "2026-07-31-kodiak-island-county-fin-01",
+    "id": "2026-07-31-northeast-atlantic-fin-01",
+    "name": "Fin Whale sighting (Northeast Atlantic (offshore))",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by d0c.",
+    "date": "2026-07-31",
+    "latitude": 49.8830555122,
+    "longitude": -6.2393064762,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/388738433",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-31T17:27:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/712006131/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Michael Bird, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-07-31-kodiak-island-county-fin-02",
     "name": "Fin Whale sighting (Kodiak Island County, US-AK, US)",
     "species": "Fin Whale",
     "info": "iNaturalist observation by muleytracker.",
@@ -4123,7 +4142,23 @@
     "notable": true
   },
   {
-    "id": "2026-07-23-svalbard-humpback-05",
+    "id": "2026-07-23-ie-humpback-05",
+    "name": "Humpback sighting (IE)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by danielkl.",
+    "date": "2026-07-23",
+    "latitude": 54.4486833333,
+    "longitude": -8.727225,
+    "area": "IE",
+    "source": "https://www.inaturalist.org/observations/387701082",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-23T11:51:06Z",
+    "seasonalStatus": "Northeast Atlantic feeding season"
+  },
+  {
+    "id": "2026-07-23-svalbard-humpback-06",
     "name": "Humpback sighting (Svalbard (iNaturalist))",
     "species": "Humpback",
     "info": "iNaturalist observation by kevin_snair.",
@@ -5125,21 +5160,6 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-australia-gray-01",
-    "name": "Gray Whale sighting (Australia)",
-    "species": "Gray Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
-    "date": "2026-07-20",
-    "latitude": 44.0062950659,
-    "longitude": 145.4310102185,
-    "area": "Australia",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383205297",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-07-20-global-sperm-01",
     "name": "Sperm whale sighting (Global (OBIS))",
     "species": "Sperm whale",
@@ -5193,6 +5213,21 @@
     "latitude": 44.0062950659,
     "longitude": 145.4310102185,
     "area": "North Atlantic Ocean (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383205297",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-20-australia-gray-01",
+    "name": "Gray Whale sighting (Australia)",
+    "species": "Gray Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
+    "date": "2026-07-20",
+    "latitude": 44.0062950659,
+    "longitude": 145.4310102185,
+    "area": "Australia",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383205297",
     "behaviors": [
       "reported"
@@ -5425,22 +5460,7 @@
     "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
-    "id": "2026-07-20-central-pacific-ocea-humpback-38",
-    "name": "Humpback sighting (Central Pacific Ocean (OBIS))",
-    "species": "Humpback",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
-    "date": "2026-07-20",
-    "latitude": 51.4786960564,
-    "longitude": -8.6193058776,
-    "area": "Central Pacific Ocean (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383412678",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
-    "id": "2026-07-20-global-humpback-39",
+    "id": "2026-07-20-global-humpback-38",
     "name": "Humpback sighting (Global (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -6199,21 +6219,6 @@
     "longitude": 25.4963650927,
     "area": "Mediterranean Sea (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383382934",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-20-mediterranean-sea-fin-09",
-    "name": "Fin Whale sighting (Mediterranean Sea (OBIS))",
-    "species": "Fin Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
-    "date": "2026-07-20",
-    "latitude": -34.0965650549,
-    "longitude": 23.4085989514,
-    "area": "Mediterranean Sea (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383287460",
     "behaviors": [
       "reported"
     ],
