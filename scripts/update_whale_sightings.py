@@ -1431,6 +1431,8 @@ def parse_acartia_api(cfg: Dict[str, Any], session: requests.Session, tz_name: s
             resp = session.get(f"{ACARTIA_BASE}/sightings/current", timeout=30)
         resp.raise_for_status()
         records = resp.json() or []
+        print(f"[acartia_api:{source_key}] fetched {len(records)} records "
+              f"from {'public /current' if used_public_feed else '/trusted'}")
         time.sleep(0.2)
     except Exception as e:
         print(f"[acartia_api:{source_key}] fetch error: {e}")
@@ -1438,11 +1440,13 @@ def parse_acartia_api(cfg: Dict[str, Any], session: requests.Session, tz_name: s
     for rec in records:
         if len(candidates) >= max_items * 3:
             break
-        # The public /sightings/current feed carries no "trusted" field, so applying
-        # this filter to it silently discarded 100% of records. Only enforce it on the
-        # trusted endpoint, which actually sets the flag.
-        if trusted_only and not used_public_feed:
-            if str(rec.get("trusted", "0")) not in ("1", "true", "True"):
+        # Absence of the flag must NEVER mean "untrusted". Neither Acartia endpoint
+        # reliably sets a "trusted" field, so defaulting a missing value to "0" and
+        # filtering on it discarded 100% of records — first on the public feed, then
+        # again on /trusted once a token was present. Only skip a record when the
+        # field EXISTS and is explicitly negative.
+        if trusted_only and "trusted" in rec:
+            if str(rec.get("trusted")).lower() in ("0", "false", "no"):
                 continue
         if filter_source:
             if (rec.get("data_source_name") or "").lower() != filter_source:
