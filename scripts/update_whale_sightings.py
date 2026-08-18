@@ -1407,14 +1407,27 @@ def parse_acartia_api(cfg: Dict[str, Any], session: requests.Session, tz_name: s
     filter_source = (cfg.get("data_source_name") or "").strip().lower()
     today = now_local(tz_name)
     candidates: List[Candidate] = []
+    # A stale or wrong ACARTIA_TOKEN used to be WORSE than having no token at all:
+    # the token branch called /sightings/trusted, got 401, raise_for_status() threw,
+    # and the except below returned [] — so every Acartia source produced zero
+    # sightings while /sightings/current was serving ~100 live Salish Sea records
+    # without any auth. Now an unusable trusted response falls through to /current
+    # instead of losing the whole source.
+    used_public_feed = False
     try:
+        resp = None
         if token:
             resp = session.get(
                 f"{ACARTIA_BASE}/sightings/trusted",
                 headers={"Authorization": f"Bearer {token}"},
                 timeout=30,
             )
-        else:
+            if resp.status_code >= 400:
+                print(f"[acartia_api:{source_key}] /sightings/trusted returned "
+                      f"{resp.status_code} — falling back to the public /sightings/current")
+                resp = None
+        if resp is None:
+            used_public_feed = True
             resp = session.get(f"{ACARTIA_BASE}/sightings/current", timeout=30)
         resp.raise_for_status()
         records = resp.json() or []
@@ -1425,12 +1438,18 @@ def parse_acartia_api(cfg: Dict[str, Any], session: requests.Session, tz_name: s
     for rec in records:
         if len(candidates) >= max_items * 3:
             break
-        if trusted_only and str(rec.get("trusted", "0")) not in ("1", "true", "True"):
-            continue
+        # The public /sightings/current feed carries no "trusted" field, so applying
+        # this filter to it silently discarded 100% of records. Only enforce it on the
+        # trusted endpoint, which actually sets the flag.
+        if trusted_only and not used_public_feed:
+            if str(rec.get("trusted", "0")) not in ("1", "true", "True"):
+                continue
         if filter_source:
             if (rec.get("data_source_name") or "").lower() != filter_source:
                 continue
-        raw_species = (rec.get("species") or "").lower().strip()
+        # Acartia returns the species in "type" (e.g. "Orca"); "species" is not a
+        # field on the public feed, so reading only "species" yielded "" every time.
+        raw_species = (rec.get("species") or rec.get("type") or "").lower().strip()
         species = ACARTIA_SPECIES_MAP.get(raw_species)
         if not species:
             continue
