@@ -2012,6 +2012,87 @@ def select_candidates(cfg: Dict[str, Any], candidates: List[Candidate], tz_name:
 # JSON output
 # -------------------------
 
+# -------------------------
+# Movement / direction-of-travel inference
+# -------------------------
+# A competitor in the Salish Sea shows which way whales are heading, and users
+# have asked for the same. We do NOT have per-animal IDs on most sightings (only
+# ~1% carry an individualId), so instead of tracking named individuals we infer a
+# short track from consecutive sightings of the SAME SPECIES that are close in
+# both time and space, and we only keep it when the implied swim speed is
+# physically plausible for a whale.
+#
+# That last check is what makes this defensible rather than decorative. In one
+# week of Salish Sea data, naive pairing produced implied speeds of 576 km/h and
+# 215 km/h — clearly two different pods, not one animal moving fast. Anything
+# above MOVE_MAX_KMH is two separate groups and gets no arrow.
+#
+# Density gates itself: these constraints can only be satisfied where sightings
+# are frequent enough to pair up, so arrows appear in hotspots like the Salish
+# Sea and stay absent in thin regions. No region allow-list needed.
+MOVE_MAX_HOURS = 6.0     # pairs further apart in time are unrelated
+MOVE_MAX_KM    = 40.0    # ...or too far apart in space
+MOVE_MIN_KM    = 0.3     # below this the bearing is GPS noise, not travel
+MOVE_MAX_KMH   = 20.0    # sustained whale travel; above this it's a different pod
+
+_COMPASS = ["N","NNE","NE","ENE","E","ESE","SE","SSE",
+            "S","SSW","SW","WSW","W","WNW","NW","NNW"]
+
+def _bearing_deg(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dl = math.radians(lon2 - lon1)
+    y = math.sin(dl) * math.cos(p2)
+    x = math.cos(p1) * math.sin(p2) - math.sin(p1) * math.cos(p2) * math.cos(dl)
+    return (math.degrees(math.atan2(y, x)) + 360.0) % 360.0
+
+def annotate_movement(entries: List[Dict[str, Any]]) -> int:
+    """Attach heading fields to entries where a defensible track can be inferred.
+
+    Adds, on the LATER sighting of a qualifying pair:
+      headingDegrees (0=N), headingCardinal, movedKm, speedKmh, headingFromId
+    Entries without a defensible track are left untouched, so the app can simply
+    draw an arrow when headingDegrees is present and nothing when it is not.
+    """
+    from collections import defaultdict
+    by_species: Dict[str, List[Dict[str, Any]]] = defaultdict(list)
+    for e in entries:
+        ts = e.get("observedAt")
+        if not ts:
+            continue                      # need a real timestamp, not just a date
+        try:
+            dt = datetime.fromisoformat(str(ts).replace("Z", "+00:00"))
+        except Exception:
+            continue
+        e["_dt"] = dt
+        by_species[e.get("species", "")].append(e)
+
+    annotated = 0
+    for species, rows in by_species.items():
+        rows.sort(key=lambda r: r["_dt"])
+        for prev, cur in zip(rows, rows[1:]):
+            hours = (cur["_dt"] - prev["_dt"]).total_seconds() / 3600.0
+            if hours <= 0 or hours > MOVE_MAX_HOURS:
+                continue
+            dist = haversine_km(prev["latitude"], prev["longitude"],
+                                cur["latitude"], cur["longitude"])
+            if dist < MOVE_MIN_KM or dist > MOVE_MAX_KM:
+                continue
+            kmh = dist / hours
+            if kmh > MOVE_MAX_KMH:
+                continue                  # two different pods, not one travelling
+            brg = _bearing_deg(prev["latitude"], prev["longitude"],
+                               cur["latitude"], cur["longitude"])
+            cur["headingDegrees"] = round(brg, 1)
+            cur["headingCardinal"] = _COMPASS[int((brg + 11.25) % 360 // 22.5)]
+            cur["movedKm"] = round(dist, 1)
+            cur["speedKmh"] = round(kmh, 1)
+            cur["headingFromId"] = prev.get("id")
+            annotated += 1
+
+    for e in entries:
+        e.pop("_dt", None)
+    return annotated
+
 def build_entries(candidates: List[Candidate]) -> List[Dict[str, Any]]:
     candidates = sorted(candidates, key=lambda c: c.date, reverse=True)
 
@@ -2206,6 +2287,9 @@ def main() -> None:
     # iNat observations have unique source URLs so no extra geographic clustering needed.
     selected = select_candidates(cfg, filtered, tz_name)
     entries = build_entries(selected)
+
+    moved = annotate_movement(entries)
+    print(f"Direction-of-travel: annotated {moved} sightings with a defensible heading")
 
     out_path = os.path.join(root, "whale_sightings.json")
     with open(out_path, "w", encoding="utf-8") as f:
