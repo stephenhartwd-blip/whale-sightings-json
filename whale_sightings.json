@@ -2660,6 +2660,23 @@
     "notable": true
   },
   {
+    "id": "2026-08-06-svalbard-arctic-norw-blue-01",
+    "name": "Blue Whale sighting (Svalbard, Arctic Norway (offshore))",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by liangonz.",
+    "date": "2026-08-06",
+    "latitude": 80.74,
+    "longitude": 15.89,
+    "area": "Svalbard, Arctic Norway (offshore)",
+    "source": "https://www.inaturalist.org/observations/389365849",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ],
+    "observedAt": "2026-08-06T15:09:00Z",
+    "notable": true
+  },
+  {
     "id": "2026-08-06-atlantic-ocean-rj-br-humpback-03",
     "name": "Humpback sighting (Atlantic Ocean, RJ, BR)",
     "species": "Humpback",
@@ -2909,22 +2926,6 @@
       "reported"
     ],
     "notable": true
-  },
-  {
-    "id": "2026-08-04-indian-ocean-mz-humpback-03",
-    "name": "Humpback sighting (Indian Ocean, MZ)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by sgcacc.",
-    "date": "2026-08-04",
-    "latitude": -23.7642101472,
-    "longitude": 35.5533859585,
-    "area": "Indian Ocean, MZ",
-    "source": "https://www.inaturalist.org/observations/388548401",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-04T07:38:09Z",
-    "seasonalStatus": "East Africa / Mozambique corridor"
   },
   {
     "id": "2026-08-04-indian-ocean-yalata--southern-right-whale-01",
@@ -3723,6 +3724,25 @@
       "reported"
     ],
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-07-30-svalbard-arctic-norw-blue-01",
+    "name": "Blue Whale sighting (Svalbard, Arctic Norway (offshore))",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by leekelai.",
+    "date": "2026-07-30",
+    "latitude": 80.6396433791,
+    "longitude": 13.9916148359,
+    "area": "Svalbard, Arctic Norway (offshore)",
+    "source": "https://www.inaturalist.org/observations/389475006",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-30T15:09:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713415352/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) leekelai, some rights reserved (CC BY-NC)",
+    "notable": true
   },
   {
     "id": "2026-07-30-western-cape-za-humpback-05",
@@ -5023,6 +5043,27 @@
     "notable": true
   },
   {
+    "id": "2026-07-20-svalbard-arctic-norw-blue-01",
+    "name": "Blue Whale sighting (Svalbard, Arctic Norway (offshore))",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by kevin_snair.",
+    "date": "2026-07-20",
+    "latitude": 80.26024,
+    "longitude": 15.7835083333,
+    "area": "Svalbard, Arctic Norway (offshore)",
+    "source": "https://www.inaturalist.org/observations/383397788",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-20T20:02:00Z",
+    "notable": true,
+    "headingDegrees": 340.7,
+    "headingCardinal": "NNW",
+    "movedKm": 0.6,
+    "speedKmh": 0.5,
+    "headingFromId": "2026-07-20-svalbard-arctic-norw-blue-17"
+  },
+  {
     "id": "2026-07-20-s-dafrika-humpback-01",
     "name": "Humpback sighting (Südafrika)",
     "species": "Humpback",
@@ -5251,7 +5292,22 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-indian-ocean-humpback-16",
+    "id": "2026-07-20-pacific-islands-tong-humpback-16",
+    "name": "Humpback sighting (Pacific Islands / Tonga-Samoa (OBIS))",
+    "species": "Humpback",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
+    "date": "2026-07-20",
+    "latitude": -34.0965650549,
+    "longitude": 23.4085989514,
+    "area": "Pacific Islands / Tonga-Samoa (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383287460",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-20-indian-ocean-humpback-17",
     "name": "Humpback sighting (Indian Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5266,7 +5322,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-east-africa-indian-o-humpback-17",
+    "id": "2026-07-20-east-africa-indian-o-humpback-18",
     "name": "Humpback sighting (East Africa / Indian Ocean coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5281,7 +5337,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-west-africa-humpback-18",
+    "id": "2026-07-20-west-africa-humpback-19",
     "name": "Humpback sighting (West Africa (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5296,7 +5352,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-pacific-islands-tong-humpback-19",
+    "id": "2026-07-20-pacific-islands-tong-humpback-20",
     "name": "Humpback sighting (Pacific Islands / Tonga-Samoa (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5311,7 +5367,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-red-sea-arabian-sea--humpback-20",
+    "id": "2026-07-20-red-sea-arabian-sea--humpback-21",
     "name": "Humpback sighting (Red Sea / Arabian Sea coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5326,7 +5382,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-japan-waters-humpback-21",
+    "id": "2026-07-20-japan-waters-humpback-22",
     "name": "Humpback sighting (Japan waters (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5341,7 +5397,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-gulf-of-guinea-humpback-22",
+    "id": "2026-07-20-gulf-of-guinea-humpback-23",
     "name": "Humpback sighting (Gulf of Guinea (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5356,7 +5412,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-central-pacific-ocea-humpback-23",
+    "id": "2026-07-20-central-pacific-ocea-humpback-24",
     "name": "Humpback sighting (Central Pacific Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5371,7 +5427,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-south-atlantic-ocean-humpback-24",
+    "id": "2026-07-20-south-atlantic-ocean-humpback-25",
     "name": "Humpback sighting (South Atlantic Ocean (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5386,7 +5442,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-west-africa-atlantic-humpback-25",
+    "id": "2026-07-20-west-africa-atlantic-humpback-26",
     "name": "Humpback sighting (West Africa Atlantic coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5401,7 +5457,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-iceland-humpback-26",
+    "id": "2026-07-20-iceland-humpback-27",
     "name": "Humpback sighting (Iceland (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5416,7 +5472,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-mexico-pacific-coast-humpback-27",
+    "id": "2026-07-20-mexico-pacific-coast-humpback-28",
     "name": "Humpback sighting (Mexico Pacific coast (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5431,7 +5487,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-argentina-southern-a-humpback-28",
+    "id": "2026-07-20-argentina-southern-a-humpback-29",
     "name": "Humpback sighting (Argentina / Southern Atlantic (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5446,7 +5502,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-colombia-ecuador-pac-humpback-29",
+    "id": "2026-07-20-colombia-ecuador-pac-humpback-30",
     "name": "Humpback sighting (Colombia / Ecuador Pacific (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5551,6 +5607,21 @@
     "notable": true
   },
   {
+    "id": "2026-07-20-australia-gray-01",
+    "name": "Gray Whale sighting (Australia)",
+    "species": "Gray Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
+    "date": "2026-07-20",
+    "latitude": 44.0062950659,
+    "longitude": 145.4310102185,
+    "area": "Australia",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383205297",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-07-20-global-sperm-01",
     "name": "Sperm whale sighting (Global (OBIS))",
     "species": "Sperm whale",
@@ -5611,22 +5682,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-australia-gray-01",
-    "name": "Gray Whale sighting (Australia)",
-    "species": "Gray Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
-    "date": "2026-07-20",
-    "latitude": 44.0062950659,
-    "longitude": 145.4310102185,
-    "area": "Australia",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383205297",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-20-indian-ocean-blue-01",
+    "id": "2026-07-20-indian-ocean-blue-02",
     "name": "Blue Whale sighting (Indian Ocean (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5641,7 +5697,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-bay-of-bengal-blue-02",
+    "id": "2026-07-20-bay-of-bengal-blue-03",
     "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5656,7 +5712,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-gulf-of-california-m-blue-03",
+    "id": "2026-07-20-gulf-of-california-m-blue-04",
     "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -5746,7 +5802,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-global-humpback-30",
+    "id": "2026-07-20-global-humpback-31",
     "name": "Humpback sighting (Global (OBIS))",
     "species": "Humpback",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -6286,7 +6342,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-indian-ocean-blue-04",
+    "id": "2026-07-20-indian-ocean-blue-05",
     "name": "Blue Whale sighting (Indian Ocean (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -6295,21 +6351,6 @@
     "longitude": 23.4181482453,
     "area": "Indian Ocean (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383253412",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-20-indian-ocean-blue-05",
-    "name": "Blue Whale sighting (Indian Ocean (OBIS))",
-    "species": "Blue Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
-    "date": "2026-07-20",
-    "latitude": 51.4786960564,
-    "longitude": -8.6193058776,
-    "area": "Indian Ocean (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383412678",
     "behaviors": [
       "reported"
     ],
@@ -6321,6 +6362,21 @@
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
     "date": "2026-07-20",
+    "latitude": 51.4786960564,
+    "longitude": -8.6193058776,
+    "area": "Indian Ocean (OBIS)",
+    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383412678",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-20-indian-ocean-blue-07",
+    "name": "Blue Whale sighting (Indian Ocean (OBIS))",
+    "species": "Blue Whale",
+    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
+    "date": "2026-07-20",
     "latitude": -34.0428872478,
     "longitude": 25.4963650927,
     "area": "Indian Ocean (OBIS)",
@@ -6331,7 +6387,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-indian-ocean-blue-07",
+    "id": "2026-07-20-indian-ocean-blue-08",
     "name": "Blue Whale sighting (Indian Ocean (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -6346,7 +6402,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-bay-of-bengal-blue-08",
+    "id": "2026-07-20-bay-of-bengal-blue-09",
     "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -6361,7 +6417,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-bay-of-bengal-blue-09",
+    "id": "2026-07-20-bay-of-bengal-blue-10",
     "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -6376,7 +6432,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-bay-of-bengal-blue-10",
+    "id": "2026-07-20-bay-of-bengal-blue-11",
     "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -6391,7 +6447,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-bay-of-bengal-blue-11",
+    "id": "2026-07-20-bay-of-bengal-blue-12",
     "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -6406,7 +6462,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-gulf-of-california-m-blue-12",
+    "id": "2026-07-20-gulf-of-california-m-blue-13",
     "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -6421,7 +6477,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-gulf-of-california-m-blue-13",
+    "id": "2026-07-20-gulf-of-california-m-blue-14",
     "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -6436,7 +6492,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-gulf-of-california-m-blue-14",
+    "id": "2026-07-20-gulf-of-california-m-blue-15",
     "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -6451,7 +6507,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-20-gulf-of-california-m-blue-15",
+    "id": "2026-07-20-gulf-of-california-m-blue-16",
     "name": "Blue Whale sighting (Gulf of California, Mexico (OBIS))",
     "species": "Blue Whale",
     "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-20. Source: iNaturalist.",
@@ -6538,6 +6594,22 @@
     "behaviors": [
       "reported"
     ],
+    "notable": true
+  },
+  {
+    "id": "2026-07-20-svalbard-arctic-norw-blue-17",
+    "name": "Blue Whale sighting (Svalbard, Arctic Norway (offshore))",
+    "species": "Blue Whale",
+    "info": "iNaturalist observation by kevin_snair.",
+    "date": "2026-07-20",
+    "latitude": 80.2550583333,
+    "longitude": 15.7942283333,
+    "area": "Svalbard, Arctic Norway (offshore)",
+    "source": "https://www.inaturalist.org/observations/383397786",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-20T18:53:00Z",
     "notable": true
   },
   {
@@ -9653,66 +9725,6 @@
     "longitude": -72.3313937439,
     "area": "Indian Ocean (OBIS)",
     "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383037123",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-19-bay-of-bengal-blue-17",
-    "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
-    "species": "Blue Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-19. Source: iNaturalist.",
-    "date": "2026-07-19",
-    "latitude": -33.4528225232,
-    "longitude": 151.458536153,
-    "area": "Bay of Bengal (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382823617",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-19-bay-of-bengal-blue-18",
-    "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
-    "species": "Blue Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-19. Source: iNaturalist.",
-    "date": "2026-07-19",
-    "latitude": -33.4503160678,
-    "longitude": 151.4572266998,
-    "area": "Bay of Bengal (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/382823621",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-19-bay-of-bengal-blue-19",
-    "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
-    "species": "Blue Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-19. Source: iNaturalist.",
-    "date": "2026-07-19",
-    "latitude": 48.0782821145,
-    "longitude": -122.3664384708,
-    "area": "Bay of Bengal (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383192401",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-07-19-bay-of-bengal-blue-20",
-    "name": "Blue Whale sighting (Bay of Bengal (OBIS))",
-    "species": "Blue Whale",
-    "info": "OBIS record from iNaturalist research-grade observations. Observed 2026-07-19. Source: iNaturalist.",
-    "date": "2026-07-19",
-    "latitude": 28.6241562505,
-    "longitude": -80.79530836,
-    "area": "Bay of Bengal (OBIS)",
-    "source": "https://obis.org/occurrence/https://www.inaturalist.org/observations/383174092",
     "behaviors": [
       "reported"
     ],
