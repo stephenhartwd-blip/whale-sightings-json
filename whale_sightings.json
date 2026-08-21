@@ -86,6 +86,25 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
+    "id": "2026-08-21-north-atlantic-ocean-humpback-02",
+    "name": "Humpback sighting (North Atlantic Ocean, Barnegat Light, NJ, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by fulminate_pigeon.",
+    "date": "2026-08-21",
+    "latitude": 39.738611666699995,
+    "longitude": -74.0957721667,
+    "area": "North Atlantic Ocean, Barnegat Light, NJ, US",
+    "source": "https://www.inaturalist.org/observations/393208096",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-21T14:56:41Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/720697248/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Pigeon, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-08-21-washington-us-orca-04",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
@@ -102,7 +121,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-08-21-les-escoumins-qc-g0t-humpback-02",
+    "id": "2026-08-21-les-escoumins-qc-g0t-humpback-03",
     "name": "Humpback sighting (Les Escoumins, QC G0T 1K0, Canada)",
     "species": "Humpback",
     "info": "iNaturalist observation by david_turgeon.",
@@ -575,25 +594,6 @@
     ],
     "observedAt": "2026-08-19T13:44:00Z",
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/719816865/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Nolan Casimir, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
-    "id": "2026-08-19-stellwagen-bank-humpback-07",
-    "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
-    "species": "Humpback",
-    "info": "iNaturalist observation by naturenolan.",
-    "date": "2026-08-19",
-    "latitude": 42.6481529144,
-    "longitude": -70.4556141617,
-    "area": "Stellwagen Bank (iNaturalist — Catalog)",
-    "source": "https://www.inaturalist.org/observations/392760409",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-19T13:43:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/719816441/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Nolan Casimir, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
@@ -1273,6 +1273,44 @@
     "notable": true
   },
   {
+    "id": "2026-08-16-r-serve-indienne-de--humpback-10",
+    "name": "Humpback sighting (Réserve indienne de Essipit, QC G0T 1K0, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by dirk_is_een_natuurspotter_op_inaturalist.",
+    "date": "2026-08-16",
+    "latitude": 48.316328825199996,
+    "longitude": -69.4011396915,
+    "area": "Réserve indienne de Essipit, QC G0T 1K0, Canada",
+    "source": "https://www.inaturalist.org/observations/391807373",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-16T15:08:23Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/717963637/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Natuurspotter Dirk, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-08-16-r-serve-indienne-de--humpback-11",
+    "name": "Humpback sighting (Réserve indienne de Essipit, QC G0T 1K0, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by dirk_is_een_natuurspotter_op_inaturalist.",
+    "date": "2026-08-16",
+    "latitude": 48.316328825199996,
+    "longitude": -69.4011396915,
+    "area": "Réserve indienne de Essipit, QC G0T 1K0, Canada",
+    "source": "https://www.inaturalist.org/observations/391807327",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-16T15:05:30Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/717963558/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Natuurspotter Dirk, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
     "id": "2026-08-16-northeast-atlantic-sperm-02",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
@@ -1311,7 +1349,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-16-eyjafjordur-humpback-10",
+    "id": "2026-08-16-eyjafjordur-humpback-12",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-16.",
@@ -2000,22 +2038,6 @@
     "notable": true
   },
   {
-    "id": "2026-08-13-anse-jos-ross-les-es-blue-01",
-    "name": "Blue Whale sighting (Anse à Jos-Ross, Les Escoumins, QC, CA)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by desrochersa.",
-    "date": "2026-08-13",
-    "latitude": 48.3658098865,
-    "longitude": -69.3889614445,
-    "area": "Anse à Jos-Ross, Les Escoumins, QC, CA",
-    "source": "https://www.inaturalist.org/observations/390870211",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-13T15:47:41Z",
-    "notable": true
-  },
-  {
     "id": "2026-08-13-northeast-atlantic-sperm-01",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
@@ -2296,22 +2318,6 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-08-12-les-escoumins-qc-g0t-blue-02",
-    "name": "Blue Whale sighting (Les Escoumins, QC G0T 1K0, Canada)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by david_turgeon.",
-    "date": "2026-08-12",
-    "latitude": 48.2993474444,
-    "longitude": -69.4171380624,
-    "area": "Les Escoumins, QC G0T 1K0, Canada",
-    "source": "https://www.inaturalist.org/observations/390611744",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-12T17:03:41Z",
-    "notable": true
-  },
-  {
     "id": "2026-08-12-capital-regional-dis-gray-02",
     "name": "Gray Whale sighting (Capital Regional District, BC, Canada)",
     "species": "Gray Whale",
@@ -2327,7 +2333,23 @@
     "observedAt": "2026-08-12T16:53:50Z"
   },
   {
-    "id": "2026-08-12-iceland-humpback-08",
+    "id": "2026-08-12-oc-ano-pac-fico-choc-humpback-08",
+    "name": "Humpback sighting (Océano Pacífico, Chocó, CO)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by cindy911.",
+    "date": "2026-08-12",
+    "latitude": 6.2936331019,
+    "longitude": -77.4914315645,
+    "area": "Océano Pacífico, Chocó, CO",
+    "source": "https://www.inaturalist.org/observations/390576073",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-12T14:45:38Z",
+    "seasonalStatus": "Colombia Pacific breeding season"
+  },
+  {
+    "id": "2026-08-12-iceland-humpback-09",
     "name": "Humpback sighting (Iceland)",
     "species": "Humpback",
     "info": "iNaturalist observation by ian327.",
@@ -2343,7 +2365,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-08-12-eyjafjordur-humpback-09",
+    "id": "2026-08-12-eyjafjordur-humpback-10",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-12.",
@@ -2468,7 +2490,26 @@
     "photoAttribution": "(c) Jef-B, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-08-11-eyjafjordur-humpback-04",
+    "id": "2026-08-11-colombia-humpback-04",
+    "name": "Humpback sighting (Colombia)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by tene_19.",
+    "date": "2026-08-11",
+    "latitude": 6.0771055556,
+    "longitude": -77.4537333333,
+    "area": "Colombia",
+    "source": "https://www.inaturalist.org/observations/390738366",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-11T15:10:32Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/715888447/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Mariana, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Colombia Pacific breeding season"
+  },
+  {
+    "id": "2026-08-11-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-11.",
@@ -2645,12 +2686,7 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/719447227/medium.jpg",
     "photoLicense": "cc-by-sa",
     "photoAttribution": "(c) Mike English, some rights reserved (CC BY-SA)",
-    "notable": true,
-    "headingDegrees": 16.6,
-    "headingCardinal": "NNE",
-    "movedKm": 2.5,
-    "speedKmh": 0.8,
-    "headingFromId": "2026-08-09-kenai-peninsula-coun-humpback-03"
+    "notable": true
   },
   {
     "id": "2026-08-09-depoe-bay-or-us-gray-01",
@@ -2671,6 +2707,25 @@
     "photoAttribution": "(c) Emma R, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-08-09-les-escoumins-c-te-n-humpback-03",
+    "name": "Humpback sighting (Les Escoumins, Côte-Nord, QC, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by deniscorbeil.",
+    "date": "2026-08-09",
+    "latitude": 48.3380570414,
+    "longitude": -69.3896388422,
+    "area": "Les Escoumins, Côte-Nord, QC, Canada",
+    "source": "https://www.inaturalist.org/observations/390737717",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-09T21:56:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/715886434/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) deniscorbeil, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
     "id": "2026-08-09-capital-bc-ca-gray-02",
     "name": "Gray Whale sighting (Capital, BC, CA)",
     "species": "Gray Whale",
@@ -2686,7 +2741,7 @@
     "observedAt": "2026-08-09T21:34:06Z"
   },
   {
-    "id": "2026-08-09-kenai-peninsula-coun-humpback-03",
+    "id": "2026-08-09-kenai-peninsula-coun-humpback-04",
     "name": "Humpback sighting (Kenai Peninsula County, US-AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by james_p_mitchell.",
@@ -2707,7 +2762,7 @@
     "headingCardinal": "S",
     "movedKm": 23.8,
     "speedKmh": 14.7,
-    "headingFromId": "2026-08-09-ak-us-humpback-04"
+    "headingFromId": "2026-08-09-ak-us-humpback-05"
   },
   {
     "id": "2026-08-09-n-highway-101-depoe--gray-03",
@@ -2728,7 +2783,7 @@
     "photoAttribution": "(c) Emma R, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-08-09-ak-us-humpback-04",
+    "id": "2026-08-09-ak-us-humpback-05",
     "name": "Humpback sighting (AK, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by colehei.",
@@ -2747,7 +2802,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-09-chugach-census-area--humpback-05",
+    "id": "2026-08-09-chugach-census-area--humpback-06",
     "name": "Humpback sighting (Chugach Census Area, AK, USA)",
     "species": "Humpback",
     "info": "iNaturalist observation by vivekaocherik.",
@@ -2784,7 +2839,7 @@
     "photoAttribution": "(c) yiolo30, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-08-09-kaldrananeshreppur-i-humpback-06",
+    "id": "2026-08-09-kaldrananeshreppur-i-humpback-07",
     "name": "Humpback sighting (Kaldrananeshreppur, IS-VF, IS)",
     "species": "Humpback",
     "info": "iNaturalist observation by rainerw.",
@@ -2800,7 +2855,26 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-08-09-eyjafjordur-humpback-07",
+    "id": "2026-08-09-colombia-humpback-08",
+    "name": "Humpback sighting (Colombia)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by tene_19.",
+    "date": "2026-08-09",
+    "latitude": 6.13155,
+    "longitude": -77.4978277778,
+    "area": "Colombia",
+    "source": "https://www.inaturalist.org/observations/390727524",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-09T14:23:11Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/715865897/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Mariana, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Colombia Pacific breeding season"
+  },
+  {
+    "id": "2026-08-09-eyjafjordur-humpback-09",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-09.",
@@ -2880,6 +2954,25 @@
       "reported"
     ],
     "notable": true
+  },
+  {
+    "id": "2026-08-08-tadoussac-c-te-nord--humpback-01",
+    "name": "Humpback sighting (Tadoussac, Côte-Nord, QC, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by deniscorbeil.",
+    "date": "2026-08-08",
+    "latitude": 48.1278021235,
+    "longitude": -69.6625626991,
+    "area": "Tadoussac, Côte-Nord, QC, Canada",
+    "source": "https://www.inaturalist.org/observations/390465638",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-08T15:00:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/715360434/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) deniscorbeil, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
     "id": "2026-08-07-shoalhaven-pt-b-au-n-southern-right-whale-01",
@@ -3065,7 +3158,26 @@
     "notable": true
   },
   {
-    "id": "2026-08-06-kongsfjorden-humpback-01",
+    "id": "2026-08-06-r-serve-indienne-de--humpback-01",
+    "name": "Humpback sighting (Réserve indienne de Essipit, QC G0T 1K0, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by genevieve8867.",
+    "date": "2026-08-06",
+    "latitude": 48.3547753483,
+    "longitude": -69.3943396211,
+    "area": "Réserve indienne de Essipit, QC G0T 1K0, Canada",
+    "source": "https://www.inaturalist.org/observations/389014950",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-06T23:00:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/712523657/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Geneviève Boudreau, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-08-06-kongsfjorden-humpback-02",
     "name": "Humpback sighting (Kongsfjorden)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-08-06.",
@@ -3080,7 +3192,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-08-06-south-africa-humpback-02",
+    "id": "2026-08-06-south-africa-humpback-03",
     "name": "Humpback sighting (South Africa)",
     "species": "Humpback",
     "info": "iNaturalist observation by stuart191.",
@@ -3099,7 +3211,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-06-atlantic-ocean-rj-br-humpback-03",
+    "id": "2026-08-06-atlantic-ocean-rj-br-humpback-04",
     "name": "Humpback sighting (Atlantic Ocean, RJ, BR)",
     "species": "Humpback",
     "info": "iNaturalist observation by marcmez.",
@@ -3115,7 +3227,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-06-eyjafjordur-humpback-04",
+    "id": "2026-08-06-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-06.",
@@ -3363,6 +3475,144 @@
       "reported"
     ],
     "notable": true
+  },
+  {
+    "id": "2026-08-04-c-te-nord-qc-canada-humpback-03",
+    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by lpbateman.",
+    "date": "2026-08-04",
+    "latitude": 48.374056664,
+    "longitude": -69.3402393357,
+    "area": "Côte-Nord, QC, Canada",
+    "source": "https://www.inaturalist.org/observations/389513600",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-04T15:06:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713489523/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-08-04-c-te-nord-qc-canada-humpback-04",
+    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by lpbateman.",
+    "date": "2026-08-04",
+    "latitude": 48.374056664,
+    "longitude": -69.3402393357,
+    "area": "Côte-Nord, QC, Canada",
+    "source": "https://www.inaturalist.org/observations/389513599",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-04T14:57:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713489268/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season",
+    "headingDegrees": 39.7,
+    "headingCardinal": "NE",
+    "movedKm": 33.4,
+    "speedKmh": 14.1,
+    "headingFromId": "2026-08-04-c-te-nord-qc-canada-humpback-05"
+  },
+  {
+    "id": "2026-08-04-c-te-nord-qc-canada-humpback-05",
+    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by lpbateman.",
+    "date": "2026-08-04",
+    "latitude": 48.143396331,
+    "longitude": -69.6287004182,
+    "area": "Côte-Nord, QC, Canada",
+    "source": "https://www.inaturalist.org/observations/389513596",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-04T12:35:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713488209/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-08-04-c-te-nord-qc-canada-humpback-06",
+    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by lpbateman.",
+    "date": "2026-08-04",
+    "latitude": 48.143396331,
+    "longitude": -69.6287004182,
+    "area": "Côte-Nord, QC, Canada",
+    "source": "https://www.inaturalist.org/observations/389513587",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-04T12:20:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713487689/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-08-04-c-te-nord-qc-canada-humpback-07",
+    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by lpbateman.",
+    "date": "2026-08-04",
+    "latitude": 48.143396331,
+    "longitude": -69.6287004182,
+    "area": "Côte-Nord, QC, Canada",
+    "source": "https://www.inaturalist.org/observations/389513583",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-04T11:57:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713487366/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-08-04-c-te-nord-qc-canada-humpback-08",
+    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by lpbateman.",
+    "date": "2026-08-04",
+    "latitude": 48.143396331,
+    "longitude": -69.6287004182,
+    "area": "Côte-Nord, QC, Canada",
+    "source": "https://www.inaturalist.org/observations/389513584",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-04T11:56:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713487238/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-08-04-c-te-nord-qc-canada-humpback-09",
+    "name": "Humpback sighting (Côte-Nord, QC, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by lpbateman.",
+    "date": "2026-08-04",
+    "latitude": 48.143396331,
+    "longitude": -69.6287004182,
+    "area": "Côte-Nord, QC, Canada",
+    "source": "https://www.inaturalist.org/observations/389513578",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-04T11:50:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/713487061/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Louis-Philippe Bateman, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
     "id": "2026-08-04-indian-ocean-yalata--southern-right-whale-01",
@@ -3657,20 +3907,23 @@
     "notable": true
   },
   {
-    "id": "2026-08-02-la-c-te-de-gasp-ca-q-blue-01",
-    "name": "Blue Whale sighting (La Côte-de-Gaspé, CA-QC, CA)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by antie_m.",
+    "id": "2026-08-02-pacific-ocean-choc-c-humpback-02",
+    "name": "Humpback sighting (Pacific Ocean, Chocó, CO)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by freestylesail.",
     "date": "2026-08-02",
-    "latitude": 48.7333,
-    "longitude": -64.1831,
-    "area": "La Côte-de-Gaspé, CA-QC, CA",
-    "source": "https://www.inaturalist.org/observations/387557030",
+    "latitude": 7.0910478667,
+    "longitude": -77.8077722689,
+    "area": "Pacific Ocean, Chocó, CO",
+    "source": "https://www.inaturalist.org/observations/389070240",
     "behaviors": [
       "reported"
     ],
-    "observedAt": "2026-08-02T15:17:45Z",
-    "notable": true
+    "observedAt": "2026-08-02T13:39:07Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/712630770/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) freestylesail, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Colombia Pacific breeding season"
   },
   {
     "id": "2026-08-02-grays-harbor-county--gray-02",
@@ -4656,6 +4909,22 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
+    "id": "2026-07-28-st-lawrence-river-le-humpback-04",
+    "name": "Humpback sighting (St. Lawrence River, Les Escoumins, QC, CA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by rtcj.",
+    "date": "2026-07-28",
+    "latitude": 48.3419003749,
+    "longitude": -69.3824847343,
+    "area": "St. Lawrence River, Les Escoumins, QC, CA",
+    "source": "https://www.inaturalist.org/observations/388023865",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-28T17:15:26Z",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
     "id": "2026-07-27-lane-county-or-usa-gray-01",
     "name": "Gray Whale sighting (Lane County, OR, USA)",
     "species": "Gray Whale",
@@ -4753,6 +5022,25 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
+    "id": "2026-07-26-les-bergeronnes-qc-c-humpback-01",
+    "name": "Humpback sighting (Les Bergeronnes, QC, CA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by shawni96.",
+    "date": "2026-07-26",
+    "latitude": 48.2855064858,
+    "longitude": -69.4453746715,
+    "area": "Les Bergeronnes, QC, CA",
+    "source": "https://www.inaturalist.org/observations/385844128",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-26T21:36:51Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/706407490/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Shawn Raymond, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
     "id": "2026-07-26-sunshine-coast-hwy-s-gray-01",
     "name": "Gray Whale sighting (Sunshine Coast Hwy, Sechelt, BC, CA)",
     "species": "Gray Whale",
@@ -4790,7 +5078,7 @@
     "notable": true
   },
   {
-    "id": "2026-07-26-isfjorden-humpback-01",
+    "id": "2026-07-26-isfjorden-humpback-02",
     "name": "Humpback sighting (Isfjorden)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-07-26.",
@@ -4805,7 +5093,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-07-26-kongsfjorden-humpback-02",
+    "id": "2026-07-26-kongsfjorden-humpback-03",
     "name": "Humpback sighting (Kongsfjorden)",
     "species": "Humpback",
     "info": "GBIF record from GBIF. Observed 2026-07-26.",
@@ -4883,7 +5171,7 @@
     "photoAttribution": "(c) bestbirb, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-07-26-heimaey-vestmannaeyj-humpback-03",
+    "id": "2026-07-26-heimaey-vestmannaeyj-humpback-04",
     "name": "Humpback sighting (Heimaey, Vestmannaeyjar, Suðurland, IS)",
     "species": "Humpback",
     "info": "iNaturalist observation by claudiabrunke.",
