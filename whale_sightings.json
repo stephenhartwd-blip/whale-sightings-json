@@ -618,25 +618,6 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-08-21-hancock-county-us-me-humpback-25",
-    "name": "Humpback sighting (Hancock County, US-ME, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by colink123.",
-    "date": "2026-08-21",
-    "latitude": 44.2329410101,
-    "longitude": -68.3985821425,
-    "area": "Hancock County, US-ME, US",
-    "source": "https://www.inaturalist.org/observations/393350843",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-21T14:32:16Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/720981145/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) colink123, some rights reserved (CC BY-NC)",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
     "id": "2026-08-21-washington-us-orca-07",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
@@ -653,7 +634,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-08-21-eyjafjordur-humpback-26",
+    "id": "2026-08-21-eyjafjordur-humpback-25",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-21.",
@@ -1774,22 +1755,6 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-08-15-brooklin-me-us-humpback-06",
-    "name": "Humpback sighting (Brooklin, ME, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by hayleyclapp.",
-    "date": "2026-08-15",
-    "latitude": 44.206905956,
-    "longitude": -68.525401937,
-    "area": "Brooklin, ME, US",
-    "source": "https://www.inaturalist.org/observations/391556689",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-08-15T13:54:17Z",
-    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
-  },
-  {
     "id": "2026-08-15-victor-harbor-goolwa-southern-right-whale-02",
     "name": "Southern Right Whale sighting (Victor Harbor - Goolwa SA, Australia)",
     "species": "Southern Right Whale",
@@ -1809,7 +1774,7 @@
     "notable": true
   },
   {
-    "id": "2026-08-15-eyjafjordur-humpback-07",
+    "id": "2026-08-15-eyjafjordur-humpback-06",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-08-15.",
@@ -2081,7 +2046,42 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-08-13-sea-point-humpback-05",
+    "id": "2026-08-13-gulf-of-maine-humpback-05",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by jseo.",
+    "date": "2026-08-13",
+    "latitude": 44.1373104353,
+    "longitude": -67.988109209,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/392139063",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-13T14:51:00Z",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-08-13-us-humpback-06",
+    "name": "Humpback sighting (US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by dillon76095.",
+    "date": "2026-08-13",
+    "latitude": 42.9154916667,
+    "longitude": -70.4391633333,
+    "area": "US",
+    "source": "https://www.inaturalist.org/observations/390926096",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-08-13T13:46:11Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/716247829/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Dillon Casella, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-08-13-sea-point-humpback-07",
     "name": "Humpback sighting (Sea Point)",
     "species": "Humpback",
     "info": "iNaturalist observation by dinofelis.",
@@ -4717,5 +4717,21 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) danielvolpin, some rights reserved (CC BY-NC)",
     "notable": true
+  },
+  {
+    "id": "2026-07-23-ie-humpback-06",
+    "name": "Humpback sighting (IE)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by danielkl.",
+    "date": "2026-07-23",
+    "latitude": 54.4486833333,
+    "longitude": -8.727225,
+    "area": "IE",
+    "source": "https://www.inaturalist.org/observations/387701082",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-07-23T11:51:06Z",
+    "seasonalStatus": "Northeast Atlantic feeding season"
   }
 ]
