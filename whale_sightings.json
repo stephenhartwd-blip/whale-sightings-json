@@ -120,6 +120,21 @@
     "notable": true
   },
   {
+    "id": "2026-10-04-eyjafjordur-humpback-04",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-10-04.",
+    "date": "2026-10-04",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
     "id": "2026-10-03-dalmeny-nsw-au-humpback-01",
     "name": "Humpback sighting (Dalmeny, NSW, AU)",
     "species": "Humpback",
@@ -320,6 +335,22 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) John D Reynolds, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-10-03-azores-pt-sperm-01",
+    "name": "Sperm whale sighting (Azores, PT)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by insmatias.",
+    "date": "2026-10-03",
+    "latitude": 38.4072312028,
+    "longitude": -28.6315767024,
+    "area": "Azores, PT",
+    "source": "https://www.inaturalist.org/observations/405514813",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-10-03T16:31:51Z",
+    "notable": true
   },
   {
     "id": "2026-10-03-cape-point-cape-town-humpback-05",
@@ -595,106 +626,6 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-10-02-santa-cruz-county-ca-humpback-06",
-    "name": "Humpback sighting (Santa Cruz County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-10-02",
-    "latitude": 36.9483288452,
-    "longitude": -121.9008551056,
-    "area": "Santa Cruz County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/405407135",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-02T20:29:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/744649602/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)",
-    "notable": true,
-    "headingDegrees": 81.4,
-    "headingCardinal": "E",
-    "movedKm": 8.0,
-    "speedKmh": 9.2,
-    "headingFromId": "2026-10-02-santa-cruz-county-ca-humpback-07"
-  },
-  {
-    "id": "2026-10-02-santa-cruz-county-ca-humpback-07",
-    "name": "Humpback sighting (Santa Cruz County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-10-02",
-    "latitude": 36.9376274311,
-    "longitude": -121.9896040375,
-    "area": "Santa Cruz County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/405407134",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-02T19:37:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/744649578/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-02-santa-cruz-county-ca-humpback-08",
-    "name": "Humpback sighting (Santa Cruz County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-10-02",
-    "latitude": 36.9376274311,
-    "longitude": -121.9896040375,
-    "area": "Santa Cruz County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/405407132",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-02T19:35:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/744649583/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-02-santa-cruz-county-ca-humpback-09",
-    "name": "Humpback sighting (Santa Cruz County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-10-02",
-    "latitude": 36.9376274311,
-    "longitude": -121.9896040375,
-    "area": "Santa Cruz County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/405407131",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-02T19:24:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/744649559/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-02-la-haute-c-te-nord-r-blue-01",
-    "name": "Blue Whale sighting (La Haute-Côte-Nord Regional County Municipality, QC, Canada)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by revelintravel.",
-    "date": "2026-10-02",
-    "latitude": 48.8526907131,
-    "longitude": -68.5597870499,
-    "area": "La Haute-Côte-Nord Regional County Municipality, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/405754236",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-02T19:10:26Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/745346371/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Liesbeth De Vreese, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-10-02-brentwood-bay-centra-orca-04",
     "name": "Orca sighting (Brentwood Bay, Central Saanich, BC, CA)",
     "species": "Orca",
@@ -714,7 +645,7 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-10-02-eyjafjordur-humpback-10",
+    "id": "2026-10-02-eyjafjordur-humpback-06",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-10-02.",
@@ -727,182 +658,6 @@
       "reported"
     ],
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-10-01-santa-cruz-county-ca-humpback-01",
-    "name": "Humpback sighting (Santa Cruz County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-10-01",
-    "latitude": 36.9328417236,
-    "longitude": -122.0938562353,
-    "area": "Santa Cruz County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/405160292",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-01T22:25:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/744154737/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)",
-    "notable": true,
-    "headingDegrees": 308.4,
-    "headingCardinal": "NW",
-    "movedKm": 23.7,
-    "speedKmh": 5.5,
-    "headingFromId": "2026-10-01-monterey-county-ca-u-humpback-02"
-  },
-  {
-    "id": "2026-10-01-monterey-county-ca-u-humpback-02",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by muddphoto.",
-    "date": "2026-10-01",
-    "latitude": 36.8005541025,
-    "longitude": -121.8843941667,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/405086450",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-01T18:06:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743983222/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sheldon Logan, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-01-monterey-county-ca-u-humpback-03",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by muddphoto.",
-    "date": "2026-10-01",
-    "latitude": 36.8005541025,
-    "longitude": -121.8843941667,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/405086441",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-01T16:51:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743983156/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sheldon Logan, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-01-monterey-county-ca-u-humpback-04",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by muddphoto.",
-    "date": "2026-10-01",
-    "latitude": 36.8005541025,
-    "longitude": -121.8843941667,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/405086427",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-01T16:50:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743983034/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sheldon Logan, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-01-monterey-county-ca-u-humpback-05",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by muddphoto.",
-    "date": "2026-10-01",
-    "latitude": 36.8005541025,
-    "longitude": -121.8843941667,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/405086425",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-01T16:49:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743982802/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sheldon Logan, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-01-monterey-county-ca-u-humpback-06",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by muddphoto.",
-    "date": "2026-10-01",
-    "latitude": 36.8005541025,
-    "longitude": -121.8843941667,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/405086424",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-01T16:49:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743982928/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sheldon Logan, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-01-monterey-county-ca-u-humpback-07",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by muddphoto.",
-    "date": "2026-10-01",
-    "latitude": 36.8005541025,
-    "longitude": -121.8843941667,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/405086410",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-01T16:27:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743982531/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sheldon Logan, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-01-monterey-county-ca-u-humpback-08",
-    "name": "Humpback sighting (Monterey County, CA, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by muddphoto.",
-    "date": "2026-10-01",
-    "latitude": 36.8005541025,
-    "longitude": -121.8843941667,
-    "area": "Monterey County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/405086409",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-01T16:19:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743982238/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sheldon Logan, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-09-30-monterey-bay-ca-us-humpback-01",
-    "name": "Humpback sighting (Monterey Bay, CA, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by aaauuuddd.",
-    "date": "2026-09-30",
-    "latitude": 36.8034237872,
-    "longitude": -121.9025155866,
-    "area": "Monterey Bay, CA, US",
-    "source": "https://www.inaturalist.org/observations/404793690",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-30T18:56:22Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743421268/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) aaauuuddd, some rights reserved (CC BY-NC)",
-    "notable": true
   },
   {
     "id": "2026-09-30-capital-regional-dis-gray-01",
@@ -923,50 +678,290 @@
     "photoAttribution": "(c) Andrew Cauldwell, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-09-29-ca-us-humpback-01",
-    "name": "Humpback sighting (CA, US)",
+    "id": "2026-09-30-gulf-of-maine-humpback-01",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
     "species": "Humpback",
-    "info": "iNaturalist observation by khiaragaps.",
-    "date": "2026-09-29",
-    "latitude": 36.7818717793,
-    "longitude": -121.887224268,
-    "area": "CA, US",
-    "source": "https://www.inaturalist.org/observations/404751068",
+    "info": "iNaturalist observation by zaonen.",
+    "date": "2026-09-30",
+    "latitude": 42.31008,
+    "longitude": -70.43055,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/404986321",
     "behaviors": [
       "reported"
     ],
-    "observedAt": "2026-09-30T02:14:30Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743338870/medium.jpg",
+    "observedAt": "2026-09-30T16:39:24Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743804608/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) khiara gapasangra, some rights reserved (CC BY-NC)",
-    "notable": true,
-    "headingDegrees": 73.3,
-    "headingCardinal": "ENE",
-    "movedKm": 4.6,
-    "speedKmh": 7.9,
-    "headingFromId": "2026-09-29-ca-us-humpback-02"
+    "photoAttribution": "(c) Zoe Flores, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-09-29-ca-us-humpback-02",
-    "name": "Humpback sighting (CA, US)",
+    "id": "2026-09-30-gulf-of-maine-humpback-02",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
     "species": "Humpback",
-    "info": "iNaturalist observation by khiaragaps.",
-    "date": "2026-09-29",
-    "latitude": 36.7700496012,
-    "longitude": -121.9363975583,
-    "area": "CA, US",
-    "source": "https://www.inaturalist.org/observations/404751131",
+    "info": "iNaturalist observation by zaonen.",
+    "date": "2026-09-30",
+    "latitude": 42.31008,
+    "longitude": -70.43055,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/404986369",
     "behaviors": [
       "reported"
     ],
-    "observedAt": "2026-09-30T01:39:41Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743338976/medium.jpg",
+    "observedAt": "2026-09-30T16:38:52Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743804664/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) khiara gapasangra, some rights reserved (CC BY-NC)",
+    "photoAttribution": "(c) Zoe Flores, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-09-30-gulf-of-maine-humpback-03",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by zaonen.",
+    "date": "2026-09-30",
+    "latitude": 42.31008,
+    "longitude": -70.43055,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/404986401",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T16:37:39Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743804704/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Zoe Flores, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season",
+    "headingDegrees": 53.0,
+    "headingCardinal": "NE",
+    "movedKm": 0.4,
+    "speedKmh": 4.8,
+    "headingFromId": "2026-09-30-gulf-of-maine-humpback-05"
+  },
+  {
+    "id": "2026-09-30-gulf-of-maine-humpback-04",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by zaonen.",
+    "date": "2026-09-30",
+    "latitude": 42.3076583333,
+    "longitude": -70.4348883333,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/404986586",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T16:32:05Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743805029/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Zoe Flores, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-09-30-gulf-of-maine-humpback-05",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by zaonen.",
+    "date": "2026-09-30",
+    "latitude": 42.3076583333,
+    "longitude": -70.4348883333,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/404986469",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T16:32:05Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743804825/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Zoe Flores, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-09-30-gulf-of-maine-humpback-06",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by ggiribet.",
+    "date": "2026-09-30",
+    "latitude": 42.21499,
+    "longitude": -70.2528833333,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/404866983",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T16:30:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743570394/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Gonzalo Giribet, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-09-30-gulf-of-maine-humpback-07",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by ggiribet.",
+    "date": "2026-09-30",
+    "latitude": 42.2156033333,
+    "longitude": -70.2540283333,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/404866985",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T16:29:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743570397/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Gonzalo Giribet, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-09-30-us-humpback-08",
+    "name": "Humpback sighting (US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by zaonen.",
+    "date": "2026-09-30",
+    "latitude": 42.235655722,
+    "longitude": -70.2577967166,
+    "area": "US",
+    "source": "https://www.inaturalist.org/observations/404988347",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T16:26:10Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743808595/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Zoe Flores, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-09-30-us-humpback-09",
+    "name": "Humpback sighting (US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by zaonen.",
+    "date": "2026-09-30",
+    "latitude": 42.2162929923,
+    "longitude": -70.2562785812,
+    "area": "US",
+    "source": "https://www.inaturalist.org/observations/404988385",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T16:26:08Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743808755/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Zoe Flores, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-09-30-us-humpback-10",
+    "name": "Humpback sighting (US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by zaonen.",
+    "date": "2026-09-30",
+    "latitude": 42.2161883333,
+    "longitude": -70.2562116667,
+    "area": "US",
+    "source": "https://www.inaturalist.org/observations/404987875",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T16:26:06Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743807634/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Zoe Flores, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-09-30-gulf-of-maine-humpback-11",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by zaonen.",
+    "date": "2026-09-30",
+    "latitude": 42.2960466667,
+    "longitude": -70.4409783333,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/404986522",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T16:19:10Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743804920/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Zoe Flores, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-09-30-northeast-atlantic-sperm-01",
+    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-09-30",
+    "latitude": 38.4886163877,
+    "longitude": -28.9983185258,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/404741796",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T15:20:26Z",
+    "notable": true,
+    "headingDegrees": 282.7,
+    "headingCardinal": "WNW",
+    "movedKm": 27.5,
+    "speedKmh": 6.4,
+    "headingFromId": "2026-09-30-azores-pt-sperm-02"
+  },
+  {
+    "id": "2026-09-30-azores-pt-sperm-02",
+    "name": "Sperm whale sighting (Azores, PT)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by mjoaoalferes.",
+    "date": "2026-09-30",
+    "latitude": 38.4345579348,
+    "longitude": -28.6904207328,
+    "area": "Azores, PT",
+    "source": "https://www.inaturalist.org/observations/404693370",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T11:03:28Z",
     "notable": true
   },
   {
-    "id": "2026-09-29-waihoaka-9881-new-ze-humpback-03",
+    "id": "2026-09-30-azores-pt-sperm-03",
+    "name": "Sperm whale sighting (Azores, PT)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by mjoaoalferes.",
+    "date": "2026-09-30",
+    "latitude": 38.4644630519,
+    "longitude": -28.7469896301,
+    "area": "Azores, PT",
+    "source": "https://www.inaturalist.org/observations/404692668",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T10:58:21Z",
+    "notable": true
+  },
+  {
+    "id": "2026-09-30-azores-sperm-04",
+    "name": "Sperm whale sighting (Azores)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by mjoaoalferes.",
+    "date": "2026-09-30",
+    "latitude": 38.4234149199,
+    "longitude": -28.6675073057,
+    "area": "Azores",
+    "source": "https://www.inaturalist.org/observations/404691402",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T10:43:47Z",
+    "notable": true
+  },
+  {
+    "id": "2026-09-29-waihoaka-9881-new-ze-humpback-01",
     "name": "Humpback sighting (Waihoaka 9881, New Zealand)",
     "species": "Humpback",
     "info": "iNaturalist observation by lloyd_esler.",
@@ -1004,7 +999,23 @@
     "notable": true
   },
   {
-    "id": "2026-09-29-eyjafjordur-humpback-04",
+    "id": "2026-09-29-gulf-of-maine-us-humpback-02",
+    "name": "Humpback sighting (Gulf of Maine, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by oriolballestermarti.",
+    "date": "2026-09-29",
+    "latitude": 42.17147,
+    "longitude": -70.329575,
+    "area": "Gulf of Maine, US",
+    "source": "https://www.inaturalist.org/observations/404418525",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-29T09:38:55Z",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-09-29-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-09-29.",
@@ -1373,6 +1384,22 @@
     "photoAttribution": "no rights reserved"
   },
   {
+    "id": "2026-09-27-northeast-atlantic-sperm-01",
+    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-09-27",
+    "latitude": 38.4274386892,
+    "longitude": -28.6100834513,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/404682487",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-27T10:58:02Z",
+    "notable": true
+  },
+  {
     "id": "2026-09-27-eyjafjordur-humpback-01",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -1402,6 +1429,25 @@
     ],
     "observedAt": "2026-09-27T05:54:47Z",
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/741354685/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) cormorantcm, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-09-26-kenai-peninsula-coun-fin-01",
+    "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by cormorantcm.",
+    "date": "2026-09-26",
+    "latitude": 59.8156215208,
+    "longitude": -149.7875893616,
+    "area": "Kenai Peninsula County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/403736811",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-27T05:31:42Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/741331485/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) cormorantcm, some rights reserved (CC BY-NC)",
     "notable": true
@@ -1519,6 +1565,22 @@
     "photoAttribution": "(c) John D Reynolds, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-09-25-pacific-ocean-depart-humpback-01",
+    "name": "Humpback sighting (Pacific Ocean, Departamento de Tumbes, PE)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by bernardet_zavala.",
+    "date": "2026-09-25",
+    "latitude": -3.9482109742,
+    "longitude": -80.9740057439,
+    "area": "Pacific Ocean, Departamento de Tumbes, PE",
+    "source": "https://www.inaturalist.org/observations/403352302",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-25T10:17:05Z",
+    "seasonalStatus": "Colombia Pacific breeding season"
+  },
+  {
     "id": "2026-09-24-auckland-new-zealand-orca-01",
     "name": "Orca sighting (Auckland, New Zealand)",
     "species": "Orca",
@@ -1538,6 +1600,27 @@
     "notable": true
   },
   {
+    "id": "2026-09-24-northeast-atlantic-sperm-01",
+    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by claudia_brandao.",
+    "date": "2026-09-24",
+    "latitude": 38.6713784217,
+    "longitude": -28.4254140819,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/403013043",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-24T15:05:28Z",
+    "notable": true,
+    "headingDegrees": 104.2,
+    "headingCardinal": "ESE",
+    "movedKm": 1.5,
+    "speedKmh": 0.3,
+    "headingFromId": "2026-09-24-azores-pt-sperm-02"
+  },
+  {
     "id": "2026-09-24-kenai-peninsula-boro-humpback-01",
     "name": "Humpback sighting (Kenai Peninsula Borough, AK, USA)",
     "species": "Humpback",
@@ -1551,6 +1634,22 @@
       "reported"
     ],
     "observedAt": "2026-09-24T15:00:05Z",
+    "notable": true
+  },
+  {
+    "id": "2026-09-24-azores-pt-sperm-02",
+    "name": "Sperm whale sighting (Azores, PT)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by claudia_brandao.",
+    "date": "2026-09-24",
+    "latitude": 38.6747457564,
+    "longitude": -28.4425114637,
+    "area": "Azores, PT",
+    "source": "https://www.inaturalist.org/observations/402957157",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-24T09:59:41Z",
     "notable": true
   },
   {
@@ -1604,7 +1703,42 @@
     "notable": true
   },
   {
-    "id": "2026-09-23-eyjafjordur-humpback-03",
+    "id": "2026-09-23-piura-pe-humpback-03",
+    "name": "Humpback sighting (Piura, PE)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by mgoodrich99.",
+    "date": "2026-09-23",
+    "latitude": -4.1306833333,
+    "longitude": -81.2603783333,
+    "area": "Piura, PE",
+    "source": "https://www.inaturalist.org/observations/402780669",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-23T13:11:37Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/739449575/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) mgoodrich99, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Colombia Pacific breeding season"
+  },
+  {
+    "id": "2026-09-23-northeast-atlantic-sperm-01",
+    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-09-23",
+    "latitude": 38.6324154318,
+    "longitude": -28.6457041911,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/402691103",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-23T10:18:54Z",
+    "notable": true
+  },
+  {
+    "id": "2026-09-23-eyjafjordur-humpback-04",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-09-23.",
@@ -1654,25 +1788,6 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-09-22-san-luis-obispo-coun-great-white-shark-01",
-    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by noiselessowl.",
-    "date": "2026-09-22",
-    "latitude": 35.3734031555,
-    "longitude": -120.9201138332,
-    "area": "San Luis Obispo County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/402573415",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-22T18:57:46Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/739046208/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-09-22-port-susan-camano-is-gray-01",
     "name": "Gray Whale sighting (Port Susan, Camano Island, WA, US)",
     "species": "Gray Whale",
@@ -1689,6 +1804,38 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/738947533/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) graysonponti, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-09-22-azores-pt-sperm-01",
+    "name": "Sperm whale sighting (Azores, PT)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-09-22",
+    "latitude": 38.3959680665,
+    "longitude": -28.5082978482,
+    "area": "Azores, PT",
+    "source": "https://www.inaturalist.org/observations/402487765",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-22T16:07:33Z",
+    "notable": true
+  },
+  {
+    "id": "2026-09-22-azores-pt-sperm-02",
+    "name": "Sperm whale sighting (Azores, PT)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-09-22",
+    "latitude": 38.587440412,
+    "longitude": -28.4126507138,
+    "area": "Azores, PT",
+    "source": "https://www.inaturalist.org/observations/402414596",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-22T09:53:01Z",
+    "notable": true
   },
   {
     "id": "2026-09-22-indian-ocean-kwazulu-humpback-02",
@@ -1750,6 +1897,22 @@
     "notable": true
   },
   {
+    "id": "2026-09-21-azores-pt-sperm-01",
+    "name": "Sperm whale sighting (Azores, PT)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-09-21",
+    "latitude": 38.5581572237,
+    "longitude": -28.582192111,
+    "area": "Azores, PT",
+    "source": "https://www.inaturalist.org/observations/402144966",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-21T10:19:49Z",
+    "notable": true
+  },
+  {
     "id": "2026-09-21-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -1784,22 +1947,22 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-09-20-gulf-of-santa-catali-great-white-shark-01",
-    "name": "Great White Shark sighting (Gulf of Santa Catalina, San Clemente, CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by specieshuntstudio.",
+    "id": "2026-09-20-northeast-atlantic-sperm-01",
+    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by stijn_manou.",
     "date": "2026-09-20",
-    "latitude": 33.397874384299996,
-    "longitude": -117.6231062998,
-    "area": "Gulf of Santa Catalina, San Clemente, CA, US",
-    "source": "https://www.inaturalist.org/observations/402060633",
+    "latitude": 37.837163699,
+    "longitude": -25.9735963019,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/402546317",
     "behaviors": [
       "reported"
     ],
-    "observedAt": "2026-09-20T21:43:14Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/738042820/medium.jpg",
+    "observedAt": "2026-09-20T20:25:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/738985121/medium.jpg",
     "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) David Miskevich, some rights reserved (CC BY-NC)",
+    "photoAttribution": "(c) stijn_manou, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -1818,7 +1981,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-09-20-north-atlantic-ocean-great-white-shark-02",
+    "id": "2026-09-20-north-atlantic-ocean-great-white-shark-01",
     "name": "Great White Shark sighting (North Atlantic Ocean, Nantucket, MA, US)",
     "species": "Great White Shark",
     "info": "iNaturalist observation by steve_romero.",
@@ -1837,7 +2000,26 @@
     "notable": true
   },
   {
-    "id": "2026-09-20-south-atlantic-ocean-humpback-02",
+    "id": "2026-09-20-canada-humpback-02",
+    "name": "Humpback sighting (Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by azabawa3.",
+    "date": "2026-09-20",
+    "latitude": 44.316695,
+    "longitude": -66.3949999722,
+    "area": "Canada",
+    "source": "https://www.inaturalist.org/observations/403870517",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-20T14:28:47Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/741592796/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) azabawa3, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-09-20-south-atlantic-ocean-humpback-03",
     "name": "Humpback sighting (South Atlantic Ocean, Western Cape, ZA)",
     "species": "Humpback",
     "info": "iNaturalist observation by ehreneksteen.",
@@ -1856,7 +2038,7 @@
     "notable": true
   },
   {
-    "id": "2026-09-20-sitka-ak-usa-humpback-03",
+    "id": "2026-09-20-sitka-ak-usa-humpback-04",
     "name": "Humpback sighting (Sitka, AK, USA)",
     "species": "Humpback",
     "info": "iNaturalist observation by sue25239.",
@@ -1875,7 +2057,7 @@
     "notable": true
   },
   {
-    "id": "2026-09-20-eyjafjordur-humpback-04",
+    "id": "2026-09-20-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-09-20.",
@@ -2041,7 +2223,44 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-09-19-serra-humpback-05",
+    "id": "2026-09-19-digby-ca-ns-ca-humpback-05",
+    "name": "Humpback sighting (Digby, CA-NS, CA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by teafinch.",
+    "date": "2026-09-19",
+    "latitude": 44.326788771400004,
+    "longitude": -66.3131488956,
+    "area": "Digby, CA-NS, CA",
+    "source": "https://www.inaturalist.org/observations/402530525",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-19T21:59:00Z",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season",
+    "headingDegrees": 86.2,
+    "headingCardinal": "E",
+    "movedKm": 3.9,
+    "speedKmh": 6.8,
+    "headingFromId": "2026-09-19-digby-nova-scotia-ca-humpback-06"
+  },
+  {
+    "id": "2026-09-19-digby-nova-scotia-ca-humpback-06",
+    "name": "Humpback sighting (Digby, Nova Scotia, Canada)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by teafinch.",
+    "date": "2026-09-19",
+    "latitude": 44.3244583333,
+    "longitude": -66.3626777783,
+    "area": "Digby, Nova Scotia, Canada",
+    "source": "https://www.inaturalist.org/observations/402530521",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-19T21:24:00Z",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
+    "id": "2026-09-19-serra-humpback-07",
     "name": "Humpback sighting (Serra)",
     "species": "Humpback",
     "info": "iNaturalist observation by jhuan_naturalist.",
@@ -2102,7 +2321,23 @@
     "notable": true
   },
   {
-    "id": "2026-09-19-eyjafjordur-humpback-06",
+    "id": "2026-09-19-northeast-atlantic-sperm-01",
+    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-09-19",
+    "latitude": 38.565100437,
+    "longitude": -28.1028253467,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/401578653",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-19T16:52:22Z",
+    "notable": true
+  },
+  {
+    "id": "2026-09-19-eyjafjordur-humpback-08",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-09-19.",
@@ -2167,6 +2402,22 @@
     "behaviors": [
       "reported"
     ],
+    "notable": true
+  },
+  {
+    "id": "2026-09-18-northeast-atlantic-sperm-01",
+    "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-09-18",
+    "latitude": 38.7507080606,
+    "longitude": -28.4045510451,
+    "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/401198821",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-18T10:22:34Z",
     "notable": true
   },
   {
@@ -2478,6 +2729,25 @@
     ],
     "observedAt": "2026-09-16T15:31:37Z",
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
+    "id": "2026-09-16-firth-of-clyde-scotl-humpback-03",
+    "name": "Humpback sighting (Firth of Clyde, Scotland, GB)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by harrybeaman.",
+    "date": "2026-09-16",
+    "latitude": 55.6420397922,
+    "longitude": -4.9530211318,
+    "area": "Firth of Clyde, Scotland, GB",
+    "source": "https://www.inaturalist.org/observations/400762652",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-16T07:16:19Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/735480081/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) harry beaman, some rights reserved (CC BY)",
+    "seasonalStatus": "Northeast Atlantic feeding season"
   },
   {
     "id": "2026-09-15-clallam-county-wa-us-gray-01",
@@ -2815,44 +3085,6 @@
     "notable": true
   },
   {
-    "id": "2026-09-13-c-te-nord-qc-canad-blue-01",
-    "name": "Blue Whale sighting (Côte-Nord, QC, Canadá)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by blakesito.",
-    "date": "2026-09-13",
-    "latitude": 48.3365407923,
-    "longitude": -69.3907064495,
-    "area": "Côte-Nord, QC, Canadá",
-    "source": "https://www.inaturalist.org/observations/405481335",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-13T14:08:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/744789213/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Carlos Domínguez-Rodríguez, some rights reserved (CC BY)",
-    "notable": true
-  },
-  {
-    "id": "2026-09-13-c-te-nord-qc-canad-blue-02",
-    "name": "Blue Whale sighting (Côte-Nord, QC, Canadá)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by blakesito.",
-    "date": "2026-09-13",
-    "latitude": 48.3363436014,
-    "longitude": -69.3909108702,
-    "area": "Côte-Nord, QC, Canadá",
-    "source": "https://www.inaturalist.org/observations/405481323",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-13T14:04:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/744788471/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Carlos Domínguez-Rodríguez, some rights reserved (CC BY)",
-    "notable": true
-  },
-  {
     "id": "2026-09-13-chehalis-river-aberd-gray-01",
     "name": "Gray Whale sighting (Chehalis River, Aberdeen, WA, US)",
     "species": "Gray Whale",
@@ -2887,6 +3119,25 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
+    "id": "2026-09-13-ireland-humpback-04",
+    "name": "Humpback sighting (Ireland)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by briancarruthers.",
+    "date": "2026-09-13",
+    "latitude": 52.0391054809,
+    "longitude": -10.3805233911,
+    "area": "Ireland",
+    "source": "https://www.inaturalist.org/observations/400439929",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-13T08:30:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/734838973/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Brian E. Carruthers, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Northeast Atlantic feeding season"
+  },
+  {
     "id": "2026-09-12-resurrection-bay-ala-orca-01",
     "name": "Orca sighting (Resurrection Bay, Alaska, USA)",
     "species": "Orca",
@@ -2919,44 +3170,6 @@
     "notable": true
   },
   {
-    "id": "2026-09-12-santa-cruz-county-ca-great-white-shark-01",
-    "name": "Great White Shark sighting (Santa Cruz County, CA, USA)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-09-12",
-    "latitude": 36.9699899369,
-    "longitude": -121.9253014753,
-    "area": "Santa Cruz County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/399803960",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-12T20:48:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/733561171/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-09-12-saguenay-st-lawrence-blue-01",
-    "name": "Blue Whale sighting (Saguenay-St. Lawrence, CA-QC-HC, CA-QC, CA)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by blakesito.",
-    "date": "2026-09-12",
-    "latitude": 48.3367551746,
-    "longitude": -69.3893999847,
-    "area": "Saguenay-St. Lawrence, CA-QC-HC, CA-QC, CA",
-    "source": "https://www.inaturalist.org/observations/404231821",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-12T20:38:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/742307126/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Carlos Domínguez-Rodríguez, some rights reserved (CC BY)",
-    "notable": true
-  },
-  {
     "id": "2026-09-12-lincoln-county-or-us-gray-01",
     "name": "Gray Whale sighting (Lincoln County, OR, USA)",
     "species": "Gray Whale",
@@ -2973,68 +3186,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/739616792/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Serena Tierra, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-09-12-c-te-nord-qc-canad-blue-02",
-    "name": "Blue Whale sighting (Côte-Nord, QC, Canadá)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by blakesito.",
-    "date": "2026-09-12",
-    "latitude": 48.3344248012,
-    "longitude": -69.3889593017,
-    "area": "Côte-Nord, QC, Canadá",
-    "source": "https://www.inaturalist.org/observations/404231799",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-12T20:35:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/742306053/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Carlos Domínguez-Rodríguez, some rights reserved (CC BY)",
-    "notable": true
-  },
-  {
-    "id": "2026-09-12-c-te-nord-qc-canad-blue-03",
-    "name": "Blue Whale sighting (Côte-Nord, QC, Canadá)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by blakesito.",
-    "date": "2026-09-12",
-    "latitude": 48.3344248012,
-    "longitude": -69.3889593017,
-    "area": "Côte-Nord, QC, Canadá",
-    "source": "https://www.inaturalist.org/observations/404231794",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-12T20:35:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/742305757/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Carlos Domínguez-Rodríguez, some rights reserved (CC BY)",
-    "notable": true
-  },
-  {
-    "id": "2026-09-12-c-te-nord-qc-canad-blue-04",
-    "name": "Blue Whale sighting (Côte-Nord, QC, Canadá)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by blakesito.",
-    "date": "2026-09-12",
-    "latitude": 48.3344248012,
-    "longitude": -69.3889593017,
-    "area": "Côte-Nord, QC, Canadá",
-    "source": "https://www.inaturalist.org/observations/404231797",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-12T20:26:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/742305386/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Carlos Domínguez-Rodríguez, some rights reserved (CC BY)",
-    "notable": true,
-    "headingDegrees": 214.2,
-    "headingCardinal": "SW",
-    "movedKm": 0.7,
-    "speedKmh": 0.2,
-    "headingFromId": "2026-09-12-c-te-nord-qc-canad-blue-05"
   },
   {
     "id": "2026-09-12-england-humpback-02",
@@ -3086,25 +3237,6 @@
     "photoAttribution": "(c) billtweit, some rights reserved (CC BY-NC)"
   },
   {
-    "id": "2026-09-12-c-te-nord-qc-canad-blue-05",
-    "name": "Blue Whale sighting (Côte-Nord, QC, Canadá)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by blakesito.",
-    "date": "2026-09-12",
-    "latitude": 48.3399569243,
-    "longitude": -69.3833031161,
-    "area": "Côte-Nord, QC, Canadá",
-    "source": "https://www.inaturalist.org/observations/404231753",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-12T16:24:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/742300334/medium.jpg",
-    "photoLicense": "cc-by",
-    "photoAttribution": "(c) Carlos Domínguez-Rodríguez, some rights reserved (CC BY)",
-    "notable": true
-  },
-  {
     "id": "2026-09-12-capital-regional-dis-gray-03",
     "name": "Gray Whale sighting (Capital Regional District, BC, Canada)",
     "species": "Gray Whale",
@@ -3140,24 +3272,6 @@
     "photoLicense": "cc-by",
     "photoAttribution": "(c) Em Lamond, some rights reserved (CC BY)",
     "notable": true
-  },
-  {
-    "id": "2026-09-11-wedding-rock-beach-t-gray-01",
-    "name": "Gray Whale sighting (Wedding Rock Beach Trail, Trinidad, CA, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by wildbutmore.",
-    "date": "2026-09-11",
-    "latitude": 41.16073226,
-    "longitude": -124.1604033285,
-    "area": "Wedding Rock Beach Trail, Trinidad, CA, US",
-    "source": "https://www.inaturalist.org/observations/399375935",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-11T19:19:26Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/732723436/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sunny Wilder, some rights reserved (CC BY-NC)"
   },
   {
     "id": "2026-09-11-global-orca-01",
@@ -3319,49 +3433,6 @@
     "notable": true
   },
   {
-    "id": "2026-09-10-san-luis-obispo-coun-great-white-shark-01",
-    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by noiselessowl.",
-    "date": "2026-09-10",
-    "latitude": 35.3088141471,
-    "longitude": -120.892583933,
-    "area": "San Luis Obispo County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/399044875",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-10T16:22:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/732081187/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)",
-    "notable": true,
-    "headingDegrees": 208.7,
-    "headingCardinal": "SSW",
-    "movedKm": 3.2,
-    "speedKmh": 5.2,
-    "headingFromId": "2026-09-10-san-luis-obispo-coun-great-white-shark-02"
-  },
-  {
-    "id": "2026-09-10-san-luis-obispo-coun-great-white-shark-02",
-    "name": "Great White Shark sighting (San Luis Obispo County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by noiselessowl.",
-    "date": "2026-09-10",
-    "latitude": 35.3337237025,
-    "longitude": -120.8758487217,
-    "area": "San Luis Obispo County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/399105959",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-10T15:45:16Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/732203437/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Andrew Harmer, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-09-09-yalata-au-southern-right-whale-01",
     "name": "Southern Right Whale sighting (Yalata, AU)",
     "species": "Southern Right Whale",
@@ -3393,22 +3464,6 @@
     "behaviors": [
       "reported"
     ],
-    "notable": true
-  },
-  {
-    "id": "2026-09-09-qu-bec-ca-blue-01",
-    "name": "Blue Whale sighting (Québec, CA)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by lukeberg.",
-    "date": "2026-09-09",
-    "latitude": 48.2037472781,
-    "longitude": -69.5282701179,
-    "area": "Québec, CA",
-    "source": "https://www.inaturalist.org/observations/399574279",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-09T13:14:00Z",
     "notable": true
   },
   {
@@ -3585,22 +3640,6 @@
     "notable": true
   },
   {
-    "id": "2026-09-07-san-francisco-county-great-white-shark-01",
-    "name": "Great White Shark sighting (San Francisco County, San Francisco, CA, USA)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by mapierson.",
-    "date": "2026-09-07",
-    "latitude": 37.7157961074,
-    "longitude": -122.9963364825,
-    "area": "San Francisco County, San Francisco, CA, USA",
-    "source": "https://www.inaturalist.org/observations/399159996",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-07T17:49:41Z",
-    "notable": true
-  },
-  {
     "id": "2026-09-06-olympic-national-par-gray-01",
     "name": "Gray Whale sighting (Olympic National Park, WA, US)",
     "species": "Gray Whale",
@@ -3613,30 +3652,12 @@
     "behaviors": [
       "reported"
     ],
-    "observedAt": "2026-09-06T23:51:50Z"
-  },
-  {
-    "id": "2026-09-06-north-pacific-ocean--gray-02",
-    "name": "Gray Whale sighting (North Pacific Ocean, CA, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by rockpaperstar11.",
-    "date": "2026-09-06",
-    "latitude": 41.1497863707,
-    "longitude": -124.1527086492,
-    "area": "North Pacific Ocean, CA, US",
-    "source": "https://www.inaturalist.org/observations/401012011",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-06T23:17:26Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/735979903/medium.jpg",
-    "photoLicense": "cc-by-nc-sa",
-    "photoAttribution": "(c) L. Frongia, some rights reserved (CC BY-NC-SA)",
-    "headingDegrees": 44.5,
-    "headingCardinal": "NE",
-    "movedKm": 0.8,
-    "speedKmh": 0.3,
-    "headingFromId": "2026-09-06-north-pacific-ocean--gray-03"
+    "observedAt": "2026-09-06T23:51:50Z",
+    "headingDegrees": 15.8,
+    "headingCardinal": "NNE",
+    "movedKm": 4.4,
+    "speedKmh": 1.1,
+    "headingFromId": "2026-09-06-clallam-county-wa-us-gray-02"
   },
   {
     "id": "2026-09-06-atlantic-ocean-is-humpback-01",
@@ -3671,49 +3692,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-09-06-c-te-nord-qc-canada-blue-01",
-    "name": "Blue Whale sighting (Côte-Nord, QC, Canada)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by phil_crimson.",
-    "date": "2026-09-06",
-    "latitude": 48.365896127800006,
-    "longitude": -69.3888536753,
-    "area": "Côte-Nord, QC, Canada",
-    "source": "https://www.inaturalist.org/observations/398869082",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-06T20:57:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/731743490/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Philippe Hénault, some rights reserved (CC BY-NC)",
-    "notable": true,
-    "headingDegrees": 13.6,
-    "headingCardinal": "NNE",
-    "movedKm": 7.6,
-    "speedKmh": 3.3,
-    "headingFromId": "2026-09-06-les-escoumins-qc-g0t-blue-03"
-  },
-  {
-    "id": "2026-09-06-north-pacific-ocean--gray-03",
-    "name": "Gray Whale sighting (North Pacific Ocean, CA, US)",
-    "species": "Gray Whale",
-    "info": "iNaturalist observation by rachelahouser.",
-    "date": "2026-09-06",
-    "latitude": 41.1445729335,
-    "longitude": -124.1595045546,
-    "area": "North Pacific Ocean, CA, US",
-    "source": "https://www.inaturalist.org/observations/397970312",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-06T20:14:55Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/729989679/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Rachel Houser, some rights reserved (CC BY-NC)"
-  },
-  {
-    "id": "2026-09-06-clallam-county-wa-us-gray-04",
+    "id": "2026-09-06-clallam-county-wa-us-gray-02",
     "name": "Gray Whale sighting (Clallam County, WA, USA)",
     "species": "Gray Whale",
     "info": "iNaturalist observation by projectseawolf_sv.",
@@ -3728,7 +3707,7 @@
     "observedAt": "2026-09-06T19:44:00Z"
   },
   {
-    "id": "2026-09-06-global-blue-02",
+    "id": "2026-09-06-global-blue-01",
     "name": "Blue Whale sighting (Global (GBIF))",
     "species": "Blue Whale",
     "info": "GBIF record from iNaturalist research-grade observations. Observed 2026-09-06.",
@@ -3756,22 +3735,6 @@
       "reported"
     ],
     "seasonalStatus": "Northeast Atlantic feeding season"
-  },
-  {
-    "id": "2026-09-06-les-escoumins-qc-g0t-blue-03",
-    "name": "Blue Whale sighting (Les Escoumins, QC G0T 1K0, Canada)",
-    "species": "Blue Whale",
-    "info": "iNaturalist observation by bastien25645.",
-    "date": "2026-09-06",
-    "latitude": 48.299606736099996,
-    "longitude": -69.4130490348,
-    "area": "Les Escoumins, QC G0T 1K0, Canada",
-    "source": "https://www.inaturalist.org/observations/397976978",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-06T18:39:00Z",
-    "notable": true
   },
   {
     "id": "2026-09-05-or-us-gray-01",
