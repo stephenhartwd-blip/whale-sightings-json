@@ -122,6 +122,37 @@
     "notable": true
   },
   {
+    "id": "2026-10-08-azores-sperm-02",
+    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by mjoaoalferes.",
+    "date": "2026-10-08",
+    "latitude": 38.6389954149,
+    "longitude": -28.4770395638,
+    "area": "Azores (offshore), Portugal",
+    "source": "https://www.inaturalist.org/observations/406755369",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-10-08T10:23:00Z",
+    "notable": true
+  },
+  {
+    "id": "2026-10-08-eyjafjordur-humpback-03",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-10-08.",
+    "date": "2026-10-08",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "Norwegian/Arctic feeding grounds"
+  },
+  {
     "id": "2026-10-07-southern-gulf-island-humpback-01",
     "name": "Humpback sighting (Southern Gulf Islands, BC, CA)",
     "species": "Humpback",
@@ -176,7 +207,28 @@
     "notable": true
   },
   {
-    "id": "2026-10-07-ca-us-humpback-04",
+    "id": "2026-10-07-monterey-bay-ca-us-humpback-04",
+    "name": "Humpback sighting (Monterey Bay, CA, US)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by evigna.",
+    "date": "2026-10-07",
+    "latitude": 36.7904916667,
+    "longitude": -121.8312833333,
+    "area": "Monterey Bay, CA, US",
+    "source": "https://www.inaturalist.org/observations/406806026",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-10-07T18:38:40Z",
+    "notable": true,
+    "headingDegrees": 89.4,
+    "headingCardinal": "E",
+    "movedKm": 1.2,
+    "speedKmh": 0.6,
+    "headingFromId": "2026-10-07-ca-us-humpback-05"
+  },
+  {
+    "id": "2026-10-07-ca-us-humpback-05",
     "name": "Humpback sighting (CA, US)",
     "species": "Humpback",
     "info": "iNaturalist observation by appalachianary.",
@@ -200,6 +252,22 @@
     "latitude": 38.7872064588,
     "longitude": -28.6204435464,
     "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/406525354",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-10-07T10:18:02Z",
+    "notable": true
+  },
+  {
+    "id": "2026-10-07-azores-sperm-02",
+    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-10-07",
+    "latitude": 38.7872064588,
+    "longitude": -28.6204435464,
+    "area": "Azores (offshore), Portugal",
     "source": "https://www.inaturalist.org/observations/406525354",
     "behaviors": [
       "reported"
@@ -442,25 +510,6 @@
     "notable": true
   },
   {
-    "id": "2026-10-06-greater-vancouver-bc-humpback-11",
-    "name": "Humpback sighting (Greater Vancouver, BC, CA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by baishulin.",
-    "date": "2026-10-06",
-    "latitude": 49.4194834893,
-    "longitude": -123.2817444803,
-    "area": "Greater Vancouver, BC, CA",
-    "source": "https://www.inaturalist.org/observations/406354553",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-06T16:13:37Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/746559968/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Bái Shùlín, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-10-06-azores-pt-sperm-01",
     "name": "Sperm whale sighting (Azores, PT)",
     "species": "Sperm whale",
@@ -475,6 +524,25 @@
     ],
     "observedAt": "2026-10-06T16:04:45Z",
     "notable": true
+  },
+  {
+    "id": "2026-10-06-talara-pe-pi-pe-humpback-11",
+    "name": "Humpback sighting (Talara, PE-PI, PE)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by t1004.",
+    "date": "2026-10-06",
+    "latitude": -4.1147248091,
+    "longitude": -81.1036000623,
+    "area": "Talara, PE-PI, PE",
+    "source": "https://www.inaturalist.org/observations/406321648",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-10-06T13:34:08Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/746495143/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Tadeo.S.G, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Colombia Pacific breeding season"
   },
   {
     "id": "2026-10-06-eyjafjordur-humpback-12",
@@ -639,10 +707,26 @@
     "headingCardinal": "ESE",
     "movedKm": 0.9,
     "speedKmh": 4.0,
-    "headingFromId": "2026-10-05-northeast-atlantic-sperm-02"
+    "headingFromId": "2026-10-05-azores-sperm-04"
   },
   {
-    "id": "2026-10-05-northeast-atlantic-sperm-02",
+    "id": "2026-10-05-azores-sperm-02",
+    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-10-05",
+    "latitude": 38.7393091004,
+    "longitude": -28.7690216858,
+    "area": "Azores (offshore), Portugal",
+    "source": "https://www.inaturalist.org/observations/406102622",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-10-05T16:12:27Z",
+    "notable": true
+  },
+  {
+    "id": "2026-10-05-northeast-atlantic-sperm-03",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
     "info": "iNaturalist observation by claudia_brandao.",
@@ -650,6 +734,22 @@
     "latitude": 38.7433686865,
     "longitude": -28.7777392072,
     "area": "Northeast Atlantic (offshore)",
+    "source": "https://www.inaturalist.org/observations/406099245",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-10-05T15:59:14Z",
+    "notable": true
+  },
+  {
+    "id": "2026-10-05-azores-sperm-04",
+    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by claudia_brandao.",
+    "date": "2026-10-05",
+    "latitude": 38.7433686865,
+    "longitude": -28.7777392072,
+    "area": "Azores (offshore), Portugal",
     "source": "https://www.inaturalist.org/observations/406099245",
     "behaviors": [
       "reported"
@@ -963,25 +1063,6 @@
     "headingFromId": "2026-10-03-capital-regional-dis-orca-07"
   },
   {
-    "id": "2026-10-03-california-us-humpback-02",
-    "name": "Humpback sighting (California, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by pmpasillas211l.",
-    "date": "2026-10-03",
-    "latitude": 36.7740903462,
-    "longitude": -121.9292038679,
-    "area": "California, US",
-    "source": "https://www.inaturalist.org/observations/406676924",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-03T17:48:03Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/747214962/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) pmpasillas211l, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-10-03-capital-regional-dis-orca-07",
     "name": "Orca sighting (Capital Regional District, BC, Canada)",
     "species": "Orca",
@@ -1057,7 +1138,7 @@
     "seasonalStatus": "California migration corridor"
   },
   {
-    "id": "2026-10-03-cape-point-cape-town-humpback-03",
+    "id": "2026-10-03-cape-point-cape-town-humpback-02",
     "name": "Humpback sighting (Cape Point, Cape Town, South Africa)",
     "species": "Humpback",
     "info": "iNaturalist observation by gigilaidler.",
@@ -1076,7 +1157,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-03-cape-point-cape-town-humpback-04",
+    "id": "2026-10-03-cape-point-cape-town-humpback-03",
     "name": "Humpback sighting (Cape Point, Cape Town, South Africa)",
     "species": "Humpback",
     "info": "iNaturalist observation by gigilaidler.",
@@ -1097,10 +1178,10 @@
     "headingCardinal": "SSE",
     "movedKm": 1.8,
     "speedKmh": 8.3,
-    "headingFromId": "2026-10-03-murdock-valley-cape--humpback-05"
+    "headingFromId": "2026-10-03-murdock-valley-cape--humpback-04"
   },
   {
-    "id": "2026-10-03-murdock-valley-cape--humpback-05",
+    "id": "2026-10-03-murdock-valley-cape--humpback-04",
     "name": "Humpback sighting (Murdock Valley, Cape Town, 7975, South Africa)",
     "species": "Humpback",
     "info": "iNaturalist observation by gigilaidler.",
@@ -1119,7 +1200,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-03-eyjafjordur-humpback-06",
+    "id": "2026-10-03-eyjafjordur-humpback-05",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-10-03.",
@@ -1247,6 +1328,25 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
+    "id": "2026-10-01-oc-ano-pac-fico-choc-humpback-01",
+    "name": "Humpback sighting (Océano Pacífico, Chocó, CO)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by sara_vargas2.",
+    "date": "2026-10-01",
+    "latitude": 6.1654528333,
+    "longitude": -77.4881133333,
+    "area": "Océano Pacífico, Chocó, CO",
+    "source": "https://www.inaturalist.org/observations/405868697",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-10-01T19:53:03Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/745574195/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Sara vargas, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Colombia Pacific breeding season"
+  },
+  {
     "id": "2026-09-30-capital-regional-dis-orca-01",
     "name": "Orca sighting (Capital Regional District, BC, Canada)",
     "species": "Orca",
@@ -1300,10 +1400,26 @@
     "headingCardinal": "WNW",
     "movedKm": 27.5,
     "speedKmh": 6.4,
-    "headingFromId": "2026-09-30-azores-pt-sperm-02"
+    "headingFromId": "2026-09-30-azores-pt-sperm-03"
   },
   {
-    "id": "2026-09-30-azores-pt-sperm-02",
+    "id": "2026-09-30-azores-sperm-02",
+    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-09-30",
+    "latitude": 38.4886163877,
+    "longitude": -28.9983185258,
+    "area": "Azores (offshore), Portugal",
+    "source": "https://www.inaturalist.org/observations/404741796",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-30T15:20:26Z",
+    "notable": true
+  },
+  {
+    "id": "2026-09-30-azores-pt-sperm-03",
     "name": "Sperm whale sighting (Azores, PT)",
     "species": "Sperm whale",
     "info": "iNaturalist observation by mjoaoalferes.",
@@ -1319,7 +1435,7 @@
     "notable": true
   },
   {
-    "id": "2026-09-30-azores-pt-sperm-03",
+    "id": "2026-09-30-azores-pt-sperm-04",
     "name": "Sperm whale sighting (Azores, PT)",
     "species": "Sperm whale",
     "info": "iNaturalist observation by mjoaoalferes.",
@@ -1335,7 +1451,7 @@
     "notable": true
   },
   {
-    "id": "2026-09-30-azores-sperm-04",
+    "id": "2026-09-30-azores-sperm-05",
     "name": "Sperm whale sighting (Azores)",
     "species": "Sperm whale",
     "info": "iNaturalist observation by mjoaoalferes.",
@@ -1773,6 +1889,22 @@
     "notable": true
   },
   {
+    "id": "2026-09-27-azores-sperm-02",
+    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-09-27",
+    "latitude": 38.4274386892,
+    "longitude": -28.6100834513,
+    "area": "Azores (offshore), Portugal",
+    "source": "https://www.inaturalist.org/observations/404682487",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-27T10:58:02Z",
+    "notable": true
+  },
+  {
     "id": "2026-09-27-eyjafjordur-humpback-02",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
@@ -1802,6 +1934,25 @@
     ],
     "observedAt": "2026-09-27T05:54:47Z",
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/741354685/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) cormorantcm, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-09-26-kenai-peninsula-coun-fin-01",
+    "name": "Fin Whale sighting (Kenai Peninsula County, US-AK, US)",
+    "species": "Fin Whale",
+    "info": "iNaturalist observation by cormorantcm.",
+    "date": "2026-09-26",
+    "latitude": 59.8156215208,
+    "longitude": -149.7875893616,
+    "area": "Kenai Peninsula County, US-AK, US",
+    "source": "https://www.inaturalist.org/observations/403736811",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-27T05:31:42Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/741331485/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) cormorantcm, some rights reserved (CC BY-NC)",
     "notable": true
@@ -1949,6 +2100,22 @@
     "photoAttribution": "(c) John D Reynolds, some rights reserved (CC BY-NC)"
   },
   {
+    "id": "2026-09-25-pacific-ocean-depart-humpback-01",
+    "name": "Humpback sighting (Pacific Ocean, Departamento de Tumbes, PE)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by bernardet_zavala.",
+    "date": "2026-09-25",
+    "latitude": -3.9482109742,
+    "longitude": -80.9740057439,
+    "area": "Pacific Ocean, Departamento de Tumbes, PE",
+    "source": "https://www.inaturalist.org/observations/403352302",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-25T10:17:05Z",
+    "seasonalStatus": "Colombia Pacific breeding season"
+  },
+  {
     "id": "2026-09-24-auckland-new-zealand-orca-01",
     "name": "Orca sighting (Auckland, New Zealand)",
     "species": "Orca",
@@ -2001,7 +2168,23 @@
     "headingCardinal": "ESE",
     "movedKm": 1.5,
     "speedKmh": 0.3,
-    "headingFromId": "2026-09-24-azores-pt-sperm-02"
+    "headingFromId": "2026-09-24-azores-pt-sperm-03"
+  },
+  {
+    "id": "2026-09-24-azores-sperm-02",
+    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by claudia_brandao.",
+    "date": "2026-09-24",
+    "latitude": 38.6713784217,
+    "longitude": -28.4254140819,
+    "area": "Azores (offshore), Portugal",
+    "source": "https://www.inaturalist.org/observations/403013043",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-24T15:05:28Z",
+    "notable": true
   },
   {
     "id": "2026-09-24-kenai-peninsula-boro-humpback-01",
@@ -2020,7 +2203,7 @@
     "notable": true
   },
   {
-    "id": "2026-09-24-azores-pt-sperm-02",
+    "id": "2026-09-24-azores-pt-sperm-03",
     "name": "Sperm whale sighting (Azores, PT)",
     "species": "Sperm whale",
     "info": "iNaturalist observation by claudia_brandao.",
@@ -2105,6 +2288,25 @@
     "notable": true
   },
   {
+    "id": "2026-09-23-piura-pe-humpback-03",
+    "name": "Humpback sighting (Piura, PE)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by mgoodrich99.",
+    "date": "2026-09-23",
+    "latitude": -4.1306833333,
+    "longitude": -81.2603783333,
+    "area": "Piura, PE",
+    "source": "https://www.inaturalist.org/observations/402780669",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-23T13:11:37Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/739449575/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) mgoodrich99, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Colombia Pacific breeding season"
+  },
+  {
     "id": "2026-09-23-northeast-atlantic-sperm-01",
     "name": "Sperm whale sighting (Northeast Atlantic (offshore))",
     "species": "Sperm whale",
@@ -2121,7 +2323,23 @@
     "notable": true
   },
   {
-    "id": "2026-09-23-eyjafjordur-humpback-03",
+    "id": "2026-09-23-azores-sperm-02",
+    "name": "Sperm whale sighting (Azores (offshore), Portugal)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by anaisbuilly.",
+    "date": "2026-09-23",
+    "latitude": 38.6324154318,
+    "longitude": -28.6457041911,
+    "area": "Azores (offshore), Portugal",
+    "source": "https://www.inaturalist.org/observations/402691103",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-23T10:18:54Z",
+    "notable": true
+  },
+  {
+    "id": "2026-09-23-eyjafjordur-humpback-04",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-09-23.",
@@ -2786,21 +3004,6 @@
     "notable": true
   },
   {
-    "id": "2026-09-18-eyjafjordur-humpback-05",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-09-18.",
-    "date": "2026-09-18",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
     "id": "2026-09-17-chugach-census-area--orca-01",
     "name": "Orca sighting (Chugach Census Area, AK, USA)",
     "species": "Orca",
@@ -2817,15 +3020,29 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/736122401/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Sue Snape, some rights reserved (CC BY-NC)",
-    "notable": true,
-    "headingDegrees": 341.4,
-    "headingCardinal": "NNW",
-    "movedKm": 8.1,
-    "speedKmh": 1.8,
-    "headingFromId": "2026-09-17-chugach-census-area--orca-02"
+    "notable": true
   },
   {
-    "id": "2026-09-17-chugach-census-area--orca-02",
+    "id": "2026-09-17-gulf-of-alaska-orca-02",
+    "name": "Orca sighting (Gulf of Alaska (offshore))",
+    "species": "Orca",
+    "info": "iNaturalist observation by celestemurphy44.",
+    "date": "2026-09-17",
+    "latitude": 58.7843311979,
+    "longitude": -151.0995069145,
+    "area": "Gulf of Alaska (offshore)",
+    "source": "https://www.inaturalist.org/observations/404811791",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-18T00:20:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/743456384/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) celestemurphy44, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-09-17-chugach-census-area--orca-03",
     "name": "Orca sighting (Chugach Census Area, AK, USA)",
     "species": "Orca",
     "info": "iNaturalist observation by lancycheng.",
@@ -2841,7 +3058,7 @@
     "notable": true
   },
   {
-    "id": "2026-09-17-ak-us-orca-03",
+    "id": "2026-09-17-ak-us-orca-04",
     "name": "Orca sighting (AK, US)",
     "species": "Orca",
     "info": "iNaturalist observation by chrissyfen.",
@@ -2860,7 +3077,7 @@
     "notable": true
   },
   {
-    "id": "2026-09-17-washington-us-orca-04",
+    "id": "2026-09-17-washington-us-orca-05",
     "name": "Orca sighting (Washington, US)",
     "species": "Orca",
     "info": "iNaturalist observation by hartway.",
@@ -2877,6 +3094,22 @@
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) hartway, some rights reserved (CC BY-NC)",
     "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-09-17-gulf-of-alaska-orca-06",
+    "name": "Orca sighting (Gulf of Alaska (offshore))",
+    "species": "Orca",
+    "info": "iNaturalist observation by allan45871.",
+    "date": "2026-09-17",
+    "latitude": 58.7320354484,
+    "longitude": -144.6332341889,
+    "area": "Gulf of Alaska (offshore)",
+    "source": "https://www.inaturalist.org/observations/401086061",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-17T21:20:00Z",
+    "notable": true
   },
   {
     "id": "2026-09-17-british-columbia-ca-gray-01",
@@ -2917,7 +3150,26 @@
     "notable": true
   },
   {
-    "id": "2026-09-17-ak-us-orca-05",
+    "id": "2026-09-17-gulf-of-alaska-us-orca-07",
+    "name": "Orca sighting (Gulf of Alaska, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by thomaskk.",
+    "date": "2026-09-17",
+    "latitude": 59.3282633333,
+    "longitude": -146.5196466667,
+    "area": "Gulf of Alaska, US",
+    "source": "https://www.inaturalist.org/observations/401115834",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-17T19:24:23Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/736185878/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) thomaskk, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-09-17-ak-us-orca-08",
     "name": "Orca sighting (AK, US)",
     "species": "Orca",
     "info": "iNaturalist observation by chrissyfen.",
@@ -2936,7 +3188,26 @@
     "notable": true
   },
   {
-    "id": "2026-09-17-ak-us-orca-06",
+    "id": "2026-09-17-gulf-of-alaska-us-orca-09",
+    "name": "Orca sighting (Gulf of Alaska, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by thomaskk.",
+    "date": "2026-09-17",
+    "latitude": 59.321155,
+    "longitude": -146.5058783333,
+    "area": "Gulf of Alaska, US",
+    "source": "https://www.inaturalist.org/observations/401116360",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-09-17T19:17:27Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/736187076/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) thomaskk, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-09-17-ak-us-orca-10",
     "name": "Orca sighting (AK, US)",
     "species": "Orca",
     "info": "iNaturalist observation by chrissyfen.",
@@ -2970,7 +3241,7 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-09-17-biedma-ar-ch-ar-orca-07",
+    "id": "2026-09-17-biedma-ar-ch-ar-orca-11",
     "name": "Orca sighting (Biedma, AR-CH, AR)",
     "species": "Orca",
     "info": "iNaturalist observation by louis_thom.",
