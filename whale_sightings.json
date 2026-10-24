@@ -106,6 +106,50 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
+    "id": "2026-10-23-washington-us-orca-04",
+    "name": "Orca sighting (Washington, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by kendraherbert.",
+    "date": "2026-10-23",
+    "latitude": 48.6429691833,
+    "longitude": -123.1097564051,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/410412778",
+    "behaviors": [
+      "reported",
+      "hunting"
+    ],
+    "observedAt": "2026-10-24T02:39:41Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/754806797/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) kendraherbert, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Salish Sea (SRKW range)",
+    "headingDegrees": 229.8,
+    "headingCardinal": "SW",
+    "movedKm": 5.9,
+    "speedKmh": 1.6,
+    "headingFromId": "2026-10-23-washington-us-orca-05"
+  },
+  {
+    "id": "2026-10-23-washington-us-orca-05",
+    "name": "Orca sighting (Washington, US)",
+    "species": "Orca",
+    "info": "iNaturalist observation by maddoxd.",
+    "date": "2026-10-23",
+    "latitude": 48.6774831209,
+    "longitude": -123.0479552328,
+    "area": "Washington, US",
+    "source": "https://www.inaturalist.org/observations/410428449",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-10-23T22:58:21Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/754838372/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) maddoxd, some rights reserved (CC BY-NC)",
+    "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
     "id": "2026-10-22-tofino-bc-v0r-2z0-ca-gray-01",
     "name": "Gray Whale sighting (Tofino, BC V0R 2Z0, Canada)",
     "species": "Gray Whale",
@@ -144,25 +188,6 @@
     "notable": true
   },
   {
-    "id": "2026-10-22-ca-us-humpback-01",
-    "name": "Humpback sighting (CA, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by outdoorkoi.",
-    "date": "2026-10-22",
-    "latitude": 36.8077665298,
-    "longitude": -122.0252499796,
-    "area": "CA, US",
-    "source": "https://www.inaturalist.org/observations/410246915",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-22T19:25:01Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/754469091/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Zakai, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-10-21-kaik-ura-7374-new-ze-humpback-01",
     "name": "Humpback sighting (Kaikōura 7374, New Zealand)",
     "species": "Humpback",
@@ -179,86 +204,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/754063133/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) guerra12, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-21-point-reyes-lighthou-humpback-02",
-    "name": "Humpback sighting (Point Reyes Lighthouse Trail, Inverness, CA, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by everhagen.",
-    "date": "2026-10-21",
-    "latitude": 37.996405,
-    "longitude": -123.0210416667,
-    "area": "Point Reyes Lighthouse Trail, Inverness, CA, US",
-    "source": "https://www.inaturalist.org/observations/410027205",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-21T23:18:34Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/754025941/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) everhagen, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-20-north-pacific-ocean--humpback-01",
-    "name": "Humpback sighting (North Pacific Ocean, CA, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by brandyritchie.",
-    "date": "2026-10-20",
-    "latitude": 36.5719172471,
-    "longitude": -121.9958103258,
-    "area": "North Pacific Ocean, CA, US",
-    "source": "https://www.inaturalist.org/observations/409819377",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-20T22:18:45Z",
-    "notable": true,
-    "headingDegrees": 179.7,
-    "headingCardinal": "S",
-    "movedKm": 26.5,
-    "speedKmh": 12.4,
-    "headingFromId": "2026-10-20-monterey-bay-ca-us-humpback-02"
-  },
-  {
-    "id": "2026-10-20-monterey-bay-ca-us-humpback-02",
-    "name": "Humpback sighting (Monterey Bay, CA, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by bhill.",
-    "date": "2026-10-20",
-    "latitude": 36.8102083333,
-    "longitude": -121.9972083333,
-    "area": "Monterey Bay, CA, US",
-    "source": "https://www.inaturalist.org/observations/409782365",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-20T20:10:22Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/753527063/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) bhill, some rights reserved (CC BY-NC)",
-    "notable": true,
-    "headingDegrees": 271.6,
-    "headingCardinal": "W",
-    "movedKm": 14.2,
-    "speedKmh": 2.9,
-    "headingFromId": "2026-10-20-ca-us-humpback-03"
-  },
-  {
-    "id": "2026-10-20-ca-us-humpback-03",
-    "name": "Humpback sighting (CA, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by confervae.",
-    "date": "2026-10-20",
-    "latitude": 36.8066924957,
-    "longitude": -121.8381275715,
-    "area": "CA, US",
-    "source": "https://www.inaturalist.org/observations/409714707",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-20T15:15:00Z",
     "notable": true
   },
   {
@@ -354,25 +299,6 @@
     "notable": true
   },
   {
-    "id": "2026-10-18-ca-us-humpback-02",
-    "name": "Humpback sighting (CA, US)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by sallamander.",
-    "date": "2026-10-18",
-    "latitude": 36.7400238994,
-    "longitude": -121.834695963,
-    "area": "CA, US",
-    "source": "https://www.inaturalist.org/observations/409518024",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-18T20:29:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/752981745/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Sally Richardson, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-10-18-washington-us-gray-01",
     "name": "Gray Whale sighting (Washington, US)",
     "species": "Gray Whale",
@@ -389,7 +315,7 @@
     "seasonalStatus": "California migration corridor"
   },
   {
-    "id": "2026-10-18-stellwagen-bank-humpback-03",
+    "id": "2026-10-18-stellwagen-bank-humpback-02",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by akilee.",
@@ -408,7 +334,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-10-18-stellwagen-bank-humpback-04",
+    "id": "2026-10-18-stellwagen-bank-humpback-03",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by akilee.",
@@ -443,194 +369,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-17-monterey-bay-califor-humpback-01",
-    "name": "Humpback sighting (Monterey Bay, California, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by okaugust.",
-    "date": "2026-10-17",
-    "latitude": 36.8007413,
-    "longitude": -121.947311,
-    "area": "Monterey Bay, California, USA",
-    "source": "https://www.inaturalist.org/observations/409363339",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-17T22:49:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/752668102/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Tina Toth, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-17-monterey-bay-califor-humpback-02",
-    "name": "Humpback sighting (Monterey Bay, California, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by okaugust.",
-    "date": "2026-10-17",
-    "latitude": 36.8007413,
-    "longitude": -121.947311,
-    "area": "Monterey Bay, California, USA",
-    "source": "https://www.inaturalist.org/observations/409363332",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-17T22:46:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/752668101/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Tina Toth, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-17-monterey-bay-califor-humpback-03",
-    "name": "Humpback sighting (Monterey Bay, California, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by okaugust.",
-    "date": "2026-10-17",
-    "latitude": 36.8007413,
-    "longitude": -121.947311,
-    "area": "Monterey Bay, California, USA",
-    "source": "https://www.inaturalist.org/observations/409363331",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-17T22:46:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/752668109/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Tina Toth, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-17-monterey-bay-califor-humpback-04",
-    "name": "Humpback sighting (Monterey Bay, California, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by okaugust.",
-    "date": "2026-10-17",
-    "latitude": 36.8007413,
-    "longitude": -121.947311,
-    "area": "Monterey Bay, California, USA",
-    "source": "https://www.inaturalist.org/observations/409363330",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-17T22:45:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/752668088/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Tina Toth, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-17-monterey-bay-califor-humpback-05",
-    "name": "Humpback sighting (Monterey Bay, California, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by okaugust.",
-    "date": "2026-10-17",
-    "latitude": 36.8007413,
-    "longitude": -121.947311,
-    "area": "Monterey Bay, California, USA",
-    "source": "https://www.inaturalist.org/observations/409363329",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-17T22:45:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/752668086/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Tina Toth, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-17-monterey-bay-califor-humpback-06",
-    "name": "Humpback sighting (Monterey Bay, California, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by okaugust.",
-    "date": "2026-10-17",
-    "latitude": 36.8007413,
-    "longitude": -121.947311,
-    "area": "Monterey Bay, California, USA",
-    "source": "https://www.inaturalist.org/observations/409363328",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-17T22:41:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/752668064/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Tina Toth, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-17-monterey-bay-califor-humpback-07",
-    "name": "Humpback sighting (Monterey Bay, California, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by okaugust.",
-    "date": "2026-10-17",
-    "latitude": 36.8007413,
-    "longitude": -121.947311,
-    "area": "Monterey Bay, California, USA",
-    "source": "https://www.inaturalist.org/observations/409363327",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-17T22:40:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/752668058/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Tina Toth, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-17-monterey-bay-califor-humpback-08",
-    "name": "Humpback sighting (Monterey Bay, California, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by okaugust.",
-    "date": "2026-10-17",
-    "latitude": 36.8007413,
-    "longitude": -121.947311,
-    "area": "Monterey Bay, California, USA",
-    "source": "https://www.inaturalist.org/observations/409363325",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-17T22:39:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/752668050/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Tina Toth, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-17-monterey-bay-califor-humpback-09",
-    "name": "Humpback sighting (Monterey Bay, California, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by okaugust.",
-    "date": "2026-10-17",
-    "latitude": 36.8007413,
-    "longitude": -121.947311,
-    "area": "Monterey Bay, California, USA",
-    "source": "https://www.inaturalist.org/observations/409363324",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-17T22:38:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/752668051/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Tina Toth, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-17-san-francisco-county-great-white-shark-01",
-    "name": "Great White Shark sighting (San Francisco County, San Francisco, CA, USA)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by mapierson.",
-    "date": "2026-10-17",
-    "latitude": 37.7042316924,
-    "longitude": -122.9996962845,
-    "area": "San Francisco County, San Francisco, CA, USA",
-    "source": "https://www.inaturalist.org/observations/409346074",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-17T20:10:07Z",
-    "notable": true
-  },
-  {
-    "id": "2026-10-17-eastern-cape-za-great-white-shark-02",
+    "id": "2026-10-17-eastern-cape-za-great-white-shark-01",
     "name": "Great White Shark sighting (Eastern Cape, ZA)",
     "species": "Great White Shark",
     "info": "iNaturalist observation by andreasdebeer.",
@@ -1120,25 +859,6 @@
     "notable": true
   },
   {
-    "id": "2026-10-11-nassau-county-us-fl--great-white-shark-01",
-    "name": "Great White Shark sighting (Nassau County, US-FL, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by cindy62715.",
-    "date": "2026-10-11",
-    "latitude": 30.6698886537,
-    "longitude": -81.409874043,
-    "area": "Nassau County, US-FL, US",
-    "source": "https://www.inaturalist.org/observations/407792111",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-11T19:52:47Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/749464472/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Cindy Hodges, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
     "id": "2026-10-11-metro-vancouver-bc-c-orca-02",
     "name": "Orca sighting (Metro Vancouver, BC, Canada)",
     "species": "Orca",
@@ -1267,26 +987,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-10-bay-of-plenty-region-humpback-01",
-    "name": "Humpback sighting (Bay of Plenty Region, New Zealand)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by marine_life_kayaker.",
-    "date": "2026-10-10",
-    "latitude": -37.5641189411,
-    "longitude": 176.2042953034,
-    "area": "Bay of Plenty Region, New Zealand",
-    "source": "https://www.inaturalist.org/observations/407614416",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-10T22:45:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/749093743/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Nathan Pettigrew, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-10-stellwagen-bank-unit-humpback-02",
+    "id": "2026-10-10-stellwagen-bank-unit-humpback-01",
     "name": "Humpback sighting (Stellwagen Bank, United States)",
     "species": "Humpback",
     "info": "iNaturalist observation by evitols.",
@@ -1307,10 +1008,10 @@
     "headingCardinal": "NNW",
     "movedKm": 2.0,
     "speedKmh": 1.6,
-    "headingFromId": "2026-10-10-stellwagen-bank-humpback-03"
+    "headingFromId": "2026-10-10-stellwagen-bank-humpback-02"
   },
   {
-    "id": "2026-10-10-stellwagen-bank-humpback-03",
+    "id": "2026-10-10-stellwagen-bank-humpback-02",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by jade978.",
@@ -1329,7 +1030,23 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-10-10-eyjafjordur-humpback-04",
+    "id": "2026-10-10-valpara-so-cl-sperm-01",
+    "name": "Sperm whale sighting (Valparaíso, CL)",
+    "species": "Sperm whale",
+    "info": "iNaturalist observation by michaelweymann.",
+    "date": "2026-10-10",
+    "latitude": -32.6708429694,
+    "longitude": -71.4730306236,
+    "area": "Valparaíso, CL",
+    "source": "https://www.inaturalist.org/observations/407709155",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-10-10T11:59:00Z",
+    "notable": true
+  },
+  {
+    "id": "2026-10-10-eyjafjordur-humpback-03",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-10-10.",
@@ -1380,22 +1097,6 @@
     "photoLicense": "cc0",
     "photoAttribution": "no rights reserved",
     "seasonalStatus": "California migration corridor"
-  },
-  {
-    "id": "2026-10-09-san-francisco-county-great-white-shark-01",
-    "name": "Great White Shark sighting (San Francisco County, San Francisco, CA, USA)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by mapierson.",
-    "date": "2026-10-09",
-    "latitude": 37.7008617119,
-    "longitude": -123.0002307147,
-    "area": "San Francisco County, San Francisco, CA, USA",
-    "source": "https://www.inaturalist.org/observations/407272499",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-09T18:52:39Z",
-    "notable": true
   },
   {
     "id": "2026-10-09-stellwagen-bank-humpback-01",
@@ -1651,44 +1352,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/750749614/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Alec Boyd-Devine, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-06-santa-cruz-county-ca-great-white-shark-01",
-    "name": "Great White Shark sighting (Santa Cruz County, CA, USA)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-10-06",
-    "latitude": 36.9576582,
-    "longitude": -121.9352602063,
-    "area": "Santa Cruz County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/406495667",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-06T20:53:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/746816567/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-06-santa-cruz-county-ca-great-white-shark-02",
-    "name": "Great White Shark sighting (Santa Cruz County, CA, USA)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by jmaughn.",
-    "date": "2026-10-06",
-    "latitude": 36.9574910395,
-    "longitude": -121.9355017059,
-    "area": "Santa Cruz County, CA, USA",
-    "source": "https://www.inaturalist.org/observations/406495670",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-06T20:40:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/746816572/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) James Maughn, some rights reserved (CC BY-NC)",
     "notable": true
   },
   {
@@ -2171,26 +1834,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-03-hoonah-angoon-census-humpback-06",
-    "name": "Humpback sighting (Hoonah-Angoon Census Area, AK, USA)",
-    "species": "Humpback",
-    "info": "iNaturalist observation by devineconservation.",
-    "date": "2026-10-03",
-    "latitude": 58.0733529601,
-    "longitude": -134.1266594326,
-    "area": "Hoonah-Angoon Census Area, AK, USA",
-    "source": "https://www.inaturalist.org/observations/408419770",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-03T18:07:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/750748975/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) Alec Boyd-Devine, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-10-03-stellwagen-bank-unit-humpback-07",
+    "id": "2026-10-03-stellwagen-bank-unit-humpback-06",
     "name": "Humpback sighting (Stellwagen Bank, United States)",
     "species": "Humpback",
     "info": "iNaturalist observation by jimit1991.",
@@ -2209,7 +1853,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-10-03-stellwagen-bank-unit-humpback-08",
+    "id": "2026-10-03-stellwagen-bank-unit-humpback-07",
     "name": "Humpback sighting (Stellwagen Bank, United States)",
     "species": "Humpback",
     "info": "iNaturalist observation by jimit1991.",
@@ -2230,10 +1874,10 @@
     "headingCardinal": "SSW",
     "movedKm": 4.6,
     "speedKmh": 3.2,
-    "headingFromId": "2026-10-03-stellwagen-bank-humpback-09"
+    "headingFromId": "2026-10-03-stellwagen-bank-humpback-08"
   },
   {
-    "id": "2026-10-03-stellwagen-bank-humpback-09",
+    "id": "2026-10-03-stellwagen-bank-humpback-08",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by ggiribet.",
@@ -2254,10 +1898,10 @@
     "headingCardinal": "SSE",
     "movedKm": 0.7,
     "speedKmh": 1.7,
-    "headingFromId": "2026-10-03-stellwagen-bank-humpback-10"
+    "headingFromId": "2026-10-03-stellwagen-bank-humpback-09"
   },
   {
-    "id": "2026-10-03-stellwagen-bank-humpback-10",
+    "id": "2026-10-03-stellwagen-bank-humpback-09",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by ggiribet.",
@@ -2278,10 +1922,10 @@
     "headingCardinal": "W",
     "movedKm": 0.6,
     "speedKmh": 4.3,
-    "headingFromId": "2026-10-03-stellwagen-bank-humpback-11"
+    "headingFromId": "2026-10-03-stellwagen-bank-humpback-10"
   },
   {
-    "id": "2026-10-03-stellwagen-bank-humpback-11",
+    "id": "2026-10-03-stellwagen-bank-humpback-10",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by ggiribet.",
@@ -2300,7 +1944,7 @@
     "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
-    "id": "2026-10-03-stellwagen-bank-humpback-12",
+    "id": "2026-10-03-stellwagen-bank-humpback-11",
     "name": "Humpback sighting (Stellwagen Bank (iNaturalist — Catalog))",
     "species": "Humpback",
     "info": "iNaturalist observation by ggiribet.",
@@ -2338,7 +1982,7 @@
     "seasonalStatus": "California migration corridor"
   },
   {
-    "id": "2026-10-03-cape-point-cape-town-humpback-13",
+    "id": "2026-10-03-cape-point-cape-town-humpback-12",
     "name": "Humpback sighting (Cape Point, Cape Town, South Africa)",
     "species": "Humpback",
     "info": "iNaturalist observation by gigilaidler.",
@@ -2357,7 +2001,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-03-cape-point-cape-town-humpback-14",
+    "id": "2026-10-03-cape-point-cape-town-humpback-13",
     "name": "Humpback sighting (Cape Point, Cape Town, South Africa)",
     "species": "Humpback",
     "info": "iNaturalist observation by gigilaidler.",
@@ -2378,10 +2022,10 @@
     "headingCardinal": "SSE",
     "movedKm": 1.8,
     "speedKmh": 8.3,
-    "headingFromId": "2026-10-03-murdock-valley-cape--humpback-15"
+    "headingFromId": "2026-10-03-murdock-valley-cape--humpback-14"
   },
   {
-    "id": "2026-10-03-murdock-valley-cape--humpback-15",
+    "id": "2026-10-03-murdock-valley-cape--humpback-14",
     "name": "Humpback sighting (Murdock Valley, Cape Town, 7975, South Africa)",
     "species": "Humpback",
     "info": "iNaturalist observation by gigilaidler.",
@@ -2400,7 +2044,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-03-eyjafjordur-humpback-16",
+    "id": "2026-10-03-eyjafjordur-humpback-15",
     "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
     "species": "Humpback",
     "info": "Parsed from akureyri_blog on 2026-10-03.",
@@ -2459,25 +2103,6 @@
       "reported"
     ],
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
-    "id": "2026-10-01-san-francisco-ca-usa-great-white-shark-01",
-    "name": "Great White Shark sighting (San Francisco, CA, USA)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by frankf.",
-    "date": "2026-10-01",
-    "latitude": 37.71601788,
-    "longitude": -122.9989645923,
-    "area": "San Francisco, CA, USA",
-    "source": "https://www.inaturalist.org/observations/406873078",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-10-01T21:36:00Z",
-    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/747599509/medium.jpg",
-    "photoLicense": "cc-by-nc",
-    "photoAttribution": "(c) frankf, some rights reserved (CC BY-NC)",
-    "notable": true
   },
   {
     "id": "2026-09-30-global-blue-01",
@@ -2756,38 +2381,6 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/753979814/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) spiderviking, some rights reserved (CC BY-NC)",
-    "notable": true
-  },
-  {
-    "id": "2026-09-29-santa-barbara-county-great-white-shark-01",
-    "name": "Great White Shark sighting (Santa Barbara County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by tylerhobbs655.",
-    "date": "2026-09-29",
-    "latitude": 34.2897080034,
-    "longitude": -119.5655948147,
-    "area": "Santa Barbara County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/409845571",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-29T17:55:42Z",
-    "notable": true
-  },
-  {
-    "id": "2026-09-29-santa-barbara-county-great-white-shark-02",
-    "name": "Great White Shark sighting (Santa Barbara County, US-CA, US)",
-    "species": "Great White Shark",
-    "info": "iNaturalist observation by tylerhobbs655.",
-    "date": "2026-09-29",
-    "latitude": 34.3766815413,
-    "longitude": -119.5151962981,
-    "area": "Santa Barbara County, US-CA, US",
-    "source": "https://www.inaturalist.org/observations/409845502",
-    "behaviors": [
-      "reported"
-    ],
-    "observedAt": "2026-09-29T17:55:41Z",
     "notable": true
   },
   {
