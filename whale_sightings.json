@@ -186,7 +186,26 @@
     "notable": true
   },
   {
-    "id": "2026-11-11-united-states-orca-01",
+    "id": "2026-11-11-diamond-harbour-8972-orca-01",
+    "name": "Orca sighting (Diamond Harbour 8972, New Zealand)",
+    "species": "Orca",
+    "info": "iNaturalist observation by adamduchac.",
+    "date": "2026-11-11",
+    "latitude": -43.6152194888,
+    "longitude": 172.7810242027,
+    "area": "Diamond Harbour 8972, New Zealand",
+    "source": "https://www.inaturalist.org/observations/414408981",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-11-11T22:24:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/762887374/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Adam Duchac, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
+    "id": "2026-11-11-united-states-orca-02",
     "name": "Orca sighting (United States)",
     "species": "Orca",
     "info": "iNaturalist observation by jesse99720.",
@@ -749,6 +768,21 @@
     "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/759311392/medium.jpg",
     "photoLicense": "cc-by-nc",
     "photoAttribution": "(c) Tom Rhodes, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-11-02-islas-del-pac-fico-d-gray-01",
+    "name": "Gray Whale sighting (Islas del Pacífico de la Península de Baja California, Comondú, B.C.S., MX)",
+    "species": "Gray Whale",
+    "info": "iNaturalist observation by lucascarter.",
+    "date": "2026-11-02",
+    "latitude": 24.6476033333,
+    "longitude": -112.1290888333,
+    "area": "Islas del Pacífico de la Península de Baja California, Comondú, B.C.S., MX",
+    "source": "https://www.inaturalist.org/observations/412611082",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-11-02T23:09:52Z"
   },
   {
     "id": "2026-11-02-donegal-humpback-01",
@@ -2026,36 +2060,6 @@
     "notable": true
   },
   {
-    "id": "2026-10-24-azores-portugal-gray-01",
-    "name": "Gray Whale sighting (Azores, Portugal)",
-    "species": "Gray Whale",
-    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-10-24. Source: Happywhale.com.",
-    "date": "2026-10-24",
-    "latitude": 38.39252,
-    "longitude": -28.179368,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/714420",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-10-24-azores-portugal-gray-02",
-    "name": "Gray Whale sighting (Azores, Portugal)",
-    "species": "Gray Whale",
-    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-10-24. Source: Happywhale.com.",
-    "date": "2026-10-24",
-    "latitude": 38.374709,
-    "longitude": -28.128924,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/714417",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-10-24-azores-portugal-sperm-01",
     "name": "Sperm whale sighting (Azores, Portugal)",
     "species": "Sperm whale",
@@ -2113,6 +2117,36 @@
     "behaviors": [
       "reported",
       "traveling"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-10-24-azores-portugal-gray-01",
+    "name": "Gray Whale sighting (Azores, Portugal)",
+    "species": "Gray Whale",
+    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-10-24. Source: Happywhale.com.",
+    "date": "2026-10-24",
+    "latitude": 38.39252,
+    "longitude": -28.179368,
+    "area": "Azores, Portugal",
+    "source": "https://obis.org/occurrence/714420",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-10-24-azores-portugal-gray-02",
+    "name": "Gray Whale sighting (Azores, Portugal)",
+    "species": "Gray Whale",
+    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-10-24. Source: Happywhale.com.",
+    "date": "2026-10-24",
+    "latitude": 38.374709,
+    "longitude": -28.128924,
+    "area": "Azores, Portugal",
+    "source": "https://obis.org/occurrence/714417",
+    "behaviors": [
+      "reported"
     ],
     "notable": true
   },
@@ -2678,21 +2712,6 @@
     "notable": true
   },
   {
-    "id": "2026-10-22-california-united-st-gray-02",
-    "name": "Gray Whale sighting (California, United States)",
-    "species": "Gray Whale",
-    "info": "OBIS record from Happywhale - Sperm whale in North Pacific Ocean (1 individuals). Observed 2026-10-22. Source: Happywhale.com.",
-    "date": "2026-10-22",
-    "latitude": 36.634128,
-    "longitude": -122.06947,
-    "area": "California, United States",
-    "source": "https://obis.org/occurrence/713553",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "California migration corridor"
-  },
-  {
     "id": "2026-10-22-california-united-st-sperm-01",
     "name": "Sperm whale sighting (California, United States)",
     "species": "Sperm whale",
@@ -2706,6 +2725,21 @@
       "reported"
     ],
     "notable": true
+  },
+  {
+    "id": "2026-10-22-california-united-st-gray-02",
+    "name": "Gray Whale sighting (California, United States)",
+    "species": "Gray Whale",
+    "info": "OBIS record from Happywhale - Sperm whale in North Pacific Ocean (1 individuals). Observed 2026-10-22. Source: Happywhale.com.",
+    "date": "2026-10-22",
+    "latitude": 36.634128,
+    "longitude": -122.06947,
+    "area": "California, United States",
+    "source": "https://obis.org/occurrence/713553",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "California migration corridor"
   },
   {
     "id": "2026-10-22-troms-norway-fin-01",
@@ -2885,21 +2919,6 @@
     "notable": true
   },
   {
-    "id": "2026-10-21-new-south-wales-aust-sperm-01",
-    "name": "Sperm whale sighting (New South Wales, Australia)",
-    "species": "Sperm whale",
-    "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-10-21. Source: Happywhale.com.",
-    "date": "2026-10-21",
-    "latitude": -33.830752,
-    "longitude": 151.327507,
-    "area": "New South Wales, Australia",
-    "source": "https://obis.org/occurrence/713543",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-10-21-british-columbia-can-humpback-06",
     "name": "Humpback sighting (British Columbia, Canada)",
     "species": "Humpback",
@@ -2909,6 +2928,21 @@
     "longitude": -123.471917,
     "area": "British Columbia, Canada",
     "source": "https://obis.org/occurrence/714705",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-10-21-new-south-wales-aust-sperm-01",
+    "name": "Sperm whale sighting (New South Wales, Australia)",
+    "species": "Sperm whale",
+    "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-10-21. Source: Happywhale.com.",
+    "date": "2026-10-21",
+    "latitude": -33.830752,
+    "longitude": 151.327507,
+    "area": "New South Wales, Australia",
+    "source": "https://obis.org/occurrence/713543",
     "behaviors": [
       "reported"
     ],
@@ -3147,21 +3181,6 @@
     "notable": true
   },
   {
-    "id": "2026-10-20-british-columbia-can-fin-02",
-    "name": "Fin Whale sighting (British Columbia, Canada)",
-    "species": "Fin Whale",
-    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-10-20. Source: Happywhale.com.",
-    "date": "2026-10-20",
-    "latitude": 49.33346,
-    "longitude": -123.269796,
-    "area": "British Columbia, Canada",
-    "source": "https://obis.org/occurrence/713352",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-10-20-new-south-wales-aust-sperm-03",
     "name": "Sperm whale sighting (New South Wales, Australia)",
     "species": "Sperm whale",
@@ -3194,7 +3213,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-20-new-south-wales-aust-fin-03",
+    "id": "2026-10-20-new-south-wales-aust-fin-02",
     "name": "Fin Whale sighting (New South Wales, Australia)",
     "species": "Fin Whale",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-10-20. Source: Happywhale.com.",
@@ -3206,6 +3225,21 @@
     "behaviors": [
       "reported",
       "traveling"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-10-20-british-columbia-can-fin-03",
+    "name": "Fin Whale sighting (British Columbia, Canada)",
+    "species": "Fin Whale",
+    "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-10-20. Source: Happywhale.com.",
+    "date": "2026-10-20",
+    "latitude": 49.33346,
+    "longitude": -123.269796,
+    "area": "British Columbia, Canada",
+    "source": "https://obis.org/occurrence/713352",
+    "behaviors": [
+      "reported"
     ],
     "notable": true
   },
@@ -4391,21 +4425,6 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
-    "id": "2026-10-15-washington-united-st-gray-01",
-    "name": "Gray Whale sighting (Washington, United States)",
-    "species": "Gray Whale",
-    "info": "OBIS record from Happywhale - Gray whale in North Pacific Ocean (1 individuals). Observed 2026-10-15. Source: Happywhale.com.",
-    "date": "2026-10-15",
-    "latitude": 48.010957,
-    "longitude": -122.274822,
-    "area": "Washington, United States",
-    "source": "https://obis.org/occurrence/713276",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "California migration corridor"
-  },
-  {
     "id": "2026-10-15-british-columbia-can-sperm-01",
     "name": "Sperm whale sighting (British Columbia, Canada)",
     "species": "Sperm whale",
@@ -4436,6 +4455,21 @@
       "hunting"
     ],
     "notable": true
+  },
+  {
+    "id": "2026-10-15-washington-united-st-gray-01",
+    "name": "Gray Whale sighting (Washington, United States)",
+    "species": "Gray Whale",
+    "info": "OBIS record from Happywhale - Gray whale in North Pacific Ocean (1 individuals). Observed 2026-10-15. Source: Happywhale.com.",
+    "date": "2026-10-15",
+    "latitude": 48.010957,
+    "longitude": -122.274822,
+    "area": "Washington, United States",
+    "source": "https://obis.org/occurrence/713276",
+    "behaviors": [
+      "reported"
+    ],
+    "seasonalStatus": "California migration corridor"
   },
   {
     "id": "2026-10-15-british-columbia-can-blue-01",
