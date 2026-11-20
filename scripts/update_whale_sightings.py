@@ -1314,7 +1314,16 @@ def parse_obis_api(cfg: Dict[str, Any], session: requests.Session, tz_name: str,
 
         dataset_name = (obs.get("datasetName") or "OBIS").strip()
         occurrence_id = (obs.get("occurrenceID") or obs.get("id") or "").strip()
-        source_url = f"https://obis.org/occurrence/{occurrence_id}" if occurrence_id else "https://obis.org"
+        # OBIS re-publishes other datasets (iNaturalist especially), and for those
+        # records `occurrenceID` is ALREADY a full URL. Prefixing it produced links
+        # like "https://obis.org/occurrence/https://www.inaturalist.org/..." which
+        # 404 — it was 52% of the live feed. Use the URL as-is when we get one.
+        if not occurrence_id:
+            source_url = "https://obis.org"
+        elif occurrence_id.startswith(("http://", "https://")):
+            source_url = occurrence_id
+        else:
+            source_url = f"https://obis.org/occurrence/{occurrence_id}"
 
         institution = (obs.get("institutionCode") or obs.get("ownerInstitutionCode") or "").strip()
         count_str = obs.get("individualCount")
