@@ -50,7 +50,43 @@
     "seasonalStatus": "Norwegian herring season orcas"
   },
   {
-    "id": "2026-11-20-bremer-canyon-orca-02",
+    "id": "2026-11-20-sydney-humpback-03",
+    "name": "Humpback sighting (Sydney (offshore), NSW, Australia)",
+    "species": "Humpback",
+    "info": "Parsed from whale_watching_sydney_sightings on 2026-11-20.",
+    "date": "2026-11-20",
+    "latitude": -33.86,
+    "longitude": 151.57000000000002,
+    "area": "Sydney (offshore), NSW, Australia",
+    "source": "https://www.whalewatchingsydney.com.au/whale-sightings/",
+    "behaviors": [
+      "reported",
+      "feeding",
+      "breaching",
+      "traveling"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-11-20-sydney-orca-02",
+    "name": "Orca sighting (Sydney (offshore), NSW, Australia)",
+    "species": "Orca",
+    "info": "Parsed from whale_watching_sydney_sightings on 2026-11-20.",
+    "date": "2026-11-20",
+    "latitude": -33.86,
+    "longitude": 151.57000000000002,
+    "area": "Sydney (offshore), NSW, Australia",
+    "source": "https://www.whalewatchingsydney.com.au/whale-sightings/",
+    "behaviors": [
+      "reported",
+      "feeding",
+      "breaching",
+      "traveling"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-11-20-bremer-canyon-orca-03",
     "name": "Orca sighting (Bremer Canyon (offshore), WA, Australia)",
     "species": "Orca",
     "info": "Parsed from whale_watch_wa on 2026-11-20.",
@@ -84,7 +120,42 @@
     "notable": true
   },
   {
-    "id": "2026-11-20-bay-of-fundy-humpback-03",
+    "id": "2026-11-20-faxafloi-bay-humpback-04",
+    "name": "Humpback sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from elding_diary on 2026-11-20.",
+    "date": "2026-11-20",
+    "latitude": 64.2,
+    "longitude": -22.4,
+    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
+    "source": "https://elding.is/whale-diary",
+    "behaviors": [
+      "reported",
+      "feeding",
+      "breaching",
+      "traveling"
+    ]
+  },
+  {
+    "id": "2026-11-20-faxafloi-bay-orca-04",
+    "name": "Orca sighting (Faxafloi Bay (offshore), Reykjavik, Iceland)",
+    "species": "Orca",
+    "info": "Parsed from elding_diary on 2026-11-20.",
+    "date": "2026-11-20",
+    "latitude": 64.2,
+    "longitude": -22.4,
+    "area": "Faxafloi Bay (offshore), Reykjavik, Iceland",
+    "source": "https://elding.is/whale-diary",
+    "behaviors": [
+      "reported",
+      "feeding",
+      "breaching",
+      "traveling"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-11-20-bay-of-fundy-humpback-05",
     "name": "Humpback sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Humpback",
     "info": "Parsed from brier_island_whale_sightings on 2026-11-20.",
@@ -100,7 +171,7 @@
     ]
   },
   {
-    "id": "2026-11-20-bay-of-fundy-orca-03",
+    "id": "2026-11-20-bay-of-fundy-orca-05",
     "name": "Orca sighting (Bay of Fundy (offshore), NS, Canada)",
     "species": "Orca",
     "info": "Parsed from brier_island_whale_sightings on 2026-11-20.",
@@ -117,7 +188,7 @@
     "notable": true
   },
   {
-    "id": "2026-11-20-san-juan-islands-humpback-04",
+    "id": "2026-11-20-san-juan-islands-humpback-06",
     "name": "Humpback sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Humpback",
     "info": "Parsed from sanjuan_safaris_whale_report on 2026-11-20.",
@@ -136,7 +207,7 @@
     "notable": true
   },
   {
-    "id": "2026-11-20-san-juan-islands-orca-04",
+    "id": "2026-11-20-san-juan-islands-orca-06",
     "name": "Orca sighting (San Juan Islands (offshore), WA, USA)",
     "species": "Orca",
     "info": "Parsed from sanjuan_safaris_whale_report on 2026-11-20.",
@@ -153,6 +224,20 @@
       "traveling"
     ],
     "seasonalStatus": "Salish Sea (SRKW range)"
+  },
+  {
+    "id": "2026-11-20-eyjafjordur-humpback-07",
+    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
+    "species": "Humpback",
+    "info": "Parsed from akureyri_blog on 2026-11-20.",
+    "date": "2026-11-20",
+    "latitude": 65.75,
+    "longitude": -18.15,
+    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
+    "source": "https://www.whalewatchingakureyri.is/new-blog/",
+    "behaviors": [
+      "reported"
+    ]
   },
   {
     "id": "2026-11-19-northeast-atlantic-sperm-01",
@@ -1382,6 +1467,21 @@
     "notable": true
   },
   {
+    "id": "2026-11-07-troms-norway-blue-02",
+    "name": "Blue Whale sighting (Troms, Norway)",
+    "species": "Blue Whale",
+    "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-11-07. Source: Happywhale.com.",
+    "date": "2026-11-07",
+    "latitude": 70.005942,
+    "longitude": 21.974304,
+    "area": "Troms, Norway",
+    "source": "https://obis.org/occurrence/718348",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-11-07-antarctica-orca-11",
     "name": "Orca sighting (Antarctica)",
     "species": "Orca",
@@ -1406,21 +1506,6 @@
     "longitude": -60.319,
     "area": "Antarctica",
     "source": "https://www.gbif.org/occurrence/6891285302",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-11-07-troms-norway-blue-02",
-    "name": "Blue Whale sighting (Troms, Norway)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-11-07. Source: Happywhale.com.",
-    "date": "2026-11-07",
-    "latitude": 70.005942,
-    "longitude": 21.974304,
-    "area": "Troms, Norway",
-    "source": "https://obis.org/occurrence/718348",
     "behaviors": [
       "reported"
     ],
@@ -2421,21 +2506,6 @@
     "seasonalStatus": "Norwegian/Arctic feeding grounds"
   },
   {
-    "id": "2026-10-31-eyjafjordur-humpback-05",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-10-31.",
-    "date": "2026-10-31",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ],
-    "seasonalStatus": "Norwegian/Arctic feeding grounds"
-  },
-  {
     "id": "2026-10-30-tumbes-peru-humpback-01",
     "name": "Humpback sighting (Tumbes, Peru)",
     "species": "Humpback",
@@ -2793,6 +2863,22 @@
       "reported"
     ],
     "notable": true
+  },
+  {
+    "id": "2026-10-30-gulf-of-maine-humpback-05",
+    "name": "Humpback sighting (Gulf of Maine (iNaturalist — Catalog))",
+    "species": "Humpback",
+    "info": "iNaturalist observation by meliz28.",
+    "date": "2026-10-30",
+    "latitude": 41.7912798967,
+    "longitude": -69.2530458195,
+    "area": "Gulf of Maine (iNaturalist — Catalog)",
+    "source": "https://www.inaturalist.org/observations/411856787",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-10-30T18:22:00Z",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
   },
   {
     "id": "2026-10-29-unalaska-ak-usa-humpback-01",
@@ -3546,7 +3632,21 @@
     "notable": true
   },
   {
-    "id": "2026-10-26-western-australia-au-blue-01",
+    "id": "2026-10-26-west-iceland-blue-01",
+    "name": "Blue Whale sighting (West, Iceland)",
+    "species": "Blue Whale",
+    "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-10-26. Source: Happywhale.com.",
+    "date": "2026-10-26",
+    "latitude": 64.231914,
+    "longitude": -22.183299,
+    "area": "West, Iceland",
+    "source": "https://obis.org/occurrence/714351",
+    "behaviors": [
+      "reported"
+    ]
+  },
+  {
+    "id": "2026-10-26-western-australia-au-blue-02",
     "name": "Blue Whale sighting (Western Australia, Australia)",
     "species": "Blue Whale",
     "info": "OBIS record from Happywhale - Humpback whale in Indian Ocean (1 individuals). Observed 2026-10-26. Source: Happywhale.com.",
@@ -3559,20 +3659,6 @@
       "reported"
     ],
     "notable": true
-  },
-  {
-    "id": "2026-10-26-west-iceland-blue-02",
-    "name": "Blue Whale sighting (West, Iceland)",
-    "species": "Blue Whale",
-    "info": "OBIS record from Happywhale - Humpback whale in North Atlantic Ocean (1 individuals). Observed 2026-10-26. Source: Happywhale.com.",
-    "date": "2026-10-26",
-    "latitude": 64.231914,
-    "longitude": -22.183299,
-    "area": "West, Iceland",
-    "source": "https://obis.org/occurrence/714351",
-    "behaviors": [
-      "reported"
-    ]
   },
   {
     "id": "2026-10-26-west-iceland-fin-01",
@@ -3968,6 +4054,22 @@
     "notable": true
   },
   {
+    "id": "2026-10-24-la-haute-c-te-nord-c-humpback-02",
+    "name": "Humpback sighting (La Haute-Côte-Nord, CA-QC, CA)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by david_turgeon.",
+    "date": "2026-10-24",
+    "latitude": 48.353512465600005,
+    "longitude": -69.3946352361,
+    "area": "La Haute-Côte-Nord, CA-QC, CA",
+    "source": "https://www.inaturalist.org/observations/411466152",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-10-24T21:07:00Z",
+    "seasonalStatus": "Gulf of Maine / Bay of Fundy season"
+  },
+  {
     "id": "2026-10-24-northland-nz-orca-01",
     "name": "Orca sighting (Northland, NZ)",
     "species": "Orca",
@@ -4006,7 +4108,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-24-western-cape-south-a-humpback-02",
+    "id": "2026-10-24-western-cape-south-a-humpback-03",
     "name": "Humpback sighting (Western Cape, South Africa)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-10-24. Source: Happywhale.com.",
@@ -4021,7 +4123,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-24-western-cape-south-a-humpback-03",
+    "id": "2026-10-24-western-cape-south-a-humpback-04",
     "name": "Humpback sighting (Western Cape, South Africa)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-10-24. Source: Happywhale.com.",
@@ -4036,7 +4138,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-24-western-cape-south-a-humpback-04",
+    "id": "2026-10-24-western-cape-south-a-humpback-05",
     "name": "Humpback sighting (Western Cape, South Africa)",
     "species": "Humpback",
     "info": "OBIS record from Happywhale - Humpback whale in South Atlantic Ocean (1 individuals). Observed 2026-10-24. Source: Happywhale.com.",
@@ -4126,36 +4228,6 @@
     "notable": true
   },
   {
-    "id": "2026-10-24-azores-portugal-sperm-02",
-    "name": "Sperm whale sighting (Azores, Portugal)",
-    "species": "Sperm whale",
-    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-10-24. Source: Happywhale.com.",
-    "date": "2026-10-24",
-    "latitude": 38.39252,
-    "longitude": -28.179368,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/714420",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-10-24-azores-portugal-sperm-03",
-    "name": "Sperm whale sighting (Azores, Portugal)",
-    "species": "Sperm whale",
-    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-10-24. Source: Happywhale.com.",
-    "date": "2026-10-24",
-    "latitude": 38.374709,
-    "longitude": -28.128924,
-    "area": "Azores, Portugal",
-    "source": "https://obis.org/occurrence/714417",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-10-24-azores-portugal-gray-01",
     "name": "Gray Whale sighting (Azores, Portugal)",
     "species": "Gray Whale",
@@ -4174,6 +4246,36 @@
     "id": "2026-10-24-azores-portugal-gray-02",
     "name": "Gray Whale sighting (Azores, Portugal)",
     "species": "Gray Whale",
+    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-10-24. Source: Happywhale.com.",
+    "date": "2026-10-24",
+    "latitude": 38.374709,
+    "longitude": -28.128924,
+    "area": "Azores, Portugal",
+    "source": "https://obis.org/occurrence/714417",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-10-24-azores-portugal-sperm-02",
+    "name": "Sperm whale sighting (Azores, Portugal)",
+    "species": "Sperm whale",
+    "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-10-24. Source: Happywhale.com.",
+    "date": "2026-10-24",
+    "latitude": 38.39252,
+    "longitude": -28.179368,
+    "area": "Azores, Portugal",
+    "source": "https://obis.org/occurrence/714420",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-10-24-azores-portugal-sperm-03",
+    "name": "Sperm whale sighting (Azores, Portugal)",
+    "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Sperm whale in North Atlantic Ocean (1 individuals). Observed 2026-10-24. Source: Happywhale.com.",
     "date": "2026-10-24",
     "latitude": 38.374709,
@@ -4485,40 +4587,9 @@
     "notable": true
   },
   {
-    "id": "2026-10-23-new-south-wales-aust-blue-02",
-    "name": "Blue Whale sighting (New South Wales, Australia)",
-    "species": "Blue Whale",
-    "info": "GBIF record from Happywhale - Bryde's whale in South Pacific Ocean. Observed 2026-10-23.",
-    "date": "2026-10-23",
-    "latitude": -33.818465,
-    "longitude": 151.342049,
-    "area": "New South Wales, Australia",
-    "source": "https://www.gbif.org/occurrence/6876582304",
-    "behaviors": [
-      "reported",
-      "feeding"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-10-23-pitcairn-humpback-03",
     "name": "Humpback sighting (Pitcairn)",
     "species": "Humpback",
-    "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-10-23. Source: Happywhale.com.",
-    "date": "2026-10-23",
-    "latitude": -23.899893,
-    "longitude": -130.732773,
-    "area": "Pitcairn",
-    "source": "https://obis.org/occurrence/719541",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
-    "id": "2026-10-23-pitcairn-orca-12",
-    "name": "Orca sighting (Pitcairn)",
-    "species": "Orca",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-10-23. Source: Happywhale.com.",
     "date": "2026-10-23",
     "latitude": -23.899893,
@@ -4546,9 +4617,40 @@
     "notable": true
   },
   {
+    "id": "2026-10-23-new-south-wales-aust-blue-02",
+    "name": "Blue Whale sighting (New South Wales, Australia)",
+    "species": "Blue Whale",
+    "info": "GBIF record from Happywhale - Bryde's whale in South Pacific Ocean. Observed 2026-10-23.",
+    "date": "2026-10-23",
+    "latitude": -33.818465,
+    "longitude": 151.342049,
+    "area": "New South Wales, Australia",
+    "source": "https://www.gbif.org/occurrence/6876582304",
+    "behaviors": [
+      "reported",
+      "feeding"
+    ],
+    "notable": true
+  },
+  {
     "id": "2026-10-23-pitcairn-blue-03",
     "name": "Blue Whale sighting (Pitcairn)",
     "species": "Blue Whale",
+    "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-10-23. Source: Happywhale.com.",
+    "date": "2026-10-23",
+    "latitude": -23.899893,
+    "longitude": -130.732773,
+    "area": "Pitcairn",
+    "source": "https://obis.org/occurrence/719541",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-10-23-pitcairn-orca-12",
+    "name": "Orca sighting (Pitcairn)",
+    "species": "Orca",
     "info": "OBIS record from Happywhale - Humpback whale in South Pacific Ocean (1 individuals). Observed 2026-10-23. Source: Happywhale.com.",
     "date": "2026-10-23",
     "latitude": -23.899893,
