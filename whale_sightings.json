@@ -190,6 +190,61 @@
     "seasonalStatus": "Salish Sea (SRKW range)"
   },
   {
+    "id": "2026-11-26-iceland-humpback-06",
+    "name": "Humpback sighting (Iceland)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by introspectivebeat.",
+    "date": "2026-11-26",
+    "latitude": 64.159277,
+    "longitude": -21.9180279997,
+    "area": "Iceland",
+    "source": "https://www.inaturalist.org/observations/417057058",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-11-26T13:34:07Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/768180946/medium.jpg",
+    "photoLicense": "cc-by",
+    "photoAttribution": "(c) Lexie, some rights reserved (CC BY)"
+  },
+  {
+    "id": "2026-11-26-alta-no-fi-no-humpback-07",
+    "name": "Humpback sighting (Alta, NO-FI, NO)",
+    "species": "Humpback",
+    "info": "iNaturalist observation by julian_tr.",
+    "date": "2026-11-26",
+    "latitude": 70.08284816839999,
+    "longitude": 22.621352109,
+    "area": "Alta, NO-FI, NO",
+    "source": "https://www.inaturalist.org/observations/417079889",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-11-26T09:28:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/768225531/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Julian, some rights reserved (CC BY-NC)"
+  },
+  {
+    "id": "2026-11-26-alta-no-fi-no-orca-06",
+    "name": "Orca sighting (Alta, NO-FI, NO)",
+    "species": "Orca",
+    "info": "iNaturalist observation by julian_tr.",
+    "date": "2026-11-26",
+    "latitude": 70.0919978119,
+    "longitude": 22.7669840273,
+    "area": "Alta, NO-FI, NO",
+    "source": "https://www.inaturalist.org/observations/417079812",
+    "behaviors": [
+      "reported"
+    ],
+    "observedAt": "2026-11-26T09:28:00Z",
+    "photoURL": "https://inaturalist-open-data.s3.amazonaws.com/photos/768225349/medium.jpg",
+    "photoLicense": "cc-by-nc",
+    "photoAttribution": "(c) Julian, some rights reserved (CC BY-NC)",
+    "notable": true
+  },
+  {
     "id": "2026-11-25-onuku-rd-akaroa-cant-orca-01",
     "name": "Orca sighting (Onuku Rd, Akaroa, Canterbury, NZ)",
     "species": "Orca",
@@ -2432,20 +2487,6 @@
     "notable": true
   },
   {
-    "id": "2026-11-06-eyjafjordur-humpback-02",
-    "name": "Humpback sighting (Eyjafjordur (offshore), Akureyri, Iceland)",
-    "species": "Humpback",
-    "info": "Parsed from akureyri_blog on 2026-11-06.",
-    "date": "2026-11-06",
-    "latitude": 65.75,
-    "longitude": -18.15,
-    "area": "Eyjafjordur (offshore), Akureyri, Iceland",
-    "source": "https://www.whalewatchingakureyri.is/new-blog/",
-    "behaviors": [
-      "reported"
-    ]
-  },
-  {
     "id": "2026-11-05-bay-of-plenty-region-blue-01",
     "name": "Blue Whale sighting (Bay of Plenty Region, New Zealand)",
     "species": "Blue Whale",
@@ -3566,21 +3607,6 @@
     "notable": true
   },
   {
-    "id": "2026-10-30-northeast-iceland-sperm-06",
-    "name": "Sperm whale sighting (Northeast, Iceland)",
-    "species": "Sperm whale",
-    "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-10-30. Source: Happywhale.com.",
-    "date": "2026-10-30",
-    "latitude": 66.045856,
-    "longitude": -17.631409,
-    "area": "Northeast, Iceland",
-    "source": "https://obis.org/occurrence/715033",
-    "behaviors": [
-      "reported"
-    ],
-    "notable": true
-  },
-  {
     "id": "2026-10-30-california-united-st-humpback-03",
     "name": "Humpback sighting (California, United States)",
     "species": "Humpback",
@@ -3656,7 +3682,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-30-california-united-st-sperm-07",
+    "id": "2026-10-30-california-united-st-sperm-06",
     "name": "Sperm whale sighting (California, United States)",
     "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Risso's dolphin in North Pacific Ocean (1 individuals). Observed 2026-10-30. Source: Happywhale.com.",
@@ -3671,7 +3697,7 @@
     "notable": true
   },
   {
-    "id": "2026-10-30-california-united-st-sperm-08",
+    "id": "2026-10-30-california-united-st-sperm-07",
     "name": "Sperm whale sighting (California, United States)",
     "species": "Sperm whale",
     "info": "OBIS record from Happywhale - Humpback whale in North Pacific Ocean (1 individuals). Observed 2026-10-30. Source: Happywhale.com.",
@@ -3784,6 +3810,21 @@
     "longitude": -122.194112,
     "area": "California, United States",
     "source": "https://obis.org/occurrence/715653",
+    "behaviors": [
+      "reported"
+    ],
+    "notable": true
+  },
+  {
+    "id": "2026-10-30-northeast-iceland-sperm-08",
+    "name": "Sperm whale sighting (Northeast, Iceland)",
+    "species": "Sperm whale",
+    "info": "OBIS record from Happywhale - Humpback whale in Arctic Ocean (1 individuals). Observed 2026-10-30. Source: Happywhale.com.",
+    "date": "2026-10-30",
+    "latitude": 66.045856,
+    "longitude": -17.631409,
+    "area": "Northeast, Iceland",
+    "source": "https://obis.org/occurrence/715033",
     "behaviors": [
       "reported"
     ],
